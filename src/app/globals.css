@@ -1,0 +1,174 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fffbeb;
+  --foreground: #1f2937;
+  
+  /* Brand Colors from Logo */
+  --brand-gold: #eab308;
+  --brand-gold-light: #fbbf24;
+  --brand-gold-dark: #d97706;
+  --brand-forest: #166534;
+  --brand-forest-light: #22c55e;
+  --brand-forest-dark: #14532d;
+  --brand-red: #dc2626;
+  --brand-red-light: #ef4444;
+  --brand-red-dark: #991b1b;
+  --brand-bronze: #a16207;
+  --brand-bronze-light: #d97706;
+  --brand-bronze-dark: #78350f;
+  
+  /* Warm Neutrals */
+  --cream-white: #fffbeb;
+  --warm-gray-50: #fafaf9;
+  --warm-gray-100: #f5f5f4;
+  --warm-gray-200: #e7e5e4;
+  --warm-gray-300: #d6d3d1;
+  --warm-gray-400: #a8a29e;
+  --warm-gray-500: #78716c;
+  --warm-gray-600: #57534e;
+  --warm-gray-700: #44403c;
+  --warm-gray-800: #292524;
+  --warm-gray-900: #1c1917;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-playfair);
+  
+  /* Brand theme colors */
+  --color-brand-primary: var(--brand-gold);
+  --color-brand-secondary: var(--brand-forest);
+  --color-brand-accent: var(--brand-red);
+  --color-brand-bronze: var(--brand-bronze);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1c1917;
+    --foreground: #fafaf9;
+    
+    /* Adjust brand colors for dark mode */
+    --brand-gold: #fbbf24;
+    --brand-forest: #22c55e;
+    --brand-red: #ef4444;
+    --brand-bronze: #d97706;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--warm-gray-100);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-gold);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-gold-dark);
+}
+
+/* Dark mode scrollbar */
+.dark ::-webkit-scrollbar-track {
+  background: var(--warm-gray-800);
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: var(--brand-gold);
+}
+
+.dark ::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-gold-light);
+}
+
+/* Smooth transitions */
+* {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+/* Focus styles */
+.focus-visible:focus {
+  outline: 2px solid var(--brand-gold);
+  outline-offset: 2px;
+}
+
+/* Additional brand utility classes */
+.text-brand-gold { color: var(--brand-gold); }
+.text-brand-forest { color: var(--brand-forest); }
+.text-brand-red { color: var(--brand-red); }
+.text-brand-bronze { color: var(--brand-bronze); }
+
+.bg-brand-gold { background-color: var(--brand-gold); }
+.bg-brand-forest { background-color: var(--brand-forest); }
+.bg-brand-red { background-color: var(--brand-red); }
+.bg-brand-bronze { background-color: var(--brand-bronze); }
+
+.border-brand-gold { border-color: var(--brand-gold); }
+.border-brand-forest { border-color: var(--brand-forest); }
+.border-brand-red { border-color: var(--brand-red); }
+.border-brand-bronze { border-color: var(--brand-bronze); }
+
+/* Cultural section styling */
+.cultural-section {
+  background: linear-gradient(135deg, var(--brand-bronze), var(--brand-bronze-light));
+  color: var(--cream-white);
+}
+
+.heritage-card {
+  background: var(--cream-white);
+  border: 1px solid var(--brand-bronze);
+  box-shadow: 0 4px 6px -1px rgba(161, 98, 7, 0.1);
+}
+
+/* Custom animations */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out;
+}
+
+.animation-delay-200 {
+  animation-delay: 0.2s;
+  animation-fill-mode: both;
+}
+
+.animation-delay-400 {
+  animation-delay: 0.4s;
+  animation-fill-mode: both;
+}

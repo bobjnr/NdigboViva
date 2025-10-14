@@ -1,0 +1,35 @@
+{
+  "name": "ndigbo-viva-blog",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build --turbopack && next-sitemap",
+    "start": "next start",
+    "lint": "eslint",
+    "postbuild": "next-sitemap"
+  },
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.80",
+    "date-fns": "^4.1.0",
+    "firebase": "^12.2.1",
+    "lucide-react": "^0.544.0",
+    "next": "15.5.3",
+    "next-sitemap": "^4.2.3",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "rss-parser": "^3.13.0",
+    "sharp": "^0.34.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20.19.13",
+    "@types/react": "^19.1.12",
+    "@types/react-dom": "^19.1.9",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

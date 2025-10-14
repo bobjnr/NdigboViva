@@ -1,0 +1,15 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "e0f46b07-04ff-472c-a326-dfcf3823022a"
+      }
+    },
+    "ios": {
+      "bundleIdentifier": "com.bobjnr.ndigbovivablog",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    }
+  }
+}
