@@ -1,141 +1,50 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { ArrowLeft, ExternalLink, Calendar, Clock } from 'lucide-react'
+import { ArrowLeft } from 'lucide-react'
 import { getLatestVideos } from '@/lib/youtube'
 
-// Load credits from localStorage (in production, this would be from a database)
-function getVideoCredits() {
-  if (typeof window !== 'undefined') {
-    const savedCredits = localStorage.getItem('video-credits')
-    return savedCredits ? JSON.parse(savedCredits) : {}
-  }
-  return {}
+// Define interface for video credits structure
+interface VideoCredit {
+  title: string;
+  thumbnail: string;
+  credits: {
+    books: { citation: string }[];
+    visualSources: { title: string; source: string; link: string }[];
+    aiAssistance: string;
+  };
 }
 
-// Sample video data - you can replace this with actual data from your CMS or API
-const videoData: { [key: string]: any } = {
-  'understanding-igbo-culture-traditions': {
-    id: 'episode-1',
-    title: 'Understanding Igbo Culture and Traditions',
-    slug: 'understanding-igbo-culture-traditions',
-    thumbnail: '/Ndigbo Viva Logo.jpg',
-    duration: '15:30',
-    publishedAt: '2024-01-15',
-    description: 'A deep dive into the rich cultural heritage of the Igbo people',
-    videoUrl: 'https://youtube.com/watch?v=example1',
-    credits: {
-      images: [
-        {
-          source: 'Traditional Igbo wedding ceremony',
-          photographer: 'Dr. Ngozi Okonkwo',
-          license: 'Used with permission',
-          timestamp: '2:15'
-        },
-        {
-          source: 'Igbo masquerade performance',
-          photographer: 'Cultural Heritage Foundation',
-          license: 'Creative Commons BY-SA 4.0',
-          timestamp: '5:30'
-        },
-        {
-          source: 'Historical Igbo architecture',
-          photographer: 'National Museum of Nigeria',
-          license: 'Public Domain',
-          timestamp: '8:45'
-        }
-      ],
-      music: [
-        {
-          title: 'Traditional Igbo Flute Music',
-          artist: 'Onyeka Onwenu',
-          license: 'Used with permission',
-          timestamp: '0:00-3:20'
-        },
-        {
-          title: 'Background Ambience',
-          source: 'Epidemic Sound',
-          license: 'Commercial License',
-          timestamp: '3:20-15:30'
-        }
-      ],
-      research: [
-        {
-          title: 'Igbo Culture and Society: A Historical Perspective',
-          author: 'Prof. Chinua Achebe',
-          publication: 'African Cultural Studies Journal',
-          year: '2019'
-        },
-        {
-          title: 'Traditional Igbo Governance Systems',
-          author: 'Dr. Ifeoma Nwankwo',
-          publication: 'Nigerian Historical Review',
-          year: '2020'
-        }
-      ],
-      interviews: [
-        {
-          name: 'Chief Nnamdi Okoro',
-          title: 'Traditional Ruler',
-          location: 'Enugu State',
-          topics: 'Traditional governance and cultural practices'
-        },
-        {
-          name: 'Dr. Adaora Uche',
-          title: 'Cultural Anthropologist',
-          location: 'University of Nigeria, Nsukka',
-          topics: 'Modern interpretations of Igbo traditions'
-        }
-      ]
-    }
-  },
-  'economic-development-igbo-land': {
-    id: 'episode-2',
-    title: 'Economic Development in Igbo Land',
-    slug: 'economic-development-igbo-land',
-    thumbnail: '/Ndigbo Viva Logo.jpg',
-    duration: '22:45',
-    publishedAt: '2024-01-22',
-    description: 'Exploring investment opportunities and economic growth in Igbo communities',
-    videoUrl: 'https://youtube.com/watch?v=example2',
-    credits: {
-      images: [
-        {
-          source: 'Onitsha Market aerial view',
-          photographer: 'Lagos Business School',
-          license: 'Used with permission',
-          timestamp: '1:30'
-        },
-        {
-          source: 'Igbo entrepreneurs at work',
-          photographer: 'Tony Okafor',
-          license: 'Creative Commons BY 2.0',
-          timestamp: '7:15'
-        }
-      ],
-      music: [
-        {
-          title: 'Modern Igbo Business Theme',
-          artist: 'Phyno',
-          license: 'Used with permission',
-          timestamp: '0:00-2:00'
-        }
-      ],
-      research: [
-        {
-          title: 'Igbo Entrepreneurship: Past and Present',
-          author: 'Prof. Peter Eze',
-          publication: 'African Business Review',
-          year: '2021'
-        }
-      ],
-      interviews: [
-        {
-          name: 'Mr. Emeka Okafor',
-          title: 'CEO, Igbo Investment Group',
-          location: 'Lagos',
-          topics: 'Investment opportunities in Igbo land'
-        }
-      ]
+interface VideoCredits {
+  [key: string]: VideoCredit;
+}
+
+// Load credits for this specific video
+function getVideoCredits(): VideoCredits {
+  return {
+    'shocking-reasons-europeans-promoted-igbo-hatred': {
+      title: "Shocking Reasons Europeans Promoted Igbo Hatred",
+      thumbnail: "https://i.ytimg.com/vi/1OpMb3BPU1M/maxresdefault.jpg",
+      credits: {
+        books: [
+          { citation: "Achebe, C. Things Fall Apart. William Heinemann Ltd, 1958." },
+          { citation: "Afigbo, A. E. The Abolition of the Slave Trade in Southeastern Nigeria, 1885–1950. University of Rochester Press, 2005." },
+          { citation: "Basden, G. T. Among the Igbos of Nigeria. Kessinger Legacy Reprint, 1921." },
+          { citation: "Buxton, T. F. The African Slave Trade and Its Remedy. John Murray, London, 1840." },
+          { citation: "Ekechi, F. K. Missionary Enterprise and Rivalry in Igboland, 1857–1914. Frank Cass, 1972." },
+          { citation: "Equiano, O. The Interesting Narrative of the Life of Olaudah Equiano. London, 1789." },
+          { citation: "Falola, T., & Njoku, R. C. (Eds.). Igbo in the Atlantic World: African Origin and Diasporic Destination. Indiana University Press, 2016." }
+        ],
+        visualSources: [
+          { title: "images-african-slavery-and-slave-trade (1)", source: "ThoughtCo", link: "https://www.thoughtco.com/images-afri..." },
+          { title: "images-african-slavery-and-slave-trade (2)", source: "ThoughtCo", link: "https://www.thoughtco.com/images-afri..." },
+          { title: "images-african-slavery-and-slave-trade (3)", source: "Getty Images", link: "https://www.gettyimages.com/photos/sl..." },
+          { title: "Image of Work of Christian Missionaries in Igboland", source: "Odogwublog", link: "https://www.odogwublog.com/164-years-..." },
+          { title: "Image of Early Christian Missionaries in Igboland", source: "Afriklens", link: "https://www.afriklens.com/how-christi..." },
+          { title: "Image of White Christian Missionaries", source: "Al Jazeera", link: "https://www.aljazeera.com/opinions/20..." },
+          { title: "Footage of Nigerian Flag Flying", source: "Pexels", link: "https://www.pexels.com/video/low-angl..." }
+        ],
+        aiAssistance: "AI research support (ChatGPT by OpenAI, 2025 and Perplexity AI. (2025). Generative AI chat. https://www.perplexity.ai) for data organization, language clarity, or fact structuring; all creative interpretation remains original to Ndigbo Viva Channel."
+      }
     }
   }
 }
@@ -147,32 +56,34 @@ interface PageProps {
 }
 
 export default async function VideoCreditsPage({ params }: PageProps) {
-  // Try to find video in YouTube data first
-  let video = null
-  let credits = null
+  // Get the credits data directly using the slug
+  const allCredits = getVideoCredits()
+  const videoCredits = allCredits[params.slug]
   
-  try {
-    const videos = await getLatestVideos(50) // Get more videos to find the right one
-    video = videos.find(v => v.slug === params.slug)
-    
-    if (video) {
-      // Load credits from admin system
-      const allCredits = getVideoCredits()
-      credits = allCredits[video.videoId]
-    }
-  } catch (error) {
-    console.error('Error fetching video data:', error)
+  let video = {
+    title: videoCredits?.title || '',
+    thumbnail: videoCredits?.thumbnail || '/Ndigbo Viva Logo.jpg',
+    credits: videoCredits?.credits
   }
 
-  // Fallback to sample data if not found in YouTube
-  if (!video) {
-    video = videoData[params.slug]
-    if (video) {
-      credits = video.credits
+  if (!videoCredits) {
+    // Try to find video in YouTube data as fallback
+    try {
+      const videos = await getLatestVideos(50)
+      const ytVideo = videos.find(v => v.slug === params.slug)
+      if (ytVideo) {
+        video = {
+          title: ytVideo.title,
+          thumbnail: ytVideo.thumbnail,
+          credits: null
+        }
+      }
+    } catch (error) {
+      console.error('Error fetching video data:', error)
     }
   }
 
-  if (!video) {
+  if (!video.title) {
     return (
       <div className="min-h-screen bg-white flex items-center justify-center">
         <div className="text-center">
@@ -189,6 +100,8 @@ export default async function VideoCreditsPage({ params }: PageProps) {
       </div>
     )
   }
+
+  const credits = video.credits
 
   return (
     <div className="min-h-screen bg-white">
@@ -226,10 +139,11 @@ export default async function VideoCreditsPage({ params }: PageProps) {
 
       {/* Video Thumbnail Section */}
       <section className="py-8 bg-gray-50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white rounded-lg shadow-lg p-6">
-            <div className="flex justify-center">
-              <div className="relative w-full max-w-md h-64 rounded-lg overflow-hidden">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <div className="flex flex-col md:flex-row gap-8">
+            {/* Thumbnail on the left */}
+            <div className="w-full md:w-1/3 flex-shrink-0">
+              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={video.thumbnail}
                   alt={video.title}
@@ -238,90 +152,53 @@ export default async function VideoCreditsPage({ params }: PageProps) {
                 />
               </div>
             </div>
-          </div>
-        </div>
-      </section>
 
-      {/* Credits Sections */}
-      <section className="py-16">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-12">
-            {/* Images Credits */}
-            {credits?.images && credits.images.length > 0 && (
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Images</h3>
-                <div className="bg-white rounded-lg shadow-lg p-6">
-                  <div className="space-y-4">
-                    {credits.images.map((image: any, index: number) => (
+            {/* Credits on the right */}
+            <div className="w-full md:w-2/3">
+              <h1 className="text-2xl font-bold text-gray-900 mb-6">{video.title}</h1>
+              
+              {/* Books and Articles */}
+              {credits?.books && credits.books.length > 0 && (
+                <div className="mb-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">1. BOOKS AND ARTICLES:</h3>
+                  <div className="space-y-3">
+                    {credits.books.map((book: any, index: number) => (
                       <div key={index} className="border-l-4 border-brand-gold pl-4">
-                        <h4 className="font-semibold text-gray-900">{image.source}</h4>
-                        <p className="text-gray-600">Photographer: {image.photographer}</p>
-                        <p className="text-gray-600">License: {image.license}</p>
-                        <p className="text-sm text-gray-500">Timestamp: {image.timestamp}</p>
+                        <p className="text-gray-800">{book.citation}</p>
                       </div>
                     ))}
                   </div>
                 </div>
-              </div>
-            )}
+              )}
 
-            {/* Music Credits */}
-            {credits?.music && credits.music.length > 0 && (
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Music & Audio</h3>
-                <div className="bg-white rounded-lg shadow-lg p-6">
+              {/* Visual Sources */}
+              {credits?.visualSources && credits.visualSources.length > 0 && (
+                <div className="mb-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">2. VISUAL SOURCES:</h3>
                   <div className="space-y-4">
-                    {credits.music.map((music: any, index: number) => (
+                    {credits.visualSources.map((source: any, index: number) => (
                       <div key={index} className="border-l-4 border-brand-forest pl-4">
-                        <h4 className="font-semibold text-gray-900">{music.title}</h4>
-                        {music.artist && <p className="text-gray-600">Artist: {music.artist}</p>}
-                        {music.source && <p className="text-gray-600">Source: {music.source}</p>}
-                        <p className="text-gray-600">License: {music.license}</p>
-                        <p className="text-sm text-gray-500">Timestamp: {music.timestamp}</p>
+                        <h4 className="font-semibold text-gray-900">{source.title}</h4>
+                        <p className="text-gray-600">Original Source: {source.source}</p>
+                        <p className="text-gray-600">
+                          Source Link: <a href={source.link} className="text-brand-gold hover:underline" target="_blank" rel="noopener noreferrer">{source.link}</a>
+                        </p>
                       </div>
                     ))}
                   </div>
                 </div>
-              </div>
-            )}
+              )}
 
-            {/* Research References */}
-            {credits?.research && credits.research.length > 0 && (
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Research References</h3>
-                <div className="bg-white rounded-lg shadow-lg p-6">
-                  <div className="space-y-4">
-                    {credits.research.map((research: any, index: number) => (
-                      <div key={index} className="border-l-4 border-brand-bronze pl-4">
-                        <h4 className="font-semibold text-gray-900">{research.title}</h4>
-                        <p className="text-gray-600">Author: {research.author}</p>
-                        <p className="text-gray-600">Publication: {research.publication}</p>
-                        <p className="text-gray-600">Year: {research.year}</p>
-                      </div>
-                    ))}
+              {/* AI Assistance */}
+              {credits?.aiAssistance && (
+                <div>
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">AI ASSISTANCE:</h3>
+                  <div className="border-l-4 border-brand-gold pl-4">
+                    <p className="text-gray-800">{credits.aiAssistance}</p>
                   </div>
                 </div>
-              </div>
-            )}
-
-            {/* Guest Credits */}
-            {credits?.guests && credits.guests.length > 0 && (
-              <div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-6">Guests</h3>
-                <div className="bg-white rounded-lg shadow-lg p-6">
-                  <div className="space-y-4">
-                    {credits.guests.map((guest: any, index: number) => (
-                      <div key={index} className="border-l-4 border-brand-red pl-4">
-                        <h4 className="font-semibold text-gray-900">{guest.name}</h4>
-                        <p className="text-gray-600">Title: {guest.title}</p>
-                        <p className="text-gray-600">Location: {guest.location}</p>
-                        <p className="text-gray-600">Topics: {guest.topics}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            )}
+              )}
+            </div>
           </div>
         </div>
       </section>

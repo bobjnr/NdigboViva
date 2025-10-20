@@ -123,8 +123,8 @@ export default function CreditsAdminPage() {
 
   const updateCreditItem = (videoId: string, type: keyof VideoCredit['credits'], index: number, field: string, value: string) => {
     const videoCredit = credits[videoId]
-    if (videoCredit) {
-      videoCredit.credits[type][index][field] = value
+    if (videoCredit && videoCredit.credits[type][index]) {
+      (videoCredit.credits[type][index] as any)[field] = value
       saveCredits(videoId, videoCredit)
     }
   }
