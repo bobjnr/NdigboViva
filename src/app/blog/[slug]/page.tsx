@@ -133,7 +133,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           }))
         }}
       />
-      <div className="min-h-screen bg-white dark:bg-gray-900">
+      <div className="min-h-screen bg-white ">
       {/* Header Section */}
       <section className="bg-gradient-to-r from-yellow-500 to-yellow-600 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -171,9 +171,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </section>
 
       {/* Video Section */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-50 ">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden">
+          <div className="bg-white  rounded-lg shadow-lg overflow-hidden">
             <VideoHover
               videoId={blogPost.videoId}
               thumbnail={blogPost.thumbnail}
@@ -184,7 +184,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             />
             <div className="p-6">
               <div className="flex items-center justify-between mb-4">
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                <h3 className="text-xl font-bold text-gray-900 ">
                   {blogPost.title}
                 </h3>
                 <a
@@ -197,10 +197,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                   Watch on YouTube
                 </a>
               </div>
-              <p className="text-gray-600 dark:text-gray-300 mb-4">
+              <p className="text-gray-600  mb-4">
                 Click play to watch the video here, or visit YouTube for the full experience with comments and related videos.
               </p>
-              <div className="pt-4 border-t border-gray-200 dark:border-gray-700">
+              <div className="pt-4 border-t border-gray-200 ">
                 <a
                   href="https://www.youtube.com/@NDIGBOVIVA"
                   target="_blank"
@@ -222,18 +222,18 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
             {/* Main Content */}
             <div className="lg:col-span-3">
-              <article className="prose prose-lg max-w-none dark:prose-invert">
+              <article className="prose prose-lg max-w-none ">
                 <div dangerouslySetInnerHTML={{ __html: blogPost.content }} />
               </article>
 
               {/* Tags */}
-              <div className="mt-8 pt-8 border-t border-gray-200 dark:border-gray-700">
-                <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">Tags</h3>
+              <div className="mt-8 pt-8 border-t border-gray-200 ">
+                <h3 className="text-lg font-semibold text-gray-900  mb-4">Tags</h3>
                 <div className="flex flex-wrap gap-2">
                   {blogPost.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="bg-gray-100 dark:bg-gray-700 text-gray-700 dark:text-gray-300 px-3 py-1 rounded-full text-sm"
+                      className="bg-gray-100  text-gray-700  px-3 py-1 rounded-full text-sm"
                     >
                       #{tag}
                     </span>
@@ -251,8 +251,8 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 />
 
                 {/* Related Posts */}
-                <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-                  <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+                <div className="bg-gray-50  rounded-lg p-6">
+                  <h3 className="text-lg font-semibold text-gray-900  mb-4">
                     Related Posts
                   </h3>
                   <div className="space-y-4">
@@ -260,10 +260,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                       href="/blog/building-economic-solidarity"
                       className="block hover:text-yellow-600 transition-colors"
                     >
-                      <h4 className="font-medium text-gray-900 dark:text-white">
+                      <h4 className="font-medium text-gray-900 ">
                         Building Economic Solidarity
                       </h4>
-                      <p className="text-sm text-gray-600 dark:text-gray-300">
+                      <p className="text-sm text-gray-600 ">
                         How Igbo communities create opportunities...
                       </p>
                     </Link>
@@ -271,10 +271,10 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                       href="/blog/investing-in-our-homeland"
                       className="block hover:text-yellow-600 transition-colors"
                     >
-                      <h4 className="font-medium text-gray-900 dark:text-white">
+                      <h4 className="font-medium text-gray-900 ">
                         Investing in Our Homeland
                       </h4>
-                      <p className="text-sm text-gray-600 dark:text-gray-300">
+                      <p className="text-sm text-gray-600 ">
                         Success stories from the diaspora...
                       </p>
                     </Link>
@@ -287,7 +287,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
       </section>
 
       {/* Navigation */}
-      <section className="py-8 bg-gray-50 dark:bg-gray-800">
+      <section className="py-8 bg-gray-50 ">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between">
             <Link

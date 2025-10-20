@@ -56,60 +56,31 @@ export const RSS_FEEDS: RSSFeedConfig[] = [
     category: "Politics",
     priority: 4,
     enabled: true
-  },
-  {
-    name: "Punch Nigeria",
-    url: "https://punchng.com/feed/",
-    category: "Politics",
-    priority: 5,
-    enabled: true
-  },
-  {
-    name: "The Guardian Nigeria",
-    url: "https://guardian.ng/feed/",
-    category: "Culture",
-    priority: 6,
-    enabled: true
-  },
-  {
-    name: "ThisDay Nigeria",
-    url: "https://www.thisdaylive.com/index.php/feed/",
-    category: "Business",
-    priority: 7,
-    enabled: true
-  },
-  {
-    name: "Daily Trust Nigeria",
-    url: "https://dailytrust.com/feed/",
-    category: "Community",
-    priority: 8,
-    enabled: true
   }
 ];
 
-// Keywords to filter Igbo-related content
-const IGBO_KEYWORDS = [
-  'igbo', 'ndigbo', 'umuigbo', 'igbo culture', 'igbo people', 'igbo community',
-  'south east', 'southeast', 'enugu', 'anambra', 'abia', 'ebonyi', 'imo',
-  'ohanaeze', 'igbo language', 'igbo tradition', 'igbo history', 'igbo diaspora',
-  'biafra', 'biafran', 'eastern nigeria', 'eastern region', 'igbo land',
-  'igbo state', 'igbo nation', 'igbo identity', 'igbo heritage', 'igbo values',
-  // Additional broader terms
-  'nigerian', 'nigeria', 'african', 'africa', 'diaspora', 'community',
-  'cultural', 'tradition', 'heritage', 'language', 'business', 'entrepreneur',
-  'investment', 'development', 'education', 'technology', 'innovation'
-];
+// First, create an interface for the RSS item structure
+interface RSSItem {
+  content?: string;
+  description?: string;
+  summary?: string;
+  'media:content'?: {
+    $?: {
+      url: string;
+    };
+  };
+  enclosure?: {
+    url: string;
+    type?: string;
+  };
+}
 
-export class RSSFeedService {
+// Igbo News Service class
+class RSSFeedService {
   private parser: Parser;
 
   constructor() {
-    this.parser = new Parser({
-      timeout: 10000,
-      headers: {
-        'User-Agent': 'Ndigbo Viva News Aggregator 1.0'
-      }
-    });
+    this.parser = new Parser();
   }
 
   // Check if content is Igbo-related or Nigerian-related
@@ -170,7 +141,7 @@ export class RSSFeedService {
   }
 
   // Extract image from content or use default
-  private extractImage(item: any): string {
+  private extractImage(item: RSSItem): string {
     // Try to extract image from content
     const content = item.content || item.description || item.summary || '';
     const imgMatch = content.match(/<img[^>]+src="([^"]+)"/i);
@@ -179,11 +150,11 @@ export class RSSFeedService {
     }
 
     // Try to get image from media:content or enclosure
-    if (item['media:content'] && item['media:content']['$'] && item['media:content']['$'].url) {
-      return item['media:content']['$'].url;
+    if (item['media:content']?.$?.url) {
+      return item['media:content'].$.url;
     }
 
-    if (item.enclosure && item.enclosure.url && item.enclosure.type?.startsWith('image/')) {
+    if (item.enclosure?.url && item.enclosure.type?.startsWith('image/')) {
       return item.enclosure.url;
     }
 

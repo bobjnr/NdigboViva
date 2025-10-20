@@ -36,7 +36,7 @@ export default function BlogContent({ blogPosts }: BlogContentProps) {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-white">
       {/* Header Section */}
       <section className="relative bg-gradient-to-r from-black to-gray-900 text-white py-16">
         {/* Background Logo */}
@@ -63,7 +63,7 @@ export default function BlogContent({ blogPosts }: BlogContentProps) {
       </section>
 
       {/* Category Filter */}
-      <section className="py-8 bg-gray-50 dark:bg-gray-800">
+      <section className="py-8 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-4">
             {categories.map((category) => (
@@ -73,7 +73,7 @@ export default function BlogContent({ blogPosts }: BlogContentProps) {
                 className={`px-6 py-2 rounded-full font-medium transition-colors ${
                   selectedCategory === category
                     ? "bg-yellow-500 text-white shadow-lg"
-                    : "bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-yellow-500 hover:text-white hover:shadow-md"
+                    : "bg-white  text-gray-700  hover:bg-yellow-500 hover:text-white hover:shadow-md"
                 }`}
               >
                 {category}
@@ -88,7 +88,7 @@ export default function BlogContent({ blogPosts }: BlogContentProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Results count */}
           <div className="mb-8 text-center">
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="text-gray-600 ">
               Showing {filteredPosts.length} {filteredPosts.length === 1 ? 'post' : 'posts'} 
               {selectedCategory !== 'All' && ` in ${selectedCategory}`}
             </p>
@@ -99,7 +99,7 @@ export default function BlogContent({ blogPosts }: BlogContentProps) {
               {filteredPosts.map((post) => (
               <article
                 key={post.id}
-                className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group"
+                className="bg-white  rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group"
               >
                 <div className="relative">
                   <VideoHover
@@ -120,13 +120,13 @@ export default function BlogContent({ blogPosts }: BlogContentProps) {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 line-clamp-2 group-hover:text-yellow-600 transition-colors">
+                  <h3 className="text-xl font-bold text-gray-900  mb-2 line-clamp-2 group-hover:text-yellow-600 transition-colors">
                     {post.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-3">
+                  <p className="text-gray-600  mb-4 line-clamp-3">
                     {post.excerpt}
                   </p>
-                  <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-4">
+                  <div className="flex items-center justify-between text-sm text-gray-500  mb-4">
                     <div className="flex items-center space-x-4">
                       <div className="flex items-center">
                         <Calendar size={16} className="mr-1" />
@@ -151,15 +151,15 @@ export default function BlogContent({ blogPosts }: BlogContentProps) {
             </div>
           ) : (
             <div className="text-center py-12">
-              <div className="text-gray-400 dark:text-gray-500 mb-4">
+              <div className="text-gray-400  mb-4">
                 <svg className="mx-auto h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                 </svg>
               </div>
-              <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+              <h3 className="text-lg font-medium text-gray-900  mb-2">
                 No posts found
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-gray-600 ">
                 No posts available in the {selectedCategory} category yet.
               </p>
             </div>
@@ -175,12 +175,12 @@ export default function BlogContent({ blogPosts }: BlogContentProps) {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl font-bold text-gray-900  mb-4">
             Stay Updated
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+          <p className="text-lg text-gray-600  mb-8">
             Get notified when we publish new content and join our growing community
           </p>
           <NewsletterSignup variant="minimal" />

@@ -29,8 +29,8 @@ export default function ShareButtons({ url }: ShareButtonsProps) {
   };
 
   return (
-    <div className="bg-gray-50 dark:bg-gray-800 rounded-lg p-6">
-      <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-4">
+    <div className="bg-gray-50  rounded-lg p-6">
+      <h3 className="text-lg font-semibold text-gray-900  mb-4">
         Share This Post
       </h3>
       <div className="space-y-3">

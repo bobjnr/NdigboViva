@@ -195,7 +195,7 @@ export default function FashionPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-black to-gray-900 text-white py-16">
         {/* Background Logo */}
@@ -221,20 +221,20 @@ export default function FashionPage() {
       </section>
 
       {/* Featured Fashion */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-50 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl font-bold text-gray-900  mb-4">
               Featured Collections
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">
+            <p className="text-lg text-gray-600 ">
               Our most popular and trending fashion pieces
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredFashion.map((item) => (
-              <div key={item.id} className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div key={item.id} className="bg-white  rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-64">
                   <Image
                     src={item.image}
@@ -264,13 +264,13 @@ export default function FashionPage() {
                   </button>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2 line-clamp-2">
+                  <h3 className="text-xl font-bold text-gray-900  mb-2 line-clamp-2">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
+                  <p className="text-gray-600  mb-4 line-clamp-2">
                     {item.description}
                   </p>
-                  <div className="flex items-center justify-between text-sm text-gray-500 dark:text-gray-400 mb-4">
+                  <div className="flex items-center justify-between text-sm text-gray-500  mb-4">
                     <div className="flex items-center">
                       <User className="w-4 h-4 mr-1" />
                       {item.designer}
@@ -323,7 +323,7 @@ export default function FashionPage() {
                     className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
                       selectedCategory === category
                         ? "bg-brand-gold text-white shadow-lg"
-                        : "bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-brand-gold hover:text-white hover:shadow-md border border-gray-200 dark:border-gray-600"
+                        : "bg-white  text-gray-700  hover:bg-brand-gold hover:text-white hover:shadow-md border border-gray-200 "
                     }`}
                   >
                     {category}
@@ -333,11 +333,11 @@ export default function FashionPage() {
 
               {/* Sort Options */}
               <div className="flex items-center gap-2">
-                <span className="text-sm text-gray-600 dark:text-gray-400">Sort by:</span>
+                <span className="text-sm text-gray-600 ">Sort by:</span>
                 <select
                   value={sortBy}
                   onChange={(e) => setSortBy(e.target.value)}
-                  className="px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-lg bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-brand-gold focus:border-brand-gold"
+                  className="px-3 py-2 border border-gray-300  rounded-lg bg-white  text-gray-900  focus:ring-brand-gold focus:border-brand-gold"
                 >
                   <option value="newest">Newest</option>
                   <option value="oldest">Oldest</option>
@@ -353,7 +353,7 @@ export default function FashionPage() {
           {/* Fashion Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {sortedFashion.map((item) => (
-              <div key={item.id} className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div key={item.id} className="bg-white  rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48">
                   <Image
                     src={item.image}
@@ -385,13 +385,13 @@ export default function FashionPage() {
                   </button>
                 </div>
                 <div className="p-4">
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 line-clamp-2">
+                  <h3 className="text-lg font-bold text-gray-900  mb-2 line-clamp-2">
                     {item.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-3 line-clamp-2 text-sm">
+                  <p className="text-gray-600  mb-3 line-clamp-2 text-sm">
                     {item.description}
                   </p>
-                  <div className="flex items-center justify-between text-xs text-gray-500 dark:text-gray-400 mb-3">
+                  <div className="flex items-center justify-between text-xs text-gray-500  mb-3">
                     <div className="flex items-center">
                       <User className="w-3 h-3 mr-1" />
                       {item.designer}
@@ -429,13 +429,13 @@ export default function FashionPage() {
           {/* No Fashion Message */}
           {sortedFashion.length === 0 && (
             <div className="text-center py-12">
-              <div className="text-gray-400 dark:text-gray-500 mb-4">
+              <div className="text-gray-400  mb-4">
                 <ShoppingBag className="w-12 h-12 mx-auto" />
               </div>
-              <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+              <h3 className="text-lg font-medium text-gray-900  mb-2">
                 No fashion items found
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-gray-600 ">
                 No fashion items available in the {selectedCategory} category yet.
               </p>
             </div>
@@ -444,19 +444,19 @@ export default function FashionPage() {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-50 ">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl font-bold text-gray-900  mb-4">
             Stay Stylish
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+          <p className="text-lg text-gray-600  mb-8">
             Get the latest fashion trends and exclusive offers delivered to your inbox
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-brand-gold focus:border-brand-gold"
+              className="flex-1 px-4 py-3 rounded-lg border border-gray-300  bg-white  text-gray-900  focus:ring-brand-gold focus:border-brand-gold"
             />
             <button className="bg-brand-gold hover:bg-brand-gold-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors">
               Subscribe

@@ -98,7 +98,7 @@ export default function EventsPage() {
   const featuredEvents = upcomingEvents.filter(event => event.featured);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900">
+    <div className="min-h-screen bg-white">
       {/* Hero Section */}
       <section className="relative bg-gradient-to-r from-black to-gray-900 text-white py-16">
         {/* Background Logo */}
@@ -124,20 +124,20 @@ export default function EventsPage() {
       </section>
 
       {/* Featured Events */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-50 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+            <h2 className="text-3xl font-bold text-gray-900  mb-4">
               Featured Events
             </h2>
-            <p className="text-lg text-gray-600 dark:text-gray-300">
+            <p className="text-lg text-gray-600 ">
               Don't miss these upcoming highlights
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {featuredEvents.map((event) => (
-              <div key={event.id} className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div key={event.id} className="bg-white  rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-48">
                   <Image
                     src={event.image}
@@ -157,14 +157,14 @@ export default function EventsPage() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
+                  <h3 className="text-xl font-bold text-gray-900  mb-2">
                     {event.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2">
+                  <p className="text-gray-600  mb-4 line-clamp-2">
                     {event.description}
                   </p>
                   <div className="space-y-2 mb-4">
-                    <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                    <div className="flex items-center text-sm text-gray-500 ">
                       <Calendar className="w-4 h-4 mr-2" />
                       {new Date(event.date).toLocaleDateString('en-US', { 
                         weekday: 'long', 
@@ -173,15 +173,15 @@ export default function EventsPage() {
                         day: 'numeric' 
                       })}
                     </div>
-                    <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                    <div className="flex items-center text-sm text-gray-500 ">
                       <Clock className="w-4 h-4 mr-2" />
                       {event.time}
                     </div>
-                    <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                    <div className="flex items-center text-sm text-gray-500 ">
                       <MapPin className="w-4 h-4 mr-2" />
                       {event.location}
                     </div>
-                    <div className="flex items-center text-sm text-gray-500 dark:text-gray-400">
+                    <div className="flex items-center text-sm text-gray-500 ">
                       <Users className="w-4 h-4 mr-2" />
                       {event.attendees} attendees
                     </div>
@@ -214,7 +214,7 @@ export default function EventsPage() {
                   className={`px-6 py-2 rounded-full font-medium transition-colors ${
                     selectedCategory === category
                       ? "bg-brand-gold text-white shadow-lg"
-                      : "bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 hover:bg-brand-gold hover:text-white hover:shadow-md border border-gray-200 dark:border-gray-600"
+                      : "bg-white  text-gray-700  hover:bg-brand-gold hover:text-white hover:shadow-md border border-gray-200 "
                   }`}
                 >
                   {category}
@@ -226,7 +226,7 @@ export default function EventsPage() {
           {/* Events Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredEvents.map((event) => (
-              <div key={event.id} className="bg-white dark:bg-gray-900 rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+              <div key={event.id} className="bg-white  rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
                 <div className="relative h-40">
                   <Image
                     src={event.image}
@@ -241,21 +241,21 @@ export default function EventsPage() {
                   </div>
                 </div>
                 <div className="p-6">
-                  <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-2 line-clamp-2">
+                  <h3 className="text-lg font-bold text-gray-900  mb-2 line-clamp-2">
                     {event.title}
                   </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4 line-clamp-2 text-sm">
+                  <p className="text-gray-600  mb-4 line-clamp-2 text-sm">
                     {event.description}
                   </p>
                   <div className="space-y-1 mb-4">
-                    <div className="flex items-center text-xs text-gray-500 dark:text-gray-400">
+                    <div className="flex items-center text-xs text-gray-500 ">
                       <Calendar className="w-3 h-3 mr-2" />
                       {new Date(event.date).toLocaleDateString('en-US', { 
                         month: 'short', 
                         day: 'numeric' 
                       })}
                     </div>
-                    <div className="flex items-center text-xs text-gray-500 dark:text-gray-400">
+                    <div className="flex items-center text-xs text-gray-500 ">
                       <MapPin className="w-3 h-3 mr-2" />
                       {event.location}
                     </div>
@@ -276,13 +276,13 @@ export default function EventsPage() {
           {/* No Events Message */}
           {filteredEvents.length === 0 && (
             <div className="text-center py-12">
-              <div className="text-gray-400 dark:text-gray-500 mb-4">
+              <div className="text-gray-400  mb-4">
                 <Calendar className="w-12 h-12 mx-auto" />
               </div>
-              <h3 className="text-lg font-medium text-gray-900 dark:text-white mb-2">
+              <h3 className="text-lg font-medium text-gray-900  mb-2">
                 No events found
               </h3>
-              <p className="text-gray-600 dark:text-gray-400">
+              <p className="text-gray-600 ">
                 No events available in the {selectedCategory} category yet.
               </p>
             </div>
@@ -291,19 +291,19 @@ export default function EventsPage() {
       </section>
 
       {/* Newsletter Signup */}
-      <section className="py-16 bg-gray-50 dark:bg-gray-800">
+      <section className="py-16 bg-gray-50 ">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">
+          <h2 className="text-3xl font-bold text-gray-900  mb-4">
             Stay Updated on Events
           </h2>
-          <p className="text-lg text-gray-600 dark:text-gray-300 mb-8">
+          <p className="text-lg text-gray-600  mb-8">
             Get notified about upcoming events and never miss an opportunity to connect with our community
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-600 bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-brand-gold focus:border-brand-gold"
+              className="flex-1 px-4 py-3 rounded-lg border border-gray-300  bg-white  text-gray-900  focus:ring-brand-gold focus:border-brand-gold"
             />
             <button className="bg-brand-gold hover:bg-brand-gold-dark text-white px-6 py-3 rounded-lg font-semibold transition-colors">
               Subscribe

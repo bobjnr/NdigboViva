@@ -64,7 +64,7 @@ export default function NewsletterSignup({ className = '', variant = 'default' }
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="flex-1 px-4 py-3 rounded-lg border border-warm-300 dark:border-warm-600 bg-cream dark:bg-warm-700 text-warm-900 dark:text-cream placeholder-warm-500 focus:ring-2 focus:ring-brand-gold focus:border-transparent"
+            className="flex-1 px-4 py-3 rounded-lg border border-warm-300 bg-white text-warm-900 placeholder-black focus:ring-2 focus:ring-brand-gold focus:border-transparent"
           />
           <button
             type="submit"
@@ -99,14 +99,14 @@ export default function NewsletterSignup({ className = '', variant = 'default' }
             placeholder="First Name"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
-            className="flex-1 px-4 py-3 rounded-lg border border-warm-300 dark:border-warm-600 bg-cream dark:bg-warm-700 text-warm-900 dark:text-cream placeholder-warm-500 focus:ring-2 focus:ring-brand-gold focus:border-transparent"
+            className="flex-1 px-4 py-3 rounded-lg border border-warm-300  bg-cream  text-warm-900  placeholder-warm-500 focus:ring-2 focus:ring-brand-gold focus:border-transparent"
           />
           <input
             type="text"
             placeholder="Last Name"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
-            className="flex-1 px-4 py-3 rounded-lg border border-warm-300 dark:border-warm-600 bg-cream dark:bg-warm-700 text-warm-900 dark:text-cream placeholder-warm-500 focus:ring-2 focus:ring-brand-gold focus:border-transparent"
+            className="flex-1 px-4 py-3 rounded-lg border border-warm-300  bg-cream  text-warm-900  placeholder-warm-500 focus:ring-2 focus:ring-brand-gold focus:border-transparent"
           />
         </div>
         <input
@@ -115,7 +115,7 @@ export default function NewsletterSignup({ className = '', variant = 'default' }
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           required
-          className="flex-1 px-4 py-3 rounded-lg border border-warm-300 dark:border-warm-600 bg-cream dark:bg-warm-700 text-warm-900 dark:text-cream placeholder-warm-500 focus:ring-2 focus:ring-brand-gold focus:border-transparent"
+          className="flex-1 px-4 py-3 rounded-lg border border-warm-300 bg-white text-warm-900 placeholder-black focus:ring-2 focus:ring-brand-gold focus:border-transparent"
         />
         <button
           type="submit"

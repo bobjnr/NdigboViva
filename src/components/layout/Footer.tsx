@@ -26,8 +26,8 @@ export default function Footer() {
               Know Your Roots, Build Solidarity, Invest at Home. Join our community 
               as we celebrate Igbo culture and build a stronger future together.
             </p>
-            <div className="text-yellow-500 text-lg font-semibold">
-              Umuigbo Kunienu!
+            <div className="text-2xl font-bold text-yellow-500">
+              IGBO KUNIENU!
             </div>
           </div>
 
@@ -53,6 +53,11 @@ export default function Footer() {
               <li>
                 <Link href="/contact" className="text-gray-300 hover:text-yellow-500 transition-colors">
                   Contact
+                </Link>
+              </li>
+              <li>
+                <Link href="/acknowledgements" className="text-gray-300 hover:text-yellow-500 transition-colors">
+                  Acknowledgements & References
                 </Link>
               </li>
             </ul>
@@ -81,7 +86,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex space-x-4 mb-4 md:mb-0">
               <a
-                href="https://facebook.com/ndigboviva"
+                href="https://www.facebook.com/profile.php?id=61560926495882"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-yellow-500 transition-colors"
@@ -101,7 +106,7 @@ export default function Footer() {
                 </svg>
               </a>
               <a
-                href="https://instagram.com/ndigboviva"
+                href="https://www.instagram.com/ndigboviva99/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-300 hover:text-yellow-500 transition-colors"
@@ -119,7 +124,7 @@ export default function Footer() {
                 <Youtube size={24} />
               </a>
               <a
-                href="mailto:ndigboviva@outlook.com"
+                href="mailto:ndigbovivalimited@gmail.com"
                 className="text-gray-300 hover:text-yellow-500 transition-colors"
                 aria-label="Email"
               >

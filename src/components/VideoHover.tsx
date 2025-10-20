@@ -80,7 +80,7 @@ export default function VideoHover({
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="relative aspect-video bg-gray-200 dark:bg-gray-700 overflow-hidden">
+      <div className="relative aspect-video bg-gray-200  overflow-hidden">
         <Image
           src={thumbnail}
           alt={title}

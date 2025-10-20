@@ -45,6 +45,7 @@
   --color-brand-bronze: var(--brand-bronze);
 }
 
+/* Remove these sections */
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #1c1917;
@@ -58,31 +59,7 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-inter), system-ui, -apple-system, sans-serif;
-}
-
-/* Custom scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--warm-gray-100);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--brand-gold);
-  border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--brand-gold-dark);
-}
-
-/* Dark mode scrollbar */
+/* Remove dark mode scrollbar styles */
 .dark ::-webkit-scrollbar-track {
   background: var(--warm-gray-800);
 }

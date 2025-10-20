@@ -58,7 +58,7 @@ export function useRSSNews(options: UseRSSNewsOptions = {}): UseRSSNewsReturn {
 
   useEffect(() => {
     fetchNews();
-  }, [category, limit, refresh]);
+  }, [fetchNews]); // Add fetchNews to dependency array
 
   return {
     newsItems,

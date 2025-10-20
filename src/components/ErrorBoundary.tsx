@@ -34,13 +34,13 @@ class ErrorBoundary extends React.Component<ErrorBoundaryProps, ErrorBoundarySta
       }
 
       return (
-        <div className="min-h-screen bg-white dark:bg-gray-900 flex items-center justify-center">
+        <div className="min-h-screen bg-white  flex items-center justify-center">
           <div className="text-center p-8">
             <AlertTriangle className="mx-auto h-16 w-16 text-yellow-500 mb-4" />
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-2">
+            <h2 className="text-2xl font-bold text-gray-900  mb-2">
               Something went wrong
             </h2>
-            <p className="text-gray-600 dark:text-gray-400 mb-6">
+            <p className="text-gray-600  mb-6">
               We&apos;re having trouble loading the content. Please try refreshing the page.
             </p>
             <button

@@ -91,10 +91,10 @@ export default function AdminEmailPage() {
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-gray-50 dark:bg-gray-900 flex items-center justify-center">
+      <div className="min-h-screen bg-gray-50  flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-yellow-500 mx-auto"></div>
-          <p className="mt-4 text-gray-600 dark:text-gray-400">Loading...</p>
+          <p className="mt-4 text-gray-600 ">Loading...</p>
         </div>
       </div>
     );
@@ -105,22 +105,22 @@ export default function AdminEmailPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900">
+    <div className="min-h-screen bg-gray-50 ">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         {/* Header */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 mb-8">
+        <div className="bg-white  rounded-lg shadow-lg p-6 mb-8">
           <div className="flex items-center justify-between">
             <div>
-              <h1 className="text-3xl font-bold text-gray-900 dark:text-white flex items-center">
+              <h1 className="text-3xl font-bold text-gray-900  flex items-center">
                 <Mail className="w-8 h-8 mr-3 text-yellow-500" />
                 Email Notifications
               </h1>
-              <p className="text-gray-600 dark:text-gray-400 mt-2">
+              <p className="text-gray-600  mt-2">
                 Send blog post notifications to your subscribers
               </p>
             </div>
             <div className="text-right">
-              <div className="flex items-center text-green-600 dark:text-green-400">
+              <div className="flex items-center text-green-600 ">
                 <Users className="w-5 h-5 mr-2" />
                 <span className="font-semibold">{subscriberCount} subscribers</span>
               </div>
@@ -129,10 +129,10 @@ export default function AdminEmailPage() {
         </div>
 
         {/* Form */}
-        <div className="bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6">
+        <div className="bg-white  rounded-lg shadow-lg p-6">
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="title" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <label htmlFor="title" className="block text-sm font-medium text-gray-700  mb-2">
                 Blog Post Title *
               </label>
               <input
@@ -142,13 +142,13 @@ export default function AdminEmailPage() {
                 value={formData.title}
                 onChange={handleChange}
                 required
-                className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-yellow-500 focus:border-yellow-500"
+                className="w-full px-3 py-2 border border-gray-300  rounded-md bg-white  text-gray-900  focus:ring-yellow-500 focus:border-yellow-500"
                 placeholder="Enter the blog post title"
               />
             </div>
 
             <div>
-              <label htmlFor="excerpt" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <label htmlFor="excerpt" className="block text-sm font-medium text-gray-700  mb-2">
                 Excerpt *
               </label>
               <textarea
@@ -158,14 +158,14 @@ export default function AdminEmailPage() {
                 onChange={handleChange}
                 required
                 rows={4}
-                className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-yellow-500 focus:border-yellow-500"
+                className="w-full px-3 py-2 border border-gray-300  rounded-md bg-white  text-gray-900  focus:ring-yellow-500 focus:border-yellow-500"
                 placeholder="Enter a brief excerpt of the blog post"
               />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label htmlFor="slug" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label htmlFor="slug" className="block text-sm font-medium text-gray-700  mb-2">
                   URL Slug *
                 </label>
                 <input
@@ -175,13 +175,13 @@ export default function AdminEmailPage() {
                   value={formData.slug}
                   onChange={handleChange}
                   required
-                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-yellow-500 focus:border-yellow-500"
+                  className="w-full px-3 py-2 border border-gray-300  rounded-md bg-white  text-gray-900  focus:ring-yellow-500 focus:border-yellow-500"
                   placeholder="blog-post-slug"
                 />
               </div>
 
               <div>
-                <label htmlFor="videoId" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+                <label htmlFor="videoId" className="block text-sm font-medium text-gray-700  mb-2">
                   YouTube Video ID (optional)
                 </label>
                 <input
@@ -190,14 +190,14 @@ export default function AdminEmailPage() {
                   name="videoId"
                   value={formData.videoId}
                   onChange={handleChange}
-                  className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-yellow-500 focus:border-yellow-500"
+                  className="w-full px-3 py-2 border border-gray-300  rounded-md bg-white  text-gray-900  focus:ring-yellow-500 focus:border-yellow-500"
                   placeholder="dQw4w9WgXcQ"
                 />
               </div>
             </div>
 
             <div>
-              <label htmlFor="thumbnail" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
+              <label htmlFor="thumbnail" className="block text-sm font-medium text-gray-700  mb-2">
                 Thumbnail URL (optional)
               </label>
               <input
@@ -206,7 +206,7 @@ export default function AdminEmailPage() {
                 name="thumbnail"
                 value={formData.thumbnail}
                 onChange={handleChange}
-                className="w-full px-3 py-2 border border-gray-300 dark:border-gray-600 rounded-md bg-white dark:bg-gray-700 text-gray-900 dark:text-white focus:ring-yellow-500 focus:border-yellow-500"
+                className="w-full px-3 py-2 border border-gray-300  rounded-md bg-white  text-gray-900  focus:ring-yellow-500 focus:border-yellow-500"
                 placeholder="https://example.com/image.jpg"
               />
             </div>
@@ -214,8 +214,8 @@ export default function AdminEmailPage() {
             {message && (
               <div className={`p-4 rounded-lg flex items-center ${
                 isSuccess 
-                  ? 'bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 text-green-700 dark:text-green-300' 
-                  : 'bg-red-50 dark:bg-red-900/20 border border-red-200 dark:border-red-800 text-red-700 dark:text-red-300'
+                  ? 'bg-green-50  border border-green-200  text-green-700 ' 
+                  : 'bg-red-50  border border-red-200  text-red-700 '
               }`}>
                 {isSuccess ? (
                   <CheckCircle className="w-5 h-5 mr-2" />
@@ -244,11 +244,11 @@ export default function AdminEmailPage() {
         </div>
 
         {/* Instructions */}
-        <div className="mt-8 bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-800 rounded-lg p-6">
-          <h3 className="text-lg font-semibold text-blue-800 dark:text-blue-200 mb-3">
+        <div className="mt-8 bg-blue-50  border border-blue-200  rounded-lg p-6">
+          <h3 className="text-lg font-semibold text-blue-800  mb-3">
             How to use this feature:
           </h3>
-          <ul className="text-blue-700 dark:text-blue-300 space-y-2">
+          <ul className="text-blue-700  space-y-2">
             <li>• Fill in the required fields (title, excerpt, slug)</li>
             <li>• Add a YouTube video ID if the post has an associated video</li>
             <li>• Include a thumbnail URL for better email presentation</li>
