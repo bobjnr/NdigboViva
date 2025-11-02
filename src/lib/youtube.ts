@@ -4,20 +4,30 @@ const YOUTUBE_CHANNEL_ID = process.env.YOUTUBE_CHANNEL_ID || 'UC_NDIGBOVIVA_CHAN
 
 // Fetch with timeout and retry logic
 async function fetchWithTimeout(url: string, options: RequestInit = {}, timeout: number = 10000): Promise<Response> {
+  if (!url || typeof url !== 'string') {
+    throw new Error('Invalid URL provided to fetch');
+  }
+
   const controller = new AbortController();
   const timeoutId = setTimeout(() => controller.abort(), timeout);
   
   try {
     const response = await fetch(url, {
       ...options,
-      signal: controller.signal
+      signal: controller.signal,
+      cache: 'no-store' // Ensure fresh data
     });
     clearTimeout(timeoutId);
     return response;
   } catch (error) {
     clearTimeout(timeoutId);
-    if (error instanceof Error && error.name === 'AbortError') {
-      throw new Error('Request timed out');
+    if (error instanceof Error) {
+      if (error.name === 'AbortError') {
+        throw new Error('Request timed out');
+      }
+      if (error.message.includes('fetch')) {
+        throw new Error(`Failed to fetch: ${error.message}`);
+      }
     }
     throw error;
   }

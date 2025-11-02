@@ -62,16 +62,10 @@ export default function Header() {
                 Articles
               </Link>
               <Link
-                href="/news"
-                className="text-warm-900 hover:text-brand-red px-3 py-2 rounded-md text-sm font-medium transition-colors"
-              >
-                News
-              </Link>
-              <Link
-                href="/events"
+                href="/our-community"
                 className="text-warm-900 hover:text-brand-gold px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
-                Events
+                Our Community
               </Link>
               <Link
                 href="/fashion"
@@ -171,18 +165,11 @@ export default function Header() {
                 Articles
               </Link>
               <Link
-                href="/news"
-                className="text-warm-900 hover:text-brand-red block px-3 py-2 rounded-md text-base font-medium transition-colors"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                News
-              </Link>
-              <Link
-                href="/events"
+                href="/our-community"
                 className="text-warm-900 hover:text-brand-gold block px-3 py-2 rounded-md text-base font-medium transition-colors"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Events
+                Our Community
               </Link>
               <Link
                 href="/fashion"

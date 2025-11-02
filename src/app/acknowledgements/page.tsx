@@ -8,10 +8,12 @@ export default async function AcknowledgementsPage() {
   let videoEpisodes: any[] = []
   
   try {
-    videoEpisodes = await getLatestVideos(20)
+    const videos = await getLatestVideos(20)
+    videoEpisodes = videos || []
   } catch (error) {
     console.error('Error fetching YouTube videos:', error)
     // Fallback to empty array if YouTube API fails
+    videoEpisodes = []
   }
   return (
     <div className="min-h-screen bg-white">

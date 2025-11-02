@@ -10,7 +10,8 @@ interface VideoCredit {
   credits: {
     books: { citation: string }[];
     visualSources: { title: string; source: string; link: string }[];
-    aiAssistance: string;
+    teamAcknowledgements?: string;
+    aiAssistance?: string;
   };
 }
 
@@ -45,6 +46,47 @@ function getVideoCredits(): VideoCredits {
         ],
         aiAssistance: "AI research support (ChatGPT by OpenAI, 2025 and Perplexity AI. (2025). Generative AI chat. https://www.perplexity.ai) for data organization, language clarity, or fact structuring; all creative interpretation remains original to Ndigbo Viva Channel."
       }
+    },
+    'hear-values-that-make-ndigbo-great-by-prof-casmir-ck-ani-part-2': {
+      title: "Hear Values that make Ndigbo Great by Prof. Casmir C.K. Ani Part 2",
+      thumbnail: "",
+      credits: {
+        books: [
+          { citation: "Ikejiani-Clark, M. (2009). Peace studies and conflict resolution in Nigeria: A reader. Ibadan, Nigeria: Spectrum Books." }
+        ],
+        visualSources: [
+          { 
+            title: "Prof. Miriam Ikejiani-Clark (2011, October 11).testingonlyon25jan2012.", 
+            source: "Testing Only on 25 Jan 2012", 
+            link: "https://testingonlyon25jan2012.wordpress.com/" 
+          },
+          { 
+            title: "Monsignor Obiora Ike (Producer). (May 27, 2018). Lohmann, M. Image [Video screenshot]. YouTube.", 
+            source: "Obiora Ike Christentum & Islam", 
+            link: "https://www.youtube.com/" 
+          },
+          { 
+            title: "Ngozi Okonjo-Iweala, Managing Director, World Bank Fund. (July 28, 2010). International Monetary [Photograph]. IMF Photographic Archives.", 
+            source: "Wikipedia", 
+            link: "https://yo.wikipedia.org/wiki/Ngozi_Okonjo-Iweala" 
+          },
+          { 
+            title: "Chimamanda Ngozi Adichie. (2025, February 17). Nwebonyi OliverJunior [Photograph]. Facebook group \"Nigerian Teachers\".", 
+            source: "Facebook", 
+            link: "https://www.facebook.com/groups/4959580914267255" 
+          },
+          { 
+            title: "Dr. Chuba Okadigbo (2024, February 8).Wikipedia.", 
+            source: "Wikimedia Commons", 
+            link: "https://commons.wikimedia.org/wiki/File:" 
+          }
+        ],
+        teamAcknowledgements: `Host: Akachukwu Nwankpo (Oputaifeadi)
+Visual Editing: Emeka Okorie
+Blog Website Mgt: Chukwukadibia Ekene
+Research support: Esther Ime
+Recorded at Ndigbo Viva Studios, Enugu.`
+      }
     }
   }
 }
@@ -58,28 +100,48 @@ interface PageProps {
 export default async function VideoCreditsPage({ params }: PageProps) {
   // Get the credits data directly using the slug
   const allCredits = getVideoCredits()
-  const videoCredits = allCredits[params.slug]
+  let videoCredits = allCredits[params.slug]
   
-  let video = {
-    title: videoCredits?.title || '',
-    thumbnail: videoCredits?.thumbnail || '/Ndigbo Viva Logo.jpg',
-    credits: videoCredits?.credits
-  }
-
+  // If not found by slug, try to find by matching title (for variations)
   if (!videoCredits) {
-    // Try to find video in YouTube data as fallback
     try {
       const videos = await getLatestVideos(50)
       const ytVideo = videos.find(v => v.slug === params.slug)
+      
       if (ytVideo) {
-        video = {
-          title: ytVideo.title,
-          thumbnail: ytVideo.thumbnail,
-          credits: null
+        // Try to find credits by matching title keywords
+        const titleLower = ytVideo.title.toLowerCase()
+        for (const [slug, credits] of Object.entries(allCredits)) {
+          const creditsTitleLower = credits.title.toLowerCase()
+          // Check if titles match (allowing for some variation)
+          if (titleLower.includes('casmir') && titleLower.includes('ani') && 
+              titleLower.includes('values') && titleLower.includes('ndigbo')) {
+            videoCredits = credits
+            break
+          }
         }
       }
     } catch (error) {
       console.error('Error fetching video data:', error)
+    }
+  }
+  
+  // Get YouTube video data for title and thumbnail
+  let ytVideo = null
+  try {
+    const videos = await getLatestVideos(50)
+    ytVideo = videos.find(v => v.slug === params.slug)
+  } catch (error) {
+    console.error('Error fetching video data:', error)
+  }
+  
+  let video = {
+    title: ytVideo?.title || videoCredits?.title || '',
+    thumbnail: ytVideo?.thumbnail || videoCredits?.thumbnail || '/Ndigbo Viva Logo.jpg',
+    credits: videoCredits?.credits || {
+      books: [],
+      visualSources: [],
+      aiAssistance: ytVideo ? "Video data sourced from YouTube API" : undefined
     }
   }
 
@@ -189,6 +251,16 @@ export default async function VideoCreditsPage({ params }: PageProps) {
                 </div>
               )}
 
+              {/* Team Acknowledgements */}
+              {credits?.teamAcknowledgements && (
+                <div className="mb-8">
+                  <h3 className="text-xl font-bold text-gray-900 mb-4">TEAM ACKNOWLEDGEMENTS:</h3>
+                  <div className="border-l-4 border-brand-bronze pl-4">
+                    <pre className="text-gray-800 whitespace-pre-wrap font-sans">{credits.teamAcknowledgements}</pre>
+                  </div>
+                </div>
+              )}
+
               {/* AI Assistance */}
               {credits?.aiAssistance && (
                 <div>
@@ -205,3 +277,4 @@ export default async function VideoCreditsPage({ params }: PageProps) {
     </div>
   )
 }
+

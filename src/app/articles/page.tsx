@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Calendar, Clock, User, ArrowRight, BookOpen, TrendingUp, Star } from "lucide-react";
+import AudiobooksSection from "@/components/AudiobooksSection";
 
 const articleCategories = ["All", "Culture", "History", "Business", "Education", "Technology", "Health", "Lifestyle"];
 
@@ -373,6 +374,9 @@ export default function ArticlesPage() {
           )}
         </div>
       </section>
+
+      {/* Audiobooks Section */}
+      <AudiobooksSection showFullSection={false} />
 
       {/* Newsletter Signup */}
       <section className="py-16 bg-gray-50 ">

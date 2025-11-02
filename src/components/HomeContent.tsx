@@ -174,7 +174,7 @@ export default function HomeContent({ latestVideo, recentPosts, showWelcome }: H
                 <h3 className="text-xl font-bold text-warm-900  mb-2">
                   {latestVideo.title}
                 </h3>
-                <p className="text-warm-600  mb-4">
+                <p className="text-warm-600  mb-4 line-clamp-2">
                   {latestVideo.description}
                 </p>
                 <div className="flex items-center justify-between">
@@ -189,7 +189,7 @@ export default function HomeContent({ latestVideo, recentPosts, showWelcome }: H
                     href={`/blog/${latestVideo.id}`}
                     className="text-brand-gold hover:text-brand-gold-light font-bold text-lg transition-colors"
                   >
-                    Read More →
+                    View Full Post →
                   </Link>
                 </div>
               </div>
