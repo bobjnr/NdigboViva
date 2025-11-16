@@ -8,9 +8,9 @@ export async function GET(request: Request) {
 
     let subscribers;
     if (type === 'blog') {
-      subscribers = getBlogNotificationSubscribers();
+      subscribers = await getBlogNotificationSubscribers();
     } else {
-      subscribers = getAllSubscribers();
+      subscribers = await getAllSubscribers();
     }
 
     return NextResponse.json({

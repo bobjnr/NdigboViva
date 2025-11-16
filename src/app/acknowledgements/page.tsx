@@ -5,7 +5,7 @@ import VideoList from './VideoList'
 
 export default async function AcknowledgementsPage() {
   // Fetch real YouTube videos
-  let videoEpisodes: any[] = []
+  let videoEpisodes: Array<{ videoId: string; slug: string; title: string; thumbnail: string; publishedAt: string; duration?: string }> = []
   
   try {
     const videos = await getLatestVideos(20)

@@ -48,7 +48,27 @@ export default function RegisterPage() {
 
     const result = await signUp(formData.email, formData.password, formData.displayName);
     
-    if (result.success) {
+    if (result.success && result.user) {
+      // Save user data to Firestore
+      try {
+        await fetch('/api/users/save', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            uid: result.user.uid,
+            email: formData.email,
+            displayName: formData.displayName,
+            blogNotifications: true, // Default to true
+            welcomeEmails: true, // Default to true
+          }),
+        });
+      } catch (userError) {
+        console.error('Failed to save user data:', userError);
+        // Don't block registration if this fails
+      }
+
       // Add user to subscribers list
       try {
         await fetch('/api/subscribers/add', {

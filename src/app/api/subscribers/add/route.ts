@@ -12,7 +12,7 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const subscriber = addSubscriber(email, name, {
+    const subscriber = await addSubscriber(email, name, {
       blogNotifications: blogNotifications ?? true,
       welcomeEmails: welcomeEmails ?? true,
     });

@@ -16,7 +16,7 @@ export async function POST() {
 
     // Get real subscribers who want blog notifications
     const { getBlogNotificationSubscribers } = await import('@/lib/subscribers');
-    const subscribers = getBlogNotificationSubscribers();
+    const subscribers = await getBlogNotificationSubscribers();
     const subscriberEmails = subscribers.map(sub => sub.email);
     
     // If no subscribers, use your verified email for testing

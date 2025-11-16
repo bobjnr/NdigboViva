@@ -14,7 +14,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Get subscribers who want blog notifications
-    const subscribers = getBlogNotificationSubscribers();
+    const subscribers = await getBlogNotificationSubscribers();
     const subscriberEmails = subscribers.map(sub => sub.email);
     
     if (subscriberEmails.length === 0) {
