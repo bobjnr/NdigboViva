@@ -3,10 +3,10 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { 
-  MapPin, 
-  Users, 
-  ArrowRight, 
+import {
+  MapPin,
+  Users,
+  ArrowRight,
   Heart,
   Award,
   BookOpen,
@@ -25,6 +25,7 @@ import {
   Menu
 } from "lucide-react";
 import GenealogyForm from "@/components/GenealogyForm";
+import SubscriptionGate from "@/components/SubscriptionGate";
 import { type GenealogyFormSubmission } from "@/lib/genealogy-database";
 
 type CommunitySection = 'genealogy' | 'health' | 'lifestyle' | 'events' | 'fashion';
@@ -34,7 +35,7 @@ export default function OurCommunityPage() {
   const [showForm, setShowForm] = useState(false);
 
   const handleFormSubmit = (data: GenealogyFormSubmission) => {
-    console.log('Genealogy form submitted:', data);
+    void data;
   };
 
   const navigationItems = [
@@ -57,7 +58,7 @@ export default function OurCommunityPage() {
                   Igbo Genealogy Project
                 </h2>
                 <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                  A comprehensive initiative to help Igbo people worldwide trace their roots, 
+                  A comprehensive initiative to help Igbo people worldwide trace their roots,
                   connect with their ancestral communities, and preserve their cultural heritage.
                 </p>
               </div>
@@ -123,7 +124,7 @@ export default function OurCommunityPage() {
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Fill the Form</h4>
                   <p className="text-gray-600">
-                    Provide your current location and what you know about your ancestral origins. 
+                    Provide your current location and what you know about your ancestral origins.
                     Our smart form will help guide you through the process.
                   </p>
                 </div>
@@ -134,7 +135,7 @@ export default function OurCommunityPage() {
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2">We Research</h4>
                   <p className="text-gray-600">
-                    Our team will research your lineage using our comprehensive database of Igbo 
+                    Our team will research your lineage using our comprehensive database of Igbo
                     communities, villages, and family connections.
                   </p>
                 </div>
@@ -145,26 +146,28 @@ export default function OurCommunityPage() {
                   </div>
                   <h4 className="text-xl font-bold text-gray-900 mb-2">Get Connected</h4>
                   <p className="text-gray-600">
-                    Receive your family tree, ancestral information, and connections to 
+                    Receive your family tree, ancestral information, and connections to
                     relatives and cultural communities worldwide.
                   </p>
                 </div>
               </div>
             </div>
 
-            {/* Genealogy Form */}
-            <div className="bg-white rounded-lg shadow-lg p-8">
-              <div className="text-center mb-8">
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                  Start Tracing Your Roots
-                </h3>
-                <p className="text-lg text-gray-600">
-                  Fill out the form below to begin your journey of discovering your Igbo heritage
-                </p>
-              </div>
+            {/* Genealogy Form - Protected by Subscription Gate */}
+            <SubscriptionGate>
+              <div className="bg-white rounded-lg shadow-lg p-8">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Start Tracing Your Roots
+                  </h3>
+                  <p className="text-lg text-gray-600">
+                    Fill out the form below to begin your journey of discovering your Igbo heritage
+                  </p>
+                </div>
 
-              <GenealogyForm onSubmit={handleFormSubmit} />
-            </div>
+                <GenealogyForm onSubmit={handleFormSubmit} />
+              </div>
+            </SubscriptionGate>
 
             {/* Benefits */}
             <div className="bg-white rounded-lg shadow-lg p-8">
@@ -349,7 +352,7 @@ export default function OurCommunityPage() {
               Building and supporting the global Igbo community through genealogy, health, lifestyle, events, and more
             </p>
             <p className="text-lg text-gray-200 max-w-4xl mx-auto mb-8">
-              Explore our diverse range of community services designed to preserve Igbo heritage, 
+              Explore our diverse range of community services designed to preserve Igbo heritage,
               connect families, promote health and wellness, and celebrate our rich cultural traditions.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
@@ -393,11 +396,10 @@ export default function OurCommunityPage() {
                       <button
                         key={item.id}
                         onClick={() => setActiveSection(item.id)}
-                        className={`w-full flex items-center px-4 py-3 rounded-lg transition-colors text-left ${
-                          activeSection === item.id
+                        className={`w-full flex items-center px-4 py-3 rounded-lg transition-colors text-left ${activeSection === item.id
                             ? 'bg-brand-gold text-white font-semibold'
                             : 'text-gray-700 hover:bg-gray-100'
-                        }`}
+                          }`}
                       >
                         <Icon className="w-5 h-5 mr-3" />
                         <span>{item.label}</span>

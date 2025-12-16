@@ -45,7 +45,6 @@ export async function sendWelcomeEmail(data: WelcomeEmailData) {
       };
     }
     
-    console.error('Error adding user to list:', error);
     return { 
       success: false, 
       error: error instanceof Error ? error.message : 'Failed to add user to list' 
@@ -66,7 +65,6 @@ export async function getSubscriberCount() {
       count: response.stats.member_count,
     };
   } catch (error) {
-    console.error('Error getting subscriber count:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Failed to get subscriber count',

@@ -136,8 +136,7 @@ export async function GET(request: NextRequest) {
       timestamp: new Date().toISOString()
     });
 
-  } catch (error) {
-    console.error('Error fetching RSS news:', error);
+  } catch (_error) {
     
     return NextResponse.json({
       success: false,
@@ -190,8 +189,7 @@ export async function POST(request: NextRequest) {
       error: 'Invalid action'
     }, { status: 400 });
 
-  } catch (error) {
-    console.error('Error in POST /api/news/rss:', error);
+  } catch (_error) {
     
     return NextResponse.json({
       success: false,

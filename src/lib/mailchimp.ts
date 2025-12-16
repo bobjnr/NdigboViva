@@ -46,7 +46,6 @@ export async function subscribeToNewsletter(subscriber: NewsletterSubscriber) {
       data: response,
     };
   } catch (error: unknown) {
-    console.error('Mailchimp subscription error:', error);
     
     // Handle specific error cases
     if (error && typeof error === 'object' && 'status' in error && 'title' in error && 
@@ -88,7 +87,6 @@ export async function unsubscribeFromNewsletter(email: string) {
       data: response,
     };
   } catch (error: unknown) {
-    console.error('Mailchimp unsubscription error:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Failed to unsubscribe from newsletter',
@@ -171,7 +169,6 @@ export async function createNewsletterCampaign(
       data: campaign,
     };
   } catch (error: unknown) {
-    console.error('Mailchimp campaign creation error:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Failed to create newsletter campaign',
@@ -188,7 +185,6 @@ export async function sendNewsletterCampaign(campaignId: string) {
       data: response,
     };
   } catch (error: unknown) {
-    console.error('Mailchimp campaign send error:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Failed to send newsletter campaign',
@@ -212,7 +208,6 @@ export async function getCampaignStats(campaignId: string) {
       },
     };
   } catch (error: unknown) {
-    console.error('Mailchimp campaign stats error:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Failed to get campaign statistics',
@@ -250,7 +245,6 @@ export async function getListStats() {
       },
     };
   } catch (error: unknown) {
-    console.error('Mailchimp list stats error:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Failed to get list statistics',
@@ -282,7 +276,6 @@ export async function addTagsToSubscriber(email: string, tags: string[]) {
       data: response,
     };
   } catch (error: unknown) {
-    console.error('Mailchimp add tags error:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Failed to add tags to subscriber',

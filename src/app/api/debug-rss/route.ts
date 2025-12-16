@@ -1,7 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { rssFeedService, RSS_FEEDS } from '@/lib/rss-feeds';
+import { blockProdAccess } from '@/lib/api-guards';
 
 export async function GET(request: NextRequest) {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   try {
     const { searchParams } = new URL(request.url);
     const testFeed = searchParams.get('feed');
@@ -68,8 +72,6 @@ export async function GET(request: NextRequest) {
     });
 
   } catch (error) {
-    console.error('Debug RSS error:', error);
-    
     return NextResponse.json({
       success: false,
       error: 'Failed to debug RSS feeds',

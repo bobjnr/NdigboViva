@@ -17,8 +17,7 @@ export async function GET() {
         { status: 500 }
       );
     }
-  } catch (error) {
-    console.error('Get subscribers API error:', error);
+  } catch (_error) {
     return NextResponse.json(
       { error: 'Internal server error' },
       { status: 500 }

@@ -10,8 +10,7 @@ export default async function AcknowledgementsPage() {
   try {
     const videos = await getLatestVideos(20)
     videoEpisodes = videos || []
-  } catch (error) {
-    console.error('Error fetching YouTube videos:', error)
+  } catch {
     // Fallback to empty array if YouTube API fails
     videoEpisodes = []
   }

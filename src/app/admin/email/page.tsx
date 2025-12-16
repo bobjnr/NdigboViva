@@ -80,8 +80,8 @@ export default function AdminEmailPage() {
       if (data.success) {
         setSubscriberCount(data.total);
       }
-    } catch (error) {
-      console.error('Failed to get subscriber count:', error);
+    } catch (_error) {
+      setSubscriberCount(0);
     }
   };
 

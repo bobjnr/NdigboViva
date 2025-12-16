@@ -1,6 +1,10 @@
 import { NextResponse } from 'next/server';
+import { blockProdAccess } from '@/lib/api-guards';
 
 export async function GET() {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   try {
     // Simple test - just check if API key exists
     const apiKey = process.env.RESEND_API_KEY;
@@ -27,6 +31,9 @@ export async function GET() {
 }
 
 export async function POST() {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   try {
     // Test sending a simple email using native fetch
     const apiKey = process.env.RESEND_API_KEY;

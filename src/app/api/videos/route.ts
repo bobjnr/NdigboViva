@@ -6,7 +6,6 @@ export async function GET() {
     const videos = await getLatestVideos(20)
     return NextResponse.json({ videos })
   } catch (error) {
-    console.error('Error fetching videos:', error)
     return NextResponse.json(
       { 
         error: 'Failed to fetch videos',

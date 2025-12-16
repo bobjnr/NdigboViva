@@ -225,8 +225,7 @@ class RSSFeedService {
         return altParsed.toISOString();
       }
       return parsed.toISOString();
-    } catch (error) {
-      console.warn(`Failed to parse date: ${dateString}`, error);
+    } catch (_error) {
       return new Date().toISOString();
     }
   }
@@ -266,8 +265,7 @@ class RSSFeedService {
       }
 
       return newsItems;
-    } catch (error) {
-      console.error(`Error fetching feed ${feedConfig.name}:`, error);
+    } catch (_error) {
       return [];
     }
   }
@@ -285,8 +283,7 @@ class RSSFeedService {
         
         // Add delay between feeds to be respectful to servers
         await new Promise(resolve => setTimeout(resolve, 2000));
-      } catch (error) {
-        console.error(`Error fetching feed ${feed.name}:`, error);
+      } catch (_error) {
         // Continue with other feeds even if one fails
       }
     }

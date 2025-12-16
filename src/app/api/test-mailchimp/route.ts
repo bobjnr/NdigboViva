@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import mailchimp from '@mailchimp/mailchimp_marketing';
+import { blockProdAccess } from '@/lib/api-guards';
 
 // Initialize Mailchimp
 mailchimp.setConfig({
@@ -10,6 +11,9 @@ mailchimp.setConfig({
 const LIST_ID = process.env.MAILCHIMP_LIST_ID;
 
 export async function GET() {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   try {
     const results = {
       apiKey: !!process.env.MAILCHIMP_API_KEY,
@@ -93,7 +97,6 @@ export async function GET() {
       results,
     });
   } catch (error) {
-    console.error('Mailchimp test error:', error);
     return NextResponse.json(
       { 
         success: false, 

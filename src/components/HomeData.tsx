@@ -56,20 +56,8 @@ export async function getHomeData() {
   let apiError = false;
   
   try {
-    console.log('Attempting to fetch YouTube videos...');
     videos = await getLatestVideos(4);
-    console.log(`Successfully fetched ${videos.length} videos from YouTube`);
-    
-    if (videos.length > 0) {
-      console.log('Latest video details:', {
-        title: videos[0].title,
-        publishedAt: videos[0].publishedAt,
-        videoId: videos[0].videoId
-      });
-    }
-  } catch (error) {
-    console.warn('Failed to fetch YouTube videos, using fallback data:', error);
-    console.warn('Error details:', error);
+  } catch (_error) {
     apiError = true;
   }
 

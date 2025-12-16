@@ -54,7 +54,7 @@ export default function AudioPlayer({
   useEffect(() => {
     if (audioRef.current) {
       if (isPlaying) {
-        audioRef.current.play().catch(console.error);
+        audioRef.current.play().catch(() => undefined);
       } else {
         audioRef.current.pause();
       }
@@ -136,7 +136,7 @@ export default function AudioPlayer({
       <audio
         ref={audioRef}
         preload="metadata"
-        onError={(e) => console.error('Audio error:', e)}
+        onError={() => undefined}
       />
       {/* Audiobook Info */}
       <div className="flex items-start space-x-4 mb-6">

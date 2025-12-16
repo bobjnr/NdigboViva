@@ -87,8 +87,8 @@ export async function getBlogData() {
   }> = [];
   try {
     videos = await getLatestVideos(12);
-  } catch (error) {
-    console.warn('Failed to fetch YouTube videos:', error);
+  } catch (_error) {
+    videos = [];
   }
 
   const blogPosts = videos.length > 0 ? videos.map(video => ({

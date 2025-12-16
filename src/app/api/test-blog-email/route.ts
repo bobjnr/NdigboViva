@@ -1,10 +1,12 @@
 import { NextResponse } from 'next/server';
 import { sendBlogPostEmail } from '@/lib/email-native';
+import { blockProdAccess } from '@/lib/api-guards';
 
 export async function POST() {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   try {
-    console.log('Testing blog post email...');
-    
     const testData = {
       title: 'Test Blog Post - Email Notification',
       excerpt: 'This is a test blog post to verify that email notifications are working correctly. If you receive this email, the system is functioning properly!',
@@ -20,32 +22,29 @@ export async function POST() {
     const subscriberEmails = subscribers.map(sub => sub.email);
     
     // If no subscribers, use your verified email for testing
+    let fallbackUsed = false;
     if (subscriberEmails.length === 0) {
       subscriberEmails.push('bobekene7@gmail.com');
-      console.log('No subscribers found, using verified email for testing');
+      fallbackUsed = true;
     }
-    
-    console.log('Sending blog post email to:', subscriberEmails);
     
     const result = await sendBlogPostEmail(testData, subscriberEmails);
     
     if (result.success) {
-      console.log('Blog post email sent successfully!');
       return NextResponse.json({
         success: true,
         message: 'Blog post notification sent successfully!',
         messageId: result.messageId,
-        note: 'Check your email inbox (and spam folder) for the test email'
+        recipientCount: subscriberEmails.length,
+        fallbackRecipientUsed: fallbackUsed
       });
     } else {
-      console.error('Failed to send blog post email:', result.error);
       return NextResponse.json({
         success: false,
         error: result.error || 'Failed to send blog post notification'
       }, { status: 500 });
     }
   } catch (error: unknown) {
-    console.error('Blog post email test error:', error);
     return NextResponse.json({
       success: false,
       error: error instanceof Error ? error.message : 'Internal server error'
@@ -54,6 +53,9 @@ export async function POST() {
 }
 
 export async function GET() {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   return NextResponse.json({
     success: true,
     message: 'Blog post email test endpoint ready!',

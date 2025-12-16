@@ -68,12 +68,6 @@ export default function Header() {
                 Our Community
               </Link>
               <Link
-                href="/fashion"
-                className="text-warm-900 hover:text-brand-forest px-3 py-2 rounded-md text-sm font-medium transition-colors"
-              >
-                Fashion
-              </Link>
-              <Link
                 href="/about"
                 className="text-warm-900 hover:text-brand-bronze px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >

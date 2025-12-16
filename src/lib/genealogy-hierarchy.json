@@ -1,0 +1,5886 @@
+{
+  "ACHINA": {
+    "quarters": {}
+  },
+  "AGULUEZECHUKWU": {
+    "quarters": {}
+  },
+  "AKPO": {
+    "quarters": {}
+  },
+  "AMESI": {
+    "quarters": {}
+  },
+  "EKWULOBIA": {
+    "quarters": {}
+  },
+  "EZINIFITE": {
+    "quarters": {}
+  },
+  "IGBO-UKWU": {
+    "quarters": {}
+  },
+  "IKENGA": {
+    "quarters": {}
+  },
+  "ISUOFIA": {
+    "quarters": {}
+  },
+  "NKPOLOGWU": {
+    "quarters": {}
+  },
+  "ORAERI": {
+    "quarters": {}
+  },
+  "UGA": {
+    "quarters": {}
+  },
+  "UMUCHU": {
+    "quarters": {}
+  },
+  "UMUONA": {
+    "quarters": {}
+  },
+  "AMORKA": {
+    "quarters": {}
+  },
+  "ULI": {
+    "quarters": {}
+  },
+  "IHIALA": {
+    "quarters": {
+      "EZI": {
+        "obis": {
+          "AMAMU": {
+            "clans": {
+              "DIOHA": {
+                "villages": {
+                  "ELEKECHEM": {
+                    "kindreds": {}
+                  },
+                  "UMUNNEBOGBU": {
+                    "kindreds": {
+                      "UMUOKPARAUGHANZE": [],
+                      "UMUGOGBUO": [],
+                      "UMUAHIBAEKWE": [],
+                      "UMUAWALA": []
+                    }
+                  },
+                  "UMUNMELIKE": {
+                    "kindreds": {}
+                  },
+                  "UMUADOBIHI": {
+                    "kindreds": {}
+                  },
+                  "UMUILOBUEGHU": {
+                    "kindreds": {}
+                  },
+                  "UMUABALIKE": {
+                    "kindreds": {}
+                  },
+                  "UMUEZEOGU": {
+                    "kindreds": {}
+                  },
+                  "UMUNMERI": {
+                    "kindreds": {}
+                  }
+                }
+              },
+              "UMUDIMOGO": {
+                "villages": {}
+              },
+              "UMUNNAMEHI": {
+                "villages": {}
+              },
+              "UMUEZE": {
+                "villages": {}
+              },
+              "AFAM": {
+                "villages": {}
+              },
+              "UMUEJIMOKE": {
+                "villages": {}
+              },
+              "UMUDURU": {
+                "villages": {}
+              },
+              "IHUDIM": {
+                "villages": {}
+              }
+            }
+          },
+          "UZOAKWA": {
+            "clans": {}
+          },
+          "UBAHUEKWEM": {
+            "clans": {}
+          },
+          "AKWA": {
+            "clans": {}
+          },
+          "OGBORO": {
+            "clans": {}
+          }
+        }
+      },
+      "IHITE": {
+        "obis": {
+          "UMUDARA": {
+            "clans": {}
+          },
+          "UMUDURU": {
+            "clans": {}
+          },
+          "UMUEZEAWALA": {
+            "clans": {}
+          },
+          "AMADURU": {
+            "clans": {}
+          },
+          "UMUEDIKE": {
+            "clans": {}
+          }
+        }
+      }
+    }
+  },
+  "AZIA": {
+    "quarters": {}
+  },
+  "ORSUMOGHU": {
+    "quarters": {}
+  },
+  "UBULUISIUZOR": {
+    "quarters": {}
+  },
+  "ISSEKE": {
+    "quarters": {}
+  },
+  "LILU": {
+    "quarters": {}
+  },
+  "MBOSI": {
+    "quarters": {}
+  },
+  "OKIJA": {
+    "quarters": {
+      "UBAHUA BU UBAHU": {
+        "obis": {
+          "UBAHU": {
+            "clans": {
+              "ETITI-UBAHU": {
+                "villages": {
+                  "UMUAPANI": {
+                    "kindreds": {
+                      "DARA": [
+                        "UMUONWUSIRIKAM",
+                        "DURUASOM"
+                      ],
+                      "NGEGWU": [
+                        "DURUASOM",
+                        "UMUNWAOLISA",
+                        "UMUCHUKWUMA"
+                      ],
+                      "NHIE": [],
+                      "NEBO": [],
+                      "CHUGHA": [],
+                      "OMUKWE": []
+                    }
+                  },
+                  "UMUAWA": {
+                    "kindreds": {
+                      "UMUAWA": []
+                    }
+                  },
+                  "UMUDARAEGWU": {
+                    "kindreds": {
+                      "UMUORJI": [],
+                      "UMU IHEMEGBUNAM": []
+                    }
+                  }
+                }
+              },
+              "UBAHU-UDURU": {
+                "villages": {
+                  "UMUEZEDAM": {
+                    "kindreds": {
+                      "MEGWARA": [],
+                      "EHIOBUNA": [],
+                      "EZEDIKE": [],
+                      "EZEDIANA": [],
+                      "NDIONYEBARACHI": [],
+                      "IZUNABO": [],
+                      "NDIEZIKE": []
+                    }
+                  },
+                  "UMUAKPOROM": {
+                    "kindreds": {
+                      "UMU-NABARA": [],
+                      "UMUNGWU": [],
+                      "UMUEZE ILOANA": [],
+                      "UMUEMENIGHE": [],
+                      "UMUIGBOEJE": []
+                    }
+                  },
+                  "UGWUCHEREKU": {
+                    "kindreds": {
+                      "UMUILOEGBUNA": [],
+                      "UMU-UZOEGWU": [],
+                      "UMUDIBIAGU": [],
+                      "UMUDIJI": [],
+                      "UMUIZUNABO": [],
+                      "UMUISIAGU": []
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "UMUOHI": {
+            "clans": {
+              "EZIEKE": {
+                "villages": {
+                  "ANAUBOSI": {
+                    "kindreds": {
+                      "UMUEZEDIBIA": [],
+                      "UMUOBINAGHA": [],
+                      "UMUANYAEJI": []
+                    }
+                  },
+                  "ANUNWA": {
+                    "kindreds": {
+                      "ANUNWA": []
+                    }
+                  },
+                  "IHUOMA ANUKAUBI": {
+                    "kindreds": {
+                      "IHUOMA": []
+                    }
+                  },
+                  "UMUABIAM": {
+                    "kindreds": {
+                      "UMUONWUKA": [],
+                      "UMU UKADIKE": []
+                    }
+                  }
+                }
+              },
+              "ISIFULU": {
+                "villages": {
+                  "UMU ONEMBA": {
+                    "kindreds": {}
+                  },
+                  "UMUNDUMANYA": {
+                    "kindreds": {}
+                  },
+                  "UMUEZULU": {
+                    "kindreds": {}
+                  },
+                  "UMU ORJI": {
+                    "kindreds": {}
+                  },
+                  "UMUAGUSIONU": {
+                    "kindreds": {}
+                  },
+                  "OKPALADIKE": {
+                    "kindreds": {}
+                  },
+                  "UMUNWANGWU": {
+                    "kindreds": {}
+                  },
+                  "UMU EGBU ELI": {
+                    "kindreds": {}
+                  }
+                }
+              },
+              "UMUDIOKA": {
+                "villages": {
+                  "UMUEZE ANAMIUJI": {
+                    "kindreds": {}
+                  },
+                  "UMU OKORAFOR": {
+                    "kindreds": {}
+                  },
+                  "UMU EZEISI": {
+                    "kindreds": {}
+                  },
+                  "UMUDARA OKEREKE": {
+                    "kindreds": {}
+                  },
+                  "UMU AGA AGWO": {
+                    "kindreds": {}
+                  },
+                  "UMU OZO IGBO": {
+                    "kindreds": {}
+                  },
+                  "UMU EJIOFOR": {
+                    "kindreds": {}
+                  },
+                  "UMU OBIANIGWE": {
+                    "kindreds": {}
+                  },
+                  "UMU ANOSIKE": {
+                    "kindreds": {}
+                  },
+                  "UMU OGBUEHI": {
+                    "kindreds": {}
+                  },
+                  "UMU ANNOWAI": {
+                    "kindreds": {}
+                  }
+                }
+              }
+            }
+          },
+          "EZINAUKPODU": {
+            "clans": {
+              "UMUHU": {
+                "villages": {
+                  "UBAHUOTI": {
+                    "kindreds": {}
+                  },
+                  "UMUEZELOBE": {
+                    "kindreds": {}
+                  },
+                  "UMUAGBAJEYI": {
+                    "kindreds": {}
+                  },
+                  "UMUEZEANA": {
+                    "kindreds": {}
+                  },
+                  "UMUDURUEKWE": {
+                    "kindreds": {}
+                  },
+                  "UMUANATOBU": {
+                    "kindreds": {}
+                  },
+                  "UHUOMACHA": {
+                    "kindreds": {}
+                  },
+                  "UHUAGU": {
+                    "kindreds": {}
+                  },
+                  "UMUDURU": {
+                    "kindreds": {}
+                  },
+                  "UMUEZEOLUJI": {
+                    "kindreds": {}
+                  },
+                  "UMUANYABUIKE": {
+                    "kindreds": {}
+                  },
+                  "UMUABIAEME": {
+                    "kindreds": {}
+                  }
+                }
+              },
+              "UBAHU-EZIKE": {
+                "villages": {
+                  "UBAHU-EZIKE": {
+                    "kindreds": {
+                      "UMUEZIKE": [
+                        "UMUOKENWA",
+                        "UMUOKALU",
+                        "UMUEMEKEKWUO",
+                        "UMUECHEFU"
+                      ],
+                      "UMUESIKAM": [
+                        "EZIKEAGHAGWO",
+                        "UMUENW0R0M",
+                        "EMEGWAMMUO",
+                        "UMUANYAOHA"
+                      ],
+                      "UMUEZENWUNE": [
+                        "UMUOKEREKE",
+                        "UMUOHANUBA"
+                      ],
+                      "UMUEZIE": [
+                        "UMUEZIE"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "IHITEA BU IHITE": {
+        "obis": {
+          "UBAHU-EZE": {
+            "clans": {
+              "UBAHU-EZE": {
+                "villages": {
+                  "UBAHU-EZE": {
+                    "kindreds": {
+                      "UMUOMA": [
+                        "UMUOMA"
+                      ],
+                      "UHUOKWE": [
+                        "UHUOKWE"
+                      ],
+                      "UBAHU-OGWUGWU": [
+                        "UBAHU-OGWUGWU"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "UBAHUMONUM": {
+            "clans": {
+              "UBAHUMONUM": {
+                "villages": {
+                  "EZIMBARA": {
+                    "kindreds": {
+                      "UMUOHA": [
+                        "UMU-EZEAZUBUIKE",
+                        "UMU-NKAMEME",
+                        "UMU-AKUSORONWA",
+                        "UMU-ANYAMELE",
+                        "UMU-ONYEJIFORONWA",
+                        "UMU-NWAZUMAHU"
+                      ],
+                      "UMUEZEAGWUTE": [
+                        "UMU-ULASI /OKOROLOBE",
+                        "UMU-IYIEGBU",
+                        "UMU-EZEANA AWUGOSI",
+                        "UMU-OHUSI"
+                      ],
+                      "UMUEZEANOFOR": [
+                        "UMU-EZEUBO",
+                        "UMU-OHABU",
+                        "UMU-UMUAHANWA"
+                      ],
+                      "UMUEZECHIMA": [
+                        "OKPARA-ODOGWU",
+                        "UMU-IHEJIANYA",
+                        "UMU-EZEILOGU",
+                        "UMU-EZEONYEKA"
+                      ],
+                      "UMUEZEONA": [
+                        "UMU-ULASIKA",
+                        "UMU-EZEDIOGU",
+                        "UMU- EZEOCHA",
+                        "ODIBA"
+                      ]
+                    }
+                  },
+                  "UMUEZIM": {
+                    "kindreds": {
+                      "NDIEZEANA (MMEDORO)": [
+                        "UMU-EZITOGU",
+                        "UMU-OKORAFOR",
+                        "UMU-EKWUSIM"
+                      ],
+                      "UMUEZEANEKWU": [
+                        "UMU-EZEANAEKWU"
+                      ],
+                      "UMUDARAUZU": [
+                        "UMU-EZEADIM",
+                        "UMU-OKPARAMIZU"
+                      ],
+                      "UMUAGU": [
+                        "UMU-ANYADIKE",
+                        "UMU-EZECHUKWU",
+                        "UMU-OKPOK0",
+                        "UMU-OMENU",
+                        "UMU-EZEJIAKU",
+                        "UMU-NWORIE"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "ISIEKE/UBAHU-UDARA": {
+            "clans": {
+              "ISIEKE": {
+                "villages": {
+                  "ISIEKE": {
+                    "kindreds": {
+                      "EZENGU": [
+                        "UMUNTADO",
+                        "DUKUIHIEMEKE",
+                        "UMUDEOHIMILI"
+                      ],
+                      "NDUKAIHIM": [
+                        "UMUNWAONU",
+                        "ORJI",
+                        "UMUDIKE OKONKWO"
+                      ],
+                      "UMUNAKA": [
+                        "UMUNTADO",
+                        "UMUNAONO",
+                        "UMUEZEREIWU"
+                      ],
+                      "UMUDURU": [
+                        "DURUNZOMIWU",
+                        "UMUDIMBAJI"
+                      ],
+                      "AMAORIE": [
+                        "AMAORIE"
+                      ]
+                    }
+                  }
+                }
+              },
+              "UBAHU-UDARA": {
+                "villages": {
+                  "UBAHU-UDARA": {
+                    "kindreds": {
+                      "UMU-MOGO": [
+                        "UMUOGBUEHI",
+                        "UMUNZURUMIKE"
+                      ],
+                      "UMUOJIGWE": [
+                        "UMUONYEGARAEME",
+                        "UMUNKAAGBA"
+                      ],
+                      "UMUDURUNONYE": [
+                        "UMU-UGOCHUKWU",
+                        "UMUADINNU"
+                      ],
+                      "UMUEZEAHIZE": [
+                        "UMUABUBOGWU",
+                        "UMUOGBUAGU"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "UHU0B0 NA UHUOWELLE": {
+        "obis": {
+          "UHUOWELLE": {
+            "clans": {
+              "OGHALAEGBU": {
+                "villages": {
+                  "UMUEZEJIAKU": {
+                    "kindreds": {
+                      "UMUEZERIOBI": [
+                        "UMUMADUNATO",
+                        "UMUOBIRIUNO",
+                        "UMUORUM",
+                        "UMUIDIEKEBUO"
+                      ],
+                      "UMUEZEIHEBIRI": [
+                        "UMUEZENEBIGHI",
+                        "UMUOBI",
+                        "UMUANAMASONYE"
+                      ]
+                    }
+                  },
+                  "UMUNAFOROJORO": {
+                    "kindreds": {
+                      "UMUOKPARAIZU": [
+                        "UMUOKPAIZU"
+                      ],
+                      "UMUOKARAIWUANYI": [
+                        "UMUOKARAIWUANYI"
+                      ]
+                    }
+                  },
+                  "UMUOKPARAEZIKE": {
+                    "kindreds": {
+                      "UMUJUOKWU": [
+                        "UMUJIOKWU"
+                      ],
+                      "UMUOKPARADORO": [
+                        "UMUOKPARADORO"
+                      ],
+                      "UMUMMIRIKA": [
+                        "UMUMMIRIKA"
+                      ]
+                    }
+                  },
+                  "UMUEZEANA": {
+                    "kindreds": {
+                      "UMUEMEKWURU": [
+                        "UMUGOCHUKWU",
+                        "UMUOSUCHUKWU",
+                        "UMUOSUAGWU",
+                        "UMUDEZE",
+                        "UMU-CHUKWUNYEREOKE"
+                      ],
+                      "UMUNWOJI": [
+                        "UMUNWOJI"
+                      ],
+                      "UMU-ABANIHI": [
+                        "UMU-NWABUOGARANYA",
+                        "UMJ-CHUKWUEMEKA"
+                      ],
+                      "UMU-IHI": [
+                        "UMU-IHI"
+                      ],
+                      "UMU-AGBAGOSIM": [
+                        "UMU-AGBAGOSIM"
+                      ],
+                      "NWOKEREOBI/IKEGWUONU": [
+                        "UMU-IKENWOKE",
+                        "UMU-MNEGWA"
+                      ]
+                    }
+                  },
+                  "UMUODUMONU": {
+                    "kindreds": {
+                      "UMUNWOJI": [
+                        "UMUNWOJI"
+                      ]
+                    }
+                  }
+                }
+              },
+              "UMUOGU": {
+                "villages": {
+                  "UMUOGU": {
+                    "kindreds": {
+                      "UMUAKWA": [
+                        "UMUAKWA"
+                      ],
+                      "UMUIGWE": [
+                        "UMUOKPARADIBE",
+                        "UMUECHEFU"
+                      ],
+                      "UMUNZERENDU": [
+                        "UMUNZERENDU"
+                      ],
+                      "UMUANUM": [
+                        "EZEANA/IHEANAEKWE",
+                        "ETITOGU",
+                        "UMUNDOGULU"
+                      ],
+                      "UMUIKE": [
+                        "UMUIKE"
+                      ],
+                      "UMUEZEANAGU": [
+                        "MKPIKAOGU",
+                        "UMULENZE"
+                      ],
+                      "UMUOKPARASOAGU": [
+                        "UMUAKPARASOAGU",
+                        "UMU-MBAJI",
+                        "UMU-IDI-OWELLE",
+                        "UMUODOGWU UDENWAYI",
+                        "UMU OKEREKE"
+                      ],
+                      "UMU-ILE-KPOROCHU": [
+                        "UMU-UMUKPOROCHU"
+                      ],
+                      "AWOBI ODOGWU": [
+                        "AWOBI ODOGWU"
+                      ]
+                    }
+                  }
+                }
+              },
+              "UMUZU": {
+                "villages": {
+                  "UMUZU-OKIJA": {
+                    "kindreds": {}
+                  }
+                }
+              }
+            }
+          },
+          "UMUATUEGWU/UHUDIM/OHUKABIA": {
+            "clans": {
+              "UMUATUEGWU": {
+                "villages": {
+                  "NZERE": {
+                    "kindreds": {
+                      "EZIKEOKWUNARA": [
+                        "IWENWANNE",
+                        "ANYANMANE",
+                        "UKWAMEBENA",
+                        "UMUEZENAMBA"
+                      ],
+                      "UMUIDINWADIUGWU": [
+                        "EZIKEONUKPOSI",
+                        "UDODIMMA",
+                        "EKWULUETITI",
+                        "UMUILONWAJI",
+                        "UMUEZEOKORONKWO"
+                      ],
+                      "EZIKEGESI": [
+                        "EZIKEGESI"
+                      ],
+                      "EZIKEODINAKA": [
+                        "UMUOBIAJULU"
+                      ]
+                    }
+                  },
+                  "EZEOBI": {
+                    "kindreds": {
+                      "EZIKEODINAKA": [
+                        "UMUOBIEFUNA",
+                        "UMUANYAOKU",
+                        "UMUEZIKEAGWO",
+                        "UMUEZEIHEDUM"
+                      ],
+                      "UMUEZELIMPI": [
+                        "UMUONYECHE",
+                        "UMUIGILIGIAKU",
+                        "UMUMBAJIAKU",
+                        "UMUIHEBUNIKE"
+                      ],
+                      "UMUEZEAHUNO": [
+                        "EZIKE",
+                        "ANURUGO"
+                      ],
+                      "UMUEZEUKU": [
+                        "UMUZOBI",
+                        "IUMUOBODOAGWU"
+                      ],
+                      "EZIKEPAJI": [
+                        "AKUBA",
+                        "OKUOHIA"
+                      ]
+                    }
+                  }
+                }
+              },
+              "UHUDIM": {
+                "villages": {
+                  "UHUDIM": {
+                    "kindreds": {
+                      "DIM MUOGO": [
+                        "IHIESOGBO",
+                        "ODINAKA"
+                      ],
+                      "DIM ONYEBIUKWU": [
+                        "UMUOKOYE",
+                        "UMUMADUEKE"
+                      ],
+                      "DIM IKENYEREM": [
+                        "UMUONUKWURU"
+                      ],
+                      "DIM CHIJIUBA": [
+                        "UMUIHEKAIGBO",
+                        "UMUOKEMADU"
+                      ],
+                      "DIM EZEUTOGU": [
+                        "UMUOBIDIONE",
+                        "UMUCHUKWUBE"
+                      ]
+                    }
+                  }
+                }
+              },
+              "0HUKABIA": {
+                "villages": {
+                  "0HUKABIA": {
+                    "kindreds": {
+                      "UMUAJURUONWU": [
+                        "UMUOGUNEDE",
+                        "UMUOHANEHI",
+                        "UMUANYAMENE",
+                        "UMUOBIMEJE"
+                      ],
+                      "UMUEZIKE OKEHI": [
+                        "UMUNNOSIKE",
+                        "UMUEZEONU",
+                        "UMUANASIUDU"
+                      ],
+                      "UMUOHUBUIKE": [
+                        "UMUEZERIBE",
+                        "UMUIGBOKA ENYI",
+                        "UMUONUZURUIKE"
+                      ],
+                      "UMUNNADI": [
+                        "UMUEWULIKE",
+                        "UMUORJIAKOR"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "OFOR NA NGWU": {
+            "clans": {
+              "UMUOFOR AKOBA": {
+                "villages": {
+                  "UMUOFOR AKOBA": {
+                    "kindreds": {
+                      "UMUOKPALA": [
+                        "UMUEZEAFURU",
+                        "UMUMBAJI"
+                      ],
+                      "EZIKE IKUEGBU": [
+                        "UMUEZIKE OWELLE",
+                        "UMUEZENWA",
+                        "UMUEZENNABI"
+                      ]
+                    }
+                  }
+                }
+              },
+              "UHUNGWU": {
+                "villages": {
+                  "UHUNGWU": {
+                    "kindreds": {
+                      "UMUILONWA": [
+                        "UMUANASIGWE"
+                      ],
+                      "UMUILONWAu": [
+                        "UMUOKPORI"
+                      ],
+                      "UMUONYEBUIKWU": [
+                        "UMUONYEBUIKWU"
+                      ],
+                      "UMUIDIOKWU": [
+                        "UMUONWUBUARA",
+                        "UMUAZUBUIKE"
+                      ],
+                      "UMUEZEMMA": [
+                        "UMUOBIAMAUKWU",
+                        "UMUONWUEME",
+                        "UMUMMADUNATU",
+                        "UMUMMADUBUIYIM"
+                      ],
+                      "NDIEZIKE": [
+                        "NDIEZIKE"
+                      ],
+                      "UMUUBAKANWA": [
+                        "UMUUBAKANWA"
+                      ]
+                    }
+                  }
+                }
+              },
+              "EZEWULUM": {
+                "villages": {
+                  "EZEWULUM": {
+                    "kindreds": {
+                      "UMU NDIODIRI": [
+                        "UMU NDIODIRI"
+                      ],
+                      "UMU OBANAGWU": [
+                        "UMU OBANAGWU"
+                      ],
+                      "UMUEZE ABORO": [
+                        "UMU EZIKEAGU",
+                        "UMU UMERENWA",
+                        "UMUEZE OKORONKWO"
+                      ],
+                      "UMU EZEWINPI": [
+                        "UMU EZEWINPI"
+                      ],
+                      "UMU NCHAARU": [
+                        "UMU NCHAARU"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "ORAIFITE": {
+    "quarters": {
+      "UNODU": {
+        "obis": {
+          "ISINGWU": {
+            "clans": {
+              "UMUENWE": {
+                "villages": {}
+              },
+              "UMUODUM": {
+                "villages": {
+                  "ODUM": {
+                    "kindreds": {
+                      "UMUAKAMUCHU": []
+                    }
+                  }
+                }
+              },
+              "UMUEKWUANYA": {
+                "villages": {}
+              },
+              "UMUETITI": {
+                "villages": {}
+              }
+            }
+          },
+          "IBOLO": {
+            "clans": {
+              "UGWUEZEAMA": {
+                "villages": {}
+              },
+              "OKPUNO": {
+                "villages": {}
+              },
+              "OGBO-OPI": {
+                "villages": {}
+              }
+            }
+          },
+          "UMUEZOPI": {
+            "clans": {}
+          }
+        }
+      },
+      "IFITE": {
+        "obis": {
+          "AWO": {
+            "clans": {}
+          },
+          "URUDUNU": {
+            "clans": {}
+          },
+          "UMUEZEAKWA": {
+            "clans": {}
+          },
+          "UMUNAKWA": {
+            "clans": {}
+          },
+          "UMUONYEAKA": {
+            "clans": {}
+          },
+          "AMAKOFA": {
+            "clans": {}
+          }
+        }
+      }
+    }
+  },
+  "OZUBULU": {
+    "quarters": {}
+  },
+  "AKWAIHEDI": {
+    "quarters": {}
+  },
+  "AMICHI": {
+    "quarters": {}
+  },
+  "AZUIGBO": {
+    "quarters": {}
+  },
+  "EBENATO OZULOGU": {
+    "quarters": {}
+  },
+  "EKWULUMILI": {
+    "quarters": {}
+  },
+  "OSUMENYI": {
+    "quarters": {}
+  },
+  "UKPOR": {
+    "quarters": {}
+  },
+  "UNUBI": {
+    "quarters": {}
+  },
+  "UTUH": {
+    "quarters": {}
+  },
+  "NNEWI": {
+    "quarters": {}
+  },
+  "AWGBU": {
+    "quarters": {}
+  },
+  "AMAETITI": {
+    "quarters": {}
+  },
+  "AMAOKPALA": {
+    "quarters": {}
+  },
+  "AWA": {
+    "quarters": {}
+  },
+  "NDIOKPALAEZE": {
+    "quarters": {}
+  },
+  "NDIOKOLO": {
+    "quarters": {}
+  },
+  "NDIOKPALAEKE": {
+    "quarters": {}
+  },
+  "OMOGHU": {
+    "quarters": {}
+  },
+  "OKO": {
+    "quarters": {}
+  },
+  "NDIUKWUENU": {
+    "quarters": {}
+  },
+  "NDIKELIONWU": {
+    "quarters": {}
+  },
+  "OKPEZE": {
+    "quarters": {}
+  },
+  "AJALLI": {
+    "quarters": {}
+  },
+  "UFUMA": {
+    "quarters": {}
+  },
+  "NDIOWU": {
+    "quarters": {}
+  },
+  "NANKA": {
+    "quarters": {}
+  },
+  "UMUNZE": {
+    "quarters": {}
+  },
+  "AKPUJIUGO (AKPU)": {
+    "quarters": {}
+  },
+  "UMUOMAKU": {
+    "quarters": {}
+  },
+  "EZIAGU": {
+    "quarters": {}
+  },
+  "EZIRA": {
+    "quarters": {}
+  },
+  "NAWFIA": {
+    "quarters": {}
+  },
+  "OGBOJI": {
+    "quarters": {}
+  },
+  "OGBUNKA": {
+    "quarters": {}
+  },
+  "OWERRE EZUKALA": {
+    "quarters": {}
+  },
+  "ISULO": {
+    "quarters": {}
+  },
+  "IHITE": {
+    "quarters": {}
+  },
+  "UMUCHUKWU": {
+    "quarters": {}
+  },
+  "AGBUDU": {
+    "quarters": {}
+  },
+  "ENUGU-UMUONYIA": {
+    "quarters": {}
+  },
+  "AWBA": {
+    "quarters": {}
+  },
+  "UGBENE": {
+    "quarters": {}
+  },
+  "EBENEBE": {
+    "quarters": {}
+  },
+  "ACHALLA": {
+    "quarters": {}
+  },
+  "URUM": {
+    "quarters": {}
+  },
+  "AMANSEA": {
+    "quarters": {}
+  },
+  "AMANUKE": {
+    "quarters": {}
+  },
+  "ISU ANIOCHA": {
+    "quarters": {}
+  },
+  "MGBAKWU": {
+    "quarters": {}
+  },
+  "UGBENU": {
+    "quarters": {}
+  },
+  "AMAWBIA": {
+    "quarters": {}
+  },
+  "AWKA": {
+    "quarters": {}
+  },
+  "EZINATO": {
+    "quarters": {}
+  },
+  "ISIAGU": {
+    "quarters": {}
+  },
+  "MBAUKWU": {
+    "quarters": {}
+  },
+  "NIBO": {
+    "quarters": {}
+  },
+  "OKPUNO": {
+    "quarters": {}
+  },
+  "UMUAWULU": {
+    "quarters": {}
+  },
+  "NISE": {
+    "quarters": {}
+  },
+  "ABAGANA": {
+    "quarters": {}
+  },
+  "ABBA": {
+    "quarters": {}
+  },
+  "ENUGWU AGIDI": {
+    "quarters": {}
+  },
+  "ENUGWU UKWU": {
+    "quarters": {}
+  },
+  "AGULU": {
+    "quarters": {
+      "IFITE-ENU": {
+        "obis": {
+          "AMATUTU": {
+            "clans": {
+              "UMUDIMAKASI": {
+                "villages": {}
+              },
+              "ENUGWU": {
+                "villages": {}
+              },
+              "UMUEZOLI": {
+                "villages": {}
+              },
+              "AKAEZI": {
+                "villages": {}
+              },
+              "UMUGWO": {
+                "villages": {
+                  "UMUOGBUEFI": {
+                    "kindreds": {
+                      "MUOKA": [],
+                      "ODENYABA": [],
+                      "EZEAGHA": [],
+                      "UGWO": [],
+                      "CHIJINDU": []
+                    }
+                  },
+                  "UMUEME": {
+                    "kindreds": {}
+                  },
+                  "UMUOKPALA": {
+                    "kindreds": {}
+                  }
+                }
+              }
+            }
+          },
+          "OKPU-IFITE": {
+            "clans": {}
+          },
+          "UMUBIALA": {
+            "clans": {}
+          },
+          "NKITAKU": {
+            "clans": {}
+          },
+          "UMUOWELLE": {
+            "clans": {}
+          }
+        }
+      }
+    }
+  },
+  "AGULUZIGBO": {
+    "quarters": {}
+  },
+  "ADAZI ANI": {
+    "quarters": {}
+  },
+  "ADAZI ENU": {
+    "quarters": {}
+  },
+  "ADAZI NNUKWU": {
+    "quarters": {}
+  },
+  "AKWAEZE": {
+    "quarters": {}
+  },
+  "ICHIDA": {
+    "quarters": {}
+  },
+  "NENI": {
+    "quarters": {}
+  },
+  "NRI": {
+    "quarters": {}
+  },
+  "OBELEDU": {
+    "quarters": {}
+  },
+  "AKWA": {
+    "quarters": {}
+  },
+  "IFITEDUNU": {
+    "quarters": {}
+  },
+  "NAWGU": {
+    "quarters": {}
+  },
+  "UKPO": {
+    "quarters": {}
+  },
+  "UKWULU": {
+    "quarters": {}
+  },
+  "UMUDIOKA": {
+    "quarters": {}
+  },
+  "UMUNACHI": {
+    "quarters": {}
+  },
+  "ABACHA": {
+    "quarters": {}
+  },
+  "ABATETE": {
+    "quarters": {}
+  },
+  "EZIOWELLE": {
+    "quarters": {}
+  },
+  "IDEANI": {
+    "quarters": {}
+  },
+  "NKPOR": {
+    "quarters": {}
+  },
+  "OBOSI": {
+    "quarters": {}
+  },
+  "OGIDI": {
+    "quarters": {}
+  },
+  "ORAUKWU": {
+    "quarters": {}
+  },
+  "UKE": {
+    "quarters": {}
+  },
+  "UMUOJI": {
+    "quarters": {}
+  },
+  "AKWA UKWU": {
+    "quarters": {}
+  },
+  "ALOR": {
+    "quarters": {}
+  },
+  "AWKA ETITI": {
+    "quarters": {}
+  },
+  "NNOBI": {
+    "quarters": {}
+  },
+  "NNOKWA": {
+    "quarters": {}
+  },
+  "OBA": {
+    "quarters": {}
+  },
+  "OJOTO": {
+    "quarters": {}
+  },
+  "UMUERI": {
+    "quarters": {}
+  },
+  "AGULERI": {
+    "quarters": {}
+  },
+  "OTUOCHA": {
+    "quarters": {}
+  },
+  "ENUGWU OUT AGULU": {
+    "quarters": {}
+  },
+  "NANDO": {
+    "quarters": {}
+  },
+  "NSUGBE": {
+    "quarters": {}
+  },
+  "IGBARIAM": {
+    "quarters": {}
+  },
+  "UMUOBA-ANAM": {
+    "quarters": {}
+  },
+  "UMUEZEANAM": {
+    "quarters": {}
+  },
+  "UMUOBA-ABEGBU ANAM": {
+    "quarters": {}
+  },
+  "UMUENWELUM ANAM": {
+    "quarters": {}
+  },
+  "OROMA ETITI": {
+    "quarters": {}
+  },
+  "OLUMBANASA ODE": {
+    "quarters": {}
+  },
+  "INOMA AKATOR": {
+    "quarters": {}
+  },
+  "OMOR": {
+    "quarters": {}
+  },
+  "ANAKU": {
+    "quarters": {
+      "UMURIA": {
+        "obis": {
+          "AKPAA": {
+            "clans": {}
+          },
+          "UMUERECHI": {
+            "clans": {}
+          },
+          "UMUAGU": {
+            "clans": {}
+          },
+          "UMURIANA": {
+            "clans": {}
+          },
+          "UMURIENU": {
+            "clans": {}
+          }
+        }
+      },
+      "IKENGA": {
+        "obis": {
+          "ATAVA": {
+            "clans": {
+              "IRUOWELLE": {
+                "villages": {}
+              },
+              "ISIAKPUME": {
+                "villages": {}
+              },
+              "OPUATAVA": {
+                "villages": {
+                  "UMUOKPALA": {
+                    "kindreds": {
+                      "UMUCHETI": [],
+                      "UMU-UKOM": []
+                    }
+                  },
+                  "DACHIMELU": {
+                    "kindreds": {}
+                  }
+                }
+              }
+            }
+          },
+          "OBUKWU": {
+            "clans": {}
+          }
+        }
+      },
+      "UMUEREAGU": {
+        "obis": {
+          "AKPI": {
+            "clans": {}
+          },
+          "UMUOTOBO": {
+            "clans": {}
+          },
+          "UMUOWA": {
+            "clans": {}
+          },
+          "ISIOKWE": {
+            "clans": {}
+          },
+          "UMUOKA": {
+            "clans": {}
+          },
+          "UMUEREKWELAGU": {
+            "clans": {}
+          }
+        }
+      }
+    }
+  },
+  "IFITE OGWARI": {
+    "quarters": {}
+  },
+  "IGBAKWU": {
+    "quarters": {}
+  },
+  "OMASI": {
+    "quarters": {}
+  },
+  "UMERUM": {
+    "quarters": {}
+  },
+  "UMUEJE": {
+    "quarters": {}
+  },
+  "UMUMBO": {
+    "quarters": {}
+  },
+  "AWKUZU": {
+    "quarters": {}
+  },
+  "NKWELLE EZUNAKA": {
+    "quarters": {}
+  },
+  "NTEJE": {
+    "quarters": {}
+  },
+  "OGBUNIKE": {
+    "quarters": {}
+  },
+  "UMUNYA": {
+    "quarters": {}
+  },
+  "AKILI OZIZOR": {
+    "quarters": {}
+  },
+  "AKILI OGIDI": {
+    "quarters": {}
+  },
+  "ABEAGWE": {
+    "quarters": {}
+  },
+  "ATANI": {
+    "quarters": {}
+  },
+  "OHITA": {
+    "quarters": {}
+  },
+  "ODEKPE": {
+    "quarters": {}
+  },
+  "OCHUCHE UMUODU": {
+    "quarters": {}
+  },
+  "OGBAKUBA": {
+    "quarters": {}
+  },
+  "AMIYI": {
+    "quarters": {}
+  },
+  "OGWUIKPELE": {
+    "quarters": {}
+  },
+  "OGWUANIOCHA": {
+    "quarters": {}
+  },
+  "OKPOKO": {
+    "quarters": {}
+  },
+  "OSSOMALA": {
+    "quarters": {}
+  },
+  "UMUNANKWO": {
+    "quarters": {}
+  },
+  "MPUTU": {
+    "quarters": {}
+  },
+  "ONITSHA": {
+    "quarters": {}
+  },
+  "FEGGE": {
+    "quarters": {}
+  },
+  "AWADA": {
+    "quarters": {}
+  },
+  "ODOAKPU": {
+    "quarters": {}
+  },
+  "WOLIWO": {
+    "quarters": {}
+  },
+  "UPPER IWEKA": {
+    "quarters": {}
+  },
+  "OCHANJA": {
+    "quarters": {}
+  },
+  "NIKE-UNO": {
+    "quarters": {}
+  },
+  "UGWOGO": {
+    "quarters": {}
+  },
+  "MBULI NJODO": {
+    "quarters": {}
+  },
+  "AGBOGAZI": {
+    "quarters": {}
+  },
+  "AKO": {
+    "quarters": {}
+  },
+  "AKPOGA": {
+    "quarters": {}
+  },
+  "ALULU": {
+    "quarters": {}
+  },
+  "AMOJI": {
+    "quarters": {}
+  },
+  "AMOKPO": {
+    "quarters": {}
+  },
+  "AZAMA": {
+    "quarters": {}
+  },
+  "EDEM": {
+    "quarters": {}
+  },
+  "EFFOKWE": {
+    "quarters": {}
+  },
+  "EMENE": {
+    "quarters": {}
+  },
+  "IBEAGWA": {
+    "quarters": {}
+  },
+  "IJE-AMAOWELLE": {
+    "quarters": {}
+  },
+  "NBULUNJODO": {
+    "quarters": {}
+  },
+  "NCHETANCHE": {
+    "quarters": {}
+  },
+  "NEKE ODENIGBO": {
+    "quarters": {}
+  },
+  "NEKEUNO": {
+    "quarters": {}
+  },
+  "NGWUOMU": {
+    "quarters": {}
+  },
+  "NKWUBO": {
+    "quarters": {}
+  },
+  "NOKPA": {
+    "quarters": {}
+  },
+  "OBINAGU": {
+    "quarters": {}
+  },
+  "ONUOGBA": {
+    "quarters": {}
+  },
+  "ONYOHU": {
+    "quarters": {}
+  },
+  "AMAIGBO LANE": {
+    "quarters": {}
+  },
+  "ONUATO": {
+    "quarters": {}
+  },
+  "UMUNEVO": {
+    "quarters": {}
+  },
+  "ENUGWU-NGWO": {
+    "quarters": {}
+  },
+  "IHENWUZI": {
+    "quarters": {}
+  },
+  "AKWUKE": {
+    "quarters": {}
+  },
+  "AMECHI": {
+    "quarters": {}
+  },
+  "UGWUAJI": {
+    "quarters": {}
+  },
+  "OBEAGU": {
+    "quarters": {}
+  },
+  "AWKUNANAW": {
+    "quarters": {}
+  },
+  "AMECHI-UWANI": {
+    "quarters": {}
+  },
+  "AMAGUNZE": {
+    "quarters": {}
+  },
+  "NARA UNATEZE": {
+    "quarters": {}
+  },
+  "NOMEH UNATEZE": {
+    "quarters": {}
+  },
+  "AKPAWFU": {
+    "quarters": {}
+  },
+  "UGBAWKA": {
+    "quarters": {}
+  },
+  "NKEREFI": {
+    "quarters": {}
+  },
+  "MBURUBU": {
+    "quarters": {}
+  },
+  "OWO": {
+    "quarters": {}
+  },
+  "UBAHU": {
+    "quarters": {}
+  },
+  "AMAECHI IDODO": {
+    "quarters": {}
+  },
+  "AMA NKANU": {
+    "quarters": {}
+  },
+  "ORUKU": {
+    "quarters": {}
+  },
+  "AGBANI": {
+    "quarters": {}
+  },
+  "AKPUGO": {
+    "quarters": {}
+  },
+  "AKEGBE UGWU": {
+    "quarters": {}
+  },
+  "OBUOFFIA": {
+    "quarters": {}
+  },
+  "UMUEZE": {
+    "quarters": {}
+  },
+  "OBE": {
+    "quarters": {}
+  },
+  "AMODU": {
+    "quarters": {}
+  },
+  "OZALLA": {
+    "quarters": {}
+  },
+  "AMURRI": {
+    "quarters": {}
+  },
+  "ODUME": {
+    "quarters": {}
+  },
+  "NENWE": {
+    "quarters": {}
+  },
+  "NDEABO": {
+    "quarters": {}
+  },
+  "MPU": {
+    "quarters": {}
+  },
+  "OKPANKU": {
+    "quarters": {}
+  },
+  "AGBOGUGU": {
+    "quarters": {}
+  },
+  "ISU-AWA": {
+    "quarters": {}
+  },
+  "ITUKU": {
+    "quarters": {}
+  },
+  "IHE": {
+    "quarters": {}
+  },
+  "OGBAKU": {
+    "quarters": {}
+  },
+  "OWELLI": {
+    "quarters": {}
+  },
+  "OGUGU": {
+    "quarters": {}
+  },
+  "AMOLI": {
+    "quarters": {}
+  },
+  "MMAKU": {
+    "quarters": {}
+  },
+  "UGBO": {
+    "quarters": {}
+  },
+  "MGBIDI": {
+    "quarters": {}
+  },
+  "UGWUEME": {
+    "quarters": {}
+  },
+  "NKWE": {
+    "quarters": {}
+  },
+  "EZERE": {
+    "quarters": {}
+  },
+  "AWGU": {
+    "quarters": {}
+  },
+  "NENWENTA": {
+    "quarters": {}
+  },
+  "AWGUNTA": {
+    "quarters": {}
+  },
+  "MGBOWO": {
+    "quarters": {}
+  },
+  "INYI": {
+    "quarters": {}
+  },
+  "ACHI AGỤ": {
+    "quarters": {}
+  },
+  "ACHI ỤLỌ": {
+    "quarters": {}
+  },
+  "AWLAW": {
+    "quarters": {}
+  },
+  "AKPUGOEZE": {
+    "quarters": {}
+  },
+  "OJI-RIVER URBAN": {
+    "quarters": {}
+  },
+  "UGUWOBA": {
+    "quarters": {}
+  },
+  "AMANSI-ODO": {
+    "quarters": {}
+  },
+  "UMUMBA-NDIAGU": {
+    "quarters": {}
+  },
+  "NEKE": {
+    "quarters": {}
+  },
+  "OBUNOFIA-NDIUNO": {
+    "quarters": {}
+  },
+  "AGUOBU-OWA": {
+    "quarters": {}
+  },
+  "AGBA-UMANA": {
+    "quarters": {}
+  },
+  "AMAKWO-OGHE": {
+    "quarters": {}
+  },
+  "ABIA": {
+    "quarters": {}
+  },
+  "ABOR": {
+    "quarters": {}
+  },
+  "AFFA": {
+    "quarters": {}
+  },
+  "AKPAKWUME": {
+    "quarters": {}
+  },
+  "AMOKWE": {
+    "quarters": {}
+  },
+  "EBE": {
+    "quarters": {}
+  },
+  "EGEDE": {
+    "quarters": {}
+  },
+  "EKE": {
+    "quarters": {}
+  },
+  "NACHI": {
+    "quarters": {}
+  },
+  "NGWO": {
+    "quarters": {}
+  },
+  "NSUDE": {
+    "quarters": {}
+  },
+  "NZUE": {
+    "quarters": {}
+  },
+  "OBIOMA": {
+    "quarters": {}
+  },
+  "OGHU": {
+    "quarters": {}
+  },
+  "OKPATU": {
+    "quarters": {}
+  },
+  "OWHUM": {
+    "quarters": {}
+  },
+  "AMAETI": {
+    "quarters": {}
+  },
+  "AWAGU": {
+    "quarters": {}
+  },
+  "ENUGU-ABIA": {
+    "quarters": {}
+  },
+  "ISEKE": {
+    "quarters": {}
+  },
+  "UMUMA": {
+    "quarters": {}
+  },
+  "AMAEZIKE": {
+    "quarters": {}
+  },
+  "AMUKWU": {
+    "quarters": {}
+  },
+  "DINAIGWEZE": {
+    "quarters": {}
+  },
+  "DINNEOBE": {
+    "quarters": {}
+  },
+  "UBIAKPO": {
+    "quarters": {}
+  },
+  "UGWUNANI": {
+    "quarters": {}
+  },
+  "UMUAVULU": {
+    "quarters": {}
+  },
+  "ENUGU-EZIKE": {
+    "quarters": {}
+  },
+  "ETTEH": {
+    "quarters": {}
+  },
+  "AMALLA": {
+    "quarters": {}
+  },
+  "OBOLLO-AFOR": {
+    "quarters": {}
+  },
+  "IHEAKPU": {
+    "quarters": {}
+  },
+  "ISI-ENU": {
+    "quarters": {}
+  },
+  "AJOROGWU": {
+    "quarters": {}
+  },
+  "UDUNEDEM": {
+    "quarters": {}
+  },
+  "ORBA": {
+    "quarters": {}
+  },
+  "UMU EGALI": {
+    "quarters": {}
+  },
+  "AKU": {
+    "quarters": {}
+  },
+  "DIOGBE": {
+    "quarters": {}
+  },
+  "EKWEGBE": {
+    "quarters": {}
+  },
+  "IDOHA": {
+    "quarters": {}
+  },
+  "IKOLO": {
+    "quarters": {}
+  },
+  "OHODO": {
+    "quarters": {}
+  },
+  "UKEHE": {
+    "quarters": {}
+  },
+  "UMUNA": {
+    "quarters": {}
+  },
+  "UMUNKO": {
+    "quarters": {}
+  },
+  "UKOPI": {
+    "quarters": {}
+  },
+  "UDUEME": {
+    "quarters": {}
+  },
+  "ONYOHOR": {
+    "quarters": {}
+  },
+  "OCHIMA": {
+    "quarters": {}
+  },
+  "OHEBE DIM": {
+    "quarters": {}
+  },
+  "EZIAMA-URATA": {
+    "quarters": {}
+  },
+  "OGBOR": {
+    "quarters": {}
+  },
+  "UMUOLA-EGBELU": {
+    "quarters": {}
+  },
+  "URATTA": {
+    "quarters": {}
+  },
+  "OSUSU": {
+    "quarters": {}
+  },
+  "UMUOKOJI": {
+    "quarters": {}
+  },
+  "UMUOLA-OKPULOR": {
+    "quarters": {}
+  },
+  "AKOLI": {
+    "quarters": {}
+  },
+  "AMANFURU": {
+    "quarters": {}
+  },
+  "ASAEME": {
+    "quarters": {}
+  },
+  "IHIEORJI": {
+    "quarters": {}
+  },
+  "NDIEGORO": {
+    "quarters": {}
+  },
+  "NNETU": {
+    "quarters": {}
+  },
+  "OHABIAM": {
+    "quarters": {}
+  },
+  "UMUAGBAI": {
+    "quarters": {}
+  },
+  "UMUMBA": {
+    "quarters": {}
+  },
+  "UMUOSI": {
+    "quarters": {}
+  },
+  "ABAUKWU": {
+    "quarters": {}
+  },
+  "ARIARIA": {
+    "quarters": {}
+  },
+  "ASAOKPUJA": {
+    "quarters": {}
+  },
+  "EZIUKWU": {
+    "quarters": {}
+  },
+  "ALA-UKWU": {
+    "quarters": {}
+  },
+  "AZUMINI": {
+    "quarters": {}
+  },
+  "IBEME": {
+    "quarters": {}
+  },
+  "IKWUEKE": {
+    "quarters": {}
+  },
+  "IKWUO-RIEATOR": {
+    "quarters": {}
+  },
+  "NTIGHA-UZO": {
+    "quarters": {}
+  },
+  "OBOHIA": {
+    "quarters": {}
+  },
+  "UMUIGBUBE-ACHARA": {
+    "quarters": {}
+  },
+  "UMUIHU-EZE": {
+    "quarters": {}
+  },
+  "OHURU": {
+    "quarters": {}
+  },
+  "OKE IKPE": {
+    "quarters": {}
+  },
+  "OWAZA": {
+    "quarters": {}
+  },
+  "UMUONE": {
+    "quarters": {}
+  },
+  "UZUAKU": {
+    "quarters": {}
+  },
+  "UMUOKWOR": {
+    "quarters": {}
+  },
+  "UMUAHALA": {
+    "quarters": {}
+  },
+  "OBORHIA": {
+    "quarters": {}
+  },
+  "APARAZU": {
+    "quarters": {}
+  },
+  "AMAUKWU": {
+    "quarters": {}
+  },
+  "OZAR-UKWU": {
+    "quarters": {}
+  },
+  "OZAR WEST": {
+    "quarters": {}
+  },
+  "IPU-SOUTH": {
+    "quarters": {}
+  },
+  "IPU-EAST": {
+    "quarters": {}
+  },
+  "IPU-WEST": {
+    "quarters": {}
+  },
+  "ASA-SOUTH": {
+    "quarters": {}
+  },
+  "OBOKWE": {
+    "quarters": {}
+  },
+  "ASA-NORTH": {
+    "quarters": {}
+  },
+  "UMUAHIA": {
+    "quarters": {}
+  },
+  "UMUKABIA": {
+    "quarters": {}
+  },
+  "UMUAWA ALAOCHA": {
+    "quarters": {}
+  },
+  "UMUAGU": {
+    "quarters": {}
+  },
+  "UMUEKWULE": {
+    "quarters": {}
+  },
+  "IHITE UDE": {
+    "quarters": {}
+  },
+  "UMUDA-ISINGWA": {
+    "quarters": {}
+  },
+  "OHOKU": {
+    "quarters": {}
+  },
+  "ABIRIBA": {
+    "quarters": {}
+  },
+  "AGBAGWU": {
+    "quarters": {}
+  },
+  "AKANU": {
+    "quarters": {}
+  },
+  "AMABA": {
+    "quarters": {}
+  },
+  "AMAEKPU": {
+    "quarters": {}
+  },
+  "AMANGWU": {
+    "quarters": {}
+  },
+  "AMANTA": {
+    "quarters": {}
+  },
+  "AMOGUDU": {
+    "quarters": {}
+  },
+  "AMOKE": {
+    "quarters": {}
+  },
+  "AMUMA": {
+    "quarters": {}
+  },
+  "AMUNGU": {
+    "quarters": {}
+  },
+  "ASAGA": {
+    "quarters": {}
+  },
+  "EBEM": {
+    "quarters": {}
+  },
+  "ELU": {
+    "quarters": {}
+  },
+  "EZIAFOR": {
+    "quarters": {}
+  },
+  "IBINA (IHENTA)": {
+    "quarters": {}
+  },
+  "ISIUGWU": {
+    "quarters": {}
+  },
+  "NDE AMOGU": {
+    "quarters": {}
+  },
+  "NDE ANYAORIE": {
+    "quarters": {}
+  },
+  "NDE IBE": {
+    "quarters": {}
+  },
+  "NDE NKU": {
+    "quarters": {}
+  },
+  "NDE OKALA": {
+    "quarters": {}
+  },
+  "NDI-UDUMA-AWOKE": {
+    "quarters": {}
+  },
+  "NKWEBI": {
+    "quarters": {}
+  },
+  "OBORO": {
+    "quarters": {}
+  },
+  "OKAGWE": {
+    "quarters": {}
+  },
+  "OKON-AKU": {
+    "quarters": {}
+  },
+  "UFIELE": {
+    "quarters": {}
+  },
+  "ALAYI": {
+    "quarters": {}
+  },
+  "BENDE": {
+    "quarters": {}
+  },
+  "EZUKWU": {
+    "quarters": {}
+  },
+  "IGBERE": {
+    "quarters": {}
+  },
+  "ITEM": {
+    "quarters": {}
+  },
+  "ITUMBUZO": {
+    "quarters": {}
+  },
+  "NKPA": {
+    "quarters": {}
+  },
+  "NTALAKWU": {
+    "quarters": {}
+  },
+  "OZUITEM": {
+    "quarters": {}
+  },
+  "UGWUEKE": {
+    "quarters": {}
+  },
+  "UMU-IMENYI": {
+    "quarters": {}
+  },
+  "UMUHU-EZECHI": {
+    "quarters": {}
+  },
+  "UZUAKOLI": {
+    "quarters": {}
+  },
+  "IMENYI": {
+    "quarters": {}
+  },
+  "OGUDO-ASA": {
+    "quarters": {}
+  },
+  "OHAISE": {
+    "quarters": {}
+  },
+  "UMUN-NEKWU": {
+    "quarters": {}
+  },
+  "ISU-AMAWU": {
+    "quarters": {}
+  },
+  "ACHARA-URUTU": {
+    "quarters": {}
+  },
+  "UMUELEM": {
+    "quarters": {}
+  },
+  "NDIAWA": {
+    "quarters": {}
+  },
+  "AMUDA": {
+    "quarters": {}
+  },
+  "UMUAKU": {
+    "quarters": {}
+  },
+  "ACHARA": {
+    "quarters": {}
+  },
+  "LOMARA": {
+    "quarters": {}
+  },
+  "NGODO-UKWU": {
+    "quarters": {}
+  },
+  "LOKPAUKWU": {
+    "quarters": {}
+  },
+  "LERU": {
+    "quarters": {}
+  },
+  "LOMARA LOKPANTA": {
+    "quarters": {}
+  },
+  "LEKWESI": {
+    "quarters": {}
+  },
+  "MBALA": {
+    "quarters": {}
+  },
+  "NKWOAGU": {
+    "quarters": {}
+  },
+  "AMA-ASA": {
+    "quarters": {}
+  },
+  "AMASA-NTIGHA": {
+    "quarters": {}
+  },
+  "AMAPU-NTIGHA": {
+    "quarters": {}
+  },
+  "IHIE": {
+    "quarters": {}
+  },
+  "NGWA UKWU": {
+    "quarters": {}
+  },
+  "NSULU": {
+    "quarters": {}
+  },
+  "OKPUALA-NGWA": {
+    "quarters": {}
+  },
+  "UMUOHA": {
+    "quarters": {}
+  },
+  "MBUBO": {
+    "quarters": {}
+  },
+  "UMUOGELE": {
+    "quarters": {}
+  },
+  "AMA-ISE": {
+    "quarters": {}
+  },
+  "AMAKU": {
+    "quarters": {}
+  },
+  "MBUTU": {
+    "quarters": {}
+  },
+  "OMOBA": {
+    "quarters": {}
+  },
+  "OKPUALA": {
+    "quarters": {}
+  },
+  "OVU NGWA": {
+    "quarters": {}
+  },
+  "OVU-UKWU": {
+    "quarters": {}
+  },
+  "UMUOTIRI": {
+    "quarters": {}
+  },
+  "ISIALA NVOSI": {
+    "quarters": {}
+  },
+  "MGBOKO": {
+    "quarters": {}
+  },
+  "ABAYI": {
+    "quarters": {}
+  },
+  "OKOROATO": {
+    "quarters": {}
+  },
+  "ABALA-IBEME": {
+    "quarters": {}
+  },
+  "MGBOKO NGWA": {
+    "quarters": {}
+  },
+  "OHANZE": {
+    "quarters": {}
+  },
+  "OWOELU": {
+    "quarters": {}
+  },
+  "NDIAKATA": {
+    "quarters": {}
+  },
+  "NLAGU": {
+    "quarters": {}
+  },
+  "OBERETE": {
+    "quarters": {}
+  },
+  "OBETE-UKWU": {
+    "quarters": {}
+  },
+  "ONICHA NGWA": {
+    "quarters": {}
+  },
+  "AMAOKPU-UMUITIRI": {
+    "quarters": {}
+  },
+  "ABAYI ALAOJI": {
+    "quarters": {}
+  },
+  "AKANU UMUGO": {
+    "quarters": {}
+  },
+  "UMULE-OSOAMADI": {
+    "quarters": {}
+  },
+  "UMUNKAMA": {
+    "quarters": {}
+  },
+  "UMUOD": {
+    "quarters": {}
+  },
+  "UKEBE": {
+    "quarters": {}
+  },
+  "UMUAJA": {
+    "quarters": {}
+  },
+  "UMUAMA-OKE": {
+    "quarters": {}
+  },
+  "OBEGU": {
+    "quarters": {}
+  },
+  "OBUZOR": {
+    "quarters": {}
+  },
+  "OSUSU-AKU": {
+    "quarters": {}
+  },
+  "OZAA-UMUEBUKWU": {
+    "quarters": {}
+  },
+  "UMUCHEWU": {
+    "quarters": {}
+  },
+  "ASAOMUMAKWA": {
+    "quarters": {}
+  },
+  "NGWAYIEKWE": {
+    "quarters": {}
+  },
+  "NGWA": {
+    "quarters": {}
+  },
+  "AMUZU-AMAIKORO": {
+    "quarters": {}
+  },
+  "ASA-AMUHI": {
+    "quarters": {}
+  },
+  "ASA-NNENTU": {
+    "quarters": {}
+  },
+  "OKPU-UMUOBO": {
+    "quarters": {}
+  },
+  "AMAITOLI": {
+    "quarters": {}
+  },
+  "ARO-NGWA": {
+    "quarters": {}
+  },
+  "AMASA": {
+    "quarters": {}
+  },
+  "OSO-OKWA": {
+    "quarters": {}
+  },
+  "UMUNNEISE": {
+    "quarters": {}
+  },
+  "OKPU-UMUOBI": {
+    "quarters": {}
+  },
+  "IBERE": {
+    "quarters": {}
+  },
+  "ARIAM/USAKA": {
+    "quarters": {}
+  },
+  "OLOKO": {
+    "quarters": {}
+  },
+  "UMUOKPARA": {
+    "quarters": {}
+  },
+  "IBEKU": {
+    "quarters": {}
+  },
+  "OHOKOBE": {
+    "quarters": {}
+  },
+  "UMUAWA-ALAOCHA": {
+    "quarters": {}
+  },
+  "UMUAGU-ISINGWU": {
+    "quarters": {}
+  },
+  "OLD UMUAHIA": {
+    "quarters": {}
+  },
+  "APUMIRI": {
+    "quarters": {}
+  },
+  "UBAKALA": {
+    "quarters": {}
+  },
+  "OLOKORO": {
+    "quarters": {}
+  },
+  "UMUOPARA": {
+    "quarters": {}
+  },
+  "ABAKALIKI (RURAL)": {
+    "quarters": {}
+  },
+  "AGBALIKI": {
+    "quarters": {}
+  },
+  "AMACHI": {
+    "quarters": {}
+  },
+  "AMAGU": {
+    "quarters": {}
+  },
+  "AMIKE ABA": {
+    "quarters": {}
+  },
+  "AMOZU": {
+    "quarters": {}
+  },
+  "ECHIABA": {
+    "quarters": {}
+  },
+  "ENYINGBA": {
+    "quarters": {}
+  },
+  "ABAJA": {
+    "quarters": {}
+  },
+  "IGBEAGU": {
+    "quarters": {}
+  },
+  "MGBALA UKWU": {
+    "quarters": {}
+  },
+  "NDIEZE": {
+    "quarters": {}
+  },
+  "EZZINYI MAGU": {
+    "quarters": {}
+  },
+  "EDUKPACHI": {
+    "quarters": {}
+  },
+  "OHURUEKPE": {
+    "quarters": {}
+  },
+  "OKPODUMA": {
+    "quarters": {}
+  },
+  "ABAKALIKI": {
+    "quarters": {}
+  },
+  "ENYIGBA": {
+    "quarters": {}
+  },
+  "AMMOFIA MGBO": {
+    "quarters": {}
+  },
+  "EZZAMGBO": {
+    "quarters": {}
+  },
+  "UMUGUDU": {
+    "quarters": {}
+  },
+  "UMUOGUDU OSHIA": {
+    "quarters": {}
+  },
+  "OKPOSI EHEKU": {
+    "quarters": {}
+  },
+  "EFFIUM": {
+    "quarters": {}
+  },
+  "EKWASHI MGBO": {
+    "quarters": {}
+  },
+  "OKPOSI MGBO": {
+    "quarters": {}
+  },
+  "EHUGBO": {
+    "quarters": {}
+  },
+  "UNWANA": {
+    "quarters": {}
+  },
+  "ITIM": {
+    "quarters": {}
+  },
+  "OHAISU": {
+    "quarters": {}
+  },
+  "NKPOGHORO": {
+    "quarters": {}
+  },
+  "UGWUEGU/AMAIZU": {
+    "quarters": {}
+  },
+  "OZIZZA": {
+    "quarters": {}
+  },
+  "AMASIRI": {
+    "quarters": {}
+  },
+  "IBII/AKPOHA": {
+    "quarters": {}
+  },
+  "UGWULANGWU": {
+    "quarters": {}
+  },
+  "UBURU": {
+    "quarters": {}
+  },
+  "OKPOS": {
+    "quarters": {}
+  },
+  "OSHIRI": {
+    "quarters": {}
+  },
+  "ONICHA-IGBOEZE": {
+    "quarters": {}
+  },
+  "ABAOMEGE": {
+    "quarters": {}
+  },
+  "UKAWU": {
+    "quarters": {}
+  },
+  "ISU": {
+    "quarters": {}
+  },
+  "ISINKWO": {
+    "quarters": {}
+  },
+  "ISHIAGU": {
+    "quarters": {}
+  },
+  "AKAEZE": {
+    "quarters": {}
+  },
+  "OBINAGU-ISHIAGU": {
+    "quarters": {}
+  },
+  "AMANONYE": {
+    "quarters": {}
+  },
+  "NZEREM": {
+    "quarters": {}
+  },
+  "ISIEKE": {
+    "quarters": {}
+  },
+  "AMEKE": {
+    "quarters": {}
+  },
+  "AMAZU": {
+    "quarters": {}
+  },
+  "NDUFU": {
+    "quarters": {}
+  },
+  "EKKA": {
+    "quarters": {}
+  },
+  "AZUAKPARATA": {
+    "quarters": {}
+  },
+  "ORIUOZOR": {
+    "quarters": {}
+  },
+  "UMUOME": {
+    "quarters": {}
+  },
+  "AMANA": {
+    "quarters": {}
+  },
+  "OHAIKE": {
+    "quarters": {}
+  },
+  "AMAEKE": {
+    "quarters": {}
+  },
+  "AMUDO": {
+    "quarters": {}
+  },
+  "AMUZU": {
+    "quarters": {}
+  },
+  "ECHARA": {
+    "quarters": {}
+  },
+  "EZZAMA": {
+    "quarters": {}
+  },
+  "ONUEKE": {
+    "quarters": {}
+  },
+  "AGUBIA": {
+    "quarters": {}
+  },
+  "ECHARA UKWU": {
+    "quarters": {}
+  },
+  "EKA AWOKE": {
+    "quarters": {}
+  },
+  "AMERI": {
+    "quarters": {}
+  },
+  "OHANKWU": {
+    "quarters": {}
+  },
+  "EKPELU UMUAKA": {
+    "quarters": {}
+  },
+  "OKPU ITUMO": {
+    "quarters": {}
+  },
+  "OTAGBARA": {
+    "quarters": {}
+  },
+  "NGURU": {
+    "quarters": {}
+  },
+  "UVURU": {
+    "quarters": {}
+  },
+  "OKWUATO": {
+    "quarters": {}
+  },
+  "LORJI": {
+    "quarters": {}
+  },
+  "ENYIOGUGU": {
+    "quarters": {}
+  },
+  "UMUOWA": {
+    "quarters": {}
+  },
+  "OBIANGWU": {
+    "quarters": {}
+  },
+  "NTU": {
+    "quarters": {}
+  },
+  "AMALA": {
+    "quarters": {}
+  },
+  "IKEM": {
+    "quarters": {}
+  },
+  "OBURU": {
+    "quarters": {}
+  },
+  "EZIAMA": {
+    "quarters": {}
+  },
+  "OHEKELEM": {
+    "quarters": {}
+  },
+  "NNORIE": {
+    "quarters": {}
+  },
+  "UMUHU": {
+    "quarters": {}
+  },
+  "IHITE-OKWE": {
+    "quarters": {}
+  },
+  "OBIKE": {
+    "quarters": {}
+  },
+  "ELELEM": {
+    "quarters": {}
+  },
+  "UMUOHAGU": {
+    "quarters": {}
+  },
+  "IMERIENWE": {
+    "quarters": {}
+  },
+  "NGURU-UMUARO": {
+    "quarters": {}
+  },
+  "ORISHIEZE": {
+    "quarters": {}
+  },
+  "UPE": {
+    "quarters": {}
+  },
+  "AMA-ASAA": {
+    "quarters": {}
+  },
+  "UMUEKWUNE": {
+    "quarters": {}
+  },
+  "LOGARA": {
+    "quarters": {}
+  },
+  "UMUKABIA-OGODO": {
+    "quarters": {}
+  },
+  "AKABO": {
+    "quarters": {}
+  },
+  "AMUHU": {
+    "quarters": {}
+  },
+  "EZIUDO": {
+    "quarters": {}
+  },
+  "IHITTE-AFARA": {
+    "quarters": {}
+  },
+  "IHITTE-OGBE": {
+    "quarters": {}
+  },
+  "LAGWA": {
+    "quarters": {}
+  },
+  "LOBO": {
+    "quarters": {}
+  },
+  "MPAM": {
+    "quarters": {}
+  },
+  "OGBE": {
+    "quarters": {}
+  },
+  "OKIRIKA-NWEKE": {
+    "quarters": {}
+  },
+  "OTULU": {
+    "quarters": {}
+  },
+  "UMUEZEGWU": {
+    "quarters": {}
+  },
+  "UMUOKIRIKA": {
+    "quarters": {}
+  },
+  "CHOKONEZE": {
+    "quarters": {}
+  },
+  "AKPODIM": {
+    "quarters": {}
+  },
+  "AKUEKE": {
+    "quarters": {}
+  },
+  "AMUMARA": {
+    "quarters": {}
+  },
+  "IFE": {
+    "quarters": {}
+  },
+  "ITU": {
+    "quarters": {}
+  },
+  "OBODO": {
+    "quarters": {}
+  },
+  "ONICHA": {
+    "quarters": {}
+  },
+  "UBOMIRI": {
+    "quarters": {}
+  },
+  "UBIETTA": {
+    "quarters": {}
+  },
+  "UMUAKA": {
+    "quarters": {}
+  },
+  "UMUANUMU": {
+    "quarters": {}
+  },
+  "UMUEZEALA": {
+    "quarters": {}
+  },
+  "UMUOMA": {
+    "quarters": {}
+  },
+  "UMUORIE": {
+    "quarters": {}
+  },
+  "AMAIMO": {
+    "quarters": {}
+  },
+  "AVUVU": {
+    "quarters": {}
+  },
+  "EZIHU": {
+    "quarters": {}
+  },
+  "IKEDURU": {
+    "quarters": {}
+  },
+  "IKEMBARA": {
+    "quarters": {}
+  },
+  "INYISHI": {
+    "quarters": {}
+  },
+  "IHO": {
+    "quarters": {}
+  },
+  "NGUGO": {
+    "quarters": {}
+  },
+  "OGWA": {
+    "quarters": {}
+  },
+  "UZOAGBA": {
+    "quarters": {}
+  },
+  "UMUDIM": {
+    "quarters": {}
+  },
+  "UMUORORONJO": {
+    "quarters": {}
+  },
+  "AMAWOM": {
+    "quarters": {}
+  },
+  "UMUONYECHI": {
+    "quarters": {}
+  },
+  "UMUODU": {
+    "quarters": {}
+  },
+  "UMUOYIMA": {
+    "quarters": {}
+  },
+  "EGWU": {
+    "quarters": {}
+  },
+  "NAZE": {
+    "quarters": {}
+  },
+  "EMEKUKU": {
+    "quarters": {}
+  },
+  "EMII": {
+    "quarters": {}
+  },
+  "OGADA": {
+    "quarters": {}
+  },
+  "OHA": {
+    "quarters": {}
+  },
+  "UMUOFOR": {
+    "quarters": {}
+  },
+  "UMUAYALU": {
+    "quarters": {}
+  },
+  "AWAKA": {
+    "quarters": {}
+  },
+  "AZARAUBO": {
+    "quarters": {}
+  },
+  "ORJI": {
+    "quarters": {}
+  },
+  "UMUGUMA": {
+    "quarters": {}
+  },
+  "AVU": {
+    "quarters": {}
+  },
+  "OKUKU": {
+    "quarters": {}
+  },
+  "OFOROLA": {
+    "quarters": {}
+  },
+  "OBINZE": {
+    "quarters": {}
+  },
+  "NEKEDE": {
+    "quarters": {}
+  },
+  "IHIAGWA": {
+    "quarters": {}
+  },
+  "EZIOBODO": {
+    "quarters": {}
+  },
+  "OKOLOCHI": {
+    "quarters": {}
+  },
+  "EMEABIAM": {
+    "quarters": {}
+  },
+  "IRETE": {
+    "quarters": {}
+  },
+  "OROGWE": {
+    "quarters": {}
+  },
+  "AMAKOHIA-UBI": {
+    "quarters": {}
+  },
+  "NDEGWU": {
+    "quarters": {}
+  },
+  "UMUELEKE": {
+    "quarters": {}
+  },
+  "NSU": {
+    "quarters": {}
+  },
+  "AGBAGBARA": {
+    "quarters": {}
+  },
+  "IKPE": {
+    "quarters": {}
+  },
+  "UMUAKAGU": {
+    "quarters": {}
+  },
+  "UMUANUNU": {
+    "quarters": {}
+  },
+  "ABOSI": {
+    "quarters": {}
+  },
+  "AMAKOHIA": {
+    "quarters": {}
+  },
+  "NNACHERU": {
+    "quarters": {}
+  },
+  "UMUODE": {
+    "quarters": {}
+  },
+  "ATO-WEREM": {
+    "quarters": {}
+  },
+  "OMUCHIENTA": {
+    "quarters": {}
+  },
+  "EMEKENGWE": {
+    "quarters": {}
+  },
+  "ATEKENTA": {
+    "quarters": {}
+  },
+  "UMUEZEOKWA": {
+    "quarters": {}
+  },
+  "AMANZE": {
+    "quarters": {}
+  },
+  "UMUARIAM": {
+    "quarters": {}
+  },
+  "EHUME": {
+    "quarters": {}
+  },
+  "UMUNGWA": {
+    "quarters": {}
+  },
+  "UMULOGHO": {
+    "quarters": {}
+  },
+  "ODENKWUME": {
+    "quarters": {}
+  },
+  "OKWUOHIA": {
+    "quarters": {}
+  },
+  "AMUZI": {
+    "quarters": {}
+  },
+  "ALIKE": {
+    "quarters": {}
+  },
+  "AVUTU": {
+    "quarters": {}
+  },
+  "UMUOSOCHIE": {
+    "quarters": {}
+  },
+  "UMUOKE": {
+    "quarters": {}
+  },
+  "ANARA": {
+    "quarters": {}
+  },
+  "AMARAKU": {
+    "quarters": {}
+  },
+  "AMUKWURU": {
+    "quarters": {}
+  },
+  "EZIHE": {
+    "quarters": {}
+  },
+  "EZUMOHA": {
+    "quarters": {}
+  },
+  "IBEAFOR": {
+    "quarters": {}
+  },
+  "ISIEBU": {
+    "quarters": {}
+  },
+  "OSU OWERRE": {
+    "quarters": {}
+  },
+  "UMUELEMAI": {
+    "quarters": {}
+  },
+  "UMUENYI": {
+    "quarters": {}
+  },
+  "UMUOZU": {
+    "quarters": {}
+  },
+  "ARO-OKIGWE": {
+    "quarters": {}
+  },
+  "OPE": {
+    "quarters": {}
+  },
+  "UMUKA": {
+    "quarters": {}
+  },
+  "OTANZU": {
+    "quarters": {}
+  },
+  "IHUBE": {
+    "quarters": {}
+  },
+  "AMURO": {
+    "quarters": {}
+  },
+  "UMUOLO": {
+    "quarters": {}
+  },
+  "OKWE": {
+    "quarters": {}
+  },
+  "OKWELLE": {
+    "quarters": {}
+  },
+  "UMUDURU-EGBEAGURU": {
+    "quarters": {}
+  },
+  "AKOKWA": {
+    "quarters": {}
+  },
+  "AKPULU": {
+    "quarters": {}
+  },
+  "ISIOKPO": {
+    "quarters": {}
+  },
+  "OSINA": {
+    "quarters": {}
+  },
+  "OBODOUKWU": {
+    "quarters": {}
+  },
+  "UMUALAOMA": {
+    "quarters": {}
+  },
+  "URUALLA": {
+    "quarters": {}
+  },
+  "UZII": {
+    "quarters": {}
+  },
+  "AKATTA": {
+    "quarters": {}
+  },
+  "AKUMA": {
+    "quarters": {}
+  },
+  "AMIRI": {
+    "quarters": {}
+  },
+  "AWO-OMAMMA": {
+    "quarters": {}
+  },
+  "OMUMA": {
+    "quarters": {}
+  },
+  "AMANDUGBA": {
+    "quarters": {}
+  },
+  "EKWE": {
+    "quarters": {}
+  },
+  "UBURU EKWE": {
+    "quarters": {}
+  },
+  "ISUNJABA": {
+    "quarters": {}
+  },
+  "AMURIE OMANZE": {
+    "quarters": {}
+  },
+  "EBENATOR EKWE": {
+    "quarters": {}
+  },
+  "OBORO AMURIE": {
+    "quarters": {}
+  },
+  "UMUNDUGBA": {
+    "quarters": {}
+  },
+  "AMUCHA": {
+    "quarters": {}
+  },
+  "NENNASA": {
+    "quarters": {}
+  },
+  "OKWUDOR": {
+    "quarters": {}
+  },
+  "EGWEDU": {
+    "quarters": {}
+  },
+  "ATTA": {
+    "quarters": {}
+  },
+  "AMAZANO": {
+    "quarters": {}
+  },
+  "ISIOZI": {
+    "quarters": {}
+  },
+  "UGBELLE": {
+    "quarters": {}
+  },
+  "NKWERRE": {
+    "quarters": {}
+  },
+  "AMAIGBO": {
+    "quarters": {}
+  },
+  "NNANANO": {
+    "quarters": {}
+  },
+  "NNANATO": {
+    "quarters": {}
+  },
+  "OBINOCHA": {
+    "quarters": {}
+  },
+  "OBINUHU": {
+    "quarters": {}
+  },
+  "ONUSA": {
+    "quarters": {}
+  },
+  "UGWUNAGBOR": {
+    "quarters": {}
+  },
+  "UMUGARA": {
+    "quarters": {}
+  },
+  "UNMUKO": {
+    "quarters": {}
+  },
+  "DIM NA NUME": {
+    "quarters": {}
+  },
+  "UMUDURUNNA ABBA": {
+    "quarters": {}
+  },
+  "OGWUAGA ABBA": {
+    "quarters": {}
+  },
+  "EKITIAFOR ABBA": {
+    "quarters": {}
+  },
+  "UMUOPARA ABBA": {
+    "quarters": {}
+  },
+  "OGUTA": {
+    "quarters": {}
+  },
+  "ABATU": {
+    "quarters": {}
+  },
+  "AMAOZUA": {
+    "quarters": {}
+  },
+  "ENIGBO": {
+    "quarters": {}
+  },
+  "OBEGWU": {
+    "quarters": {}
+  },
+  "OBUTU": {
+    "quarters": {}
+  },
+  "OKEICHI": {
+    "quarters": {}
+  },
+  "OSEMOTOR": {
+    "quarters": {}
+  },
+  "UMUAJOMA": {
+    "quarters": {}
+  },
+  "UMUAMANU": {
+    "quarters": {}
+  },
+  "EGHEMA": {
+    "quarters": {}
+  },
+  "UMUAGWO": {
+    "quarters": {}
+  },
+  "OLOSHI": {
+    "quarters": {}
+  },
+  "UMUNKWAKU": {
+    "quarters": {}
+  },
+  "OBILE": {
+    "quarters": {}
+  },
+  "OBITTI": {
+    "quarters": {}
+  },
+  "MGBIRICHI/ALAKURU": {
+    "quarters": {}
+  },
+  "OPUOMA": {
+    "quarters": {}
+  },
+  "ASSA": {
+    "quarters": {}
+  },
+  "AWARRA": {
+    "quarters": {}
+  },
+  "IKWERREDE": {
+    "quarters": {}
+  },
+  "UMUOKANNE": {
+    "quarters": {}
+  },
+  "OBIAKPU": {
+    "quarters": {}
+  },
+  "OHABA": {
+    "quarters": {}
+  },
+  "OBOSIMA": {
+    "quarters": {}
+  },
+  "MMAHU": {
+    "quarters": {}
+  },
+  "OBUOMADIKE": {
+    "quarters": {}
+  },
+  "AMAFUO": {
+    "quarters": {}
+  },
+  "NEMPI": {
+    "quarters": {}
+  },
+  "OHAKPU": {
+    "quarters": {}
+  },
+  "UBULU": {
+    "quarters": {}
+  },
+  "OZARA": {
+    "quarters": {}
+  },
+  "ELEH": {
+    "quarters": {}
+  },
+  "AJI": {
+    "quarters": {}
+  },
+  "AMAIFEKE": {
+    "quarters": {}
+  },
+  "AMAIKE": {
+    "quarters": {}
+  },
+  "EZIACHI": {
+    "quarters": {}
+  },
+  "IHIOMA/EBENESE": {
+    "quarters": {}
+  },
+  "IHITTE-OWERRE": {
+    "quarters": {}
+  },
+  "MGBEE": {
+    "quarters": {}
+  },
+  "OBIBI-OCHASI": {
+    "quarters": {}
+  },
+  "OGBERURU": {
+    "quarters": {}
+  },
+  "OKPORO": {
+    "quarters": {}
+  },
+  "ORLU (RURAL)": {
+    "quarters": {}
+  },
+  "OWERRE-EBEIRI": {
+    "quarters": {}
+  },
+  "UMUTANZE": {
+    "quarters": {}
+  },
+  "UMUZIKE": {
+    "quarters": {}
+  },
+  "IHITENANSA": {
+    "quarters": {}
+  },
+  "AMARURU": {
+    "quarters": {}
+  },
+  "AMAEBU": {
+    "quarters": {}
+  },
+  "AMANNACHI": {
+    "quarters": {}
+  },
+  "AWO-IDEMILI": {
+    "quarters": {}
+  },
+  "ASAA UBIRIELEM": {
+    "quarters": {}
+  },
+  "EZIAWA": {
+    "quarters": {}
+  },
+  "UMUHU OKABIA": {
+    "quarters": {}
+  },
+  "ORSU IHITEUKWA": {
+    "quarters": {}
+  },
+  "OKWU UFURUKU": {
+    "quarters": {}
+  },
+  "OKWU AMARAIHE": {
+    "quarters": {}
+  },
+  "OKWU ETITI": {
+    "quarters": {}
+  },
+  "OKWU UFURUAKU": {
+    "quarters": {}
+  },
+  "ABRAKA": {
+    "quarters": {}
+  },
+  "AGBON": {
+    "quarters": {}
+  },
+  "AKPOHO": {
+    "quarters": {}
+  },
+  "EKEREJETA": {
+    "quarters": {}
+  },
+  "ERHO": {
+    "quarters": {}
+  },
+  "OFUOMA": {
+    "quarters": {}
+  },
+  "OGHEJE": {
+    "quarters": {}
+  },
+  "OKAGBARE": {
+    "quarters": {}
+  },
+  "ORIA": {
+    "quarters": {}
+  },
+  "UGHOLO": {
+    "quarters": {}
+  },
+  "UMEGHE": {
+    "quarters": {}
+  },
+  "URHUAGBESA": {
+    "quarters": {}
+  },
+  "URHUOGO INLAND": {
+    "quarters": {}
+  },
+  "URHUOKA": {
+    "quarters": {}
+  },
+  "URHUOVIE": {
+    "quarters": {}
+  },
+  "OGHARA": {
+    "quarters": {}
+  },
+  "JESSE": {
+    "quarters": {}
+  },
+  "MOSOGAR": {
+    "quarters": {}
+  },
+  "UGHELLI": {
+    "quarters": {}
+  },
+  "AGBARHA-OTOR": {
+    "quarters": {}
+  },
+  "OROGUN": {
+    "quarters": {}
+  },
+  "OGOR": {
+    "quarters": {}
+  },
+  "EVWRENI": {
+    "quarters": {}
+  },
+  "OTU-JEREMI": {
+    "quarters": {}
+  },
+  "EFFURUN-OTOR": {
+    "quarters": {}
+  },
+  "EKAKPAMRE": {
+    "quarters": {}
+  },
+  "EYARA": {
+    "quarters": {}
+  },
+  "OKPAVUO": {
+    "quarters": {}
+  },
+  "OGINIBO": {
+    "quarters": {}
+  },
+  "OLOMU": {
+    "quarters": {}
+  },
+  "OPHORI": {
+    "quarters": {}
+  },
+  "OTOKUTU": {
+    "quarters": {}
+  },
+  "OWHRODE": {
+    "quarters": {}
+  },
+  "UGHIEVWEN": {
+    "quarters": {}
+  },
+  "ALADJA": {
+    "quarters": {}
+  },
+  "OVWIAN": {
+    "quarters": {}
+  },
+  "EMADADJA": {
+    "quarters": {}
+  },
+  "EGINI": {
+    "quarters": {}
+  },
+  "OBUBU": {
+    "quarters": {}
+  },
+  "UBOGO": {
+    "quarters": {}
+  },
+  "OLERI": {
+    "quarters": {}
+  },
+  "OTO-UDU": {
+    "quarters": {}
+  },
+  "OGBE-UDU": {
+    "quarters": {}
+  },
+  "UKPIOVWIN": {
+    "quarters": {}
+  },
+  "UKPERHEREN": {
+    "quarters": {}
+  },
+  "AYAMA": {
+    "quarters": {}
+  },
+  "EKROTA": {
+    "quarters": {}
+  },
+  "UGBISI": {
+    "quarters": {}
+  },
+  "EKETE OBOTO": {
+    "quarters": {}
+  },
+  "EKETE UBURHIE": {
+    "quarters": {}
+  },
+  "OKOLO UBURHIE": {
+    "quarters": {}
+  },
+  "OKOLO OBOTO": {
+    "quarters": {}
+  },
+  "OVWORHOKPOKPO": {
+    "quarters": {}
+  },
+  "ERHIEPHIHO": {
+    "quarters": {}
+  },
+  "EGIEGI": {
+    "quarters": {}
+  },
+  "EPAME": {
+    "quarters": {}
+  },
+  "UJEVWU": {
+    "quarters": {}
+  },
+  "OGHIOR": {
+    "quarters": {}
+  },
+  "OHWASE": {
+    "quarters": {}
+  },
+  "ORHUWHORUN": {
+    "quarters": {}
+  },
+  "IGBOGIDI": {
+    "quarters": {}
+  },
+  "DSC TOWNSHIP": {
+    "quarters": {}
+  },
+  "OPETE": {
+    "quarters": {}
+  },
+  "OKPAKA": {
+    "quarters": {}
+  },
+  "ENERHEN": {
+    "quarters": {}
+  },
+  "ABOH": {
+    "quarters": {}
+  },
+  "ASHAKA": {
+    "quarters": {}
+  },
+  "OKPAI": {
+    "quarters": {}
+  },
+  "UTCHI": {
+    "quarters": {}
+  },
+  "IBREDE": {
+    "quarters": {}
+  },
+  "AKOKU": {
+    "quarters": {}
+  },
+  "AMAI": {
+    "quarters": {}
+  },
+  "EBEDEI": {
+    "quarters": {}
+  },
+  "EZIOKPOR": {
+    "quarters": {}
+  },
+  "EZIONUM": {
+    "quarters": {}
+  },
+  "OBIARUKU": {
+    "quarters": {}
+  },
+  "UMUEBU": {
+    "quarters": {}
+  },
+  "UMUKWATA": {
+    "quarters": {}
+  },
+  "UMUTU": {
+    "quarters": {}
+  },
+  "OREROKPE": {
+    "quarters": {}
+  },
+  "AMUOKPOKO": {
+    "quarters": {}
+  },
+  "INABOME": {
+    "quarters": {}
+  },
+  "OYOHE": {
+    "quarters": {}
+  },
+  "OLAN": {
+    "quarters": {}
+  },
+  "OGIEDI": {
+    "quarters": {}
+  },
+  "OKUOKE": {
+    "quarters": {}
+  },
+  "IGBIMIDIKA": {
+    "quarters": {}
+  },
+  "ELUME": {
+    "quarters": {}
+  },
+  "SAPELE": {
+    "quarters": {}
+  },
+  "AMUKPE": {
+    "quarters": {}
+  },
+  "OVIERI": {
+    "quarters": {}
+  },
+  "OKUOVWORI": {
+    "quarters": {}
+  },
+  "UGBOHEN": {
+    "quarters": {}
+  },
+  "UGBO-KURUSU": {
+    "quarters": {}
+  },
+  "OKIRIGWE": {
+    "quarters": {}
+  },
+  "OTON": {
+    "quarters": {}
+  },
+  "EFFURUN": {
+    "quarters": {}
+  },
+  "EKPAN": {
+    "quarters": {}
+  },
+  "JEDDO": {
+    "quarters": {}
+  },
+  "OKUAMOWAH": {
+    "quarters": {}
+  },
+  "OKUIREROH": {
+    "quarters": {}
+  },
+  "OKWEMOWA": {
+    "quarters": {}
+  },
+  "OKWETATA": {
+    "quarters": {}
+  },
+  "UGBOKODO": {
+    "quarters": {}
+  },
+  "UGBOMORO": {
+    "quarters": {}
+  },
+  "UGBOROKE": {
+    "quarters": {}
+  },
+  "UGHOTON": {
+    "quarters": {}
+  },
+  "OZORO": {
+    "quarters": {}
+  },
+  "OWHELOGBO": {
+    "quarters": {}
+  },
+  "OTOR-OWHE": {
+    "quarters": {}
+  },
+  "OGHARA-IYEDE": {
+    "quarters": {}
+  },
+  "EMEVOR": {
+    "quarters": {}
+  },
+  "ELLU": {
+    "quarters": {}
+  },
+  "IYEDE-AME": {
+    "quarters": {}
+  },
+  "OFAGBE": {
+    "quarters": {}
+  },
+  "OYDE": {
+    "quarters": {}
+  },
+  "BETHEL": {
+    "quarters": {}
+  },
+  "IGBUKU": {
+    "quarters": {}
+  },
+  "BURUTU": {
+    "quarters": {}
+  },
+  "FORCADOS": {
+    "quarters": {}
+  },
+  "KEREMO": {
+    "quarters": {}
+  },
+  "IDUWUN": {
+    "quarters": {}
+  },
+  "OFOUGBENE": {
+    "quarters": {}
+  },
+  "ODIMODI": {
+    "quarters": {}
+  },
+  "OSAMAYIGBEN": {
+    "quarters": {}
+  },
+  "OGULAGHA": {
+    "quarters": {}
+  },
+  "BENIBAYO": {
+    "quarters": {}
+  },
+  "YOBEBE": {
+    "quarters": {}
+  },
+  "YOKRIS": {
+    "quarters": {}
+  },
+  "OBATEBE": {
+    "quarters": {}
+  },
+  "ABADIMA": {
+    "quarters": {}
+  },
+  "OKOROGBENE": {
+    "quarters": {}
+  },
+  "KALAGFIONENE": {
+    "quarters": {}
+  },
+  "KENLOGBENE": {
+    "quarters": {}
+  },
+  "OPUAPALE": {
+    "quarters": {}
+  },
+  "NGBILEBIRI": {
+    "quarters": {}
+  },
+  "AGBODOBIRI": {
+    "quarters": {}
+  },
+  "AKPAREGMOBINI": {
+    "quarters": {}
+  },
+  "AMASUOMO": {
+    "quarters": {}
+  },
+  "BIOKORGHA": {
+    "quarters": {}
+  },
+  "EGODOR": {
+    "quarters": {}
+  },
+  "EGOLOGBENE": {
+    "quarters": {}
+  },
+  "GBEKEBOR": {
+    "quarters": {}
+  },
+  "KIAGBO": {
+    "quarters": {}
+  },
+  "NEW TOWN": {
+    "quarters": {}
+  },
+  "OGBOLOGBIRI": {
+    "quarters": {}
+  },
+  "OKRIKA": {
+    "quarters": {}
+  },
+  "ODE-ITSEKIRI": {
+    "quarters": {}
+  },
+  "EGBOKODO": {
+    "quarters": {}
+  },
+  "JELU": {
+    "quarters": {}
+  },
+  "ORUGBO": {
+    "quarters": {}
+  },
+  "UBEJI": {
+    "quarters": {}
+  },
+  "UBUWANGUE": {
+    "quarters": {}
+  },
+  "OGBE-IJOH": {
+    "quarters": {}
+  },
+  "GBENE-MATU": {
+    "quarters": {}
+  },
+  "BEKOKODIA": {
+    "quarters": {}
+  },
+  "OKERENGHIGHO": {
+    "quarters": {}
+  },
+  "UBAGBORO": {
+    "quarters": {}
+  },
+  "ASABA": {
+    "quarters": {}
+  },
+  "WARRI": {
+    "quarters": {}
+  },
+  "KWALE": {
+    "quarters": {}
+  },
+  "ISSELE-UKU (HEADQUARTERS)": {
+    "quarters": {}
+  },
+  "IDUMUJE-UGBOKO": {
+    "quarters": {}
+  },
+  "IDUMUJE-UNOR": {
+    "quarters": {}
+  },
+  "IDUMUOGO": {
+    "quarters": {}
+  },
+  "ISA-OGWASHI": {
+    "quarters": {}
+  },
+  "ISSELE-AZAGBA": {
+    "quarters": {}
+  },
+  "ISSELE-MKPITIME": {
+    "quarters": {}
+  },
+  "OBOMKPA": {
+    "quarters": {}
+  },
+  "ONICHA-OLONA": {
+    "quarters": {}
+  },
+  "ONICHA-UGBO": {
+    "quarters": {}
+  },
+  "ONICHA-UKU": {
+    "quarters": {}
+  },
+  "UBULUBU": {
+    "quarters": {}
+  },
+  "UGBOBA": {
+    "quarters": {}
+  },
+  "UGBODU": {
+    "quarters": {}
+  },
+  "UGODOR": {
+    "quarters": {}
+  },
+  "UKWU-NZU": {
+    "quarters": {}
+  },
+  "AKUGBENE": {
+    "quarters": {}
+  },
+  "BOMADI": {
+    "quarters": {}
+  },
+  "KPAKIAMA": {
+    "quarters": {}
+  },
+  "KALAFUO-OGBENE": {
+    "quarters": {}
+  },
+  "OGODOBIRI": {
+    "quarters": {}
+  },
+  "ESAMA": {
+    "quarters": {}
+  },
+  "OGRIAGBENE": {
+    "quarters": {}
+  },
+  "AZEBIRI": {
+    "quarters": {}
+  },
+  "PATANI": {
+    "quarters": {}
+  },
+  "TORU-ANGIAMA": {
+    "quarters": {}
+  },
+  "BULOU-ANGIAMA": {
+    "quarters": {}
+  },
+  "ABARI": {
+    "quarters": {}
+  },
+  "Oron Town": {
+    "quarters": {}
+  },
+  "Eyo Abasi": {
+    "quarters": {}
+  },
+  "Uya Oro": {
+    "quarters": {}
+  },
+  "Afaha Okpo": {
+    "quarters": {}
+  },
+  "Eyotong": {
+    "quarters": {}
+  },
+  "AFAHA OKPO": {
+    "quarters": {}
+  },
+  "EFFIAT": {
+    "quarters": {}
+  },
+  "NKWONG": {
+    "quarters": {}
+  },
+  "IBIAKU": {
+    "quarters": {}
+  },
+  "IKPO IKONO": {
+    "quarters": {}
+  },
+  "IKPA IBOM": {
+    "quarters": {}
+  },
+  "ATANUK": {
+    "quarters": {}
+  },
+  "EKPUK": {
+    "quarters": {}
+  },
+  "OKOPEDI": {
+    "quarters": {}
+  },
+  "OKIUSO": {
+    "quarters": {}
+  },
+  "UKWONG": {
+    "quarters": {}
+  },
+  "ETA": {
+    "quarters": {}
+  },
+  "ODU": {
+    "quarters": {}
+  },
+  "ATABONG": {
+    "quarters": {}
+  },
+  "IBIGHI": {
+    "quarters": {}
+  },
+  "EBUGHU": {
+    "quarters": {}
+  },
+  "UFOK ESUK": {
+    "quarters": {}
+  },
+  "ABAK ELIBI": {
+    "quarters": {}
+  },
+  "ANAI OKPO": {
+    "quarters": {}
+  },
+  "EDOK": {
+    "quarters": {}
+  },
+  "EYETONG": {
+    "quarters": {}
+  },
+  "EYO EYEKIP": {
+    "quarters": {}
+  },
+  "EYO OKWONG": {
+    "quarters": {}
+  },
+  "EYO UFUO": {
+    "quarters": {}
+  },
+  "EYO UWESONG": {
+    "quarters": {}
+  },
+  "EYO UYA": {
+    "quarters": {}
+  },
+  "EYOBIASANG": {
+    "quarters": {}
+  },
+  "EYOKPIFIE": {
+    "quarters": {}
+  },
+  "EYULOR": {
+    "quarters": {}
+  },
+  "ISONG INYANG": {
+    "quarters": {}
+  },
+  "OYOKU IBIGHI": {
+    "quarters": {}
+  },
+  "OYUBIA": {
+    "quarters": {}
+  },
+  "UKUDA": {
+    "quarters": {}
+  },
+  "URUE OFFONG": {
+    "quarters": {}
+  },
+  "OKPO": {
+    "quarters": {}
+  },
+  "UBORO ISONG INYANG": {
+    "quarters": {}
+  },
+  "ENINO": {
+    "quarters": {}
+  },
+  "EYO ATING OSUNG": {
+    "quarters": {}
+  },
+  "EYIBA": {
+    "quarters": {}
+  },
+  "AFAHA UKWA": {
+    "quarters": {}
+  },
+  "ESIT URUA": {
+    "quarters": {}
+  },
+  "IDUNG OFFIONG": {
+    "quarters": {}
+  },
+  "ODIO": {
+    "quarters": {}
+  },
+  "IKO EKWA": {
+    "quarters": {}
+  },
+  "EFFOI": {
+    "quarters": {}
+  },
+  "EDEBUK": {
+    "quarters": {}
+  },
+  "IKOT UDOTA": {
+    "quarters": {}
+  },
+  "ONIONG": {
+    "quarters": {}
+  },
+  "NNUNG NDEM": {
+    "quarters": {}
+  },
+  "AFAHA": {
+    "quarters": {}
+  },
+  "IKOT IDEM UDO": {
+    "quarters": {}
+  },
+  "IQUITA": {
+    "quarters": {}
+  },
+  "IKOT NDUA IMAN": {
+    "quarters": {}
+  },
+  "IKOT NKAN": {
+    "quarters": {}
+  },
+  "NDON EYO": {
+    "quarters": {}
+  },
+  "UQUO": {
+    "quarters": {}
+  },
+  "ETEBI": {
+    "quarters": {}
+  },
+  "URUA OKOK": {
+    "quarters": {}
+  },
+  "MBAKUYO": {
+    "quarters": {}
+  },
+  "IDUNG ITA": {
+    "quarters": {}
+  },
+  "AKWAITA": {
+    "quarters": {}
+  },
+  "AKPAUTONG": {
+    "quarters": {}
+  },
+  "IDUNG ASSAM": {
+    "quarters": {}
+  },
+  "OKPOSO": {
+    "quarters": {}
+  },
+  "ATABRIKANG": {
+    "quarters": {}
+  },
+  "UKPENEKANG": {
+    "quarters": {}
+  },
+  "IWUOCHANG": {
+    "quarters": {}
+  },
+  "MKPANAK": {
+    "quarters": {}
+  },
+  "NTAFRE": {
+    "quarters": {}
+  },
+  "OPOLUM": {
+    "quarters": {}
+  },
+  "IKPA IBEKWE": {
+    "quarters": {}
+  },
+  "IKPA EDEMAYA": {
+    "quarters": {}
+  },
+  "UKPUM OKON": {
+    "quarters": {}
+  },
+  "IKPA NNUNG ASSANG": {
+    "quarters": {}
+  },
+  "UKPUM ETTE": {
+    "quarters": {}
+  },
+  "IKOT OBONG": {
+    "quarters": {}
+  },
+  "UTA EWA": {
+    "quarters": {}
+  },
+  "IKOT ETETUK": {
+    "quarters": {}
+  },
+  "UKPUM MINYA": {
+    "quarters": {}
+  },
+  "IKPA IKONO": {
+    "quarters": {}
+  },
+  "EKA NUNG UKIM": {
+    "quarters": {}
+  },
+  "IKOT ETI": {
+    "quarters": {}
+  },
+  "IFFE": {
+    "quarters": {}
+  },
+  "KOROETE": {
+    "quarters": {}
+  },
+  "IKO": {
+    "quarters": {}
+  },
+  "ELEK-OKPOON": {
+    "quarters": {}
+  },
+  "OTUNENE": {
+    "quarters": {}
+  },
+  "EMEROKE": {
+    "quarters": {}
+  },
+  "IKONTA": {
+    "quarters": {}
+  },
+  "OBIANGA": {
+    "quarters": {}
+  },
+  "OFONI": {
+    "quarters": {}
+  },
+  "ANGALABIRI": {
+    "quarters": {}
+  },
+  "TORU-EBENI": {
+    "quarters": {}
+  },
+  "EBEDEBERI": {
+    "quarters": {}
+  },
+  "TROFANI": {
+    "quarters": {}
+  },
+  "TUNGBO": {
+    "quarters": {}
+  },
+  "AGBERE": {
+    "quarters": {}
+  },
+  "ODONI": {
+    "quarters": {}
+  },
+  "EKEREMOR": {
+    "quarters": {}
+  },
+  "ALEIBIRI": {
+    "quarters": {}
+  },
+  "AMABULOU": {
+    "quarters": {}
+  },
+  "ANGALAWEI-GBENE": {
+    "quarters": {}
+  },
+  "AYAMASSA": {
+    "quarters": {}
+  },
+  "ISAMPOU": {
+    "quarters": {}
+  },
+  "NDORO": {
+    "quarters": {}
+  },
+  "OBRIGBENE": {
+    "quarters": {}
+  },
+  "OGBOGBENE": {
+    "quarters": {}
+  },
+  "OPOROMA": {
+    "quarters": {}
+  },
+  "OYIAKIRI": {
+    "quarters": {}
+  },
+  "TAMOGBENE": {
+    "quarters": {}
+  },
+  "TORU-FOUTORUGBENE": {
+    "quarters": {}
+  },
+  "EKETI": {
+    "quarters": {}
+  },
+  "AGUDAMA-EPIE": {
+    "quarters": {}
+  },
+  "AMARATA": {
+    "quarters": {}
+  },
+  "AZIKORO": {
+    "quarters": {}
+  },
+  "BIOSU": {
+    "quarters": {}
+  },
+  "EKPETIAMA": {
+    "quarters": {}
+  },
+  "GBARAIN": {
+    "quarters": {}
+  },
+  "IGBOGENE": {
+    "quarters": {}
+  },
+  "KAIAMA": {
+    "quarters": {}
+  },
+  "KORAMA": {
+    "quarters": {}
+  },
+  "OKAKA": {
+    "quarters": {}
+  },
+  "OKOLOBIRI": {
+    "quarters": {}
+  },
+  "OPOLO": {
+    "quarters": {}
+  },
+  "POLAKU": {
+    "quarters": {}
+  },
+  "TOMBIA": {
+    "quarters": {}
+  },
+  "ODI": {
+    "quarters": {}
+  },
+  "SABAGREIA": {
+    "quarters": {}
+  },
+  "IGBEDI": {
+    "quarters": {}
+  },
+  "AYIBABIRI": {
+    "quarters": {}
+  },
+  "SOMBRERO": {
+    "quarters": {}
+  },
+  "OFONIBIRI": {
+    "quarters": {}
+  },
+  "KALAMA": {
+    "quarters": {}
+  },
+  "OYOBU": {
+    "quarters": {}
+  },
+  "IGBOMOTORO": {
+    "quarters": {}
+  },
+  "PEREMABIRI": {
+    "quarters": {}
+  },
+  "OPUAMA": {
+    "quarters": {}
+  },
+  "ENIWARI": {
+    "quarters": {}
+  },
+  "ANGIAMA": {
+    "quarters": {}
+  },
+  "DIEBU": {
+    "quarters": {}
+  },
+  "ONDEWARI": {
+    "quarters": {}
+  },
+  "AZIAMA": {
+    "quarters": {}
+  },
+  "ATAMUNU": {
+    "quarters": {}
+  },
+  "EKORINIM": {
+    "quarters": {}
+  },
+  "ETTA AGBO": {
+    "quarters": {}
+  },
+  "IKOT EFA": {
+    "quarters": {}
+  },
+  "IKOT UDUAK": {
+    "quarters": {}
+  },
+  "MBORA": {
+    "quarters": {}
+  },
+  "SATELLITE TOWN": {
+    "quarters": {}
+  },
+  "AKPAP OKOYONG": {
+    "quarters": {}
+  },
+  "EKI": {
+    "quarters": {}
+  },
+  "ENIONG ABATIM": {
+    "quarters": {}
+  },
+  "ITO": {
+    "quarters": {}
+  },
+  "IDERE": {
+    "quarters": {}
+  },
+  "UKWA IBOM": {
+    "quarters": {}
+  },
+  "CREEK TOWN": {
+    "quarters": {}
+  },
+  "INUAKPA OKOYONG": {
+    "quarters": {}
+  },
+  "OKURIKANG": {
+    "quarters": {}
+  },
+  "ISHIBORI": {
+    "quarters": {}
+  },
+  "EKUMTAK": {
+    "quarters": {}
+  },
+  "OBOSO": {
+    "quarters": {}
+  },
+  "BANSAN": {
+    "quarters": {}
+  },
+  "IDUM": {
+    "quarters": {}
+  },
+  "EKAJUK": {
+    "quarters": {}
+  },
+  "EGBONG": {
+    "quarters": {}
+  },
+  "NNANG": {
+    "quarters": {}
+  },
+  "BANSARA": {
+    "quarters": {}
+  },
+  "OKPOMA": {
+    "quarters": {}
+  },
+  "YAHE": {
+    "quarters": {}
+  },
+  "UGAGA": {
+    "quarters": {}
+  },
+  "IJEGO": {
+    "quarters": {}
+  },
+  "IMAJE": {
+    "quarters": {}
+  },
+  "OKE": {
+    "quarters": {}
+  },
+  "ECHUMOGA": {
+    "quarters": {}
+  },
+  "WODA": {
+    "quarters": {}
+  },
+  "EBO": {
+    "quarters": {}
+  },
+  "IGEDE EDII NATION": {
+    "quarters": {}
+  },
+  "ITEKPA": {
+    "quarters": {}
+  },
+  "MAA": {
+    "quarters": {}
+  },
+  "WONYE": {
+    "quarters": {}
+  },
+  "UCHU": {
+    "quarters": {}
+  },
+  "MBUOR": {
+    "quarters": {}
+  },
+  "ALIFORKPA": {
+    "quarters": {}
+  },
+  "ECHUMOFANA": {
+    "quarters": {}
+  },
+  "WANIHEM": {
+    "quarters": {}
+  },
+  "WANIKADE": {
+    "quarters": {}
+  },
+  "WANOKOM": {
+    "quarters": {}
+  },
+  "IJIRAGA": {
+    "quarters": {}
+  },
+  "NTRIGOM": {
+    "quarters": {}
+  },
+  "BISIRI": {
+    "quarters": {}
+  },
+  "ABAKPA": {
+    "quarters": {}
+  },
+  "UKELLE": {
+    "quarters": {}
+  },
+  "UKWEL": {
+    "quarters": {}
+  },
+  "UDAMA UBUG": {
+    "quarters": {}
+  },
+  "AKPARABONG": {
+    "quarters": {}
+  },
+  "ABANYUM": {
+    "quarters": {}
+  },
+  "OLULUMO": {
+    "quarters": {}
+  },
+  "NTAMANTE": {
+    "quarters": {}
+  },
+  "BORUM": {
+    "quarters": {}
+  },
+  "KAKWAGOM-IRRUAN": {
+    "quarters": {}
+  },
+  "BUNYIA": {
+    "quarters": {}
+  },
+  "NKIM OSOKOM": {
+    "quarters": {}
+  },
+  "BOJE": {
+    "quarters": {}
+  },
+  "DADI": {
+    "quarters": {}
+  },
+  "IMAN": {
+    "quarters": {}
+  },
+  "OKUNDI": {
+    "quarters": {}
+  },
+  "UGEP": {
+    "quarters": {}
+  },
+  "MKPANI": {
+    "quarters": {}
+  },
+  "IDOMI": {
+    "quarters": {}
+  },
+  "EKORI": {
+    "quarters": {}
+  },
+  "INYIMA": {
+    "quarters": {}
+  },
+  "NKO": {
+    "quarters": {}
+  },
+  "ASSIGA": {
+    "quarters": {}
+  },
+  "AGOI IBAMI": {
+    "quarters": {}
+  },
+  "AGOI EKPO": {
+    "quarters": {}
+  },
+  "AGOI EFREKE": {
+    "quarters": {}
+  },
+  "ITIGIDI": {
+    "quarters": {}
+  },
+  "EDIBA": {
+    "quarters": {}
+  },
+  "USUMUTONG": {
+    "quarters": {}
+  },
+  "EBOM": {
+    "quarters": {}
+  },
+  "AFAFANYI": {
+    "quarters": {}
+  },
+  "IGONIGONI": {
+    "quarters": {}
+  },
+  "ANONG": {
+    "quarters": {}
+  },
+  "EKUREKU": {
+    "quarters": {}
+  },
+  "IMABANA": {
+    "quarters": {}
+  },
+  "ABUOCHICHE": {
+    "quarters": {}
+  },
+  "ABUAGBOR-IYE": {
+    "quarters": {}
+  },
+  "NYANYA-ULIM": {
+    "quarters": {}
+  },
+  "NYANYA-IDIGWE": {
+    "quarters": {}
+  },
+  "GAKEM": {
+    "quarters": {}
+  },
+  "UGBORO": {
+    "quarters": {}
+  },
+  "IBIRAGIDI": {
+    "quarters": {}
+  },
+  "UTUKWE": {
+    "quarters": {}
+  },
+  "AFRIKE": {
+    "quarters": {}
+  },
+  "UKPAH": {
+    "quarters": {}
+  },
+  "IJIBOR": {
+    "quarters": {}
+  },
+  "BETEN": {
+    "quarters": {}
+  },
+  "ANYIKANG": {
+    "quarters": {}
+  },
+  "EBEGANG": {
+    "quarters": {}
+  },
+  "UTUKPURU": {
+    "quarters": {}
+  },
+  "EBEWO": {
+    "quarters": {}
+  },
+  "BETTE": {
+    "quarters": {}
+  },
+  "OKPE": {
+    "quarters": {}
+  },
+  "ALEGE": {
+    "quarters": {}
+  },
+  "BECHEVE": {
+    "quarters": {}
+  },
+  "UNPE": {
+    "quarters": {}
+  },
+  "UTANGA": {
+    "quarters": {}
+  },
+  "UGANG": {
+    "quarters": {}
+  },
+  "UTUGWANG": {
+    "quarters": {}
+  },
+  "ANANTIGHA": {
+    "quarters": {}
+  },
+  "HENSHAW TOWN": {
+    "quarters": {}
+  },
+  "EFFUT UWANSE": {
+    "quarters": {}
+  },
+  "EFUT EBUA": {
+    "quarters": {}
+  },
+  "AKAMKPA": {
+    "quarters": {}
+  },
+  "UYANGA": {
+    "quarters": {}
+  },
+  "IKPI": {
+    "quarters": {}
+  },
+  "AWI": {
+    "quarters": {}
+  },
+  "MBARAKON": {
+    "quarters": {}
+  },
+  "EKU": {
+    "quarters": {}
+  },
+  "OBAN": {
+    "quarters": {}
+  },
+  "AKPET": {
+    "quarters": {}
+  },
+  "UBAGHARA": {
+    "quarters": {}
+  },
+  "OKURIKE": {
+    "quarters": {}
+  },
+  "AGWAGUNE": {
+    "quarters": {}
+  },
+  "OBUM": {
+    "quarters": {}
+  },
+  "UMUOLOR": {
+    "quarters": {}
+  },
+  "EGBOR": {
+    "quarters": {}
+  },
+  "AKPARAVUNI": {
+    "quarters": {}
+  },
+  "ABABENE": {
+    "quarters": {}
+  },
+  "IYAMITET": {
+    "quarters": {}
+  },
+  "OKOM": {
+    "quarters": {}
+  },
+  "OSOPONG": {
+    "quarters": {}
+  },
+  "IYALLA": {
+    "quarters": {}
+  },
+  "OFAT": {
+    "quarters": {}
+  },
+  "OFODUA": {
+    "quarters": {}
+  },
+  "OFOMBO-NGHA": {
+    "quarters": {}
+  },
+  "PORT HARCOURT": {
+    "quarters": {}
+  },
+  "OBIO-AKPOR": {
+    "quarters": {}
+  },
+  "OKRIKA:": {
+    "quarters": {}
+  },
+  "ELEME": {
+    "quarters": {}
+  },
+  "IKWERRE": {
+    "quarters": {}
+  },
+  "OYIGBO": {
+    "quarters": {}
+  },
+  "OGU–BOLO": {
+    "quarters": {}
+  },
+  "ETCHE": {
+    "quarters": {}
+  },
+  "ELELENWO": {
+    "quarters": {}
+  },
+  "NKPELU": {
+    "quarters": {}
+  },
+  "RUMUEME": {
+    "quarters": {}
+  },
+  "RUMUOKORO": {
+    "quarters": {}
+  },
+  "WOJI": {
+    "quarters": {}
+  },
+  "TRANS-AMADI": {
+    "quarters": {}
+  },
+  "RUMUOJI": {
+    "quarters": {}
+  },
+  "CHOBA": {
+    "quarters": {}
+  },
+  "ELELE": {
+    "quarters": {}
+  },
+  "OMAGWA": {
+    "quarters": {}
+  },
+  "IPO": {
+    "quarters": {}
+  },
+  "ALUU": {
+    "quarters": {}
+  },
+  "OMUANWA": {
+    "quarters": {}
+  },
+  "OMADEME": {
+    "quarters": {}
+  },
+  "OZUAHA": {
+    "quarters": {}
+  },
+  "UBIMA": {
+    "quarters": {}
+  },
+  "ODUOHA": {
+    "quarters": {}
+  },
+  "ELIBRADA": {
+    "quarters": {}
+  },
+  "ISIODU": {
+    "quarters": {}
+  },
+  "RUMUAKUNDE": {
+    "quarters": {}
+  },
+  "RUMUCHE": {
+    "quarters": {}
+  },
+  "RUMUOHIA": {
+    "quarters": {}
+  },
+  "MGBUETO": {
+    "quarters": {}
+  },
+  "MGBUITANWO": {
+    "quarters": {}
+  },
+  "OMUDIOGA": {
+    "quarters": {}
+  },
+  "EGBEDA": {
+    "quarters": {}
+  },
+  "UBIMINI": {
+    "quarters": {}
+  },
+  "ELELE-ALIMINI": {
+    "quarters": {}
+  },
+  "RUMUJI": {
+    "quarters": {}
+  },
+  "IBAA": {
+    "quarters": {}
+  },
+  "OBELLE": {
+    "quarters": {}
+  },
+  "NDELE": {
+    "quarters": {}
+  },
+  "ODEGU": {
+    "quarters": {}
+  },
+  "OKEHI": {
+    "quarters": {}
+  },
+  "AFARA": {
+    "quarters": {}
+  },
+  "CHOKOCHO": {
+    "quarters": {}
+  },
+  "IGBOH": {
+    "quarters": {}
+  },
+  "EGBEKE": {
+    "quarters": {}
+  },
+  "IGBODO": {
+    "quarters": {}
+  },
+  "OPIRO": {
+    "quarters": {}
+  },
+  "UMUECHEM": {
+    "quarters": {}
+  },
+  "ODUFOR": {
+    "quarters": {}
+  },
+  "OKOMOKO": {
+    "quarters": {}
+  },
+  "ULUMUODE": {
+    "quarters": {}
+  },
+  "UMUANYAGU": {
+    "quarters": {}
+  },
+  "UMUAGBA": {
+    "quarters": {}
+  },
+  "UMUOKORO": {
+    "quarters": {}
+  },
+  "UMUOKWU": {
+    "quarters": {}
+  },
+  "UMUOLA": {
+    "quarters": {}
+  },
+  "UMUOMARA": {
+    "quarters": {}
+  },
+  "UMUOYERE": {
+    "quarters": {}
+  },
+  "KIRIKE": {
+    "quarters": {}
+  },
+  "OGOLOMA": {
+    "quarters": {}
+  },
+  "OGU": {
+    "quarters": {}
+  },
+  "BOLO": {
+    "quarters": {}
+  },
+  "OGBOGBO": {
+    "quarters": {}
+  },
+  "IBAKA": {
+    "quarters": {}
+  },
+  "ELE": {
+    "quarters": {}
+  },
+  "ISAKA": {
+    "quarters": {}
+  },
+  "ABULOMA": {
+    "quarters": {}
+  },
+  "KONIJU": {
+    "quarters": {}
+  },
+  "OTAPHA": {
+    "quarters": {}
+  },
+  "OKPEDEN": {
+    "quarters": {}
+  },
+  "OGBO ABUAN": {
+    "quarters": {}
+  },
+  "EMUGHAN": {
+    "quarters": {}
+  },
+  "EMAGO-KUGBO": {
+    "quarters": {}
+  },
+  "EMEKESUE": {
+    "quarters": {}
+  },
+  "EMELEGO": {
+    "quarters": {}
+  },
+  "EGBOAMA": {
+    "quarters": {}
+  },
+  "AMOROTA": {
+    "quarters": {}
+  },
+  "AMARAKA": {
+    "quarters": {}
+  },
+  "AHOADA": {
+    "quarters": {}
+  },
+  "ABARIKPO": {
+    "quarters": {}
+  },
+  "EDEOHA": {
+    "quarters": {}
+  },
+  "OGBO": {
+    "quarters": {}
+  },
+  "ODIABIDI": {
+    "quarters": {}
+  },
+  "IHUGBOGO": {
+    "quarters": {}
+  },
+  "AKINIMA": {
+    "quarters": {}
+  },
+  "MBIAMA": {
+    "quarters": {}
+  },
+  "EBIRO": {
+    "quarters": {}
+  },
+  "ODIEMUDIE": {
+    "quarters": {}
+  },
+  "AGBO/AKOGBOLOGBA": {
+    "quarters": {}
+  },
+  "AKARAMIRIN": {
+    "quarters": {}
+  },
+  "AKOH": {
+    "quarters": {}
+  },
+  "ALA-AHOADA": {
+    "quarters": {}
+  },
+  "ANAKPA": {
+    "quarters": {}
+  },
+  "EDUGBERI": {
+    "quarters": {}
+  },
+  "IHUECHI": {
+    "quarters": {}
+  },
+  "ODIAPITI": {
+    "quarters": {}
+  },
+  "UYALAMA": {
+    "quarters": {}
+  },
+  "ORUAMA": {
+    "quarters": {}
+  },
+  "ABISSA": {
+    "quarters": {}
+  },
+  "ABONNEMA": {
+    "quarters": {}
+  },
+  "ELEM-SANGAMA": {
+    "quarters": {}
+  },
+  "IDAMA": {
+    "quarters": {}
+  },
+  "KULA": {
+    "quarters": {}
+  },
+  "OBONOMA": {
+    "quarters": {}
+  },
+  "ORU-SANGAMA": {
+    "quarters": {}
+  },
+  "SOKU": {
+    "quarters": {}
+  },
+  "BONNY TOWN": {
+    "quarters": {}
+  },
+  "FINIMA": {
+    "quarters": {}
+  },
+  "OKOLOAMA": {
+    "quarters": {}
+  },
+  "SANDFIELD": {
+    "quarters": {}
+  },
+  "IWOAMA": {
+    "quarters": {}
+  },
+  "OROSIKIRI": {
+    "quarters": {}
+  },
+  "AGANYA": {
+    "quarters": {}
+  },
+  "AYAMBO": {
+    "quarters": {}
+  },
+  "AKIAMA": {
+    "quarters": {}
+  },
+  "ISILEGONO": {
+    "quarters": {}
+  },
+  "NEW ROAD": {
+    "quarters": {}
+  },
+  "WILBROSS PIPELINE": {
+    "quarters": {}
+  },
+  "WORKERS CAMP": {
+    "quarters": {}
+  },
+  "KURUMA": {
+    "quarters": {}
+  },
+  "FIBIRI": {
+    "quarters": {}
+  },
+  "OLOMA": {
+    "quarters": {}
+  },
+  "KALAIBIAMA": {
+    "quarters": {}
+  },
+  "IFOKO": {
+    "quarters": {}
+  },
+  "SANGAMABIE": {
+    "quarters": {}
+  },
+  "EPELLEMATUBO": {
+    "quarters": {}
+  },
+  "ABALAMABIE": {
+    "quarters": {}
+  },
+  "DEGEMA": {
+    "quarters": {}
+  },
+  "BAKANA": {
+    "quarters": {}
+  },
+  "USOKUN-DEGEMA": {
+    "quarters": {}
+  },
+  "OGURAMA": {
+    "quarters": {}
+  },
+  "BILLE": {
+    "quarters": {}
+  },
+  "OBUAMA": {
+    "quarters": {}
+  },
+  "BUKUMA": {
+    "quarters": {}
+  },
+  "OMOKU": {
+    "quarters": {}
+  },
+  "OBRIKOM": {
+    "quarters": {}
+  },
+  "EREAMA": {
+    "quarters": {}
+  },
+  "OBITE": {
+    "quarters": {}
+  },
+  "OBAGI": {
+    "quarters": {}
+  },
+  "OBUBURU": {
+    "quarters": {}
+  },
+  "OBIE": {
+    "quarters": {}
+  },
+  "OBOKROHA": {
+    "quarters": {}
+  },
+  "OGBOGU": {
+    "quarters": {}
+  },
+  "OKANSU": {
+    "quarters": {}
+  },
+  "OKPOSI": {
+    "quarters": {}
+  },
+  "OKPURUKPULA": {
+    "quarters": {}
+  },
+  "ONUESI-OGU": {
+    "quarters": {}
+  },
+  "OSIAKPU": {
+    "quarters": {}
+  },
+  "UJU": {
+    "quarters": {}
+  },
+  "USOMINI": {
+    "quarters": {}
+  },
+  "AGAH": {
+    "quarters": {}
+  },
+  "AKABUKA": {
+    "quarters": {}
+  },
+  "ALINSO-OKENU": {
+    "quarters": {}
+  },
+  "EGBEMA": {
+    "quarters": {}
+  },
+  "EGITA-AKABUTA": {
+    "quarters": {}
+  },
+  "EREMA": {
+    "quarters": {}
+  },
+  "IKIRI": {
+    "quarters": {}
+  },
+  "MGBEDE": {
+    "quarters": {}
+  },
+  "ADIAI – OBIOFU": {
+    "quarters": {}
+  },
+  "AGWE": {
+    "quarters": {}
+  },
+  "AMUAJIE": {
+    "quarters": {}
+  },
+  "ASE – IMONITA": {
+    "quarters": {}
+  },
+  "ASE-AZAGA": {
+    "quarters": {}
+  },
+  "ISARA": {
+    "quarters": {}
+  },
+  "ISIUKWA": {
+    "quarters": {}
+  },
+  "NDONI": {
+    "quarters": {}
+  },
+  "OBOASO": {
+    "quarters": {}
+  },
+  "ODUGILI": {
+    "quarters": {}
+  },
+  "OGBEOGENE": {
+    "quarters": {}
+  },
+  "ONIKU": {
+    "quarters": {}
+  },
+  "OWAJINOBIA": {
+    "quarters": {}
+  },
+  "UGBAJA": {
+    "quarters": {}
+  },
+  "UMUIGWE": {
+    "quarters": {}
+  },
+  "UMUORIEKE": {
+    "quarters": {}
+  },
+  "UTU": {
+    "quarters": {}
+  },
+  "ANKPA": {
+    "quarters": {}
+  },
+  "ENJEMA": {
+    "quarters": {}
+  },
+  "OJOKU": {
+    "quarters": {}
+  },
+  "ABACHE": {
+    "quarters": {}
+  },
+  "ABO": {
+    "quarters": {}
+  },
+  "ACHERANE": {
+    "quarters": {}
+  },
+  "ADDE": {
+    "quarters": {}
+  },
+  "AGUMA": {
+    "quarters": {}
+  },
+  "AKA": {
+    "quarters": {}
+  },
+  "AKWU": {
+    "quarters": {}
+  },
+  "ATUMA": {
+    "quarters": {}
+  },
+  "BIRAIDU": {
+    "quarters": {}
+  },
+  "EBAKPOTI": {
+    "quarters": {}
+  },
+  "EDE": {
+    "quarters": {}
+  },
+  "EFWO": {
+    "quarters": {}
+  },
+  "ABEJUKOLO": {
+    "quarters": {}
+  },
+  "OGODU": {
+    "quarters": {}
+  },
+  "OGUGUDU": {
+    "quarters": {}
+  },
+  "OTI": {
+    "quarters": {}
+  },
+  "OLIYA": {
+    "quarters": {}
+  },
+  "IJALI": {
+    "quarters": {}
+  },
+  "AKPACHA": {
+    "quarters": {}
+  },
+  "BAGANA": {
+    "quarters": {}
+  },
+  "BRAIDU": {
+    "quarters": {}
+  },
+  "OKPO (THE HEADQUARTERS)": {
+    "quarters": {}
+  },
+  "IMANI": {
+    "quarters": {}
+  },
+  "ADUMU": {
+    "quarters": {}
+  },
+  "ENABO": {
+    "quarters": {}
+  },
+  "OFENWA": {
+    "quarters": {}
+  },
+  "OJAMAKOGWU": {
+    "quarters": {}
+  },
+  "EBOYI": {
+    "quarters": {}
+  },
+  "AKPAGIDIGBO": {
+    "quarters": {}
+  },
+  "DEKINA": {
+    "quarters": {}
+  },
+  "OLOGBA": {
+    "quarters": {}
+  },
+  "ULAJA": {
+    "quarters": {}
+  },
+  "ODUATE": {
+    "quarters": {}
+  },
+  "ADOLOKO": {
+    "quarters": {}
+  },
+  "OLOWA": {
+    "quarters": {}
+  },
+  "IJOJI": {
+    "quarters": {}
+  },
+  "AGALA": {
+    "quarters": {}
+  },
+  "BIRDU": {
+    "quarters": {}
+  },
+  "ACHARU": {
+    "quarters": {}
+  },
+  "IDAH": {
+    "quarters": {}
+  },
+  "ABUJAGA": {
+    "quarters": {}
+  },
+  "AGALUGBAJE": {
+    "quarters": {}
+  },
+  "AKUTA": {
+    "quarters": {}
+  },
+  "ALADE": {
+    "quarters": {}
+  },
+  "ALADGBAJADU": {
+    "quarters": {}
+  },
+  "ALAKOME": {
+    "quarters": {}
+  },
+  "ALIMOKE": {
+    "quarters": {}
+  },
+  "ALLA-OKWEJE": {
+    "quarters": {}
+  },
+  "ONYEDEGA": {
+    "quarters": {}
+  },
+  "AGOJEJEU": {
+    "quarters": {}
+  },
+  "GBOKOLUBA": {
+    "quarters": {}
+  },
+  "OJUKPO": {
+    "quarters": {}
+  },
+  "IGBADIM": {
+    "quarters": {}
+  },
+  "AYANKA": {
+    "quarters": {}
+  },
+  "ADOMA": {
+    "quarters": {}
+  },
+  "AJAKA": {
+    "quarters": {}
+  },
+  "ODOLU": {
+    "quarters": {}
+  },
+  "OGBONICHA": {
+    "quarters": {}
+  },
+  "OJILA": {
+    "quarters": {}
+  },
+  "UGWOLAWO": {
+    "quarters": {}
+  },
+  "AKPANYA": {
+    "quarters": {}
+  },
+  "OGWOLAWO": {
+    "quarters": {}
+  },
+  "ALOMA": {
+    "quarters": {}
+  },
+  "ITOBE": {
+    "quarters": {}
+  },
+  "EJULE": {
+    "quarters": {}
+  },
+  "ALOJI": {
+    "quarters": {}
+  },
+  "OFOKE": {
+    "quarters": {}
+  },
+  "IGO": {
+    "quarters": {}
+  },
+  "ISANLU": {
+    "quarters": {}
+  },
+  "IFE-OLUKOTUN": {
+    "quarters": {}
+  },
+  "EJUKU": {
+    "quarters": {}
+  },
+  "PONYAN": {
+    "quarters": {}
+  },
+  "JEGE": {
+    "quarters": {}
+  },
+  "ODO-AMU": {
+    "quarters": {}
+  },
+  "OKEAGI": {
+    "quarters": {}
+  },
+  "AIYEDE": {
+    "quarters": {}
+  },
+  "AIYEGUNLE-OKEAGI": {
+    "quarters": {}
+  },
+  "ODO-ERE": {
+    "quarters": {}
+  },
+  "EGBE": {
+    "quarters": {}
+  },
+  "ODOSIN": {
+    "quarters": {}
+  },
+  "OKUNRAN": {
+    "quarters": {}
+  },
+  "IYEMERIN": {
+    "quarters": {}
+  },
+  "IDDO": {
+    "quarters": {}
+  },
+  "OKOLOKE": {
+    "quarters": {}
+  },
+  "IGBARAKU": {
+    "quarters": {}
+  },
+  "EJIBA": {
+    "quarters": {}
+  },
+  "AKAKA": {
+    "quarters": {}
+  },
+  "MOPA": {
+    "quarters": {}
+  },
+  "ANUNMADE": {
+    "quarters": {}
+  },
+  "IYA LERE": {
+    "quarters": {}
+  },
+  "ARIBO": {
+    "quarters": {}
+  },
+  "ANNUMOTE": {
+    "quarters": {}
+  },
+  "OMOLOKUN": {
+    "quarters": {}
+  },
+  "ARUPE DENA": {
+    "quarters": {}
+  },
+  "LOKOJA": {
+    "quarters": {}
+  },
+  "ADANKOLO": {
+    "quarters": {}
+  },
+  "AGBODO": {
+    "quarters": {}
+  },
+  "BANDA": {
+    "quarters": {}
+  },
+  "FELELE": {
+    "quarters": {}
+  },
+  "OBAGANA": {
+    "quarters": {}
+  },
+  "KAKANDA": {
+    "quarters": {}
+  },
+  "KUPA": {
+    "quarters": {}
+  },
+  "OWORO": {
+    "quarters": {}
+  },
+  "KOTON-KARFE": {
+    "quarters": {}
+  },
+  "UKWO": {
+    "quarters": {}
+  },
+  "GEGU": {
+    "quarters": {}
+  },
+  "BUDON": {
+    "quarters": {}
+  },
+  "KOTON-KARFE SOUTH": {
+    "quarters": {}
+  },
+  "KOTON-KARFE NORTH": {
+    "quarters": {}
+  },
+  "KOTON-KARFE CENTRAL": {
+    "quarters": {}
+  },
+  "KABBA": {
+    "quarters": {}
+  },
+  "BUNU": {
+    "quarters": {}
+  },
+  "ODO-APE": {
+    "quarters": {}
+  },
+  "OKEBUKUN": {
+    "quarters": {}
+  },
+  "IYARA": {
+    "quarters": {}
+  },
+  "AYETORO GBEDE": {
+    "quarters": {}
+  },
+  "IYAH-GBEDE": {
+    "quarters": {}
+  },
+  "AYEGUNLE GBEDE": {
+    "quarters": {}
+  },
+  "ARAROMI GBEDE": {
+    "quarters": {}
+  },
+  "AYERE": {
+    "quarters": {}
+  },
+  "AYEH GBEDE": {
+    "quarters": {}
+  },
+  "OKORO GBEDE": {
+    "quarters": {}
+  },
+  "ODOKORO GBEDE": {
+    "quarters": {}
+  },
+  "EKINRIN-ADDE": {
+    "quarters": {}
+  },
+  "EGBEDA EGGA": {
+    "quarters": {}
+  },
+  "IYAMOYE": {
+    "quarters": {}
+  },
+  "IKOYI": {
+    "quarters": {}
+  },
+  "OTUNGBA": {
+    "quarters": {}
+  },
+  "OTON-ADE": {
+    "quarters": {}
+  },
+  "ORIGA": {
+    "quarters": {}
+  },
+  "AJAOKUTA": {
+    "quarters": {}
+  },
+  "AGARUGU": {
+    "quarters": {}
+  },
+  "EBIYA": {
+    "quarters": {}
+  },
+  "EPIRI": {
+    "quarters": {}
+  },
+  "ACHAGANA": {
+    "quarters": {}
+  },
+  "IDIRE": {
+    "quarters": {}
+  },
+  "OHUNENE": {
+    "quarters": {}
+  },
+  "SHAGANA": {
+    "quarters": {}
+  },
+  "EIKA": {
+    "quarters": {}
+  },
+  "IHIMA": {
+    "quarters": {}
+  },
+  "OBANGEDE": {
+    "quarters": {}
+  },
+  "ITAKPE": {
+    "quarters": {}
+  },
+  "OKAITO": {
+    "quarters": {}
+  },
+  "OSARA": {
+    "quarters": {}
+  },
+  "OGAMINANA": {
+    "quarters": {}
+  },
+  "EBOGOGO": {
+    "quarters": {}
+  },
+  "EDEGU": {
+    "quarters": {}
+  },
+  "ATAMI": {
+    "quarters": {}
+  },
+  "ADONUKOKO": {
+    "quarters": {}
+  },
+  "IDAKURA": {
+    "quarters": {}
+  },
+  "OGORI": {
+    "quarters": {}
+  },
+  "MAGONGO": {
+    "quarters": {}
+  }
+}

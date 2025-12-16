@@ -3,7 +3,15 @@ module.exports = {
   siteUrl: process.env.SITE_URL || 'https://ndigboviva.com',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
-  exclude: ['/admin/*', '/api/*'],
+  exclude: [
+    '/admin/*',
+    '/api/*',
+    '/auth/*',           // Login/register pages
+    '/profile',          // User profile page
+    '/test-email',       // Test pages
+    '/disclaimer',       // Internal pages
+    '/acknowledgements/*' // Acknowledgement pages
+  ],
   additionalPaths: async (config) => {
     const result = [];
 
@@ -11,7 +19,7 @@ module.exports = {
     try {
       const { getLatestVideos } = await import('./src/lib/youtube.ts');
       const videos = await getLatestVideos(50);
-      
+
       videos.forEach((video) => {
         result.push({
           loc: `/blog/${video.slug}`,
@@ -22,7 +30,7 @@ module.exports = {
       });
     } catch (error) {
       console.warn('Failed to fetch YouTube videos for sitemap:', error);
-      
+
       // Fallback to static blog posts
       const blogPosts = [
         'power-of-igbo-culture',
@@ -58,6 +66,31 @@ module.exports = {
     ],
   },
   transform: async (config, path) => {
+    // Exclude pages that shouldn't be in sitemap
+    const excludedPaths = [
+      '/admin',
+      '/auth/login',
+      '/auth/register',
+      '/profile',
+      '/test-email',
+      '/disclaimer',
+      '/events',
+      '/news',
+      '/articles',
+      '/audiobooks',
+      '/fashion',
+      '/our-community'
+    ];
+
+    // Exclude if path matches any excluded path or starts with excluded pattern
+    if (excludedPaths.includes(path) ||
+      path.startsWith('/admin/') ||
+      path.startsWith('/api/') ||
+      path.startsWith('/auth/') ||
+      path.startsWith('/acknowledgements/')) {
+      return null;
+    }
+
     // Custom transform for different page types
     const customConfig = {
       loc: path,

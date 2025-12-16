@@ -19,7 +19,6 @@ export async function GET(request: Request) {
       count: subscribers.length
     });
   } catch (error: unknown) {
-    console.error('Error getting subscribers:', error);
     return NextResponse.json(
       { error: error instanceof Error ? error.message : 'Internal Server Error' },
       { status: 500 }

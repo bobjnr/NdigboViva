@@ -138,8 +138,6 @@ async function sendEmail(to: string[], subject: string, html: string) {
     
     // Handle domain verification requirement
     if (response.status === 403 && errorData.message?.includes('verify a domain')) {
-      console.log('Domain verification required. Attempting to send to original recipients with different approach...');
-      
       // Try sending with a different approach - use Resend's default domain more explicitly
       try {
         const retryResponse = await fetch('https://api.resend.com/emails', {
@@ -158,16 +156,14 @@ async function sendEmail(to: string[], subject: string, html: string) {
         
         if (retryResponse.ok) {
           const retryResult = await retryResponse.json();
-          console.log('Email sent successfully on retry');
           return retryResult;
         }
       } catch (retryError) {
-        console.log('Retry failed, using fallback approach:', retryError);
+        void retryError;
       }
       
       // If retry fails, use the verified email fallback
       const verifiedEmail = 'bobekene7@gmail.com';
-      console.log(`Using fallback: sending to verified address: ${verifiedEmail}`);
       
       const forwardedHtml = `
         <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #dc3545;">
@@ -200,7 +196,6 @@ async function sendEmail(to: string[], subject: string, html: string) {
       }
       
       const result = await forwardedResponse.json();
-      console.log(`Email forwarded to verified address: ${verifiedEmail}`);
       return result;
     }
     
@@ -221,7 +216,6 @@ export async function sendWelcomeEmail(data: WelcomeEmailData) {
 
     return { success: true, messageId: result.id };
   } catch (error) {
-    console.error('Error sending welcome email:', error);
     return { success: false, error: error instanceof Error ? error.message : 'Failed to send email' };
   }
 }
@@ -237,7 +231,6 @@ export async function sendBlogPostEmail(data: BlogPostEmailData, subscriberEmail
 
     return { success: true, messageId: result.id };
   } catch (error) {
-    console.error('Error sending blog post email:', error);
     return { success: false, error: error instanceof Error ? error.message : 'Failed to send email' };
   }
 }

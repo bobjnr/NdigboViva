@@ -1,6 +1,10 @@
 import { NextResponse } from 'next/server';
+import { blockProdAccess } from '@/lib/api-guards';
 
 export async function OPTIONS() {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   return new NextResponse(null, {
     status: 200,
     headers: {
@@ -12,6 +16,9 @@ export async function OPTIONS() {
 }
 
 export async function POST() {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   try {
     const apiKey = process.env.RESEND_API_KEY;
     
@@ -21,10 +28,6 @@ export async function POST() {
         error: 'RESEND_API_KEY not configured'
       }, { status: 500 });
     }
-
-    console.log('Testing simple email...');
-    console.log('API Key present:', !!apiKey);
-    console.log('API Key length:', apiKey.length);
 
     // Simple test email
     const response = await fetch('https://api.resend.com/emails', {
@@ -56,12 +59,8 @@ export async function POST() {
       }),
     });
 
-    console.log('Resend API response status:', response.status);
-    
     if (!response.ok) {
       const errorText = await response.text();
-      console.error('Resend API error:', errorText);
-      
       return NextResponse.json({
         success: false,
         error: `Resend API error: ${response.status}`,
@@ -71,7 +70,6 @@ export async function POST() {
     }
 
     const result = await response.json();
-    console.log('Email sent successfully:', result);
     
     return NextResponse.json({
       success: true,
@@ -88,7 +86,6 @@ export async function POST() {
     });
 
   } catch (error) {
-    console.error('Simple email test error:', error);
     return NextResponse.json({
       success: false,
       error: error instanceof Error ? error.message : 'Unknown error',
