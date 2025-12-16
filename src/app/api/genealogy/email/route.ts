@@ -35,8 +35,6 @@ export async function POST(request: NextRequest) {
     const emailContent = generateGenealogyEmailContent(formData);
 
     // TODO: Send personalized email using Mailchimp campaigns or transactional email
-    // For now, we'll just log the content
-    console.log('Genealogy email content:', emailContent);
 
     return NextResponse.json({
       success: true,
@@ -44,8 +42,7 @@ export async function POST(request: NextRequest) {
       emailContent: emailContent
     });
 
-  } catch (error) {
-    console.error('Genealogy email error:', error);
+  } catch (_error) {
     return NextResponse.json(
       { 
         success: false, 

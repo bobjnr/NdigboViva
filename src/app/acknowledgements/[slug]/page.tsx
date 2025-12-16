@@ -248,30 +248,30 @@ This video was made with the informed consent of Prof. Casmir C.K. Ani in line w
           { citation: "Ikejiani-Clark, M. (2009). Peace studies and conflict resolution in Nigeria: A reader. Ibadan, Nigeria: Spectrum Books." }
         ],
         visualSources: [
-          { 
-            title: "Prof. Miriam Ikejiani-Clark (2011, October 11)", 
-            source: "Testing Only on 25 Jan 2012", 
-            link: "https://testingonlyon25jan2012.wordpress.com/2011/10/11/miriam-ikejiani-clark-tear-for-a-quintessential-woman/" 
+          {
+            title: "Prof. Miriam Ikejiani-Clark (2011, October 11)",
+            source: "Testing Only on 25 Jan 2012",
+            link: "https://testingonlyon25jan2012.wordpress.com/2011/10/11/miriam-ikejiani-clark-tear-for-a-quintessential-woman/"
           },
-          { 
-            title: "Monsignor Obiora Ike (Producer). (May 27, 2018). Lohmann, M. Image [Video screenshot]. YouTube.", 
-            source: "Obiora Ike Christentum & Islam", 
-            link: "https://www.youtube.com/watch?v=HJc20iyGAwI" 
+          {
+            title: "Monsignor Obiora Ike (Producer). (May 27, 2018). Lohmann, M. Image [Video screenshot]. YouTube.",
+            source: "Obiora Ike Christentum & Islam",
+            link: "https://www.youtube.com/watch?v=HJc20iyGAwI"
           },
-          { 
-            title: "Ngozi Okonjo-Iweala, Managing Director, World Bank Fund. (July 28, 2010). International Monetary [Photograph]. IMF Photographic Archives.", 
-            source: "Wikipedia", 
-            link: "https://yo.wikipedia.org/wiki/Ngozi_Okonjo-Iweala#/media/F%C3%A1%C3%ACl%C3%AC:Okonjo-Iweala,_Ngozi_(2008_portrait).jpg" 
+          {
+            title: "Ngozi Okonjo-Iweala, Managing Director, World Bank Fund. (July 28, 2010). International Monetary [Photograph]. IMF Photographic Archives.",
+            source: "Wikipedia",
+            link: "https://yo.wikipedia.org/wiki/Ngozi_Okonjo-Iweala#/media/F%C3%A1%C3%ACl%C3%AC:Okonjo-Iweala,_Ngozi_(2008_portrait).jpg"
           },
-          { 
-            title: "Chimamanda Ngozi Adichie. (2025, February 17). Nwebonyi OliverJunior [Photograph]. Facebook group \"Nigerian Teachers\".", 
-            source: "Facebook", 
-            link: "https://www.facebook.com/groups/nigerianteachers/posts/4959580914267255/" 
+          {
+            title: "Chimamanda Ngozi Adichie. (2025, February 17). Nwebonyi OliverJunior [Photograph]. Facebook group \"Nigerian Teachers\".",
+            source: "Facebook",
+            link: "https://www.facebook.com/groups/nigerianteachers/posts/4959580914267255/"
           },
-          { 
-            title: "Dr. Chuba Okadigbo (2024, February 8)", 
-            source: "Wikipedia, Wikimedia Commons", 
-            link: "https://commons.wikimedia.org/wiki/File:" 
+          {
+            title: "Dr. Chuba Okadigbo (2024, February 8)",
+            source: "Wikipedia, Wikimedia Commons",
+            link: "https://commons.wikimedia.org/wiki/File:"
           }
         ],
         teamAcknowledgements: `Host: Akachukwu Nwankpo (Oputaifeadi)
@@ -463,14 +463,108 @@ Recorded at Ndigbo Viva Studios, Enugu.
 
 For content permissions or collaboration inquiries, please contact ndigbovivalimited@gmail.com`
       }
+    },
+    'the-solid-ethical-and-spiritual-foundation-of-the-igbo-society': {
+      title: "THE SOLID ETHICAL AND SPIRITUAL FOUNDATION OF THE IGBO SOCIETY",
+      thumbnail: "",
+      credits: {
+        guestAcknowledgement: `Ndigbo Viva thanks Prince C.I. Onyesoh for sharing valuable insights that have enriched our mission to advance Igbo civilization.
+
+This video was made with the informed consent of Prince C.I. Onyesoh in line with YouTube Policies. All views expressed remain those of Prince C.I. Onyesoh and do not represent the position of Ndigbo Viva.`,
+        books: [
+          { citation: "Cookey, S. J. S., Alemika, E. E. O., Oyebode, A. B., Amucheazi, E. C., & Yahaya, A. D. (2010). Traditional rulers in Nigeria. Ibadan: Safari Books. https://www.safaribooks.com.ng/product/traditional-rulers-in-nigeria/" }
+        ],
+        visualSources: [
+          { title: "Full Moon, moon, moonrise, night sky (August 18, 2022)", source: "adege", link: "https://pixabay.com/videos/full-moon-moon-moonrise-night-128118/" },
+          { title: "Grasshopper, Insect, Migratory Locust (2020)", source: "adege", link: "https://pixabay.com/videos/grasshopper-insect-migratory-locust-49720/" },
+          { title: "IGALA – The Most Ancient Civilization in Kogi State (June 4, 2020)", source: "OFFICE OF THE SPECIAL ADVISER ON CULTURE AND TOURISM", link: "https://kogicultureandtourism.wordpress.com/2020/06/04/ancient-and-relevant-civilization/" },
+          { title: "Amucheazi, Secretary, Igbo Leaders of Thought: Yoruba, not Igbo, planned 1966 coup (July 29, 2023)", source: "Arinze, F. A.", link: "https://thesun.ng/amucheazi-secretary-igbo-leaders-of-thought-yoruba-not-igbo-planned-1966-coup/" },
+          { title: "Professor SJS Cookey clocks 85 years … first PhD holder … (April 9, 2019)", source: "Opobo Kingdom Online", link: "https://www.facebook.com/OpoboKingdomOnline/posts/professor-sjs-cookey-clocks-85years-born-april-9th-1934-he-was-the-first-phd-hol/419654941945950/" },
+          { title: "Nigeria's insecurity crisis rooted in poor governance, corruption – Prof. Alemika (February 5, 2025)", source: "Federal University Lokoja", link: "https://www.fulokoja.edu.ng/news-page.php?i=1011&a=nigerias-insecurity-crisis-rooted-in-poor-governance-corruption-prof-alemika" },
+          { title: "President Buhari, Late Prof. AD Yahaya made Nigeria a better place; he deserved his… (October 2, 2021)", source: "GarShehu", link: "https://www.facebook.com/GarShehu/photos/president-buhari-late-prof-ad-yahaya-made-nigeria-a-better-place-he-deserved-his/410815367066520/" },
+          { title: "Nigerian Teachers Facebook Group Post (January 2, 2023)", source: "Nigerian Teachers Group", link: "https://www.facebook.com/groups/nigerianteachers/posts/4212571388968215/" },
+          { title: "Igbo Ichi marks (c. 1921)", source: "G. T. Basden", link: "https://commons.wikimedia.org/wiki/File:Igbo_ichi_marks.jpg" },
+          { title: "Veteran beekeeper dispels 'killer bee' myths (March 23, 2016)", source: "Manuka Honey USA LLC", link: "https://www.manukahoneyusa.com/blog/veteran-beekeeper-dispels-killer-bee-myths.html" },
+          { title: "As an Igbo child I hope you already knew that part of our ancient ancestors… (September 18, 2024)", source: "@Maazi_Dibia", link: "https://www.facebook.com/MaaziDibia/posts/as-an-igbo-child-i-hope-you-already-knew-that-part-of-our-ancient-ancestors-were/541627501774242/" }
+        ],
+        teamAcknowledgements: `Host: Akachukwu Nwankpo (Oputaifeadi)
+Visual Editing: Emeka Okorie
+Blog Website Mgt: Chukwukadibia Ekene
+Research support: Esther Ime
+Recorded at Ndigbo Viva Studios, Enugu.`
+      }
+    },
+    'igbo-health-alert-prof-aghaji-warns-of-rising-sudden-deaths': {
+      title: "Igbo Health Alert: Prof. Aghaji Warns of Rising Sudden Deaths",
+      thumbnail: "",
+      credits: {
+        books: [],
+        visualSources: [
+          { title: "Accident, Automobile Damage (2016, May 23)", source: "garten-gg, Pixabay", link: "https://pixabay.com/photos/accident-automobile-damage-vehicle-1409012/" },
+          { title: "Industrial designer working 3D model (n.d.)", source: "Author Unknown, Freepik", link: "https://www.freepik.com/free-photo/industrial-designer-working-3d-model_25177096.htm" },
+          { title: "Uganda Airlines CRJ-900 Cockpit landing at Kinshasa (2024, November 29)", source: "AirNavRadar, AirNavRadar Blog", link: "https://www.airnavradar.com/blog/uganda-airlines-crj-900-cockpit-landing-at-kinshasa" },
+          { title: "A truck accident at Ugwu Onyeama, Enugu (2015, August 21)", source: "AmazingViewpoints [Blog post]", link: "https://amazingviewpoints.blogspot.com/2015/08/a-truck-accident-at-ugwu-onyeama-enugu.htm" },
+          { title: "Nigeria's $5bn tyre-production industry requires investors (2024, February 19)", source: "Enimola, O., Independent Newspaper Nigeria", link: "https://independent.ng/nigerias-5bn-tyre-production-industry-requires-investors/" },
+          { title: "What is UTPRON – Eco-friendly management of used tyres in Nigeria (n.d.)", source: "TPRON", link: "https://utpron.com.ng/learn.html" },
+          { title: "Drinking 'pure water' could be risky – Here's what you should know (2025, May 13)", source: "Ajayi, A., Pulse Nigeria", link: "https://www.pulse.ng/articles/lifestyle/is-pure-water-bad-for-you-2025051310204536032" },
+          { title: "Lagos govt clarifies ban on single-use plastics, says 'pure water' not affected (2025, May 20)", source: "gency Report, The Premium Times", link: "https://www.premiumtimesng.com/regional/ssouth-west/795676-lagos-govt-clarifies-ban-on-single-use-plastics-says-pure-water-not-affected.html" },
+          { title: "First 20 words of the post (19 August, 2022)", source: "Amarachi Lilian, Facebook group post", link: "https://www.facebook.com/groups/903307780039021/posts/1729938060709318/" },
+          { title: "Can plastic bottles go in the microwave? (1 February, 2024)", source: "KimEcopak", link: "https://www.kimecopak.ca/blogs/news/can-plastic-bottles-go-in-the-microwave?srsltid=AfmBOoquDkVczad6h9TQa8c8hg4FHV2iWXsf0HCYiEvnTgLkbp3n6kMi" },
+          { title: "How to make sachet water (n.d.)", source: "Neptune Machinery", link: "https://www.neptunemachinery.com/how-to-make-sachet-water/" },
+          { title: "What is refined sugar? A complete beginner's guide (2025, September 29)", source: "Wilmot, J., Oats My Goodness", link: "https://oatsmygoodness.com.au/what-is-refined-sugar/" },
+          { title: "Indomie Chicken – Hungry Man Size 180 g [Instant noodles] (n.d.)", source: "Indomie, The Rice Man", link: "https://www.thericeman.com.ng/product/indomie-chicken-hungry-man-size/" },
+          { title: "Domestic violence in marriage and the position of the law in Nigeria (2023, October 1)", source: "Hilary, J., Appylaw", link: "https://appylaw.com/2023/10/01/domestic-violence-in-marriage-and-the-position-of-the-law-in-nigeria/" },
+          { title: "Does Nigerian culture permit domestic violence? (2017, August 24)", source: "Agbonkhese, J. & Onuoha, C., Vanguard", link: "https://www.vanguardngr.com/2017/08/nigerian-culture-permit-domestic-violence/" },
+          { title: "Nigeria confronts worst health crisis in decades (2024, July 16)", source: "Anudu, O., Olufemi, D., Ayetoto-Oladehinde, T., & Bailey, B., BusinessDay", link: "https://businessday.ng/news/article/nigeria-confronts-worst-health-crisis-in-decades/" }
+        ],
+        teamAcknowledgements: `Host: Akachukwu Nwankpo (Oputaifeadi)
+Visual Editing: Emeka Okorie
+Blog Website Mgt: Chukwukadibia Ekene
+Research support: Esther Ime
+Recorded at Ndigbo Viva Studios, Enugu.
+
+For content permissions or collaboration inquiries, please contact ndigbovivalimited@gmail.com`
+      }
+    },
+    'key-health-practices-for-ndigbo': {
+      title: "Key Health Practices for Ndigbo",
+      thumbnail: "",
+      credits: {
+        books: [],
+        visualSources: [
+          { title: "Accident, Automobile Damage (2016, May 23)", source: "garten-gg, Pixabay", link: "https://pixabay.com/photos/accident-automobile-damage-vehicle-1409012/" },
+          { title: "Industrial designer working 3D model (n.d.)", source: "Author Unknown, Freepik", link: "https://www.freepik.com/free-photo/industrial-designer-working-3d-model_25177096.htm" },
+          { title: "Uganda Airlines CRJ-900 Cockpit landing at Kinshasa (2024, November 29)", source: "AirNavRadar, AirNavRadar Blog", link: "https://www.airnavradar.com/blog/uganda-airlines-crj-900-cockpit-landing-at-kinshasa" },
+          { title: "A truck accident at Ugwu Onyeama, Enugu (2015, August 21)", source: "AmazingViewpoints [Blog post]", link: "https://amazingviewpoints.blogspot.com/2015/08/a-truck-accident-at-ugwu-onyeama-enugu.htm" },
+          { title: "Nigeria's $5bn tyre-production industry requires investors (2024, February 19)", source: "Enimola, O., Independent Newspaper Nigeria", link: "https://independent.ng/nigerias-5bn-tyre-production-industry-requires-investors/" },
+          { title: "What is UTPRON – Eco-friendly management of used tyres in Nigeria (n.d.)", source: "TPRON", link: "https://utpron.com.ng/learn.html" },
+          { title: "Drinking 'pure water' could be risky – Here's what you should know (2025, May 13)", source: "Ajayi, A., Pulse Nigeria", link: "https://www.pulse.ng/articles/lifestyle/is-pure-water-bad-for-you-2025051310204536032" },
+          { title: "Lagos govt clarifies ban on single-use plastics, says 'pure water' not affected (2025, May 20)", source: "gency Report, The Premium Times", link: "https://www.premiumtimesng.com/regional/ssouth-west/795676-lagos-govt-clarifies-ban-on-single-use-plastics-says-pure-water-not-affected.html" },
+          { title: "First 20 words of the post (19 August, 2022)", source: "Amarachi Lilian, Facebook group post", link: "https://www.facebook.com/groups/903307780039021/posts/1729938060709318/" },
+          { title: "Can plastic bottles go in the microwave? (1 February, 2024)", source: "KimEcopak", link: "https://www.kimecopak.ca/blogs/news/can-plastic-bottles-go-in-the-microwave?srsltid=AfmBOoquDkVczad6h9TQa8c8hg4FHV2iWXsf0HCYiEvnTgLkbp3n6kMi" },
+          { title: "How to make sachet water (n.d.)", source: "Neptune Machinery", link: "https://www.neptunemachinery.com/how-to-make-sachet-water/" },
+          { title: "What is refined sugar? A complete beginner's guide (2025, September 29)", source: "Wilmot, J., Oats My Goodness", link: "https://oatsmygoodness.com.au/what-is-refined-sugar/" },
+          { title: "Indomie Chicken – Hungry Man Size 180 g [Instant noodles] (n.d.)", source: "Indomie, The Rice Man", link: "https://www.thericeman.com.ng/product/indomie-chicken-hungry-man-size/" },
+          { title: "Domestic violence in marriage and the position of the law in Nigeria (2023, October 1)", source: "Hilary, J., Appylaw", link: "https://appylaw.com/2023/10/01/domestic-violence-in-marriage-and-the-position-of-the-law-in-nigeria/" },
+          { title: "Does Nigerian culture permit domestic violence? (2017, August 24)", source: "Agbonkhese, J. & Onuoha, C., Vanguard", link: "https://www.vanguardngr.com/2017/08/nigerian-culture-permit-domestic-violence/" },
+          { title: "Nigeria confronts worst health crisis in decades (2024, July 16)", source: "Anudu, O., Olufemi, D., Ayetoto-Oladehinde, T., & Bailey, B., BusinessDay", link: "https://businessday.ng/news/article/nigeria-confronts-worst-health-crisis-in-decades/" }
+        ],
+        teamAcknowledgements: `Host: Akachukwu Nwankpo (Oputaifeadi)
+Visual Editing: Emeka Okorie
+Blog Website Mgt: Chukwukadibia Ekene
+Research support: Esther Ime
+Recorded at Ndigbo Viva Studios, Enugu.
+
+For content permissions or collaboration inquiries, please contact ndigbovivalimited@gmail.com`
+      }
     }
   }
 }
 
 interface PageProps {
-  params: {
+  params: Promise<{
     slug: string
-  }
+  }>
 }
 
 // Helper function to create slug from title (matching YouTube's createSlug function)
@@ -488,14 +582,14 @@ function calculateSimilarity(str1: string, str2: string): number {
   const longer = str1.length > str2.length ? str1 : str2
   const shorter = str1.length > str2.length ? str2 : str1
   if (longer.length === 0) return 1.0
-  
+
   const distance = levenshteinDistance(longer.toLowerCase(), shorter.toLowerCase())
   return (longer.length - distance) / longer.length
 }
 
 // Helper function to calculate Levenshtein distance
 function levenshteinDistance(str1: string, str2: string): number {
-  const matrix = []
+  const matrix: number[][] = []
   for (let i = 0; i <= str2.length; i++) {
     matrix[i] = [i]
   }
@@ -529,17 +623,20 @@ function extractKeyWords(title: string): string[] {
 }
 
 export default async function VideoCreditsPage({ params }: PageProps) {
+  // Await params in Next.js 15
+  const { slug } = await params
+  
   // Get the credits data directly using the slug
   const allCredits = getVideoCredits()
-  let videoCredits = allCredits[params.slug]
+  let videoCredits = allCredits[slug]
   
   // Get YouTube video data for title and thumbnail
   let ytVideo = null
   try {
     const videos = await getLatestVideos(50)
-    ytVideo = videos.find(v => v.slug === params.slug)
-  } catch (error) {
-    console.error('Error fetching video data:', error)
+    ytVideo = videos.find(v => v.slug === slug)
+  } catch {
+    ytVideo = null
   }
   
   // If not found by exact slug match, try to find by matching title
@@ -550,32 +647,32 @@ export default async function VideoCreditsPage({ params }: PageProps) {
     
     let bestMatch: { credits: VideoCredit; score: number } | null = null
     
-    for (const [slug, credits] of Object.entries(allCredits)) {
+    for (const [creditsSlug, credits] of Object.entries(allCredits)) {
       const creditsTitleLower = credits.title.toLowerCase()
-      const creditsSlug = createSlugFromTitle(credits.title)
+      const normalizedCreditsSlug = createSlugFromTitle(credits.title)
       const creditsKeyWords = extractKeyWords(credits.title)
       
       let score = 0
       
       // Check if slugs match (after normalization) - try multiple variations
-      if (ytSlug === slug || 
-          ytSlug === creditsSlug || 
-          params.slug === slug || 
-          params.slug === creditsSlug) {
+      if (ytSlug === creditsSlug || 
+          ytSlug === normalizedCreditsSlug || 
+          slug === creditsSlug || 
+          slug === normalizedCreditsSlug) {
         score = 1.0
       } else {
         // Calculate title similarity
         const titleSimilarity = calculateSimilarity(ytVideo.title, credits.title)
         score = titleSimilarity
-        
+
         // Boost score if key words match
-        const matchingKeyWords = ytKeyWords.filter(word => 
+        const matchingKeyWords = ytKeyWords.filter(word =>
           creditsKeyWords.some(cw => cw.includes(word) || word.includes(cw))
         )
         if (matchingKeyWords.length > 0) {
           score += (matchingKeyWords.length / Math.max(ytKeyWords.length, creditsKeyWords.length)) * 0.3
         }
-        
+
         // Check if YouTube title contains significant parts of credits title
         const creditsWords = creditsTitleLower.split(/\s+/).filter(w => w.length > 3)
         const matchingWords = creditsWords.filter(word => ytTitleLower.includes(word))
@@ -583,17 +680,17 @@ export default async function VideoCreditsPage({ params }: PageProps) {
           score += 0.2
         }
       }
-      
+
       if (score > 0.5 && (!bestMatch || score > bestMatch.score)) {
         bestMatch = { credits, score }
       }
     }
-    
+
     if (bestMatch && bestMatch.score > 0.5) {
       videoCredits = bestMatch.credits
     }
   }
-  
+
   const video = {
     title: ytVideo?.title || videoCredits?.title || '',
     thumbnail: ytVideo?.thumbnail || videoCredits?.thumbnail || '/Ndigbo Viva Logo.jpg',
@@ -677,7 +774,7 @@ export default async function VideoCreditsPage({ params }: PageProps) {
             {/* Credits on the right */}
             <div className="w-full md:w-2/3">
               <h1 className="text-2xl font-bold text-gray-900 mb-6">{video.title}</h1>
-              
+
               {/* Guest Acknowledgement */}
               {credits?.guestAcknowledgement && (
                 <div className="mb-8">

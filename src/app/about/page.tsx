@@ -1,5 +1,8 @@
 import Image from "next/image";
 import { Heart, Users, Target, Globe } from "lucide-react";
+import { aboutSEO } from '@/lib/seo';
+
+export const metadata = aboutSEO;
 
 export default function AboutPage() {
   return (
@@ -37,8 +40,8 @@ export default function AboutPage() {
               Our Mission
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Ndigbo Viva is dedicated to celebrating and preserving Igbo civilization while building 
-              stronger communities and fostering economic development both in the homeland and 
+              Ndigbo Viva is dedicated to celebrating and preserving Igbo civilization while building
+              stronger communities and fostering economic development both in the homeland and
               across the diaspora.
             </p>
           </div>
@@ -93,20 +96,20 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-gray-600">
                 <p>
-                  Founded in 2024, Ndigbo Viva emerged from a simple yet powerful realization: 
-                  the Igbo people have always been known for their resilience, entrepreneurial spirit, 
-                  and strong sense of community. However, in the modern world, these values needed 
+                  Founded in 2024, Ndigbo Viva emerged from a simple yet powerful realization:
+                  the Igbo people have always been known for their resilience, entrepreneurial spirit,
+                  and strong sense of community. However, in the modern world, these values needed
                   a platform to thrive and connect across borders.
                 </p>
                 <p>
-                  Our journey began with a YouTube channel dedicated to sharing stories, insights, 
-                  and discussions about Igbo culture, community building, and economic development. 
-                  What started as a passion project has grown into a movement that brings together 
+                  Our journey began with a YouTube channel dedicated to sharing stories, insights,
+                  and discussions about Igbo culture, community building, and economic development.
+                  What started as a passion project has grown into a movement that brings together
                   Igbo people from all walks of life.
                 </p>
                 <p>
-                  Today, we continue to build bridges between generations, cultures, and continents, 
-                  ensuring that the rich heritage of the Igbo people remains vibrant and relevant 
+                  Today, we continue to build bridges between generations, cultures, and continents,
+                  ensuring that the rich heritage of the Igbo people remains vibrant and relevant
                   in the 21st century.
                 </p>
               </div>

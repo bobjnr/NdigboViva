@@ -1,6 +1,10 @@
 import { NextResponse } from 'next/server';
+import { blockProdAccess } from '@/lib/api-guards';
 
 export async function GET() {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   try {
     // Check YouTube API configuration
     const youtubeConfig = {

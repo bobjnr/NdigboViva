@@ -77,7 +77,6 @@ export interface YouTubeChannel {
 // Get channel information
 export async function getChannelInfo(): Promise<YouTubeChannel | null> {
   if (!YOUTUBE_API_KEY) {
-    console.warn('YouTube API key not configured');
     return null;
   }
 
@@ -108,7 +107,6 @@ export async function getChannelInfo(): Promise<YouTubeChannel | null> {
       return null;
     });
   } catch (error) {
-    console.error('Error fetching channel info:', error);
     return null;
   }
 }
@@ -116,12 +114,10 @@ export async function getChannelInfo(): Promise<YouTubeChannel | null> {
 // Get latest videos from the channel
 export async function getLatestVideos(maxResults: number = 10): Promise<YouTubeVideo[]> {
   if (!YOUTUBE_API_KEY) {
-    console.warn('YouTube API key not configured - set YOUTUBE_API_KEY environment variable');
     return [];
   }
 
   if (!YOUTUBE_CHANNEL_ID || YOUTUBE_CHANNEL_ID === 'UC_NDIGBOVIVA_CHANNEL_ID') {
-    console.warn('YouTube Channel ID not configured - set YOUTUBE_CHANNEL_ID environment variable');
     return [];
   }
 
@@ -151,7 +147,6 @@ export async function getLatestVideos(maxResults: number = 10): Promise<YouTubeV
 
       if (!videosResponse.ok) {
         if (videosResponse.status === 404) {
-          console.warn('No videos found in channel (empty playlist)');
           return [];
         }
         throw new Error(`YouTube API error: ${videosResponse.status}`);
@@ -197,7 +192,6 @@ export async function getLatestVideos(maxResults: number = 10): Promise<YouTubeV
       });
     });
   } catch (error) {
-    console.error('Error fetching latest videos:', error);
     // Return empty array instead of throwing to prevent page crashes
     return [];
   }
@@ -206,7 +200,6 @@ export async function getLatestVideos(maxResults: number = 10): Promise<YouTubeV
 // Get a specific video by ID
 export async function getVideoById(videoId: string): Promise<YouTubeVideo | null> {
   if (!YOUTUBE_API_KEY) {
-    console.warn('YouTube API key not configured');
     return null;
   }
 
@@ -241,7 +234,6 @@ export async function getVideoById(videoId: string): Promise<YouTubeVideo | null
       return null;
     });
   } catch (error) {
-    console.error('Error fetching video by ID:', error);
     return null;
   }
 }
@@ -299,7 +291,6 @@ function extractCategory(title: string, description: string): string {
 // Search videos by query
 export async function searchVideos(query: string, maxResults: number = 10): Promise<YouTubeVideo[]> {
   if (!YOUTUBE_API_KEY) {
-    console.warn('YouTube API key not configured');
     return [];
   }
 
@@ -350,7 +341,6 @@ export async function searchVideos(query: string, maxResults: number = 10): Prom
       };
     });
   } catch (error) {
-    console.error('Error searching videos:', error);
     return [];
   }
 }

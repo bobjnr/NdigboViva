@@ -36,10 +36,8 @@ export async function saveUserToFirestore(userData: {
 
     await setDoc(userRef, userDoc, { merge: true });
     
-    console.log(`User data saved to Firestore: ${userData.email}`);
     return { success: true };
   } catch (error) {
-    console.error('Error saving user to Firestore:', error);
     return { 
       success: false, 
       error: error instanceof Error ? error.message : 'Failed to save user data' 
@@ -61,7 +59,6 @@ export async function getUserFromFirestore(uid: string): Promise<UserData | null
     
     return null;
   } catch (error) {
-    console.error('Error getting user from Firestore:', error);
     return null;
   }
 }
@@ -86,7 +83,6 @@ export async function updateUserPreferences(
     
     return { success: true };
   } catch (error) {
-    console.error('Error updating user preferences:', error);
     return { 
       success: false, 
       error: error instanceof Error ? error.message : 'Failed to update preferences' 

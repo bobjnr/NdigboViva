@@ -1,6 +1,10 @@
 import { NextResponse } from 'next/server';
+import { blockProdAccess } from '@/lib/api-guards';
 
 export async function GET() {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   return NextResponse.json({
     success: true,
     message: 'Simple email test endpoint is working!',
@@ -9,6 +13,9 @@ export async function GET() {
 }
 
 export async function POST() {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   try {
     const apiKey = process.env.RESEND_API_KEY;
     

@@ -189,7 +189,6 @@ export async function sendWelcomeEmail(data: WelcomeEmailData) {
       throw listError;
     }
   } catch (error) {
-    console.error('Error sending welcome email:', error);
     return { success: false, error: error instanceof Error ? error.message : 'Failed to send email' };
   }
 }
@@ -227,7 +226,6 @@ export async function sendBlogPostEmail(data: BlogPostEmailData) {
 
     return { success: true, campaignId: campaign.id };
   } catch (error) {
-    console.error('Error sending blog post email:', error);
     return { success: false, error: error instanceof Error ? error.message : 'Failed to send email' };
   }
 }
@@ -248,7 +246,6 @@ export async function getAllSubscribers() {
       message: 'Subscriber list retrieval not available with current API configuration'
     };
   } catch (error) {
-    console.error('Error getting subscribers:', error);
     return {
       success: false,
       error: error instanceof Error ? error.message : 'Failed to get subscribers',

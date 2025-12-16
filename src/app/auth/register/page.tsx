@@ -65,7 +65,6 @@ export default function RegisterPage() {
           }),
         });
       } catch (userError) {
-        console.error('Failed to save user data:', userError);
         // Don't block registration if this fails
       }
 
@@ -84,7 +83,6 @@ export default function RegisterPage() {
           }),
         });
       } catch (subscriberError) {
-        console.error('Failed to add subscriber:', subscriberError);
         // Don't block registration if this fails
       }
 
@@ -101,7 +99,6 @@ export default function RegisterPage() {
           }),
         });
       } catch (emailError) {
-        console.error('Failed to send welcome email:', emailError);
         // Don't block registration if email fails
       }
       

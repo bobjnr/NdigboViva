@@ -50,10 +50,8 @@ export async function addSubscriber(email: string, name: string, preferences: {
       subscribersCache.push(subscriber);
     }
     
-    console.log(`Subscriber added/updated in Firestore: ${email}`);
     return subscriber;
   } catch (error) {
-    console.error('Error adding subscriber to Firestore:', error);
     // Fallback to in-memory storage if Firestore fails
     const subscriber: Subscriber = {
       email,
@@ -80,7 +78,6 @@ export async function getBlogNotificationSubscribers(): Promise<Subscriber[]> {
     const subscribers = await getAllSubscribers();
     return subscribers.filter(sub => sub.blogNotifications);
   } catch (error) {
-    console.error('Error getting blog notification subscribers:', error);
     return subscribersCache.filter(sub => sub.blogNotifications);
   }
 }
@@ -91,7 +88,6 @@ export async function getWelcomeEmailSubscribers(): Promise<Subscriber[]> {
     const subscribers = await getAllSubscribers();
     return subscribers.filter(sub => sub.welcomeEmails);
   } catch (error) {
-    console.error('Error getting welcome email subscribers:', error);
     return subscribersCache.filter(sub => sub.welcomeEmails);
   }
 }
@@ -126,7 +122,6 @@ export async function getAllSubscribers(): Promise<Subscriber[]> {
     
     return subscribers;
   } catch (error) {
-    console.error('Error getting subscribers from Firestore:', error);
     return subscribersCache; // Return cache as fallback
   }
 }
@@ -137,7 +132,6 @@ export async function getSubscriberCount(): Promise<number> {
     const subscribers = await getAllSubscribers();
     return subscribers.length;
   } catch (error) {
-    console.error('Error getting subscriber count:', error);
     return subscribersCache.length;
   }
 }
@@ -164,10 +158,8 @@ export async function updateSubscriberPreferences(email: string, preferences: {
       };
     }
     
-    console.log(`Updated preferences for: ${email}`);
     return true;
   } catch (error) {
-    console.error('Error updating subscriber preferences:', error);
     return false;
   }
 }
@@ -182,13 +174,11 @@ export async function removeSubscriber(email: string): Promise<boolean> {
       // In Firestore, we can mark as deleted or actually delete
       // For now, we'll just remove from cache
       subscribersCache = subscribersCache.filter(sub => sub.email !== email);
-      console.log(`Removed subscriber: ${email}`);
       return true;
     }
     
     return false;
   } catch (error) {
-    console.error('Error removing subscriber:', error);
     return false;
   }
 }
@@ -212,7 +202,6 @@ export async function getSubscriber(email: string): Promise<Subscriber | null> {
     
     return null;
   } catch (error) {
-    console.error('Error getting subscriber:', error);
     return subscribersCache.find(sub => sub.email === email) || null;
   }
 }

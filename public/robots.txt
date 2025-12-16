@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Host
+Host: https://ndigboviva.com
+
+# Sitemaps
+Sitemap: https://ndigboviva.com/sitemap.xml

@@ -44,9 +44,8 @@ export function useRSSNews(options: UseRSSNewsOptions = {}): UseRSSNewsReturn {
       } else {
         setError(data.error || 'Failed to fetch news');
       }
-    } catch (err) {
+    } catch (_err) {
       setError('Network error occurred while fetching news');
-      console.error('Error fetching RSS news:', err);
     } finally {
       setLoading(false);
     }

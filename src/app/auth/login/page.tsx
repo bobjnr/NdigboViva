@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useAuth } from '@/hooks/useAuth';
+import { signIn as nextAuthSignIn } from 'next-auth/react';
 import { Mail, Lock, Eye, EyeOff } from 'lucide-react';
 
 export default function LoginPage() {
@@ -15,6 +16,31 @@ export default function LoginPage() {
   
   const { signIn } = useAuth();
   const router = useRouter();
+
+  const handleGoogleSignIn = async () => {
+    try {
+      console.log('🔵 Google sign-in initiated...');
+      const signInUrl = `${window.location.origin}/api/auth/signin/google`;
+      console.log('🔵 Redirecting to:', signInUrl);
+      
+      const result = await nextAuthSignIn('google', { 
+        callbackUrl: window.location.origin + '/profile',
+        redirect: true 
+      });
+      
+      // If redirect is false, result will be a URL or error
+      if (result?.error) {
+        console.error('❌ Sign-in error:', result.error);
+        setError(`Failed to sign in with Google: ${result.error}`);
+      } else if (result?.url) {
+        console.log('🔵 Redirect URL:', result.url);
+        window.location.href = result.url;
+      }
+    } catch (error) {
+      console.error('❌ Sign-in error:', error);
+      setError('Failed to sign in with Google. Please check your configuration.');
+    }
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -158,7 +184,11 @@ export default function LoginPage() {
             </div>
 
             <div className="mt-6 grid grid-cols-2 gap-3">
-              <button className="w-full inline-flex justify-center py-2 px-4 border border-gray-300  rounded-md shadow-sm bg-white  text-sm font-medium text-gray-500  hover:bg-gray-50 ">
+              <button 
+                type="button"
+                onClick={handleGoogleSignIn}
+                className="w-full inline-flex justify-center py-2 px-4 border border-gray-300  rounded-md shadow-sm bg-white  text-sm font-medium text-gray-500  hover:bg-gray-50 "
+              >
                 <span className="sr-only">Sign in with Google</span>
                 <svg className="h-5 w-5" viewBox="0 0 24 24">
                   <path

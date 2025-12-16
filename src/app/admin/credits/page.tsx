@@ -64,13 +64,11 @@ export default function CreditsAdminPage() {
       
       const data = await response.json()
       setVideos(data.videos || [])
-      console.log('Loaded videos:', data.videos?.length || 0)
       
       if (data.videos?.length === 0) {
         setError('No videos found. Please check your YouTube API configuration.')
       }
-    } catch (error) {
-      console.error('Error loading videos:', error)
+    } catch (_error) {
       setError('Failed to load videos. Please check your internet connection and try again.')
       setVideos([])
     } finally {
@@ -92,7 +90,6 @@ export default function CreditsAdminPage() {
     localStorage.setItem('video-credits', JSON.stringify(newCredits))
     setEditingVideo(null)
     setSuccessMessage(`Credits saved successfully for "${videoCredits.title}"`)
-    console.log('Credits saved for video:', videoId, videoCredits)
     
     // Clear success message after 3 seconds
     setTimeout(() => setSuccessMessage(null), 3000)
@@ -283,7 +280,6 @@ function CreditsEditor({ video, credits, onSave, onCancel, onAddItem, onRemoveIt
       publishedAt: video.publishedAt,
       credits: localCredits
     }
-    console.log('Saving credits:', videoCredits)
     onSave(videoCredits)
   }
 

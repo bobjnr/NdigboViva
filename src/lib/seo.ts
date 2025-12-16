@@ -191,3 +191,47 @@ export const organizationSchema = {
     email: 'ndigboviva@outlook.com',
   },
 };
+
+// JSON-LD Schema for breadcrumbs
+export const breadcrumbSchema = (items: { name: string; url: string }[]) => ({
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: items.map((item, index) => ({
+    '@type': 'ListItem',
+    position: index + 1,
+    name: item.name,
+    item: item.url,
+  })),
+});
+
+// JSON-LD Schema for website with search action
+export const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Ndigbo Viva',
+  url: 'https://ndigboviva.com',
+  description: 'Know Your Roots, Build Solidarity, Invest at Home. Join our community as we celebrate Igbo culture and build a stronger future together.',
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://ndigboviva.com/blog?search={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
+};
+
+// JSON-LD Schema for FAQ
+export const faqSchema = (faqs: { question: string; answer: string }[]) => ({
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: faqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: faq.answer,
+    },
+  })),
+});
+

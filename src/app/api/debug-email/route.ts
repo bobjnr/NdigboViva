@@ -1,6 +1,10 @@
 import { NextResponse } from 'next/server';
+import { blockProdAccess } from '@/lib/api-guards';
 
 export async function OPTIONS() {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   return new NextResponse(null, {
     status: 200,
     headers: {
@@ -12,6 +16,9 @@ export async function OPTIONS() {
 }
 
 export async function GET() {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   try {
     const apiKey = process.env.RESEND_API_KEY;
     

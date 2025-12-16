@@ -1,6 +1,10 @@
 import { NextResponse } from 'next/server';
+import { blockProdAccess } from '@/lib/api-guards';
 
 export async function GET() {
+  const guardResponse = blockProdAccess();
+  if (guardResponse) return guardResponse;
+
   try {
     // Check if environment variables are loaded
     const firebaseConfig = {

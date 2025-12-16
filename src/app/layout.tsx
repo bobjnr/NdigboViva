@@ -5,6 +5,9 @@ import { Providers } from "./providers";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import ErrorBoundary from "@/components/ErrorBoundary";
+import GoogleAnalytics from "@/components/GoogleAnalytics";
+import SessionProvider from "@/components/SessionProvider";
+import { organizationSchema } from "@/lib/seo";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -22,6 +25,9 @@ export const metadata: Metadata = {
   description: "Join our community as we celebrate Igbo culture and build a stronger future together. Umuigbo Kunienu!",
   keywords: "Igbo, culture, community, Nigeria, diaspora, investment, solidarity, Ndigbo, Umuigbo, Igbo heritage, cultural preservation",
   authors: [{ name: "Ndigbo Viva" }],
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION,
+  },
   openGraph: {
     title: "Ndigbo Viva - Know Your Roots, Build Solidarity, Invest at Home",
     description: "Join our community as we celebrate Igbo culture and build a stronger future together.",
@@ -43,11 +49,6 @@ export const metadata: Metadata = {
     description: "Join our community as we celebrate Igbo culture and build a stronger future together.",
     images: ["/Ndigbo Viva Logo.jpg"],
   },
-  icons: {
-    icon: "/Ndigbo Viva Logo.jpg",
-    shortcut: "/Ndigbo Viva Logo.jpg",
-    apple: "/Ndigbo Viva Logo.jpg",
-  },
 };
 
 export default function RootLayout({
@@ -57,18 +58,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+      </head>
       <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
-        <Providers>
-          <ErrorBoundary>
-            <div className="min-h-screen flex flex-col">
-              <Header />
-              <main className="flex-grow">
-                {children}
-              </main>
-              <Footer />
-            </div>
-          </ErrorBoundary>
-        </Providers>
+        <GoogleAnalytics />
+        <SessionProvider>
+          <Providers>
+            <ErrorBoundary>
+              <div className="min-h-screen flex flex-col">
+                <Header />
+                <main className="flex-grow">
+                  {children}
+                </main>
+                <Footer />
+              </div>
+            </ErrorBoundary>
+          </Providers>
+        </SessionProvider>
       </body>
     </html>
   );
