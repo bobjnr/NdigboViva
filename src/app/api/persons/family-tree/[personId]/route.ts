@@ -10,10 +10,10 @@ import { getFamilyTree } from '@/lib/person-database';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { personId: string } }
+  { params }: { params: Promise<{ personId: string }> }
 ) {
   try {
-    const { personId } = params;
+    const { personId } = await params;
     const searchParams = request.nextUrl.searchParams;
     const maxDepth = parseInt(searchParams.get('depth') || '3', 10);
     
@@ -24,11 +24,21 @@ export async function GET(
       );
     }
     
+    console.log('Fetching family tree for person:', personId);
     const familyTree = await getFamilyTree(personId, maxDepth);
+    
+    // Convert Firestore Timestamps to ISO strings for JSON serialization
+    const familyTreeForResponse = JSON.parse(JSON.stringify(familyTree, (key, value) => {
+      // Convert Firestore Timestamp objects to ISO strings
+      if (value && typeof value === 'object' && value.seconds !== undefined && value.nanoseconds !== undefined) {
+        return new Date(value.seconds * 1000).toISOString();
+      }
+      return value;
+    }));
     
     return NextResponse.json({
       success: true,
-      familyTree
+      familyTree: familyTreeForResponse
     });
     
   } catch (error) {

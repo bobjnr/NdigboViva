@@ -346,14 +346,14 @@ export default function OurCommunityPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-              <span className="text-brand-gold">OUR</span> <span className="text-brand-forest">COMMUNITY</span>
+              <span className="text-brand-gold">IGBO</span> <span className="text-brand-forest">HERITAGE</span> <span className="text-brand-gold">PROJECT</span>
             </h1>
             <p className="text-xl text-brand-gold font-semibold max-w-3xl mx-auto mb-6">
-              Building and supporting the global Igbo community through genealogy, health, lifestyle, events, and more
+              Preserving and celebrating Igbo heritage through genealogy, health, lifestyle, events, and cultural traditions
             </p>
             <p className="text-lg text-gray-200 max-w-4xl mx-auto mb-8">
-              Explore our diverse range of community services designed to preserve Igbo heritage,
-              connect families, promote health and wellness, and celebrate our rich cultural traditions.
+              A comprehensive initiative to help Igbo people worldwide trace their roots, connect with their ancestral communities,
+              and preserve their rich cultural heritage for future generations.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center bg-brand-gold-20 px-4 py-2 rounded-full">

@@ -245,6 +245,9 @@ export interface PersonFormSubmission {
   obiAreas?: string;
   localGovernmentArea?: string;
   state?: string;
+  senatorialDistrict?: string;
+  federalConstituency?: string;
+  stateConstituency?: string;
   nwaadaLineageLink?: string;
   
   // Cultural
@@ -321,83 +324,153 @@ export function createPersonFromForm(
   const now = Timestamp.now();
   const personId = generatePersonId();
   
-  return {
+  // Helper function to remove undefined and empty array values
+  const cleanForFirestore = (obj: any): any => {
+    if (obj === null || obj === undefined) {
+      return undefined;
+    }
+    if (Array.isArray(obj)) {
+      return obj.length > 0 ? obj : undefined;
+    }
+    if (typeof obj === 'object' && !(obj instanceof Timestamp)) {
+      const cleaned: any = {};
+      for (const [key, value] of Object.entries(obj)) {
+        const cleanedValue = cleanForFirestore(value);
+        if (cleanedValue !== undefined) {
+          cleaned[key] = cleanedValue;
+        }
+      }
+      return Object.keys(cleaned).length > 0 ? cleaned : undefined;
+    }
+    return obj;
+  };
+
+  const record = {
     identity: {
       personId,
       fullName: formData.fullName.toUpperCase().trim(),
-      alternateNames: formData.alternateNames?.map(n => n.toUpperCase().trim()),
+      ...(formData.alternateNames && formData.alternateNames.length > 0 && {
+        alternateNames: formData.alternateNames.map(n => n.toUpperCase().trim())
+      }),
       gender: formData.gender,
-      dateOfBirth: formData.dateOfBirth,
-      placeOfBirth: formData.placeOfBirth?.toUpperCase().trim(),
-      photoUrl: formData.photoUrl,
+      ...(formData.dateOfBirth && { dateOfBirth: formData.dateOfBirth }),
+      ...(formData.placeOfBirth && { placeOfBirth: formData.placeOfBirth.toUpperCase().trim() }),
+      ...(formData.photoUrl && { photoUrl: formData.photoUrl }),
       photoConsent: formData.photoConsent || false,
     },
     lineage: {
-      fatherId: formData.fatherId,
-      motherId: formData.motherId,
-      spouseIds: formData.spouseIds,
-      childrenIds: formData.childrenIds,
-      umunna: formData.umunna?.toUpperCase().trim(),
-      clan: formData.clan?.toUpperCase().trim(),
-      village: formData.village?.toUpperCase().trim(),
-      kindred: formData.kindred?.toUpperCase().trim(),
-      town: formData.town?.toUpperCase().trim(),
-      townQuarter: formData.townQuarter?.toUpperCase().trim(),
-      obiAreas: formData.obiAreas?.toUpperCase().trim(),
-      localGovernmentArea: formData.localGovernmentArea?.toUpperCase().trim(),
-      state: formData.state?.toUpperCase().trim(),
-      nwaadaLineageLink: formData.nwaadaLineageLink?.toUpperCase().trim(),
+      ...(formData.fatherId && { fatherId: formData.fatherId }),
+      ...(formData.motherId && { motherId: formData.motherId }),
+      ...(formData.spouseIds && formData.spouseIds.length > 0 && { spouseIds: formData.spouseIds }),
+      ...(formData.childrenIds && formData.childrenIds.length > 0 && { childrenIds: formData.childrenIds }),
+      ...(formData.umunna && { umunna: formData.umunna.toUpperCase().trim() }),
+      ...(formData.clan && { clan: formData.clan.toUpperCase().trim() }),
+      ...(formData.village && { village: formData.village.toUpperCase().trim() }),
+      ...(formData.kindred && { kindred: formData.kindred.toUpperCase().trim() }),
+      ...(formData.town && { town: formData.town.toUpperCase().trim() }),
+      ...(formData.townQuarter && { townQuarter: formData.townQuarter.toUpperCase().trim() }),
+      ...(formData.obiAreas && { obiAreas: formData.obiAreas.toUpperCase().trim() }),
+      ...(formData.localGovernmentArea && { localGovernmentArea: formData.localGovernmentArea.toUpperCase().trim() }),
+      ...(formData.state && { state: formData.state.toUpperCase().trim() }),
+      ...(formData.nwaadaLineageLink && { nwaadaLineageLink: formData.nwaadaLineageLink.toUpperCase().trim() }),
     },
     cultural: {
-      titles: formData.titles?.map(t => t.toUpperCase().trim()),
-      occupation: formData.occupation?.trim(),
-      familyTrade: formData.familyTrade?.trim(),
-      totem: formData.totem?.trim(),
-      ancestralHouseName: formData.ancestralHouseName?.trim(),
-      notableContributions: formData.notableContributions?.trim(),
-      roles: formData.roles?.map(r => r.trim()),
+      ...(formData.titles && formData.titles.length > 0 && {
+        titles: formData.titles.map(t => t.toUpperCase().trim())
+      }),
+      ...(formData.occupation && { occupation: formData.occupation.trim() }),
+      ...(formData.familyTrade && { familyTrade: formData.familyTrade.trim() }),
+      ...(formData.totem && { totem: formData.totem.trim() }),
+      ...(formData.ancestralHouseName && { ancestralHouseName: formData.ancestralHouseName.trim() }),
+      ...(formData.notableContributions && { notableContributions: formData.notableContributions.trim() }),
+      ...(formData.roles && formData.roles.length > 0 && {
+        roles: formData.roles.map(r => r.trim())
+      }),
     },
     lifeEvents: {
-      marriageDate: formData.marriageDate,
-      marriagePlace: formData.marriagePlace?.toUpperCase().trim(),
-      deathDate: formData.deathDate,
-      deathPlace: formData.deathPlace?.toUpperCase().trim(),
+      ...(formData.marriageDate && { marriageDate: formData.marriageDate }),
+      ...(formData.marriagePlace && { marriagePlace: formData.marriagePlace.toUpperCase().trim() }),
+      ...(formData.deathDate && { deathDate: formData.deathDate }),
+      ...(formData.deathPlace && { deathPlace: formData.deathPlace.toUpperCase().trim() }),
       isDeceased: formData.isDeceased || false,
-      migrationHistory: formData.migrationHistory,
-      displacementNotes: formData.displacementNotes,
+      ...(formData.migrationHistory && formData.migrationHistory.length > 0 && {
+        migrationHistory: formData.migrationHistory
+      }),
+      ...(formData.displacementNotes && { displacementNotes: formData.displacementNotes }),
       sensitiveHistoryPrivate: formData.sensitiveHistoryPrivate || false,
     },
     documentation: {
-      sourceType: formData.sourceType,
-      sourceDetails: formData.sourceDetails?.trim(),
-      testifierNames: formData.testifierNames,
-      testifierContact: formData.testifierContact?.trim(),
-      documentScanIds: formData.documentScanIds,
-      documentUrls: formData.documentUrls,
-      story: formData.story?.trim(),
-      notes: formData.notes?.trim(),
+      ...(formData.sourceType && { sourceType: formData.sourceType }),
+      ...(formData.sourceDetails && { sourceDetails: formData.sourceDetails.trim() }),
+      ...(formData.testifierNames && formData.testifierNames.length > 0 && {
+        testifierNames: formData.testifierNames
+      }),
+      ...(formData.testifierContact && { testifierContact: formData.testifierContact.trim() }),
+      ...(formData.documentScanIds && formData.documentScanIds.length > 0 && {
+        documentScanIds: formData.documentScanIds
+      }),
+      ...(formData.documentUrls && formData.documentUrls.length > 0 && {
+        documentUrls: formData.documentUrls
+      }),
+      ...(formData.story && { story: formData.story.trim() }),
+      ...(formData.notes && { notes: formData.notes.trim() }),
     },
     verification: {
       verificationLevel: formData.verificationLevel || 0,
       verified: (formData.verificationLevel || 0) >= 2,
       consentStatus: formData.consentStatus,
       visibilitySetting: formData.visibilitySetting || 'PRIVATE',
-      createdBy,
+      ...(createdBy && { createdBy }),
     },
     diaspora: {
       isDiasporaRelative: formData.isDiasporaRelative,
-      countryOfResidence: formData.countryOfResidence?.trim(),
-      currentCity: formData.currentCity?.trim(),
-      currentState: formData.currentState?.trim(),
-      diasporaConnectionCaseId: formData.diasporaConnectionCaseId,
+      ...(formData.countryOfResidence && { countryOfResidence: formData.countryOfResidence.trim() }),
+      ...(formData.currentCity && { currentCity: formData.currentCity.trim() }),
+      ...(formData.currentState && { currentState: formData.currentState.trim() }),
+      ...(formData.diasporaConnectionCaseId && { diasporaConnectionCaseId: formData.diasporaConnectionCaseId }),
       connectionStatus: formData.connectionStatus || 'NOT_APPLICABLE',
-      returnVisitStatus: formData.returnVisitStatus,
-      returnVisitDate: formData.returnVisitDate,
-      returnVisitNotes: formData.returnVisitNotes?.trim(),
+      ...(formData.returnVisitStatus && { returnVisitStatus: formData.returnVisitStatus }),
+      ...(formData.returnVisitDate && { returnVisitDate: formData.returnVisitDate }),
+      ...(formData.returnVisitNotes && { returnVisitNotes: formData.returnVisitNotes.trim() }),
     },
     createdAt: now,
     updatedAt: now,
     source: 'FORM_SUBMISSION',
   };
+
+  // Remove all undefined values recursively before returning
+  const cleaned = cleanForFirestore(record);
+  
+  // Ensure required fields are always present
+  return {
+    ...cleaned,
+    identity: {
+      ...cleaned.identity,
+      personId,
+      fullName: formData.fullName.toUpperCase().trim(),
+      gender: formData.gender,
+      photoConsent: formData.photoConsent || false,
+    },
+    verification: {
+      ...cleaned.verification,
+      verificationLevel: formData.verificationLevel || 0,
+      verified: (formData.verificationLevel || 0) >= 2,
+      consentStatus: formData.consentStatus,
+      visibilitySetting: formData.visibilitySetting || 'PRIVATE',
+    },
+    diaspora: {
+      ...cleaned.diaspora,
+      isDiasporaRelative: formData.isDiasporaRelative,
+      connectionStatus: formData.connectionStatus || 'NOT_APPLICABLE',
+    },
+    lifeEvents: {
+      ...cleaned.lifeEvents,
+      isDeceased: formData.isDeceased || false,
+      sensitiveHistoryPrivate: formData.sensitiveHistoryPrivate || false,
+    },
+    createdAt: now,
+    updatedAt: now,
+    source: 'FORM_SUBMISSION',
+  } as PersonRecord;
 }
 

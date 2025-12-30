@@ -10,10 +10,10 @@ import { PersonRecord } from '@/lib/person-schema';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: { personId: string } }
+  { params }: { params: Promise<{ personId: string }> }
 ) {
   try {
-    const { personId } = params;
+    const { personId } = await params;
     
     if (!personId) {
       return NextResponse.json(
@@ -22,18 +22,32 @@ export async function GET(
       );
     }
     
+    console.log('Fetching person with ID:', personId);
     const person = await getPersonById(personId);
     
     if (!person) {
+      console.log('Person not found in database:', personId);
       return NextResponse.json(
         { success: false, error: 'Person not found' },
         { status: 404 }
       );
     }
     
+    console.log('Person found:', person.identity?.fullName || 'Unknown');
+    
+    // Convert Firestore Timestamps to ISO strings for JSON serialization
+    // Firestore Timestamps need to be converted before sending to client
+    const personForResponse = JSON.parse(JSON.stringify(person, (key, value) => {
+      // Convert Firestore Timestamp objects to ISO strings
+      if (value && typeof value === 'object' && value.seconds !== undefined && value.nanoseconds !== undefined) {
+        return new Date(value.seconds * 1000).toISOString();
+      }
+      return value;
+    }));
+    
     return NextResponse.json({
       success: true,
-      person
+      person: personForResponse
     });
     
   } catch (error) {
@@ -50,10 +64,10 @@ export async function GET(
 
 export async function PUT(
   request: NextRequest,
-  { params }: { params: { personId: string } }
+  { params }: { params: Promise<{ personId: string }> }
 ) {
   try {
-    const { personId } = params;
+    const { personId } = await params;
     const body = await request.json();
     const userId = body.userId || 'ANONYMOUS';
     

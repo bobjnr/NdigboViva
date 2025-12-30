@@ -65,7 +65,7 @@ export default function Header() {
                 href="/our-community"
                 className="text-warm-900 hover:text-brand-gold px-3 py-2 rounded-md text-sm font-medium transition-colors"
               >
-                Our Community
+                The Great Igbo Heritage Project
               </Link>
               <Link
                 href="/about"

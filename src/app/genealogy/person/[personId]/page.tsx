@@ -23,15 +23,25 @@ export default function PersonDetailPage() {
     setError(null)
 
     try {
+      console.log('Loading person with ID:', personId)
       const response = await fetch(`/api/persons/${personId}`)
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      
       const data = await response.json()
+      console.log('API response:', data)
 
       if (data.success && data.person) {
         setPerson(data.person)
       } else {
-        setError(data.error || 'Person not found')
+        const errorMsg = data.error || 'Person not found'
+        console.error('Error from API:', errorMsg)
+        setError(errorMsg)
       }
     } catch (err) {
+      console.error('Error loading person:', err)
       setError(err instanceof Error ? err.message : 'Unknown error occurred')
     } finally {
       setIsLoading(false)

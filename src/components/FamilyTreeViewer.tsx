@@ -30,17 +30,27 @@ export default function FamilyTreeViewer({ personId }: FamilyTreeViewerProps) {
     setError(null)
 
     try {
+      console.log('Loading family tree for person:', personId)
       const response = await fetch(`/api/persons/family-tree/${personId}?depth=${depth}`)
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`)
+      }
+      
       const data = await response.json()
+      console.log('Family tree API response:', data)
 
       if (data.success && data.familyTree) {
         setPerson(data.familyTree.person)
         setAncestors(data.familyTree.ancestors || [])
         setDescendants(data.familyTree.descendants || [])
       } else {
-        setError(data.error || 'Failed to load family tree')
+        const errorMsg = data.error || 'Failed to load family tree'
+        console.error('Error from API:', errorMsg)
+        setError(errorMsg)
       }
     } catch (err) {
+      console.error('Error loading family tree:', err)
       setError(err instanceof Error ? err.message : 'Unknown error occurred')
     } finally {
       setIsLoading(false)

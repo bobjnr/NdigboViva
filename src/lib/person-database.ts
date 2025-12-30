@@ -118,12 +118,28 @@ export async function getPersonById(personId: string): Promise<PersonRecord | nu
     const personSnap = await getDoc(personRef);
     
     if (!personSnap.exists()) {
+      console.log('Person document does not exist:', personId);
       return null;
     }
     
-    return personSnap.data() as PersonRecord;
+    const data = personSnap.data();
+    
+    // Firestore returns data, but we need to ensure it's properly structured
+    // Convert Firestore Timestamps to the format we expect
+    const person: PersonRecord = {
+      ...data,
+      createdAt: data.createdAt || Timestamp.now(),
+      updatedAt: data.updatedAt || Timestamp.now(),
+    } as PersonRecord;
+    
+    return person;
   } catch (error) {
     console.error('Error getting person:', error);
+    console.error('PersonId was:', personId);
+    if (error instanceof Error) {
+      console.error('Error message:', error.message);
+      console.error('Error stack:', error.stack);
+    }
     return null;
   }
 }
@@ -178,7 +194,14 @@ export async function getAllPersons(
     
     const persons: PersonRecord[] = [];
     querySnapshot.forEach((doc) => {
-      persons.push(doc.data() as PersonRecord);
+      const data = doc.data();
+      // Ensure timestamps are properly set
+      const person: PersonRecord = {
+        ...data,
+        createdAt: data.createdAt || Timestamp.now(),
+        updatedAt: data.updatedAt || Timestamp.now(),
+      } as PersonRecord;
+      persons.push(person);
     });
     
     return persons;
@@ -267,7 +290,14 @@ export async function getPersonsByLocation(
     
     const persons: PersonRecord[] = [];
     querySnapshot.forEach((doc) => {
-      persons.push(doc.data() as PersonRecord);
+      const data = doc.data();
+      // Ensure timestamps are properly set
+      const person: PersonRecord = {
+        ...data,
+        createdAt: data.createdAt || Timestamp.now(),
+        updatedAt: data.updatedAt || Timestamp.now(),
+      } as PersonRecord;
+      persons.push(person);
     });
     
     return persons;
@@ -335,7 +365,14 @@ export async function getDiasporaPersons(
     
     const persons: PersonRecord[] = [];
     querySnapshot.forEach((doc) => {
-      persons.push(doc.data() as PersonRecord);
+      const data = doc.data();
+      // Ensure timestamps are properly set
+      const person: PersonRecord = {
+        ...data,
+        createdAt: data.createdAt || Timestamp.now(),
+        updatedAt: data.updatedAt || Timestamp.now(),
+      } as PersonRecord;
+      persons.push(person);
     });
     
     return persons;
@@ -367,7 +404,14 @@ export async function getPersonsByVerificationLevel(
     
     const persons: PersonRecord[] = [];
     querySnapshot.forEach((doc) => {
-      persons.push(doc.data() as PersonRecord);
+      const data = doc.data();
+      // Ensure timestamps are properly set
+      const person: PersonRecord = {
+        ...data,
+        createdAt: data.createdAt || Timestamp.now(),
+        updatedAt: data.updatedAt || Timestamp.now(),
+      } as PersonRecord;
+      persons.push(person);
     });
     
     return persons;

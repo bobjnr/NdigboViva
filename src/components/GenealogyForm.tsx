@@ -408,8 +408,14 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         throw new Error(personResult.error || 'Failed to create person record')
       }
 
-      // Store person ID for success message
-      setPersonData(prev => ({ ...prev, createdPersonId: personResult.personId }))
+      // Store person ID for success message (use state to persist across renders)
+      const savedPersonId = personResult.personId
+      setPersonData(prev => ({ ...prev, createdPersonId: savedPersonId }))
+      
+      // Also store in a ref or sessionStorage to ensure it persists
+      if (typeof window !== 'undefined' && savedPersonId) {
+        sessionStorage.setItem('lastCreatedPersonId', savedPersonId)
+      }
 
       // Also send email notification (keep old flow for now)
       try {
@@ -435,7 +441,9 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   }
 
   if (isSubmitted) {
-    const personId = (personData as any).createdPersonId
+    // Get personId from state or sessionStorage
+    const personId = (personData as any).createdPersonId || 
+                     (typeof window !== 'undefined' ? sessionStorage.getItem('lastCreatedPersonId') : null)
     
     return (
       <div className="bg-white rounded-lg shadow-lg p-8 text-center">
