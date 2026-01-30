@@ -43,11 +43,14 @@ if (!nextAuthSecret) {
     console.error('⚠️  NextAuth will not work without a secret. Please set NEXTAUTH_SECRET in your environment variables.');
 }
 
-// Validate NEXTAUTH_URL
-const nextAuthUrl = process.env.NEXTAUTH_URL;
-if (!nextAuthUrl) {
-    console.error('❌ NEXTAUTH_URL is missing!');
-    console.error('⚠️  NextAuth requires NEXTAUTH_URL to be set. Current value:', nextAuthUrl);
+// Auto-detect or validate NEXTAUTH_URL
+const nextAuthUrl = process.env.NEXTAUTH_URL ||
+    (process.env.NODE_ENV === 'production'
+        ? 'https://www.ndigboviva.com.ng'
+        : 'http://localhost:3000');
+
+if (!process.env.NEXTAUTH_URL) {
+    console.log('ℹ️  NEXTAUTH_URL not set, using auto-detected:', nextAuthUrl);
 } else {
     console.log('✅ NEXTAUTH_URL:', nextAuthUrl);
 }
@@ -64,7 +67,7 @@ export const authOptions: NextAuthOptions = {
         async redirect({ url, baseUrl }) {
             // Handle redirects after sign-in
             console.log('🔄 Redirect callback:', { url, baseUrl });
-            
+
             // If callbackUrl is provided and is on the same origin, use it
             if (url && url !== baseUrl) {
                 // Check if it's a relative URL
@@ -84,7 +87,7 @@ export const authOptions: NextAuthOptions = {
                     // Invalid URL, fall through to default
                 }
             }
-            
+
             // Default: redirect to home page
             console.log('✅ Redirecting to baseUrl:', baseUrl);
             return baseUrl;
@@ -172,7 +175,6 @@ export const authOptions: NextAuthOptions = {
         },
     },
     // Use default redirect behavior but allow callbackUrl to override
-    useSecureCookies: process.env.NODE_ENV === 'production',
     secret: nextAuthSecret || undefined,
     debug: process.env.NODE_ENV === 'development',
 };

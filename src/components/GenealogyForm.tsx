@@ -72,7 +72,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   const [originVillages, setOriginVillages] = useState<string[]>([])
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
-  
+
   // New person-centric fields state
   const [showAdvancedFields, setShowAdvancedFields] = useState({
     identity: false,
@@ -82,7 +82,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
     verification: false,
     diaspora: false,
   })
-  
+
   // Person form data (for new API)
   const [personData, setPersonData] = useState<Partial<PersonFormSubmission>>({
     gender: 'UNKNOWN',
@@ -286,18 +286,18 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
     if (!value.trim()) return
     const current = (personData[field] as string[]) || []
     if (!current.includes(value.trim())) {
-      setPersonData(prev => ({ 
-        ...prev, 
-        [field]: [...current, value.trim()] 
+      setPersonData(prev => ({
+        ...prev,
+        [field]: [...current, value.trim()]
       }))
     }
   }
 
   const handleArrayRemove = (field: keyof PersonFormSubmission, index: number) => {
     const current = (personData[field] as string[]) || []
-    setPersonData(prev => ({ 
-      ...prev, 
-      [field]: current.filter((_, i) => i !== index) 
+    setPersonData(prev => ({
+      ...prev,
+      [field]: current.filter((_, i) => i !== index)
     }))
   }
 
@@ -308,7 +308,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
     try {
       // Build person form submission from both old and new fields
       const fullName = `${formData.personalName} ${formData.familyName}`.trim()
-      
+
       if (!fullName) {
         alert('Please enter your name')
         setIsSubmitting(false)
@@ -331,7 +331,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         placeOfBirth: formData.originVillage || formData.originTown,
         photoUrl: personData.photoUrl,
         photoConsent: personData.photoConsent || false,
-        
+
         // Lineage (from existing form)
         umunna: formData.umunna,
         clan: formData.originClan,
@@ -343,7 +343,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         localGovernmentArea: formData.originLGA,
         state: formData.originState,
         nwaadaLineageLink: personData.nwaadaLineageLink,
-        
+
         // Cultural
         titles: personData.titles,
         occupation: personData.occupation,
@@ -352,7 +352,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         ancestralHouseName: personData.ancestralHouseName,
         notableContributions: personData.notableContributions,
         roles: personData.roles,
-        
+
         // Life Events
         marriageDate: personData.marriageDate,
         marriagePlace: personData.marriagePlace,
@@ -362,7 +362,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         migrationHistory: personData.migrationHistory,
         displacementNotes: personData.displacementNotes,
         sensitiveHistoryPrivate: personData.sensitiveHistoryPrivate || false,
-        
+
         // Documentation
         sourceType: personData.sourceType,
         sourceDetails: personData.sourceDetails,
@@ -372,12 +372,12 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         documentUrls: personData.documentUrls,
         story: formData.additionalInfo || personData.story,
         notes: personData.notes,
-        
+
         // Verification
         verificationLevel: personData.verificationLevel || 0,
         consentStatus: personData.consentStatus,
         visibilitySetting: personData.visibilitySetting || 'PRIVATE',
-        
+
         // Diaspora
         isDiasporaRelative: personData.isDiasporaRelative || (formData.currentCountry !== 'Nigeria'),
         countryOfResidence: formData.currentCountry !== 'Nigeria' ? formData.currentCountry : personData.countryOfResidence,
@@ -388,44 +388,40 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         returnVisitStatus: personData.returnVisitStatus,
         returnVisitDate: personData.returnVisitDate,
         returnVisitNotes: personData.returnVisitNotes,
-        
+
         // Contact
         submitterEmail: formData.email,
         submitterPhone: formData.phone,
         submitterRelationship: personData.submitterRelationship,
       }
 
-      // Create person record via new API
-      const personResponse = await fetch('/api/persons/create', {
+      // Create submission record via new API
+      const response = await fetch('/api/submissions/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(personSubmission),
       })
 
-      const personResult = await personResponse.json()
-
-      if (!personResult.success) {
-        throw new Error(personResult.error || 'Failed to create person record')
+      let result;
+      const contentType = response.headers.get("content-type");
+      if (contentType && contentType.indexOf("application/json") !== -1) {
+        result = await response.json();
+      } else {
+        const text = await response.text();
+        console.error('Non-JSON response:', text);
+        throw new Error(`Server returned non-JSON error (${response.status}): ${text.slice(0, 100)}...`);
       }
 
-      // Store person ID for success message (use state to persist across renders)
-      const savedPersonId = personResult.personId
-      setPersonData(prev => ({ ...prev, createdPersonId: savedPersonId }))
-      
-      // Also store in a ref or sessionStorage to ensure it persists
-      if (typeof window !== 'undefined' && savedPersonId) {
-        sessionStorage.setItem('lastCreatedPersonId', savedPersonId)
+      if (!result.success) {
+        throw new Error(result.error || 'Failed to submit form')
       }
 
-      // Also send email notification (keep old flow for now)
-      try {
-        await fetch('/api/genealogy/email', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(formData),
-        })
-      } catch (emailError) {
-        console.warn('Email notification failed:', emailError)
+      // Store submission ID for success message
+      const submissionId = result.submissionId
+      setPersonData(prev => ({ ...prev, createdPersonId: submissionId })) // Reusing this field to store submission ID temporarily
+
+      if (typeof window !== 'undefined' && submissionId) {
+        sessionStorage.setItem('lastSubmissionId', submissionId)
       }
 
       // Call the onSubmit callback
@@ -441,54 +437,34 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   }
 
   if (isSubmitted) {
-    // Get personId from state or sessionStorage
-    const personId = (personData as any).createdPersonId || 
-                     (typeof window !== 'undefined' ? sessionStorage.getItem('lastCreatedPersonId') : null)
-    
+    // Get submissionId from state or storage
+    const submissionId = (personData as any).createdPersonId ||
+      (typeof window !== 'undefined' ? sessionStorage.getItem('lastSubmissionId') : null)
+
     return (
       <div className="bg-white rounded-lg shadow-lg p-8 text-center">
         <div className="mb-6">
           <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
         </div>
         <h3 className="text-2xl font-bold text-gray-900 mb-4">
-          Thank You for Tracing Your Roots!
+          Submission Received
         </h3>
         <p className="text-gray-600 mb-4">
-          Your genealogy information has been submitted successfully. A personalized email with your submission details and next steps will be sent to you shortly.
+          Thank you for contributing to the Ndigbo Viva genealogy project. Your submission has been received and is pending review by our editors.
         </p>
-        
-        {personId && (
+
+        {submissionId && (
           <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6 text-left">
-            <p className="text-sm font-semibold text-blue-900 mb-2">Your Person Record ID:</p>
+            <p className="text-sm font-semibold text-blue-900 mb-2">Your Submission Reference ID:</p>
             <p className="text-xs font-mono text-blue-700 bg-blue-100 px-3 py-2 rounded mb-3">
-              {personId}
+              {submissionId}
             </p>
-            <p className="text-xs text-blue-800 mb-3">
-              Save this ID to view your family tree or update your information later.
+            <p className="text-xs text-blue-800">
+              Please save this ID. We will notify you once your information has been verified and added to the database.
             </p>
-            <div className="flex gap-2 justify-center">
-              <a
-                href={`/genealogy/person/${personId}`}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg text-sm font-medium"
-              >
-                View My Record
-              </a>
-              <a
-                href={`/genealogy/tree/${personId}`}
-                className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium"
-              >
-                View Family Tree
-              </a>
-              <a
-                href="/genealogy/search"
-                className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-lg text-sm font-medium"
-              >
-                Search Database
-              </a>
-            </div>
           </div>
         )}
-        
+
         <button
           onClick={() => {
             setIsSubmitted(false)
@@ -536,7 +512,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
       <div className="mb-8">
         <h3 className="text-2xl font-bold text-gray-900 mb-2 flex items-center">
           <MapPin className="w-6 h-6 mr-2 text-brand-gold" />
-          Current Location
+          Diaspora Information(National/International)
         </h3>
         <p className="text-gray-600">Where do you currently live?</p>
       </div>
@@ -577,23 +553,33 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
           </select>
         </div>
 
-        {formData.currentCountry === 'Nigeria' && (
+        {formData.currentCountry && (
           <>
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-2">
-                State / County *
+                State / County {availableStates.length > 0 ? '*' : ''}
               </label>
-              <select
-                value={formData.currentState}
-                onChange={(e) => handleInputChange('currentState', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-                required
-              >
-                <option value="">Select State / County</option>
-                {[...new Set(availableStates.map(s => s.state))].map(state => (
-                  <option key={state} value={state}>{state}</option>
-                ))}
-              </select>
+              {availableStates.length > 0 ? (
+                <select
+                  value={formData.currentState}
+                  onChange={(e) => handleInputChange('currentState', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
+                  required
+                >
+                  <option value="">Select State / County</option>
+                  {[...new Set(availableStates.map(s => s.state))].map(state => (
+                    <option key={state} value={state}>{state}</option>
+                  ))}
+                </select>
+              ) : (
+                <input
+                  type="text"
+                  value={formData.currentState}
+                  onChange={(e) => handleInputChange('currentState', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
+                  placeholder="Enter State / County / Province"
+                />
+              )}
             </div>
           </>
         )}
@@ -602,7 +588,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
       <div className="mb-8">
         <h3 className="text-2xl font-bold text-gray-900 mb-2 flex items-center">
           <MapPin className="w-6 h-6 mr-2 text-brand-forest" />
-          Origin Location
+          Origin Information
         </h3>
         <p className="text-gray-600">Where are your Igbo roots from?</p>
       </div>
@@ -1028,7 +1014,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
       {/* Advanced Fields - Expandable Sections */}
       <div className="space-y-4 mb-8">
         <p className="text-sm text-gray-600 italic">
-          💡 <strong>Optional:</strong> Expand the sections below to provide more detailed information about this person. 
+          💡 <strong>Optional:</strong> Expand the sections below to provide more detailed information about this person.
           This helps build a more complete family tree and preserve Igbo cultural heritage.
         </p>
 

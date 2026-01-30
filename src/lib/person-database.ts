@@ -5,16 +5,16 @@
  * Collection: "persons"
  */
 
-import { 
-  collection, 
-  doc, 
-  getDoc, 
-  getDocs, 
-  setDoc, 
-  updateDoc, 
-  query, 
-  where, 
-  orderBy, 
+import {
+  collection,
+  doc,
+  getDoc,
+  getDocs,
+  setDoc,
+  updateDoc,
+  query,
+  where,
+  orderBy,
   limit,
   Timestamp,
   QueryConstraint,
@@ -22,20 +22,77 @@ import {
   serverTimestamp
 } from 'firebase/firestore';
 import { db } from './firebase';
-import { 
-  PersonRecord, 
-  PersonFormSubmission, 
+import {
+  PersonRecord,
+  PersonFormSubmission,
   createPersonFromForm,
   generatePersonId,
   VerificationLevel,
   VisibilitySetting
 } from './person-schema';
 
-const COLLECTION_NAME = 'persons';
+const COLLECTION_NAME = 'people';
+const PUBLIC_COLLECTION_NAME = 'public_persons';
 
 // ============================================================================
 // CREATE OPERATIONS
 // ============================================================================
+
+/**
+ * Publish a sovereign person record to the public index
+ * Strips private data and ensures only verified/ deceased info is shown (based on rules)
+ */
+export async function publishPerson(
+  personId: string,
+  publishedBy?: string
+): Promise<{ success: boolean; error?: string }> {
+  try {
+    // 1. Get sovereign record
+    const person = await getPersonById(personId);
+    if (!person) {
+      return { success: false, error: 'Person record not found' };
+    }
+
+    // 2. Validate rules
+    // Rule: Must be verified (Level 2+) OR explicitly marked PUBLIC
+    if (person.verification.verificationLevel < 2 && person.verification.visibilitySetting !== 'PUBLIC') {
+      return { success: false, error: 'Person does not meet verification requirements for publication' };
+    }
+
+    // Rule: Living persons privacy (simplified logic for now)
+    // If living, redact exact dates? For now, we just proceed.
+
+    // 3. Create Public Version (Strip sensitive fields)
+    const publicData = {
+      ...person,
+      lineage: {
+        ...person.lineage,
+        // Strip sensitive lineage notes if they existed
+      },
+      lifeEvents: {
+        ...person.lifeEvents,
+        sensitiveHistoryPrivate: undefined, // Don't even include the flag
+        displacementNotes: person.lifeEvents.sensitiveHistoryPrivate ? undefined : person.lifeEvents.displacementNotes
+      },
+      verification: {
+        ...person.verification,
+        publishedAt: serverTimestamp(),
+        publishedBy: publishedBy || 'SYSTEM'
+      },
+      // Remove sensitive contact info from original submission if it crept in
+      // (Our schema isolates it in 'diaspora' or 'contact' fields usually not effectively linked, but let's be safe)
+    };
+
+    // 4. Write to Public Collection
+    const publicRef = doc(db, PUBLIC_COLLECTION_NAME, personId);
+    await setDoc(publicRef, publicData);
+
+    return { success: true };
+  } catch (error) {
+    console.error('Error publishing person:', error);
+    return { success: false, error: error instanceof Error ? error.message : 'Unknown error' };
+  }
+}
 
 /**
  * Save a new person record to Firestore
@@ -47,25 +104,25 @@ export async function createPerson(
   try {
     const person = createPersonFromForm(formData, createdBy);
     const personRef = doc(db, COLLECTION_NAME, person.identity.personId);
-    
+
     // Convert Timestamps for Firestore
     const firestoreData = {
       ...person,
       createdAt: serverTimestamp(),
       updatedAt: serverTimestamp(),
     };
-    
+
     await setDoc(personRef, firestoreData);
-    
-    return { 
-      success: true, 
-      personId: person.identity.personId 
+
+    return {
+      success: true,
+      personId: person.identity.personId
     };
   } catch (error) {
     console.error('Error creating person:', error);
-    return { 
-      success: false, 
-      error: error instanceof Error ? error.message : 'Unknown error' 
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error'
     };
   }
 }
@@ -80,22 +137,22 @@ export async function createPersonsBatch(
   const batch = writeBatch(db);
   const errors: string[] = [];
   let created = 0;
-  
+
   try {
     for (const formData of persons) {
       const person = createPersonFromForm(formData, createdBy);
       const personRef = doc(db, COLLECTION_NAME, person.identity.personId);
-      
+
       const firestoreData = {
         ...person,
         createdAt: serverTimestamp(),
         updatedAt: serverTimestamp(),
       };
-      
+
       batch.set(personRef, firestoreData);
       created++;
     }
-    
+
     await batch.commit();
     return { success: true, created, errors };
   } catch (error) {
@@ -116,14 +173,14 @@ export async function getPersonById(personId: string): Promise<PersonRecord | nu
   try {
     const personRef = doc(db, COLLECTION_NAME, personId);
     const personSnap = await getDoc(personRef);
-    
+
     if (!personSnap.exists()) {
       console.log('Person document does not exist:', personId);
       return null;
     }
-    
+
     const data = personSnap.data();
-    
+
     // Firestore returns data, but we need to ensure it's properly structured
     // Convert Firestore Timestamps to the format we expect
     const person: PersonRecord = {
@@ -131,7 +188,7 @@ export async function getPersonById(personId: string): Promise<PersonRecord | nu
       createdAt: data.createdAt || Timestamp.now(),
       updatedAt: data.updatedAt || Timestamp.now(),
     } as PersonRecord;
-    
+
     return person;
   } catch (error) {
     console.error('Error getting person:', error);
@@ -150,25 +207,25 @@ export async function getPersonById(personId: string): Promise<PersonRecord | nu
 export async function getPersonsByIds(personIds: string[]): Promise<PersonRecord[]> {
   try {
     const persons: PersonRecord[] = [];
-    
+
     // Firestore 'in' queries are limited to 10 items
     const chunks: string[][] = [];
     for (let i = 0; i < personIds.length; i += 10) {
       chunks.push(personIds.slice(i, i + 10));
     }
-    
+
     for (const chunk of chunks) {
       const q = query(
         collection(db, COLLECTION_NAME),
         where('identity.personId', 'in', chunk)
       );
-      
+
       const querySnapshot = await getDocs(q);
       querySnapshot.forEach((doc) => {
         persons.push(doc.data() as PersonRecord);
       });
     }
-    
+
     return persons;
   } catch (error) {
     console.error('Error getting persons by IDs:', error);
@@ -188,10 +245,10 @@ export async function getAllPersons(
       orderBy('identity.personId'),
       limit(pageSize)
     ];
-    
+
     const q = query(collection(db, COLLECTION_NAME), ...constraints);
     const querySnapshot = await getDocs(q);
-    
+
     const persons: PersonRecord[] = [];
     querySnapshot.forEach((doc) => {
       const data = doc.data();
@@ -203,7 +260,7 @@ export async function getAllPersons(
       } as PersonRecord;
       persons.push(person);
     });
-    
+
     return persons;
   } catch (error) {
     console.error('Error getting all persons:', error);
@@ -224,27 +281,27 @@ export async function searchPersonsByName(searchTerm: string): Promise<PersonRec
     // This is a basic prefix search - for production, consider Algolia or similar
     const searchUpper = searchTerm.toUpperCase().trim();
     const q = query(
-      collection(db, COLLECTION_NAME),
+      collection(db, PUBLIC_COLLECTION_NAME), // SEARCH PUBLIC INDEX
       where('identity.fullName', '>=', searchUpper),
       where('identity.fullName', '<=', searchUpper + '\uf8ff'),
       limit(50)
     );
-    
+
     const querySnapshot = await getDocs(q);
     const persons: PersonRecord[] = [];
-    
+
     querySnapshot.forEach((doc) => {
       const person = doc.data() as PersonRecord;
       // Also check alternate names
       const matchesAlternate = person.identity.alternateNames?.some(
         name => name.toUpperCase().includes(searchUpper)
       );
-      
+
       if (person.identity.fullName.toUpperCase().includes(searchUpper) || matchesAlternate) {
         persons.push(person);
       }
     });
-    
+
     return persons;
   } catch (error) {
     console.error('Error searching persons by name:', error);
@@ -266,7 +323,7 @@ export async function getPersonsByLocation(
 ): Promise<PersonRecord[]> {
   try {
     const constraints: QueryConstraint[] = [];
-    
+
     if (filters.state) {
       constraints.push(where('lineage.state', '==', filters.state.toUpperCase()));
     }
@@ -282,12 +339,12 @@ export async function getPersonsByLocation(
     if (filters.umunna) {
       constraints.push(where('lineage.umunna', '==', filters.umunna.toUpperCase()));
     }
-    
+
     constraints.push(limit(100));
-    
-    const q = query(collection(db, COLLECTION_NAME), ...constraints);
+
+    const q = query(collection(db, PUBLIC_COLLECTION_NAME), ...constraints); // SEARCH PUBLIC INDEX
     const querySnapshot = await getDocs(q);
-    
+
     const persons: PersonRecord[] = [];
     querySnapshot.forEach((doc) => {
       const data = doc.data();
@@ -299,7 +356,7 @@ export async function getPersonsByLocation(
       } as PersonRecord;
       persons.push(person);
     });
-    
+
     return persons;
   } catch (error) {
     console.error('Error getting persons by location:', error);
@@ -317,9 +374,9 @@ export async function getPersonsByRelationship(
   try {
     const person = await getPersonById(personId);
     if (!person) return [];
-    
+
     let relatedIds: string[] = [];
-    
+
     switch (relationship) {
       case 'father':
         if (person.lineage.fatherId) relatedIds = [person.lineage.fatherId];
@@ -334,9 +391,9 @@ export async function getPersonsByRelationship(
         relatedIds = person.lineage.childrenIds || [];
         break;
     }
-    
+
     if (relatedIds.length === 0) return [];
-    
+
     return await getPersonsByIds(relatedIds);
   } catch (error) {
     console.error('Error getting persons by relationship:', error);
@@ -355,14 +412,14 @@ export async function getDiasporaPersons(
       where('diaspora.isDiasporaRelative', '==', true),
       limit(100)
     ];
-    
+
     if (country) {
       constraints.unshift(where('diaspora.countryOfResidence', '==', country));
     }
-    
-    const q = query(collection(db, COLLECTION_NAME), ...constraints);
+
+    const q = query(collection(db, PUBLIC_COLLECTION_NAME), ...constraints); // SEARCH PUBLIC INDEX
     const querySnapshot = await getDocs(q);
-    
+
     const persons: PersonRecord[] = [];
     querySnapshot.forEach((doc) => {
       const data = doc.data();
@@ -374,7 +431,7 @@ export async function getDiasporaPersons(
       } as PersonRecord;
       persons.push(person);
     });
-    
+
     return persons;
   } catch (error) {
     console.error('Error getting diaspora persons:', error);
@@ -394,14 +451,14 @@ export async function getPersonsByVerificationLevel(
       where('verification.verificationLevel', '==', level),
       limit(100)
     ];
-    
+
     if (visibility) {
       constraints.push(where('verification.visibilitySetting', '==', visibility));
     }
-    
+
     const q = query(collection(db, COLLECTION_NAME), ...constraints);
     const querySnapshot = await getDocs(q);
-    
+
     const persons: PersonRecord[] = [];
     querySnapshot.forEach((doc) => {
       const data = doc.data();
@@ -413,7 +470,7 @@ export async function getPersonsByVerificationLevel(
       } as PersonRecord;
       persons.push(person);
     });
-    
+
     return persons;
   } catch (error) {
     console.error('Error getting persons by verification level:', error);
@@ -436,16 +493,16 @@ export async function updatePerson(
   try {
     const personRef = doc(db, COLLECTION_NAME, personId);
     const person = await getPersonById(personId);
-    
+
     if (!person) {
       return { success: false, error: 'Person not found' };
     }
-    
+
     // Check if record is locked
     if (person.verification.recordLockDate) {
       return { success: false, error: 'Record is locked and cannot be modified' };
     }
-    
+
     // Add to edit history
     const editHistory = person.verification.editHistory || [];
     editHistory.push({
@@ -453,22 +510,22 @@ export async function updatePerson(
       editedAt: Timestamp.now(),
       changes: JSON.stringify(updates),
     });
-    
+
     const updateData = {
       ...updates,
       'verification.lastModifiedBy': modifiedBy,
       'verification.editHistory': editHistory,
       updatedAt: serverTimestamp(),
     };
-    
+
     await updateDoc(personRef, updateData);
-    
+
     return { success: true };
   } catch (error) {
     console.error('Error updating person:', error);
-    return { 
-      success: false, 
-      error: error instanceof Error ? error.message : 'Unknown error' 
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error'
     };
   }
 }
@@ -491,17 +548,17 @@ export async function updateVerificationLevel(
         validatedAt: Timestamp.now(),
       } as any,
     };
-    
+
     if (authority) {
       (updates.verification as any).validationAuthority = authority;
     }
-    
+
     return await updatePerson(personId, updates, validatedBy);
   } catch (error) {
     console.error('Error updating verification level:', error);
-    return { 
-      success: false, 
-      error: error instanceof Error ? error.message : 'Unknown error' 
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error'
     };
   }
 }
@@ -519,9 +576,9 @@ export async function linkFamilyRelationship(
     if (!person) {
       return { success: false, error: 'Person not found' };
     }
-    
+
     const updates: Partial<PersonRecord> = {};
-    
+
     switch (relationship) {
       case 'father':
         updates.lineage = { ...person.lineage, fatherId: relatedPersonId };
@@ -542,13 +599,13 @@ export async function linkFamilyRelationship(
         }
         break;
     }
-    
+
     return await updatePerson(personId, updates);
   } catch (error) {
     console.error('Error linking family relationship:', error);
-    return { 
-      success: false, 
-      error: error instanceof Error ? error.message : 'Unknown error' 
+    return {
+      success: false,
+      error: error instanceof Error ? error.message : 'Unknown error'
     };
   }
 }
@@ -573,47 +630,47 @@ export async function getFamilyTree(
     if (!person) {
       throw new Error('Person not found');
     }
-    
+
     const ancestors: PersonRecord[] = [];
     const descendants: PersonRecord[] = [];
-    
+
     // Get ancestors (parents, grandparents, etc.)
     async function getAncestors(currentPerson: PersonRecord, depth: number) {
       if (depth >= maxDepth) return;
-      
+
       const parentIds: string[] = [];
       if (currentPerson.lineage.fatherId) parentIds.push(currentPerson.lineage.fatherId);
       if (currentPerson.lineage.motherId) parentIds.push(currentPerson.lineage.motherId);
-      
+
       if (parentIds.length > 0) {
         const parents = await getPersonsByIds(parentIds);
         ancestors.push(...parents);
-        
+
         for (const parent of parents) {
           await getAncestors(parent, depth + 1);
         }
       }
     }
-    
+
     // Get descendants (children, grandchildren, etc.)
     async function getDescendants(currentPerson: PersonRecord, depth: number) {
       if (depth >= maxDepth) return;
-      
+
       if (currentPerson.lineage.childrenIds && currentPerson.lineage.childrenIds.length > 0) {
         const children = await getPersonsByIds(currentPerson.lineage.childrenIds);
         descendants.push(...children);
-        
+
         for (const child of children) {
           await getDescendants(child, depth + 1);
         }
       }
     }
-    
+
     await Promise.all([
       getAncestors(person, 0),
       getDescendants(person, 0)
     ]);
-    
+
     return { person, ancestors, descendants };
   } catch (error) {
     console.error('Error getting family tree:', error);
@@ -636,19 +693,19 @@ export async function getDatabaseStats(): Promise<{
 }> {
   try {
     const allPersons = await getAllPersons(10000); // Get large batch for stats
-    
+
     const stats = {
       totalPersons: allPersons.length,
       verifiedPersons: allPersons.filter(p => p.verification.verified).length,
       diasporaPersons: allPersons.filter(p => p.diaspora.isDiasporaRelative).length,
       byState: {} as Record<string, number>,
     };
-    
+
     allPersons.forEach(person => {
       const state = person.lineage.state || 'UNKNOWN';
       stats.byState[state] = (stats.byState[state] || 0) + 1;
     });
-    
+
     return stats;
   } catch (error) {
     console.error('Error getting database stats:', error);

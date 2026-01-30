@@ -142,7 +142,7 @@ export default function HomeContent({ latestVideo, recentPosts, showWelcome }: H
       )}
 
       {/* Latest Video Section */}
-      <section className="py-12 bg-warm-50 ">
+      <section className="py-12 bg-cream ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="inline-flex items-center justify-center w-22 h-22 rounded-full mb-6 overflow-hidden">
@@ -162,19 +162,21 @@ export default function HomeContent({ latestVideo, recentPosts, showWelcome }: H
             </p>
           </div>
           
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-cream  rounded-lg shadow-brand-gold overflow-hidden border border-brand-gold-200">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <article className="bg-white  rounded-lg shadow-brand-bronze overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 border border-brand-bronze-200 ">
               <VideoHover
                 videoId={latestVideo.videoId}
                 thumbnail={latestVideo.thumbnail}
                 title={latestVideo.title}
                 showControls={true}
+                enableAudio={true}
+                autoPlay={true}
               />
               <div className="p-6">
-                <h3 className="text-xl font-bold text-warm-900  mb-2">
+                <h3 className="text-xl font-bold text-warm-900  mb-2 line-clamp-2">
                   {latestVideo.title}
                 </h3>
-                <p className="text-warm-600  mb-4 line-clamp-2">
+                <p className="text-warm-600  mb-4 line-clamp-3">
                   {latestVideo.description}
                 </p>
                 <div className="flex items-center justify-between">
@@ -187,13 +189,13 @@ export default function HomeContent({ latestVideo, recentPosts, showWelcome }: H
                   </span>
                   <Link
                     href={`/blog/${latestVideo.id}`}
-                    className="text-brand-gold hover:text-brand-gold-light font-bold text-lg transition-colors"
+                    className="text-brand-forest hover:text-brand-forest-light font-bold text-lg transition-colors"
                   >
-                    View Full Post →
+                    Read More →
                   </Link>
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </section>

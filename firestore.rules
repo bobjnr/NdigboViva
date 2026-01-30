@@ -12,32 +12,21 @@ service cloud.firestore {
       allow write: if false; // Only server-side writes allowed
     }
     
-    // Persons collection - genealogy records
-    match /persons/{personId} {
-      // Allow read if:
-      // - Visibility is PUBLIC, OR
-      // - Visibility is PARTIAL (anyone can read partial), OR
-      // - Visibility is PRIVATE (allow read - visibility controlled at app level), OR
-      // - User is the creator, OR
-      // - User is admin
-      // Note: For now, we allow reads of all records. Visibility filtering happens at application level.
+    // People collection - genealogy records
+    match /people/{personId} {
       allow read: if true;
-      
-      // Allow create if:
-      // - Consent status is true (required for all records)
-      // - This allows anonymous users to create records with consent
       allow create: if request.resource.data.verification.consentStatus == true;
-      
-      // Allow update if:
-      // - User is the creator, OR
-      // - User is admin, OR
-      // - Record is not locked
       allow update: if (request.auth != null && request.auth.uid == resource.data.verification.createdBy)
                     || (request.auth != null && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin')
                     || (!resource.data.verification.recordLockDate.exists());
-      
-      // Allow delete only for admins
       allow delete: if request.auth != null && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // Submissions collection - for raw form entries before review
+    match /submissions/{submissionId} {
+      allow read: if request.auth != null && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+      allow create: if request.resource.data.data.consentStatus == true;
+      allow update, delete: if request.auth != null && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
     }
   }
 }

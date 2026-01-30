@@ -1,6 +1,6 @@
 import genealogyHierarchy from './genealogy-hierarchy.json';
 import townsByLga from './towns-by-lga.json';
-
+import worldLocations from './world-locations.json';
 
 // Nigerian States and their LGAs data structure
 export interface LocationData {
@@ -117,72 +117,19 @@ export const townsData: { [lga: string]: string[] } = townsByLga as { [lga: stri
 // Sample villages data (this would be much more comprehensive in a real implementation)
 export const villagesData: { [town: string]: string[] } = {};
 
-// Countries where Igbo people are found
-export const continents = [
-  "Africa", "Asia", "Europe", "North America", "South America", "Oceania", "Antarctica"
-];
+// Countries and Continents data from world-locations.json
+export const continents = Object.keys(worldLocations.continentCountries);
 
-export const countries = [
-  "Nigeria", "United States", "United Kingdom", "Canada", "Germany", "Italy",
-  "France", "Spain", "Netherlands", "Belgium", "Switzerland", "Austria",
-  "Ireland", "Portugal", "Sweden", "Norway", "Denmark", "Finland",
-  "Australia", "New Zealand", "South Africa", "Ghana", "Kenya", "Uganda",
-  "Tanzania", "Zambia", "Zimbabwe", "Botswana", "Namibia", "Lesotho",
-  "Swaziland", "Malawi", "Mozambique", "Angola", "Congo", "Cameroon",
-  "Equatorial Guinea", "Gabon", "Central African Republic", "Chad",
-  "Niger", "Benin", "Togo", "Burkina Faso", "Mali", "Senegal",
-  "Gambia", "Guinea", "Sierra Leone", "Liberia", "Ivory Coast",
-  "Brazil", "Argentina", "Chile", "Colombia", "Venezuela", "Peru",
-  "Ecuador", "Bolivia", "Paraguay", "Uruguay", "Guyana", "Suriname",
-  "Trinidad and Tobago", "Jamaica", "Barbados", "Grenada", "Saint Lucia",
-  "Saint Vincent and the Grenadines", "Antigua and Barbuda", "Dominica",
-  "Saint Kitts and Nevis", "Bahamas", "Belize", "Costa Rica", "Panama",
-  "Honduras", "Nicaragua", "El Salvador", "Guatemala", "Mexico",
-  "Cuba", "Dominican Republic", "Haiti", "Puerto Rico", "Virgin Islands",
-  "Cayman Islands", "Bermuda", "Turks and Caicos Islands", "Aruba",
-  "Curacao", "Bonaire", "Sint Maarten", "Saba", "Sint Eustatius",
-  "Other"
-];
+// Flatten all countries from all continents
+export const countries = Object.values(worldLocations.continentCountries).flat();
 
 // Mapping of continents to their countries
-export const continentCountries: { [continent: string]: string[] } = {
-  "Africa": [
-    "Nigeria", "South Africa", "Ghana", "Kenya", "Uganda", "Tanzania", "Zambia",
-    "Zimbabwe", "Botswana", "Namibia", "Lesotho", "Swaziland", "Malawi",
-    "Mozambique", "Angola", "Congo", "Cameroon", "Equatorial Guinea", "Gabon",
-    "Central African Republic", "Chad", "Niger", "Benin", "Togo", "Burkina Faso",
-    "Mali", "Senegal", "Gambia", "Guinea", "Sierra Leone", "Liberia", "Ivory Coast"
-  ],
-  "Europe": [
-    "United Kingdom", "Germany", "Italy", "France", "Spain", "Netherlands",
-    "Belgium", "Switzerland", "Austria", "Ireland", "Portugal", "Sweden",
-    "Norway", "Denmark", "Finland"
-  ],
-  "North America": [
-    "United States", "Canada", "Mexico", "Cuba", "Dominican Republic", "Haiti",
-    "Puerto Rico", "Virgin Islands", "Cayman Islands", "Bermuda",
-    "Turks and Caicos Islands", "Aruba", "Curacao", "Bonaire", "Sint Maarten",
-    "Saba", "Sint Eustatius", "Trinidad and Tobago", "Jamaica", "Barbados",
-    "Grenada", "Saint Lucia", "Saint Vincent and the Grenadines",
-    "Antigua and Barbuda", "Dominica", "Saint Kitts and Nevis", "Bahamas",
-    "Belize", "Costa Rica", "Panama", "Honduras", "Nicaragua", "El Salvador",
-    "Guatemala"
-  ],
-  "South America": [
-    "Brazil", "Argentina", "Chile", "Colombia", "Venezuela", "Peru", "Ecuador",
-    "Bolivia", "Paraguay", "Uruguay", "Guyana", "Suriname"
-  ],
-  "Oceania": [
-    "Australia", "New Zealand"
-  ],
-  "Asia": [],
-  "Antarctica": []
-};
+export const continentCountries: { [continent: string]: string[] } = worldLocations.continentCountries;
 
-// Mapping of countries to their states (currently only Nigeria has detailed state data)
+// Mapping of countries to their states
 export const countryStates: { [country: string]: LocationData[] } = {
+  ...worldLocations.countryStates,
   "Nigeria": nigerianStates,
-  // Other countries can be added here as data becomes available
 };
 
 export interface GenealogyFormData {

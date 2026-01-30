@@ -51,6 +51,22 @@ export default function OurCommunityPage() {
       case 'genealogy':
         return (
           <div className="space-y-8">
+            {/* Genealogy Form - Protected by Subscription Gate - Show First */}
+            <SubscriptionGate>
+              <div className="bg-white rounded-lg shadow-lg p-8">
+                <div className="text-center mb-8">
+                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
+                    Start Tracing Your Roots
+                  </h3>
+                  <p className="text-lg text-gray-600">
+                    Fill out the form below to begin your journey of discovering your Igbo heritage
+                  </p>
+                </div>
+
+                <GenealogyForm onSubmit={handleFormSubmit} />
+              </div>
+            </SubscriptionGate>
+
             {/* Genealogy Overview */}
             <div className="bg-white rounded-lg shadow-lg p-8">
               <div className="text-center mb-8">
@@ -152,22 +168,6 @@ export default function OurCommunityPage() {
                 </div>
               </div>
             </div>
-
-            {/* Genealogy Form - Protected by Subscription Gate */}
-            <SubscriptionGate>
-              <div className="bg-white rounded-lg shadow-lg p-8">
-                <div className="text-center mb-8">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-4">
-                    Start Tracing Your Roots
-                  </h3>
-                  <p className="text-lg text-gray-600">
-                    Fill out the form below to begin your journey of discovering your Igbo heritage
-                  </p>
-                </div>
-
-                <GenealogyForm onSubmit={handleFormSubmit} />
-              </div>
-            </SubscriptionGate>
 
             {/* Benefits */}
             <div className="bg-white rounded-lg shadow-lg p-8">
@@ -346,7 +346,7 @@ export default function OurCommunityPage() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center">
             <h1 className="text-4xl md:text-5xl font-display font-bold mb-4">
-              <span className="text-brand-gold">IGBO</span> <span className="text-brand-forest">HERITAGE</span> <span className="text-brand-gold">PROJECT</span>
+              <span className="text-brand-gold">IGBO</span> <span className="text-white">HERITAGE</span> <span className="text-brand-gold">PROJECT</span>
             </h1>
             <p className="text-xl text-brand-gold font-semibold max-w-3xl mx-auto mb-6">
               Preserving and celebrating Igbo heritage through genealogy, health, lifestyle, events, and cultural traditions
@@ -356,26 +356,71 @@ export default function OurCommunityPage() {
               and preserve their rich cultural heritage for future generations.
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm">
-              <div className="flex items-center bg-brand-gold-20 px-4 py-2 rounded-full">
+              <button
+                onClick={() => {
+                  setActiveSection('genealogy');
+                  setTimeout(() => {
+                    const element = document.getElementById('main-content');
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }, 100);
+                }}
+                className="flex items-center bg-brand-gold-20 px-4 py-2 rounded-full hover:bg-brand-gold hover:text-white hover:scale-110 hover:shadow-lg transition-all duration-300 cursor-pointer"
+              >
                 <TreePine className="w-4 h-4 mr-2" />
                 <span>Genealogy</span>
-              </div>
-              <div className="flex items-center bg-brand-gold-20 px-4 py-2 rounded-full">
+              </button>
+              <button
+                onClick={() => {
+                  setActiveSection('health');
+                  setTimeout(() => {
+                    const element = document.getElementById('main-content');
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }, 100);
+                }}
+                className="flex items-center bg-brand-gold-20 px-4 py-2 rounded-full hover:bg-brand-gold hover:text-white hover:scale-110 hover:shadow-lg transition-all duration-300 cursor-pointer"
+              >
                 <Activity className="w-4 h-4 mr-2" />
                 <span>Health</span>
-              </div>
-              <div className="flex items-center bg-brand-gold-20 px-4 py-2 rounded-full">
+              </button>
+              <button
+                onClick={() => {
+                  setActiveSection('lifestyle');
+                  setTimeout(() => {
+                    const element = document.getElementById('main-content');
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }, 100);
+                }}
+                className="flex items-center bg-brand-gold-20 px-4 py-2 rounded-full hover:bg-brand-gold hover:text-white hover:scale-110 hover:shadow-lg transition-all duration-300 cursor-pointer"
+              >
                 <Sparkles className="w-4 h-4 mr-2" />
                 <span>Lifestyle</span>
-              </div>
-              <div className="flex items-center bg-brand-gold-20 px-4 py-2 rounded-full">
+              </button>
+              <button
+                onClick={() => {
+                  setActiveSection('events');
+                  setTimeout(() => {
+                    const element = document.getElementById('main-content');
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }, 100);
+                }}
+                className="flex items-center bg-brand-gold-20 px-4 py-2 rounded-full hover:bg-brand-gold hover:text-white hover:scale-110 hover:shadow-lg transition-all duration-300 cursor-pointer"
+              >
                 <Calendar className="w-4 h-4 mr-2" />
                 <span>Events</span>
-              </div>
-              <div className="flex items-center bg-brand-gold-20 px-4 py-2 rounded-full">
+              </button>
+              <button
+                onClick={() => {
+                  setActiveSection('fashion');
+                  setTimeout(() => {
+                    const element = document.getElementById('main-content');
+                    element?.scrollIntoView({ behavior: 'smooth' });
+                  }, 100);
+                }}
+                className="flex items-center bg-brand-gold-20 px-4 py-2 rounded-full hover:bg-brand-gold hover:text-white hover:scale-110 hover:shadow-lg transition-all duration-300 cursor-pointer"
+              >
                 <Shirt className="w-4 h-4 mr-2" />
                 <span>Fashion</span>
-              </div>
+              </button>
             </div>
           </div>
         </div>
@@ -411,7 +456,7 @@ export default function OurCommunityPage() {
             </aside>
 
             {/* Main Content Area */}
-            <main className="flex-1 min-w-0">
+            <main id="main-content" className="flex-1 min-w-0">
               {renderContent()}
             </main>
           </div>
