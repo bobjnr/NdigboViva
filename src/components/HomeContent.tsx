@@ -102,7 +102,7 @@ export default function HomeContent({ latestVideo, recentPosts, showWelcome }: H
               >
                 <X size={20} />
               </button>
-              
+
               <div className="flex items-start space-x-4 pr-8">
                 <div className="flex-shrink-0">
                   <div className="w-12 h-12 bg-green-500 rounded-full flex items-center justify-center">
@@ -114,7 +114,7 @@ export default function HomeContent({ latestVideo, recentPosts, showWelcome }: H
                     Welcome to Ndigbo Viva!
                   </h3>
                   <p className="text-green-700  mb-4">
-                    You&apos;re now part of our community! Explore our latest content, join our discussions, 
+                    You&apos;re now part of our community! Explore our latest content, join our discussions,
                     and don&apos;t forget to subscribe to our YouTube channel for more insights and stories.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
@@ -161,7 +161,7 @@ export default function HomeContent({ latestVideo, recentPosts, showWelcome }: H
               Stay updated with our latest videos and insights
             </p>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <article className="bg-white  rounded-lg shadow-brand-bronze overflow-hidden hover:shadow-xl transition-all hover:-translate-y-1 border border-brand-bronze-200 ">
               <VideoHover
@@ -201,7 +201,7 @@ export default function HomeContent({ latestVideo, recentPosts, showWelcome }: H
       </section>
 
       {/* Recent Posts Section */}
-      <section className="py-12 bg-cream ">
+      <section className="py-12 bg-amber-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-warm-900  mb-6">

@@ -12,14 +12,20 @@ service cloud.firestore {
       allow write: if false; // Only server-side writes allowed
     }
     
-    // People collection - genealogy records
+    // People collection - genealogy records (Sovereign Data - Private/Restricted)
     match /people/{personId} {
-      allow read: if true;
+      allow read: if request.auth != null; // Registered users/editors only
       allow create: if request.resource.data.verification.consentStatus == true;
       allow update: if (request.auth != null && request.auth.uid == resource.data.verification.createdBy)
                     || (request.auth != null && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin')
                     || (!resource.data.verification.recordLockDate.exists());
       allow delete: if request.auth != null && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // Public Persons Index - Published, Safe Data (Open Read)
+    match /public_persons/{personId} {
+      allow read: if true; // Publicly searchable
+      allow write: if false; // Only written by system functions
     }
 
     // Submissions collection - for raw form entries before review

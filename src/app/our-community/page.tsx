@@ -80,13 +80,25 @@ export default function OurCommunityPage() {
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                <Link href="/search" className="block group h-full">
+                  <div className="bg-amber-50 rounded-lg p-6 text-center h-full border border-amber-100 group-hover:shadow-lg group-hover:border-amber-300 transition-all cursor-pointer">
+                    <div className="bg-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center shadow-sm">
+                      <Search className="w-8 h-8 text-amber-600" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-700">Search Records</h3>
+                    <p className="text-gray-600 text-sm">
+                      Search our public registry verified ancestors. Find your people.
+                    </p>
+                  </div>
+                </Link>
+
                 <div className="bg-gray-50 rounded-lg p-6 text-center">
                   <div className="bg-brand-gold-50 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                    <Search className="w-8 h-8 text-brand-gold" />
+                    <TreePine className="w-8 h-8 text-brand-gold" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Trace Your Lineage</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Trace Lineage</h3>
                   <p className="text-gray-600 text-sm">
-                    Discover your ancestral villages, kindred, and family connections through our comprehensive database.
+                    Discover your ancestral villages, kindred, and family connections through our database.
                   </p>
                 </div>
 
@@ -94,7 +106,7 @@ export default function OurCommunityPage() {
                   <div className="bg-brand-forest-50 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
                     <Users2 className="w-8 h-8 text-brand-forest" />
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Connect with Family</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">Connect Family</h3>
                   <p className="text-gray-600 text-sm">
                     Find and connect with relatives across the globe who share your ancestral roots.
                   </p>
@@ -106,17 +118,7 @@ export default function OurCommunityPage() {
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-2">Preserve Heritage</h3>
                   <p className="text-gray-600 text-sm">
-                    Document and preserve your family history, traditions, and cultural practices for future generations.
-                  </p>
-                </div>
-
-                <div className="bg-gray-50 rounded-lg p-6 text-center">
-                  <div className="bg-brand-red-50 p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center">
-                    <Share2 className="w-8 h-8 text-brand-red" />
-                  </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">Share Stories</h3>
-                  <p className="text-gray-600 text-sm">
-                    Share your family stories, traditions, and cultural knowledge with the global Igbo community.
+                    Document and preserve your family history, traditions, and cultural practices.
                   </p>
                 </div>
               </div>
@@ -442,8 +444,8 @@ export default function OurCommunityPage() {
                         key={item.id}
                         onClick={() => setActiveSection(item.id)}
                         className={`w-full flex items-center px-4 py-3 rounded-lg transition-colors text-left ${activeSection === item.id
-                            ? 'bg-brand-gold text-white font-semibold'
-                            : 'text-gray-700 hover:bg-gray-100'
+                          ? 'bg-brand-gold text-white font-semibold'
+                          : 'text-gray-700 hover:bg-gray-100'
                           }`}
                       >
                         <Icon className="w-5 h-5 mr-3" />

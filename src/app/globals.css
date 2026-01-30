@@ -3,7 +3,7 @@
 :root {
   --background: #fffbeb;
   --foreground: #1f2937;
-  
+
   /* Brand Colors from Logo */
   --brand-gold: #eab308;
   --brand-gold-light: #fbbf24;
@@ -17,7 +17,7 @@
   --brand-bronze: #a16207;
   --brand-bronze-light: #d97706;
   --brand-bronze-dark: #78350f;
-  
+
   /* Warm Neutrals */
   --cream-white: #fffbeb;
   --warm-gray-50: #fafaf9;
@@ -37,7 +37,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
   --font-display: var(--font-playfair);
-  
+
   /* Brand theme colors */
   --color-brand-primary: var(--brand-gold);
   --color-brand-secondary: var(--brand-forest);
@@ -50,7 +50,7 @@
   :root {
     --background: #1c1917;
     --foreground: #fafaf9;
-    
+
     /* Adjust brand colors for dark mode */
     --brand-gold: #fbbf24;
     --brand-forest: #22c55e;
@@ -84,20 +84,53 @@
 }
 
 /* Additional brand utility classes */
-.text-brand-gold { color: var(--brand-gold); }
-.text-brand-forest { color: var(--brand-forest); }
-.text-brand-red { color: var(--brand-red); }
-.text-brand-bronze { color: var(--brand-bronze); }
+.text-brand-gold {
+  color: var(--brand-gold);
+}
 
-.bg-brand-gold { background-color: var(--brand-gold); }
-.bg-brand-forest { background-color: var(--brand-forest); }
-.bg-brand-red { background-color: var(--brand-red); }
-.bg-brand-bronze { background-color: var(--brand-bronze); }
+.text-brand-forest {
+  color: var(--brand-forest);
+}
 
-.border-brand-gold { border-color: var(--brand-gold); }
-.border-brand-forest { border-color: var(--brand-forest); }
-.border-brand-red { border-color: var(--brand-red); }
-.border-brand-bronze { border-color: var(--brand-bronze); }
+.text-brand-red {
+  color: var(--brand-red);
+}
+
+.text-brand-bronze {
+  color: var(--brand-bronze);
+}
+
+.bg-brand-gold {
+  background-color: var(--brand-gold);
+}
+
+.bg-brand-forest {
+  background-color: var(--brand-forest);
+}
+
+.bg-brand-red {
+  background-color: var(--brand-red);
+}
+
+.bg-brand-bronze {
+  background-color: var(--brand-bronze);
+}
+
+.border-brand-gold {
+  border-color: var(--brand-gold);
+}
+
+.border-brand-forest {
+  border-color: var(--brand-forest);
+}
+
+.border-brand-red {
+  border-color: var(--brand-red);
+}
+
+.border-brand-bronze {
+  border-color: var(--brand-bronze);
+}
 
 /* Cultural section styling */
 .cultural-section {
@@ -116,6 +149,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -126,6 +160,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -148,4 +183,46 @@
 .animation-delay-400 {
   animation-delay: 0.4s;
   animation-fill-mode: both;
+}
+
+/* Luxury Gold Shimmer Animation */
+@keyframes gold-shimmer {
+  0% {
+    background-position: 200% center;
+  }
+
+  100% {
+    background-position: -200% center;
+  }
+}
+
+.animate-luxury-gold {
+  background: linear-gradient(110deg,
+      #92400e 0%,
+      /* Darker Amber */
+      #d97706 18%,
+      /* Amber 600 */
+      #f59e0b 28%,
+      /* Amber 500 */
+      #fcd34d 40%,
+      /* Amber 300 - The Shine */
+      #f59e0b 52%,
+      /* Amber 500 */
+      #d97706 62%,
+      /* Amber 600 */
+      #92400e 100%
+      /* Darker Amber */
+    );
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: gold-shimmer 3s linear infinite;
+  font-weight: 700;
+
+}
+
+.animate-luxury-gold:hover {
+  background-position: -200% center;
+  /* Speed up or shift on hover? */
 }

@@ -61,9 +61,10 @@ export default function Header() {
               >
                 Articles
               </Link>
+
               <Link
                 href="/our-community"
-                className="text-warm-900 hover:text-brand-gold px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className="relative px-3 py-2 rounded-md text-sm font-medium transition-all animate-luxury-gold bg-amber-50"
               >
                 The Great Igbo Heritage Project
               </Link>
@@ -158,12 +159,13 @@ export default function Header() {
               >
                 Articles
               </Link>
+
               <Link
                 href="/our-community"
-                className="text-warm-900 hover:text-brand-gold block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="relative px-3 py-2 rounded-md text-base font-medium transition-all animate-luxury-gold bg-amber-50 inline-block w-full"
                 onClick={() => setIsMenuOpen(false)}
               >
-                Our Community
+                The Great Igbo Heritage Project
               </Link>
               <Link
                 href="/fashion"
