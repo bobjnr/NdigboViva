@@ -55,17 +55,17 @@ export const nigerianStates: LocationData[] = [
     state: "Abia",
     lgas: [
       "Aba North", "Aba South", "Arochukwu", "Bende", "Ikwuano", "Isiala Ngwa North",
-      "Isiala Ngwa South", "Isuikwuato", "Obi Ngwa", "Ohafia", "Osisioma", "Ugwunagbo",
-      "Ukwa East", "Ukwa West", "Umuahia North", "Umuahia South", "Umu Nneochi"
+      "Isiala Ngwa South", "Isuikwuato", "Obingwa", "Ohafia", "Osisioma", "Ugwunagbo",
+      "Ukwa East", "Ukwa West", "Umu Nneochi", "Umuahia North", "Umuahia South"
     ]
   },
   {
     state: "Anambra",
     lgas: [
       "Aguata", "Anambra East", "Anambra West", "Anaocha", "Awka North", "Awka South",
-      "Dunukofia", "Ekwusigo", "Idemili North", "Idemili South", "Ihiala", "Njikoka",
-      "Nnewi North", "Nnewi South", "Ogbaru", "Onitsha North", "Onitsha South", "Orumba North",
-      "Orumba South", "Oyi"
+      "Ayamelum", "Dunukofia", "Ekwusigo", "Idemili North", "Idemili South", "Ihiala",
+      "Njikoka", "Nnewi North", "Nnewi South", "Ogbaru", "Onitsha North", "Onitsha South",
+      "Orumba North", "Orumba South", "Oyi"
     ]
   },
   {
@@ -80,16 +80,17 @@ export const nigerianStates: LocationData[] = [
     lgas: [
       "Aninri", "Awgu", "Enugu East", "Enugu North", "Enugu South", "Ezeagu", "Igbo Etiti",
       "Igbo Eze North", "Igbo Eze South", "Isi Uzo", "Nkanu East", "Nkanu West", "Nsukka",
-      "Oji River", "Udi", "Uzo Uwani"
+      "Oji River", "Udenu", "Udi", "Uzo Uwani"
     ]
   },
   {
     state: "Imo",
     lgas: [
-      "Aboh Mbaise", "Ahiazu Mbaise", "Ehime Mbano", "Ezinihitte", "Ideato North", "Ideato South",
-      "Ihitte/Uboma", "Ikeduru", "Isiala Mbano", "Isu", "Mbaitoli", "Ngor Okpala", "Njaba",
-      "Nkwerre", "Nwangele", "Obowo", "Oguta", "Ohaji/Egbema", "Okigwe", "Onuimo", "Orlu",
-      "Orsu", "Oru East", "Oru West", "Owerri Municipal", "Owerri North", "Owerri West", "Unuimo"
+      "Aboh Mbaise", "Ahiazu Mbaise", "Ehime Mbano", "Ezinihitte Mbaise", "Ideato North",
+      "Ideato South", "Ihitte Uboma", "Ikeduru", "Isiala Mbano", "Isu", "Mbaitoli",
+      "Ngor Okpala", "Njaba", "Nkwerre", "Nwangele", "Obowo", "Oguta", "Ohaji Egbema",
+      "Okigwe", "Onuimo", "Orlu", "Orsu", "Oru East", "Oru West", "Owerri North",
+      "Owerri Urban", "Owerri West"
     ]
   },
   {
@@ -104,9 +105,10 @@ export const nigerianStates: LocationData[] = [
   {
     state: "Rivers",
     lgas: [
-      "Abua/Odual", "Ahoada East", "Ahoada West", "Akuku-Toru", "Andoni", "Asari-Toru",
-      "Bonny", "Degema", "Eleme", "Emuoha", "Etche", "Gokana", "Ikwerre", "Khana", "Obio/Akpor",
-      "Ogba/Egbema/Ndoni", "Ogu/Bolo", "Okrika", "Omuma", "Opobo/Nkoro", "Oyigbo", "Port Harcourt", "Tai"
+      "Abua Odual", "Ahoada East", "Ahoada West", "Akuku Toru", "Andoni", "Asari Toru",
+      "Bonny", "Degema", "Eleme", "Emohua", "Etche", "Gokana", "Ikwerre", "Khana",
+      "Obio Akpor", "Ogba Egbema Ndoni", "Ogu Bolo", "Okrika", "Omuma", "Opobo Nkoro",
+      "Oyigbo", "Port Harcourt", "Tai"
     ]
   }
 ];

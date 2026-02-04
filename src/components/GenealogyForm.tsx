@@ -503,6 +503,12 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         >
           Submit Another Entry
         </button>
+        <a
+          href="/my-submissions"
+          className="bg-white border border-gray-300 text-gray-700 hover:bg-gray-50 px-6 py-3 rounded-lg font-semibold transition-colors"
+        >
+          View My Submissions
+        </a>
       </div>
     )
   }

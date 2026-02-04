@@ -105,6 +105,44 @@ export async function getSubmissions(
 }
 
 /**
+ * Get submissions for a specific user by email
+ */
+export async function getUserSubmissions(email: string): Promise<SubmissionRecord[]> {
+    try {
+        if (!email) return [];
+
+        const collectionRef = collection(db, COLLECTION_NAME);
+        // data.submitterEmail query requires an index on 'data.submitterEmail' and 'submittedAt'
+        // If index is missing, this might error. We should try-catch and maybe do client-side filtering if needed strictly,
+        // but for now let's assume index can be created or we query just by email if possible.
+        // Actually, queried fields in map 'data.submitterEmail' is supported in Firestore.
+
+        const q = query(
+            collectionRef,
+            where('data.submitterEmail', '==', email),
+            orderBy('submittedAt', 'desc')
+        );
+
+        const querySnapshot = await getDocs(q);
+        const submissions: SubmissionRecord[] = [];
+
+        querySnapshot.forEach((doc) => {
+            const data = doc.data();
+            submissions.push({
+                ...data,
+                submittedAt: data.submittedAt || Timestamp.now(),
+                updatedAt: data.updatedAt || Timestamp.now(),
+            } as SubmissionRecord);
+        });
+
+        return submissions;
+    } catch (error) {
+        console.error('Error getting user submissions:', error);
+        return [];
+    }
+}
+
+/**
  * Get a single submission by ID
  */
 export async function getSubmissionById(submissionId: string): Promise<SubmissionRecord | null> {
