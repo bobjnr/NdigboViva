@@ -1,0 +1,340 @@
+        {/* 2. ORIGIN INFORMATION TAB */}
+        {activeTab === 1 && (
+          <div className="space-y-6">
+            <h3 className="text-xl font-bold mb-4">Origin Information</h3>
+            
+            {/* Family Relationships Section */}
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h4 className="font-semibold mb-3">Family Relationships</h4>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Father's Person ID</label>
+                  <input
+                    type="text"
+                    value={formData.fatherId || ''}
+                    onChange={(e) => handleInputChange('fatherId', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="P1234567890_abc123"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Mother's Person ID</label>
+                  <input
+                    type="text"
+                    value={formData.motherId || ''}
+                    onChange={(e) => handleInputChange('motherId', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="P1234567890_abc123"
+                  />
+                </div>
+              </div>
+            </div>
+
+            {/* Geographic Hierarchy Section */}
+            <div className="bg-blue-50 p-4 rounded-lg">
+              <h4 className="font-semibold mb-3">Geographic Origin (Largest to Smallest)</h4>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Continent</label>
+                  <input
+                    type="text"
+                    value={formData.originContinent || ''}
+                    onChange={(e) => handleInputChange('originContinent', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="AFRICA"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Sub-continent</label>
+                  <input
+                    type="text"
+                    value={formData.originSubContinent || ''}
+                    onChange={(e) => handleInputChange('originSubContinent', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="WEST AFRICA"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Sub-region</label>
+                  <input
+                    type="text"
+                    value={formData.originSubRegion || ''}
+                    onChange={(e) => handleInputChange('originSubRegion', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="Sub-region"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Nationality</label>
+                  <input
+                    type="text"
+                    value={formData.originNationality || ''}
+                    onChange={(e) => handleInputChange('originNationality', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="NIGERIA"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Region</label>
+                  <input
+                    type="text"
+                    value={formData.originRegion || ''}
+                    onChange={(e) => handleInputChange('originRegion', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="SOUTH-EAST"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">State</label>
+                  <input
+                    type="text"
+                    value={formData.originState || ''}
+                    onChange={(e) => handleInputChange('originState', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="ANAMBRA"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Senatorial District</label>
+                  <input
+                    type="text"
+                    value={formData.originSenatorialDistrict || ''}
+                    onChange={(e) => handleInputChange('originSenatorialDistrict', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="ANAMBRA SOUTH"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Federal Constituency</label>
+                  <input
+                    type="text"
+                    value={formData.originFederalConstituency || ''}
+                    onChange={(e) => handleInputChange('originFederalConstituency', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="AGUATA FEDERAL CONSTITUENCY"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Local Government Area</label>
+                  <input
+                    type="text"
+                    value={formData.originLocalGovernmentArea || ''}
+                    onChange={(e) => handleInputChange('originLocalGovernmentArea', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="AGUATA"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">State Constituency</label>
+                  <input
+                    type="text"
+                    value={formData.originStateConstituency || ''}
+                    onChange={(e) => handleInputChange('originStateConstituency', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="State Constituency"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Town</label>
+                  <input
+                    type="text"
+                    value={formData.originTown || ''}
+                    onChange={(e) => handleInputChange('originTown', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="ACHINA"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Town Division</label>
+                  <input
+                    type="text"
+                    value={formData.originTownDivision || ''}
+                    onChange={(e) => handleInputChange('originTownDivision', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="Town Division"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1 mt-4">Town Quarter</label>
+                <input
+                  type="text"
+                  value={formData.originTownQuarter || ''}
+                  onChange={(e) => handleInputChange('originTownQuarter', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="EZI, etc."
+                />
+              </div>
+            </div>
+
+            {/* Cultural/Lineage Hierarchy Section */}
+            <div className="bg-purple-50 p-4 rounded-lg">
+              <h4 className="font-semibold mb-3">Cultural & Lineage Hierarchy (Largest to Smallest)</h4>
+              
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Clan</label>
+                  <input
+                    type="text"
+                    value={formData.originClan || ''}
+                    onChange={(e) => handleInputChange('originClan', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="DIOHA"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Village</label>
+                  <input
+                    type="text"
+                    value={formData.originVillage || ''}
+                    onChange={(e) => handleInputChange('originVillage', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="Village"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Hamlet</label>
+                  <input
+                    type="text"
+                    value={formData.originHamlet || ''}
+                    onChange={(e) => handleInputChange('originHamlet', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="Hamlet"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Kindred</label>
+                  <input
+                    type="text"
+                    value={formData.originKindred || ''}
+                    onChange={(e) => handleInputChange('originKindred', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="UMUOKPARAUGHANZE"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1 mt-4">
+                  Umunna <span className="text-yellow-600">(Highly Recommended)</span>
+                </label>
+                <input
+                  type="text"
+                  value={formData.originUmunna || ''}
+                  onChange={(e) => handleInputChange('originUmunna', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="Extended family group"
+                />
+              </div>
+            </div>
+
+            {/* Maternal Lineage */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Nwaada Lineage Link (Maternal Village)
+              </label>
+              <input
+                type="text"
+                value={formData.nwaadaLineageLink || ''}
+                onChange={(e) => handleInputChange('nwaadaLineageLink', e.target.value)}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                placeholder="Maternal village for lineage tracking"
+              />
+            </div>
+
+            {/* Spouse and Children IDs */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Spouse Person IDs</label>
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  onKeyPress={(e) => {
+                    if (e.key === 'Enter') {
+                      e.preventDefault()
+                      handleArrayAdd('spouseIds', e.currentTarget.value)
+                      e.currentTarget.value = ''
+                    }
+                  }}
+                  className="flex-1 px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="Enter spouse Person ID and press Enter"
+                />
+              </div>
+              {formData.spouseIds && formData.spouseIds.length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {formData.spouseIds.map((id, idx) => (
+                    <span
+                      key={idx}
+                      className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm flex items-center gap-2"
+                    >
+                      {id}
+                      <button
+                        type="button"
+                        onClick={() => handleArrayRemove('spouseIds', idx)}
+                        className="text-blue-600 hover:text-blue-800"
+                      >
+                        ×
+                      </button>
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Children Person IDs</label>
+              <div className="flex gap-2">
+                <input
+                  type="text"
+                  onKeyPress={(e) => {
+                    if (e.key === 'Enter') {
+                      e.preventDefault()
+                      handleArrayAdd('childrenIds', e.currentTarget.value)
+                      e.currentTarget.value = ''
+                    }
+                  }}
+                  className="flex-1 px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="Enter child Person ID and press Enter"
+                />
+              </div>
+              {formData.childrenIds && formData.childrenIds.length > 0 && (
+                <div className="flex flex-wrap gap-2 mt-2">
+                  {formData.childrenIds.map((id, idx) => (
+                    <span
+                      key={idx}
+                      className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm flex items-center gap-2"
+                    >
+                      {id}
+                      <button
+                        type="button"
+                        onClick={() => handleArrayRemove('childrenIds', idx)}
+                        className="text-blue-600 hover:text-blue-800"
+                      >
+                        ×
+                      </button>
+                    </span>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+        )}

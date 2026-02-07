@@ -19,16 +19,16 @@ export type Gender = 'MALE' | 'FEMALE' | 'OTHER' | 'UNKNOWN';
 export interface IdentityFields {
   // Primary identifier
   personId: string; // Unique ID: "P" + timestamp + random (e.g., "P1734567890_abc123")
-  
+
   // Name information
   fullName: string; // Complete name including baptismal + ancestral
   alternateNames?: string[]; // All spelling variations (Igbo orthography varies)
-  
+
   // Basic demographics
   gender: Gender;
   dateOfBirth?: string; // ISO format or approximate (e.g., "1945", "1945-03", "1945-03-15")
   placeOfBirth?: string; // Town/Village where born
-  
+
   // Visual identification
   photoUrl?: string; // URL to photo (if consent given)
   photoConsent?: boolean; // Explicit consent for photo storage/display
@@ -44,23 +44,46 @@ export interface LineageFields {
   motherId?: string; // Reference to mother's personId
   spouseIds?: string[]; // Array of spouse personIds (polygamy support)
   childrenIds?: string[]; // Array of children personIds
-  
-  // Igbo lineage structure
-  umunna?: string; // Extended family group - most essential Igbo identity unit
-  clan?: string; // Clan affiliation
-  
-  // Multi-level location classification
-  village?: string;
-  kindred?: string; // Kindred/Hamlet
-  town?: string;
-  townQuarter?: string; // EZI, etc.
+
+  // ORIGIN INFORMATION - Complete hierarchical location structure
+  // Geographic hierarchy (largest to smallest)
+  originContinent?: string; // e.g., AFRICA
+  originSubContinent?: string; // e.g., WEST AFRICA
+  originSubRegion?: string; // Sub-region within sub-continent
+  originNationality?: string; // Country, e.g., NIGERIA
+  originRegion?: string; // Geographic region, e.g., SOUTH-EAST
+  originState?: string; // State
+  originSenatorialDistrict?: string; // Senatorial district
+  originFederalConstituency?: string; // Federal constituency
+  originLocalGovernmentArea?: string; // LGA
+  originStateConstituency?: string; // State constituency
+  originTown?: string; // Town
+  originTownDivision?: string; // Town division/section
+  originTownQuarter?: string; // Town quarter (EZI, etc.)
+
+  // Cultural/lineage hierarchy (largest to smallest)
+  originClan?: string; // Clan affiliation
+  originVillage?: string; // Village
+  originHamlet?: string; // Hamlet/sub-village
+  originKindred?: string; // Kindred
+  originUmunna?: string; // Extended family group - most essential Igbo identity unit
+
+  // Legacy fields (for backward compatibility)
+  umunna?: string; // Maps to originUmunna
+  clan?: string; // Maps to originClan
+  village?: string; // Maps to originVillage
+  kindred?: string; // Maps to originKindred
+  town?: string; // Maps to originTown
+  townQuarter?: string; // Maps to originTownQuarter
   obiAreas?: string; // AMAMU, etc.
-  localGovernmentArea?: string; // LGA
-  state?: string;
-  senatorialDistrict?: string;
-  federalConstituency?: string;
-  stateConstituency?: string;
-  
+  localGovernmentArea?: string; // Maps to originLocalGovernmentArea
+  state?: string; // Maps to originState
+  region?: string; // Maps to originRegion
+  subRegion?: string; // Maps to originSubRegion
+  senatorialDistrict?: string; // Maps to originSenatorialDistrict
+  federalConstituency?: string; // Maps to originFederalConstituency
+  stateConstituency?: string; // Maps to originStateConstituency
+
   // Maternal lineage tracking
   nwaadaLineageLink?: string; // Maternal village tracking for maternal rights & ties
 }
@@ -72,15 +95,17 @@ export interface LineageFields {
 export interface CulturalFields {
   // Titles (defines social status + cultural responsibilities)
   titles?: string[]; // ["OZO", "NZE", "LOLO", "ICHIE", etc.]
-  
+
   // Professional identity
   occupation?: string; // Current or primary occupation
   familyTrade?: string; // Traditional family profession/trade
-  
+
   // Cultural markers
+  ethnicity?: string; // Ethnic identity (e.g., Igbo, Yoruba, Hausa, etc.)
   totem?: string; // Sacred animal/forbidden food
   ancestralHouseName?: string; // Compound name for locational proof
-  
+  language?: string; // Primary language(s) spoken
+
   // Achievements
   notableContributions?: string; // Civic achievements, roles, contributions
   roles?: string[]; // ["Community Leader", "Elder", "Chief", etc.]
@@ -94,12 +119,12 @@ export interface LifeEventFields {
   // Marriage
   marriageDate?: string; // ISO format
   marriagePlace?: string; // Location of marriage
-  
+
   // Death
   deathDate?: string; // ISO format or approximate
   deathPlace?: string; // Location of death
   isDeceased?: boolean; // Quick flag for living/deceased status
-  
+
   // Migration
   migrationHistory?: {
     from?: string; // Origin location
@@ -107,7 +132,15 @@ export interface LifeEventFields {
     date?: string; // When migration occurred
     reason?: string; // Why they migrated
   }[];
-  
+
+  // Other significant life events
+  otherLifeEvents?: {
+    eventName?: string; // Name of the event (e.g., "Graduation", "Coronation", "Initiation")
+    eventDate?: string; // When the event occurred
+    eventPlace?: string; // Where the event occurred
+    eventDescription?: string; // Description of the event
+  }[];
+
   // Historical displacement
   displacementNotes?: string; // Slave trade, war displacement, etc.
   sensitiveHistoryPrivate?: boolean; // Flag for private sensitive information
@@ -123,15 +156,16 @@ export interface DocumentationFields {
   // Source information
   sourceType?: SourceType; // Reliability level indicator
   sourceDetails?: string; // Additional source information
-  
+  year?: string; // Year of the source/documentation
+
   // Testifiers/Validators
   testifierNames?: string[]; // Names of elders/testifiers who provided information
   testifierContact?: string; // How to reach testifiers for validation
-  
+
   // Document references
   documentScanIds?: string[]; // References to scanned documents
   documentUrls?: string[]; // URLs to document storage
-  
+
   // Narrative
   story?: string; // Family narratives, oral history
   notes?: string; // Additional notes, context
@@ -149,20 +183,20 @@ export interface VerificationFields {
   // Verification status
   verificationLevel: VerificationLevel; // Determines what can be publicly displayed
   verified: boolean; // Quick boolean flag
-  
+
   // Privacy controls
   consentStatus: boolean; // Family consent for data storage
   visibilitySetting: VisibilitySetting; // Public/Private/Partial display
-  
+
   // Validation
   validationAuthority?: ValidationAuthority; // Who validated this record
   validatedBy?: string; // Name/ID of validator
   validatedAt?: Timestamp; // When validation occurred
-  
+
   // Data protection
   recordLockDate?: Timestamp; // Prevents unapproved edits after this date
   lockedBy?: string; // Who locked the record
-  
+
   // Audit trail
   createdBy?: string; // User ID who created record
   lastModifiedBy?: string; // User ID who last modified
@@ -180,14 +214,40 @@ export interface VerificationFields {
 export interface DiasporaFields {
   // Diaspora identification
   isDiasporaRelative: boolean; // Flags reconnection potential
-  countryOfResidence?: string; // Current country if diaspora
-  currentCity?: string; // Current city if diaspora
-  currentState?: string; // Current state/province if diaspora
-  
+
+  // CURRENT/DIASPORA LOCATION - Complete hierarchical structure
+  // Geographic hierarchy (largest to smallest)
+  currentContinent?: string; // e.g., NORTH AMERICA, EUROPE
+  currentSubContinent?: string; // e.g., WEST AFRICA, CARIBBEAN
+  currentSubRegion?: string; // Sub-region within sub-continent
+  currentNationality?: string; // Current nationality
+  currentCountry?: string; // Current country of residence
+  currentRegion?: string; // Geographic region within country
+  currentState?: string; // Current state/province
+  currentSenatorialDistrict?: string; // Senatorial district (if applicable)
+  currentFederalConstituency?: string; // Federal constituency (if applicable)
+  currentLocalGovernmentArea?: string; // LGA (if applicable)
+  currentStateConstituency?: string; // State constituency (if applicable)
+  currentTown?: string; // Current town/city
+  currentTownDivision?: string; // Town division
+  currentTownQuarter?: string; // Town quarter
+
+  // Cultural/community hierarchy in current location
+  currentClan?: string; // Clan affiliation in current location
+  currentVillage?: string; // Village/neighborhood
+  currentHamlet?: string; // Hamlet
+  currentKindred?: string; // Kindred
+  currentUmunna?: string; // Umunna in diaspora
+
+  // Legacy fields (for backward compatibility)
+  subContinent?: string; // Maps to currentSubContinent
+  countryOfResidence?: string; // Maps to currentNationality
+  currentCity?: string; // Maps to currentTown
+
   // Connection tracking
   diasporaConnectionCaseId?: string; // Matchmaking process tracking ID
   connectionStatus?: 'PENDING' | 'IN_PROGRESS' | 'CONNECTED' | 'NOT_APPLICABLE';
-  
+
   // Return journey
   returnVisitStatus?: 'PLANNED' | 'COMPLETED' | 'NOT_PLANNED';
   returnVisitDate?: string; // When they visited/plan to visit
@@ -207,12 +267,12 @@ export interface PersonRecord {
   documentation: DocumentationFields;
   verification: VerificationFields;
   diaspora: DiasporaFields;
-  
+
   // System metadata
   createdAt: Timestamp;
   updatedAt: Timestamp;
   source: 'FORM_SUBMISSION' | 'MANUAL_ENTRY' | 'IMPORTED' | 'MIGRATED';
-  
+
   // Legacy compatibility (for migration)
   legacyRecordId?: string; // Reference to old GenealogyRecord if migrated
 }
@@ -230,12 +290,35 @@ export interface PersonFormSubmission {
   placeOfBirth?: string;
   photoUrl?: string;
   photoConsent?: boolean;
-  
-  // Lineage
+
+  // Lineage - Family Relationships
   fatherId?: string;
   motherId?: string;
   spouseIds?: string[];
   childrenIds?: string[];
+  nwaadaLineageLink?: string;
+
+  // ORIGIN INFORMATION - Complete hierarchy
+  originContinent?: string;
+  originSubContinent?: string;
+  originSubRegion?: string;
+  originNationality?: string;
+  originRegion?: string;
+  originState?: string;
+  originSenatorialDistrict?: string;
+  originFederalConstituency?: string;
+  originLocalGovernmentArea?: string;
+  originStateConstituency?: string;
+  originTown?: string;
+  originTownDivision?: string;
+  originTownQuarter?: string;
+  originClan?: string;
+  originVillage?: string;
+  originHamlet?: string;
+  originKindred?: string;
+  originUmunna?: string;
+
+  // Legacy lineage fields (for backward compatibility)
   umunna?: string;
   clan?: string;
   village?: string;
@@ -245,20 +328,23 @@ export interface PersonFormSubmission {
   obiAreas?: string;
   localGovernmentArea?: string;
   state?: string;
+  region?: string;
+  subRegion?: string;
   senatorialDistrict?: string;
   federalConstituency?: string;
   stateConstituency?: string;
-  nwaadaLineageLink?: string;
-  
+
   // Cultural
   titles?: string[];
   occupation?: string;
   familyTrade?: string;
+  ethnicity?: string;
   totem?: string;
   ancestralHouseName?: string;
+  language?: string;
   notableContributions?: string;
   roles?: string[];
-  
+
   // Life Events
   marriageDate?: string;
   marriagePlace?: string;
@@ -266,35 +352,60 @@ export interface PersonFormSubmission {
   deathPlace?: string;
   isDeceased?: boolean;
   migrationHistory?: LifeEventFields['migrationHistory'];
+  otherLifeEvents?: LifeEventFields['otherLifeEvents'];
   displacementNotes?: string;
   sensitiveHistoryPrivate?: boolean;
-  
+
   // Documentation
   sourceType?: SourceType;
   sourceDetails?: string;
+  year?: string;
   testifierNames?: string[];
   testifierContact?: string;
   documentScanIds?: string[];
   documentUrls?: string[];
   story?: string;
   notes?: string;
-  
+
   // Verification (defaults)
   verificationLevel?: VerificationLevel;
   consentStatus: boolean;
   visibilitySetting?: VisibilitySetting;
-  
-  // Diaspora
+
+  // CURRENT/DIASPORA LOCATION - Complete hierarchy
   isDiasporaRelative: boolean;
+  currentContinent?: string;
+  currentSubContinent?: string;
+  currentSubRegion?: string;
+  currentNationality?: string;
+  currentCountry?: string;
+  currentRegion?: string;
+  currentState?: string;
+  currentSenatorialDistrict?: string;
+  currentFederalConstituency?: string;
+  currentLocalGovernmentArea?: string;
+  currentStateConstituency?: string;
+  currentTown?: string;
+  currentTownDivision?: string;
+  currentTownQuarter?: string;
+  currentClan?: string;
+  currentVillage?: string;
+  currentHamlet?: string;
+  currentKindred?: string;
+  currentUmunna?: string;
+
+  // Legacy diaspora fields (for backward compatibility)
+  subContinent?: string;
   countryOfResidence?: string;
   currentCity?: string;
-  currentState?: string;
+
+  // Connection tracking
   diasporaConnectionCaseId?: string;
   connectionStatus?: DiasporaFields['connectionStatus'];
   returnVisitStatus?: DiasporaFields['returnVisitStatus'];
   returnVisitDate?: string;
   returnVisitNotes?: string;
-  
+
   // Contact (for form submitter)
   submitterEmail?: string;
   submitterPhone?: string;
@@ -323,7 +434,7 @@ export function createPersonFromForm(
 ): PersonRecord {
   const now = Timestamp.now();
   const personId = generatePersonId();
-  
+
   // Helper function to remove undefined and empty array values
   const cleanForFirestore = (obj: any): any => {
     if (obj === null || obj === undefined) {
@@ -359,20 +470,48 @@ export function createPersonFromForm(
       photoConsent: formData.photoConsent || false,
     },
     lineage: {
+      // Family relationships
       ...(formData.fatherId && { fatherId: formData.fatherId }),
       ...(formData.motherId && { motherId: formData.motherId }),
       ...(formData.spouseIds && formData.spouseIds.length > 0 && { spouseIds: formData.spouseIds }),
       ...(formData.childrenIds && formData.childrenIds.length > 0 && { childrenIds: formData.childrenIds }),
-      ...(formData.umunna && { umunna: formData.umunna.toUpperCase().trim() }),
-      ...(formData.clan && { clan: formData.clan.toUpperCase().trim() }),
-      ...(formData.village && { village: formData.village.toUpperCase().trim() }),
-      ...(formData.kindred && { kindred: formData.kindred.toUpperCase().trim() }),
-      ...(formData.town && { town: formData.town.toUpperCase().trim() }),
-      ...(formData.townQuarter && { townQuarter: formData.townQuarter.toUpperCase().trim() }),
-      ...(formData.obiAreas && { obiAreas: formData.obiAreas.toUpperCase().trim() }),
-      ...(formData.localGovernmentArea && { localGovernmentArea: formData.localGovernmentArea.toUpperCase().trim() }),
-      ...(formData.state && { state: formData.state.toUpperCase().trim() }),
       ...(formData.nwaadaLineageLink && { nwaadaLineageLink: formData.nwaadaLineageLink.toUpperCase().trim() }),
+
+      // ORIGIN INFORMATION - New hierarchical fields
+      ...(formData.originContinent && { originContinent: formData.originContinent.toUpperCase().trim() }),
+      ...(formData.originSubContinent && { originSubContinent: formData.originSubContinent.toUpperCase().trim() }),
+      ...(formData.originSubRegion && { originSubRegion: formData.originSubRegion.toUpperCase().trim() }),
+      ...(formData.originNationality && { originNationality: formData.originNationality.toUpperCase().trim() }),
+      ...(formData.originRegion && { originRegion: formData.originRegion.toUpperCase().trim() }),
+      ...(formData.originState && { originState: formData.originState.toUpperCase().trim() }),
+      ...(formData.originSenatorialDistrict && { originSenatorialDistrict: formData.originSenatorialDistrict.toUpperCase().trim() }),
+      ...(formData.originFederalConstituency && { originFederalConstituency: formData.originFederalConstituency.toUpperCase().trim() }),
+      ...(formData.originLocalGovernmentArea && { originLocalGovernmentArea: formData.originLocalGovernmentArea.toUpperCase().trim() }),
+      ...(formData.originStateConstituency && { originStateConstituency: formData.originStateConstituency.toUpperCase().trim() }),
+      ...(formData.originTown && { originTown: formData.originTown.toUpperCase().trim() }),
+      ...(formData.originTownDivision && { originTownDivision: formData.originTownDivision.toUpperCase().trim() }),
+      ...(formData.originTownQuarter && { originTownQuarter: formData.originTownQuarter.toUpperCase().trim() }),
+      ...(formData.originClan && { originClan: formData.originClan.toUpperCase().trim() }),
+      ...(formData.originVillage && { originVillage: formData.originVillage.toUpperCase().trim() }),
+      ...(formData.originHamlet && { originHamlet: formData.originHamlet.toUpperCase().trim() }),
+      ...(formData.originKindred && { originKindred: formData.originKindred.toUpperCase().trim() }),
+      ...(formData.originUmunna && { originUmunna: formData.originUmunna.toUpperCase().trim() }),
+
+      // Legacy fields (for backward compatibility)
+      umunna: (formData.umunna || formData.originUmunna || '').toUpperCase().trim(),
+      clan: (formData.clan || formData.originClan || '').toUpperCase().trim(),
+      village: (formData.village || formData.originVillage || '').toUpperCase().trim(),
+      kindred: (formData.kindred || formData.originKindred || '').toUpperCase().trim(),
+      town: (formData.town || formData.originTown || '').toUpperCase().trim(),
+      townQuarter: (formData.townQuarter || formData.originTownQuarter || '').toUpperCase().trim(),
+      ...(formData.obiAreas && { obiAreas: formData.obiAreas.toUpperCase().trim() }),
+      localGovernmentArea: (formData.localGovernmentArea || formData.originLocalGovernmentArea || '').toUpperCase().trim(),
+      state: (formData.state || formData.originState || '').toUpperCase().trim(),
+      region: (formData.region || formData.originRegion || '').toUpperCase().trim(),
+      subRegion: (formData.subRegion || formData.originSubRegion || '').toUpperCase().trim(),
+      senatorialDistrict: (formData.senatorialDistrict || formData.originSenatorialDistrict || '').toUpperCase().trim(),
+      federalConstituency: (formData.federalConstituency || formData.originFederalConstituency || '').toUpperCase().trim(),
+      stateConstituency: (formData.stateConstituency || formData.originStateConstituency || '').toUpperCase().trim(),
     },
     cultural: {
       ...(formData.titles && formData.titles.length > 0 && {
@@ -380,8 +519,10 @@ export function createPersonFromForm(
       }),
       ...(formData.occupation && { occupation: formData.occupation.trim() }),
       ...(formData.familyTrade && { familyTrade: formData.familyTrade.trim() }),
+      ...(formData.ethnicity && { ethnicity: formData.ethnicity.trim() }),
       ...(formData.totem && { totem: formData.totem.trim() }),
       ...(formData.ancestralHouseName && { ancestralHouseName: formData.ancestralHouseName.trim() }),
+      ...(formData.language && { language: formData.language.trim() }),
       ...(formData.notableContributions && { notableContributions: formData.notableContributions.trim() }),
       ...(formData.roles && formData.roles.length > 0 && {
         roles: formData.roles.map(r => r.trim())
@@ -396,12 +537,16 @@ export function createPersonFromForm(
       ...(formData.migrationHistory && formData.migrationHistory.length > 0 && {
         migrationHistory: formData.migrationHistory
       }),
+      ...(formData.otherLifeEvents && formData.otherLifeEvents.length > 0 && {
+        otherLifeEvents: formData.otherLifeEvents
+      }),
       ...(formData.displacementNotes && { displacementNotes: formData.displacementNotes }),
       sensitiveHistoryPrivate: formData.sensitiveHistoryPrivate || false,
     },
     documentation: {
       ...(formData.sourceType && { sourceType: formData.sourceType }),
       ...(formData.sourceDetails && { sourceDetails: formData.sourceDetails.trim() }),
+      ...(formData.year && { year: formData.year.trim() }),
       ...(formData.testifierNames && formData.testifierNames.length > 0 && {
         testifierNames: formData.testifierNames
       }),
@@ -424,9 +569,34 @@ export function createPersonFromForm(
     },
     diaspora: {
       isDiasporaRelative: formData.isDiasporaRelative,
-      ...(formData.countryOfResidence && { countryOfResidence: formData.countryOfResidence.trim() }),
-      ...(formData.currentCity && { currentCity: formData.currentCity.trim() }),
-      ...(formData.currentState && { currentState: formData.currentState.trim() }),
+
+      // CURRENT/DIASPORA LOCATION - New hierarchical fields
+      ...(formData.currentContinent && { currentContinent: formData.currentContinent.toUpperCase().trim() }),
+      ...(formData.currentSubContinent && { currentSubContinent: formData.currentSubContinent.toUpperCase().trim() }),
+      ...(formData.currentSubRegion && { currentSubRegion: formData.currentSubRegion.toUpperCase().trim() }),
+      ...(formData.currentNationality && { currentNationality: formData.currentNationality.toUpperCase().trim() }),
+      ...(formData.currentCountry && { currentCountry: formData.currentCountry.toUpperCase().trim() }),
+      ...(formData.currentRegion && { currentRegion: formData.currentRegion.toUpperCase().trim() }),
+      ...(formData.currentState && { currentState: formData.currentState.toUpperCase().trim() }),
+      ...(formData.currentSenatorialDistrict && { currentSenatorialDistrict: formData.currentSenatorialDistrict.toUpperCase().trim() }),
+      ...(formData.currentFederalConstituency && { currentFederalConstituency: formData.currentFederalConstituency.toUpperCase().trim() }),
+      ...(formData.currentLocalGovernmentArea && { currentLocalGovernmentArea: formData.currentLocalGovernmentArea.toUpperCase().trim() }),
+      ...(formData.currentStateConstituency && { currentStateConstituency: formData.currentStateConstituency.toUpperCase().trim() }),
+      ...(formData.currentTown && { currentTown: formData.currentTown.toUpperCase().trim() }),
+      ...(formData.currentTownDivision && { currentTownDivision: formData.currentTownDivision.toUpperCase().trim() }),
+      ...(formData.currentTownQuarter && { currentTownQuarter: formData.currentTownQuarter.toUpperCase().trim() }),
+      ...(formData.currentClan && { currentClan: formData.currentClan.toUpperCase().trim() }),
+      ...(formData.currentVillage && { currentVillage: formData.currentVillage.toUpperCase().trim() }),
+      ...(formData.currentHamlet && { currentHamlet: formData.currentHamlet.toUpperCase().trim() }),
+      ...(formData.currentKindred && { currentKindred: formData.currentKindred.toUpperCase().trim() }),
+      ...(formData.currentUmunna && { currentUmunna: formData.currentUmunna.toUpperCase().trim() }),
+
+      // Legacy fields (for backward compatibility)
+      subContinent: (formData.subContinent || formData.currentSubContinent || '').trim(),
+      countryOfResidence: (formData.countryOfResidence || formData.currentCountry || formData.currentNationality || '').trim(),
+      currentCity: (formData.currentCity || formData.currentTown || '').trim(),
+
+      // Connection tracking
       ...(formData.diasporaConnectionCaseId && { diasporaConnectionCaseId: formData.diasporaConnectionCaseId }),
       connectionStatus: formData.connectionStatus || 'NOT_APPLICABLE',
       ...(formData.returnVisitStatus && { returnVisitStatus: formData.returnVisitStatus }),
@@ -440,7 +610,7 @@ export function createPersonFromForm(
 
   // Remove all undefined values recursively before returning
   const cleaned = cleanForFirestore(record);
-  
+
   // Ensure required fields are always present
   return {
     ...cleaned,

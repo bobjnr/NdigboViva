@@ -30,7 +30,7 @@ service cloud.firestore {
 
     // Submissions collection - for raw form entries before review
     match /submissions/{submissionId} {
-      allow read: if request.auth != null && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+      allow read: if true; // Allow public read for search functionality
       allow create: if request.resource.data.data.consentStatus == true;
       allow update, delete: if request.auth != null && get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
     }

@@ -17,26 +17,26 @@ interface PersonFormProps {
 
 const FORM_TABS = [
   { id: 'identity', label: 'Identity', icon: User },
-  { id: 'lineage', label: 'Lineage', icon: Users },
+  { id: 'origin', label: 'Origin Info', icon: Users },
+  { id: 'diaspora', label: 'Current Location', icon: Globe },
   { id: 'cultural', label: 'Cultural', icon: Award },
   { id: 'events', label: 'Life Events', icon: Calendar },
   { id: 'documentation', label: 'Sources', icon: FileText },
   { id: 'verification', label: 'Privacy', icon: Shield },
-  { id: 'diaspora', label: 'Diaspora', icon: Globe },
 ]
 
 export default function PersonForm({ onSubmit }: PersonFormProps) {
   const [activeTab, setActiveTab] = useState(0)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
-  
+
   const [formData, setFormData] = useState<PersonFormSubmission>({
     // Identity (Required)
     fullName: '',
     gender: 'UNKNOWN',
     consentStatus: false,
     isDiasporaRelative: false,
-    
+
     // Defaults
     verificationLevel: 0,
     visibilitySetting: 'PRIVATE',
@@ -51,30 +51,30 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
     if (!value.trim()) return
     const current = (formData[field] as string[]) || []
     if (!current.includes(value.trim())) {
-      setFormData(prev => ({ 
-        ...prev, 
-        [field]: [...current, value.trim()] 
+      setFormData(prev => ({
+        ...prev,
+        [field]: [...current, value.trim()]
       }))
     }
   }
 
   const handleArrayRemove = (field: keyof PersonFormSubmission, index: number) => {
     const current = (formData[field] as string[]) || []
-    setFormData(prev => ({ 
-      ...prev, 
-      [field]: current.filter((_, i) => i !== index) 
+    setFormData(prev => ({
+      ...prev,
+      [field]: current.filter((_, i) => i !== index)
     }))
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
-    
+
     // Validation
     if (!formData.fullName.trim()) {
       alert('Please enter a full name')
       return
     }
-    
+
     if (!formData.consentStatus) {
       alert('You must provide consent to create a record')
       return
@@ -98,7 +98,7 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
       if (onSubmit) {
         onSubmit(formData)
       }
-      
+
       setIsSubmitted(true)
     } catch (error) {
       console.error('Error submitting form:', error)
@@ -165,11 +165,10 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                 key={tab.id}
                 type="button"
                 onClick={() => setActiveTab(index)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-t-lg transition-colors ${
-                  isActive
-                    ? 'bg-blue-600 text-white'
-                    : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
-                }`}
+                className={`flex items-center gap-2 px-4 py-2 rounded-t-lg transition-colors ${isActive
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+                  }`}
               >
                 <Icon className="w-4 h-4" />
                 <span className="hidden sm:inline">{tab.label}</span>
@@ -185,7 +184,7 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
         {activeTab === 0 && (
           <div className="space-y-4">
             <h3 className="text-xl font-bold mb-4">Identity Information</h3>
-            
+
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Full Name <span className="text-red-500">*</span>
@@ -314,7 +313,7 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
         {activeTab === 1 && (
           <div className="space-y-4">
             <h3 className="text-xl font-bold mb-4">Lineage & Family Relationships</h3>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">
@@ -404,6 +403,54 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
               </div>
             </div>
 
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Region</label>
+                <input
+                  type="text"
+                  value={formData.region || ''}
+                  onChange={(e) => handleInputChange('region', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="e.g., SOUTH-EAST, SOUTH-SOUTH"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Sub-region</label>
+                <input
+                  type="text"
+                  value={formData.subRegion || ''}
+                  onChange={(e) => handleInputChange('subRegion', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="Sub-region within larger region"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Senatorial District</label>
+                <input
+                  type="text"
+                  value={formData.senatorialDistrict || ''}
+                  onChange={(e) => handleInputChange('senatorialDistrict', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="e.g., ANAMBRA SOUTH"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Federal Constituency</label>
+                <input
+                  type="text"
+                  value={formData.federalConstituency || ''}
+                  onChange={(e) => handleInputChange('federalConstituency', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="e.g., AGUATA FEDERAL CONSTITUENCY"
+                />
+              </div>
+            </div>
+
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Nwaada Lineage Link (Maternal Village)
@@ -461,6 +508,217 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                   onChange={(e) => handleInputChange('obiAreas', e.target.value)}
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg"
                   placeholder="AMAMU"
+                />
+              </div>
+            </div>
+
+            {/* NEW ORIGIN FIELDS - Complete Hierarchy */}
+            <div className="bg-blue-50 p-4 rounded-lg mt-4">
+              <h4 className="font-semibold mb-3 text-blue-900">Origin Information (Ancestral Location)</h4>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Continent</label>
+                  <input
+                    type="text"
+                    value={formData.originContinent || ''}
+                    onChange={(e) => handleInputChange('originContinent', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="AFRICA"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Sub-continent</label>
+                  <input
+                    type="text"
+                    value={formData.originSubContinent || ''}
+                    onChange={(e) => handleInputChange('originSubContinent', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="WEST AFRICA"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Sub-region</label>
+                  <input
+                    type="text"
+                    value={formData.originSubRegion || ''}
+                    onChange={(e) => handleInputChange('originSubRegion', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="Sub-region"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Nationality</label>
+                  <input
+                    type="text"
+                    value={formData.originNationality || ''}
+                    onChange={(e) => handleInputChange('originNationality', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="NIGERIA"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Region</label>
+                  <input
+                    type="text"
+                    value={formData.originRegion || ''}
+                    onChange={(e) => handleInputChange('originRegion', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="SOUTH-EAST"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">State</label>
+                  <input
+                    type="text"
+                    value={formData.originState || ''}
+                    onChange={(e) => handleInputChange('originState', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="ANAMBRA"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Senatorial District</label>
+                  <input
+                    type="text"
+                    value={formData.originSenatorialDistrict || ''}
+                    onChange={(e) => handleInputChange('originSenatorialDistrict', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="ANAMBRA SOUTH"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Federal Constituency</label>
+                  <input
+                    type="text"
+                    value={formData.originFederalConstituency || ''}
+                    onChange={(e) => handleInputChange('originFederalConstituency', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="AGUATA FEDERAL CONSTITUENCY"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Local Government Area</label>
+                  <input
+                    type="text"
+                    value={formData.originLocalGovernmentArea || ''}
+                    onChange={(e) => handleInputChange('originLocalGovernmentArea', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="AGUATA"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">State Constituency</label>
+                  <input
+                    type="text"
+                    value={formData.originStateConstituency || ''}
+                    onChange={(e) => handleInputChange('originStateConstituency', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="State Constituency"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Town</label>
+                  <input
+                    type="text"
+                    value={formData.originTown || ''}
+                    onChange={(e) => handleInputChange('originTown', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="ACHINA"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Town Division</label>
+                  <input
+                    type="text"
+                    value={formData.originTownDivision || ''}
+                    onChange={(e) => handleInputChange('originTownDivision', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="Town Division"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1 mt-4">Town Quarter</label>
+                <input
+                  type="text"
+                  value={formData.originTownQuarter || ''}
+                  onChange={(e) => handleInputChange('originTownQuarter', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="EZI, etc."
+                />
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Clan</label>
+                  <input
+                    type="text"
+                    value={formData.originClan || ''}
+                    onChange={(e) => handleInputChange('originClan', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="DIOHA"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Village</label>
+                  <input
+                    type="text"
+                    value={formData.originVillage || ''}
+                    onChange={(e) => handleInputChange('originVillage', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="Village"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Hamlet</label>
+                  <input
+                    type="text"
+                    value={formData.originHamlet || ''}
+                    onChange={(e) => handleInputChange('originHamlet', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="Hamlet"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Kindred</label>
+                  <input
+                    type="text"
+                    value={formData.originKindred || ''}
+                    onChange={(e) => handleInputChange('originKindred', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="UMUOKPARAUGHANZE"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1 mt-4">Umunna</label>
+                <input
+                  type="text"
+                  value={formData.originUmunna || ''}
+                  onChange={(e) => handleInputChange('originUmunna', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="Extended family group"
                 />
               </div>
             </div>
@@ -542,10 +800,10 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
         )}
 
         {/* 3. CULTURAL TAB */}
-        {activeTab === 2 && (
+        {activeTab === 3 && (
           <div className="space-y-4">
             <h3 className="text-xl font-bold mb-4">Cultural & Social Identity</h3>
-            
+
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Titles</label>
               <div className="flex gap-2">
@@ -605,15 +863,28 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
               </div>
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">Totem / Sacred Animal</label>
-              <input
-                type="text"
-                value={formData.totem || ''}
-                onChange={(e) => handleInputChange('totem', e.target.value)}
-                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                placeholder="LEOPARD, PYTHON, EAGLE, etc."
-              />
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Ethnicity</label>
+                <input
+                  type="text"
+                  value={formData.ethnicity || ''}
+                  onChange={(e) => handleInputChange('ethnicity', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="e.g., IGBO, YORUBA, HAUSA"
+                />
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1">Totem / Sacred Animal</label>
+                <input
+                  type="text"
+                  value={formData.totem || ''}
+                  onChange={(e) => handleInputChange('totem', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="LEOPARD, PYTHON, EAGLE, etc."
+                />
+              </div>
             </div>
 
             <div>
@@ -623,6 +894,17 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                 value={formData.ancestralHouseName || ''}
                 onChange={(e) => handleInputChange('ancestralHouseName', e.target.value)}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Language(s)</label>
+              <input
+                type="text"
+                value={formData.language || ''}
+                onChange={(e) => handleInputChange('language', e.target.value)}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                placeholder="IGBO, ENGLISH, etc."
               />
             </div>
 
@@ -677,10 +959,10 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
         )}
 
         {/* 4. LIFE EVENTS TAB */}
-        {activeTab === 3 && (
+        {activeTab === 4 && (
           <div className="space-y-4">
             <h3 className="text-xl font-bold mb-4">Life Events</h3>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-1">Marriage Date</label>
@@ -830,6 +1112,97 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
             </div>
 
             <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Other Life Events</label>
+              <p className="text-xs text-gray-500 mb-2">Add other significant life events (e.g., Graduation, Coronation, Initiation, etc.)</p>
+              <div className="space-y-3 mb-4">
+                {(formData.otherLifeEvents || []).map((event, idx) => (
+                  <div key={idx} className="border border-gray-300 rounded-lg p-3 bg-gray-50">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-2">
+                      <div>
+                        <label className="block text-xs text-gray-600 mb-1">Event Name</label>
+                        <input
+                          type="text"
+                          value={event.eventName || ''}
+                          onChange={(e) => {
+                            const updated = [...(formData.otherLifeEvents || [])]
+                            updated[idx] = { ...updated[idx], eventName: e.target.value }
+                            handleInputChange('otherLifeEvents', updated)
+                          }}
+                          className="w-full px-3 py-1 text-sm border border-gray-300 rounded"
+                          placeholder="e.g., Graduation, Coronation"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-xs text-gray-600 mb-1">Date</label>
+                        <input
+                          type="text"
+                          value={event.eventDate || ''}
+                          onChange={(e) => {
+                            const updated = [...(formData.otherLifeEvents || [])]
+                            updated[idx] = { ...updated[idx], eventDate: e.target.value }
+                            handleInputChange('otherLifeEvents', updated)
+                          }}
+                          className="w-full px-3 py-1 text-sm border border-gray-300 rounded"
+                          placeholder="1980 or 1980-05-20"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3 mb-2">
+                      <div>
+                        <label className="block text-xs text-gray-600 mb-1">Place</label>
+                        <input
+                          type="text"
+                          value={event.eventPlace || ''}
+                          onChange={(e) => {
+                            const updated = [...(formData.otherLifeEvents || [])]
+                            updated[idx] = { ...updated[idx], eventPlace: e.target.value }
+                            handleInputChange('otherLifeEvents', updated)
+                          }}
+                          className="w-full px-3 py-1 text-sm border border-gray-300 rounded"
+                          placeholder="Location"
+                        />
+                      </div>
+                      <div>
+                        <label className="block text-xs text-gray-600 mb-1">Description</label>
+                        <input
+                          type="text"
+                          value={event.eventDescription || ''}
+                          onChange={(e) => {
+                            const updated = [...(formData.otherLifeEvents || [])]
+                            updated[idx] = { ...updated[idx], eventDescription: e.target.value }
+                            handleInputChange('otherLifeEvents', updated)
+                          }}
+                          className="w-full px-3 py-1 text-sm border border-gray-300 rounded"
+                          placeholder="Brief description"
+                        />
+                      </div>
+                    </div>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        const updated = (formData.otherLifeEvents || []).filter((_, i) => i !== idx)
+                        handleInputChange('otherLifeEvents', updated)
+                      }}
+                      className="mt-2 text-xs text-red-600 hover:text-red-800"
+                    >
+                      Remove
+                    </button>
+                  </div>
+                ))}
+              </div>
+              <button
+                type="button"
+                onClick={() => {
+                  const updated = [...(formData.otherLifeEvents || []), { eventName: '', eventDate: '', eventPlace: '', eventDescription: '' }]
+                  handleInputChange('otherLifeEvents', updated)
+                }}
+                className="text-sm text-blue-600 hover:text-blue-800"
+              >
+                + Add Life Event
+              </button>
+            </div>
+
+            <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Displacement / Migration Notes</label>
               <textarea
                 value={formData.displacementNotes || ''}
@@ -856,10 +1229,10 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
         )}
 
         {/* 5. DOCUMENTATION TAB */}
-        {activeTab === 4 && (
+        {activeTab === 5 && (
           <div className="space-y-4">
             <h3 className="text-xl font-bold mb-4">Documentation & Sources</h3>
-            
+
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Source Type</label>
               <select
@@ -885,6 +1258,17 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                 onChange={(e) => handleInputChange('sourceDetails', e.target.value)}
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg"
                 placeholder="e.g., St. Mary's Catholic Church, Achina, Baptism Register 1945"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">Year</label>
+              <input
+                type="text"
+                value={formData.year || ''}
+                onChange={(e) => handleInputChange('year', e.target.value)}
+                className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                placeholder="e.g., 1945, 1980"
               />
             </div>
 
@@ -1036,10 +1420,10 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
         )}
 
         {/* 6. VERIFICATION TAB */}
-        {activeTab === 5 && (
+        {activeTab === 6 && (
           <div className="space-y-4">
             <h3 className="text-xl font-bold mb-4">Verification & Privacy</h3>
-            
+
             <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-4">
               <h4 className="font-semibold text-blue-900 mb-2">Contact Information (Form Submitter)</h4>
               <div className="space-y-3">
@@ -1075,10 +1459,10 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-4 mb-4">
               <p className="text-sm text-yellow-800">
-                <strong>Important:</strong> You must provide consent to create a record. 
+                <strong>Important:</strong> You must provide consent to create a record.
                 Verification level can be updated later by authorized validators.
               </p>
             </div>
@@ -1143,67 +1527,100 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
           </div>
         )}
 
-        {/* 7. DIASPORA TAB */}
-        {activeTab === 6 && (
+        {/* 2. CURRENT/DIASPORA LOCATION TAB */}
+        {activeTab === 2 && (
           <div className="space-y-4">
-            <h3 className="text-xl font-bold mb-4">Diaspora Information</h3>
-            
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-1">
+            <h3 className="text-xl font-bold mb-4">Current/Diaspora Location</h3>
+
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <label className="block text-sm font-medium text-gray-700 mb-2">
                 Is this person a diaspora relative? <span className="text-red-500">*</span>
               </label>
-              <div className="flex items-center gap-4">
-                <label className="flex items-center gap-2">
+              <div className="flex items-center gap-6">
+                <label className="flex items-center gap-2 cursor-pointer">
                   <input
                     type="radio"
                     name="isDiasporaRelative"
                     checked={formData.isDiasporaRelative === true}
                     onChange={() => handleInputChange('isDiasporaRelative', true)}
-                    className="w-4 h-4"
+                    className="w-4 h-4 text-blue-600"
                   />
-                  <span>Yes</span>
+                  <span>Yes, in Diaspora</span>
                 </label>
-                <label className="flex items-center gap-2">
+                <label className="flex items-center gap-2 cursor-pointer">
                   <input
                     type="radio"
                     name="isDiasporaRelative"
                     checked={formData.isDiasporaRelative === false}
                     onChange={() => handleInputChange('isDiasporaRelative', false)}
-                    className="w-4 h-4"
+                    className="w-4 h-4 text-blue-600"
                   />
-                  <span>No</span>
+                  <span>No, in Homeland</span>
                 </label>
               </div>
             </div>
 
-            {formData.isDiasporaRelative && (
-              <>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Country of Residence</label>
-                    <input
-                      type="text"
-                      value={formData.countryOfResidence || ''}
-                      onChange={(e) => handleInputChange('countryOfResidence', e.target.value)}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                      placeholder="UNITED STATES"
-                    />
-                  </div>
+            {/* Current Location Hierarchy */}
+            <div className="bg-green-50 p-4 rounded-lg mt-4">
+              <h4 className="font-semibold mb-3 text-green-900">Current Residence (Hierarchical)</h4>
 
-                  <div>
-                    <label className="block text-sm font-medium text-gray-700 mb-1">Current City</label>
-                    <input
-                      type="text"
-                      value={formData.currentCity || ''}
-                      onChange={(e) => handleInputChange('currentCity', e.target.value)}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                      placeholder="HOUSTON"
-                    />
-                  </div>
-                </div>
-
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Current State/Province</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Continent</label>
+                  <input
+                    type="text"
+                    value={formData.currentContinent || ''}
+                    onChange={(e) => handleInputChange('currentContinent', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="NORTH AMERICA"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Sub-continent</label>
+                  <input
+                    type="text"
+                    value={formData.currentSubContinent || ''}
+                    onChange={(e) => handleInputChange('currentSubContinent', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="WEST AFRICA"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Sub-region</label>
+                  <input
+                    type="text"
+                    value={formData.currentSubRegion || ''}
+                    onChange={(e) => handleInputChange('currentSubRegion', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Nationality</label>
+                  <input
+                    type="text"
+                    value={formData.currentNationality || ''}
+                    onChange={(e) => handleInputChange('currentNationality', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="UNITED STATES"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Region</label>
+                  <input
+                    type="text"
+                    value={formData.currentRegion || ''}
+                    onChange={(e) => handleInputChange('currentRegion', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current State</label>
                   <input
                     type="text"
                     value={formData.currentState || ''}
@@ -1212,55 +1629,187 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                     placeholder="TEXAS"
                   />
                 </div>
+              </div>
 
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Diaspora Connection Case ID</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Senatorial District</label>
                   <input
                     type="text"
-                    value={formData.diasporaConnectionCaseId || ''}
-                    onChange={(e) => handleInputChange('diasporaConnectionCaseId', e.target.value)}
+                    value={formData.currentSenatorialDistrict || ''}
+                    onChange={(e) => handleInputChange('currentSenatorialDistrict', e.target.value)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="CASE_2024_001"
                   />
                 </div>
-
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Connection Status</label>
-                  <select
-                    value={formData.connectionStatus || 'NOT_APPLICABLE'}
-                    onChange={(e) => handleInputChange('connectionStatus', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                  >
-                    <option value="NOT_APPLICABLE">Not Applicable</option>
-                    <option value="PENDING">Pending</option>
-                    <option value="IN_PROGRESS">In Progress</option>
-                    <option value="CONNECTED">Connected</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Return Visit Status</label>
-                  <select
-                    value={formData.returnVisitStatus || ''}
-                    onChange={(e) => handleInputChange('returnVisitStatus', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                  >
-                    <option value="">Select status</option>
-                    <option value="PLANNED">Planned</option>
-                    <option value="COMPLETED">Completed</option>
-                    <option value="NOT_PLANNED">Not Planned</option>
-                  </select>
-                </div>
-
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Return Visit Date</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Federal Constituency</label>
                   <input
                     type="text"
-                    value={formData.returnVisitDate || ''}
-                    onChange={(e) => handleInputChange('returnVisitDate', e.target.value)}
+                    value={formData.currentFederalConstituency || ''}
+                    onChange={(e) => handleInputChange('currentFederalConstituency', e.target.value)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="2023-12-15"
                   />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Local Govt Area</label>
+                  <input
+                    type="text"
+                    value={formData.currentLocalGovernmentArea || ''}
+                    onChange={(e) => handleInputChange('currentLocalGovernmentArea', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current State Constituency</label>
+                  <input
+                    type="text"
+                    value={formData.currentStateConstituency || ''}
+                    onChange={(e) => handleInputChange('currentStateConstituency', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Town/City</label>
+                  <input
+                    type="text"
+                    value={formData.currentTown || ''}
+                    onChange={(e) => handleInputChange('currentTown', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="HOUSTON"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Town Division</label>
+                  <input
+                    type="text"
+                    value={formData.currentTownDivision || ''}
+                    onChange={(e) => handleInputChange('currentTownDivision', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <div className="mt-4">
+                <label className="block text-sm font-medium text-gray-700 mb-1">Current Town Quarter</label>
+                <input
+                  type="text"
+                  value={formData.currentTownQuarter || ''}
+                  onChange={(e) => handleInputChange('currentTownQuarter', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Clan</label>
+                  <input
+                    type="text"
+                    value={formData.currentClan || ''}
+                    onChange={(e) => handleInputChange('currentClan', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Village</label>
+                  <input
+                    type="text"
+                    value={formData.currentVillage || ''}
+                    onChange={(e) => handleInputChange('currentVillage', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Hamlet</label>
+                  <input
+                    type="text"
+                    value={formData.currentHamlet || ''}
+                    onChange={(e) => handleInputChange('currentHamlet', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Kindred</label>
+                  <input
+                    type="text"
+                    value={formData.currentKindred || ''}
+                    onChange={(e) => handleInputChange('currentKindred', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  />
+                </div>
+              </div>
+
+              <div className="mt-4">
+                <label className="block text-sm font-medium text-gray-700 mb-1">Current Umunna</label>
+                <input
+                  type="text"
+                  value={formData.currentUmunna || ''}
+                  onChange={(e) => handleInputChange('currentUmunna', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                />
+              </div>
+            </div>
+
+            {formData.isDiasporaRelative && (
+              <div className="bg-yellow-50 p-4 rounded-lg border border-yellow-200 mt-4">
+                <h4 className="font-semibold mb-3 text-yellow-900">Diaspora & Connection</h4>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Connection Status</label>
+                    <select
+                      value={formData.connectionStatus || 'NOT_APPLICABLE'}
+                      onChange={(e) => handleInputChange('connectionStatus', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    >
+                      <option value="NOT_APPLICABLE">Not Applicable</option>
+                      <option value="PENDING">Pending</option>
+                      <option value="IN_PROGRESS">In Progress</option>
+                      <option value="CONNECTED">Connected</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Case ID (if any)</label>
+                    <input
+                      type="text"
+                      value={formData.diasporaConnectionCaseId || ''}
+                      onChange={(e) => handleInputChange('diasporaConnectionCaseId', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    />
+                  </div>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Return Visit Status</label>
+                    <select
+                      value={formData.returnVisitStatus || 'NOT_PLANNED'}
+                      onChange={(e) => handleInputChange('returnVisitStatus', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    >
+                      <option value="NOT_PLANNED">Not Planned</option>
+                      <option value="PLANNED">Planned</option>
+                      <option value="COMPLETED">Completed</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Return Visit Date</label>
+                    <input
+                      type="text"
+                      value={formData.returnVisitDate || ''}
+                      onChange={(e) => handleInputChange('returnVisitDate', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      placeholder="YYYY-MM-DD"
+                    />
+                  </div>
                 </div>
 
                 <div>
@@ -1270,11 +1819,11 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                     onChange={(e) => handleInputChange('returnVisitNotes', e.target.value)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg"
                     rows={3}
-                    placeholder="Reconnection experience, visit story..."
                   />
                 </div>
-              </>
+              </div>
             )}
+
           </div>
         )}
       </div>

@@ -1,14 +1,13 @@
 import { Suspense } from 'react';
 import { Metadata } from 'next';
-import { searchPersonsByName } from '@/lib/person-database';
+import { searchAllRecords } from '@/lib/search-service';
 import SearchBox from '@/components/search/SearchBox';
-import PublicPersonCard from '@/components/search/PublicPersonCard';
+import SearchResultCard from '@/components/search/SearchResultCard';
 import NoResultState from '@/components/search/NoResultState';
-import { PublicPersonRecord } from '@/lib/public-person-schema';
 
 export const metadata: Metadata = {
     title: 'Search Ancestry Records | Ndigbo Viva',
-    description: 'Search the public registry of verified Igbo ancestry records.',
+    description: 'Search the registry of Igbo ancestry records and submissions.',
 };
 
 interface SearchPageProps {
@@ -19,14 +18,8 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     const params = await searchParams;
     const q = params.q || '';
 
-    // Only search if there is a query
-    const results = q ? await searchPersonsByName(q) : [];
-
-    // Transform PersonRecord to PublicPersonRecord (runtime check/cast since we know the search only returns safe data)
-    const publicResults = results.map(p => ({
-        ...p,
-        // Add any missing strict types if needed, but existing structure should match PublicPersonRecord interface subset
-    })) as unknown as PublicPersonRecord[];
+    // Search across both submissions and published records
+    const results = q ? await searchAllRecords(q) : [];
 
     return (
         <div className="min-h-screen bg-stone-50">
@@ -45,16 +38,16 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
                 {q && (
                     <div className="mb-6 flex items-center justify-between">
                         <h2 className="text-sm font-medium text-gray-500">
-                            {publicResults.length} result{publicResults.length !== 1 && 's'} for <span className="text-gray-900 font-bold">"{q}"</span>
+                            {results.length} result{results.length !== 1 && 's'} for <span className="text-gray-900 font-bold">"{q}"</span>
                         </h2>
                     </div>
                 )}
 
                 {/* Results Grid */}
                 <div className="space-y-4">
-                    {q && publicResults.length > 0 ? (
-                        publicResults.map((person) => (
-                            <PublicPersonCard key={person.identity.personId} person={person} />
+                    {q && results.length > 0 ? (
+                        results.map((result) => (
+                            <SearchResultCard key={result.id} result={result} />
                         ))
                     ) : q ? (
                         <NoResultState searchTerm={q} />

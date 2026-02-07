@@ -9,31 +9,31 @@ export interface GenealogyRecord {
   nationality: string; // "NIGERIA"
   ethnicity: string; // "UMU - IGBO"
   region: string; // "SOUTH EAST"
-  
+
   // Political Divisions
   state: string; // "ANAMBRA"
   senatorialDistrict: string; // "ANAMBRA SOUTH"
   federalConstituency: string; // "AGUATA"
   localGovernmentArea: string; // "AGUATA"
   stateConstituency: string; // "AGUATA I"
-  
+
   // Geographic Divisions
   town: string; // "ACHINA", "AGULUEZECHUKWU", etc.
   townQuarter: string; // "EZI"
   obiAreas: string; // "AMAMU"
   clan: string; // "DIOHA"
   village: string; // "ELEKECHEM"
-  
+
   // Family Structure
   kindredHamlet: string; // "UMUNNEBOGBU", "UMUOKPARAUGHANZE"
   umunna: string; // Extended family groups
-  
+
   // Individual Family Members
   extendedFamily: {
     familyName: string; // "OKAFOR"
     individualNames: string[]; // ["EMMANUEL NONYE", "GINIKACHUKWU NELSON", etc.]
   }[];
-  
+
   // Additional Metadata
   recordId: string;
   createdAt: Date;
@@ -52,7 +52,21 @@ export interface GenealogyFormSubmission {
   currentLGA: string;
   currentTown: string;
   currentVillage: string;
-  
+  // New hierarchical fields
+  currentSubContinent?: string;
+  currentNationality?: string; // Replaces currentCountry in new schema
+  currentRegion?: string;
+  currentSubRegion?: string;
+  currentSenatorialDistrict?: string;
+  currentFederalConstituency?: string;
+  currentStateConstituency?: string;
+  currentTownDivision?: string;
+  currentTownQuarter?: string;
+  currentClan?: string;
+  currentKindred?: string;
+  currentHamlet?: string;
+  currentUmunna?: string;
+
   // Origin Location (Ancestral)
   originState: string;
   originLGA: string;
@@ -61,20 +75,33 @@ export interface GenealogyFormSubmission {
   originTownQuarter?: string;
   originObiAreas?: string;
   originClan?: string;
-  
+  // New hierarchical fields
+  originContinent?: string;
+  originSubContinent?: string;
+  originNationality?: string;
+  originRegion?: string;
+  originSubRegion?: string;
+  originSenatorialDistrict?: string;
+  originFederalConstituency?: string;
+  originStateConstituency?: string;
+  originTownDivision?: string;
+  originHamlet?: string;
+  originKindred?: string;
+  originUmunna?: string;
+
   // Family Information
   kindred: string;
   familyName: string;
   personalName: string;
   umunna?: string;
-  
+
   // Contact Information
   email: string;
   phone?: string;
-  
+
   // Additional Information
   additionalInfo?: string;
-  
+
   // Extended Family Members
   extendedFamilyMembers?: {
     name: string;
@@ -85,7 +112,7 @@ export interface GenealogyFormSubmission {
 // Database operations
 export class GenealogyDatabase {
   private records: GenealogyRecord[] = [];
-  
+
   // Convert form submission to database record
   convertFormToRecord(formData: GenealogyFormSubmission): GenealogyRecord {
     return {
@@ -98,31 +125,31 @@ export class GenealogyDatabase {
       nationality: "NIGERIA",
       ethnicity: "UMU - IGBO",
       region: "SOUTH EAST",
-      
+
       // Political Divisions (from form)
       state: formData.originState.toUpperCase(),
       senatorialDistrict: this.getSenatorialDistrict(formData.originState, formData.originLGA),
       federalConstituency: formData.originLGA.toUpperCase(),
       localGovernmentArea: formData.originLGA.toUpperCase(),
       stateConstituency: this.getStateConstituency(formData.originLGA),
-      
+
       // Geographic Divisions
       town: formData.originTown.toUpperCase(),
       townQuarter: formData.originTownQuarter?.toUpperCase() || "",
       obiAreas: formData.originObiAreas?.toUpperCase() || "",
       clan: formData.originClan?.toUpperCase() || "",
       village: formData.originVillage.toUpperCase(),
-      
+
       // Family Structure
       kindredHamlet: formData.kindred.toUpperCase(),
       umunna: formData.umunna?.toUpperCase() || "",
-      
+
       // Individual Family Members
       extendedFamily: [{
         familyName: formData.familyName.toUpperCase(),
         individualNames: [formData.personalName.toUpperCase()]
       }],
-      
+
       // Metadata
       recordId: this.generateRecordId(),
       createdAt: new Date(),
@@ -132,7 +159,7 @@ export class GenealogyDatabase {
       notes: formData.additionalInfo
     };
   }
-  
+
   // Get senatorial district based on state and LGA
   private getSenatorialDistrict(state: string, lga: string): string {
     // This would be mapped based on your actual data
@@ -146,10 +173,10 @@ export class GenealogyDatabase {
         "ONITSHA SOUTH": "ANAMBRA NORTH"
       }
     };
-    
+
     return senatorialDistricts[state.toUpperCase()]?.[lga.toUpperCase()] || `${state.toUpperCase()} CENTRAL`;
   }
-  
+
   // Get state constituency based on LGA
   private getStateConstituency(lga: string): string {
     // This would be mapped based on your actual data
@@ -159,25 +186,25 @@ export class GenealogyDatabase {
       "AWKA NORTH": "AWKA NORTH I",
       "AWKA SOUTH": "AWKA SOUTH I"
     };
-    
+
     return constituencies[lga.toUpperCase()] || `${lga.toUpperCase()} I`;
   }
-  
+
   // Generate unique record ID
   private generateRecordId(): string {
     return `GENEALOGY_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
   }
-  
+
   // Add new record
   addRecord(record: GenealogyRecord): void {
     this.records.push(record);
   }
-  
+
   // Get all records
   getAllRecords(): GenealogyRecord[] {
     return this.records;
   }
-  
+
   // Search records by criteria
   searchRecords(criteria: Partial<GenealogyRecord>): GenealogyRecord[] {
     return this.records.filter(record => {
@@ -187,52 +214,52 @@ export class GenealogyDatabase {
       });
     });
   }
-  
+
   // Get records by state
   getRecordsByState(state: string): GenealogyRecord[] {
     return this.records.filter(record => record.state === state.toUpperCase());
   }
-  
+
   // Get records by LGA
   getRecordsByLGA(lga: string): GenealogyRecord[] {
     return this.records.filter(record => record.localGovernmentArea === lga.toUpperCase());
   }
-  
+
   // Get records by town
   getRecordsByTown(town: string): GenealogyRecord[] {
     return this.records.filter(record => record.town === town.toUpperCase());
   }
-  
+
   // Get records by village
   getRecordsByVillage(village: string): GenealogyRecord[] {
     return this.records.filter(record => record.village === village.toUpperCase());
   }
-  
+
   // Get records by family name
   getRecordsByFamilyName(familyName: string): GenealogyRecord[] {
-    return this.records.filter(record => 
-      record.extendedFamily.some(family => 
+    return this.records.filter(record =>
+      record.extendedFamily.some(family =>
         family.familyName === familyName.toUpperCase()
       )
     );
   }
-  
+
   // Get records by kindred
   getRecordsByKindred(kindred: string): GenealogyRecord[] {
     return this.records.filter(record => record.kindredHamlet === kindred.toUpperCase());
   }
-  
+
   // Export to CSV format (matching your database structure)
   exportToCSV(): string {
     const headers = [
-      "THE SPECIE", "RACE", "CONTINENT", "SUB-CONTINENT", "SUB-REGION", "NATIONALITY", 
-      "ETHNICITY", "REGION", "STATE", "SENATORIAL DISTRICT", "FEDERAL CONSTITUENCY", 
-      "LOCAL GOVERNMENT AREA", "STATE CONSTITUENCY", "TOWN", "TOWN QUARTER", "OBI AREAS", 
+      "THE SPECIE", "RACE", "CONTINENT", "SUB-CONTINENT", "SUB-REGION", "NATIONALITY",
+      "ETHNICITY", "REGION", "STATE", "SENATORIAL DISTRICT", "FEDERAL CONSTITUENCY",
+      "LOCAL GOVERNMENT AREA", "STATE CONSTITUENCY", "TOWN", "TOWN QUARTER", "OBI AREAS",
       "CLAN", "VILLAGE", "KINDRED/HAMLET", "UMUNNA", "EXT. FAMILY"
     ];
-    
+
     const csvRows = [headers.join(",")];
-    
+
     this.records.forEach(record => {
       record.extendedFamily.forEach(family => {
         family.individualNames.forEach(name => {
@@ -264,7 +291,7 @@ export class GenealogyDatabase {
         });
       });
     });
-    
+
     return csvRows.join("\n");
   }
 }

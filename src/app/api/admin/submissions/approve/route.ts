@@ -42,32 +42,34 @@ export async function POST(request: NextRequest) {
         }
 
         // 2. Create Person Record
-        // Note: createPerson internally calls createPersonFromForm, but we need to pass the form data
-        const personResult = await createPerson(submission.data, reviewerId || 'ADMIN');
+        // We force verification level to 2 (Verified) since an Admin is explicitly approving it
+        const personData = {
+            ...submission.data,
+            verificationLevel: 2 as const, // Verified
+            verified: true
+        };
+
+        const personResult = await createPerson(personData, reviewerId || 'ADMIN');
 
         if (!personResult.success || !personResult.personId) {
             throw new Error(personResult.error || 'Failed to create person record');
         }
 
-        // 3. Update Submission Status
-        // We update the local submission record to link to the new Person ID
-        // Since updateSubmissionStatus doesn't support custom fields easily, we might need to extend it 
-        // or just assume we only update status for now. 
-        // Wait, I defined `convertedPersonId` in the schema but didn't expose a way to set it in `updateSubmissionStatus`.
-        // I should probably update `updateSubmissionStatus` to allow arbitrary updates or fix this manually.
-        // For now, I'll update the status. Ideally, I'd want to link the ID.
-        // Let's modify the update helper or do a direct update here if the helper is too limited.
-        // Actually, looking at my submission-database.ts, `updateSubmissionStatus` is limited.
-        // I will stick to just status update for now to avoid breaking changes, 
-        // OR I can import `db` and `doc`/`updateDoc` here to do a custom update.
-        // I'll use the helper for status, then maybe a custom update for the link if I feel ambitious.
-        // The helper allows `reviewerNotes`. I could stuff the ID there if desperate, but that's messy.
-        // Let's just update the status for now.
+        // 3. Automatically Publish to Public Index
+        // This ensures the record appears in search immediately
+        const { publishPerson } = await import('@/lib/person-database');
+        const publishResult = await publishPerson(personResult.personId, reviewerId || 'ADMIN');
 
+        if (!publishResult.success) {
+            console.warn(`Person created (${personResult.personId}) but failed to publish automatically: ${publishResult.error}`);
+            // We don't fail the whole request, but we log it. Admin might need to manually publish later.
+        }
+
+        // 4. Update Submission Status
         const updateResult = await updateSubmissionStatus(
             submissionId,
             'APPROVED',
-            `Approved and converted to Person ID: ${personResult.personId}`,
+            `Approved, Converted to Person ID: ${personResult.personId}, and Published to Search.`,
             reviewerId
         );
 
