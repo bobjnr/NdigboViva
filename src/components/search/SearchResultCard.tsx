@@ -3,6 +3,13 @@ import { format } from 'date-fns';
 import { CheckCircle2, XCircle, Clock, AlertCircle, MapPin } from 'lucide-react';
 import { SearchResult } from '@/lib/search-service';
 
+/** Resolve the detail page URL for a search result */
+function getDetailHref(result: SearchResult): string {
+  if (result.source === 'published') return `/search/record/${result.id}`;
+  if (result.source === 'submission' && result.convertedPersonId) return `/search/record/${result.convertedPersonId}`;
+  return `/search/submission/${result.id}`;
+}
+
 interface SearchResultCardProps {
     result: SearchResult;
 }
@@ -59,7 +66,10 @@ export default function SearchResultCard({ result }: SearchResultCardProps) {
     };
 
     return (
-        <div className="block group bg-white border border-gray-100 rounded-xl p-6 hover:shadow-lg hover:border-amber-200 transition-all duration-200">
+        <Link
+            href={getDetailHref(result)}
+            className="block group bg-white border border-gray-100 rounded-xl p-6 hover:shadow-lg hover:border-amber-200 transition-all duration-200"
+        >
             <div className="flex items-start justify-between">
                 <div className="flex-1">
                     <div className="flex items-center gap-3 mb-2">
@@ -104,6 +114,6 @@ export default function SearchResultCard({ result }: SearchResultCardProps) {
                     )}
                 </div>
             </div>
-        </div>
+        </Link>
     );
 }

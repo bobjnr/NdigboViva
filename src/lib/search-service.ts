@@ -21,6 +21,7 @@ export interface SearchResult {
     source: 'submission' | 'published';
     status?: string; // For submissions
     submittedAt?: Date;
+    convertedPersonId?: string; // When submission is approved, link to person record
 }
 
 /**
@@ -72,15 +73,16 @@ export async function searchAllRecords(searchTerm: string): Promise<SearchResult
                     id: submission.submissionId,
                     fullName: fullName,
                     alternateNames: alternateNames,
-                    state: submission.data.state,
-                    lga: submission.data.localGovernmentArea,
-                    town: submission.data.town,
-                    village: submission.data.village,
+                    state: submission.data.originState || submission.data.state,
+                    lga: submission.data.originLocalGovernmentArea || submission.data.localGovernmentArea,
+                    town: submission.data.originTown || submission.data.town,
+                    village: submission.data.originVillage || submission.data.village,
                     gender: submission.data.gender,
                     isDeceased: submission.data.isDeceased,
                     source: 'submission',
                     status: submission.status,
-                    submittedAt: submission.submittedAt?.toDate?.() || new Date(submission.submittedAt.seconds * 1000)
+                    submittedAt: submission.submittedAt?.toDate?.() || (submission.submittedAt && 'seconds' in submission.submittedAt ? new Date(submission.submittedAt.seconds * 1000) : new Date()),
+                    convertedPersonId: submission.convertedPersonId
                 });
             }
         });

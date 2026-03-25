@@ -10,6 +10,7 @@
 import { useState } from 'react'
 import { PersonFormSubmission, Gender, SourceType, VerificationLevel, VisibilitySetting } from '@/lib/person-schema'
 import { User, Users, Award, Calendar, FileText, Shield, Globe, CheckCircle, ArrowRight, ArrowLeft } from 'lucide-react'
+import dropdownData from '@/lib/dropdown-data.json'
 
 interface PersonFormProps {
   onSubmit?: (data: PersonFormSubmission) => void
@@ -45,6 +46,44 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
 
   const handleInputChange = (field: keyof PersonFormSubmission, value: any) => {
     setFormData(prev => ({ ...prev, [field]: value }))
+  }
+
+  // Helper for cascading location changes
+  const handleLocationChange = (type: 'origin' | 'current', field: string, value: string) => {
+    const prefix = type === 'origin' ? 'origin' : 'current'
+    
+    if (field === 'State') {
+      setFormData(prev => ({
+        ...prev,
+        [`${prefix}State`]: value,
+        [`${prefix}LocalGovernmentArea`]: '',
+        [`${prefix}SenatorialDistrict`]: '',
+        [`${prefix}FederalConstituency`]: '',
+        [`${prefix}StateConstituency`]: '',
+        [type === 'origin' ? 'originWard' : 'currentPoliticalWard']: '',
+      }))
+    } else if (field === 'LGA') {
+      setFormData(prev => ({
+        ...prev,
+        [`${prefix}LocalGovernmentArea`]: value,
+        [type === 'origin' ? 'originWard' : 'currentPoliticalWard']: '',
+      }))
+    } else if (field === 'SenatorialDistrict') {
+      setFormData(prev => ({
+        ...prev,
+        [`${prefix}SenatorialDistrict`]: value,
+        [`${prefix}FederalConstituency`]: '',
+        [`${prefix}StateConstituency`]: '',
+      }))
+    } else if (field === 'FederalConstituency') {
+      setFormData(prev => ({
+        ...prev,
+        [`${prefix}FederalConstituency`]: value,
+        [`${prefix}StateConstituency`]: '',
+      }))
+    } else {
+      handleInputChange((prefix + field) as keyof PersonFormSubmission, value)
+    }
   }
 
   const handleArrayAdd = (field: keyof PersonFormSubmission, value: string) => {
@@ -575,59 +614,88 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">State</label>
-                  <input
-                    type="text"
+                  <select
                     value={formData.originState || ''}
-                    onChange={(e) => handleInputChange('originState', e.target.value)}
+                    onChange={(e) => handleLocationChange('origin', 'State', e.target.value)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="ANAMBRA"
-                  />
+                  >
+                    <option value="">Select State</option>
+                    {dropdownData.nigerianStates.map(s => (
+                      <option key={s.state} value={s.state}>{s.state}</option>
+                    ))}
+                  </select>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Senatorial District</label>
-                  <input
-                    type="text"
+                  <select
                     value={formData.originSenatorialDistrict || ''}
-                    onChange={(e) => handleInputChange('originSenatorialDistrict', e.target.value)}
+                    onChange={(e) => handleLocationChange('origin', 'SenatorialDistrict', e.target.value)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="ANAMBRA SOUTH"
-                  />
+                    disabled={!formData.originState}
+                  >
+                    <option value="">Select Senatorial District</option>
+                    {formData.originState && (dropdownData.senatorialDistricts as any)[formData.originState]?.map((d: string) => (
+                      <option key={d} value={d}>{d}</option>
+                    ))}
+                  </select>
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Federal Constituency</label>
-                  <input
-                    type="text"
+                  <select
                     value={formData.originFederalConstituency || ''}
-                    onChange={(e) => handleInputChange('originFederalConstituency', e.target.value)}
+                    onChange={(e) => handleLocationChange('origin', 'FederalConstituency', e.target.value)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="AGUATA FEDERAL CONSTITUENCY"
-                  />
+                    disabled={!formData.originState}
+                  >
+                    <option value="">Select Federal Constituency</option>
+                    {formData.originState && 
+                      (formData.originSenatorialDistrict 
+                        ? (dropdownData.federalConstituenciesByStateAndSenatorialDistrict as any)[formData.originState]?.[formData.originSenatorialDistrict] 
+                        : (dropdownData.federalConstituencies as any)[formData.originState]
+                      )?.map((f: string) => (
+                        <option key={f} value={f}>{f}</option>
+                      ))
+                    }
+                  </select>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Local Government Area</label>
-                  <input
-                    type="text"
+                  <select
                     value={formData.originLocalGovernmentArea || ''}
-                    onChange={(e) => handleInputChange('originLocalGovernmentArea', e.target.value)}
+                    onChange={(e) => handleLocationChange('origin', 'LGA', e.target.value)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="AGUATA"
-                  />
+                    disabled={!formData.originState}
+                  >
+                    <option value="">Select LGA</option>
+                    {formData.originState && dropdownData.nigerianStates.find(s => s.state === formData.originState)?.lgas.map(l => (
+                      <option key={l} value={l}>{l}</option>
+                    ))}
+                  </select>
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">State Constituency</label>
-                  <input
-                    type="text"
+                  <select
                     value={formData.originStateConstituency || ''}
                     onChange={(e) => handleInputChange('originStateConstituency', e.target.value)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="State Constituency"
-                  />
+                    disabled={!formData.originState}
+                  >
+                    <option value="">Select State Constituency</option>
+                    {formData.originState && 
+                      (formData.originFederalConstituency 
+                        ? (dropdownData.stateConstituenciesByStateAndFederalConstituency as any)[formData.originState]?.[formData.originFederalConstituency] 
+                        : (dropdownData.stateConstituenciesByState as any)[formData.originState]
+                      )?.map((s: string) => (
+                        <option key={s} value={s}>{s}</option>
+                      ))
+                    }
+                  </select>
                 </div>
               </div>
 
@@ -663,6 +731,21 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg"
                   placeholder="EZI, etc."
                 />
+              </div>
+
+              <div className="mt-4">
+                <label className="block text-sm font-medium text-gray-700 mb-1">Political Ward</label>
+                <select
+                  value={formData.originWard || ''}
+                  onChange={(e) => handleInputChange('originWard', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  disabled={!formData.originLocalGovernmentArea}
+                >
+                  <option value="">Select Ward</option>
+                  {formData.originLocalGovernmentArea && (dropdownData.wardsData as any)[formData.originLocalGovernmentArea]?.map((w: string) => (
+                    <option key={w} value={w}>{w}</option>
+                  ))}
+                </select>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
@@ -1621,55 +1704,134 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Current State</label>
-                  <input
-                    type="text"
-                    value={formData.currentState || ''}
-                    onChange={(e) => handleInputChange('currentState', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="TEXAS"
-                  />
+                  {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? (
+                    <select
+                      value={formData.currentState || ''}
+                      onChange={(e) => handleLocationChange('current', 'State', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    >
+                      <option value="">Select State</option>
+                      {dropdownData.nigerianStates.map(s => (
+                        <option key={s.state} value={s.state}>{s.state}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.currentState || ''}
+                      onChange={(e) => handleInputChange('currentState', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      placeholder="STATE"
+                    />
+                  )}
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Current Senatorial District</label>
-                  <input
-                    type="text"
-                    value={formData.currentSenatorialDistrict || ''}
-                    onChange={(e) => handleInputChange('currentSenatorialDistrict', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                  />
+                  {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? (
+                    <select
+                      value={formData.currentSenatorialDistrict || ''}
+                      onChange={(e) => handleLocationChange('current', 'SenatorialDistrict', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      disabled={!formData.currentState}
+                    >
+                      <option value="">Select Senatorial District</option>
+                      {formData.currentState && (dropdownData.senatorialDistricts as any)[formData.currentState]?.map((d: string) => (
+                        <option key={d} value={d}>{d}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.currentSenatorialDistrict || ''}
+                      onChange={(e) => handleInputChange('currentSenatorialDistrict', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    />
+                  )}
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Current Federal Constituency</label>
-                  <input
-                    type="text"
-                    value={formData.currentFederalConstituency || ''}
-                    onChange={(e) => handleInputChange('currentFederalConstituency', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                  />
+                  {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? (
+                    <select
+                      value={formData.currentFederalConstituency || ''}
+                      onChange={(e) => handleLocationChange('current', 'FederalConstituency', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      disabled={!formData.currentState}
+                    >
+                      <option value="">Select Federal Constituency</option>
+                      {formData.currentState && 
+                        (formData.currentSenatorialDistrict 
+                          ? (dropdownData.federalConstituenciesByStateAndSenatorialDistrict as any)[formData.currentState]?.[formData.currentSenatorialDistrict] 
+                          : (dropdownData.federalConstituencies as any)[formData.currentState]
+                        )?.map((f: string) => (
+                          <option key={f} value={f}>{f}</option>
+                        ))
+                      }
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.currentFederalConstituency || ''}
+                      onChange={(e) => handleInputChange('currentFederalConstituency', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    />
+                  )}
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Current Local Govt Area</label>
-                  <input
-                    type="text"
-                    value={formData.currentLocalGovernmentArea || ''}
-                    onChange={(e) => handleInputChange('currentLocalGovernmentArea', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                  />
+                  {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? (
+                    <select
+                      value={formData.currentLocalGovernmentArea || ''}
+                      onChange={(e) => handleLocationChange('current', 'LGA', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      disabled={!formData.currentState}
+                    >
+                      <option value="">Select LGA</option>
+                      {formData.currentState && dropdownData.nigerianStates.find(s => s.state === formData.currentState)?.lgas.map(l => (
+                        <option key={l} value={l}>{l}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.currentLocalGovernmentArea || ''}
+                      onChange={(e) => handleInputChange('currentLocalGovernmentArea', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    />
+                  )}
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Current State Constituency</label>
-                  <input
-                    type="text"
-                    value={formData.currentStateConstituency || ''}
-                    onChange={(e) => handleInputChange('currentStateConstituency', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                  />
+                  {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? (
+                    <select
+                      value={formData.currentStateConstituency || ''}
+                      onChange={(e) => handleInputChange('currentStateConstituency', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      disabled={!formData.currentState}
+                    >
+                      <option value="">Select State Constituency</option>
+                      {formData.currentState && 
+                        (formData.currentFederalConstituency 
+                          ? (dropdownData.stateConstituenciesByStateAndFederalConstituency as any)[formData.currentState]?.[formData.currentFederalConstituency] 
+                          : (dropdownData.stateConstituenciesByState as any)[formData.currentState]
+                        )?.map((s: string) => (
+                          <option key={s} value={s}>{s}</option>
+                        ))
+                      }
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.currentStateConstituency || ''}
+                      onChange={(e) => handleInputChange('currentStateConstituency', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    />
+                  )}
                 </div>
               </div>
 
@@ -1693,6 +1855,31 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg"
                   />
                 </div>
+              </div>
+
+              <div className="mt-4">
+                <label className="block text-sm font-medium text-gray-700 mb-1">Current Political Ward</label>
+                {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? (
+                  <select
+                    value={formData.currentPoliticalWard || ''}
+                    onChange={(e) => handleInputChange('currentPoliticalWard', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    disabled={!formData.currentLocalGovernmentArea}
+                  >
+                    <option value="">Select Ward</option>
+                    {formData.currentLocalGovernmentArea && (dropdownData.wardsData as any)[formData.currentLocalGovernmentArea]?.map((w: string) => (
+                      <option key={w} value={w}>{w}</option>
+                    ))}
+                  </select>
+                ) : (
+                  <input
+                    type="text"
+                    value={formData.currentPoliticalWard || ''}
+                    onChange={(e) => handleInputChange('currentPoliticalWard', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="Political Ward"
+                  />
+                )}
               </div>
 
               <div className="mt-4">

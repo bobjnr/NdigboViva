@@ -179,15 +179,15 @@ function PersonCard({ person, isMainPerson = false }: { person: PersonRecord; is
         {person.identity.dateOfBirth && (
           <p>Born: {person.identity.dateOfBirth}</p>
         )}
-        {person.lineage.town && person.lineage.state && (
+        {person.lineage?.town && person.lineage?.state && (
           <p>
             {person.lineage.town}, {person.lineage.state}
           </p>
         )}
-        {person.lineage.umunna && (
+        {person.lineage?.umunna && (
           <p className="text-xs text-gray-500">Umunna: {person.lineage.umunna}</p>
         )}
-        {person.cultural.titles && person.cultural.titles.length > 0 && (
+        {person.cultural?.titles && person.cultural.titles.length > 0 && (
           <div className="flex flex-wrap gap-1 mt-2">
             {person.cultural.titles.map((title, idx) => (
               <span

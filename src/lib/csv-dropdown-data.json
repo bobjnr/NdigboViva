@@ -1,0 +1,1162 @@
+{
+  "townsByLgaName": {
+    "Aguata": [
+      "Achina",
+      "Aguluezechukwu",
+      "Akpo",
+      "Amesi",
+      "Ekwulobia",
+      "Ezinifite",
+      "Igbo - Ukwu",
+      "Ikenga",
+      "Isuofia",
+      "Nkpologwu",
+      "Oraeri",
+      "Uga",
+      "Umuchu",
+      "Umuona"
+    ],
+    "Anambra East": [
+      "Umueri",
+      "Aguleri",
+      "Otuocha",
+      "Enugwu Out Agulu",
+      "Nando",
+      "Nsugbe",
+      "Igbariam",
+      "Umuoba - Anam"
+    ],
+    "Anambra West": [
+      "Umuezeanam",
+      "Umuoba - Abegbu Anam",
+      "Umuenwelum Anam",
+      "Oroma Etiti",
+      "Olumbanasa Ode",
+      "Inoma Akator"
+    ],
+    "Anaocha": [
+      "Agulu",
+      "Aguluzigbo",
+      "Adazi Ani",
+      "Adazi Enu",
+      "Adazi Nnukwu",
+      "Akwaeze",
+      "Ichida",
+      "Neni",
+      "Nri",
+      "Obeledu"
+    ],
+    "Awka North": [
+      "Awba",
+      "Ugbene",
+      "Ebenebe",
+      "Achalla",
+      "Urum",
+      "Amansea",
+      "Amanuke",
+      "Isu Aniocha",
+      "Mgbakwu",
+      "Ugbenu"
+    ],
+    "Awka South": [
+      "Amawbia",
+      "Awka",
+      "Ezinato",
+      "Isiagu",
+      "Mbaukwu",
+      "Nibo",
+      "Okpuno",
+      "Umuawulu",
+      "Nise"
+    ],
+    "Ayamelum": [
+      "Omor",
+      "Anaku",
+      "Ifite Ogwari",
+      "Igbakwu",
+      "Omasi",
+      "Umerum",
+      "Umueje",
+      "Umumbo"
+    ],
+    "Dunukofia": [
+      "Akwa",
+      "Ifitedunu",
+      "Nawgu",
+      "Ukpo",
+      "Ukwulu",
+      "Umudioka",
+      "Umunachi"
+    ],
+    "Ekwusigo": [
+      "Oraifite",
+      "Ozubulu"
+    ],
+    "Idemili North": [
+      "Abacha",
+      "Abatete",
+      "Eziowelle",
+      "Ideani",
+      "Nkpor",
+      "Obosi(Adike)",
+      "Ogidi",
+      "Oraukwu",
+      "Uke",
+      "Umuoji"
+    ],
+    "Idemili South": [
+      "Akwa Ukwu",
+      "Alor",
+      "Awka Etiti",
+      "Nnobi",
+      "Nnokwa",
+      "Oba",
+      "Ojoto"
+    ],
+    "Ihiala": [
+      "Amorka",
+      "Uli",
+      "Ihiala",
+      "Azia",
+      "Orsumoghu",
+      "Ubuluisiuzor",
+      "Isseke",
+      "Lilu",
+      "Mbosi",
+      "Okija"
+    ],
+    "Njikoka": [
+      "Abagana",
+      "Abba",
+      "Enugwu Agidi",
+      "Enugwu Ukwu",
+      "Nawfia"
+    ],
+    "Nnewi North": [
+      "Nnewi"
+    ],
+    "Nnewi South": [
+      "Akwaihedi",
+      "Amichi",
+      "Azuigbo",
+      "Ebenato Ozulogu",
+      "Ekwulumili",
+      "Ezinifite",
+      "Osumenyi",
+      "Ukpor",
+      "Unubi",
+      "Utuh"
+    ],
+    "Ogbaru": [
+      "Akili Ozizor",
+      "Akili Ogidi",
+      "Abeagwe",
+      "Atani",
+      "Ohita",
+      "Odekpe",
+      "Ochuche Umuodu",
+      "Ogbakuba",
+      "Amiyi",
+      "Ogwuikpele",
+      "Ogwuaniocha",
+      "Okpoko",
+      "Ossomala",
+      "Umunankwo",
+      "Mputu"
+    ],
+    "Onitsha North": [
+      "Onitsha"
+    ],
+    "Onitsha South": [
+      "Fegge",
+      "Awada",
+      "Odoakpu",
+      "Woliwo",
+      "Upper Iweka",
+      "Ochanja"
+    ],
+    "Orumba North": [
+      "Awgbu",
+      "Amaetiti",
+      "Amaokpala",
+      "Awa",
+      "Ndiokpalaeze",
+      "Ndiokolo",
+      "Ndiokpalaeke",
+      "Omoghu",
+      "Oko",
+      "Ndiukwuenu",
+      "Ndikelionwu",
+      "Okpeze",
+      "Ajalli",
+      "Ufuma",
+      "Ndiowu",
+      "Nanka"
+    ],
+    "Orumba South": [
+      "Umunze",
+      "Akpujiugo (Akpu)",
+      "Umuomaku",
+      "Eziagu",
+      "Ezira",
+      "Nawfia",
+      "Ogboji",
+      "Ogbunka",
+      "Owerre Ezukala",
+      "Isulo",
+      "Ihite",
+      "Umuchukwu",
+      "Agbudu",
+      "Enugu - Umuonyia"
+    ],
+    "Oyi": [
+      "Awkuzu",
+      "Nkwelle Ezunaka",
+      "Nteje",
+      "Ogbunike",
+      "Umunya"
+    ]
+  },
+  "level1sByTownName": {
+    "Agulu": [
+      "Ifite - Enu"
+    ],
+    "Anaku": [
+      "Umuria",
+      "Ikenga",
+      "Umuereagu"
+    ],
+    "Oraifite": [
+      "Unodu",
+      "Ifite"
+    ],
+    "Obosi(Adike)": [
+      "Oba",
+      "Okudo"
+    ],
+    "Nnobi": [
+      "Ebenesi",
+      "Ngo",
+      "Awuda"
+    ],
+    "Okija": [
+      "Ubahua Bu Ubahu",
+      "Ihitea Bu Ihite",
+      "Uhu0B0 Na Uhuowelle"
+    ]
+  },
+  "level2sByLevel1Name": {
+    "Ubahua Bu Ubahu": [
+      "Ubahu",
+      "Umuohi",
+      "Ezinaukpodu"
+    ],
+    "Ihitea Bu Ihite": [
+      "Ubahu - Eze",
+      "Ubahumonum",
+      "Isieke/Ubahu - Udara"
+    ],
+    "Uhu0B0 Na Uhuowelle": [
+      "Uhuowelle",
+      "Umuatuegwu/Uhudim/Ohukabia",
+      "Ofor Na Ngwu"
+    ],
+    "Unodu": [
+      "Isingwu",
+      "Ibolo",
+      "Umuezopi"
+    ],
+    "Ifite": [
+      "Awo",
+      "Urudunu",
+      "Umuezeakwa",
+      "Umunakwa",
+      "Umuonyeaka",
+      "Amakofa"
+    ],
+    "Ifite - Enu": [
+      "Amatutu",
+      "Okpu - Ifite",
+      "Umubiala",
+      "Nkitaku",
+      "Umuowelle"
+    ],
+    "Ebenesi": [
+      "Umuona",
+      "Ifite Ogbeaduji",
+      "Ubaha",
+      "Amadunu",
+      "Umuafor",
+      "Umuru"
+    ],
+    "Ngo": [
+      "Umuegbu Ezigbom",
+      "Umunebo Ezigbom",
+      "Umuikechem Ndam",
+      "Umuezeme Ndam",
+      "Obinuno Umuagu",
+      "Obinagu Umuagu"
+    ],
+    "Umuria": [
+      "Akpaa",
+      "Umuerechi",
+      "Umuagu",
+      "Umuriana",
+      "Umurienu"
+    ],
+    "Ikenga": [
+      "Atava",
+      "Obukwu"
+    ],
+    "Umuereagu": [
+      "Akpi",
+      "Umuotobo",
+      "Umuowa",
+      "Isiokwe",
+      "Umuoka",
+      "Umuerekwelagu"
+    ]
+  },
+  "clansByLevel2Name": {},
+  "villagesByClanName": {
+    "Dioha": [
+      "Elekechem",
+      "Umunnebogbu",
+      "Umunmelike",
+      "Umuadobihi",
+      "Umuilobueghu",
+      "Umuabalike",
+      "Umuezeogu",
+      "Umunmeri"
+    ],
+    "Etiti - Ubahu": [
+      "Umuapani",
+      "Umuawa",
+      "Umudaraegwu"
+    ],
+    "Ubahu - Uduru": [
+      "Umuezedam",
+      "Umuakporom",
+      "Ugwuchereku"
+    ],
+    "Ezieke": [
+      "Anaubosi",
+      "Anunwa",
+      "Ihuoma Anukaubi",
+      "Umuabiam"
+    ],
+    "Isifulu": [
+      "Umu Onemba",
+      "Umundumanya",
+      "Umuezulu",
+      "Umu Orji",
+      "Umuagusionu",
+      "Okpaladike",
+      "Umunwangwu",
+      "Umu Egbu Eli"
+    ],
+    "Umudioka": [
+      "Umueze Anamiuji",
+      "Umu Okorafor",
+      "Umu Ezeisi",
+      "Umudara Okereke",
+      "Umu Aga Agwo",
+      "Umu Ozo Igbo",
+      "Umu Ejiofor",
+      "Umu Obianigwe",
+      "Umu Anosike",
+      "Umu Ogbuehi",
+      "Umu Annowai"
+    ],
+    "Umuhu": [
+      "Ubahuoti",
+      "Umuezelobe",
+      "Umuagbajeyi",
+      "Umuezeana",
+      "Umuduruekwe",
+      "Umuanatobu",
+      "Uhuomacha",
+      "Uhuagu",
+      "Umuduru",
+      "Umuezeoluji",
+      "Umuanyabuike",
+      "Umuabiaeme"
+    ],
+    "Ubahu - Ezike": [
+      "Ubahu - Ezike"
+    ],
+    "Ubahu - Eze": [
+      "Ubahu - Eze"
+    ],
+    "Ubahumonum": [
+      "Ezimbara",
+      "Umuezim"
+    ],
+    "Isieke": [
+      "Isieke"
+    ],
+    "Ubahu - Udara": [
+      "Ubahu - Udara"
+    ],
+    "Oghalaegbu": [
+      "Umuezejiaku",
+      "Umunaforojoro",
+      "Umuokparaezike",
+      "Umuezeana",
+      "Umuodumonu"
+    ],
+    "Umuogu": [
+      "Umuogu"
+    ],
+    "Umuzu": [
+      "Umuzu - Okija"
+    ],
+    "Umuatuegwu": [
+      "Nzere",
+      "Ezeobi"
+    ],
+    "Uhudim": [
+      "Uhudim"
+    ],
+    "0Hukabia": [
+      "0Hukabia"
+    ],
+    "Umuofor Akoba": [
+      "Umuofor Akoba"
+    ],
+    "Uhungwu": [
+      "Uhungwu"
+    ],
+    "Ezewulum": [
+      "Ezewulum"
+    ],
+    "Umuodum": [
+      "Odum"
+    ],
+    "Umugwo": [
+      "Umuogbuefi",
+      "Umueme",
+      "Umuokpala"
+    ],
+    "Ihuolile": [
+      "Ezedeke Ezeagu",
+      "Ezeanya"
+    ],
+    "Opuatava": [
+      "Umuokpala",
+      "Dachimelu"
+    ]
+  },
+  "hamletsByVillageName": {
+    "Umunnebogbu": [
+      "Umuokparaughanze",
+      "Umugogbuo",
+      "Umuahibaekwe",
+      "Umuawala"
+    ],
+    "Umuadobihi": [
+      "Umunkwo",
+      "Umuogwazu",
+      "Umuihem",
+      "Izuegbu/Obiejesi",
+      "Anyajibo/Nzoghi",
+      "Nzeteobi/Eziteghi",
+      "Umuanumba",
+      "Umuohaerighi",
+      "Ekwurugwo/Ejiaga",
+      "Okwuegbunem",
+      "Umuosuagwu"
+    ],
+    "Umuapani": [
+      "Dara",
+      "Ngegwu",
+      "Nhie",
+      "Nebo",
+      "Chugha",
+      "Omukwe"
+    ],
+    "Umuawa": [
+      "Umuawa"
+    ],
+    "Umudaraegwu": [
+      "Umuorji",
+      "Umu Ihemegbunam"
+    ],
+    "Umuezedam": [
+      "Megwara",
+      "Ehiobuna",
+      "Ezedike",
+      "Ezediana",
+      "Ndionyebarachi",
+      "Izunabo",
+      "Ndiezike"
+    ],
+    "Umuakporom": [
+      "Umu - Nabara",
+      "Umungwu",
+      "Umueze Iloana",
+      "Umuemenighe",
+      "Umuigboeje"
+    ],
+    "Ugwuchereku": [
+      "Umuiloegbuna",
+      "Umu - Uzoegwu",
+      "Umudibiagu",
+      "Umudiji",
+      "Umuizunabo",
+      "Umuisiagu"
+    ],
+    "Anaubosi": [
+      "Umuezedibia",
+      "Umuobinagha",
+      "Umuanyaeji"
+    ],
+    "Anunwa": [
+      "Anunwa"
+    ],
+    "Ihuoma Anukaubi": [
+      "Ihuoma"
+    ],
+    "Umuabiam": [
+      "Umuonwuka",
+      "Umu Ukadike"
+    ],
+    "Ubahu - Ezike": [
+      "Umuezike",
+      "Umuesikam",
+      "Umuezenwune",
+      "Umuezie"
+    ],
+    "Ubahu - Eze": [
+      "Umuoma",
+      "Uhuokwe",
+      "Ubahu - Ogwugwu"
+    ],
+    "Ezimbara": [
+      "Umuoha",
+      "Umuezeagwute",
+      "Umuezeanofor",
+      "Umuezechima",
+      "Umuezeona"
+    ],
+    "Umuezim": [
+      "Ndiezeana (Mmedoro)",
+      "Umuezeanekwu",
+      "Umudarauzu",
+      "Umuagu"
+    ],
+    "Isieke": [
+      "Ezengu",
+      "Ndukaihim",
+      "Umunaka",
+      "Umuduru",
+      "Amaorie"
+    ],
+    "Ubahu - Udara": [
+      "Umu - Mogo",
+      "Umuojigwe",
+      "Umudurunonye",
+      "Umuezeahize"
+    ],
+    "Umuezejiaku": [
+      "Umuezeriobi",
+      "Umuezeihebiri"
+    ],
+    "Umunaforojoro": [
+      "Umuokparaizu",
+      "Umuokaraiwuanyi"
+    ],
+    "Umuokparaezike": [
+      "Umujuokwu",
+      "Umuokparadoro",
+      "Umummirika"
+    ],
+    "Umuezeana": [
+      "Umuemekwuru",
+      "Umunwoji",
+      "Umu - Abanihi",
+      "Umu - Ihi",
+      "Umu - Agbagosim",
+      "Nwokereobi/Ikegwuonu"
+    ],
+    "Umuodumonu": [
+      "Umunwoji"
+    ],
+    "Umuogu": [
+      "Umuakwa",
+      "Umuigwe",
+      "Umunzerendu",
+      "Umuanum",
+      "Umuike",
+      "Umuezeanagu",
+      "Umuokparasoagu",
+      "Umu - Ile - Kporochu",
+      "Awobi Odogwu"
+    ],
+    "Nzere": [
+      "Ezikeokwunara",
+      "Umuidinwadiugwu",
+      "Ezikegesi",
+      "Ezikeodinaka"
+    ],
+    "Ezeobi": [
+      "Ezikeodinaka",
+      "Umuezelimpi",
+      "Umuezeahuno",
+      "Umuezeuku",
+      "Ezikepaji"
+    ],
+    "Uhudim": [
+      "Dim Muogo",
+      "Dim Onyebiukwu",
+      "Dim Ikenyerem",
+      "Dim Chijiuba",
+      "Dim Ezeutogu"
+    ],
+    "0Hukabia": [
+      "Umuajuruonwu",
+      "Umuezike Okehi",
+      "Umuohubuike",
+      "Umunnadi"
+    ],
+    "Umuofor Akoba": [
+      "Umuokpala",
+      "Ezike Ikuegbu"
+    ],
+    "Uhungwu": [
+      "Umuilonwa",
+      "Umuilonwau",
+      "Umuonyebuikwu",
+      "Umuidiokwu",
+      "Umuezemma",
+      "Ndiezike",
+      "Umuubakanwa"
+    ],
+    "Ezewulum": [
+      "Umu Ndiodiri",
+      "Umu Obanagwu",
+      "Umueze Aboro",
+      "Umu Ezewinpi",
+      "Umu Nchaaru"
+    ],
+    "Odum": [
+      "Umuakamuchu"
+    ],
+    "Umuogbuefi": [
+      "Muoka",
+      "Odenyaba",
+      "Ezeagha",
+      "Ugwo",
+      "Chijindu"
+    ],
+    "Ezedeke Ezeagu": [
+      "Ezensoha",
+      "Ebekudike",
+      "Ezeagu"
+    ],
+    "Umuokpala": [
+      "Umucheti",
+      "Umu - Ukom"
+    ]
+  },
+  "kindredsByHamletName": {
+    "Umuogwazu": [
+      "Uzokaenyi",
+      "Iroha",
+      "Nwokaeji"
+    ],
+    "Dara": [
+      "Umuonwusirikam",
+      "Duruasom"
+    ],
+    "Ngegwu": [
+      "Duruasom",
+      "Umunwaolisa"
+    ],
+    "Nhie": [
+      "Umudogu",
+      "Umuanudo"
+    ],
+    "Nebo": [
+      "Umuahize - Chukwu",
+      "Umu - Ulasi Ocha"
+    ],
+    "Chugha": [
+      "Umu Okechukwu",
+      "Umu Egbo Chukwu",
+      "Umu Nka Dom"
+    ],
+    "Omukwe": [
+      "Umuezedike/Umu Onyedumekwu",
+      "Umuikegbu",
+      "Umu - Udunwa"
+    ],
+    "Umuawa": [
+      "Umuawa"
+    ],
+    "Umuorji": [
+      "Idi Okeli",
+      "Durudogu",
+      "Enukamadu",
+      "Ezengu"
+    ],
+    "Umu Ihemegbunam": [
+      "Idiri - Zeno"
+    ],
+    "Megwara": [
+      "Obiejesi",
+      "Umuejiogu",
+      "Umuchukwuede Nwangwu"
+    ],
+    "Ehiobuna": [
+      "Chukwudum",
+      "Anyijiofor",
+      "Obodozie/Nnem Olisa"
+    ],
+    "Ezedike": [
+      "Nzomiwu",
+      "Malizu",
+      "Ebulue"
+    ],
+    "Ezediana": [
+      "Unuigwe",
+      "Odinaka"
+    ],
+    "Ndionyebarachi": [
+      "Ibidoduna",
+      "Nwajeri"
+    ],
+    "Izunabo": [
+      "Ugochukwu"
+    ],
+    "Ndiezike": [
+      "Ewulu",
+      "Osungwu",
+      "Okereke Chigere",
+      "Nnaji",
+      "Ndiezike"
+    ],
+    "Umu - Nabara": [
+      "Okwa - Aku",
+      "Umuidiegbu",
+      "Umuilonwa"
+    ],
+    "Umungwu": [
+      "Umueze Akudinaobi",
+      "Umudinorom",
+      "Umudiaku"
+    ],
+    "Umueze Iloana": [
+      "Ngwu Ogu",
+      "Ezeabam"
+    ],
+    "Umuemenighe": [
+      "Umueze Onuoha",
+      "Umueze Ekeyim"
+    ],
+    "Umuigboeje": [
+      "Umuigboeje"
+    ],
+    "Umuiloegbuna": [
+      "Umuiloegbuna"
+    ],
+    "Umu - Uzoegwu": [
+      "Umu - Uzoegwu"
+    ],
+    "Umudibiagu": [
+      "Umudibiagu"
+    ],
+    "Umudiji": [
+      "Umudiji"
+    ],
+    "Umuizunabo": [
+      "Umuizunabo"
+    ],
+    "Umuisiagu": [
+      "Umuisiagu"
+    ],
+    "Umuezike": [
+      "Umuokenwa",
+      "Umuokalu",
+      "Umuemekekwuo",
+      "Umuechefu"
+    ],
+    "Umuesikam": [
+      "Ezikeaghagwo",
+      "Umuenw0R0M",
+      "Emegwammuo",
+      "Umuanyaoha"
+    ],
+    "Umuezenwune": [
+      "Umuokereke",
+      "Umuohanuba"
+    ],
+    "Umuezie": [
+      "Umuezie"
+    ],
+    "Umuoma": [
+      "Umuoma"
+    ],
+    "Uhuokwe": [
+      "Uhuokwe"
+    ],
+    "Ubahu - Ogwugwu": [
+      "Ubahu - Ogwugwu"
+    ],
+    "Umuoha": [
+      "Umu - Ezeazubuike",
+      "Umu - Nkameme",
+      "Umu - Akusoronwa",
+      "Umu - Anyamele",
+      "Umu - Onyejiforonwa",
+      "Umu - Nwazumahu"
+    ],
+    "Umuezeagwute": [
+      "Umu - Ulasi /Okorolobe",
+      "Umu - Iyiegbu",
+      "Umu - Ezeana Awugosi",
+      "Umu - Ohusi"
+    ],
+    "Umuezeanofor": [
+      "Umu - Ezeubo",
+      "Umu - Ohabu",
+      "Umu - Umuahanwa"
+    ],
+    "Umuezechima": [
+      "Okpara - Odogwu",
+      "Umu - Ihejianya",
+      "Umu - Ezeilogu",
+      "Umu - Ezeonyeka"
+    ],
+    "Umuezeona": [
+      "Umu - Ulasika",
+      "Umu - Ezediogu",
+      "Umu - Ezeocha",
+      "Odiba"
+    ],
+    "Ndiezeana (Mmedoro)": [
+      "Umu - Ezitogu",
+      "Umu - Okorafor",
+      "Umu - Ekwusim"
+    ],
+    "Umuezeanekwu": [
+      "Umu - Ezeanaekwu"
+    ],
+    "Umudarauzu": [
+      "Umu - Ezeadim",
+      "Umu - Okparamizu"
+    ],
+    "Umuagu": [
+      "Umu - Anyadike",
+      "Umu - Ezechukwu",
+      "Umu - Okpok0",
+      "Umu - Omenu",
+      "Umu - Ezejiaku",
+      "Umu - Nworie"
+    ],
+    "Ezengu": [
+      "Umuntado",
+      "Dukuihiemeke",
+      "Umudeohimili"
+    ],
+    "Ndukaihim": [
+      "Umunwaonu",
+      "Orji",
+      "Umudike Okonkwo"
+    ],
+    "Umunaka": [
+      "Umuntado",
+      "Umunaono",
+      "Umuezereiwu"
+    ],
+    "Umuduru": [
+      "Durunzomiwu",
+      "Umudimbaji"
+    ],
+    "Amaorie": [
+      "Amaorie"
+    ],
+    "Umu - Mogo": [
+      "Umuogbuehi",
+      "Umunzurumike"
+    ],
+    "Umuojigwe": [
+      "Umuonyegaraeme",
+      "Umunkaagba"
+    ],
+    "Umudurunonye": [
+      "Umu - Ugochukwu",
+      "Umuadinnu"
+    ],
+    "Umuezeahize": [
+      "Umuabubogwu",
+      "Umuogbuagu"
+    ],
+    "Umuezeriobi": [
+      "Umumadunato",
+      "Umuobiriuno",
+      "Umuorum",
+      "Umuidiekebuo"
+    ],
+    "Umuezeihebiri": [
+      "Umuezenebighi",
+      "Umuobi",
+      "Umuanamasonye"
+    ],
+    "Umuokparaizu": [
+      "Umuokpaizu"
+    ],
+    "Umuokaraiwuanyi": [
+      "Umuokaraiwuanyi"
+    ],
+    "Umujuokwu": [
+      "Umujiokwu"
+    ],
+    "Umuokparadoro": [
+      "Umuokparadoro"
+    ],
+    "Umummirika": [
+      "Umummirika"
+    ],
+    "Umuemekwuru": [
+      "Umugochukwu",
+      "Umuosuchukwu",
+      "Umuosuagwu",
+      "Umudeze",
+      "Umu - Chukwunyereoke"
+    ],
+    "Umunwoji": [
+      "Umunwoji"
+    ],
+    "Umu - Abanihi": [
+      "Umu - Nwabuogaranya",
+      "Umj - Chukwuemeka"
+    ],
+    "Umu - Ihi": [
+      "Umu - Ihi"
+    ],
+    "Umu - Agbagosim": [
+      "Umu - Agbagosim"
+    ],
+    "Nwokereobi/Ikegwuonu": [
+      "Umu - Ikenwoke",
+      "Umu - Mnegwa"
+    ],
+    "Umuakwa": [
+      "Umuakwa"
+    ],
+    "Umuigwe": [
+      "Umuokparadibe",
+      "Umuechefu"
+    ],
+    "Umunzerendu": [
+      "Umunzerendu"
+    ],
+    "Umuanum": [
+      "Ezeana/Iheanaekwe",
+      "Etitogu",
+      "Umundogulu"
+    ],
+    "Umuike": [
+      "Umuike"
+    ],
+    "Umuezeanagu": [
+      "Mkpikaogu",
+      "Umulenze"
+    ],
+    "Umuokparasoagu": [
+      "Umuakparasoagu",
+      "Umu - Mbaji",
+      "Umu - Idi - Owelle",
+      "Umuodogwu Udenwayi",
+      "Umu Okereke"
+    ],
+    "Umu - Ile - Kporochu": [
+      "Umu - Umukporochu"
+    ],
+    "Awobi Odogwu": [
+      "Awobi Odogwu"
+    ],
+    "Ezikeokwunara": [
+      "Iwenwanne",
+      "Anyanmane",
+      "Ukwamebena",
+      "Umuezenamba"
+    ],
+    "Umuidinwadiugwu": [
+      "Ezikeonukposi",
+      "Udodimma",
+      "Ekwuluetiti",
+      "Umuilonwaji",
+      "Umuezeokoronkwo"
+    ],
+    "Ezikegesi": [
+      "Ezikegesi"
+    ],
+    "Ezikeodinaka": [
+      "Umuobiajulu",
+      "Umuobiefuna",
+      "Umuanyaoku",
+      "Umuezikeagwo",
+      "Umuezeihedum"
+    ],
+    "Umuezelimpi": [
+      "Umuonyeche",
+      "Umuigiligiaku",
+      "Umumbajiaku",
+      "Umuihebunike"
+    ],
+    "Umuezeahuno": [
+      "Ezike",
+      "Anurugo"
+    ],
+    "Umuezeuku": [
+      "Umuzobi",
+      "Iumuobodoagwu"
+    ],
+    "Ezikepaji": [
+      "Akuba",
+      "Okuohia"
+    ],
+    "Dim Muogo": [
+      "Ihiesogbo",
+      "Odinaka"
+    ],
+    "Dim Onyebiukwu": [
+      "Umuokoye",
+      "Umumadueke"
+    ],
+    "Dim Ikenyerem": [
+      "Umuonukwuru"
+    ],
+    "Dim Chijiuba": [
+      "Umuihekaigbo",
+      "Umuokemadu"
+    ],
+    "Dim Ezeutogu": [
+      "Umuobidione",
+      "Umuchukwube"
+    ],
+    "Umuajuruonwu": [
+      "Umuogunede",
+      "Umuohanehi",
+      "Umuanyamene",
+      "Umuobimeje"
+    ],
+    "Umuezike Okehi": [
+      "Umunnosike",
+      "Umuezeonu",
+      "Umuanasiudu"
+    ],
+    "Umuohubuike": [
+      "Umuezeribe",
+      "Umuigboka Enyi",
+      "Umuonuzuruike"
+    ],
+    "Umunnadi": [
+      "Umuewulike",
+      "Umuorjiakor"
+    ],
+    "Umuokpala": [
+      "Umuezeafuru",
+      "Umumbaji"
+    ],
+    "Ezike Ikuegbu": [
+      "Umuezike Owelle",
+      "Umuezenwa",
+      "Umuezennabi"
+    ],
+    "Umuilonwa": [
+      "Umuanasigwe"
+    ],
+    "Umuilonwau": [
+      "Umuokpori"
+    ],
+    "Umuonyebuikwu": [
+      "Umuonyebuikwu"
+    ],
+    "Umuidiokwu": [
+      "Umuonwubuara",
+      "Umuazubuike"
+    ],
+    "Umuezemma": [
+      "Umuobiamaukwu",
+      "Umuonwueme",
+      "Umummadunatu",
+      "Umummadubuiyim"
+    ],
+    "Umuubakanwa": [
+      "Umuubakanwa"
+    ],
+    "Umu Ndiodiri": [
+      "Umu Ndiodiri"
+    ],
+    "Umu Obanagwu": [
+      "Umu Obanagwu"
+    ],
+    "Umueze Aboro": [
+      "Umu Ezikeagu",
+      "Umu Umerenwa",
+      "Umueze Okoronkwo"
+    ],
+    "Umu Ezewinpi": [
+      "Umu Ezewinpi"
+    ],
+    "Umu Nchaaru": [
+      "Umu Nchaaru"
+    ],
+    "Ebekudike": [
+      "Okonkwo Ayotanze",
+      "Okoye Onyezuo",
+      "Obienu"
+    ]
+  },
+  "umunnasByKindredName": {
+    "Uzokaenyi": [
+      "Agbasiere"
+    ],
+    "Iroha": [
+      "Ofodimogo"
+    ],
+    "Umuonwusirikam": [
+      "Umuagbagosim",
+      "Agbagosim",
+      "Emegwa",
+      "Ibe",
+      "Ejezie",
+      "Anadi",
+      "Akaforonye",
+      "Okoli"
+    ],
+    "Duruasom": [
+      "Anazodo",
+      "Esimoneze",
+      "Nwanolue",
+      "Ohazulume",
+      "Chukwumanjo"
+    ],
+    "Umudogu": [
+      "Umunnorom",
+      "Akabueze"
+    ],
+    "Okonkwo Ayotanze": [
+      "Ezelum Aloysius Okonkwo",
+      "Ezelum",
+      "Aloysius Okonkwo",
+      "Rapheal Orizu",
+      "Nzeabalu",
+      "Achobaego"
+    ]
+  },
+  "_meta": {
+    "generatedAt": "2026-03-16T06:52:08.984Z",
+    "townCount": 174,
+    "level1Count": 14,
+    "level2Count": 58,
+    "clanCount": 92,
+    "villageCount": 77,
+    "hamletCount": 148,
+    "kindredCount": 264,
+    "umunnaCount": 28
+  }
+}

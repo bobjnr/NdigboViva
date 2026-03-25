@@ -29,6 +29,10 @@ export interface IdentityFields {
   dateOfBirth?: string; // ISO format or approximate (e.g., "1945", "1945-03", "1945-03-15")
   placeOfBirth?: string; // Town/Village where born
 
+  // DNA/Medical information
+  genotype?: string; // e.g., AA, AS, SS
+  bloodGroup?: string; // e.g., O+, A-, B+
+
   // Visual identification
   photoUrl?: string; // URL to photo (if consent given)
   photoConsent?: boolean; // Explicit consent for photo storage/display
@@ -44,6 +48,8 @@ export interface LineageFields {
   motherId?: string; // Reference to mother's personId
   spouseIds?: string[]; // Array of spouse personIds (polygamy support)
   childrenIds?: string[]; // Array of children personIds
+  fatherName?: string; // Name of father (if ID not known)
+  motherName?: string; // Name of mother (if ID not known)
 
   // ORIGIN INFORMATION - Complete hierarchical location structure
   // Geographic hierarchy (largest to smallest)
@@ -59,7 +65,35 @@ export interface LineageFields {
   originStateConstituency?: string; // State constituency
   originTown?: string; // Town
   originTownDivision?: string; // Town division/section
+  originTownLevel1?: string;
+  originTownLevel2?: string;
+  originTownLevel3?: string;
+  originTownLevel4?: string;
+  originWard?: string; // Political ward (e.g. Ward 1)
   originTownQuarter?: string; // Town quarter (EZI, etc.)
+
+  // Origin ontology IDs (immutable; stored with submission for registry consistency)
+  originContinentId?: string; // CT-*
+  originSubContinentId?: string; // SC-*
+  originCountryId?: string; // CO-*
+  originRegionId?: string; // NR-*
+  originStateId?: string; // ST-*
+  originSenatorialZoneId?: string; // SZ-*
+  originLgaId?: string; // LGA-*
+  originFederalConstituencyId?: string; // FC-*
+  originStateConstituencyId?: string; // SC-*
+  originWardId?: string; // WD-*
+  originTownId?: string; // TW-*
+  originTownLevel1Id?: string; // TL1-*
+  originTownLevel2Id?: string; // TL2-*
+  originTownLevel3Id?: string; // TL3-*
+  originTownLevel4Id?: string; // TL4-*
+  originVillageId?: string; // VL-*
+  originHamletId?: string; // HM-*
+  originLineageId?: string; // LN-*
+  originKindredId?: string; // KD-*
+  originExtendedFamilyId?: string; // EF-*
+  originNuclearFamilyId?: string; // NF-*
 
   // Cultural/lineage hierarchy (largest to smallest)
   originClan?: string; // Clan affiliation
@@ -169,6 +203,20 @@ export interface DocumentationFields {
   // Narrative
   story?: string; // Family narratives, oral history
   notes?: string; // Additional notes, context
+
+  // Optional Document Uploads (legacy; uploads no longer used in form)
+  birthCertificateUrl?: string;
+  ninUrl?: string; // National Identification Number
+  nationalIdentityCardUrl?: string;
+  internationalPassportUrl?: string;
+  personalBankAccountUrl?: string;
+  votersCardUrl?: string;
+  driversLicenseUrl?: string;
+  taxIdentificationNumberUrl?: string;
+  bvnUrl?: string; // Bank Verification Number
+
+  // Identity documents the person has (ticked in form; no upload)
+  identityDocumentsHeld?: string[]; // e.g. ['birthCertificate', 'nin', 'internationalPassport']
 }
 
 // ============================================================================
@@ -231,6 +279,9 @@ export interface DiasporaFields {
   currentTown?: string; // Current town/city
   currentTownDivision?: string; // Town division
   currentTownQuarter?: string; // Town quarter
+  currentPoliticalWard?: string; // Political ward (for Nigeria)
+  currentIgboOrganizations?: string; // Igbo organizations (for Diaspora/Nigeria)
+  citizenshipStatus?: string; // Citizenship status (for Diaspora)
 
   // Cultural/community hierarchy in current location
   currentClan?: string; // Clan affiliation in current location
@@ -275,6 +326,9 @@ export interface PersonRecord {
 
   // Legacy compatibility (for migration)
   legacyRecordId?: string; // Reference to old GenealogyRecord if migrated
+
+  // Official registry (e.g. Gramps Web) – set after export so users can "View in registry"
+  registryUrl?: string; // e.g. https://your-gramps.instance/person/{handle}
 }
 
 // ============================================================================
@@ -290,12 +344,16 @@ export interface PersonFormSubmission {
   placeOfBirth?: string;
   photoUrl?: string;
   photoConsent?: boolean;
+  genotype?: string;
+  bloodGroup?: string;
 
   // Lineage - Family Relationships
   fatherId?: string;
   motherId?: string;
   spouseIds?: string[];
   childrenIds?: string[];
+  fatherName?: string;
+  motherName?: string;
   nwaadaLineageLink?: string;
 
   // ORIGIN INFORMATION - Complete hierarchy
@@ -310,13 +368,41 @@ export interface PersonFormSubmission {
   originLocalGovernmentArea?: string;
   originStateConstituency?: string;
   originTown?: string;
-  originTownDivision?: string;
+  originTownDivision?: string; // Kept for backward compatibility
+  originTownLevel1?: string;
+  originTownLevel2?: string;
+  originTownLevel3?: string;
+  originTownLevel4?: string;
+  originWard?: string;
   originTownQuarter?: string;
   originClan?: string;
   originVillage?: string;
   originHamlet?: string;
   originKindred?: string;
   originUmunna?: string;
+
+  // Origin ontology IDs (optional; set when form uses registry dropdowns)
+  originContinentId?: string;
+  originSubContinentId?: string;
+  originCountryId?: string;
+  originRegionId?: string;
+  originStateId?: string;
+  originSenatorialZoneId?: string;
+  originLgaId?: string;
+  originFederalConstituencyId?: string;
+  originStateConstituencyId?: string;
+  originWardId?: string;
+  originTownId?: string;
+  originTownLevel1Id?: string;
+  originTownLevel2Id?: string;
+  originTownLevel3Id?: string;
+  originTownLevel4Id?: string;
+  originVillageId?: string;
+  originHamletId?: string;
+  originLineageId?: string;
+  originKindredId?: string;
+  originExtendedFamilyId?: string;
+  originNuclearFamilyId?: string;
 
   // Legacy lineage fields (for backward compatibility)
   umunna?: string;
@@ -364,6 +450,21 @@ export interface PersonFormSubmission {
   testifierContact?: string;
   documentScanIds?: string[];
   documentUrls?: string[];
+
+  // Specific Document Uploads (legacy)
+  birthCertificateUrl?: string;
+  ninUrl?: string;
+  nationalIdentityCardUrl?: string;
+  internationalPassportUrl?: string;
+  personalBankAccountUrl?: string;
+  votersCardUrl?: string;
+  driversLicenseUrl?: string;
+  taxIdentificationNumberUrl?: string;
+  bvnUrl?: string;
+
+  // Identity documents the person has (checkboxes in form)
+  identityDocumentsHeld?: string[];
+
   story?: string;
   notes?: string;
 
@@ -388,6 +489,9 @@ export interface PersonFormSubmission {
   currentTown?: string;
   currentTownDivision?: string;
   currentTownQuarter?: string;
+  currentPoliticalWard?: string;
+  currentIgboOrganizations?: string;
+  citizenshipStatus?: string;
   currentClan?: string;
   currentVillage?: string;
   currentHamlet?: string;
@@ -468,6 +572,8 @@ export function createPersonFromForm(
       ...(formData.placeOfBirth && { placeOfBirth: formData.placeOfBirth.toUpperCase().trim() }),
       ...(formData.photoUrl && { photoUrl: formData.photoUrl }),
       photoConsent: formData.photoConsent || false,
+      ...(formData.genotype && { genotype: formData.genotype.toUpperCase().trim() }),
+      ...(formData.bloodGroup && { bloodGroup: formData.bloodGroup.toUpperCase().trim() }),
     },
     lineage: {
       // Family relationships
@@ -475,6 +581,8 @@ export function createPersonFromForm(
       ...(formData.motherId && { motherId: formData.motherId }),
       ...(formData.spouseIds && formData.spouseIds.length > 0 && { spouseIds: formData.spouseIds }),
       ...(formData.childrenIds && formData.childrenIds.length > 0 && { childrenIds: formData.childrenIds }),
+      ...(formData.fatherName && { fatherName: formData.fatherName.toUpperCase().trim() }),
+      ...(formData.motherName && { motherName: formData.motherName.toUpperCase().trim() }),
       ...(formData.nwaadaLineageLink && { nwaadaLineageLink: formData.nwaadaLineageLink.toUpperCase().trim() }),
 
       // ORIGIN INFORMATION - New hierarchical fields
@@ -489,13 +597,42 @@ export function createPersonFromForm(
       ...(formData.originLocalGovernmentArea && { originLocalGovernmentArea: formData.originLocalGovernmentArea.toUpperCase().trim() }),
       ...(formData.originStateConstituency && { originStateConstituency: formData.originStateConstituency.toUpperCase().trim() }),
       ...(formData.originTown && { originTown: formData.originTown.toUpperCase().trim() }),
+      ...(formData.originTown && { originTown: formData.originTown.toUpperCase().trim() }),
       ...(formData.originTownDivision && { originTownDivision: formData.originTownDivision.toUpperCase().trim() }),
+      ...(formData.originTownLevel1 && { originTownLevel1: formData.originTownLevel1.toUpperCase().trim() }),
+      ...(formData.originTownLevel2 && { originTownLevel2: formData.originTownLevel2.toUpperCase().trim() }),
+      ...(formData.originTownLevel3 && { originTownLevel3: formData.originTownLevel3.toUpperCase().trim() }),
+      ...(formData.originTownLevel4 && { originTownLevel4: formData.originTownLevel4.toUpperCase().trim() }),
+      ...(formData.originWard && { originWard: formData.originWard.toUpperCase().trim() }),
       ...(formData.originTownQuarter && { originTownQuarter: formData.originTownQuarter.toUpperCase().trim() }),
       ...(formData.originClan && { originClan: formData.originClan.toUpperCase().trim() }),
       ...(formData.originVillage && { originVillage: formData.originVillage.toUpperCase().trim() }),
       ...(formData.originHamlet && { originHamlet: formData.originHamlet.toUpperCase().trim() }),
       ...(formData.originKindred && { originKindred: formData.originKindred.toUpperCase().trim() }),
       ...(formData.originUmunna && { originUmunna: formData.originUmunna.toUpperCase().trim() }),
+
+      // Origin ontology IDs (immutable registry references)
+      ...(formData.originContinentId && { originContinentId: formData.originContinentId }),
+      ...(formData.originSubContinentId && { originSubContinentId: formData.originSubContinentId }),
+      ...(formData.originCountryId && { originCountryId: formData.originCountryId }),
+      ...(formData.originRegionId && { originRegionId: formData.originRegionId }),
+      ...(formData.originStateId && { originStateId: formData.originStateId }),
+      ...(formData.originSenatorialZoneId && { originSenatorialZoneId: formData.originSenatorialZoneId }),
+      ...(formData.originLgaId && { originLgaId: formData.originLgaId }),
+      ...(formData.originFederalConstituencyId && { originFederalConstituencyId: formData.originFederalConstituencyId }),
+      ...(formData.originStateConstituencyId && { originStateConstituencyId: formData.originStateConstituencyId }),
+      ...(formData.originWardId && { originWardId: formData.originWardId }),
+      ...(formData.originTownId && { originTownId: formData.originTownId }),
+      ...(formData.originTownLevel1Id && { originTownLevel1Id: formData.originTownLevel1Id }),
+      ...(formData.originTownLevel2Id && { originTownLevel2Id: formData.originTownLevel2Id }),
+      ...(formData.originTownLevel3Id && { originTownLevel3Id: formData.originTownLevel3Id }),
+      ...(formData.originTownLevel4Id && { originTownLevel4Id: formData.originTownLevel4Id }),
+      ...(formData.originVillageId && { originVillageId: formData.originVillageId }),
+      ...(formData.originHamletId && { originHamletId: formData.originHamletId }),
+      ...(formData.originLineageId && { originLineageId: formData.originLineageId }),
+      ...(formData.originKindredId && { originKindredId: formData.originKindredId }),
+      ...(formData.originExtendedFamilyId && { originExtendedFamilyId: formData.originExtendedFamilyId }),
+      ...(formData.originNuclearFamilyId && { originNuclearFamilyId: formData.originNuclearFamilyId }),
 
       // Legacy fields (for backward compatibility)
       umunna: (formData.umunna || formData.originUmunna || '').toUpperCase().trim(),
@@ -557,6 +694,21 @@ export function createPersonFromForm(
       ...(formData.documentUrls && formData.documentUrls.length > 0 && {
         documentUrls: formData.documentUrls
       }),
+
+      // Map specific document uploads
+      ...(formData.birthCertificateUrl && { birthCertificateUrl: formData.birthCertificateUrl }),
+      ...(formData.ninUrl && { ninUrl: formData.ninUrl }),
+      ...(formData.nationalIdentityCardUrl && { nationalIdentityCardUrl: formData.nationalIdentityCardUrl }),
+      ...(formData.internationalPassportUrl && { internationalPassportUrl: formData.internationalPassportUrl }),
+      ...(formData.personalBankAccountUrl && { personalBankAccountUrl: formData.personalBankAccountUrl }),
+      ...(formData.votersCardUrl && { votersCardUrl: formData.votersCardUrl }),
+      ...(formData.driversLicenseUrl && { driversLicenseUrl: formData.driversLicenseUrl }),
+      ...(formData.taxIdentificationNumberUrl && { taxIdentificationNumberUrl: formData.taxIdentificationNumberUrl }),
+      ...(formData.bvnUrl && { bvnUrl: formData.bvnUrl }),
+      ...(formData.identityDocumentsHeld && formData.identityDocumentsHeld.length > 0 && {
+        identityDocumentsHeld: formData.identityDocumentsHeld
+      }),
+
       ...(formData.story && { story: formData.story.trim() }),
       ...(formData.notes && { notes: formData.notes.trim() }),
     },
@@ -585,6 +737,9 @@ export function createPersonFromForm(
       ...(formData.currentTown && { currentTown: formData.currentTown.toUpperCase().trim() }),
       ...(formData.currentTownDivision && { currentTownDivision: formData.currentTownDivision.toUpperCase().trim() }),
       ...(formData.currentTownQuarter && { currentTownQuarter: formData.currentTownQuarter.toUpperCase().trim() }),
+      ...(formData.currentPoliticalWard && { currentPoliticalWard: formData.currentPoliticalWard.toUpperCase().trim() }),
+      ...(formData.currentIgboOrganizations && { currentIgboOrganizations: formData.currentIgboOrganizations.trim() }),
+      ...(formData.citizenshipStatus && { citizenshipStatus: formData.citizenshipStatus.toUpperCase().trim() }),
       ...(formData.currentClan && { currentClan: formData.currentClan.toUpperCase().trim() }),
       ...(formData.currentVillage && { currentVillage: formData.currentVillage.toUpperCase().trim() }),
       ...(formData.currentHamlet && { currentHamlet: formData.currentHamlet.toUpperCase().trim() }),

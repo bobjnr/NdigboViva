@@ -1,0 +1,336 @@
+{
+  "senatorialDistricts": {
+    "Anambra": [
+      "ANAMBRA CENTRAL",
+      "ANAMBRA NORTH",
+      "ANAMBRA SOUTH",
+      "ANMBRA CENTRAL"
+    ],
+    "Enugu": [
+      "ENUGU EAST",
+      "ENUGU NORTH",
+      "ENUGU WEST"
+    ],
+    "Abia": [
+      "ABIA NORTH",
+      "ABIA SOUTH"
+    ],
+    "Ebonyi": [
+      "EBONYI NORTH",
+      "EBONYI SOUTH"
+    ],
+    "Imo": [
+      "IMO EAST",
+      "IMO NORTH",
+      "IMO WEST"
+    ],
+    "Delta": [
+      "DELTA NORTH"
+    ],
+    "Bayelsa": [
+      "BAYELSA CENTRAL",
+      "BAYELSA WEST"
+    ],
+    "Cross-rivers": [
+      "RIVER SOUTH"
+    ],
+    "Rivers": [
+      "RIVERS EAST",
+      "RIVERS WEST"
+    ],
+    "Kogi": [
+      "KOGI CENTRAL",
+      "KOGI EAST"
+    ]
+  },
+  "federalConstituencies": {
+    "Anambra": [
+      "AGUATA",
+      "ANAMBRA EAST & ANAMBRA WEST",
+      "AWKA NORTH &       AWKA SOUTH",
+      "IHIALA",
+      "NJIKOKA/DUNUKOFIA /ANAOCHA",
+      "NNEWI NORTH/ NNEWI SOUTH/ EKWUSIGO",
+      "OGBARU",
+      "OYI/AYAMELUM"
+    ],
+    "Enugu": [
+      "ANINRI/AWGU/OJI RIVER",
+      "ENUGU EAST/ISIUZO",
+      "ENUGU NORTH/SOUTH",
+      "EZEAGU/UDI",
+      "IGBO-ETITI/UZO-UWANI",
+      "IGBO-EZE NORTH/UDENU",
+      "NKANU EAST & NKANU WEST",
+      "NSUKKA/IGBO-EZE SOUTH"
+    ],
+    "Abia": [
+      "ABA NORTH & ABA SOUTH",
+      "AROCHUKWU/OHAFIA",
+      "BENDE",
+      "ISUIKWUATO/UMUNNEOCHI",
+      "UKWA EAST & UKWA WEST"
+    ],
+    "Ebonyi": [
+      "ABAKILIKI/IZZI",
+      "EBONYI/OHAUKWU",
+      "EZZA NORTH/ISHIELU",
+      "EZZA SOUTH/IKWO"
+    ],
+    "Imo": [
+      "AHIAZU MBAISE/EZINIHITTE",
+      "IKEDURU/MBAITOLI",
+      "ISIALA MBANO/OKIGWE/ONUIMO",
+      "OGUTA/OHAJI-EGBEMA/ ORU WEST",
+      "ORLU/ORU EAST/ORSU"
+    ],
+    "Delta": [
+      "ANIOCHA NORTH/SOUTH",
+      "BOMADI/PATANI",
+      "BURUTU",
+      "ETHIOPE",
+      "IKA",
+      "ISOKO NORTH/SOUTH",
+      "NDOKWA/UKWANI",
+      "OKPE/SAPELE/UVWIE",
+      "UGHELU NORTH/SOUTH/UDU",
+      "WARRI"
+    ],
+    "Bayelsa": [
+      "SAGBAMA/EKEREMOR",
+      "SOUTHERN IJAW",
+      "YENAGOA/KOLOKUMA-OPOKUMA"
+    ],
+    "Cross-rivers": [
+      "AKAMKPA/BIASE",
+      "BEKWARRA/OBUDU/CALABAR SOUTH",
+      "CALABAR MUNICIPAL/ODUKPANI",
+      "IKOM/BOKI",
+      "OBUBRA/ETUNG",
+      "OGOJA/YALA",
+      "YAKURR/ABI"
+    ],
+    "Rivers": [
+      "ABUA /ODUAL",
+      "AHOADA EAST",
+      "AHOADA WEST",
+      "AKUKU-TORU",
+      "BONNY",
+      "DEGEMA",
+      "ETCHE",
+      "IKWERRE/EMOHUA",
+      "OBIO-AKPOR",
+      "OGBA/EGBEMA/NDONI",
+      "PORT HARCOURT"
+    ],
+    "Kogi": [
+      "AJAOKUTA",
+      "ANKPA/OMALA/OLAMABORO",
+      "DEKINA/BASSA",
+      "IDAH/IBAJI/IGALAMELA/OFU",
+      "KABBA/BUNU/IJIMU",
+      "LOKOJA/KOTON KARFE",
+      "OGORI/MAGONGO",
+      "OKEHI/ADAVI"
+    ]
+  },
+  "stateConstituenciesByState": {
+    "Anambra": [
+      "AGUATA I",
+      "AGUATA II",
+      "ANAMBRA EAST",
+      "ANAMBRA WEST",
+      "ANAOCHA I",
+      "ANAOCHA II",
+      "AWKA NORTH",
+      "AWKA SOUTH I",
+      "AWKA SOUTH II",
+      "AYAMELUM",
+      "DUNUKOFIA",
+      "EKWUSIGO",
+      "IHIALA 2",
+      "IHIALA I",
+      "NJIKOKA I",
+      "NJIKOKA II",
+      "NNEWI NORTH",
+      "NNEWI SOUTH I",
+      "NNEWI SOUTH II",
+      "OGBARU I",
+      "OGBARU II",
+      "OYI"
+    ],
+    "Enugu": [
+      "ANINRI",
+      "AWGU NORTH",
+      "AWGU SOUTH",
+      "ENUGU EAST I",
+      "ENUGU EAST II",
+      "ENUGU NORTH",
+      "ENUGU SOUTH I",
+      "ENUGU SOUTH II",
+      "EZEAGU",
+      "IGBO-ETITI EAST",
+      "IGBO-ETITI WEST",
+      "IGBO-EZE NORTH I",
+      "IGBO-EZE NORTH II",
+      "IGBO-EZE SOUTH",
+      "NKANU EAST",
+      "NKANU WEST",
+      "NSUKKA EAST",
+      "NSUKKA WEST",
+      "OJI RIVER",
+      "UDENU",
+      "UDI NORTH",
+      "UDI SOUTH",
+      "UZO-UWANI"
+    ],
+    "Abia": [
+      "ABA CENTRAL",
+      "ABA NORTH",
+      "ABA SOUTH",
+      "AROCHUKWU",
+      "BENDE NORTH",
+      "BENDE SOUTH",
+      "ISUIKWUATO",
+      "OHAFIA NORTH",
+      "UKWA EAST",
+      "UKWA WEST",
+      "UMUNNEOCHI"
+    ],
+    "Ebonyi": [
+      "ABAKALIKI NORTH",
+      "ABAKALIKI SOUTH",
+      "EBONYI NORTH EAST",
+      "EBONYI NORTH WEST",
+      "EZZA  SOUTH",
+      "EZZA NORTH EAST",
+      "EZZA NORTH WEST",
+      "IKWO NORTH",
+      "IKWO SOUTH",
+      "IZZI EAST",
+      "IZZI WEST",
+      "OHAUKWU NORTH",
+      "OHAUKWU SOUTH"
+    ],
+    "Imo": [
+      "AHIAZU MBAISE",
+      "EZINIHITTE",
+      "IKEDURU",
+      "ISIALA MBANO",
+      "MBAITOLI",
+      "OGUTA",
+      "OHAJI-EGBAMA",
+      "OKIGWE",
+      "ONUIMO",
+      "ORLU",
+      "ORSU",
+      "ORU EAST",
+      "ORU WEST"
+    ],
+    "Delta": [
+      "ANIOCHA NORTH",
+      "BOMADI",
+      "BURUTU",
+      "BURUTU NORTH",
+      "ETHIOPE EAST",
+      "ETHIOPE WEST",
+      "IKA NORTH EAST",
+      "IKA SOUTH",
+      "ISOKO NORTH",
+      "ISOKO SOUTH II",
+      "NDOKWA EAST",
+      "NDOKWA WEST",
+      "OKPE",
+      "PATANI",
+      "SAPELE",
+      "UDU",
+      "UGHELU NORTH I",
+      "UGHELU NORTH II",
+      "UGHELU SOUTH",
+      "UKWANI",
+      "UVWIE",
+      "WARRI NORTH",
+      "WARRI SOUTH I",
+      "WARRI SOUTH II",
+      "WARRI SOUTH-WEST"
+    ],
+    "Bayelsa": [
+      "EKEREMOR I",
+      "EKEREMOR II",
+      "KOLOKUMA-OPOKUMA I",
+      "SAGBAMA I",
+      "SAGBAMA II",
+      "SAGBAMA III",
+      "SOUTHERN IJAW I",
+      "SOUTHERN IJAW II",
+      "SOUTHERN IJAW III",
+      "SOUTHERN IJAW IV",
+      "YENAGOA I",
+      "YENAGOA II",
+      "YENAGOA III"
+    ],
+    "Cross-rivers": [
+      "ABI",
+      "AKAMKPA I",
+      "AKAMKPA II",
+      "BEKWARRA",
+      "BIASE",
+      "BOKI I",
+      "CALABAR MUNICIPAL",
+      "CALABAR SOUTH I",
+      "CALABAR SOUTH II",
+      "ETUNG",
+      "IKOM I",
+      "OBUBRA I",
+      "OBUDU",
+      "ODUKPANI",
+      "OGOJA",
+      "YAKURR I",
+      "YAKURR II",
+      "YALA I"
+    ],
+    "Rivers": [
+      "ABUA/ODUA",
+      "AHOADA",
+      "AHOADA EAST I",
+      "AHOADA WEST",
+      "AKUKU-TORU I",
+      "AKUKU-TORU II",
+      "BONNY",
+      "DEGEMA",
+      "EGBEMA",
+      "EMOHUA",
+      "ETCHE I",
+      "IKWERRE I",
+      "NDONI",
+      "OBIO-AKPOR I",
+      "OBIO-AKPOR II",
+      "OGBA",
+      "OKIRIKA",
+      "PORT HARCOURT I",
+      "PORT HARCOURT II",
+      "PORT HARCOURT III"
+    ],
+    "Kogi": [
+      "ADAVI",
+      "AJAOKUTA",
+      "ANKPA",
+      "BUNU",
+      "DEKINA",
+      "IBAJI",
+      "IDAH",
+      "IGALAMELA",
+      "IJIMU",
+      "KABBA",
+      "KOTON",
+      "LOKOJA I",
+      "LOKOJA II",
+      "MAGONGO",
+      "OFU",
+      "OGORI",
+      "OKEHI",
+      "OLAMABORO",
+      "OMALA"
+    ]
+  }
+}

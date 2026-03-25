@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { format } from 'date-fns';
-import { Clock, CheckCircle2, XCircle, AlertCircle, MapPin, Calendar, FileText } from 'lucide-react';
+import { Clock, CheckCircle2, XCircle, AlertCircle, MapPin, Calendar, FileText, Eye } from 'lucide-react';
 import { SubmissionRecord, SubmissionStatus } from '@/lib/submission-schema';
 
 interface SubmissionCardProps {
@@ -106,11 +106,15 @@ export default function SubmissionCard({ submission }: SubmissionCardProps) {
                 {/* Status Column (Desktop) */}
                 <div className="hidden md:flex flex-col items-end justify-between min-w-[120px]">
                     {getStatusBadge(status)}
-
-                    {/* Placeholder for future action button */}
-                    {/* <button className="text-sm text-brand-gold hover:text-amber-700 font-medium mt-auto">
-                        View Details →
-                    </button> */}
+                    <Link
+                        href={status === 'APPROVED' && submission.convertedPersonId
+                            ? `/search/record/${submission.convertedPersonId}`
+                            : `/search/submission/${submissionId}`}
+                        className="text-sm text-brand-gold hover:text-amber-700 font-medium mt-auto inline-flex items-center"
+                    >
+                        <Eye className="w-4 h-4 mr-1" />
+                        View
+                    </Link>
                 </div>
             </div>
 
@@ -125,6 +129,19 @@ export default function SubmissionCard({ submission }: SubmissionCardProps) {
                     <strong>Note from editor:</strong> {submission.adminNotes}
                 </div>
             )}
+
+            {/* View link (mobile) */}
+            <div className="mt-4 md:hidden pt-3 border-t border-gray-100">
+                <Link
+                    href={status === 'APPROVED' && submission.convertedPersonId
+                        ? `/search/record/${submission.convertedPersonId}`
+                        : `/search/submission/${submissionId}`}
+                    className="text-sm text-brand-gold hover:text-amber-700 font-medium inline-flex items-center"
+                >
+                    <Eye className="w-4 h-4 mr-1" />
+                    View this record
+                </Link>
+            </div>
         </div>
     );
 }

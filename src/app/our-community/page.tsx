@@ -79,7 +79,7 @@ export default function OurCommunityPage() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
                 <Link href="/search" className="block group h-full">
                   <div className="bg-amber-50 rounded-lg p-6 text-center h-full border border-amber-100 group-hover:shadow-lg group-hover:border-amber-300 transition-all cursor-pointer">
                     <div className="bg-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center shadow-sm">
@@ -88,6 +88,18 @@ export default function OurCommunityPage() {
                     <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-700">Search Records</h3>
                     <p className="text-gray-600 text-sm">
                       Search our public registry verified ancestors. Find your people.
+                    </p>
+                  </div>
+                </Link>
+
+                <Link href="/my-submissions" className="block group h-full">
+                  <div className="bg-amber-50 rounded-lg p-6 text-center h-full border border-amber-100 group-hover:shadow-lg group-hover:border-amber-300 transition-all cursor-pointer">
+                    <div className="bg-white p-4 rounded-full w-16 h-16 mx-auto mb-4 flex items-center justify-center shadow-sm">
+                      <FileText className="w-8 h-8 text-amber-600" />
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-2 group-hover:text-amber-700">My Records</h3>
+                    <p className="text-gray-600 text-sm">
+                      Track and manage your contributed ancestry records and submissions.
                     </p>
                   </div>
                 </Link>

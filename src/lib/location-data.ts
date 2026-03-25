@@ -1,6 +1,7 @@
 import genealogyHierarchy from './genealogy-hierarchy.json';
 import townsByLga from './towns-by-lga.json';
 import worldLocations from './world-locations.json';
+import dropdownData from './dropdown-data.json';
 
 // Nigerian States and their LGAs data structure
 export interface LocationData {
@@ -49,86 +50,25 @@ export interface GenealogyHierarchy {
 
 export const townHierarchy: GenealogyHierarchy = genealogyHierarchy as unknown as GenealogyHierarchy;
 
-// Nigerian States with their LGAs (focusing on Igbo states)
-export const nigerianStates: LocationData[] = [
-  {
-    state: "Abia",
-    lgas: [
-      "Aba North", "Aba South", "Arochukwu", "Bende", "Ikwuano", "Isiala Ngwa North",
-      "Isiala Ngwa South", "Isuikwuato", "Obingwa", "Ohafia", "Osisioma", "Ugwunagbo",
-      "Ukwa East", "Ukwa West", "Umu Nneochi", "Umuahia North", "Umuahia South"
-    ]
-  },
-  {
-    state: "Anambra",
-    lgas: [
-      "Aguata", "Anambra East", "Anambra West", "Anaocha", "Awka North", "Awka South",
-      "Ayamelum", "Dunukofia", "Ekwusigo", "Idemili North", "Idemili South", "Ihiala",
-      "Njikoka", "Nnewi North", "Nnewi South", "Ogbaru", "Onitsha North", "Onitsha South",
-      "Orumba North", "Orumba South", "Oyi"
-    ]
-  },
-  {
-    state: "Ebonyi",
-    lgas: [
-      "Abakaliki", "Afikpo North", "Afikpo South", "Ebonyi", "Ezza North", "Ezza South",
-      "Ikwo", "Ishielu", "Ivo", "Izzi", "Ohaozara", "Ohaukwu", "Onicha"
-    ]
-  },
-  {
-    state: "Enugu",
-    lgas: [
-      "Aninri", "Awgu", "Enugu East", "Enugu North", "Enugu South", "Ezeagu", "Igbo Etiti",
-      "Igbo Eze North", "Igbo Eze South", "Isi Uzo", "Nkanu East", "Nkanu West", "Nsukka",
-      "Oji River", "Udenu", "Udi", "Uzo Uwani"
-    ]
-  },
-  {
-    state: "Imo",
-    lgas: [
-      "Aboh Mbaise", "Ahiazu Mbaise", "Ehime Mbano", "Ezinihitte Mbaise", "Ideato North",
-      "Ideato South", "Ihitte Uboma", "Ikeduru", "Isiala Mbano", "Isu", "Mbaitoli",
-      "Ngor Okpala", "Njaba", "Nkwerre", "Nwangele", "Obowo", "Oguta", "Ohaji Egbema",
-      "Okigwe", "Onuimo", "Orlu", "Orsu", "Oru East", "Oru West", "Owerri North",
-      "Owerri Urban", "Owerri West"
-    ]
-  },
-  {
-    state: "Delta",
-    lgas: [
-      "Aniocha North", "Aniocha South", "Bomadi", "Burutu", "Ethiope East", "Ethiope West",
-      "Ika North East", "Ika South", "Isoko North", "Isoko South", "Ndokwa East", "Ndokwa West",
-      "Okpe", "Oshimili North", "Oshimili South", "Patani", "Sapele", "Udu", "Ughelli North",
-      "Ughelli South", "Ukwuani", "Uvwie", "Warri North", "Warri South", "Warri South West"
-    ]
-  },
-  {
-    state: "Rivers",
-    lgas: [
-      "Abua Odual", "Ahoada East", "Ahoada West", "Akuku Toru", "Andoni", "Asari Toru",
-      "Bonny", "Degema", "Eleme", "Emohua", "Etche", "Gokana", "Ikwerre", "Khana",
-      "Obio Akpor", "Ogba Egbema Ndoni", "Ogu Bolo", "Okrika", "Omuma", "Opobo Nkoro",
-      "Oyigbo", "Port Harcourt", "Tai"
-    ]
-  }
-];
+// Nigerian States with their LGAs (from dropdown data CSVs)
+export const nigerianStates: LocationData[] = (dropdownData as { nigerianStates: LocationData[] }).nigerianStates;
 
-// Complete towns data extracted from the genealogy database
-export const townsData: { [lga: string]: string[] } = townsByLga as { [lga: string]: string[] };
+// Towns by LGA only. Do not use wards as towns — Town dropdown must show towns, not political wards.
+// LGAs not in this list will get an empty Town dropdown (form falls back to free-text input).
+export const townsData: { [lga: string]: string[] } = { ...(townsByLga as { [lga: string]: string[] }) };
+
+// Political wards by LGA (from dropdown data CSVs)
+export const wardsData: { [lga: string]: string[] } = { ...(dropdownData as { wardsData: { [lga: string]: string[] } }).wardsData };
 
 // Sample villages data (this would be much more comprehensive in a real implementation)
 export const villagesData: { [town: string]: string[] } = {};
 
-// Countries and Continents data from world-locations.json
-export const continents = Object.keys(worldLocations.continentCountries);
+// Continents and countries from dropdown data CSVs
+export const continents: string[] = (dropdownData as { continents: string[] }).continents;
+export const continentCountries: { [continent: string]: string[] } = (dropdownData as { continentCountries: { [continent: string]: string[] } }).continentCountries;
+export const countries: string[] = Object.values(continentCountries).flat();
 
-// Flatten all countries from all continents
-export const countries = Object.values(worldLocations.continentCountries).flat();
-
-// Mapping of continents to their countries
-export const continentCountries: { [continent: string]: string[] } = worldLocations.continentCountries;
-
-// Mapping of countries to their states
+// Mapping of countries to their states (Nigeria from dropdown; others from world-locations)
 export const countryStates: { [country: string]: LocationData[] } = {
   ...worldLocations.countryStates,
   "Nigeria": nigerianStates,
@@ -150,4 +90,6 @@ export interface GenealogyFormData {
   email: string;
   phone: string;
   additionalInfo: string;
+  originNationalityCustom?: string;
+  dualCitizenshipCountry?: string;
 }

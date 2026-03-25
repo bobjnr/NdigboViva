@@ -1,0 +1,12 @@
+id,name,countryId,continentId,type,officialOrder
+abia,Abia,nigeria,africa,state,1
+anambra,Anambra,nigeria,africa,state,2
+enugu,Enugu,nigeria,africa,state,3
+ebonyi,Ebonyi,nigeria,africa,state,4
+imo,Imo,nigeria,africa,state,5
+delta,Delta,nigeria,africa,state,6
+akwa_ibom,Akwa Ibom,nigeria,africa,state,7
+bayelsa,Bayelsa,nigeria,africa,state,8
+cross_river,Cross River,nigeria,africa,state,9
+rivers,Rivers,nigeria,africa,state,10
+kogi,Kogi,nigeria,africa,state,11

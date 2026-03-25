@@ -1,0 +1,31 @@
+id,name,continentId,officialOrder
+north_africa,North Africa,africa,1
+west_africa,West Africa,africa,2
+central_africa,Central Africa,africa,3
+east_africa,East Africa,africa,4
+southern_africa,Southern Africa,africa,5
+,,,
+central_asia,Central Asia,asia,1
+east_asia,East Asia,asia,2
+south_asia,South Asia,asia,3
+southeast_asia,Southeast Asia,asia,4
+west_asia,West Asia,asia,5
+,,,
+eastern_europe,Eastern Europe,europe,1
+northern_europe,Northern Europe,europe,2
+southern_europe,Southern Europe,europe,3
+western_europe,Western Europe,europe,4
+,,,
+central_america,Central America,north_america,1
+caribbean,Caribbean,north_america,2
+northern_america,Northern America,north_america,3
+,,,
+andes_region,Andes Region,south_america,1
+southern_cone,Southern Cone,south_america,2
+brazil_region,Brazil Region,south_america,3
+northern_south_america,Northern South America,south_america,4
+,,,
+australia_new_zealand,Australia and New Zealand,oceania,1
+melanesia,Melanesia,oceania,2
+micronesia,Micronesia,oceania,3
+polynesia,Polynesia,oceania,4

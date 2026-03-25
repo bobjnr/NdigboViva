@@ -62,10 +62,13 @@ export interface GenealogyFormSubmission {
   currentStateConstituency?: string;
   currentTownDivision?: string;
   currentTownQuarter?: string;
+  currentPoliticalWard?: string; // New
+  currentIgboOrganizations?: string; // New
   currentClan?: string;
   currentKindred?: string;
   currentHamlet?: string;
   currentUmunna?: string;
+  citizenshipStatus?: string; // New
 
   // Origin Location (Ancestral)
   originState: string;
@@ -78,6 +81,12 @@ export interface GenealogyFormSubmission {
   // New hierarchical fields
   originContinent?: string;
   originSubContinent?: string;
+  /** Economic region within the continent (e.g. West Africa) */
+  originEconomicRegion?: string;
+  /** Cultural region within the continent (e.g. Arab World) */
+  originCulturalRegion?: string;
+  /** Geopolitical bloc or organization (e.g. ECOWAS, African Union) */
+  originGeopoliticalBloc?: string;
   originNationality?: string;
   originRegion?: string;
   originSubRegion?: string;
@@ -85,6 +94,12 @@ export interface GenealogyFormSubmission {
   originFederalConstituency?: string;
   originStateConstituency?: string;
   originTownDivision?: string;
+  originTownLevel1?: string;
+  originTownLevel2?: string;
+  originTownLevel3?: string;
+  originTownLevel4?: string;
+  /** Political ward (e.g. Ward 1) - after Town Level 4, before Village */
+  originWard?: string;
   originHamlet?: string;
   originKindred?: string;
   originUmunna?: string;
@@ -93,6 +108,8 @@ export interface GenealogyFormSubmission {
   kindred: string;
   familyName: string;
   personalName: string;
+  fatherName?: string; // New
+  motherName?: string; // New
   umunna?: string;
 
   // Contact Information
@@ -100,7 +117,9 @@ export interface GenealogyFormSubmission {
   phone?: string;
 
   // Additional Information
-  additionalInfo?: string;
+  additionalInfo?: string; // To be removed from UI but kept in type for compatibility/notes mapping
+  originNationalityCustom?: string;
+  dualCitizenshipCountry?: string;
 
   // Extended Family Members
   extendedFamilyMembers?: {

@@ -63,4 +63,5 @@ export interface PublicPersonRecord {
 
     // Calculated/Derived fields for UI
     originString: string; // e.g., "Nri, Anambra State"
+    registryUrl?: string; // Optional link to view record in official registry (e.g. Gramps Web)
 }

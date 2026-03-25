@@ -1,9 +1,10 @@
-import { Suspense } from 'react';
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { searchAllRecords } from '@/lib/search-service';
 import SearchBox from '@/components/search/SearchBox';
 import SearchResultCard from '@/components/search/SearchResultCard';
 import NoResultState from '@/components/search/NoResultState';
+import { FileText } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: 'Search Ancestry Records | Ndigbo Viva',
@@ -26,9 +27,17 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
             {/* Header / Search Hero */}
             <div className="bg-white border-b border-gray-100 mb-8">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                    <h1 className="text-3xl font-bold text-center text-gray-900 mb-8">
+                    <h1 className="text-3xl font-bold text-center text-gray-900 mb-2">
                         Search Ancestry Records
                     </h1>
+                    <p className="text-center text-gray-600 mb-6">
+                        Find records by name. You can also{' '}
+                        <Link href="/my-submissions" className="text-brand-gold hover:text-amber-700 font-medium inline-flex items-center">
+                            <FileText className="w-4 h-4 mr-1" />
+                            view your own records
+                        </Link>
+                        {' '}if you’ve submitted any.
+                    </p>
                     <SearchBox />
                 </div>
             </div>

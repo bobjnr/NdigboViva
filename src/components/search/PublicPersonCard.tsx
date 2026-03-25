@@ -40,7 +40,7 @@ export default function PublicPersonCard({ person }: PublicPersonCardProps) {
                         )}
                     </div>
 
-                    {(person.cultural.titles && person.cultural.titles.length > 0) && (
+                    {(person.cultural?.titles && person.cultural.titles.length > 0) && (
                         <div className="flex flex-wrap gap-2 mt-3">
                             {person.cultural.titles.slice(0, 3).map((title, idx) => (
                                 <span

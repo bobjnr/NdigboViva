@@ -8,10 +8,8 @@
  */
 
 import { NextRequest, NextResponse } from 'next/server';
-import { getSubmissionById, updateSubmissionStatus } from '@/lib/submission-database';
-// Use the underlying createPerson function that writes to 'persons'
-import { createPerson } from '@/lib/person-database';
-import { createPersonFromForm } from '@/lib/person-schema';
+import { getSubmissionByIdAdmin, updateSubmissionStatusAdmin } from '@/lib/submission-database-admin';
+import { createPersonAdmin, publishPersonAdmin } from '@/lib/person-database-admin';
 
 export async function POST(request: NextRequest) {
     try {
@@ -25,11 +23,19 @@ export async function POST(request: NextRequest) {
             );
         }
 
-        // 1. Get the submission
-        const submission = await getSubmissionById(submissionId);
+        // 1. Get the submission (Admin reads from FIREBASE_FIRESTORE_DATABASE_ID or igbo-genealogy-db)
+        const projectId = process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID || process.env.FIREBASE_PROJECT_ID;
+        const databaseId = process.env.FIREBASE_FIRESTORE_DATABASE_ID || 'igbo-genealogy-db';
+        console.log('[approve] Looking up submission', { submissionId, projectId, databaseId });
+
+        const submission = await getSubmissionByIdAdmin(submissionId);
         if (!submission) {
+            console.error('[approve] Submission not found', { submissionId, projectId, databaseId });
             return NextResponse.json(
-                { success: false, error: 'Submission not found' },
+                {
+                    success: false,
+                    error: 'Submission not found. In production, ensure the approve API uses the same Firebase project and database as where submissions are stored (same project as NEXT_PUBLIC_FIREBASE_PROJECT_ID; set FIREBASE_FIRESTORE_DATABASE_ID=(default) if you use the default Firestore database).',
+                },
                 { status: 404 }
             );
         }
@@ -49,7 +55,7 @@ export async function POST(request: NextRequest) {
             verified: true
         };
 
-        const personResult = await createPerson(personData, reviewerId || 'ADMIN');
+        const personResult = await createPersonAdmin(personData, reviewerId || 'ADMIN');
 
         if (!personResult.success || !personResult.personId) {
             throw new Error(personResult.error || 'Failed to create person record');
@@ -65,12 +71,13 @@ export async function POST(request: NextRequest) {
             // We don't fail the whole request, but we log it. Admin might need to manually publish later.
         }
 
-        // 4. Update Submission Status
-        const updateResult = await updateSubmissionStatus(
+        // 4. Update Submission Status (with convertedPersonId for search linking)
+        const updateResult = await updateSubmissionStatusAdmin(
             submissionId,
             'APPROVED',
             `Approved, Converted to Person ID: ${personResult.personId}, and Published to Search.`,
-            reviewerId
+            reviewerId,
+            personResult.personId
         );
 
         if (!updateResult.success) {

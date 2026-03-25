@@ -1,21 +1,26 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useCallback, Suspense } from 'react'
 import Link from 'next/link'
+import { useSearchParams } from 'next/navigation'
 import { getSubmissions } from '@/lib/submission-database'
 import { SubmissionRecord, SubmissionStatus } from '@/lib/submission-schema'
 import { FileText, CheckCircle, XCircle, Clock, AlertCircle, Eye } from 'lucide-react'
 
-export default function SubmissionsPage() {
+const VALID_FILTERS: (SubmissionStatus | 'ALL')[] = ['ALL', 'PENDING', 'APPROVED', 'NEEDS_CLARIFICATION', 'REJECTED']
+
+function SubmissionsContent() {
+    const searchParams = useSearchParams()
+    const filterParam = searchParams.get('filter')
+    const initialFilter = VALID_FILTERS.includes(filterParam as SubmissionStatus | 'ALL')
+        ? (filterParam as SubmissionStatus | 'ALL')
+        : 'ALL'
+
     const [submissions, setSubmissions] = useState<SubmissionRecord[]>([])
     const [loading, setLoading] = useState(true)
-    const [filter, setFilter] = useState<SubmissionStatus | 'ALL'>('ALL')
+    const [filter, setFilter] = useState<SubmissionStatus | 'ALL'>(initialFilter)
 
-    useEffect(() => {
-        loadSubmissions()
-    }, [filter])
-
-    async function loadSubmissions() {
+    const loadSubmissions = useCallback(async () => {
         setLoading(true)
         try {
             const data = await getSubmissions(filter === 'ALL' ? undefined : filter)
@@ -25,7 +30,20 @@ export default function SubmissionsPage() {
         } finally {
             setLoading(false)
         }
-    }
+    }, [filter])
+
+    useEffect(() => {
+        const nextFilter =
+            filterParam && VALID_FILTERS.includes(filterParam as SubmissionStatus | 'ALL')
+                ? (filterParam as SubmissionStatus | 'ALL')
+                : 'ALL'
+        setFilter(nextFilter)
+    }, [filterParam])
+
+    useEffect(() => {
+        loadSubmissions()
+    }, [loadSubmissions])
+
 
     const getStatusColor = (status: SubmissionStatus) => {
         switch (status) {
@@ -60,17 +78,17 @@ export default function SubmissionsPage() {
 
                 {/* Filters */}
                 <div className="flex gap-2 mb-6">
-                    {(['ALL', 'PENDING', 'APPROVED', 'NEEDS_CLARIFICATION', 'REJECTED'] as const).map((status) => (
-                        <button
+                    {VALID_FILTERS.map((status) => (
+                        <Link
                             key={status}
-                            onClick={() => setFilter(status)}
+                            href={`/admin/submissions${status === 'ALL' ? '' : `?filter=${status}`}`}
                             className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${filter === status
-                                    ? 'bg-brand-gold text-white shadow-md'
-                                    : 'bg-white text-gray-600 hover:bg-gray-100'
+                                ? 'bg-brand-gold text-white shadow-md'
+                                : 'bg-white text-gray-600 hover:bg-gray-100'
                                 }`}
                         >
                             {status.replace('_', ' ')}
-                        </button>
+                        </Link>
                     ))}
                 </div>
 
@@ -79,7 +97,9 @@ export default function SubmissionsPage() {
                     {loading ? (
                         <div className="p-8 text-center text-gray-500">Loading submissions...</div>
                     ) : submissions.length === 0 ? (
-                        <div className="p-8 text-center text-gray-500">No submissions found.</div>
+                        <div className="p-8 text-center text-gray-500">
+                            {filter === 'ALL' ? 'No submissions found.' : `No ${filter.replace('_', ' ').toLowerCase()} submissions.`}
+                        </div>
                     ) : (
                         <table className="min-w-full divide-y divide-gray-200">
                             <thead className="bg-gray-50">
@@ -105,7 +125,7 @@ export default function SubmissionsPage() {
                                             <div className="text-sm text-gray-500">{sub.data.gender}</div>
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                            {sub.data.town}, {sub.data.state}
+                                            {sub.data.originTown || sub.data.town || '—'}, {sub.data.originState || sub.data.state || '—'}
                                         </td>
                                         <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                             <div>{sub.data.submitterEmail}</div>
@@ -134,5 +154,23 @@ export default function SubmissionsPage() {
                 </div>
             </div>
         </div>
+    )
+}
+
+export default function SubmissionsPage() {
+    return (
+        <Suspense fallback={
+            <div className="min-h-screen bg-gray-50 p-8">
+                <div className="max-w-7xl mx-auto">
+                    <div className="flex justify-between items-center mb-8">
+                        <h1 className="text-3xl font-bold text-gray-900">Genealogy Submissions</h1>
+                        <Link href="/admin" className="text-gray-600 hover:text-gray-900">&larr; Back to Dashboard</Link>
+                    </div>
+                    <div className="bg-white rounded-lg shadow p-8 text-center text-gray-500">Loading...</div>
+                </div>
+            </div>
+        }>
+            <SubmissionsContent />
+        </Suspense>
     )
 }

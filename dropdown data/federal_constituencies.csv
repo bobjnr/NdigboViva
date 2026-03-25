@@ -1,0 +1,361 @@
+federal_constituency_id,federal_constituency_name,state_id
+FC_001_AB,Aba North/Aba South,ST_AB
+FC_002_AB,Arochukwu/Ohafia,ST_AB
+FC_003_AB,Bende,ST_AB
+FC_004_AB,Isiala Ngwa North/South,ST_AB
+FC_005_AB,Isuikwuato/Umunneochi,ST_AB
+FC_006_AB,Obingwa/Ugwunagbo/Osisioma,ST_AB
+FC_007_AB,Umuahia North/Umuahia South/Ikwuano,ST_AB
+FC_008_AB,Ukwa East/Ukwa West,ST_AB
+FC_009_AD,Demsa/Numan/Lamurde,ST_AD
+FC_010_AD,Fufore/Song,ST_AD
+FC_011_AD,Jada/Ganye/Mayo Belwa/Toungo,ST_AD
+FC_012_AD,Hong/Gombi,ST_AD
+FC_013_AD,Guyuk/Shelleng,ST_AD
+FC_014_AD,Michika/Madagali,ST_AD
+FC_015_AD,Mubi North/Mubi South/Maiha,ST_AD
+FC_016_AD,Yola North/Yola South/Girei,ST_AD
+FC_027_AN,Anambra East/West,ST_AN
+FC_028_AN,Onitsha North/Onitsha South,ST_AN
+FC_029_AN,Ogbaru,ST_AN
+FC_030_AN,Aguata,ST_AN
+FC_031_AN,Oyi/Ayamelum,ST_AN
+FC_032_AN,Awka North/South,ST_AN
+FC_033_AN,Njikoka/Dunkofia/Anaocha,ST_AN
+FC_034_AN,Idemili North/South,ST_AN
+FC_035_AN,Ihiala,ST_AN
+FC_036_AN,Nnewi North/Nnewi South/Ekwusigo,ST_AN
+FC_037_AN,Orumba North/Orumba South,ST_AN
+FC_017_AK,Abak/Etim Ekpo/Ika,ST_AK
+FC_018_AK,Eket/Onna/Esit Eket/Ibeno,ST_AK
+FC_019_AK,Etinan/Nsit Ibom/Nsit Ubium,ST_AK
+FC_020_AK,Ikono/Ini,ST_AK
+FC_021_AK,Ikot Abasi/Mkpat Enin/Eastern Obolo,ST_AK
+FC_022_AK,Ikot Ekpene/Essien Udim/Obot Akara,ST_AK
+FC_023_AK,Itu/Ibiono Ibom,ST_AK
+FC_024_AK,Oron/Mbo/Okobo/Udung Uko/Urue-Offong/Oruko,ST_AK
+FC_025_AK,Ukanafun/Oruko Anam,ST_AK
+FC_026_AK,Uyo/Uruan/Nsit Atai/Ibesikpo Asutan,ST_AK
+FC_038_BA,Alkaleri/Kirfi,ST_BA
+FC_039_BA,Bauchi,ST_BA
+FC_040_BA,Bogoro/Dass/Tafawa Balewa,ST_BA
+FC_041_BA,Toro,ST_BA
+FC_042_BA,Ningi/Warji,ST_BA
+FC_043_BA,Darazo/Gunjuwa,ST_BA
+FC_044_BA,Misau/Dambam,ST_BA
+FC_045_BA,Zaki,ST_BA
+FC_046_BA,Gamawa,ST_BA
+FC_047_BA,Jama'are/Itas-Gadau,ST_BA
+FC_048_BA,Shira/Giade,ST_BA
+FC_049_BA,Katagum,ST_BA
+FC_050_BY,Brass/Nembe,ST_BY
+FC_051_BY,Ogbia,ST_BY
+FC_052_BY,Sagbama/Ekeremor,ST_BY
+FC_053_BY,Southern Ijaw,ST_BY
+FC_054_BY,Yenagoa/Kolokuma/Opokuma,ST_BY
+FC_055_BN,Ado/Obadigbo/Okpokwu,ST_BE
+FC_056_BN,Apa/Agatu,ST_BE
+FC_057_BN,Buruku,ST_BE
+FC_058_BN,Gboko/Tarka,ST_BE
+FC_059_BN,Guma/Makurdi,ST_BE
+FC_060_BN,Gwer East/Gwer West,ST_BE
+FC_061_BN,Katsina-Ala/Ukum/Logo,ST_BE
+FC_062_BN,Konshisha/Vandeikya,ST_BE
+FC_063_BN,Kwande/Ushongo,ST_BE
+FC_064_BN,Oju/Obi,ST_BE
+FC_065_BN,Otukpo/Ohimini,ST_BE
+FC_066_BO,Askira-Uba/Hawul,ST_BO
+FC_067_BO,Bama/Ngala/Kala-Balge,ST_BO
+FC_068_BO,Biu/Kwaya-Kusar/Shani/Bayo,ST_BO
+FC_069_BO,Dikwa/Mafa/Konduga,ST_BO
+FC_070_BO,Damboa/Gwoza/Chibok,ST_BO
+FC_071_BO,Kaga/Gubio/Magumeri,ST_BO
+FC_072_BO,Monguno/Nganzai/Marte,ST_BO
+FC_073_BO,Kukawa/Mobbar/Abadam/Guzamali,ST_BO
+FC_074_BO,Maiduguri Metropolitan,ST_BO
+FC_075_BO,Jere,ST_BO
+FC_076_CR,Yakurr/Abi,ST_CR
+FC_077_CR,Akamkpa/Biase,ST_CR
+FC_078_CR,Boki/Ikom,ST_CR
+FC_079_CR,Calabar South/Akpabuyo/Bakassi,ST_CR
+FC_080_CR,Calabar Municipal/Odukpani,ST_CR
+FC_081_CR,Obanliku/Obudu/Bekwarra,ST_CR
+FC_082_CR,Obubra/Etung,ST_CR
+FC_083_CR,Ogoja/Yala,ST_CR
+FC_084_DT,Aniocha North/Aniocha South/Oshimili North/Oshimili South,ST_DE
+FC_085_DT,Bomadi/Patani,ST_DE
+FC_086_DT,Ethiope East/Ethiope West,ST_DE
+FC_087_DT,Ika North East/Ika South,ST_DE
+FC_088_DT,Isoko North/Isoko South,ST_DE
+FC_089_DT,Ndokwa East/Ndokwa West/Ukwuani,ST_DE
+FC_090_DT,Okpe/Sapele/Uvwie,ST_DE
+FC_091_DT,Burutu,ST_DE
+FC_092_DT,Ughelli North/Ughelli South/Udu,ST_DE
+FC_093_DT,Warri North/Warri South/Warri South West,ST_DE
+FC_094_EB,Ebonyi/Ohaukwu,ST_EB
+FC_095_EB,Abakaliki/Izzi,ST_EB
+FC_096_EB,Ezza North/Ishielu,ST_EB
+FC_097_EB,Ezza South/Ikwo,ST_EB
+FC_098_EB,Ivo-Ohaozara/Onicha,ST_EB
+FC_099_EB,Afikpo North/Afikpo South,ST_EB
+FC_100_ED,Akoko-Edo,ST_ED
+FC_101_ED,Esan Central/Esan South/Igueben,ST_ED
+FC_102_ED,Esan North East/Esan South East,ST_ED
+FC_103_ED,Etsako East/Etsako West/Etsako Central,ST_ED
+FC_104_ED,Egor/Ikpoba-Okha,ST_ED
+FC_105_ED,Oredo,ST_ED
+FC_106_ED,Orhionmwon/Uhunmwonde,ST_ED
+FC_107_ED,Ovia North East/Ovia South West,ST_ED
+FC_108_ED,Owan East/Owan West,ST_ED
+FC_109_EK,Ado Ekiti/Irepodun-Ifelodun,ST_EK
+FC_110_EK,Ekiti South West/Ikere/Orun/Ise,ST_EK
+FC_111_EK,Emure/Gboyin/Ekiti East,ST_EK
+FC_112_EK,Ido/Osi/Moba/Ilejemeje,ST_EK
+FC_113_EK,Ijero/Ekiti West/Efon,ST_EK
+FC_114_EK,Ikole/Oye,ST_EK
+FC_115_EN,Aniniri/Awgu/Oji River,ST_EN
+FC_116_EN,Enugu East/Isi Uzo,ST_EN
+FC_117_EN,Enugu North/Enugu South,ST_EN
+FC_118_EN,Ezeagu/Udi,ST_EN
+FC_119_EN,Igbo-Etiti/Uzo-Uwani,ST_EN
+FC_120_EN,Igbo-Eze North/Udenu,ST_EN
+FC_121_EN,Nkanu East/Nkanu West,ST_EN
+FC_122_EN,Nsukka/Igbo-Eze South,ST_EN
+FC_123_GM,Akko,ST_GO
+FC_124_GM,Yamaltu/Deba,ST_GO
+FC_125_GM,Balanga/Billiri,ST_GO
+FC_126_GM,Kaltungo/Shongom,ST_GO
+FC_127_GM,Gombe/Kwami/Funakaye,ST_GO
+FC_128_GM,Dukku/Nafada,ST_GO
+FC_129_IM,Ehime Mbano/Ihite-Uboma/Obowo,ST_IM
+FC_130_IM,Isiala Mbano/Okigwe/Onuimo,ST_IM
+FC_131_IM,Ideato North/Ideato South,ST_IM
+FC_132_IM,Isu/Njaba/Nkwerre/Nwagele,ST_IM
+FC_133_IM,Oguta/Ohajji-Egbema/Oru West,ST_IM
+FC_134_IM,Oru East/Orsu/Orlu,ST_IM
+FC_135_IM,Aboh Mbaise/Ngor-Okpala,ST_IM
+FC_136_IM,Ahiazu Mbaise/Ezinihitte-Mbaise,ST_IM
+FC_137_IM,Ikeduru/Mbaitoli,ST_IM
+FC_138_IM,Owerri Municipal/Owerri North/Owerri West,ST_IM
+FC_139_JG,Babura/Garki,ST_JI
+FC_140_JG,Birnin Kudu/Buji,ST_JI
+FC_141_JG,Birniwa Guri/Kirikasamma,ST_JI
+FC_142_JG,Dutse/Kiyawa,ST_JI
+FC_143_JG,Gwaram,ST_JI
+FC_144_JG,Gumel/Maigatari/Sule Tankarkar/Gagarawa,ST_JI
+FC_145_JG,Hadejia/Kafin Hausa,ST_JI
+FC_146_JG,Jahun/Miga,ST_JI
+FC_147_JG,Mallam Madori/Kaugama,ST_JI
+FC_148_JG,Kazaure/Roni/Gwiwa/Yankwashi,ST_JI
+FC_149_JG,Ringim/Taura,ST_JI
+FC_150_KD,Kaduna North,ST_KD
+FC_151_KD,Zaria,ST_KD
+FC_152_KD,Soba,ST_KD
+FC_153_KD,Igabi,ST_KD
+FC_154_KD,Ikara/Kubau,ST_KD
+FC_155_KD,Makarfi/Kudan,ST_KD
+FC_156_KD,Lere,ST_KD
+FC_157_KD,Kachia/Kagarko,ST_KD
+FC_158_KD,Chikun/Kajuru,ST_KD
+FC_159_KD,Jema'a/Sanga,ST_KD
+FC_160_KD,Birnin Gwari/Giwa,ST_KD
+FC_161_KD,Sabon Gari,ST_KD
+FC_162_KD,Kaduna South,ST_KD
+FC_163_KD,Kaura,ST_KD
+FC_164_KD,Kauru,ST_KD
+FC_165_KD,Zangon Kataf/Jaba,ST_KD
+FC_166_KN,Albasu/Gaya/Ajingi,ST_KN
+FC_167_KN,Bagwai/Shanono,ST_KN
+FC_168_KN,Bebeji/Kiru,ST_KN
+FC_169_KN,Bichi,ST_KN
+FC_170_KN,Rano/Bunkure/Kibiya,ST_KN
+FC_171_KN,Dala,ST_KN
+FC_172_KN,Gwale,ST_KN
+FC_173_KN,Dambatta/Makoda,ST_KN
+FC_174_KN,Dawakin Kudu/Warawa,ST_KN
+FC_175_KN,Dawakin Tofa/Tofa/Rimin Gado,ST_KN
+FC_176_KN,Doguwa/Tudun Wada,ST_KN
+FC_177_KN,Gezawa/Gabasawa,ST_KN
+FC_178_KN,Gwarzo/Kabo,ST_KN
+FC_179_KN,Kano Municipal,ST_KN
+FC_180_KN,Tarauni,ST_KN
+FC_181_KN,Karaye/Rogo,ST_KN
+FC_182_KN,Kumbotso,ST_KN
+FC_183_KN,Kura/Madobi/Garun Mallam,ST_KN
+FC_184_KN,Nasarawa,ST_KN
+FC_185_KN,Fagge,ST_KN
+FC_186_KN,Sumaila/Takai,ST_KN
+FC_187_KN,Minjibir/Ungogo,ST_KN
+FC_188_KN,Tsanyawa/Kunchi,ST_KN
+FC_189_KN,Wudil/Garko,ST_KN
+FC_190_KT,Bakori/Danja,ST_KT
+FC_191_KT,Batagarawa/Charanchi/Rimi,ST_KT
+FC_192_KT,Batsari/Safana/Danmusa,ST_KT
+FC_193_KT,Bindawa/Mani,ST_KT
+FC_194_KT,Daura/Sandamu/Mai'adua,ST_KT
+FC_195_KT,Dutsin-Ma/Kurfi,ST_KT
+FC_196_KT,Faskari/Kankara/Sabuwa,ST_KT
+FC_197_KT,Funtua/Dandume,ST_KT
+FC_198_KT,Ingawa/Kankia/Kusada,ST_KT
+FC_199_KT,Jibia/Kaita,ST_KT
+FC_200_KT,Malumfashi/Kafur,ST_KT
+FC_201_KT,Katsina,ST_KT
+FC_202_KT,Mashi/Dutsi,ST_KT
+FC_203_KT,Matazu/Musawa,ST_KT
+FC_204_KT,Zango/Baure,ST_KT
+FC_205_KB,Arewa/Dandi,ST_KE
+FC_206_KB,Argungu/Augie,ST_KE
+FC_207_KB,Bagudo/Suru,ST_KE
+FC_208_KB,Bunza/Birnin Kebbi/Kalgo,ST_KE
+FC_209_KB,Aliero/Gwandu/Jega,ST_KE
+FC_210_KB,Koko-Besse/Maiyama,ST_KE
+FC_211_KB,Fakai/Sakaba/Wasagu/Danko/Zuru,ST_KE
+FC_212_KB,Ngaski/Shanga/Yauri,ST_KE
+FC_213_KG,Adavi/Okehi,ST_KO
+FC_214_KG,Ankpa/Omala/Olamabaro,ST_KO
+FC_215_KG,Bassa/Dekina,ST_KO
+FC_216_KG,Idah/Igalamela Odolu/Ibaji/Ofu,ST_KO
+FC_217_KG,Ijumu/Kabba-Bunu,ST_KO
+FC_218_KG,Ajaokuta,ST_KO
+FC_219_KG,Lokoja/Koton Karfe,ST_KO
+FC_220_KG,Okene/Ogori-Magongo,ST_KO
+FC_221_KG,Yagba East/Yagba West/Mopamuro,ST_KO
+FC_222_KW,Baruten/Kaima,ST_KW
+FC_223_KW,Edu/Moro/Pategi,ST_KW
+FC_224_KW,Ekiti/Isin/Irepodun/Oke-Ero,ST_KW
+FC_225_KW,Ilorin East/Ilorin South,ST_KW
+FC_226_KW,Ilorin West/Asa,ST_KW
+FC_227_KW,Ifelodun/Offa/Oyun,ST_KW
+FC_228_LA,Agege,ST_LA
+FC_229_LA,Ifako-Ijaiye,ST_LA
+FC_230_LA,Alimosho,ST_LA
+FC_231_LA,Badagry,ST_LA
+FC_232_LA,Epe,ST_LA
+FC_233_LA,Ibeju-Lekki,ST_LA
+FC_234_LA,Eti-Osa,ST_LA
+FC_235_LA,Apapa,ST_LA
+FC_236_LA,Ikeja,ST_LA
+FC_237_LA,Ikorodu,ST_LA
+FC_238_LA,Lagos Island I,ST_LA
+FC_239_LA,Lagos Island II,ST_LA
+FC_240_LA,Lagos Mainland,ST_LA
+FC_241_LA,Mushin I,ST_LA
+FC_242_LA,Mushin II,ST_LA
+FC_243_LA,Ojo,ST_LA
+FC_244_LA,Amuwo-Odofin,ST_LA
+FC_245_LA,Ajeromi-Ifelodun,ST_LA
+FC_246_LA,Oshodi/Isolo I,ST_LA
+FC_247_LA,Oshodi/Isolo II,ST_LA
+FC_248_LA,Somolu,ST_LA
+FC_249_LA,Kosofe,ST_LA
+FC_250_LA,Surulere I,ST_LA
+FC_251_LA,Surulere II,ST_LA
+FC_252_NW,Akwanga/Nasarawa Eggon/Wamba,ST_NA
+FC_253_NW,Awe/Doma/Keana,ST_NA
+FC_254_NW,Keffi/Karu/Kokona,ST_NA
+FC_255_NW,Lafia/Obi,ST_NA
+FC_256_NW,Nasarawa/Toto,ST_NA
+FC_257_NG,Agaie/Lapai,ST_NI
+FC_258_NG,Agwara/Borgu,ST_NI
+FC_259_NG,Bida/Gbako/Katcha,ST_NI
+FC_260_NG,Bosso/Paikoro,ST_NI
+FC_261_NG,Chanchaga,ST_NI
+FC_262_NG,Gurara/Suleja/Tafa,ST_NI
+FC_263_NG,Lavun/Mokwa/Edati,ST_NI
+FC_264_NG,Magama/Rijau,ST_NI
+FC_265_NG,Kontagora/Wushishi/Mariga/Mashegu,ST_NI
+FC_266_NG,Shiroro/Rafi/Munya,ST_NI
+FC_267_OG,Abeokuta North/Obafemi-Owode/Odeda,ST_OG
+FC_268_OG,Abeokuta South,ST_OG
+FC_269_OG,Ado-Odo/Ota,ST_OG
+FC_270_OG,Yewa North/Imeko-Afon,ST_OG
+FC_271_OG,Yewa South/Ipokia,ST_OG
+FC_272_OG,Ifo/Ewekoro,ST_OG
+FC_273_OG,Ijebu North/Ijebu East/Ogun Waterside,ST_OG
+FC_274_OG,Ijebu Ode/Odogbolu/Ijebu North East,ST_OG
+FC_275_OG,Ikenne/Sagamu/Remo North,ST_OG
+FC_276_OD,Akoko North East/Akoko North West,ST_ON
+FC_277_OD,Akoko South East/Akoko South West,ST_ON
+FC_278_OD,Akure North/Akure South,ST_ON
+FC_279_OD,Idanre/Ifedore,ST_ON
+FC_280_OD,Ile-Oluji/Okeigbo/Odigbo,ST_ON
+FC_281_OD,Okitipupa/Irele,ST_ON
+FC_282_OD,Ilaje/Ese Odo,ST_ON
+FC_283_OD,Ondo East/Ondo West,ST_ON
+FC_284_OD,Owo/Ose,ST_ON
+FC_285_OS,Irepodun/Olorunda/Osogbo/Orolu,ST_OS
+FC_286_OS,Odo-Otin/Ifelodun/Boripe,ST_OS
+FC_287_OS,Boluwaduro/Ifedayo/Ila,ST_OS
+FC_288_OS,Atakunmosa East/Atakunmosa West/Ilesha East/Ilesha West,ST_OS
+FC_289_OS,Obokun/Oriade,ST_OS
+FC_290_OS,Ife Central/Ife North/Ife South/Ife East,ST_OS
+FC_291_OS,Ayedire/Iwo/Ola-Oluwa,ST_OS
+FC_292_OS,Ayedade/Irewole/Isokan,ST_OS
+FC_293_OS,Ede North/Ede South/Egbedore/Ejigbo,ST_OS
+FC_294_OY,Afijio/Atiba/Oyo East/Oyo West,ST_OY
+FC_295_OY,Akinyele/Lagelu,ST_OY
+FC_296_OY,Egbeda/Ona Ara,ST_OY
+FC_297_OY,Ibarapa Central/Ibarapa North,ST_OY
+FC_298_OY,Ibarapa East/Ido,ST_OY
+FC_299_OY,Atisbo/Saki East/Saki West,ST_OY
+FC_300_OY,Irepo/Olorunsogo/Orelope,ST_OY
+FC_301_OY,Iseyin/Kajola/Iwajowa/Itesiwaju,ST_OY
+FC_302_OY,Ogbomoso North/Ogbomoso South/Orire,ST_OY
+FC_303_OY,Ogo-Oluwa/Surulere,ST_OY
+FC_304_OY,Oluyole,ST_OY
+FC_305_OY,Ibadan North East/Ibadan South East,ST_OY
+FC_306_OY,Ibadan North West/Ibadan South West,ST_OY
+FC_307_OY,Ibadan North,ST_OY
+FC_308_PL,Jos North/Bassa,ST_PL
+FC_309_PL,Jos South/Jos East,ST_PL
+FC_310_PL,Barkin Ladi/Riyom,ST_PL
+FC_311_PL,Bokkos/Mangu,ST_PL
+FC_312_PL,Kanke/Pankshin/Kanam,ST_PL
+FC_313_PL,Wase,ST_PL
+FC_314_PL,Langtang North/Langtang South,ST_PL
+FC_315_PL,Mikang/Qua'an Pan/Shendam,ST_PL
+FC_316_RV,Abua/Odual/Ahoada East,ST_RI
+FC_317_RV,Ahoada West/Ogba/Egbema/Ndoni,ST_RI
+FC_318_RV,Degema/Bonny,ST_RI
+FC_319_RV,Akuku Toru/Asari Toru,ST_RI
+FC_320_RV,Okrika/Ogu/Bolo,ST_RI
+FC_321_RV,Andoni/Opobo/Nkoro,ST_RI
+FC_322_RV,Eleme/Oyigbo/Tai,ST_RI
+FC_323_RV,Khana/Gokana,ST_RI
+FC_324_RV,Ikwerre/Emohua,ST_RI
+FC_325_RV,Etche/Omuma,ST_RI
+FC_326_RV,Obio/Akpor,ST_RI
+FC_327_RV,Port Harcourt I,ST_RI
+FC_328_RV,Port Harcourt II,ST_RI
+FC_329_SO,Isa/Sabon Birni,ST_SO
+FC_330_SO,Goronyo/Gada,ST_SO
+FC_331_SO,Wurno/Rabah,ST_SO
+FC_332_SO,Illela/Gwadabawa,ST_SO
+FC_333_SO,Tangaza/Gudu,ST_SO
+FC_334_SO,Binji/Silame,ST_SO
+FC_335_SO,Kware/Wamakko,ST_SO
+FC_336_SO,Sokoto North/Sokoto South,ST_SO
+FC_337_SO,Dange-Shuni/Bodinga/Tureta,ST_SO
+FC_338_SO,Yabo/Shagari,ST_SO
+FC_339_SO,Kebbe/TTambuwal,ST_SO
+FC_340_TR,Bali/Gassol,ST_TA
+FC_341_TR,Takum/Donga/Ussa,ST_TA
+FC_342_TR,Sardauna/Gashaka/Kurmi,ST_TA
+FC_343_TR,Wukari/Ibi,ST_TA
+FC_344_TR,Jalingo/Yorro/Zing,ST_TA
+FC_345_TR,Karim Lamido/Lau/Ardo-Kola,ST_TA
+FC_346_YB,Bade/Jakusko,ST_YO
+FC_347_YB,Busari/Geidam/Yunusari,ST_YO
+FC_348_YB,Damaturu/Gujba/Gulani/Tarmuwa,ST_YO
+FC_349_YB,Fika/Fune,ST_YO
+FC_350_YB,Machina/Nguru/Yusufari/Karasuwa,ST_YO
+FC_351_YB,Nangere/Potiskum,ST_YO
+FC_352_ZF,Kaura Namoda/Birnin Magaji,ST_ZA
+FC_353_ZF,Shinkafi/Zurmi,ST_ZA
+FC_354_ZF,Gusau/Tsafe,ST_ZA
+FC_355_ZF,Bungudu/Maru,ST_ZA
+FC_356_ZF,Anka/Talata Mafara,ST_ZA
+FC_357_ZF,Bakura/Maradun,ST_ZA
+FC_358_ZF,Gummi/Bukkuyum,ST_ZA
+FC_359_FCT,Abaji/Gwagwalada/Kwali/Kuje,ST_FC
+FC_360_FCT,AMAC/Bwari,ST_FC

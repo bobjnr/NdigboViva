@@ -105,36 +105,34 @@ export async function getSubmissions(
 }
 
 /**
- * Get submissions for a specific user by email
+ * Get submissions for a specific user by email.
+ * Fetches recent submissions and filters by submitter email (case-insensitive) so
+ * "My submissions" works without requiring a composite index on data.submitterEmail + submittedAt.
  */
 export async function getUserSubmissions(email: string): Promise<SubmissionRecord[]> {
+    const normalizedEmail = email?.trim().toLowerCase();
+    if (!normalizedEmail) return [];
+
     try {
-        if (!email) return [];
-
         const collectionRef = collection(db, COLLECTION_NAME);
-        // data.submitterEmail query requires an index on 'data.submitterEmail' and 'submittedAt'
-        // If index is missing, this might error. We should try-catch and maybe do client-side filtering if needed strictly,
-        // but for now let's assume index can be created or we query just by email if possible.
-        // Actually, queried fields in map 'data.submitterEmail' is supported in Firestore.
-
         const q = query(
             collectionRef,
-            where('data.submitterEmail', '==', email),
-            orderBy('submittedAt', 'desc')
+            orderBy('submittedAt', 'desc'),
+            limit(300)
         );
-
         const querySnapshot = await getDocs(q);
         const submissions: SubmissionRecord[] = [];
-
         querySnapshot.forEach((doc) => {
             const data = doc.data();
-            submissions.push({
-                ...data,
-                submittedAt: data.submittedAt || Timestamp.now(),
-                updatedAt: data.updatedAt || Timestamp.now(),
-            } as SubmissionRecord);
+            const submitterEmail = (data.data?.submitterEmail ?? data.data?.email ?? '').toString().trim().toLowerCase();
+            if (submitterEmail === normalizedEmail) {
+                submissions.push({
+                    ...data,
+                    submittedAt: data.submittedAt || Timestamp.now(),
+                    updatedAt: data.updatedAt || Timestamp.now(),
+                } as SubmissionRecord);
+            }
         });
-
         return submissions;
     } catch (error) {
         console.error('Error getting user submissions:', error);
@@ -173,12 +171,13 @@ export async function updateSubmissionStatus(
     submissionId: string,
     status: SubmissionStatus,
     reviewerNotes?: string,
-    reviewerId?: string
+    reviewerId?: string,
+    convertedPersonId?: string
 ): Promise<{ success: boolean; error?: string }> {
     try {
         const docRef = doc(db, COLLECTION_NAME, submissionId);
 
-        const updates: any = {
+        const updates: Record<string, unknown> = {
             status,
             updatedAt: serverTimestamp(),
             reviewedAt: serverTimestamp(),
@@ -186,6 +185,7 @@ export async function updateSubmissionStatus(
 
         if (reviewerNotes) updates.adminNotes = reviewerNotes;
         if (reviewerId) updates.reviewedBy = reviewerId;
+        if (convertedPersonId) updates.convertedPersonId = convertedPersonId;
 
         await updateDoc(docRef, updates);
         return { success: true };

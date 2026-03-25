@@ -53,7 +53,7 @@ export default function SubmissionDetailPage() {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
-                    submissionId: submission?.submissionId,
+                    submissionId: submission?.submissionId ?? (params.id as string),
                     reviewerId: 'CURRENT_ADMIN_ID' // In real app, get from session
                 }),
             })
@@ -61,9 +61,8 @@ export default function SubmissionDetailPage() {
             const result = await res.json()
             if (!result.success) throw new Error(result.error)
 
-            alert('Submission Approved!')
-            router.refresh()
-            loadSubmission(params.id as string)
+            setSubmission((prev) => prev ? { ...prev, status: 'APPROVED' as const, convertedPersonId: result.personId } : null)
+            router.push('/admin/submissions?filter=APPROVED')
         } catch (error) {
             alert('Error approving submission: ' + (error instanceof Error ? error.message : 'Unknown error'))
         } finally {
@@ -93,9 +92,8 @@ export default function SubmissionDetailPage() {
             const result = await res.json()
             if (!result.success) throw new Error(result.error)
 
-            alert(`Submission marked as ${status}`)
-            router.refresh()
-            loadSubmission(params.id as string)
+            setSubmission((prev) => prev ? { ...prev, status } : null)
+            router.push(`/admin/submissions?filter=${status}`)
         } catch (error) {
             alert('Error updating status: ' + (error instanceof Error ? error.message : 'Unknown error'))
         } finally {

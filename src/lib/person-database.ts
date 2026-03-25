@@ -513,7 +513,7 @@ export async function updatePerson(
 
     const updateData = {
       ...updates,
-      'verification.lastModifiedBy': modifiedBy,
+      'verification.lastModifiedBy': modifiedBy ?? 'SYSTEM',
       'verification.editHistory': editHistory,
       updatedAt: serverTimestamp(),
     };

@@ -293,7 +293,7 @@ export default function PersonSearch() {
                           </span>
                         )}
                       </div>
-                      {person.cultural.titles && person.cultural.titles.length > 0 && (
+                      {person.cultural?.titles && person.cultural.titles.length > 0 && (
                         <div className="mt-2 flex flex-wrap gap-2">
                           {person.cultural.titles.map((title, idx) => (
                             <span
