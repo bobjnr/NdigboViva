@@ -1,0 +1,2 @@
+batch_order,batch_name,country_count,countries,adm2_row_count,notes
+1,Batch 1 - Region model,4,Cameroon; Ghana; Togo; Guyana,423,"Cameroon, Ghana, and Togo are full ADM2 builds. Guyana is a selective ADM2 build based on stable NDC units."

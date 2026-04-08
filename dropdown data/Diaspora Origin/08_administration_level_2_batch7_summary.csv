@@ -1,5 +1,0 @@
-batch_order,country_id,country_name,adm2_rows_added,adm2_type_used,coverage
-7,CT_GBR,United Kingdom,19,county / local authority area,selective ancestry-focused seed
-7,CT_ESP,Spain,21,province,full under included autonomous communities
-7,CT_PRT,Portugal,24,municipality,selective ancestry-focused seed
-7,TOTAL,Total,64,mixed European special structures,batch total

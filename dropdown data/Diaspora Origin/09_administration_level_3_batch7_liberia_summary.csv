@@ -1,2 +1,0 @@
-batch,country_id,country_name,adm3_model,rows_added,coverage_note
-Batch 7,CT_LBR,Liberia,county -> district -> city/clan/township seed,73,Partial: 6 counties from NEC Phase One VRC source with district-matched City/Clan/Township labels.

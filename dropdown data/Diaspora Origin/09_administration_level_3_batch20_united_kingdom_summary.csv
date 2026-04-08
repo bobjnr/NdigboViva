@@ -1,2 +1,0 @@
-batch_number,country_id,country_name,adm3_model,adm3_units_added,cumulative_adm3_rows,status
-20,CT_GBR,United Kingdom,ADM1 = constituent country; ADM2 = selected county/local-authority seed; ADM3 = county-town / principal-settlement seed,19,3740,seed_partial

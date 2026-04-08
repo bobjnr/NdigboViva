@@ -1,5 +1,0 @@
-batch_order,country_id,country_name,adm2_rows_added,adm2_type_used,coverage
-6,CT_USA,United States,80,county / county equivalent,selective ancestry-focused seed
-6,CT_CAN,Canada,30,census division / regional district,selective ancestry-focused seed
-6,CT_BRA,Brazil,55,municipality,selective ancestry-focused seed
-6,TOTAL,Total,165,mixed federal model,batch total

@@ -1,0 +1,2 @@
+batch_number,country_id,country_name,adm1_type,adm2_strategy,adm3_seed_basis,adm3_units_added,cumulative_adm3_rows,status
+15,CT_VCT,Saint Vincent and the Grenadines,parish,skipped_by_design,parish settlement seed,71,3272,seed_partial

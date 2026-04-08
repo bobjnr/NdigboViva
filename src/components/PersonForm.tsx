@@ -902,6 +902,142 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
               </div>
             </div>
 
+            {/* DIASPORA ORIGIN INFORMATION - Complete Hierarchy */}
+            <div className="bg-purple-50 p-4 rounded-lg mt-6 border border-purple-200">
+              <h4 className="font-semibold mb-3 text-purple-900">Diaspora Origin Information (Ancestral Location - Non-Nigerian)</h4>
+              <p className="text-xs text-purple-700 mb-4">If your ancestors originated outside Nigeria, fill in these fields to document the ancestral diaspora origin.</p>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Continent of Origin</label>
+                  <input
+                    type="text"
+                    value={formData.ancestralCountry || ''}
+                    onChange={(e) => handleInputChange('ancestralCountry', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="e.g., Africa, Americas, Europe"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Economic Region</label>
+                  <input
+                    type="text"
+                    value={formData.ancestralRegion || ''}
+                    onChange={(e) => handleInputChange('ancestralRegion', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="e.g., West Africa, Caribbean"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Country/Territory of Ancestral Origin</label>
+                  <input
+                    type="text"
+                    value={formData.ancestralDistrict || ''}
+                    onChange={(e) => handleInputChange('ancestralDistrict', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="e.g., Cameroon, Equatorial Guinea, Brazil"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">First-Level Administrative Division</label>
+                  <input
+                    type="text"
+                    value={formData.ancestralTown || ''}
+                    onChange={(e) => handleInputChange('ancestralTown', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="State, Region, Province, etc."
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-1 mt-4">City/Town/Settlement of Ancestral Origin</label>
+                <input
+                  type="text"
+                  value={formData.selfDeclaredEthnicIdentity || ''}
+                  onChange={(e) => handleInputChange('selfDeclaredEthnicIdentity', e.target.value)}
+                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                  placeholder="Specific settlement, city, or community of origin"
+                />
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Cultural/Ethnic Group</label>
+                  <input
+                    type="text"
+                    value={formData.associatedEthnicIdentity || ''}
+                    onChange={(e) => handleInputChange('associatedEthnicIdentity', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="e.g., Igbo, Yoruba, Mandinka"
+                  />
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Citizenship/Nationality</label>
+                  <input
+                    type="text"
+                    value={formData.migrationPathNarrative || ''}
+                    onChange={(e) => handleInputChange('migrationPathNarrative', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="e.g., Cameroonian, Brazilian, British"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="flex items-center gap-2 text-sm text-gray-700">
+                    <input
+                      type="checkbox"
+                      checked={formData.speaksIgbo || false}
+                      onChange={(e) => handleInputChange('speaksIgbo', e.target.checked)}
+                      className="w-4 h-4"
+                    />
+                    Speaks Igbo language
+                  </label>
+                </div>
+                <div>
+                  <label className="flex items-center gap-2 text-sm text-gray-700">
+                    <input
+                      type="checkbox"
+                      checked={formData.speaksEthnicLanguage || false}
+                      onChange={(e) => handleInputChange('speaksEthnicLanguage', e.target.checked)}
+                      className="w-4 h-4"
+                    />
+                    Speaks ethnic language of origin
+                  </label>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="flex items-center gap-2 text-sm text-gray-700">
+                    <input
+                      type="checkbox"
+                      checked={formData.hasVisitedNigeria || false}
+                      onChange={(e) => handleInputChange('hasVisitedNigeria', e.target.checked)}
+                      className="w-4 h-4"
+                    />
+                    Has visited homeland/origin country
+                  </label>
+                </div>
+                <div>
+                  <label className="flex items-center gap-2 text-sm text-gray-700">
+                    <input
+                      type="checkbox"
+                      checked={formData.knowsAncestralTown || false}
+                      onChange={(e) => handleInputChange('knowsAncestralTown', e.target.checked)}
+                      className="w-4 h-4"
+                    />
+                    Knows ancestral town/village
+                  </label>
+                </div>
+              </div>
+            </div>
+
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">Spouse Person IDs</label>
               <div className="flex gap-2">
@@ -1928,12 +2064,10 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                 </div>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">
-                    {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? 'Senatorial District' : 'District / SLAD'}
-                  </label>
-                  {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? (
+              {formData.currentNationality?.toUpperCase() === 'NIGERIA' && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Senatorial District</label>
                     <select
                       value={formData.currentSenatorialDistrict || ''}
                       onChange={(e) => handleLocationChange('current', 'SenatorialDistrict', e.target.value)}
@@ -1945,39 +2079,9 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                         <option key={d} value={d}>{d}</option>
                       ))}
                     </select>
-                  ) : diasporaData && formData.currentRegion ? (
-                    <select
-                      value={formData.currentLocalGovernmentArea || ''}
-                      onChange={(e) => handleDiasporaLocationChange('currentLocalGovernmentArea', e.target.value)}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    >
-                      <option value="">Select District</option>
-                      {(() => {
-                        const continent = diasporaData.continents.find((c: any) => c.name === formData.currentContinent);
-                        if (!continent) return null;
-                        const subContinent = diasporaData.subContinents[continent.id]?.find((sc: any) => sc.name === formData.currentSubContinent);
-                        if (!subContinent) return null;
-                        const country = diasporaData.countries[subContinent.id]?.find((c: any) => c.name === formData.currentNationality);
-                        if (!country) return null;
-                        const flad = diasporaData.firstLevel[country.id]?.find((f: any) => f.name === formData.currentRegion);
-                        return flad && diasporaData.secondLevel[flad.id] ? diasporaData.secondLevel[flad.id].map((slad: any) => (
-                          <option key={slad.id} value={slad.name}>{slad.name} ({slad.type})</option>
-                        )) : null;
-                      })()}
-                    </select>
-                  ) : (
-                    <input
-                      type="text"
-                      value={formData.currentLocalGovernmentArea || ''}
-                      onChange={(e) => handleInputChange('currentLocalGovernmentArea', e.target.value)}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                      disabled={!formData.currentRegion}
-                    />
-                  )}
-                </div>
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Federal Constituency</label>
-                  {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? (
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium text-gray-700 mb-1">Current Federal Constituency</label>
                     <select
                       value={formData.currentFederalConstituency || ''}
                       onChange={(e) => handleLocationChange('current', 'FederalConstituency', e.target.value)}
@@ -1994,16 +2098,9 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                         ))
                       }
                     </select>
-                  ) : (
-                    <input
-                      type="text"
-                      value={formData.currentFederalConstituency || ''}
-                      onChange={(e) => handleInputChange('currentFederalConstituency', e.target.value)}
-                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    />
-                  )}
+                  </div>
                 </div>
-              </div>
+              )}
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>

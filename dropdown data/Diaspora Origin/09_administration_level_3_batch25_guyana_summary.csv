@@ -1,2 +1,0 @@
-batch_number,country_id,country_name,adm3_model,adm3_units_added,cumulative_adm3_rows,status
-25,CT_GUY,Guyana,ADM1=Region; ADM2=NDC/municipality seed; ADM3=anchor settlement seed,65,4177,seed_partial

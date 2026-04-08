@@ -1,2 +1,0 @@
-country_id,country_name,adm1_units_in_scope,adm2_units_linked,adm3_units_added,adm3_model,status
-CT_CAN,Canada,5,30,30,province -> census division / county-equivalent -> municipality-equivalent anchor,seed_partial

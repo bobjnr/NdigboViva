@@ -1,0 +1,2 @@
+﻿batch_id,country_id,country_name,rows_added,adm1_model,adm2_model,adm3_model,status,notes
+22,CT_PRT,Portugal,24,district / autonomous_region,selected municipality seed,municipality-equivalent anchor seed,seed_partial,One ADM3 anchor created for each selected Portugal ADM2 row already present in the dataset.

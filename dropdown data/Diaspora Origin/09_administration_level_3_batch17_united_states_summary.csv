@@ -1,2 +1,0 @@
-batch_number,country_id,country_name,adm3_model,adm3_units_added,cumulative_adm3_rows,status
-17,CT_USA,United States,ADM1 = state/federal district; ADM2 = county/county-equivalent; ADM3 = county-seat / principal settlement seed,80,3636,seed_partial

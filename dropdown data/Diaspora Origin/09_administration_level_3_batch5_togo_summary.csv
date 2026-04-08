@@ -1,2 +1,0 @@
-batch,country_id,country_name,adm1_type,adm2_type,adm3_type,adm3_rows_added,cumulative_adm3_rows,notes
-Batch 5,CT_TGO,Togo,region,prefecture,canton,392,1570,Full canton seed under the existing prefecture hierarchy; source lead count differs from enumerated entries.

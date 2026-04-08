@@ -1,0 +1,37 @@
+country_id,country_name,admin_level_1_type,row_count
+CT_BRB,Barbados,parish,11
+CT_BLZ,Belize,district,6
+CT_BEN,Benin,department,12
+CT_BRA,Brazil,state,12
+CT_CMR,Cameroon,region,10
+CT_CAN,Canada,province,5
+CT_CUB,Cuba,province,15
+CT_CUB,Cuba,special_municipality,1
+CT_DMA,Dominica,parish,10
+CT_DOM,Dominican Republic,national_district,1
+CT_DOM,Dominican Republic,province,31
+CT_GNQ,Equatorial Guinea,province,8
+CT_GAB,Gabon,province,9
+CT_GHA,Ghana,region,16
+CT_GRD,Grenada,parish,7
+CT_GUY,Guyana,region,10
+CT_HTI,Haiti,department,10
+CT_JAM,Jamaica,parish,14
+CT_LBR,Liberia,county,15
+CT_PRT,Portugal,autonomous_region,2
+CT_PRT,Portugal,district,7
+CT_LCA,Saint Lucia,quarter,10
+CT_VCT,Saint Vincent and the Grenadines,parish,6
+CT_STP,Sao Tome and Principe,autonomous_region,1
+CT_STP,Sao Tome and Principe,district,6
+CT_SLE,Sierra Leone,area,1
+CT_SLE,Sierra Leone,province,4
+CT_ESP,Spain,autonomous_community,6
+CT_TGO,Togo,region,5
+CT_TTO,Trinidad and Tobago,borough,3
+CT_TTO,Trinidad and Tobago,city,2
+CT_TTO,Trinidad and Tobago,region,9
+CT_TTO,Trinidad and Tobago,ward,1
+CT_GBR,United Kingdom,constituent_country,3
+CT_USA,United States,federal_district,1
+CT_USA,United States,state,15

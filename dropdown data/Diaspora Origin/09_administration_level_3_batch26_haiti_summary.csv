@@ -1,2 +1,0 @@
-batch_number,country_id,country_name,adm3_model,adm3_units_added,cumulative_adm3_rows,status
-26,CT_HTI,Haiti,ADM1=Department; ADM2=Arrondissement; ADM3=Commune working seed,148,4325,seed_partial

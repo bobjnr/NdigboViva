@@ -1,2 +1,0 @@
-country_id,country_name,adm1_units_in_scope,adm2_units_linked,adm3_units_added,adm3_model,status
-CT_BRA,Brazil,12,55,55,state -> municipality seed -> municipality-equivalent anchor settlement seed,seed_partial

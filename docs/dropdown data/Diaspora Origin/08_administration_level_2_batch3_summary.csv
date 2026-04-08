@@ -1,0 +1,2 @@
+batch_order,batch_name,country_count,countries,adm2_row_count,notes
+3,Batch 3 - Department / county model,4,Benin; Haiti; Liberia; Belize,255,"Benin is completed on the commune layer, Haiti on the arrondissement layer, Liberia on the district layer, and Belize is intentionally deferred pending a final choice between constituency and municipality modeling."

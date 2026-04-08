@@ -1,0 +1,2 @@
+batch_order,batch_name,country_count,countries,adm2_row_count,notes
+5,Batch 5 - Mixed island exceptions,2,Sao Tome and Principe; Trinidad and Tobago,15,Sao Tome and Principe remains direct from ADM1 to ADM3 because districts are the only administrative subdivisions. Trinidad and Tobago is selectively populated with the current 15 Tobago House of Assembly electoral districts under Tobago only; Trinidad municipal corporations were not forced into a single ADM2 model in this batch.

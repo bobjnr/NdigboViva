@@ -1,2 +1,0 @@
-batch_order,batch_name,country_count,countries,adm2_row_count,notes
-2,Batch 2 - Province model,4,Equatorial Guinea; Gabon; Cuba; Dominican Republic,394,Equatorial Guinea and Gabon use district/department layers beneath provinces. Cuba and the Dominican Republic use municipality layers beneath provinces or equivalent first-level units.

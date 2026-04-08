@@ -1,2 +1,0 @@
-batch_number,country_id,country_name,adm3_model,adm3_units_added,cumulative_adm3_rows,status
-16,CT_TTO,Trinidad and Tobago,"mixed island model; mainland direct ADM1→ADM3, Tobago direct ADM1→ADM3 seed",284,3556,seed_partial

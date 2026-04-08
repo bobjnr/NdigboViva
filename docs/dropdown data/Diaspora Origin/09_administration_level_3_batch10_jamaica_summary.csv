@@ -1,0 +1,2 @@
+country_id,country_name,adm3_strategy,adm3_units_added,adm2_handling,cumulative_adm3_rows
+CT_JAM,Jamaica,direct_adm1_to_adm3_via_settlement_seed,172,skipped_by_design,2466

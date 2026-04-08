@@ -1,0 +1,286 @@
+admin_level_1_id,admin_level_1_name,country_id,admin_level_1_type
+ADM1_CMR_ADAMAWA,Adamawa,CT_CMR,region
+ADM1_CMR_CENTRE,Centre,CT_CMR,region
+ADM1_CMR_EAST,East,CT_CMR,region
+ADM1_CMR_FAR_NORTH,Far North,CT_CMR,region
+ADM1_CMR_LITTORAL,Littoral,CT_CMR,region
+ADM1_CMR_NORTH,North,CT_CMR,region
+ADM1_CMR_NORTHWEST,Northwest,CT_CMR,region
+ADM1_CMR_SOUTH,South,CT_CMR,region
+ADM1_CMR_SOUTHWEST,Southwest,CT_CMR,region
+ADM1_CMR_WEST,West,CT_CMR,region
+ADM1_GNQ_ANNOBON,Annobón,CT_GNQ,province
+ADM1_GNQ_BIOKO_NORTE,Bioko Norte,CT_GNQ,province
+ADM1_GNQ_BIOKO_SUR,Bioko Sur,CT_GNQ,province
+ADM1_GNQ_CENTRO_SUR,Centro Sur,CT_GNQ,province
+ADM1_GNQ_DJIBLOHO,Djibloho,CT_GNQ,province
+ADM1_GNQ_KIE_NTEM,Kié-Ntem,CT_GNQ,province
+ADM1_GNQ_LITORAL,Litoral,CT_GNQ,province
+ADM1_GNQ_WELE_NZAS,Wele-Nzas,CT_GNQ,province
+ADM1_GAB_ESTUAIRE,Estuaire,CT_GAB,province
+ADM1_GAB_HAUT_OGOOUE,Haut-Ogooué,CT_GAB,province
+ADM1_GAB_MOYEN_OGOOUE,Moyen-Ogooué,CT_GAB,province
+ADM1_GAB_NGOUNIE,Ngounié,CT_GAB,province
+ADM1_GAB_NYANGA,Nyanga,CT_GAB,province
+ADM1_GAB_OGOOUE_IVINDO,Ogooué-Ivindo,CT_GAB,province
+ADM1_GAB_OGOOUE_LOLO,Ogooué-Lolo,CT_GAB,province
+ADM1_GAB_OGOOUE_MARITIME,Ogooué-Maritime,CT_GAB,province
+ADM1_GAB_WOLEU_NTEM,Woleu-Ntem,CT_GAB,province
+ADM1_STP_AUTONOMOUS_REGION_OF_PRINCIPE,Autonomous Region of Príncipe,CT_STP,autonomous_region
+ADM1_STP_CANTAGALO,Cantagalo,CT_STP,district
+ADM1_STP_CAUE,Caué,CT_STP,district
+ADM1_STP_LEMBA,Lembá,CT_STP,district
+ADM1_STP_LOBATA,Lobata,CT_STP,district
+ADM1_STP_ME_ZOCHI,Mé-Zóchi,CT_STP,district
+ADM1_STP_AGUA_GRANDE,Água Grande,CT_STP,district
+ADM1_SLE_EASTERN_PROVINCE,Eastern Province,CT_SLE,province
+ADM1_SLE_NORTH_WESTERN_PROVINCE,North Western Province,CT_SLE,province
+ADM1_SLE_NORTHERN_PROVINCE,Northern Province,CT_SLE,province
+ADM1_SLE_SOUTHERN_PROVINCE,Southern Province,CT_SLE,province
+ADM1_SLE_WESTERN_AREA,Western Area,CT_SLE,area
+ADM1_LBR_BOMI,Bomi,CT_LBR,county
+ADM1_LBR_BONG,Bong,CT_LBR,county
+ADM1_LBR_GBARPOLU,Gbarpolu,CT_LBR,county
+ADM1_LBR_GRAND_BASSA,Grand Bassa,CT_LBR,county
+ADM1_LBR_GRAND_CAPE_MOUNT,Grand Cape Mount,CT_LBR,county
+ADM1_LBR_GRAND_GEDEH,Grand Gedeh,CT_LBR,county
+ADM1_LBR_GRAND_KRU,Grand Kru,CT_LBR,county
+ADM1_LBR_LOFA,Lofa,CT_LBR,county
+ADM1_LBR_MARGIBI,Margibi,CT_LBR,county
+ADM1_LBR_MARYLAND,Maryland,CT_LBR,county
+ADM1_LBR_MONTSERRADO,Montserrado,CT_LBR,county
+ADM1_LBR_NIMBA,Nimba,CT_LBR,county
+ADM1_LBR_RIVER_CESS,River Cess,CT_LBR,county
+ADM1_LBR_RIVER_GEE,River Gee,CT_LBR,county
+ADM1_LBR_SINOE,Sinoe,CT_LBR,county
+ADM1_GHA_AHAFO,Ahafo,CT_GHA,region
+ADM1_GHA_ASHANTI,Ashanti,CT_GHA,region
+ADM1_GHA_BONO,Bono,CT_GHA,region
+ADM1_GHA_BONO_EAST,Bono East,CT_GHA,region
+ADM1_GHA_CENTRAL,Central,CT_GHA,region
+ADM1_GHA_EASTERN,Eastern,CT_GHA,region
+ADM1_GHA_GREATER_ACCRA,Greater Accra,CT_GHA,region
+ADM1_GHA_NORTH_EAST,North East,CT_GHA,region
+ADM1_GHA_NORTHERN,Northern,CT_GHA,region
+ADM1_GHA_OTI,Oti,CT_GHA,region
+ADM1_GHA_SAVANNAH,Savannah,CT_GHA,region
+ADM1_GHA_UPPER_EAST,Upper East,CT_GHA,region
+ADM1_GHA_UPPER_WEST,Upper West,CT_GHA,region
+ADM1_GHA_VOLTA,Volta,CT_GHA,region
+ADM1_GHA_WESTERN,Western,CT_GHA,region
+ADM1_GHA_WESTERN_NORTH,Western North,CT_GHA,region
+ADM1_BEN_ALIBORI,Alibori,CT_BEN,department
+ADM1_BEN_ATAKORA,Atakora,CT_BEN,department
+ADM1_BEN_ATLANTIQUE,Atlantique,CT_BEN,department
+ADM1_BEN_BORGOU,Borgou,CT_BEN,department
+ADM1_BEN_COLLINES,Collines,CT_BEN,department
+ADM1_BEN_COUFFO,Couffo,CT_BEN,department
+ADM1_BEN_DONGA,Donga,CT_BEN,department
+ADM1_BEN_LITTORAL,Littoral,CT_BEN,department
+ADM1_BEN_MONO,Mono,CT_BEN,department
+ADM1_BEN_OUEME,Ouémé,CT_BEN,department
+ADM1_BEN_PLATEAU,Plateau,CT_BEN,department
+ADM1_BEN_ZOU,Zou,CT_BEN,department
+ADM1_TGO_CENTRALE,Centrale,CT_TGO,region
+ADM1_TGO_KARA,Kara,CT_TGO,region
+ADM1_TGO_MARITIME,Maritime,CT_TGO,region
+ADM1_TGO_PLATEAUX,Plateaux,CT_TGO,region
+ADM1_TGO_SAVANES,Savanes,CT_TGO,region
+ADM1_JAM_CLARENDON,Clarendon,CT_JAM,parish
+ADM1_JAM_HANOVER,Hanover,CT_JAM,parish
+ADM1_JAM_KINGSTON,Kingston,CT_JAM,parish
+ADM1_JAM_MANCHESTER,Manchester,CT_JAM,parish
+ADM1_JAM_PORTLAND,Portland,CT_JAM,parish
+ADM1_JAM_SAINT_ANDREW,Saint Andrew,CT_JAM,parish
+ADM1_JAM_SAINT_ANN,Saint Ann,CT_JAM,parish
+ADM1_JAM_SAINT_CATHERINE,Saint Catherine,CT_JAM,parish
+ADM1_JAM_SAINT_ELIZABETH,Saint Elizabeth,CT_JAM,parish
+ADM1_JAM_SAINT_JAMES,Saint James,CT_JAM,parish
+ADM1_JAM_SAINT_MARY,Saint Mary,CT_JAM,parish
+ADM1_JAM_SAINT_THOMAS,Saint Thomas,CT_JAM,parish
+ADM1_JAM_TRELAWNY,Trelawny,CT_JAM,parish
+ADM1_JAM_WESTMORELAND,Westmoreland,CT_JAM,parish
+ADM1_BRB_CHRIST_CHURCH,Christ Church,CT_BRB,parish
+ADM1_BRB_SAINT_ANDREW,Saint Andrew,CT_BRB,parish
+ADM1_BRB_SAINT_GEORGE,Saint George,CT_BRB,parish
+ADM1_BRB_SAINT_JAMES,Saint James,CT_BRB,parish
+ADM1_BRB_SAINT_JOHN,Saint John,CT_BRB,parish
+ADM1_BRB_SAINT_JOSEPH,Saint Joseph,CT_BRB,parish
+ADM1_BRB_SAINT_LUCY,Saint Lucy,CT_BRB,parish
+ADM1_BRB_SAINT_MICHAEL,Saint Michael,CT_BRB,parish
+ADM1_BRB_SAINT_PETER,Saint Peter,CT_BRB,parish
+ADM1_BRB_SAINT_PHILIP,Saint Philip,CT_BRB,parish
+ADM1_BRB_SAINT_THOMAS,Saint Thomas,CT_BRB,parish
+ADM1_TTO_ARIMA,Arima,CT_TTO,borough
+ADM1_TTO_CHAGUANAS,Chaguanas,CT_TTO,borough
+ADM1_TTO_COUVA_TABAQUITE_TALPARO,Couva-Tabaquite-Talparo,CT_TTO,region
+ADM1_TTO_DIEGO_MARTIN,Diego Martin,CT_TTO,region
+ADM1_TTO_MAYARO_RIO_CLARO,Mayaro-Rio Claro,CT_TTO,region
+ADM1_TTO_PENAL_DEBE,Penal-Debe,CT_TTO,region
+ADM1_TTO_POINT_FORTIN,Point Fortin,CT_TTO,borough
+ADM1_TTO_PORT_OF_SPAIN,Port of Spain,CT_TTO,city
+ADM1_TTO_PRINCES_TOWN,Princes Town,CT_TTO,region
+ADM1_TTO_SAN_FERNANDO,San Fernando,CT_TTO,city
+ADM1_TTO_SAN_JUAN_LAVENTILLE,San Juan-Laventille,CT_TTO,region
+ADM1_TTO_SANGRE_GRANDE,Sangre Grande,CT_TTO,region
+ADM1_TTO_SIPARIA,Siparia,CT_TTO,region
+ADM1_TTO_TOBAGO,Tobago,CT_TTO,ward
+ADM1_TTO_TUNAPUNA_PIARCO,Tunapuna-Piarco,CT_TTO,region
+ADM1_GRD_CARRIACOU_AND_PETITE_MARTINIQUE,Carriacou and Petite Martinique,CT_GRD,parish
+ADM1_GRD_SAINT_ANDREW,Saint Andrew,CT_GRD,parish
+ADM1_GRD_SAINT_DAVID,Saint David,CT_GRD,parish
+ADM1_GRD_SAINT_GEORGE,Saint George,CT_GRD,parish
+ADM1_GRD_SAINT_JOHN,Saint John,CT_GRD,parish
+ADM1_GRD_SAINT_MARK,Saint Mark,CT_GRD,parish
+ADM1_GRD_SAINT_PATRICK,Saint Patrick,CT_GRD,parish
+ADM1_DMA_SAINT_ANDREW,Saint Andrew,CT_DMA,parish
+ADM1_DMA_SAINT_DAVID,Saint David,CT_DMA,parish
+ADM1_DMA_SAINT_GEORGE,Saint George,CT_DMA,parish
+ADM1_DMA_SAINT_JOHN,Saint John,CT_DMA,parish
+ADM1_DMA_SAINT_JOSEPH,Saint Joseph,CT_DMA,parish
+ADM1_DMA_SAINT_LUKE,Saint Luke,CT_DMA,parish
+ADM1_DMA_SAINT_MARK,Saint Mark,CT_DMA,parish
+ADM1_DMA_SAINT_PATRICK,Saint Patrick,CT_DMA,parish
+ADM1_DMA_SAINT_PAUL,Saint Paul,CT_DMA,parish
+ADM1_DMA_SAINT_PETER,Saint Peter,CT_DMA,parish
+ADM1_LCA_ANSE_LA_RAYE,Anse la Raye,CT_LCA,quarter
+ADM1_LCA_CANARIES,Canaries,CT_LCA,quarter
+ADM1_LCA_CASTRIES,Castries,CT_LCA,quarter
+ADM1_LCA_CHOISEUL,Choiseul,CT_LCA,quarter
+ADM1_LCA_DENNERY,Dennery,CT_LCA,quarter
+ADM1_LCA_GROS_ISLET,Gros Islet,CT_LCA,quarter
+ADM1_LCA_LABORIE,Laborie,CT_LCA,quarter
+ADM1_LCA_MICOUD,Micoud,CT_LCA,quarter
+ADM1_LCA_SOUFRI_RE,Soufrière,CT_LCA,quarter
+ADM1_LCA_VIEUX_FORT,Vieux Fort,CT_LCA,quarter
+ADM1_VCT_CHARLOTTE,Charlotte,CT_VCT,parish
+ADM1_VCT_GRENADINES,Grenadines,CT_VCT,parish
+ADM1_VCT_SAINT_ANDREW,Saint Andrew,CT_VCT,parish
+ADM1_VCT_SAINT_DAVID,Saint David,CT_VCT,parish
+ADM1_VCT_SAINT_GEORGE,Saint George,CT_VCT,parish
+ADM1_VCT_SAINT_PATRICK,Saint Patrick,CT_VCT,parish
+ADM1_HTI_ARTIBONITE,Artibonite,CT_HTI,department
+ADM1_HTI_CENTRE,Centre,CT_HTI,department
+ADM1_HTI_GRANDANSE,Grand'Anse,CT_HTI,department
+ADM1_HTI_NIPPES,Nippes,CT_HTI,department
+ADM1_HTI_NORD,Nord,CT_HTI,department
+ADM1_HTI_NORD_EST,Nord-Est,CT_HTI,department
+ADM1_HTI_NORD_OUEST,Nord-Ouest,CT_HTI,department
+ADM1_HTI_OUEST,Ouest,CT_HTI,department
+ADM1_HTI_SUD,Sud,CT_HTI,department
+ADM1_HTI_SUD_EST,Sud-Est,CT_HTI,department
+ADM1_DOM_AZUA,Azua,CT_DOM,province
+ADM1_DOM_BAORUCO,Baoruco,CT_DOM,province
+ADM1_DOM_BARAHONA,Barahona,CT_DOM,province
+ADM1_DOM_DAJABON,Dajabón,CT_DOM,province
+ADM1_DOM_DISTRITO_NACIONAL,Distrito Nacional,CT_DOM,national_district
+ADM1_DOM_DUARTE,Duarte,CT_DOM,province
+ADM1_DOM_EL_SEIBO,El Seibo,CT_DOM,province
+ADM1_DOM_ELIAS_PINA,Elías Piña,CT_DOM,province
+ADM1_DOM_ESPAILLAT,Espaillat,CT_DOM,province
+ADM1_DOM_HATO_MAYOR,Hato Mayor,CT_DOM,province
+ADM1_DOM_HERMANAS_MIRABAL,Hermanas Mirabal,CT_DOM,province
+ADM1_DOM_INDEPENDENCIA,Independencia,CT_DOM,province
+ADM1_DOM_LA_ALTAGRACIA,La Altagracia,CT_DOM,province
+ADM1_DOM_LA_ROMANA,La Romana,CT_DOM,province
+ADM1_DOM_LA_VEGA,La Vega,CT_DOM,province
+ADM1_DOM_MARIA_TRINIDAD_SANCHEZ,María Trinidad Sánchez,CT_DOM,province
+ADM1_DOM_MONSENOR_NOUEL,Monseñor Nouel,CT_DOM,province
+ADM1_DOM_MONTE_CRISTI,Monte Cristi,CT_DOM,province
+ADM1_DOM_MONTE_PLATA,Monte Plata,CT_DOM,province
+ADM1_DOM_PEDERNALES,Pedernales,CT_DOM,province
+ADM1_DOM_PERAVIA,Peravia,CT_DOM,province
+ADM1_DOM_PUERTO_PLATA,Puerto Plata,CT_DOM,province
+ADM1_DOM_SAMANA,Samaná,CT_DOM,province
+ADM1_DOM_SAN_CRISTOBAL,San Cristóbal,CT_DOM,province
+ADM1_DOM_SAN_JOSE_DE_OCOA,San José de Ocoa,CT_DOM,province
+ADM1_DOM_SAN_JUAN,San Juan,CT_DOM,province
+ADM1_DOM_SAN_PEDRO_DE_MACORIS,San Pedro de Macorís,CT_DOM,province
+ADM1_DOM_SANTIAGO,Santiago,CT_DOM,province
+ADM1_DOM_SANTIAGO_RODRIGUEZ,Santiago Rodríguez,CT_DOM,province
+ADM1_DOM_SANTO_DOMINGO,Santo Domingo,CT_DOM,province
+ADM1_DOM_SANCHEZ_RAMIREZ,Sánchez Ramírez,CT_DOM,province
+ADM1_DOM_VALVERDE,Valverde,CT_DOM,province
+ADM1_CUB_ARTEMISA,Artemisa,CT_CUB,province
+ADM1_CUB_CAMAGUEY,Camagüey,CT_CUB,province
+ADM1_CUB_CIEGO_DE_AVILA,Ciego de Ávila,CT_CUB,province
+ADM1_CUB_CIENFUEGOS,Cienfuegos,CT_CUB,province
+ADM1_CUB_GRANMA,Granma,CT_CUB,province
+ADM1_CUB_GUANTANAMO,Guantánamo,CT_CUB,province
+ADM1_CUB_HOLGUIN,Holguín,CT_CUB,province
+ADM1_CUB_ISLA_DE_LA_JUVENTUD,Isla de la Juventud,CT_CUB,special_municipality
+ADM1_CUB_LA_HABANA,La Habana,CT_CUB,province
+ADM1_CUB_LAS_TUNAS,Las Tunas,CT_CUB,province
+ADM1_CUB_MATANZAS,Matanzas,CT_CUB,province
+ADM1_CUB_MAYABEQUE,Mayabeque,CT_CUB,province
+ADM1_CUB_PINAR_DEL_RIO,Pinar del Río,CT_CUB,province
+ADM1_CUB_SANCTI_SPIRITUS,Sancti Spíritus,CT_CUB,province
+ADM1_CUB_SANTIAGO_DE_CUBA,Santiago de Cuba,CT_CUB,province
+ADM1_CUB_VILLA_CLARA,Villa Clara,CT_CUB,province
+ADM1_BLZ_BELIZE,Belize,CT_BLZ,district
+ADM1_BLZ_CAYO,Cayo,CT_BLZ,district
+ADM1_BLZ_COROZAL,Corozal,CT_BLZ,district
+ADM1_BLZ_ORANGE_WALK,Orange Walk,CT_BLZ,district
+ADM1_BLZ_STANN_CREEK,Stann Creek,CT_BLZ,district
+ADM1_BLZ_TOLEDO,Toledo,CT_BLZ,district
+ADM1_USA_ALABAMA,Alabama,CT_USA,state
+ADM1_USA_DELAWARE,Delaware,CT_USA,state
+ADM1_USA_DISTRICT_OF_COLUMBIA,District of Columbia,CT_USA,federal_district
+ADM1_USA_FLORIDA,Florida,CT_USA,state
+ADM1_USA_GEORGIA,Georgia,CT_USA,state
+ADM1_USA_LOUISIANA,Louisiana,CT_USA,state
+ADM1_USA_MARYLAND,Maryland,CT_USA,state
+ADM1_USA_MASSACHUSETTS,Massachusetts,CT_USA,state
+ADM1_USA_MISSISSIPPI,Mississippi,CT_USA,state
+ADM1_USA_NEW_JERSEY,New Jersey,CT_USA,state
+ADM1_USA_NEW_YORK,New York,CT_USA,state
+ADM1_USA_NORTH_CAROLINA,North Carolina,CT_USA,state
+ADM1_USA_PENNSYLVANIA,Pennsylvania,CT_USA,state
+ADM1_USA_SOUTH_CAROLINA,South Carolina,CT_USA,state
+ADM1_USA_TEXAS,Texas,CT_USA,state
+ADM1_USA_VIRGINIA,Virginia,CT_USA,state
+ADM1_CAN_BRITISH_COLUMBIA,British Columbia,CT_CAN,province
+ADM1_CAN_NEW_BRUNSWICK,New Brunswick,CT_CAN,province
+ADM1_CAN_NOVA_SCOTIA,Nova Scotia,CT_CAN,province
+ADM1_CAN_ONTARIO,Ontario,CT_CAN,province
+ADM1_CAN_QUEBEC,Quebec,CT_CAN,province
+ADM1_BRA_ALAGOAS,Alagoas,CT_BRA,state
+ADM1_BRA_BAHIA,Bahia,CT_BRA,state
+ADM1_BRA_CEARA,Ceará,CT_BRA,state
+ADM1_BRA_ESPIRITO_SANTO,Espírito Santo,CT_BRA,state
+ADM1_BRA_MARANHAO,Maranhão,CT_BRA,state
+ADM1_BRA_MINAS_GERAIS,Minas Gerais,CT_BRA,state
+ADM1_BRA_PARAIBA,Paraíba,CT_BRA,state
+ADM1_BRA_PARA,Pará,CT_BRA,state
+ADM1_BRA_PERNAMBUCO,Pernambuco,CT_BRA,state
+ADM1_BRA_RIO_DE_JANEIRO,Rio de Janeiro,CT_BRA,state
+ADM1_BRA_SERGIPE,Sergipe,CT_BRA,state
+ADM1_BRA_SAO_PAULO,São Paulo,CT_BRA,state
+ADM1_GUY_BARIMA_WAINI,Barima-Waini,CT_GUY,region
+ADM1_GUY_CUYUNI_MAZARUNI,Cuyuni-Mazaruni,CT_GUY,region
+ADM1_GUY_DEMERARA_MAHAICA,Demerara-Mahaica,CT_GUY,region
+ADM1_GUY_EAST_BERBICE_CORENTYNE,East Berbice-Corentyne,CT_GUY,region
+ADM1_GUY_ESSEQUIBO_ISLANDS_WEST_DEMERARA,Essequibo Islands-West Demerara,CT_GUY,region
+ADM1_GUY_MAHAICA_BERBICE,Mahaica-Berbice,CT_GUY,region
+ADM1_GUY_POMEROON_SUPENAAM,Pomeroon-Supenaam,CT_GUY,region
+ADM1_GUY_POTARO_SIPARUNI,Potaro-Siparuni,CT_GUY,region
+ADM1_GUY_UPPER_DEMERARA_BERBICE,Upper Demerara-Berbice,CT_GUY,region
+ADM1_GUY_UPPER_TAKUTU_UPPER_ESSEQUIBO,Upper Takutu-Upper Essequibo,CT_GUY,region
+ADM1_GBR_ENGLAND,England,CT_GBR,constituent_country
+ADM1_GBR_SCOTLAND,Scotland,CT_GBR,constituent_country
+ADM1_GBR_WALES,Wales,CT_GBR,constituent_country
+ADM1_ESP_ANDALUSIA,Andalusia,CT_ESP,autonomous_community
+ADM1_ESP_BASQUE_COUNTRY,Basque Country,CT_ESP,autonomous_community
+ADM1_ESP_CANARY_ISLANDS,Canary Islands,CT_ESP,autonomous_community
+ADM1_ESP_CATALONIA,Catalonia,CT_ESP,autonomous_community
+ADM1_ESP_COMMUNITY_OF_MADRID,Community of Madrid,CT_ESP,autonomous_community
+ADM1_ESP_VALENCIAN_COMMUNITY,Valencian Community,CT_ESP,autonomous_community
+ADM1_PRT_AVEIRO,Aveiro,CT_PRT,district
+ADM1_PRT_AZORES,Azores,CT_PRT,autonomous_region
+ADM1_PRT_BRAGA,Braga,CT_PRT,district
+ADM1_PRT_COIMBRA,Coimbra,CT_PRT,district
+ADM1_PRT_FARO,Faro,CT_PRT,district
+ADM1_PRT_LISBON,Lisbon,CT_PRT,district
+ADM1_PRT_MADEIRA,Madeira,CT_PRT,autonomous_region
+ADM1_PRT_PORTO,Porto,CT_PRT,district
+ADM1_PRT_SETUBAL,Setúbal,CT_PRT,district
