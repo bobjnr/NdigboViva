@@ -1,0 +1,14 @@
+cultural_region_id,cultural_region_name,continent_id
+CR_AF_GOG,Gulf of Guinea,CONT_AF
+CR_AF_BIA,Bight of Biafra,CONT_AF
+CR_AF_CAM,Cameroon Cultural Sphere,CONT_AF
+CR_AF_KRI,Krio-Atlantic,CONT_AF
+CR_CAR_AAC,Afro-Atlantic Caribbean,CONT_CA
+CR_CAR_ANC,Anglophone Caribbean,CONT_CA
+CR_CAR_FRC,Francophone Caribbean,CONT_CA
+CR_CAR_HSC,Hispanophone Caribbean,CONT_CA
+CR_NA_AAD,African Atlantic Diaspora,CONT_NA
+CR_SA_AAD,African Atlantic Diaspora,CONT_SA
+CR_EU_WAD,West African Diaspora Europe,CONT_EU
+CR_AS_GCC,Gulf Diaspora Corridor,CONT_AS
+CR_OC_AFD,Afro-Diasporic Oceania,CONT_OC

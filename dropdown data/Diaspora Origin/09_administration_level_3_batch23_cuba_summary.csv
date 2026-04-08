@@ -1,0 +1,10 @@
+﻿metric,value
+batch_number,23
+country,Cuba
+country_id,CT_CUB
+adm1_model,province / special_municipality
+adm2_model,municipality
+adm3_model,municipality_anchor_seed plus special_municipality_direct_anchor
+adm3_rows_added,168
+cumulative_adm3_rows,3953
+notes,"167 municipality-equivalent anchors were added beneath existing ADM2 municipalities, plus Nueva Gerona for Isla de la Juventud as a direct ADM1-to-ADM3 anchor."

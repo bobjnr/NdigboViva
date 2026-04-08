@@ -1,0 +1,20 @@
+country_id,country_name,admin_level_1_id,admin_level_1_name,admin_level_2_id,admin_level_2_name,admin_level_3_count
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_ANNOBON,Annobón,ADM2_GNQ_ANNOBON_SAN_ANTONIO_DE_PALE,San Antonio de Palé,1
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_BIOKO_NORTE,Bioko Norte,ADM2_GNQ_BIOKO_NORTE_MALABO,Malabo,1
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_BIOKO_NORTE,Bioko Norte,ADM2_GNQ_BIOKO_NORTE_BANEY,Baney,2
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_BIOKO_SUR,Bioko Sur,ADM2_GNQ_BIOKO_SUR_LUBA,Luba,3
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_BIOKO_SUR,Bioko Sur,ADM2_GNQ_BIOKO_SUR_RIABA,Riaba,1
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_CENTRO_SUR,Centro Sur,ADM2_GNQ_CENTRO_SUR_AKURENAM,Akurenam,1
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_CENTRO_SUR,Centro Sur,ADM2_GNQ_CENTRO_SUR_EVINAYONG,Evinayong,3
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_CENTRO_SUR,Centro Sur,ADM2_GNQ_CENTRO_SUR_NIEFANG,Niefang,3
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_DJIBLOHO,Djibloho,ADM2_GNQ_DJIBLOHO_DJIBLOHO,Djibloho,3
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_KIE_NTEM,Kié-Ntem,ADM2_GNQ_KIE_NTEM_EBEBIYIN,Ebebiyín,2
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_KIE_NTEM,Kié-Ntem,ADM2_GNQ_KIE_NTEM_MICOMESENG,Micomeseng,3
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_KIE_NTEM,Kié-Ntem,ADM2_GNQ_KIE_NTEM_NSOK_NSOMO,Nsok-Nsomo,1
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_LITORAL,Litoral,ADM2_GNQ_LITORAL_BATA,Bata,3
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_LITORAL,Litoral,ADM2_GNQ_LITORAL_MBINI,Mbini,2
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_LITORAL,Litoral,ADM2_GNQ_LITORAL_COGO,Cogo,3
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_WELE_NZAS,Wele-Nzas,ADM2_GNQ_WELE_NZAS_ACONIBE,Aconibe,1
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_WELE_NZAS,Wele-Nzas,ADM2_GNQ_WELE_NZAS_ANISOK,Añisok,2
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_WELE_NZAS,Wele-Nzas,ADM2_GNQ_WELE_NZAS_MONGOMO,Mongomo,3
+CT_GNQ,Equatorial Guinea,ADM1_GNQ_WELE_NZAS,Wele-Nzas,ADM2_GNQ_WELE_NZAS_NSORK,Nsork,1

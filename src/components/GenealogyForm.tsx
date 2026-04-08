@@ -16,6 +16,7 @@ import {
   type GenealogyFormData
 } from '@/lib/location-data'
 import { genealogyDB, type GenealogyFormSubmission } from '@/lib/genealogy-database'
+import diasporaOriginData from '@/lib/diaspora-origin-data.json'
 import {
   continentSubContinents,
   culturalRegionsByContinent,
@@ -59,9 +60,26 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
     originContinent: 'Africa',
     originSubContinent: '',
     originEconomicRegion: '',
-    originCulturalRegion: '',
     originGeopoliticalBloc: '',
     originNationality: '',
+    originType: 'DIRECT_NIGERIA',
+    generationalDepth: '',
+    associatedEthnicIdentity: '',
+    migrationPathNarrative: '',
+    speaksIgbo: undefined,
+    speaksEthnicLanguage: undefined,
+    hasVisitedNigeria: undefined,
+    knowsAncestralTown: undefined,
+    ancestralCountry: '',
+    ancestralCountryId: '',
+    ancestralRegion: '',
+    ancestralRegionId: '',
+    ancestralDistrict: '',
+    ancestralDistrictId: '',
+    ancestralTown: '',
+    ancestralTownId: '',
+    selfDeclaredEthnicIdentity: '',
+    familyMigrationPath: '',
     originRegion: '',
     originSubRegion: '',
     originState: '',
@@ -147,6 +165,17 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
 
+  // Diaspora Origin Cascading Data State
+  const [availableAncestralCountries, setAvailableAncestralCountries] = useState<any[]>([])
+  const [availableAncestralRegions, setAvailableAncestralRegions] = useState<any[]>([])
+  const [availableAncestralDistricts, setAvailableAncestralDistricts] = useState<any[]>([])
+  const [availableAncestralTowns, setAvailableAncestralTowns] = useState<any[]>([])
+
+  // Diaspora Residence Cascading (for DIASPORA_UNKNOWN branch)
+  const [availableOriginAdmin1, setAvailableOriginAdmin1] = useState<any[]>([])
+  const [availableOriginAdmin2, setAvailableOriginAdmin2] = useState<any[]>([])
+  const [availableOriginAdmin3, setAvailableOriginAdmin3] = useState<any[]>([])
+
   // New person-centric fields state
   const [showAdvancedFields, setShowAdvancedFields] = useState({
     identity: false,
@@ -156,6 +185,43 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
     verification: false,
     diaspora: false,
   })
+
+  // Handle Origin Type changes (Field Resets & Pre-fills)
+  useEffect(() => {
+    if (formData.originType === 'DIRECT_NIGERIA') {
+      setFormData(prev => ({
+        ...prev,
+        originContinent: 'Africa',
+        originSubContinent: 'West Africa',
+        originNationality: 'Nigerian',
+        // Clear diaspora-only fields
+        ancestralCountry: '',
+        ancestralCountryId: '',
+        ancestralRegion: '',
+        ancestralRegionId: '',
+        ancestralDistrict: '',
+        ancestralDistrictId: '',
+        ancestralTown: '',
+        ancestralTownId: '',
+        generationalDepth: '',
+        speaksIgbo: undefined,
+        speaksEthnicLanguage: undefined,
+        hasVisitedNigeria: undefined,
+        knowsAncestralTown: undefined
+      }))
+    } else if (formData.originType === 'DIASPORA_UNKNOWN') {
+      setFormData(prev => ({
+        ...prev,
+        // Clear Nigerian-specific fields if not Mixed
+        originState: '',
+        originLGA: '',
+        originTown: '',
+        originWard: '',
+        originVillage: '',
+        originClan: ''
+      }))
+    }
+  }, [formData.originType])
 
   // State for new custom life event input
   const [newEvent, setNewEvent] = useState({
@@ -186,6 +252,75 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
     verificationLevel: 0,
     visibilitySetting: 'PRIVATE',
   })
+
+  // Diaspora Location Data State
+  const [diasporaData, setDiasporaData] = useState<any>(null)
+  const [isLoadingDiaspora, setIsLoadingDiaspora] = useState(false)
+
+  // Fetch Diaspora Location Data
+  useEffect(() => {
+    if (personData.isDiasporaRelative && !diasporaData && !isLoadingDiaspora) {
+      setIsLoadingDiaspora(true)
+      fetch('/data/diaspora-location-data.json')
+        .then(res => res.json())
+        .then(data => {
+          setDiasporaData(data)
+          setIsLoadingDiaspora(false)
+        })
+        .catch(err => {
+          console.error("Failed to load Diaspora location data:", err)
+          setIsLoadingDiaspora(false)
+        })
+    }
+  }, [personData.isDiasporaRelative, diasporaData, isLoadingDiaspora])
+
+  const handleDiasporaLocationChange = (field: keyof GenealogyFormSubmission, value: string) => {
+    if (field === 'currentContinent') {
+      setFormData(prev => ({
+        ...prev,
+        currentContinent: value,
+        currentSubContinent: '',
+        currentCountry: '',
+        currentState: '',
+        currentLGA: '',
+        currentTown: '',
+      }))
+    } else if (field === 'currentSubContinent') {
+      setFormData(prev => ({
+        ...prev,
+        currentSubContinent: value,
+        currentCountry: '',
+        currentState: '',
+        currentLGA: '',
+        currentTown: '',
+      }))
+    } else if (field === 'currentCountry') {
+      setFormData(prev => ({
+        ...prev,
+        currentCountry: value,
+        currentNationality: value, // Sync nationality with country name
+        currentState: '',
+        currentLGA: '',
+        currentTown: '',
+      }))
+    } else if (field === 'currentState') { // FLAD
+      setFormData(prev => ({
+        ...prev,
+        currentState: value,
+        currentRegion: value, // Sync region with state name
+        currentLGA: '',
+        currentTown: '',
+      }))
+    } else if (field === 'currentLGA') { // SLAD / District
+      setFormData(prev => ({
+        ...prev,
+        currentLGA: value,
+        currentTown: '',
+      }))
+    } else {
+      handleInputChange(field, value)
+    }
+  }
 
   const normalizeLookupKey = (v: string | null | undefined): string =>
     (v ?? '').replace(/\s+/g, ' ').trim()
@@ -566,8 +701,110 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
     const csv = csvDropdownData as any
     const level1s = (csv.level1sByTownName?.[formData.originTown] as string[]) ?? []
     setAvailableLevel1s(level1s)
-    setFormData(prev => ({ ...prev, originTownLevel1: '', originTownLevel2: '' }))
   }, [formData.originTown])
+
+  // ============================================================================
+  // DIASPORA ORIGIN CASCADING LOGIC
+  // ============================================================================
+
+  // Handle Ancestral Country selection
+  useEffect(() => {
+    if (formData.originType === 'DIASPORA_UNKNOWN') {
+      setAvailableAncestralCountries(diasporaOriginData.countries)
+    }
+  }, [formData.originType])
+
+  // Handle Ancestral Region (Admin Level 1) cascading
+  useEffect(() => {
+    if (formData.ancestralCountryId) {
+      const regions = diasporaOriginData.admin1.filter((a: any) => a.countryId === formData.ancestralCountryId)
+      setAvailableAncestralRegions(regions)
+      setFormData(prev => ({ 
+        ...prev, 
+        ancestralRegionId: '', 
+        ancestralRegion: '',
+        ancestralDistrictId: '',
+        ancestralDistrict: '',
+        ancestralTownId: '',
+        ancestralTown: ''
+      }))
+    } else {
+      setAvailableAncestralRegions([])
+    }
+  }, [formData.ancestralCountryId])
+
+  // Handle Ancestral District (Admin Level 2) cascading
+  useEffect(() => {
+    if (formData.ancestralRegionId) {
+      const districts = diasporaOriginData.admin2.filter((a: any) => a.admin1Id === formData.ancestralRegionId)
+      setAvailableAncestralDistricts(districts)
+      setFormData(prev => ({ 
+        ...prev, 
+        ancestralDistrictId: '', 
+        ancestralDistrict: '',
+        ancestralTownId: '',
+        ancestralTown: ''
+      }))
+    } else {
+      setAvailableAncestralDistricts([])
+    }
+  }, [formData.ancestralRegionId])
+
+  // Handle Ancestral Town (Admin Level 3) cascading
+  useEffect(() => {
+    if (formData.ancestralDistrictId) {
+      const towns = diasporaOriginData.admin3.filter((a: any) => a.admin2Id === formData.ancestralDistrictId)
+      setAvailableAncestralTowns(towns)
+      setFormData(prev => ({ 
+        ...prev, 
+        ancestralTownId: '', 
+        ancestralTown: ''
+      }))
+    } else {
+      setAvailableAncestralTowns([])
+    }
+  }, [formData.ancestralDistrictId])
+
+  // Handle Diaspora Residence (Nationality-based) Cascading
+  useEffect(() => {
+    if (formData.originType === 'DIASPORA_UNKNOWN' && formData.originNationality) {
+      const country = diasporaOriginData.countries.find((c: any) => c.name === formData.originNationality)
+      if (country) {
+        const admin1 = diasporaOriginData.admin1.filter((a: any) => a.countryId === country.id)
+        setAvailableOriginAdmin1(admin1)
+      } else {
+        setAvailableOriginAdmin1([])
+      }
+      // Reset dependent fields
+      setFormData(prev => ({ ...prev, originState: '', originLGA: '', originTown: '' }))
+    }
+  }, [formData.originNationality, formData.originType])
+
+  useEffect(() => {
+    if (formData.originType === 'DIASPORA_UNKNOWN' && formData.originState) {
+      const admin1 = availableOriginAdmin1.find((a: any) => a.name === formData.originState)
+      if (admin1) {
+        const admin2 = diasporaOriginData.admin2.filter((a: any) => a.admin1Id === admin1.id)
+        setAvailableOriginAdmin2(admin2)
+      } else {
+        setAvailableOriginAdmin2([])
+      }
+      setFormData(prev => ({ ...prev, originLGA: '', originTown: '' }))
+    }
+  }, [formData.originState])
+
+  useEffect(() => {
+    if (formData.originType === 'DIASPORA_UNKNOWN' && formData.originLGA) {
+      const admin2 = availableOriginAdmin2.find((a: any) => a.name === formData.originLGA)
+      if (admin2) {
+        const admin3 = diasporaOriginData.admin3.filter((a: any) => a.admin2Id === admin2.id)
+        setAvailableOriginAdmin3(admin3)
+      } else {
+        setAvailableOriginAdmin3([])
+      }
+      setFormData(prev => ({ ...prev, originTown: '' }))
+    }
+  }, [formData.originLGA])
 
   // TownAdminLevel1 → TownAdminLevel2
   useEffect(() => {
@@ -733,7 +970,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         originLocalGovernmentArea: formData.originLGA,
         originStateConstituency: formData.originStateConstituency,
         originTown: formData.originTown,
-        originTownDivision: formData.originTownDivision, // Keep for backward compatibility or remove if strictly new
+        originTownDivision: formData.originTownDivision,
         originTownLevel1: formData.originTownLevel1,
         originTownLevel2: formData.originTownLevel2,
         originTownLevel3: formData.originTownLevel3,
@@ -743,8 +980,28 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         originClan: formData.originClan,
         originVillage: formData.originVillage,
         originHamlet: formData.originHamlet,
-        originKindred: formData.kindred, // Map kindred input to originKindred
-        originUmunna: formData.umunna,   // Map umunna input to originUmunna
+        originKindred: formData.kindred, 
+        originUmunna: formData.umunna,
+
+        // ORIGIN BRANCHING & DIASPORA ORIGIN
+        originType: formData.originType,
+        generationalDepth: formData.generationalDepth,
+        associatedEthnicIdentity: formData.associatedEthnicIdentity,
+        migrationPathNarrative: formData.migrationPathNarrative,
+        speaksIgbo: formData.speaksIgbo,
+        speaksEthnicLanguage: formData.speaksEthnicLanguage,
+        hasVisitedNigeria: formData.hasVisitedNigeria,
+        knowsAncestralTown: formData.knowsAncestralTown,
+        ancestralCountry: formData.ancestralCountry,
+        ancestralCountryId: formData.ancestralCountryId,
+        ancestralRegion: formData.ancestralRegion,
+        ancestralRegionId: formData.ancestralRegionId,
+        ancestralDistrict: formData.ancestralDistrict,
+        ancestralDistrictId: formData.ancestralDistrictId,
+        ancestralTown: formData.ancestralTown,
+        ancestralTownId: formData.ancestralTownId,
+        selfDeclaredEthnicIdentity: formData.selfDeclaredEthnicIdentity,
+        familyMigrationPath: formData.familyMigrationPath,
 
         // Parents
         fatherName: formData.fatherName,
@@ -1206,17 +1463,6 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                 </select>
               </div>
 
-              {/* Igbo Organizations - Full Width */}
-              <div className="md:col-span-2">
-                <label className="block text-sm font-medium text-gray-700 mb-2">List Igbo Organizations you belong to</label>
-                <textarea
-                  value={formData.currentIgboOrganizations || ''}
-                  onChange={(e) => handleInputChange('currentIgboOrganizations', e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                  rows={2}
-                  placeholder="List organizations..."
-                />
-              </div>
             </>
           ) : (
             // DIASPORA LAYOUT
@@ -1226,19 +1472,36 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Continent *</label>
                 <select
                   value={formData.currentContinent}
-                  onChange={(e) => handleInputChange('currentContinent', e.target.value)}
+                  onChange={(e) => handleDiasporaLocationChange('currentContinent', e.target.value)}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
                   required
                 >
-                  <option value="">Select Continent</option>
-                  {continents.map(c => <option key={c} value={c}>{c}</option>)}
+                  <option value="">{isLoadingDiaspora ? 'Loading...' : 'Select Continent'}</option>
+                  {diasporaData?.continents ? diasporaData.continents.map((c: any) => (
+                    <option key={c.id} value={c.name}>{c.name}</option>
+                  )) : continents.map(c => <option key={c} value={c}>{c}</option>)}
                 </select>
               </div>
 
               {/* Sub-Continent */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Sub-Continent</label>
-                {formData.currentContinent && continentSubContinents[formData.currentContinent] ? (
+                {diasporaData ? (
+                  <select
+                    value={formData.currentSubContinent || ''}
+                    onChange={(e) => handleDiasporaLocationChange('currentSubContinent', e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  >
+                    <option value="">Select Sub-Continent</option>
+                    {(() => {
+                      const continent = diasporaData?.continents?.find((c: any) => c.name === formData.currentContinent);
+                      if (!continent) return null;
+                      return (diasporaData?.subContinents?.[continent.id] || []).map((sc: any) => (
+                        <option key={sc.id} value={sc.name}>{sc.name}</option>
+                      ));
+                    })()}
+                  </select>
+                ) : formData.currentContinent && continentSubContinents[formData.currentContinent] ? (
                   <select
                     value={formData.currentSubContinent || ''}
                     onChange={(e) => handleInputChange('currentSubContinent', e.target.value)}
@@ -1258,16 +1521,29 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                 )}
               </div>
 
-              {/* Citizenship Status (Was Nationality) */}
+              {/* Citizenship Status */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Citizenship Status</label>
-                <input
-                  type="text"
-                  value={formData.citizenshipStatus || ''}
-                  onChange={(e) => handleInputChange('citizenshipStatus', e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                  placeholder="e.g. Citizen, Permanent Resident"
-                />
+                {diasporaData ? (
+                  <select
+                    value={formData.citizenshipStatus || ''}
+                    onChange={(e) => handleInputChange('citizenshipStatus', e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  >
+                    <option value="">Select Citizenship Status</option>
+                    {(diasporaData?.citizenship || []).map((status: string) => (
+                      <option key={status} value={status}>{status}</option>
+                    ))}
+                  </select>
+                ) : (
+                  <input
+                    type="text"
+                    value={formData.citizenshipStatus || ''}
+                    onChange={(e) => handleInputChange('citizenshipStatus', e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                    placeholder="e.g. Citizen, Permanent Resident"
+                  />
+                )}
               </div>
 
               {/* Country */}
@@ -1275,20 +1551,47 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Country of Residence *</label>
                 <select
                   value={formData.currentCountry}
-                  onChange={(e) => handleInputChange('currentCountry', e.target.value)}
+                  onChange={(e) => handleDiasporaLocationChange('currentCountry', e.target.value)}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
                   required
-                  disabled={!availableCountries.length}
                 >
                   <option value="">Select Country</option>
-                  {availableCountries.map(c => <option key={c} value={c}>{c}</option>)}
+                  {diasporaData ? (() => {
+                    const continent = diasporaData?.continents?.find((c: any) => c.name === formData.currentContinent);
+                    if (!continent) return null;
+                    const subContinent = diasporaData?.subContinents?.[continent.id]?.find((sc: any) => sc.name === formData.currentSubContinent);
+                    if (!subContinent) return null;
+                    return (diasporaData?.countries?.[subContinent.id] || []).map((c: any) => (
+                      <option key={c.id} value={c.name}>{c.name}</option>
+                    ));
+                  })() : availableCountries.map(c => <option key={c} value={c}>{c}</option>)}
                 </select>
               </div>
 
-              {/* State/Region */}
+              {/* First-Level Administrative Division */}
               <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">State / Region / Province *</label>
-                {availableStates.length > 0 ? (
+                <label className="block text-sm font-medium text-gray-700 mb-2">First-Level Administrative Division *</label>
+                {diasporaData ? (
+                  <select
+                    value={formData.currentState}
+                    onChange={(e) => handleDiasporaLocationChange('currentState', e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                    required
+                  >
+                    <option value="">Select First-Level Admin</option>
+                    {(() => {
+                      const continent = diasporaData?.continents?.find((c: any) => c.name === formData.currentContinent);
+                      if (!continent) return null;
+                      const subContinent = diasporaData?.subContinents?.[continent.id]?.find((sc: any) => sc.name === formData.currentSubContinent);
+                      if (!subContinent) return null;
+                      const country = diasporaData?.countries?.[subContinent.id]?.find((c: any) => c.name.trim().toLowerCase() === formData.currentCountry?.trim().toLowerCase());
+                      if (!country) return null;
+                      return (diasporaData?.firstLevel?.[country.id] || []).map((flad: any) => (
+                        <option key={flad.id} value={flad.name}>{flad.name} ({flad.type})</option>
+                      ));
+                    })()}
+                  </select>
+                ) : availableStates.length > 0 ? (
                   <select
                     value={formData.currentState}
                     onChange={(e) => handleInputChange('currentState', e.target.value)}
@@ -1304,50 +1607,145 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                     value={formData.currentState || ''}
                     onChange={(e) => handleInputChange('currentState', e.target.value)}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                    placeholder="State or Province"
+                    placeholder="First-level Admin"
                     required
                   />
                 )}
+              </div>
+
+              {/* Second-Level Administrative Division */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Second-Level Administrative Division</label>
+                {(() => {
+                  if (!diasporaData) {
+                    return (
+                      <input
+                        type="text"
+                        value={formData.currentLGA || ''}
+                        onChange={(e) => handleInputChange('currentLGA', e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                        placeholder="Second-level Admin"
+                      />
+                    );
+                  }
+
+                  const continent = diasporaData?.continents?.find((c: any) => c.name === formData.currentContinent);
+                  const subContinent = continent ? diasporaData?.subContinents?.[continent.id]?.find((sc: any) => sc.name === formData.currentSubContinent) : null;
+                  const country = subContinent ? diasporaData?.countries?.[subContinent.id]?.find((c: any) => c.name.trim().toLowerCase() === formData.currentCountry?.trim().toLowerCase()) : null;
+                  const flad = country ? diasporaData?.firstLevel?.[country.id]?.find((f: any) => 
+                    f.name.trim().toLowerCase() === formData.currentState?.trim().toLowerCase()
+                  ) : null;
+                  
+                  const sladOptions = flad ? (diasporaData?.secondLevel?.[flad.id] || []) : [];
+                  
+                  // Final list of options, falling back to local Nigerian data if Diaspora data is missing for Nigeria
+                  let finalSladOptions = [...sladOptions];
+                  if (finalSladOptions.length === 0 && country?.name === 'Nigeria' && flad) {
+                    const stateName = flad.name.replace(' (State)', '').trim().toLowerCase();
+                    const nigeriaState = nigerianStates.find(s => 
+                      s.state.toLowerCase() === stateName || 
+                      s.state.toLowerCase().includes(stateName)
+                    );
+                    if (nigeriaState) {
+                      finalSladOptions = nigeriaState.lgas.map(lga => ({ 
+                        id: `NGA_${lga}`, 
+                        name: lga, 
+                        type: 'LGA' 
+                      }));
+                    }
+                  }
+
+                  if (finalSladOptions.length > 0) {
+                    return (
+                      <select
+                        value={formData.currentLGA || ''}
+                        onChange={(e) => handleDiasporaLocationChange('currentLGA', e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                      >
+                        <option value="">Select Second-Level Admin</option>
+                        {finalSladOptions.map((slad: any) => (
+                          <option key={slad.id} value={slad.name}>{slad.name} ({slad.type})</option>
+                        ))}
+                      </select>
+                    );
+                  }
+
+                  return (
+                    <input
+                      type="text"
+                      value={formData.currentLGA || ''}
+                      onChange={(e) => handleInputChange('currentLGA', e.target.value)}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                      placeholder="Second-level Admin (e.g. County, District)"
+                    />
+                  );
+                })()}
               </div>
 
 
               {/* Town/City */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Town/City</label>
-                <input
-                  type="text"
-                  value={formData.currentTown || ''}
-                  onChange={(e) => handleInputChange('currentTown', e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                  placeholder="City or Town"
-                />
+                {(() => {
+                  if (!diasporaData) {
+                    return (
+                      <input
+                        type="text"
+                        value={formData.currentTown || ''}
+                        onChange={(e) => handleInputChange('currentTown', e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                        placeholder="City or Town"
+                      />
+                    );
+                  }
+
+                  const continent = diasporaData?.continents?.find((c: any) => c.name === formData.currentContinent);
+                  const subContinent = continent ? diasporaData?.subContinents?.[continent.id]?.find((sc: any) => sc.name === formData.currentSubContinent) : null;
+                  const country = subContinent ? diasporaData?.countries?.[subContinent.id]?.find((c: any) => c.name.trim().toLowerCase() === formData.currentCountry?.trim().toLowerCase()) : null;
+                  const flad = country ? diasporaData?.firstLevel?.[country.id]?.find((f: any) => 
+                    f.name.trim().toLowerCase() === formData.currentState?.trim().toLowerCase()
+                  ) : null;
+                  
+                  const key = flad ? flad.id : (country ? `COUNTRY_${country.id}` : null);
+                  const cityOptions = key ? (diasporaData?.cities?.[key] || []) : [];
+                  
+                  // Final list of options, falling back to local Nigerian data if Diaspora data is missing for Nigeria
+                  let finalCityOptions = [...cityOptions];
+                  if (finalCityOptions.length === 0 && country?.name === 'Nigeria' && availableTowns.length > 0) {
+                    finalCityOptions = availableTowns.map(town => ({
+                      id: `NGA_TOWN_${town}`,
+                      name: town
+                    }));
+                  }
+
+                  if (finalCityOptions.length > 0) {
+                    return (
+                      <select
+                        value={formData.currentTown || ''}
+                        onChange={(e) => handleInputChange('currentTown', e.target.value)}
+                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                      >
+                        <option value="">Select City/Town</option>
+                        {finalCityOptions.map((city: any) => (
+                          <option key={city.id} value={city.name}>{city.name}</option>
+                        ))}
+                      </select>
+                    );
+                  }
+
+                  return (
+                    <input
+                      type="text"
+                      value={formData.currentTown || ''}
+                      onChange={(e) => handleInputChange('currentTown', e.target.value)}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                      placeholder="City or Town"
+                    />
+                  );
+                })()}
               </div>
 
-              {/* Current Neighbourhood (Was Quarter) */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Current Neighbourhood</label>
-                <input
-                  type="text"
-                  value={formData.currentTownQuarter || ''}
-                  onChange={(e) => handleInputChange('currentTownQuarter', e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                  placeholder="Neighbourhood"
-                />
-              </div>
-
-              {/* Igbo Organizations (Was Umunna) */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Igbo Organizations you belong to</label>
-                <input
-                  type="text"
-                  value={formData.currentIgboOrganizations || ''}
-                  onChange={(e) => handleInputChange('currentIgboOrganizations', e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                  placeholder="List organizations..."
-                />
-              </div>
-
-            </>
+              </>
           )}
 
         </div>
@@ -1360,445 +1758,545 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
           <MapPin className="w-6 h-6 mr-2 text-brand-forest" />
           Origin Information
         </h3>
-        <p className="text-gray-600">Please provide details about your place of origin.</p>
-      </div>
+        <p className="text-gray-600 mb-6">Please provide details about your ancestral roots and place of origin.</p>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Continent of Origin</label>
-          <select
-            value={formData.originContinent || ''}
-            onChange={(e) => handleInputChange('originContinent', e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-          >
-            <option value="">Select Continent</option>
-            {continents.map(c => <option key={c} value={c}>{c}</option>)}
-          </select>
+        {/* Origin Type Gatekeeper */}
+        <div className="bg-emerald-50 p-4 rounded-lg border border-emerald-100 mb-8">
+          <span className="block text-sm font-medium text-emerald-900 mb-3">What is your ancestral origin? *</span>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {[
+              { id: 'DIRECT_NIGERIA', label: 'Direct Nigerian Origin' },
+              { id: 'DIASPORA_KNOWN', label: 'Diaspora (With known Nigerian ancestry)' },
+              { id: 'DIASPORA_UNKNOWN', label: 'Diaspora (No known Nigerian root)' },
+              { id: 'MIXED', label: 'Mixed Origin' },
+            ].map((type) => (
+              <label key={type.id} className="flex items-center space-x-2 cursor-pointer p-2 bg-white rounded border border-emerald-200 hover:bg-emerald-100 transition-colors">
+                <input
+                  type="radio"
+                  name="originType"
+                  checked={formData.originType === type.id}
+                  onChange={() => handleInputChange('originType', type.id)}
+                  className="text-brand-gold focus:ring-brand-gold h-4 w-4"
+                  required
+                />
+                <span className="text-gray-800 text-sm">{type.label}</span>
+              </label>
+            ))}
+          </div>
         </div>
 
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Economic Region</label>
-          {formData.originContinent && continentSubContinents[formData.originContinent] ? (
-            <select
-              value={formData.originEconomicRegion || ''}
-              onChange={(e) => handleInputChange('originEconomicRegion', e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-            >
-              <option value="">Select Economic Region</option>
-              {continentSubContinents[formData.originContinent].map(sc => <option key={sc} value={sc}>{sc}</option>)}
-            </select>
-          ) : (
-            <input
-              type="text"
-              value={formData.originEconomicRegion || ''}
-              onChange={(e) => handleInputChange('originEconomicRegion', e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-              placeholder="e.g. West Africa"
-            />
-          )}
-        </div>
+        {/* ==========================================
+            BRANCH 1: DIRECT NIGERIAN ORIGIN 
+           ========================================== */}
+        {(formData.originType === 'DIRECT_NIGERIA' || formData.originType === 'MIXED') && (
+          <div className="space-y-6">
+            <h4 className="text-lg font-semibold text-gray-800 border-b pb-2">Nigerian Ancestry Details</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Nationality (Static for Direct) */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Nationality</label>
+                <input type="text" value="Nigerian" disabled className="w-full px-4 py-3 border border-gray-200 bg-gray-50 rounded-lg text-gray-500" />
+              </div>
 
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Cultural Region</label>
-          {formData.originContinent && culturalRegionsByContinent[formData.originContinent] ? (
-            <select
-              value={formData.originCulturalRegion || ''}
-              onChange={(e) => handleInputChange('originCulturalRegion', e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-            >
-              <option value="">Select Cultural Region</option>
-              {culturalRegionsByContinent[formData.originContinent].map(cr => <option key={cr} value={cr}>{cr}</option>)}
-            </select>
-          ) : (
-            <input
-              type="text"
-              value={formData.originCulturalRegion || ''}
-              onChange={(e) => handleInputChange('originCulturalRegion', e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-              placeholder="e.g. Arab World"
-            />
-          )}
-        </div>
+              {/* State of Origin */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">State of Origin *</label>
+                <select
+                  value={formData.originState}
+                  onChange={(e) => handleInputChange('originState', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  required
+                >
+                  <option value="">Select State</option>
+                  {nigerianStates.map(s => <option key={s.state} value={s.state}>{s.state}</option>)}
+                </select>
+              </div>
 
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Geopolitical Bloc</label>
-          <select
-            value={formData.originGeopoliticalBloc || ''}
-            onChange={(e) => handleInputChange('originGeopoliticalBloc', e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-          >
-            <option value="">Select Geopolitical Bloc</option>
-            {geopoliticalBlocs.map(g => <option key={g} value={g}>{g}</option>)}
-          </select>
-        </div>
+              {/* Senatorial District */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Senatorial District</label>
+                <select
+                  value={formData.originSenatorialDistrict || ''}
+                  onChange={(e) => handleInputChange('originSenatorialDistrict', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  disabled={!formData.originState}
+                >
+                  <option value="">Select Senatorial District</option>
+                  {(senatorialDistricts[formData.originState] ?? []).map(sd => <option key={sd} value={sd}>{sd}</option>)}
+                </select>
+              </div>
 
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Nationality</label>
-          <select
-            value={formData.originNationality || 'Nigerian'}
-            onChange={(e) => handleInputChange('originNationality', e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-          >
-            <option value="Nigerian">Nigerian</option>
-            <option value="Dual Citizenship">Dual Citizenship</option>
-          </select>
-          {formData.originNationality === 'Dual Citizenship' && (
-            <input
-              type="text"
-              value={formData.dualCitizenshipCountry || ''}
-              onChange={(e) => handleInputChange('dualCitizenshipCountry', e.target.value)}
-              className="mt-2 w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-brand-gold"
-              placeholder="Enter other country of citizenship"
-            />
-          )}
-        </div>
+              {/* LGA of Origin */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">LGA of Origin *</label>
+                <select
+                  value={formData.originLGA}
+                  onChange={(e) => handleInputChange('originLGA', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  required
+                  disabled={!originLGAs.length}
+                >
+                  <option value="">Select LGA</option>
+                  {originLGAs.map(lga => <option key={lga} value={lga}>{lga}</option>)}
+                </select>
+              </div>
 
-        {(formData.originSubContinent === 'West Africa' || !formData.originSubContinent) && (
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Region</label>
-            <select
-              value={formData.originRegion || ''}
-              onChange={(e) => handleInputChange('originRegion', e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-            >
-              <option value="">Select Region</option>
-              {Object.keys(nigerianGeoZones).map(r => <option key={r} value={r}>{r}</option>)}
-            </select>
+              {/* Town of Origin */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Town of Origin *</label>
+                <select
+                  value={formData.originTown}
+                  onChange={(e) => handleInputChange('originTown', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  required
+                  disabled={!originTowns.length}
+                >
+                  <option value="">Select Town</option>
+                  {originTowns.map(t => <option key={t} value={t}>{t}</option>)}
+                </select>
+              </div>
+
+              {/* Ward */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Political Ward</label>
+                <select
+                  value={formData.originWard || ''}
+                  onChange={(e) => handleInputChange('originWard', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  disabled={!originWards.length}
+                >
+                  <option value="">Select Ward</option>
+                  {originWards.map(w => <option key={w} value={w}>{w}</option>)}
+                </select>
+              </div>
+
+              {/* Village */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Village (Ogbe)</label>
+                {originVillages.length > 0 && !isManualVillage ? (
+                  <select
+                    value={formData.originVillage}
+                    onChange={(e) => e.target.value === 'OTHER' ? setIsManualVillage(true) : handleInputChange('originVillage', e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  >
+                    <option value="">Select Village</option>
+                    {originVillages.map(v => <option key={v} value={v}>{v}</option>)}
+                    <option value="OTHER">Other (Manual)</option>
+                  </select>
+                ) : (
+                  <input
+                    type="text"
+                    value={formData.originVillage}
+                    onChange={(e) => handleInputChange('originVillage', e.target.value)}
+                    placeholder="Enter Village"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  />
+                )}
+              </div>
+
+              {/* Clan */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Clan</label>
+                {availableClans.length > 0 && !isManualClan ? (
+                  <select
+                    value={formData.originClan || ''}
+                    onChange={(e) => e.target.value === 'OTHER' ? setIsManualClan(true) : handleInputChange('originClan', e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  >
+                    <option value="">Select Clan</option>
+                    {availableClans.map(c => <option key={c} value={c}>{c}</option>)}
+                  </select>
+                ) : (
+                  <input
+                    type="text"
+                    value={formData.originClan || ''}
+                    onChange={(e) => handleInputChange('originClan', e.target.value)}
+                    placeholder="Enter Clan"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  />
+                )}
+              </div>
+            </div>
           </div>
         )}
 
+        {/* ==========================================
+            BRANCH 2: DIASPORA (KNOWN ROOTS)
+           ========================================== */}
+        {formData.originType === 'DIASPORA_KNOWN' && (
+          <div className="space-y-6">
+            <h4 className="text-lg font-semibold text-gray-800 border-b pb-2">Diaspora with Known Nigerian Roots</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Nationality (Open Ended) */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Country of Nationality</label>
+                <input
+                  type="text"
+                  value={formData.originNationality || ''}
+                  onChange={(e) => handleInputChange('originNationality', e.target.value)}
+                  placeholder="e.g. British-Nigerian"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                />
+              </div>
 
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            State of Origin *
-          </label>
-          <select
-            value={formData.originState}
-            onChange={(e) => handleInputChange('originState', e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-            required
-          >
-            <option value="">Select State</option>
-            {(() => {
-              const states = formData.originRegion && nigerianGeoZones[formData.originRegion]
-                ? nigerianGeoZones[formData.originRegion]
-                : [...new Set(nigerianStates.map(s => s.state))];
-              return states.map(state => (
-                <option key={state} value={state}>{state}</option>
-              ));
-            })()}
-          </select>
-        </div>
-
-        {/* Senatorial District, Federal & State Constituencies moved here to cascade from State */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Senatorial District</label>
-          <select
-            value={formData.originSenatorialDistrict || ''}
-            onChange={(e) => handleInputChange('originSenatorialDistrict', e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-            disabled={!formData.originState}
-          >
-            {!formData.originState ? (
-              <option value="">Select Senatorial District</option>
-            ) : (
-              <>
-                <option value="">Select Senatorial District</option>
-                {(senatorialDistricts[formData.originState] ?? []).map(sd => (
-                  <option key={sd} value={sd}>{sd}</option>
-                ))}
-              </>
-            )}
-          </select>
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">Federal Constituency</label>
-          {(() => {
-            const stateKey = normalizeLookupKey(formData.originState)
-            const zoneKey = normalizeLookupKey(formData.originSenatorialDistrict)
-            const byState = stateKey ? federalConstituencies[stateKey] : undefined
-            const byZone = stateKey && zoneKey
-              ? federalConstituenciesByStateAndSenatorialDistrict[stateKey]?.[zoneKey]
-              : undefined
-            const options = (byZone?.length ? byZone : byState) ?? []
-            return (
-              <select
-                value={formData.originFederalConstituency || ''}
-                onChange={(e) => handleInputChange('originFederalConstituency', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                disabled={!formData.originState || options.length === 0}
-              >
-                {!formData.originState ? (
-                  <option value="">Select Federal Constituency</option>
-                ) : options.length === 0 ? (
-                  <option value="">Select Federal Constituency</option>
-                ) : (
-                  <>
-                    <option value="">Select Federal Constituency</option>
-                    {options.map(fc => <option key={fc} value={fc}>{fc}</option>)}
-                  </>
-                )}
-              </select>
-            )
-          })()}
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            LGA of Origin *
-          </label>
-          <select
-            value={formData.originLGA}
-            onChange={(e) => handleInputChange('originLGA', e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-            required
-            disabled={!originLGAs.length}
-          >
-            <option value="">Select LGA</option>
-            {[...new Set(originLGAs)].map(lga => (
-              <option key={lga} value={lga}>{lga}</option>
-            ))}
-          </select>
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">State Constituency</label>
-          {(() => {
-            const stateKey = normalizeLookupKey(formData.originState)
-            const fedKey = normalizeLookupKey(formData.originFederalConstituency)
-            const byState = stateKey ? stateConstituenciesByState[stateKey] : undefined
-            const byFederal = stateKey && fedKey
-              ? stateConstituenciesByStateAndFederalConstituency[stateKey]?.[fedKey]
-              : undefined
-            const options = (byFederal?.length ? byFederal : byState) ?? []
-            return (
-              <select
-                value={formData.originStateConstituency || ''}
-                onChange={(e) => handleInputChange('originStateConstituency', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                disabled={!formData.originState || options.length === 0}
-              >
-                {!formData.originState ? (
-                  <option value="">Select State Constituency</option>
-                ) : options.length === 0 ? (
-                  <option value="">Select State Constituency</option>
-                ) : (
-                  <>
-                    <option value="">Select State Constituency</option>
-                    {options.map(sc => <option key={sc} value={sc}>{sc}</option>)}
-                  </>
-                )}
-              </select>
-            )
-          })()}
-        </div>
-
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Town of Origin *
-          </label>
-          <select
-            value={formData.originTown}
-            onChange={(e) => handleInputChange('originTown', e.target.value)}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-            required
-            disabled={!originTowns.length}
-          >
-            <option value="">Select Town</option>
-            {[...new Set(originTowns)].map(town => (
-              <option key={town} value={town}>{town}</option>
-            ))}
-          </select>
-        </div>
-
-        <div className="md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Town Admin Level 1</label>
-            {availableLevel1s.length > 0 ? (
-              <select
-                value={formData.originTownLevel1 || ''}
-                onChange={(e) => handleInputChange('originTownLevel1', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-              >
-                <option value="">Select Town Admin Level 1</option>
-                {availableLevel1s.map(l => <option key={l} value={l}>{l}</option>)}
-              </select>
-            ) : (
-              <select
-                value={formData.originTownLevel1 || ''}
-                onChange={(e) => handleInputChange('originTownLevel1', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                disabled
-              >
-                <option value="">Select Town Admin Level 1</option>
-              </select>
-            )}
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Town Admin Level 2</label>
-            {availableLevel2s.length > 0 ? (
-              <select
-                value={formData.originTownLevel2 || ''}
-                onChange={(e) => handleInputChange('originTownLevel2', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-              >
-                <option value="">Select Town Admin Level 2</option>
-                {availableLevel2s.map(l => <option key={l} value={l}>{l}</option>)}
-              </select>
-            ) : (
-              <select
-                value={formData.originTownLevel2 || ''}
-                onChange={(e) => handleInputChange('originTownLevel2', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                disabled
-              >
-                <option value="">Select Town Admin Level 2</option>
-              </select>
-            )}
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Town Admin Level 3</label>
-            <select
-              value={formData.originTownLevel3 || ''}
-              onChange={(e) => handleInputChange('originTownLevel3', e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-              disabled
-            >
-              <option value="">Select Town Admin Level 3</option>
-            </select>
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Town Admin Level 4</label>
-            <select
-              value={formData.originTownLevel4 || ''}
-              onChange={(e) => handleInputChange('originTownLevel4', e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-              disabled
-            >
-              <option value="">Select Town Admin Level 4</option>
-            </select>
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-2">Political Ward</label>
-            {originWards.length > 0 ? (
-              <select
-                value={formData.originWard || ''}
-                onChange={(e) => handleInputChange('originWard', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-              >
-                <option value="">Select Political Ward</option>
-                {originWards.map(w => <option key={w} value={w}>{w}</option>)}
-              </select>
-            ) : (
-              <select
-                value={formData.originWard || ''}
-                onChange={(e) => handleInputChange('originWard', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                disabled
-              >
-                <option value="">Select Political Ward</option>
-              </select>
-            )}
-          </div>
-        </div>
-
-
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Village (Ogbe)
-          </label>
-          {availableVillages.length > 0 && !isManualVillage ? (
-            <div className="space-y-2">
-              <select
-                value={formData.originVillage}
-                onChange={(e) => {
-                  if (e.target.value === 'OTHER') {
-                    setIsManualVillage(true)
-                    handleInputChange('originVillage', '')
-                  } else {
-                    handleInputChange('originVillage', e.target.value)
-                  }
-                }}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-                disabled={!originVillages.length && !availableVillages.length}
-              >
-                <option value="">Select Village</option>
-                {[...new Set((originVillages.length > 0 ? originVillages : availableVillages))].map(village => (
-                  <option key={village} value={village}>{village}</option>
-                ))}
-                <option value="OTHER">Other (Enter Manually)</option>
-              </select>
-            </div>
-          ) : (
-            <div className="space-y-2">
-              <input
-                type="text"
-                value={formData.originVillage}
-                onChange={(e) => handleInputChange('originVillage', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-                placeholder="Enter Village"
-              />
-              {(originVillages.length > 0 || availableVillages.length > 0) && (
-                <button
-                  type="button"
-                  onClick={() => setIsManualVillage(false)}
-                  className="text-sm text-brand-gold hover:underline"
+              {/* Generational Depth */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Generational Depth</label>
+                <select
+                  value={formData.generationalDepth || ''}
+                  onChange={(e) => handleInputChange('generationalDepth', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
                 >
-                  Back to list
-                </button>
-              )}
-            </div>
-          )}
-        </div>
+                  <option value="">Select Generation</option>
+                  <option value="1ST_GEN">1st Generation (Self-migrated)</option>
+                  <option value="2ND_GEN">2nd Generation (Born in Diaspora)</option>
+                  <option value="3RD_GEN">3rd Generation</option>
+                  <option value="4TH_GEN_PLUS">4th Generation +</option>
+                  <option value="UNKNOWN">Unknown</option>
+                </select>
+              </div>
 
-        {/* Clan field - after Village */}
-        <div>
-          <label className="block text-sm font-medium text-gray-700 mb-2">
-            Clan
-          </label>
-          {availableClans.length > 0 && !isManualClan ? (
-            <div className="space-y-2">
-              <select
-                value={formData.originClan || ''}
-                onChange={(e) => {
-                  if (e.target.value === 'OTHER') {
-                    setIsManualClan(true)
-                    handleInputChange('originClan', '')
-                  } else {
-                    handleInputChange('originClan', e.target.value)
-                  }
-                }}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-              >
-                <option value="">Select Clan</option>
-                {[...new Set(availableClans)].map(clan => (
-                  <option key={clan} value={clan}>{clan}</option>
-                ))}
-                <option value="OTHER">Other (Enter Manually)</option>
-              </select>
-            </div>
-          ) : (
-            <div className="space-y-2">
-              <input
-                type="text"
-                value={formData.originClan || ''}
-                onChange={(e) => handleInputChange('originClan', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-                placeholder="Enter Clan name"
-              />
-              {availableClans.length > 0 && (
-                <button
-                  type="button"
-                  onClick={() => setIsManualClan(false)}
-                  className="text-sm text-brand-gold hover:underline"
+              {/* State of Origin */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">State of Origin *</label>
+                <select
+                  value={formData.originState}
+                  onChange={(e) => handleInputChange('originState', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  required
                 >
-                  Back to list
-                </button>
-              )}
+                  <option value="">Select State</option>
+                  {nigerianStates.map(s => <option key={s.state} value={s.state}>{s.state}</option>)}
+                </select>
+              </div>
+
+              {/* LGA of Origin */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">LGA of Origin *</label>
+                <select
+                  value={formData.originLGA}
+                  onChange={(e) => handleInputChange('originLGA', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  required
+                  disabled={!originLGAs.length}
+                >
+                  <option value="">Select LGA</option>
+                  {originLGAs.map(lga => <option key={lga} value={lga}>{lga}</option>)}
+                </select>
+              </div>
+
+              {/* Town of Origin */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Town of Origin *</label>
+                <select
+                  value={formData.originTown}
+                  onChange={(e) => handleInputChange('originTown', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  required
+                  disabled={!originTowns.length}
+                >
+                  <option value="">Select Town</option>
+                  {originTowns.map(t => <option key={t} value={t}>{t}</option>)}
+                </select>
+              </div>
             </div>
-          )}
-        </div>
+          </div>
+        )}
+
+        {/* ==========================================
+            BRANCH 3: DIASPORA (NO KNOWN ROOTS)
+           ========================================== */}
+        {formData.originType === 'DIASPORA_UNKNOWN' && (
+          <div className="space-y-6">
+            <h4 className="text-lg font-semibold text-gray-800 border-b pb-2">Diaspora (No known Nigerian roots)</h4>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Country of Nationality */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Country of Nationality *</label>
+                <select
+                  value={formData.originNationality || ''}
+                  onChange={(e) => handleInputChange('originNationality', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  required
+                >
+                  <option value="">Select Nationality</option>
+                  {diasporaOriginData.nationalities.map(n => <option key={n} value={n}>{n}</option>)}
+                </select>
+              </div>
+
+              {/* Region / Province / State */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Region / Province / State</label>
+                {availableOriginAdmin1.length > 0 ? (
+                  <select
+                    value={formData.originState || ''}
+                    onChange={(e) => handleInputChange('originState', e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  >
+                    <option value="">Select Region</option>
+                    {availableOriginAdmin1.map(a => <option key={a.id} value={a.name}>{a.name} ({a.type})</option>)}
+                  </select>
+                ) : (
+                  <input
+                    type="text"
+                    value={formData.originState || ''}
+                    onChange={(e) => handleInputChange('originState', e.target.value)}
+                    placeholder="e.g. Ontario, Georgia"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  />
+                )}
+              </div>
+
+              {/* District / Parish / County */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">District / Parish / County</label>
+                {availableOriginAdmin2.length > 0 ? (
+                  <select
+                    value={formData.originLGA || ''}
+                    onChange={(e) => handleInputChange('originLGA', e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  >
+                    <option value="">Select District</option>
+                    {availableOriginAdmin2.map(a => <option key={a.id} value={a.name}>{a.name} ({a.type})</option>)}
+                  </select>
+                ) : (
+                  <input
+                    type="text"
+                    value={formData.originLGA || ''}
+                    onChange={(e) => handleInputChange('originLGA', e.target.value)}
+                    placeholder="e.g. parish, county"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  />
+                )}
+              </div>
+
+              {/* Town / City / Settlement */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Town / City / Settlement</label>
+                {availableOriginAdmin3.length > 0 ? (
+                  <select
+                    value={formData.originTown || ''}
+                    onChange={(e) => handleInputChange('originTown', e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  >
+                    <option value="">Select Town</option>
+                    {availableOriginAdmin3.map(a => <option key={a.id} value={a.name}>{a.name}</option>)}
+                  </select>
+                ) : (
+                  <input
+                    type="text"
+                    value={formData.originTown || ''}
+                    onChange={(e) => handleInputChange('originTown', e.target.value)}
+                    placeholder="e.g. City name"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  />
+                )}
+              </div>
+
+              {/* Associated Ethnic Identity */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Associated Ethnic Identity</label>
+                <input
+                  type="text"
+                  value={formData.associatedEthnicIdentity || ''}
+                  onChange={(e) => handleInputChange('associatedEthnicIdentity', e.target.value)}
+                  placeholder="e.g. Afro-Jamaican, Gullah Gechee"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                />
+              </div>
+
+              {/* Migration Path/Narrative */}
+              <div className="md:col-span-2">
+                <label className="block text-sm font-medium text-gray-700 mb-2">Migration Path/Narrative</label>
+                <textarea
+                  value={formData.migrationPathNarrative || ''}
+                  onChange={(e) => handleInputChange('migrationPathNarrative', e.target.value)}
+                  placeholder="Tell us about your ancestral migration journey..."
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  rows={3}
+                />
+              </div>
+
+              {/* Cultural Questions */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Do you speak Igbo?</label>
+                <div className="flex gap-4">
+                  {['Yes', 'No'].map(v => (
+                    <label key={v} className="flex items-center space-x-2 cursor-pointer">
+                      <input
+                        type="radio"
+                        name="speaksIgbo"
+                        checked={formData.speaksIgbo === (v === 'Yes')}
+                        onChange={() => handleInputChange('speaksIgbo', v === 'Yes' as any)}
+                        className="text-brand-gold h-4 w-4"
+                      />
+                      <span className="text-sm text-gray-700">{v}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Do you speak associated ethnic language?</label>
+                <div className="flex gap-4">
+                  {['Yes', 'No'].map(v => (
+                    <label key={v} className="flex items-center space-x-2 cursor-pointer">
+                      <input
+                        type="radio"
+                        name="speaksEthnicLanguage"
+                        checked={formData.speaksEthnicLanguage === (v === 'Yes')}
+                        onChange={() => handleInputChange('speaksEthnicLanguage', v === 'Yes' as any)}
+                        className="text-brand-gold h-4 w-4"
+                      />
+                      <span className="text-sm text-gray-700">{v}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Have you visited Nigeria?</label>
+                <div className="flex gap-4">
+                  {['Yes', 'No'].map(v => (
+                    <label key={v} className="flex items-center space-x-2 cursor-pointer">
+                      <input
+                        type="radio"
+                        name="hasVisitedNigeria"
+                        checked={formData.hasVisitedNigeria === (v === 'Yes')}
+                        onChange={() => handleInputChange('hasVisitedNigeria', v === 'Yes' as any)}
+                        className="text-brand-gold h-4 w-4"
+                      />
+                      <span className="text-sm text-gray-700">{v}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              {/* Do you know your ancestral town? */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Do you know your ancestral town?</label>
+                <div className="flex gap-4">
+                  {['Yes', 'No'].map(v => (
+                    <label key={v} className="flex items-center space-x-2 cursor-pointer">
+                      <input
+                        type="radio"
+                        name="knowsAncestralTown"
+                        checked={formData.knowsAncestralTown === (v === 'Yes')}
+                        onChange={() => handleInputChange('knowsAncestralTown', v === 'Yes' as any)}
+                        className="text-brand-gold h-4 w-4"
+                      />
+                      <span className="text-sm text-gray-700">{v}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+            </div>
+
+            {/* Ancestral Discovery Path (If knowsAncestralTown is Yes) */}
+            {formData.knowsAncestralTown && (
+              <div className="mt-8 p-6 bg-amber-50 rounded-xl border border-amber-200">
+                <h5 className="font-bold text-amber-900 mb-4">Ancestral Connection Details</h5>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {/* Ancestral Country */}
+                  <div>
+                    <label className="block text-sm font-medium text-amber-900 mb-2">Country of Ancestral Origin *</label>
+                    <select
+                      value={formData.ancestralCountryId || ''}
+                      onChange={(e) => {
+                        const country = availableAncestralCountries.find(c => c.id === e.target.value);
+                        handleInputChange('ancestralCountryId', e.target.value);
+                        handleInputChange('ancestralCountry', country?.name || '');
+                      }}
+                      className="w-full px-4 py-3 border border-amber-300 rounded-lg bg-white"
+                      required
+                    >
+                      <option value="">Select Country</option>
+                      {availableAncestralCountries.map(c => <option key={c.id} value={c.id}>{c.name}</option>)}
+                    </select>
+                  </div>
+
+                  {/* Ancestral Region (Admin Level 1) */}
+                  <div>
+                    <label className="block text-sm font-medium text-amber-900 mb-2">Region / Province / State of Ancestry</label>
+                    <select
+                      value={formData.ancestralRegionId || ''}
+                      onChange={(e) => {
+                        const region = availableAncestralRegions.find(r => r.id === e.target.value);
+                        handleInputChange('ancestralRegionId', e.target.value);
+                        handleInputChange('ancestralRegion', region?.name || '');
+                      }}
+                      className="w-full px-4 py-3 border border-amber-300 rounded-lg bg-white"
+                      disabled={!availableAncestralRegions.length}
+                    >
+                      <option value="">Select Region</option>
+                      {availableAncestralRegions.map(r => <option key={r.id} value={r.id}>{r.name}</option>)}
+                    </select>
+                  </div>
+
+                  {/* Ancestral District (Admin Level 2) */}
+                  <div>
+                    <label className="block text-sm font-medium text-amber-900 mb-2">District / Parish / County of Ancestry</label>
+                    <select
+                      value={formData.ancestralDistrictId || ''}
+                      onChange={(e) => {
+                        const district = availableAncestralDistricts.find(d => d.id === e.target.value);
+                        handleInputChange('ancestralDistrictId', e.target.value);
+                        handleInputChange('ancestralDistrict', district?.name || '');
+                      }}
+                      className="w-full px-4 py-3 border border-amber-300 rounded-lg bg-white"
+                      disabled={!availableAncestralDistricts.length}
+                    >
+                      <option value="">Select District</option>
+                      {availableAncestralDistricts.map(d => <option key={d.id} value={d.id}>{d.name}</option>)}
+                    </select>
+                  </div>
+
+                  {/* Ancestral Town (Admin Level 3) */}
+                  <div>
+                    <label className="block text-sm font-medium text-amber-900 mb-2">Village / Town / Settlement of Ancestry</label>
+                    <select
+                      value={formData.ancestralTownId || ''}
+                      onChange={(e) => {
+                        const town = availableAncestralTowns.find(t => t.id === e.target.value);
+                        handleInputChange('ancestralTownId', e.target.value);
+                        handleInputChange('ancestralTown', town?.name || '');
+                      }}
+                      className="w-full px-4 py-3 border border-amber-300 rounded-lg bg-white"
+                      disabled={!availableAncestralTowns.length}
+                    >
+                      <option value="">Select Town</option>
+                      {availableAncestralTowns.map(t => <option key={t.id} value={t.id}>{t.name}</option>)}
+                    </select>
+                  </div>
+
+                  {/* Self-Declared Ethnic Identity */}
+                  <div>
+                    <label className="block text-sm font-medium text-amber-900 mb-2">Self-Declared Ethnic Identity</label>
+                    <input
+                      type="text"
+                      value={formData.selfDeclaredEthnicIdentity || ''}
+                      onChange={(e) => handleInputChange('selfDeclaredEthnicIdentity', e.target.value)}
+                      placeholder="e.g. Igbo, Akan, Yoruba"
+                      className="w-full px-4 py-3 border border-amber-300 rounded-lg bg-white"
+                    />
+                  </div>
+
+                  {/* Family Migration Path */}
+                  <div className="md:col-span-2">
+                    <label className="block text-sm font-medium text-amber-900 mb-2">Family Migration Path</label>
+                    <textarea
+                      value={formData.familyMigrationPath || ''}
+                      onChange={(e) => handleInputChange('familyMigrationPath', e.target.value)}
+                      placeholder="Describe your family's known migration history..."
+                      className="w-full px-4 py-3 border border-amber-300 rounded-lg bg-white"
+                      rows={3}
+                    />
+                  </div>
+                </div>
+              </div>
+            )}
+          </div>
+        )}
       </div>
 
       <div className="mb-8">
@@ -2561,6 +3059,6 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
           )}
         </button>
       </div>
-    </form >
+    </form>
   )
 }

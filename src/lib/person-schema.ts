@@ -120,6 +120,29 @@ export interface LineageFields {
 
   // Maternal lineage tracking
   nwaadaLineageLink?: string; // Maternal village tracking for maternal rights & ties
+
+  // ORIGIN BRANCHING & DIASPORA ORIGIN
+  originType?: 'DIRECT_NIGERIA' | 'DIASPORA_KNOWN' | 'DIASPORA_UNKNOWN' | 'MIXED';
+  generationalDepth?: string;
+  associatedEthnicIdentity?: string;
+  migrationPathNarrative?: string;
+  speaksIgbo?: boolean;
+  speaksEthnicLanguage?: boolean;
+  hasVisitedNigeria?: boolean;
+  knowsAncestralTown?: boolean;
+  
+  // Ancestral Location (Non-Nigerian roots)
+  ancestralCountry?: string;
+  ancestralCountryId?: string;
+  ancestralRegion?: string;
+  ancestralRegionId?: string;
+  ancestralDistrict?: string;
+  ancestralDistrictId?: string;
+  ancestralTown?: string;
+  ancestralTownId?: string;
+  
+  selfDeclaredEthnicIdentity?: string; // Igbo, Igbo-descendant, Mixed (Igbo + other), Not sure
+  familyMigrationPath?: string;
 }
 
 // ============================================================================
@@ -498,6 +521,28 @@ export interface PersonFormSubmission {
   currentKindred?: string;
   currentUmunna?: string;
 
+  // Origin Branching & Diaspora Origin
+  originType?: 'DIRECT_NIGERIA' | 'DIASPORA_KNOWN' | 'DIASPORA_UNKNOWN' | 'MIXED';
+  generationalDepth?: string;
+  associatedEthnicIdentity?: string;
+  migrationPathNarrative?: string;
+  speaksIgbo?: boolean;
+  speaksEthnicLanguage?: boolean;
+  hasVisitedNigeria?: boolean;
+  knowsAncestralTown?: boolean;
+  
+  ancestralCountry?: string;
+  ancestralCountryId?: string;
+  ancestralRegion?: string;
+  ancestralRegionId?: string;
+  ancestralDistrict?: string;
+  ancestralDistrictId?: string;
+  ancestralTown?: string;
+  ancestralTownId?: string;
+  
+  selfDeclaredEthnicIdentity?: string;
+  familyMigrationPath?: string;
+
   // Legacy diaspora fields (for backward compatibility)
   subContinent?: string;
   countryOfResidence?: string;
@@ -610,6 +655,26 @@ export function createPersonFromForm(
       ...(formData.originHamlet && { originHamlet: formData.originHamlet.toUpperCase().trim() }),
       ...(formData.originKindred && { originKindred: formData.originKindred.toUpperCase().trim() }),
       ...(formData.originUmunna && { originUmunna: formData.originUmunna.toUpperCase().trim() }),
+      
+      // ORIGIN BRANCHING & DIASPORA ORIGIN
+      ...(formData.originType && { originType: formData.originType }),
+      ...(formData.generationalDepth && { generationalDepth: formData.generationalDepth.toUpperCase().trim() }),
+      ...(formData.associatedEthnicIdentity && { associatedEthnicIdentity: formData.associatedEthnicIdentity.toUpperCase().trim() }),
+      ...(formData.migrationPathNarrative && { migrationPathNarrative: formData.migrationPathNarrative.trim() }),
+      ...(formData.speaksIgbo !== undefined && { speaksIgbo: formData.speaksIgbo }),
+      ...(formData.speaksEthnicLanguage !== undefined && { speaksEthnicLanguage: formData.speaksEthnicLanguage }),
+      ...(formData.hasVisitedNigeria !== undefined && { hasVisitedNigeria: formData.hasVisitedNigeria }),
+      ...(formData.knowsAncestralTown !== undefined && { knowsAncestralTown: formData.knowsAncestralTown }),
+      ...(formData.ancestralCountry && { ancestralCountry: formData.ancestralCountry.toUpperCase().trim() }),
+      ...(formData.ancestralCountryId && { ancestralCountryId: formData.ancestralCountryId }),
+      ...(formData.ancestralRegion && { ancestralRegion: formData.ancestralRegion.toUpperCase().trim() }),
+      ...(formData.ancestralRegionId && { ancestralRegionId: formData.ancestralRegionId }),
+      ...(formData.ancestralDistrict && { ancestralDistrict: formData.ancestralDistrict.toUpperCase().trim() }),
+      ...(formData.ancestralDistrictId && { ancestralDistrictId: formData.ancestralDistrictId }),
+      ...(formData.ancestralTown && { ancestralTown: formData.ancestralTown.toUpperCase().trim() }),
+      ...(formData.ancestralTownId && { ancestralTownId: formData.ancestralTownId }),
+      ...(formData.selfDeclaredEthnicIdentity && { selfDeclaredEthnicIdentity: formData.selfDeclaredEthnicIdentity.toUpperCase().trim() }),
+      ...(formData.familyMigrationPath && { familyMigrationPath: formData.familyMigrationPath.trim() }),
 
       // Origin ontology IDs (immutable registry references)
       ...(formData.originContinentId && { originContinentId: formData.originContinentId }),
@@ -757,6 +822,10 @@ export function createPersonFromForm(
       ...(formData.returnVisitStatus && { returnVisitStatus: formData.returnVisitStatus }),
       ...(formData.returnVisitDate && { returnVisitDate: formData.returnVisitDate }),
       ...(formData.returnVisitNotes && { returnVisitNotes: formData.returnVisitNotes.trim() }),
+
+      // ORIGIN BRANCHING & DIASPORA ORIGIN (Stored in diaspora section as well for redundancy/context)
+      ...(formData.originType && { originType: formData.originType }),
+      ...(formData.knowsAncestralTown !== undefined && { knowsAncestralTown: formData.knowsAncestralTown }),
     },
     createdAt: now,
     updatedAt: now,

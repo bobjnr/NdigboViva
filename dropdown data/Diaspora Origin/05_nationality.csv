@@ -1,0 +1,29 @@
+nationality_id,nationality_name,country_id
+NAT_NGA,Nigerian,CT_NGA
+NAT_CMR,Cameroonian,CT_CMR
+NAT_GNQ,Equatoguinean,CT_GNQ
+NAT_GAB,Gabonese,CT_GAB
+NAT_STP,Santomean,CT_STP
+NAT_SLE,Sierra Leonean,CT_SLE
+NAT_LBR,Liberian,CT_LBR
+NAT_GHA,Ghanaian,CT_GHA
+NAT_BEN,Beninese,CT_BEN
+NAT_TGO,Togolese,CT_TGO
+NAT_JAM,Jamaican,CT_JAM
+NAT_BRB,Barbadian,CT_BRB
+NAT_TTO,Trinidadian and Tobagonian,CT_TTO
+NAT_GRD,Grenadian,CT_GRD
+NAT_DMA,Dominican,CT_DMA
+NAT_LCA,Saint Lucian,CT_LCA
+NAT_VCT,Vincentian,CT_VCT
+NAT_HTI,Haitian,CT_HTI
+NAT_DOM,Dominican Republic national,CT_DOM
+NAT_CUB,Cuban,CT_CUB
+NAT_BLZ,Belizean,CT_BLZ
+NAT_USA,American,CT_USA
+NAT_CAN,Canadian,CT_CAN
+NAT_BRA,Brazilian,CT_BRA
+NAT_GUY,Guyanese,CT_GUY
+NAT_GBR,British,CT_GBR
+NAT_ESP,Spanish,CT_ESP
+NAT_PRT,Portuguese,CT_PRT

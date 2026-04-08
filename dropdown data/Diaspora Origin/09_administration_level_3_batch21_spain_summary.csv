@@ -1,0 +1,2 @@
+batch_number,country_id,country_name,adm3_model,adm3_units_added,cumulative_adm3_rows,status
+21,CT_ESP,Spain,ADM1 = autonomous community; ADM2 = province; ADM3 = provincial-capital municipality anchor seed,21,3761,seed_partial

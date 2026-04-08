@@ -7,10 +7,11 @@
 
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { PersonFormSubmission, Gender, SourceType, VerificationLevel, VisibilitySetting } from '@/lib/person-schema'
 import { User, Users, Award, Calendar, FileText, Shield, Globe, CheckCircle, ArrowRight, ArrowLeft } from 'lucide-react'
 import dropdownData from '@/lib/dropdown-data.json'
+import { nigerianGeoZones } from '@/lib/extended-location-data'
 
 interface PersonFormProps {
   onSubmit?: (data: PersonFormSubmission) => void
@@ -44,6 +45,30 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
     connectionStatus: 'NOT_APPLICABLE',
   })
 
+  // Diaspora dropdown data
+  const [diasporaData, setDiasporaData] = useState<any>(null)
+  const [isLoadingDiaspora, setIsLoadingDiaspora] = useState(false)
+
+  // Load Diaspora data when needed
+  useEffect(() => {
+    if ((activeTab === 2 || formData.isDiasporaRelative) && !diasporaData && !isLoadingDiaspora) {
+      setIsLoadingDiaspora(true)
+      fetch('/data/diaspora-location-data.json')
+        .then(res => {
+          if (!res.ok) throw new Error('Failed to load Diaspora data')
+          return res.json()
+        })
+        .then(data => {
+          setDiasporaData(data)
+          setIsLoadingDiaspora(false)
+        })
+        .catch(err => {
+          console.error('Error loading Diaspora data:', err)
+          setIsLoadingDiaspora(false)
+        })
+    }
+  }, [activeTab, formData.isDiasporaRelative, diasporaData, isLoadingDiaspora])
+
   const handleInputChange = (field: keyof PersonFormSubmission, value: any) => {
     setFormData(prev => ({ ...prev, [field]: value }))
   }
@@ -52,7 +77,18 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
   const handleLocationChange = (type: 'origin' | 'current', field: string, value: string) => {
     const prefix = type === 'origin' ? 'origin' : 'current'
     
-    if (field === 'State') {
+    if (field === 'Region') {
+      setFormData(prev => ({
+        ...prev,
+        [`${prefix}Region`]: value,
+        [`${prefix}State`]: '',
+        [`${prefix}LocalGovernmentArea`]: '',
+        [`${prefix}SenatorialDistrict`]: '',
+        [`${prefix}FederalConstituency`]: '',
+        [`${prefix}StateConstituency`]: '',
+        [type === 'origin' ? 'originWard' : 'currentPoliticalWard']: '',
+      }))
+    } else if (field === 'State') {
       setFormData(prev => ({
         ...prev,
         [`${prefix}State`]: value,
@@ -103,6 +139,61 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
       ...prev,
       [field]: current.filter((_, i) => i !== index)
     }))
+  }
+
+  // Helper for Diaspora cascading location changes
+  const handleDiasporaLocationChange = (field: string, value: string) => {
+    if (field === 'currentContinent') {
+      setFormData(prev => ({
+        ...prev,
+        currentContinent: value,
+        currentSubContinent: '',
+        currentNationality: '',
+        currentRegion: '',
+        currentState: '',
+        currentLocalGovernmentArea: '',
+        currentTown: '',
+      }))
+    } else if (field === 'currentSubContinent') {
+      setFormData(prev => ({
+        ...prev,
+        currentSubContinent: value,
+        currentNationality: '',
+        currentRegion: '',
+        currentState: '',
+        currentLocalGovernmentArea: '',
+        currentTown: '',
+      }))
+    } else if (field === 'currentNationality') {
+      setFormData(prev => ({
+        ...prev,
+        currentNationality: value,
+        currentRegion: '',
+        currentState: '',
+        currentLocalGovernmentArea: '',
+        currentTown: '',
+        // Reset Nigeria-specific fields
+        currentSenatorialDistrict: '',
+        currentFederalConstituency: '',
+        currentPoliticalWard: '',
+      }))
+    } else if (field === 'currentRegion') { // First-Level Admin
+      setFormData(prev => ({
+        ...prev,
+        currentRegion: value.trim(),
+        currentState: value.trim(),
+        currentLocalGovernmentArea: '',
+        currentTown: '',
+      }))
+    } else if (field === 'currentLocalGovernmentArea') { // Second-Level Admin
+      setFormData(prev => ({
+        ...prev,
+        currentLocalGovernmentArea: value,
+        currentTown: '',
+      }))
+    } else {
+      handleInputChange(field as keyof PersonFormSubmission, value)
+    }
   }
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -604,13 +695,16 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Region</label>
-                  <input
-                    type="text"
+                  <select
                     value={formData.originRegion || ''}
-                    onChange={(e) => handleInputChange('originRegion', e.target.value)}
+                    onChange={(e) => handleLocationChange('origin', 'Region', e.target.value)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="SOUTH-EAST"
-                  />
+                  >
+                    <option value="">Select Region</option>
+                    {Object.keys(nigerianGeoZones).map(zone => (
+                      <option key={zone} value={zone}>{zone}</option>
+                    ))}
+                  </select>
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">State</label>
@@ -620,9 +714,11 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg"
                   >
                     <option value="">Select State</option>
-                    {dropdownData.nigerianStates.map(s => (
-                      <option key={s.state} value={s.state}>{s.state}</option>
-                    ))}
+                    {dropdownData.nigerianStates
+                      .filter(s => !formData.originRegion || nigerianGeoZones[formData.originRegion as keyof typeof nigerianGeoZones]?.includes(s.state))
+                      .map(s => (
+                        <option key={s.state} value={s.state}>{s.state}</option>
+                      ))}
                   </select>
                 </div>
               </div>
@@ -1650,60 +1746,162 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Current Continent</label>
-                  <input
-                    type="text"
-                    value={formData.currentContinent || ''}
-                    onChange={(e) => handleInputChange('currentContinent', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="NORTH AMERICA"
-                  />
+                  {diasporaData ? (
+                    <select
+                      value={formData.currentContinent || ''}
+                      onChange={(e) => handleDiasporaLocationChange('currentContinent', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    >
+                      <option value="">Select Continent</option>
+                      {diasporaData.continents.map((c: any) => (
+                        <option key={c.id} value={c.name}>{c.name}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <div className="relative">
+                      <input
+                        type="text"
+                        value={formData.currentContinent || ''}
+                        onChange={(e) => handleInputChange('currentContinent', e.target.value)}
+                        className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                        placeholder="NORTH AMERICA"
+                      />
+                      {isLoadingDiaspora && (
+                        <div className="absolute right-3 top-2.5">
+                          <div className="animate-spin h-5 w-5 border-2 border-blue-500 rounded-full border-t-transparent"></div>
+                        </div>
+                      )}
+                    </div>
+                  )}
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Current Sub-continent</label>
-                  <input
-                    type="text"
-                    value={formData.currentSubContinent || ''}
-                    onChange={(e) => handleInputChange('currentSubContinent', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="WEST AFRICA"
-                  />
+                  {diasporaData && formData.currentContinent ? (
+                    <select
+                      value={formData.currentSubContinent || ''}
+                      onChange={(e) => handleDiasporaLocationChange('currentSubContinent', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    >
+                      <option value="">Select Sub-continent</option>
+                      {(() => {
+                        const cont = diasporaData.continents.find((c: any) => c.name === formData.currentContinent);
+                        return cont && diasporaData.subContinents[cont.id] ? diasporaData.subContinents[cont.id].map((sc: any) => (
+                          <option key={sc.id} value={sc.name}>{sc.name}</option>
+                        )) : null;
+                      })()}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.currentSubContinent || ''}
+                      onChange={(e) => handleInputChange('currentSubContinent', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      placeholder="WEST AFRICA"
+                      disabled={!formData.currentContinent}
+                    />
+                  )}
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-                <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Sub-region</label>
-                  <input
-                    type="text"
-                    value={formData.currentSubRegion || ''}
-                    onChange={(e) => handleInputChange('currentSubRegion', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                  />
-                </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Current Nationality</label>
-                  <input
-                    type="text"
-                    value={formData.currentNationality || ''}
-                    onChange={(e) => handleInputChange('currentNationality', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="UNITED STATES"
-                  />
+                  {diasporaData && formData.currentSubContinent ? (
+                    <select
+                      value={formData.currentNationality || ''}
+                      onChange={(e) => handleDiasporaLocationChange('currentNationality', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    >
+                      <option value="">Select Nationality</option>
+                      {(() => {
+                        const continent = diasporaData.continents.find((c: any) => c.name === formData.currentContinent);
+                        if (!continent) return null;
+                        const subContinent = diasporaData.subContinents[continent.id]?.find((sc: any) => sc.name === formData.currentSubContinent);
+                        return subContinent && diasporaData.countries[subContinent.id] ? diasporaData.countries[subContinent.id].map((country: any) => (
+                          <option key={country.id} value={country.name}>{country.name}</option>
+                        )) : null;
+                      })()}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.currentNationality || ''}
+                      onChange={(e) => handleInputChange('currentNationality', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      placeholder="UNITED STATES"
+                      disabled={!formData.currentSubContinent}
+                    />
+                  )}
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Citizenship Status</label>
+                  {diasporaData ? (
+                    <select
+                      value={formData.citizenshipStatus || ''}
+                      onChange={(e) => handleInputChange('citizenshipStatus', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    >
+                      <option value="">Select Status</option>
+                      {diasporaData.citizenshipStatuses.map((s: any) => (
+                        <option key={s.id} value={s.name}>{s.name}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.citizenshipStatus || ''}
+                      onChange={(e) => handleInputChange('citizenshipStatus', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      placeholder="CITIZEN"
+                    />
+                  )}
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Region</label>
-                  <input
-                    type="text"
-                    value={formData.currentRegion || ''}
-                    onChange={(e) => handleInputChange('currentRegion', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                  />
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current State / Region</label>
+                  {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? (
+                    <select
+                      value={formData.currentRegion || ''}
+                      onChange={(e) => handleLocationChange('current', 'Region', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    >
+                      <option value="">Select Region</option>
+                      {Object.keys(nigerianGeoZones).map(zone => (
+                        <option key={zone} value={zone}>{zone}</option>
+                      ))}
+                    </select>
+                  ) : diasporaData && formData.currentNationality ? (
+                    <select
+                      value={formData.currentRegion || ''}
+                      onChange={(e) => handleDiasporaLocationChange('currentRegion', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    >
+                      <option value="">Select Region/State</option>
+                      {(() => {
+                        const continent = diasporaData.continents.find((c: any) => c.name === formData.currentContinent);
+                        if (!continent) return null;
+                        const subContinent = diasporaData.subContinents[continent.id]?.find((sc: any) => sc.name === formData.currentSubContinent);
+                        if (!subContinent) return null;
+                        const country = diasporaData.countries[subContinent.id]?.find((c: any) => c.name === formData.currentNationality);
+                        return country && diasporaData.firstLevel[country.id] ? diasporaData.firstLevel[country.id].map((flad: any) => (
+                          <option key={flad.id} value={flad.name}>{flad.name} ({flad.type})</option>
+                        )) : null;
+                      })()}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.currentRegion || ''}
+                      onChange={(e) => handleInputChange('currentRegion', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      disabled={!formData.currentNationality}
+                    />
+                  )}
                 </div>
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Current State</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Province / County</label>
                   {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? (
                     <select
                       value={formData.currentState || ''}
@@ -1711,9 +1909,11 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg"
                     >
                       <option value="">Select State</option>
-                      {dropdownData.nigerianStates.map(s => (
-                        <option key={s.state} value={s.state}>{s.state}</option>
-                      ))}
+                      {dropdownData.nigerianStates
+                        .filter(s => !formData.currentRegion || nigerianGeoZones[formData.currentRegion as keyof typeof nigerianGeoZones]?.includes(s.state))
+                        .map(s => (
+                          <option key={s.state} value={s.state}>{s.state}</option>
+                        ))}
                     </select>
                   ) : (
                     <input
@@ -1722,6 +1922,7 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                       onChange={(e) => handleInputChange('currentState', e.target.value)}
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg"
                       placeholder="STATE"
+                      disabled={!formData.currentNationality}
                     />
                   )}
                 </div>
@@ -1729,7 +1930,9 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Senatorial District</label>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? 'Senatorial District' : 'District / SLAD'}
+                  </label>
                   {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? (
                     <select
                       value={formData.currentSenatorialDistrict || ''}
@@ -1742,12 +1945,33 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                         <option key={d} value={d}>{d}</option>
                       ))}
                     </select>
+                  ) : diasporaData && formData.currentRegion ? (
+                    <select
+                      value={formData.currentLocalGovernmentArea || ''}
+                      onChange={(e) => handleDiasporaLocationChange('currentLocalGovernmentArea', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    >
+                      <option value="">Select District</option>
+                      {(() => {
+                        const continent = diasporaData.continents.find((c: any) => c.name === formData.currentContinent);
+                        if (!continent) return null;
+                        const subContinent = diasporaData.subContinents[continent.id]?.find((sc: any) => sc.name === formData.currentSubContinent);
+                        if (!subContinent) return null;
+                        const country = diasporaData.countries[subContinent.id]?.find((c: any) => c.name === formData.currentNationality);
+                        if (!country) return null;
+                        const flad = diasporaData.firstLevel[country.id]?.find((f: any) => f.name === formData.currentRegion);
+                        return flad && diasporaData.secondLevel[flad.id] ? diasporaData.secondLevel[flad.id].map((slad: any) => (
+                          <option key={slad.id} value={slad.name}>{slad.name} ({slad.type})</option>
+                        )) : null;
+                      })()}
+                    </select>
                   ) : (
                     <input
                       type="text"
-                      value={formData.currentSenatorialDistrict || ''}
-                      onChange={(e) => handleInputChange('currentSenatorialDistrict', e.target.value)}
+                      value={formData.currentLocalGovernmentArea || ''}
+                      onChange={(e) => handleInputChange('currentLocalGovernmentArea', e.target.value)}
                       className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      disabled={!formData.currentRegion}
                     />
                   )}
                 </div>
@@ -1837,14 +2061,44 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
-                  <label className="block text-sm font-medium text-gray-700 mb-1">Current Town/City</label>
-                  <input
-                    type="text"
-                    value={formData.currentTown || ''}
-                    onChange={(e) => handleInputChange('currentTown', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="HOUSTON"
-                  />
+                  <label className="block text-sm font-medium text-gray-700 mb-1">
+                    {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? 'Current Town/City' : 'City / Town'}
+                  </label>
+                  {diasporaData && (formData.currentRegion || formData.currentNationality) ? (
+                    <select
+                      value={formData.currentTown || ''}
+                      onChange={(e) => handleInputChange('currentTown', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    >
+                      <option value="">Select City/Town</option>
+                      {(() => {
+                        const continent = diasporaData.continents.find((c: any) => c.name === formData.currentContinent);
+                        if (!continent) return null;
+                        const subContinent = diasporaData.subContinents[continent.id]?.find((sc: any) => sc.name === formData.currentSubContinent);
+                        if (!subContinent) return null;
+                        const country = diasporaData.countries[subContinent.id]?.find((c: any) => c.name === formData.currentNationality);
+                        if (!country) return null;
+                        const flad = diasporaData.firstLevel[country.id]?.find((f: any) => 
+                          f.name.trim().toLowerCase() === formData.currentRegion?.trim().toLowerCase()
+                        );
+                        
+                        const key = flad ? flad.id : `COUNTRY_${country.id}`;
+                        const cityList = diasporaData.cities[key];
+
+                        return cityList ? cityList.map((city: any) => (
+                          <option key={city.id} value={city.name}>{city.name}</option>
+                        )) : null;
+                      })()}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.currentTown || ''}
+                      onChange={(e) => handleInputChange('currentTown', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      placeholder="HOUSTON"
+                    />
+                  )}
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Current Town Division</label>

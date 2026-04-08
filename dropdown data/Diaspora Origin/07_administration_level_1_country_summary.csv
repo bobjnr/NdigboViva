@@ -1,0 +1,28 @@
+country_id,country_name,adm1_count,adm1_types_present,execution_batch_order,execution_batch_name
+CT_CMR,Cameroon,10,region,1,Batch 1 - Region model
+CT_GHA,Ghana,16,region,1,Batch 1 - Region model
+CT_GUY,Guyana,10,region,1,Batch 1 - Region model
+CT_TGO,Togo,5,region,1,Batch 1 - Region model
+CT_CUB,Cuba,16,province|special_municipality,2,Batch 2 - Province model
+CT_DOM,Dominican Republic,32,national_district|province,2,Batch 2 - Province model
+CT_GNQ,Equatorial Guinea,8,province,2,Batch 2 - Province model
+CT_GAB,Gabon,9,province,2,Batch 2 - Province model
+CT_BEN,Benin,12,department,3,Batch 3 - Department model
+CT_HTI,Haiti,10,department,3,Batch 3 - Department model
+CT_BLZ,Belize,6,district,4,Batch 4 - County / district model
+CT_LBR,Liberia,15,county,4,Batch 4 - County / district model
+CT_BRB,Barbados,11,parish,5,Batch 5 - Parish / quarter island model
+CT_DMA,Dominica,10,parish,5,Batch 5 - Parish / quarter island model
+CT_GRD,Grenada,7,parish,5,Batch 5 - Parish / quarter island model
+CT_JAM,Jamaica,14,parish,5,Batch 5 - Parish / quarter island model
+CT_LCA,Saint Lucia,10,quarter,5,Batch 5 - Parish / quarter island model
+CT_VCT,Saint Vincent and the Grenadines,6,parish,5,Batch 5 - Parish / quarter island model
+CT_STP,Sao Tome and Principe,7,autonomous_region|district,6,Batch 6 - Mixed island exceptions
+CT_TTO,Trinidad and Tobago,15,borough|city|region|ward,6,Batch 6 - Mixed island exceptions
+CT_BRA,Brazil,12,state,7,Batch 7 - Federal model
+CT_CAN,Canada,5,province,7,Batch 7 - Federal model
+CT_USA,United States,16,federal_district|state,7,Batch 7 - Federal model
+CT_PRT,Portugal,9,autonomous_region|district,8,Batch 8 - European special structures
+CT_ESP,Spain,6,autonomous_community,8,Batch 8 - European special structures
+CT_GBR,United Kingdom,3,constituent_country,8,Batch 8 - European special structures
+CT_SLE,Sierra Leone,5,area|province,9,Batch 9 - Mixed province / area exception

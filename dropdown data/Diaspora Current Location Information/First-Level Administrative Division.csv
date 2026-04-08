@@ -1,0 +1,3591 @@
+﻿first_level_admin_division_id,first_level_admin_division_name,country_id,division_type
+FLAD_AF_BDS,Badakhshān,CTR_AFG,Province
+FLAD_AF_BGL,Baghlān,CTR_AFG,Province
+FLAD_AF_BAL,Balkh,CTR_AFG,Province
+FLAD_AF_BDG,Bādghīs,CTR_AFG,Province
+FLAD_AF_BAM,Bāmyān,CTR_AFG,Province
+FLAD_AF_DAY,Dāykundī,CTR_AFG,Province
+FLAD_AF_FRA,Farāh,CTR_AFG,Province
+FLAD_AF_FYB,Fāryāb,CTR_AFG,Province
+FLAD_AF_GHA,Ghaznī,CTR_AFG,Province
+FLAD_AF_GHO,Ghōr,CTR_AFG,Province
+FLAD_AF_HEL,Helmand,CTR_AFG,Province
+FLAD_AF_HER,Herāt,CTR_AFG,Province
+FLAD_AF_JOW,Jowzjān,CTR_AFG,Province
+FLAD_AF_KAN,Kandahār,CTR_AFG,Province
+FLAD_AF_KAB,Kābul,CTR_AFG,Province
+FLAD_AF_KAP,Kāpīsā,CTR_AFG,Province
+FLAD_AF_KHO,Khōst,CTR_AFG,Province
+FLAD_AF_KNR,Kunaṟ,CTR_AFG,Province
+FLAD_AF_KDZ,Kunduz,CTR_AFG,Province
+FLAD_AF_LAG,Laghmān,CTR_AFG,Province
+FLAD_AF_LOG,Lōgar,CTR_AFG,Province
+FLAD_AF_NAN,Nangarhār,CTR_AFG,Province
+FLAD_AF_NIM,Nīmrōz,CTR_AFG,Province
+FLAD_AF_NUR,Nūristān,CTR_AFG,Province
+FLAD_AF_PIA,Paktiyā,CTR_AFG,Province
+FLAD_AF_PKA,Paktīkā,CTR_AFG,Province
+FLAD_AF_PAN,Panjshayr,CTR_AFG,Province
+FLAD_AF_PAR,Parwān,CTR_AFG,Province
+FLAD_AF_SAM,Samangān,CTR_AFG,Province
+FLAD_AF_SAR,Sar-e Pul,CTR_AFG,Province
+FLAD_AF_TAK,Takhār,CTR_AFG,Province
+FLAD_AF_URU,Uruzgān,CTR_AFG,Province
+FLAD_AF_WAR,Wardak,CTR_AFG,Province
+FLAD_AF_ZAB,Zābul,CTR_AFG,Province
+FLAD_AL_01,Berat,CTR_ALB,County
+FLAD_AL_09,Dibër,CTR_ALB,County
+FLAD_AL_02,Durrës,CTR_ALB,County
+FLAD_AL_03,Elbasan,CTR_ALB,County
+FLAD_AL_04,Fier,CTR_ALB,County
+FLAD_AL_05,Gjirokastër,CTR_ALB,County
+FLAD_AL_06,Korçë,CTR_ALB,County
+FLAD_AL_07,Kukës,CTR_ALB,County
+FLAD_AL_08,Lezhë,CTR_ALB,County
+FLAD_AL_10,Shkodër,CTR_ALB,County
+FLAD_AL_11,Tiranë,CTR_ALB,County
+FLAD_AL_12,Vlorë,CTR_ALB,County
+FLAD_DZ_01,Adrar,CTR_DZA,Province
+FLAD_DZ_44,Aïn Defla,CTR_DZA,Province
+FLAD_DZ_46,Aïn Témouchent,CTR_DZA,Province
+FLAD_DZ_16,Alger,CTR_DZA,Province
+FLAD_DZ_23,Annaba,CTR_DZA,Province
+FLAD_DZ_05,Batna,CTR_DZA,Province
+FLAD_DZ_08,Béchar,CTR_DZA,Province
+FLAD_DZ_06,Béjaïa,CTR_DZA,Province
+FLAD_DZ_52,Béni Abbès,CTR_DZA,Province
+FLAD_DZ_07,Biskra,CTR_DZA,Province
+FLAD_DZ_09,Blida,CTR_DZA,Province
+FLAD_DZ_50,Bordj Badji Mokhtar,CTR_DZA,Province
+FLAD_DZ_34,Bordj Bou Arréridj,CTR_DZA,Province
+FLAD_DZ_10,Bouira,CTR_DZA,Province
+FLAD_DZ_35,Boumerdès,CTR_DZA,Province
+FLAD_DZ_02,Chlef,CTR_DZA,Province
+FLAD_DZ_25,Constantine,CTR_DZA,Province
+FLAD_DZ_56,Djanet,CTR_DZA,Province
+FLAD_DZ_17,Djelfa,CTR_DZA,Province
+FLAD_DZ_32,El Bayadh,CTR_DZA,Province
+FLAD_DZ_57,El Meghaier,CTR_DZA,Province
+FLAD_DZ_58,El Meniaa,CTR_DZA,Province
+FLAD_DZ_39,El Oued,CTR_DZA,Province
+FLAD_DZ_36,El Tarf,CTR_DZA,Province
+FLAD_DZ_47,Ghardaïa,CTR_DZA,Province
+FLAD_DZ_24,Guelma,CTR_DZA,Province
+FLAD_DZ_33,Illizi,CTR_DZA,Province
+FLAD_DZ_54,In Guezzam,CTR_DZA,Province
+FLAD_DZ_53,In Salah,CTR_DZA,Province
+FLAD_DZ_18,Jijel,CTR_DZA,Province
+FLAD_DZ_40,Khenchela,CTR_DZA,Province
+FLAD_DZ_03,Laghouat,CTR_DZA,Province
+FLAD_DZ_28,M'sila,CTR_DZA,Province
+FLAD_DZ_29,Mascara,CTR_DZA,Province
+FLAD_DZ_26,Médéa,CTR_DZA,Province
+FLAD_DZ_43,Mila,CTR_DZA,Province
+FLAD_DZ_27,Mostaganem,CTR_DZA,Province
+FLAD_DZ_45,Naama,CTR_DZA,Province
+FLAD_DZ_31,Oran,CTR_DZA,Province
+FLAD_DZ_30,Ouargla,CTR_DZA,Province
+FLAD_DZ_51,Ouled Djellal,CTR_DZA,Province
+FLAD_DZ_04,Oum el Bouaghi,CTR_DZA,Province
+FLAD_DZ_48,Relizane,CTR_DZA,Province
+FLAD_DZ_20,Saïda,CTR_DZA,Province
+FLAD_DZ_19,Sétif,CTR_DZA,Province
+FLAD_DZ_22,Sidi Bel Abbès,CTR_DZA,Province
+FLAD_DZ_21,Skikda,CTR_DZA,Province
+FLAD_DZ_41,Souk Ahras,CTR_DZA,Province
+FLAD_DZ_11,Tamanrasset,CTR_DZA,Province
+FLAD_DZ_12,Tébessa,CTR_DZA,Province
+FLAD_DZ_14,Tiaret,CTR_DZA,Province
+FLAD_DZ_49,Timimoun,CTR_DZA,Province
+FLAD_DZ_37,Tindouf,CTR_DZA,Province
+FLAD_DZ_42,Tipaza,CTR_DZA,Province
+FLAD_DZ_38,Tissemsilt,CTR_DZA,Province
+FLAD_DZ_15,Tizi Ouzou,CTR_DZA,Province
+FLAD_DZ_13,Tlemcen,CTR_DZA,Province
+FLAD_DZ_55,Touggourt,CTR_DZA,Province
+FLAD_AD_07,Andorra la Vella,CTR_AND,Parish
+FLAD_AD_02,Canillo,CTR_AND,Parish
+FLAD_AD_03,Encamp,CTR_AND,Parish
+FLAD_AD_08,Escaldes-Engordany,CTR_AND,Parish
+FLAD_AD_04,La Massana,CTR_AND,Parish
+FLAD_AD_05,Ordino,CTR_AND,Parish
+FLAD_AD_06,Sant Julià de Lòria,CTR_AND,Parish
+FLAD_AO_BGO,Bengo,CTR_AGO,Province
+FLAD_AO_BGU,Benguela,CTR_AGO,Province
+FLAD_AO_BIE,Bié,CTR_AGO,Province
+FLAD_AO_CAB,Cabinda,CTR_AGO,Province
+FLAD_AO_CCU,Cuando Cubango,CTR_AGO,Province
+FLAD_AO_CNO,Cuanza-Norte,CTR_AGO,Province
+FLAD_AO_CUS,Cuanza-Sul,CTR_AGO,Province
+FLAD_AO_CNN,Cunene,CTR_AGO,Province
+FLAD_AO_HUA,Huambo,CTR_AGO,Province
+FLAD_AO_HUI,Huíla,CTR_AGO,Province
+FLAD_AO_LUA,Luanda,CTR_AGO,Province
+FLAD_AO_LNO,Lunda-Norte,CTR_AGO,Province
+FLAD_AO_LSU,Lunda-Sul,CTR_AGO,Province
+FLAD_AO_MAL,Malange,CTR_AGO,Province
+FLAD_AO_MOX,Moxico,CTR_AGO,Province
+FLAD_AO_NAM,Namibe,CTR_AGO,Province
+FLAD_AO_UIG,Uíge,CTR_AGO,Province
+FLAD_AO_ZAI,Zaire,CTR_AGO,Province
+FLAD_AG_10,Barbuda,CTR_ATG,Dependency
+FLAD_AG_11,Redonda,CTR_ATG,Dependency
+FLAD_AG_03,Saint George,CTR_ATG,Parish
+FLAD_AG_04,Saint John,CTR_ATG,Parish
+FLAD_AG_05,Saint Mary,CTR_ATG,Parish
+FLAD_AG_06,Saint Paul,CTR_ATG,Parish
+FLAD_AG_07,Saint Peter,CTR_ATG,Parish
+FLAD_AG_08,Saint Philip,CTR_ATG,Parish
+FLAD_AR_B,Buenos Aires,CTR_ARG,Province
+FLAD_AR_K,Catamarca,CTR_ARG,Province
+FLAD_AR_H,Chaco,CTR_ARG,Province
+FLAD_AR_U,Chubut,CTR_ARG,Province
+FLAD_AR_C,Ciudad Autónoma de Buenos Aires,CTR_ARG,City
+FLAD_AR_W,Corrientes,CTR_ARG,Province
+FLAD_AR_X,Córdoba,CTR_ARG,Province
+FLAD_AR_E,Entre Ríos,CTR_ARG,Province
+FLAD_AR_P,Formosa,CTR_ARG,Province
+FLAD_AR_Y,Jujuy,CTR_ARG,Province
+FLAD_AR_L,La Pampa,CTR_ARG,Province
+FLAD_AR_F,La Rioja,CTR_ARG,Province
+FLAD_AR_M,Mendoza,CTR_ARG,Province
+FLAD_AR_N,Misiones,CTR_ARG,Province
+FLAD_AR_Q,Neuquén,CTR_ARG,Province
+FLAD_AR_R,Río Negro,CTR_ARG,Province
+FLAD_AR_A,Salta,CTR_ARG,Province
+FLAD_AR_J,San Juan,CTR_ARG,Province
+FLAD_AR_D,San Luis,CTR_ARG,Province
+FLAD_AR_Z,Santa Cruz,CTR_ARG,Province
+FLAD_AR_S,Santa Fe,CTR_ARG,Province
+FLAD_AR_G,Santiago del Estero,CTR_ARG,Province
+FLAD_AR_V,Tierra del Fuego,CTR_ARG,Province
+FLAD_AR_T,Tucumán,CTR_ARG,Province
+FLAD_AM_AG,Aragac̣otn,CTR_ARM,Region
+FLAD_AM_AR,Ararat,CTR_ARM,Region
+FLAD_AM_AV,Armavir,CTR_ARM,Region
+FLAD_AM_ER,Erevan,CTR_ARM,City
+FLAD_AM_GR,Geġark'unik',CTR_ARM,Region
+FLAD_AM_KT,Kotayk',CTR_ARM,Region
+FLAD_AM_LO,Loṙi,CTR_ARM,Region
+FLAD_AM_SU,Syunik',CTR_ARM,Region
+FLAD_AM_SH,Širak,CTR_ARM,Region
+FLAD_AM_TV,Tavuš,CTR_ARM,Region
+FLAD_AM_VD,Vayoć Jor,CTR_ARM,Region
+FLAD_AU_ACT,Australian Capital Territory,CTR_AUS,Territory
+FLAD_AU_NSW,New South Wales,CTR_AUS,State
+FLAD_AU_NT,Northern Territory,CTR_AUS,Territory
+FLAD_AU_QLD,Queensland,CTR_AUS,State
+FLAD_AU_SA,South Australia,CTR_AUS,State
+FLAD_AU_TAS,Tasmania,CTR_AUS,State
+FLAD_AU_VIC,Victoria,CTR_AUS,State
+FLAD_AU_WA,Western Australia,CTR_AUS,State
+FLAD_AT_1,Burgenland,CTR_AUT,State
+FLAD_AT_2,Kärnten,CTR_AUT,State
+FLAD_AT_3,Niederösterreich,CTR_AUT,State
+FLAD_AT_4,Oberösterreich,CTR_AUT,State
+FLAD_AT_5,Salzburg,CTR_AUT,State
+FLAD_AT_6,Steiermark,CTR_AUT,State
+FLAD_AT_7,Tirol,CTR_AUT,State
+FLAD_AT_8,Vorarlberg,CTR_AUT,State
+FLAD_AT_9,Wien,CTR_AUT,State
+FLAD_AZ_ABS,Abşeron,CTR_AZE,Rayon
+FLAD_AZ_AGC,Ağcabədi,CTR_AZE,Rayon
+FLAD_AZ_AGM,Ağdam,CTR_AZE,Rayon
+FLAD_AZ_AGS,Ağdaş,CTR_AZE,Rayon
+FLAD_AZ_AGA,Ağstafa,CTR_AZE,Rayon
+FLAD_AZ_AGU,Ağsu,CTR_AZE,Rayon
+FLAD_AZ_AST,Astara,CTR_AZE,Rayon
+FLAD_AZ_BA,Bakı,CTR_AZE,Municipality
+FLAD_AZ_BAL,Balakən,CTR_AZE,Rayon
+FLAD_AZ_BEY,Beyləqan,CTR_AZE,Rayon
+FLAD_AZ_BIL,Biləsuvar,CTR_AZE,Rayon
+FLAD_AZ_BAR,Bərdə,CTR_AZE,Rayon
+FLAD_AZ_CAB,Cəbrayıl,CTR_AZE,Rayon
+FLAD_AZ_CAL,Cəlilabad,CTR_AZE,Rayon
+FLAD_AZ_DAS,Daşkəsən,CTR_AZE,Rayon
+FLAD_AZ_FUZ,Füzuli,CTR_AZE,Rayon
+FLAD_AZ_GOR,Goranboy,CTR_AZE,Rayon
+FLAD_AZ_GOY,Göyçay,CTR_AZE,Rayon
+FLAD_AZ_GYG,Göygöl,CTR_AZE,Rayon
+FLAD_AZ_GAD,Gədəbəy,CTR_AZE,Rayon
+FLAD_AZ_GA,Gəncə,CTR_AZE,Municipality
+FLAD_AZ_HAC,Hacıqabul,CTR_AZE,Rayon
+FLAD_AZ_IMI,İmişli,CTR_AZE,Rayon
+FLAD_AZ_ISM,İsmayıllı,CTR_AZE,Rayon
+FLAD_AZ_KUR,Kürdəmir,CTR_AZE,Rayon
+FLAD_AZ_KAL,Kəlbəcər,CTR_AZE,Rayon
+FLAD_AZ_LAC,Laçın,CTR_AZE,Rayon
+FLAD_AZ_LER,Lerik,CTR_AZE,Rayon
+FLAD_AZ_LA,Lənkəran,CTR_AZE,Municipality
+FLAD_AZ_LAN,Lənkəran,CTR_AZE,Rayon
+FLAD_AZ_MAS,Masallı,CTR_AZE,Rayon
+FLAD_AZ_MI,Mingəçevir,CTR_AZE,Municipality
+FLAD_AZ_NA,Naftalan,CTR_AZE,Municipality
+FLAD_AZ_NX,Naxçıvan,CTR_AZE,Autonomous republic
+FLAD_AZ_NEF,Neftçala,CTR_AZE,Rayon
+FLAD_AZ_OGU,Oğuz,CTR_AZE,Rayon
+FLAD_AZ_QAX,Qax,CTR_AZE,Rayon
+FLAD_AZ_QAZ,Qazax,CTR_AZE,Rayon
+FLAD_AZ_QOB,Qobustan,CTR_AZE,Rayon
+FLAD_AZ_QBA,Quba,CTR_AZE,Rayon
+FLAD_AZ_QBI,Qubadlı,CTR_AZE,Rayon
+FLAD_AZ_QUS,Qusar,CTR_AZE,Rayon
+FLAD_AZ_QAB,Qəbələ,CTR_AZE,Rayon
+FLAD_AZ_SAT,Saatlı,CTR_AZE,Rayon
+FLAD_AZ_SAB,Sabirabad,CTR_AZE,Rayon
+FLAD_AZ_SAL,Salyan,CTR_AZE,Rayon
+FLAD_AZ_SMX,Samux,CTR_AZE,Rayon
+FLAD_AZ_SIY,Siyəzən,CTR_AZE,Rayon
+FLAD_AZ_SM,Sumqayıt,CTR_AZE,Municipality
+FLAD_AZ_SBN,Şabran,CTR_AZE,Rayon
+FLAD_AZ_SMI,Şamaxı,CTR_AZE,Rayon
+FLAD_AZ_SR,Şirvan,CTR_AZE,Municipality
+FLAD_AZ_SUS,Şuşa,CTR_AZE,Rayon
+FLAD_AZ_SA,Şəki,CTR_AZE,Municipality
+FLAD_AZ_SAK,Şəki,CTR_AZE,Rayon
+FLAD_AZ_SKR,Şəmkir,CTR_AZE,Rayon
+FLAD_AZ_TOV,Tovuz,CTR_AZE,Rayon
+FLAD_AZ_TAR,Tərtər,CTR_AZE,Rayon
+FLAD_AZ_UCA,Ucar,CTR_AZE,Rayon
+FLAD_AZ_XAC,Xaçmaz,CTR_AZE,Rayon
+FLAD_AZ_XA,Xankəndi,CTR_AZE,Municipality
+FLAD_AZ_XCI,Xocalı,CTR_AZE,Rayon
+FLAD_AZ_XVD,Xocavənd,CTR_AZE,Rayon
+FLAD_AZ_XIZ,Xızı,CTR_AZE,Rayon
+FLAD_AZ_YAR,Yardımlı,CTR_AZE,Rayon
+FLAD_AZ_YE,Yevlax,CTR_AZE,Municipality
+FLAD_AZ_YEV,Yevlax,CTR_AZE,Rayon
+FLAD_AZ_ZAQ,Zaqatala,CTR_AZE,Rayon
+FLAD_AZ_ZAN,Zəngilan,CTR_AZE,Rayon
+FLAD_AZ_ZAR,Zərdab,CTR_AZE,Rayon
+FLAD_BS_AK,Acklins,CTR_BHS,District
+FLAD_BS_BY,Berry Islands,CTR_BHS,District
+FLAD_BS_BI,Bimini,CTR_BHS,District
+FLAD_BS_BP,Black Point,CTR_BHS,District
+FLAD_BS_CI,Cat Island,CTR_BHS,District
+FLAD_BS_CO,Central Abaco,CTR_BHS,District
+FLAD_BS_CS,Central Andros,CTR_BHS,District
+FLAD_BS_CE,Central Eleuthera,CTR_BHS,District
+FLAD_BS_FP,City of Freeport,CTR_BHS,District
+FLAD_BS_CK,Crooked Island and Long Cay,CTR_BHS,District
+FLAD_BS_EG,East Grand Bahama,CTR_BHS,District
+FLAD_BS_EX,Exuma,CTR_BHS,District
+FLAD_BS_GC,Grand Cay,CTR_BHS,District
+FLAD_BS_HI,Harbour Island,CTR_BHS,District
+FLAD_BS_HT,Hope Town,CTR_BHS,District
+FLAD_BS_IN,Inagua,CTR_BHS,District
+FLAD_BS_LI,Long Island,CTR_BHS,District
+FLAD_BS_MC,Mangrove Cay,CTR_BHS,District
+FLAD_BS_MG,Mayaguana,CTR_BHS,District
+FLAD_BS_MI,Moore's Island,CTR_BHS,District
+FLAD_BS_NP,New Providence,CTR_BHS,Island
+FLAD_BS_NO,North Abaco,CTR_BHS,District
+FLAD_BS_NS,North Andros,CTR_BHS,District
+FLAD_BS_NE,North Eleuthera,CTR_BHS,District
+FLAD_BS_RI,Ragged Island,CTR_BHS,District
+FLAD_BS_RC,Rum Cay,CTR_BHS,District
+FLAD_BS_SS,San Salvador,CTR_BHS,District
+FLAD_BS_SO,South Abaco,CTR_BHS,District
+FLAD_BS_SA,South Andros,CTR_BHS,District
+FLAD_BS_SE,South Eleuthera,CTR_BHS,District
+FLAD_BS_SW,Spanish Wells,CTR_BHS,District
+FLAD_BS_WG,West Grand Bahama,CTR_BHS,District
+FLAD_BH_14,Al Janūbīyah,CTR_BHR,Governorate
+FLAD_BH_15,Al Muḩarraq,CTR_BHR,Governorate
+FLAD_BH_13,Al ‘Āşimah,CTR_BHR,Governorate
+FLAD_BH_17,Ash Shamālīyah,CTR_BHR,Governorate
+FLAD_BD_A,Barishal,CTR_BGD,Division
+FLAD_BD_B,Chattogram,CTR_BGD,Division
+FLAD_BD_C,Dhaka,CTR_BGD,Division
+FLAD_BD_D,Khulna,CTR_BGD,Division
+FLAD_BD_H,Mymensingh,CTR_BGD,Division
+FLAD_BD_E,Rajshahi,CTR_BGD,Division
+FLAD_BD_F,Rangpur,CTR_BGD,Division
+FLAD_BD_G,Sylhet,CTR_BGD,Division
+FLAD_BB_01,Christ Church,CTR_BRB,Parish
+FLAD_BB_02,Saint Andrew,CTR_BRB,Parish
+FLAD_BB_03,Saint George,CTR_BRB,Parish
+FLAD_BB_04,Saint James,CTR_BRB,Parish
+FLAD_BB_05,Saint John,CTR_BRB,Parish
+FLAD_BB_06,Saint Joseph,CTR_BRB,Parish
+FLAD_BB_07,Saint Lucy,CTR_BRB,Parish
+FLAD_BB_08,Saint Michael,CTR_BRB,Parish
+FLAD_BB_09,Saint Peter,CTR_BRB,Parish
+FLAD_BB_10,Saint Philip,CTR_BRB,Parish
+FLAD_BB_11,Saint Thomas,CTR_BRB,Parish
+FLAD_BY_BR,Bresckaja voblasć,CTR_BLR,Oblast
+FLAD_BY_HO,Gomel'skaja oblast',CTR_BLR,Oblast
+FLAD_BY_HM,Gorod Minsk,CTR_BLR,City
+FLAD_BY_HR,Grodnenskaja oblast',CTR_BLR,Oblast
+FLAD_BY_MA,Mahilioŭskaja voblasć,CTR_BLR,Oblast
+FLAD_BY_MI,Minskaja oblast',CTR_BLR,Oblast
+FLAD_BY_VI,Viciebskaja voblasć,CTR_BLR,Oblast
+FLAD_BE_BRU,"Bruxelles-Capitale, Région de",CTR_BEL,Region
+FLAD_BE_VLG,Vlaams Gewest,CTR_BEL,Region
+FLAD_BE_WAL,"wallonne, Région",CTR_BEL,Region
+FLAD_BZ_BZ,Belize,CTR_BLZ,District
+FLAD_BZ_CY,Cayo,CTR_BLZ,District
+FLAD_BZ_CZL,Corozal,CTR_BLZ,District
+FLAD_BZ_OW,Orange Walk,CTR_BLZ,District
+FLAD_BZ_SC,Stann Creek,CTR_BLZ,District
+FLAD_BZ_TOL,Toledo,CTR_BLZ,District
+FLAD_BJ_AL,Alibori,CTR_BEN,Department
+FLAD_BJ_AK,Atacora,CTR_BEN,Department
+FLAD_BJ_AQ,Atlantique,CTR_BEN,Department
+FLAD_BJ_BO,Borgou,CTR_BEN,Department
+FLAD_BJ_CO,Collines,CTR_BEN,Department
+FLAD_BJ_KO,Couffo,CTR_BEN,Department
+FLAD_BJ_DO,Donga,CTR_BEN,Department
+FLAD_BJ_LI,Littoral,CTR_BEN,Department
+FLAD_BJ_MO,Mono,CTR_BEN,Department
+FLAD_BJ_OU,Ouémé,CTR_BEN,Department
+FLAD_BJ_PL,Plateau,CTR_BEN,Department
+FLAD_BJ_ZO,Zou,CTR_BEN,Department
+FLAD_BT_33,Bumthang,CTR_BTN,District
+FLAD_BT_12,Chhukha,CTR_BTN,District
+FLAD_BT_22,Dagana,CTR_BTN,District
+FLAD_BT_GA,Gasa,CTR_BTN,District
+FLAD_BT_13,Haa,CTR_BTN,District
+FLAD_BT_44,Lhuentse,CTR_BTN,District
+FLAD_BT_42,Monggar,CTR_BTN,District
+FLAD_BT_11,Paro,CTR_BTN,District
+FLAD_BT_43,Pema Gatshel,CTR_BTN,District
+FLAD_BT_23,Punakha,CTR_BTN,District
+FLAD_BT_45,Samdrup Jongkhar,CTR_BTN,District
+FLAD_BT_14,Samtse,CTR_BTN,District
+FLAD_BT_31,Sarpang,CTR_BTN,District
+FLAD_BT_15,Thimphu,CTR_BTN,District
+FLAD_BT_TY,Trashi Yangtse,CTR_BTN,District
+FLAD_BT_41,Trashigang,CTR_BTN,District
+FLAD_BT_32,Trongsa,CTR_BTN,District
+FLAD_BT_21,Tsirang,CTR_BTN,District
+FLAD_BT_24,Wangdue Phodrang,CTR_BTN,District
+FLAD_BT_34,Zhemgang,CTR_BTN,District
+FLAD_BO_H,Chuquisaca,CTR_BOL,Department
+FLAD_BO_C,Cochabamba,CTR_BOL,Department
+FLAD_BO_B,El Beni,CTR_BOL,Department
+FLAD_BO_L,La Paz,CTR_BOL,Department
+FLAD_BO_O,Oruro,CTR_BOL,Department
+FLAD_BO_N,Pando,CTR_BOL,Department
+FLAD_BO_P,Potosí,CTR_BOL,Department
+FLAD_BO_S,Santa Cruz,CTR_BOL,Department
+FLAD_BO_T,Tarija,CTR_BOL,Department
+FLAD_BQ_BO,Bonaire,CTR_BES,Special municipality
+FLAD_BQ_SA,Saba,CTR_BES,Special municipality
+FLAD_BQ_SE,Sint Eustatius,CTR_BES,Special municipality
+FLAD_BA_BRC,Brčko distrikt,CTR_BIH,District with special status
+FLAD_BA_BIH,Federacija Bosne i Hercegovine,CTR_BIH,Entity
+FLAD_BA_SRP,Republika Srpska,CTR_BIH,Entity
+FLAD_BW_CE,Central,CTR_BWA,District
+FLAD_BW_CH,Chobe,CTR_BWA,District
+FLAD_BW_FR,Francistown,CTR_BWA,City
+FLAD_BW_GA,Gaborone,CTR_BWA,City
+FLAD_BW_GH,Ghanzi,CTR_BWA,District
+FLAD_BW_JW,Jwaneng,CTR_BWA,Town
+FLAD_BW_KG,Kgalagadi,CTR_BWA,District
+FLAD_BW_KL,Kgatleng,CTR_BWA,District
+FLAD_BW_KW,Kweneng,CTR_BWA,District
+FLAD_BW_LO,Lobatse,CTR_BWA,Town
+FLAD_BW_NE,North East,CTR_BWA,District
+FLAD_BW_NW,North West,CTR_BWA,District
+FLAD_BW_SP,Selibe Phikwe,CTR_BWA,Town
+FLAD_BW_SE,South East,CTR_BWA,District
+FLAD_BW_SO,Southern,CTR_BWA,District
+FLAD_BW_ST,Sowa Town,CTR_BWA,Town
+FLAD_BR_AC,Acre,CTR_BRA,State
+FLAD_BR_AL,Alagoas,CTR_BRA,State
+FLAD_BR_AP,Amapá,CTR_BRA,State
+FLAD_BR_AM,Amazonas,CTR_BRA,State
+FLAD_BR_BA,Bahia,CTR_BRA,State
+FLAD_BR_CE,Ceará,CTR_BRA,State
+FLAD_BR_DF,Distrito Federal,CTR_BRA,Federal district
+FLAD_BR_ES,Espírito Santo,CTR_BRA,State
+FLAD_BR_GO,Goiás,CTR_BRA,State
+FLAD_BR_MA,Maranhão,CTR_BRA,State
+FLAD_BR_MT,Mato Grosso,CTR_BRA,State
+FLAD_BR_MS,Mato Grosso do Sul,CTR_BRA,State
+FLAD_BR_MG,Minas Gerais,CTR_BRA,State
+FLAD_BR_PB,Paraíba,CTR_BRA,State
+FLAD_BR_PR,Paraná,CTR_BRA,State
+FLAD_BR_PA,Pará,CTR_BRA,State
+FLAD_BR_PE,Pernambuco,CTR_BRA,State
+FLAD_BR_PI,Piauí,CTR_BRA,State
+FLAD_BR_RJ,Rio de Janeiro,CTR_BRA,State
+FLAD_BR_RN,Rio Grande do Norte,CTR_BRA,State
+FLAD_BR_RS,Rio Grande do Sul,CTR_BRA,State
+FLAD_BR_RO,Rondônia,CTR_BRA,State
+FLAD_BR_RR,Roraima,CTR_BRA,State
+FLAD_BR_SC,Santa Catarina,CTR_BRA,State
+FLAD_BR_SP,São Paulo,CTR_BRA,State
+FLAD_BR_SE,Sergipe,CTR_BRA,State
+FLAD_BR_TO,Tocantins,CTR_BRA,State
+FLAD_BN_BE,Belait,CTR_BRN,District
+FLAD_BN_BM,Brunei-Muara,CTR_BRN,District
+FLAD_BN_TE,Temburong,CTR_BRN,District
+FLAD_BN_TU,Tutong,CTR_BRN,District
+FLAD_BG_01,Blagoevgrad,CTR_BGR,District
+FLAD_BG_02,Burgas,CTR_BGR,District
+FLAD_BG_08,Dobrich,CTR_BGR,District
+FLAD_BG_07,Gabrovo,CTR_BGR,District
+FLAD_BG_26,Haskovo,CTR_BGR,District
+FLAD_BG_09,Kardzhali,CTR_BGR,District
+FLAD_BG_10,Kyustendil,CTR_BGR,District
+FLAD_BG_11,Lovech,CTR_BGR,District
+FLAD_BG_12,Montana,CTR_BGR,District
+FLAD_BG_13,Pazardzhik,CTR_BGR,District
+FLAD_BG_14,Pernik,CTR_BGR,District
+FLAD_BG_15,Pleven,CTR_BGR,District
+FLAD_BG_16,Plovdiv,CTR_BGR,District
+FLAD_BG_17,Razgrad,CTR_BGR,District
+FLAD_BG_18,Ruse,CTR_BGR,District
+FLAD_BG_27,Shumen,CTR_BGR,District
+FLAD_BG_19,Silistra,CTR_BGR,District
+FLAD_BG_20,Sliven,CTR_BGR,District
+FLAD_BG_21,Smolyan,CTR_BGR,District
+FLAD_BG_23,Sofia,CTR_BGR,District
+FLAD_BG_22,Sofia (stolitsa),CTR_BGR,District
+FLAD_BG_24,Stara Zagora,CTR_BGR,District
+FLAD_BG_25,Targovishte,CTR_BGR,District
+FLAD_BG_03,Varna,CTR_BGR,District
+FLAD_BG_04,Veliko Tarnovo,CTR_BGR,District
+FLAD_BG_05,Vidin,CTR_BGR,District
+FLAD_BG_06,Vratsa,CTR_BGR,District
+FLAD_BG_28,Yambol,CTR_BGR,District
+FLAD_BF_01,Boucle du Mouhoun,CTR_BFA,Region
+FLAD_BF_02,Cascades,CTR_BFA,Region
+FLAD_BF_03,Centre,CTR_BFA,Region
+FLAD_BF_04,Centre-Est,CTR_BFA,Region
+FLAD_BF_05,Centre-Nord,CTR_BFA,Region
+FLAD_BF_06,Centre-Ouest,CTR_BFA,Region
+FLAD_BF_07,Centre-Sud,CTR_BFA,Region
+FLAD_BF_08,Est,CTR_BFA,Region
+FLAD_BF_09,Hauts-Bassins,CTR_BFA,Region
+FLAD_BF_10,Nord,CTR_BFA,Region
+FLAD_BF_11,Plateau-Central,CTR_BFA,Region
+FLAD_BF_12,Sahel,CTR_BFA,Region
+FLAD_BF_13,Sud-Ouest,CTR_BFA,Region
+FLAD_BI_BB,Bubanza,CTR_BDI,Province
+FLAD_BI_BM,Bujumbura Mairie,CTR_BDI,Province
+FLAD_BI_BL,Bujumbura Rural,CTR_BDI,Province
+FLAD_BI_BR,Bururi,CTR_BDI,Province
+FLAD_BI_CA,Cankuzo,CTR_BDI,Province
+FLAD_BI_CI,Cibitoke,CTR_BDI,Province
+FLAD_BI_GI,Gitega,CTR_BDI,Province
+FLAD_BI_KR,Karuzi,CTR_BDI,Province
+FLAD_BI_KY,Kayanza,CTR_BDI,Province
+FLAD_BI_KI,Kirundo,CTR_BDI,Province
+FLAD_BI_MA,Makamba,CTR_BDI,Province
+FLAD_BI_MU,Muramvya,CTR_BDI,Province
+FLAD_BI_MY,Muyinga,CTR_BDI,Province
+FLAD_BI_MW,Mwaro,CTR_BDI,Province
+FLAD_BI_NG,Ngozi,CTR_BDI,Province
+FLAD_BI_RM,Rumonge,CTR_BDI,Province
+FLAD_BI_RT,Rutana,CTR_BDI,Province
+FLAD_BI_RY,Ruyigi,CTR_BDI,Province
+FLAD_CV_B,Ilhas de Barlavento,CTR_CPV,Geographical region
+FLAD_CV_S,Ilhas de Sotavento,CTR_CPV,Geographical region
+FLAD_KH_2,Baat Dambang,CTR_KHM,Province
+FLAD_KH_1,Banteay Mean Choăy,CTR_KHM,Province
+FLAD_KH_23,Kaeb,CTR_KHM,Province
+FLAD_KH_3,Kampong Chaam,CTR_KHM,Province
+FLAD_KH_4,Kampong Chhnang,CTR_KHM,Province
+FLAD_KH_5,Kampong Spueu,CTR_KHM,Province
+FLAD_KH_6,Kampong Thum,CTR_KHM,Province
+FLAD_KH_7,Kampot,CTR_KHM,Province
+FLAD_KH_8,Kandaal,CTR_KHM,Province
+FLAD_KH_9,Kaoh Kong,CTR_KHM,Province
+FLAD_KH_10,Kracheh,CTR_KHM,Province
+FLAD_KH_11,Mondol Kiri,CTR_KHM,Province
+FLAD_KH_22,Otdar Mean Chey,CTR_KHM,Province
+FLAD_KH_24,Pailin,CTR_KHM,Province
+FLAD_KH_12,Phnom Penh,CTR_KHM,Autonomous municipality
+FLAD_KH_15,Pousaat,CTR_KHM,Province
+FLAD_KH_18,Preah Sihanouk,CTR_KHM,Province
+FLAD_KH_13,Preah Vihear,CTR_KHM,Province
+FLAD_KH_14,Prey Veaeng,CTR_KHM,Province
+FLAD_KH_16,Rotanak Kiri,CTR_KHM,Province
+FLAD_KH_17,Siem Reab,CTR_KHM,Province
+FLAD_KH_19,Stoĕng Trêng,CTR_KHM,Province
+FLAD_KH_20,Svaay Rieng,CTR_KHM,Province
+FLAD_KH_21,Taakaev,CTR_KHM,Province
+FLAD_KH_25,Tbong Khmum,CTR_KHM,Province
+FLAD_CM_AD,Adamaoua,CTR_CMR,Region
+FLAD_CM_CE,Centre,CTR_CMR,Region
+FLAD_CM_ES,East,CTR_CMR,Region
+FLAD_CM_EN,Far North,CTR_CMR,Region
+FLAD_CM_LT,Littoral,CTR_CMR,Region
+FLAD_CM_NO,North,CTR_CMR,Region
+FLAD_CM_NW,North-West,CTR_CMR,Region
+FLAD_CM_SU,South,CTR_CMR,Region
+FLAD_CM_SW,South-West,CTR_CMR,Region
+FLAD_CM_OU,West,CTR_CMR,Region
+FLAD_CA_AB,Alberta,CTR_CAN,Province
+FLAD_CA_BC,British Columbia,CTR_CAN,Province
+FLAD_CA_MB,Manitoba,CTR_CAN,Province
+FLAD_CA_NB,New Brunswick,CTR_CAN,Province
+FLAD_CA_NL,Newfoundland and Labrador,CTR_CAN,Province
+FLAD_CA_NT,Northwest Territories,CTR_CAN,Territory
+FLAD_CA_NS,Nova Scotia,CTR_CAN,Province
+FLAD_CA_NU,Nunavut,CTR_CAN,Territory
+FLAD_CA_ON,Ontario,CTR_CAN,Province
+FLAD_CA_PE,Prince Edward Island,CTR_CAN,Province
+FLAD_CA_QC,Quebec,CTR_CAN,Province
+FLAD_CA_SK,Saskatchewan,CTR_CAN,Province
+FLAD_CA_YT,Yukon,CTR_CAN,Territory
+FLAD_CF_BB,Bamingui-Bangoran,CTR_CAF,Prefecture
+FLAD_CF_BGF,Bangui,CTR_CAF,Commune
+FLAD_CF_BK,Basse-Kotto,CTR_CAF,Prefecture
+FLAD_CF_KB,Gribingui,CTR_CAF,Economic prefecture
+FLAD_CF_HM,Haut-Mbomou,CTR_CAF,Prefecture
+FLAD_CF_HK,Haute-Kotto,CTR_CAF,Prefecture
+FLAD_CF_HS,Haute-Sangha / Mambéré-Kadéï,CTR_CAF,Prefecture
+FLAD_CF_KG,Kémo-Gribingui,CTR_CAF,Prefecture
+FLAD_CF_LB,Lobaye,CTR_CAF,Prefecture
+FLAD_CF_MB,Mbomou,CTR_CAF,Prefecture
+FLAD_CF_NM,Nana-Mambéré,CTR_CAF,Prefecture
+FLAD_CF_MP,Ombella-Mpoko,CTR_CAF,Prefecture
+FLAD_CF_UK,Ouaka,CTR_CAF,Prefecture
+FLAD_CF_AC,Ouham,CTR_CAF,Prefecture
+FLAD_CF_OP,Ouham-Pendé,CTR_CAF,Prefecture
+FLAD_CF_SE,Sangha,CTR_CAF,Economic prefecture
+FLAD_CF_VK,Vakaga,CTR_CAF,Prefecture
+FLAD_TD_BG,Bahr el Ghazal,CTR_TCD,Province
+FLAD_TD_BA,Batha,CTR_TCD,Province
+FLAD_TD_BO,Borkou,CTR_TCD,Province
+FLAD_TD_CB,Chari-Baguirmi,CTR_TCD,Province
+FLAD_TD_EE,Ennedi-Est,CTR_TCD,Province
+FLAD_TD_EO,Ennedi-Ouest,CTR_TCD,Province
+FLAD_TD_GR,Guéra,CTR_TCD,Province
+FLAD_TD_HL,Hadjer Lamis,CTR_TCD,Province
+FLAD_TD_KA,Kanem,CTR_TCD,Province
+FLAD_TD_LC,Lac,CTR_TCD,Province
+FLAD_TD_LO,Logone-Occidental,CTR_TCD,Province
+FLAD_TD_LR,Logone-Oriental,CTR_TCD,Province
+FLAD_TD_MA,Mandoul,CTR_TCD,Province
+FLAD_TD_ME,Mayo-Kebbi-Est,CTR_TCD,Province
+FLAD_TD_MO,Mayo-Kebbi-Ouest,CTR_TCD,Province
+FLAD_TD_MC,Moyen-Chari,CTR_TCD,Province
+FLAD_TD_OD,Ouaddaï,CTR_TCD,Province
+FLAD_TD_SA,Salamat,CTR_TCD,Province
+FLAD_TD_SI,Sila,CTR_TCD,Province
+FLAD_TD_TA,Tandjilé,CTR_TCD,Province
+FLAD_TD_TI,Tibesti,CTR_TCD,Province
+FLAD_TD_ND,Ville de Ndjamena,CTR_TCD,Province
+FLAD_TD_WF,Wadi Fira,CTR_TCD,Province
+FLAD_CL_AI,Aisén del General Carlos Ibañez del Campo,CTR_CHL,Region
+FLAD_CL_AN,Antofagasta,CTR_CHL,Region
+FLAD_CL_AP,Arica y Parinacota,CTR_CHL,Region
+FLAD_CL_AT,Atacama,CTR_CHL,Region
+FLAD_CL_BI,Biobío,CTR_CHL,Region
+FLAD_CL_CO,Coquimbo,CTR_CHL,Region
+FLAD_CL_AR,La Araucanía,CTR_CHL,Region
+FLAD_CL_LI,Libertador General Bernardo O'Higgins,CTR_CHL,Region
+FLAD_CL_LL,Los Lagos,CTR_CHL,Region
+FLAD_CL_LR,Los Ríos,CTR_CHL,Region
+FLAD_CL_MA,Magallanes,CTR_CHL,Region
+FLAD_CL_ML,Maule,CTR_CHL,Region
+FLAD_CL_NB,Ñuble,CTR_CHL,Region
+FLAD_CL_RM,Región Metropolitana de Santiago,CTR_CHL,Region
+FLAD_CL_TA,Tarapacá,CTR_CHL,Region
+FLAD_CL_VS,Valparaíso,CTR_CHL,Region
+FLAD_CN_AH,Anhui Sheng,CTR_CHN,Province
+FLAD_CN_BJ,Beijing Shi,CTR_CHN,Municipality
+FLAD_CN_CQ,Chongqing Shi,CTR_CHN,Municipality
+FLAD_CN_FJ,Fujian Sheng,CTR_CHN,Province
+FLAD_CN_GS,Gansu Sheng,CTR_CHN,Province
+FLAD_CN_GD,Guangdong Sheng,CTR_CHN,Province
+FLAD_CN_GX,Guangxi Zhuangzu Zizhiqu,CTR_CHN,Autonomous region
+FLAD_CN_GZ,Guizhou Sheng,CTR_CHN,Province
+FLAD_CN_HI,Hainan Sheng,CTR_CHN,Province
+FLAD_CN_HE,Hebei Sheng,CTR_CHN,Province
+FLAD_CN_HL,Heilongjiang Sheng,CTR_CHN,Province
+FLAD_CN_HA,Henan Sheng,CTR_CHN,Province
+FLAD_CN_HK,Hong Kong SAR,CTR_CHN,Special administrative region
+FLAD_CN_HB,Hubei Sheng,CTR_CHN,Province
+FLAD_CN_HN,Hunan Sheng,CTR_CHN,Province
+FLAD_CN_JS,Jiangsu Sheng,CTR_CHN,Province
+FLAD_CN_JX,Jiangxi Sheng,CTR_CHN,Province
+FLAD_CN_JL,Jilin Sheng,CTR_CHN,Province
+FLAD_CN_LN,Liaoning Sheng,CTR_CHN,Province
+FLAD_CN_MO,Macao SAR,CTR_CHN,Special administrative region
+FLAD_CN_NM,Nei Mongol Zizhiqu,CTR_CHN,Autonomous region
+FLAD_CN_NX,Ningxia Huizu Zizhiqu,CTR_CHN,Autonomous region
+FLAD_CN_QH,Qinghai Sheng,CTR_CHN,Province
+FLAD_CN_SN,Shaanxi Sheng,CTR_CHN,Province
+FLAD_CN_SD,Shandong Sheng,CTR_CHN,Province
+FLAD_CN_SH,Shanghai Shi,CTR_CHN,Municipality
+FLAD_CN_SX,Shanxi Sheng,CTR_CHN,Province
+FLAD_CN_SC,Sichuan Sheng,CTR_CHN,Province
+FLAD_CN_TW,Taiwan Sheng,CTR_CHN,Province
+FLAD_CN_TJ,Tianjin Shi,CTR_CHN,Municipality
+FLAD_CN_XJ,Xinjiang Uygur Zizhiqu,CTR_CHN,Autonomous region
+FLAD_CN_XZ,Xizang Zizhiqu,CTR_CHN,Autonomous region
+FLAD_CN_YN,Yunnan Sheng,CTR_CHN,Province
+FLAD_CN_ZJ,Zhejiang Sheng,CTR_CHN,Province
+FLAD_CO_AMA,Amazonas,CTR_COL,Department
+FLAD_CO_ANT,Antioquia,CTR_COL,Department
+FLAD_CO_ARA,Arauca,CTR_COL,Department
+FLAD_CO_ATL,Atlántico,CTR_COL,Department
+FLAD_CO_BOL,Bolívar,CTR_COL,Department
+FLAD_CO_BOY,Boyacá,CTR_COL,Department
+FLAD_CO_CAL,Caldas,CTR_COL,Department
+FLAD_CO_CAQ,Caquetá,CTR_COL,Department
+FLAD_CO_CAS,Casanare,CTR_COL,Department
+FLAD_CO_CAU,Cauca,CTR_COL,Department
+FLAD_CO_CES,Cesar,CTR_COL,Department
+FLAD_CO_CHO,Chocó,CTR_COL,Department
+FLAD_CO_COR,Córdoba,CTR_COL,Department
+FLAD_CO_CUN,Cundinamarca,CTR_COL,Department
+FLAD_CO_DC,Distrito Capital de Bogotá,CTR_COL,Capital district
+FLAD_CO_GUA,Guainía,CTR_COL,Department
+FLAD_CO_GUV,Guaviare,CTR_COL,Department
+FLAD_CO_HUI,Huila,CTR_COL,Department
+FLAD_CO_LAG,La Guajira,CTR_COL,Department
+FLAD_CO_MAG,Magdalena,CTR_COL,Department
+FLAD_CO_MET,Meta,CTR_COL,Department
+FLAD_CO_NAR,Nariño,CTR_COL,Department
+FLAD_CO_NSA,Norte de Santander,CTR_COL,Department
+FLAD_CO_PUT,Putumayo,CTR_COL,Department
+FLAD_CO_QUI,Quindío,CTR_COL,Department
+FLAD_CO_RIS,Risaralda,CTR_COL,Department
+FLAD_CO_SAP,"San Andrés, Providencia y Santa Catalina",CTR_COL,Department
+FLAD_CO_SAN,Santander,CTR_COL,Department
+FLAD_CO_SUC,Sucre,CTR_COL,Department
+FLAD_CO_TOL,Tolima,CTR_COL,Department
+FLAD_CO_VAC,Valle del Cauca,CTR_COL,Department
+FLAD_CO_VAU,Vaupés,CTR_COL,Department
+FLAD_CO_VID,Vichada,CTR_COL,Department
+FLAD_KM_A,Anjouan,CTR_COM,Island
+FLAD_KM_G,Grande Comore,CTR_COM,Island
+FLAD_KM_M,Mohéli,CTR_COM,Island
+FLAD_CG_11,Bouenza,CTR_COG,Department
+FLAD_CG_BZV,Brazzaville,CTR_COG,Department
+FLAD_CG_8,Cuvette,CTR_COG,Department
+FLAD_CG_15,Cuvette-Ouest,CTR_COG,Department
+FLAD_CG_5,Kouilou,CTR_COG,Department
+FLAD_CG_2,Lékoumou,CTR_COG,Department
+FLAD_CG_7,Likouala,CTR_COG,Department
+FLAD_CG_9,Niari,CTR_COG,Department
+FLAD_CG_14,Plateaux,CTR_COG,Department
+FLAD_CG_16,Pointe-Noire,CTR_COG,Department
+FLAD_CG_12,Pool,CTR_COG,Department
+FLAD_CG_13,Sangha,CTR_COG,Department
+FLAD_CD_BU,Bas-Uélé,CTR_COD,Province
+FLAD_CD_EQ,Équateur,CTR_COD,Province
+FLAD_CD_HK,Haut-Katanga,CTR_COD,Province
+FLAD_CD_HL,Haut-Lomami,CTR_COD,Province
+FLAD_CD_HU,Haut-Uélé,CTR_COD,Province
+FLAD_CD_IT,Ituri,CTR_COD,Province
+FLAD_CD_KS,Kasaï,CTR_COD,Province
+FLAD_CD_KC,Kasaï Central,CTR_COD,Province
+FLAD_CD_KE,Kasaï Oriental,CTR_COD,Province
+FLAD_CD_KN,Kinshasa,CTR_COD,City
+FLAD_CD_BC,Kongo Central,CTR_COD,Province
+FLAD_CD_KG,Kwango,CTR_COD,Province
+FLAD_CD_KL,Kwilu,CTR_COD,Province
+FLAD_CD_LO,Lomami,CTR_COD,Province
+FLAD_CD_LU,Lualaba,CTR_COD,Province
+FLAD_CD_MN,Mai-Ndombe,CTR_COD,Province
+FLAD_CD_MA,Maniema,CTR_COD,Province
+FLAD_CD_MO,Mongala,CTR_COD,Province
+FLAD_CD_NK,Nord-Kivu,CTR_COD,Province
+FLAD_CD_NU,Nord-Ubangi,CTR_COD,Province
+FLAD_CD_SA,Sankuru,CTR_COD,Province
+FLAD_CD_SK,Sud-Kivu,CTR_COD,Province
+FLAD_CD_SU,Sud-Ubangi,CTR_COD,Province
+FLAD_CD_TA,Tanganyika,CTR_COD,Province
+FLAD_CD_TO,Tshopo,CTR_COD,Province
+FLAD_CD_TU,Tshuapa,CTR_COD,Province
+FLAD_CR_A,Alajuela,CTR_CRI,Province
+FLAD_CR_C,Cartago,CTR_CRI,Province
+FLAD_CR_G,Guanacaste,CTR_CRI,Province
+FLAD_CR_H,Heredia,CTR_CRI,Province
+FLAD_CR_L,Limón,CTR_CRI,Province
+FLAD_CR_P,Puntarenas,CTR_CRI,Province
+FLAD_CR_SJ,San José,CTR_CRI,Province
+FLAD_HR_07,Bjelovarsko-bilogorska županija,CTR_HRV,County
+FLAD_HR_12,Brodsko-posavska županija,CTR_HRV,County
+FLAD_HR_19,Dubrovačko-neretvanska županija,CTR_HRV,County
+FLAD_HR_21,Grad Zagreb,CTR_HRV,City
+FLAD_HR_18,Istarska županija,CTR_HRV,County
+FLAD_HR_04,Karlovačka županija,CTR_HRV,County
+FLAD_HR_06,Koprivničko-križevačka županija,CTR_HRV,County
+FLAD_HR_02,Krapinsko-zagorska županija,CTR_HRV,County
+FLAD_HR_09,Ličko-senjska županija,CTR_HRV,County
+FLAD_HR_20,Međimurska županija,CTR_HRV,County
+FLAD_HR_14,Osječko-baranjska županija,CTR_HRV,County
+FLAD_HR_11,Požeško-slavonska županija,CTR_HRV,County
+FLAD_HR_08,Primorsko-goranska županija,CTR_HRV,County
+FLAD_HR_03,Sisačko-moslavačka županija,CTR_HRV,County
+FLAD_HR_17,Splitsko-dalmatinska županija,CTR_HRV,County
+FLAD_HR_15,Šibensko-kninska županija,CTR_HRV,County
+FLAD_HR_05,Varaždinska županija,CTR_HRV,County
+FLAD_HR_10,Virovitičko-podravska županija,CTR_HRV,County
+FLAD_HR_16,Vukovarsko-srijemska županija,CTR_HRV,County
+FLAD_HR_13,Zadarska županija,CTR_HRV,County
+FLAD_HR_01,Zagrebačka županija,CTR_HRV,County
+FLAD_CU_15,Artemisa,CTR_CUB,Province
+FLAD_CU_09,Camagüey,CTR_CUB,Province
+FLAD_CU_08,Ciego de Ávila,CTR_CUB,Province
+FLAD_CU_06,Cienfuegos,CTR_CUB,Province
+FLAD_CU_12,Granma,CTR_CUB,Province
+FLAD_CU_14,Guantánamo,CTR_CUB,Province
+FLAD_CU_11,Holguín,CTR_CUB,Province
+FLAD_CU_99,Isla de la Juventud,CTR_CUB,Special municipality
+FLAD_CU_03,La Habana,CTR_CUB,Province
+FLAD_CU_10,Las Tunas,CTR_CUB,Province
+FLAD_CU_04,Matanzas,CTR_CUB,Province
+FLAD_CU_16,Mayabeque,CTR_CUB,Province
+FLAD_CU_01,Pinar del Río,CTR_CUB,Province
+FLAD_CU_07,Sancti Spíritus,CTR_CUB,Province
+FLAD_CU_13,Santiago de Cuba,CTR_CUB,Province
+FLAD_CU_05,Villa Clara,CTR_CUB,Province
+FLAD_CY_04,Ammochostos,CTR_CYP,District
+FLAD_CY_05,Baf,CTR_CYP,District
+FLAD_CY_06,Girne,CTR_CYP,District
+FLAD_CY_03,Larnaka,CTR_CYP,District
+FLAD_CY_01,Lefkosia,CTR_CYP,District
+FLAD_CY_02,Lemesos,CTR_CYP,District
+FLAD_CZ_31,Jihočeský kraj,CTR_CZE,Region
+FLAD_CZ_64,Jihomoravský kraj,CTR_CZE,Region
+FLAD_CZ_41,Karlovarský kraj,CTR_CZE,Region
+FLAD_CZ_63,Kraj Vysočina,CTR_CZE,Region
+FLAD_CZ_52,Královéhradecký kraj,CTR_CZE,Region
+FLAD_CZ_51,Liberecký kraj,CTR_CZE,Region
+FLAD_CZ_80,Moravskoslezský kraj,CTR_CZE,Region
+FLAD_CZ_71,Olomoucký kraj,CTR_CZE,Region
+FLAD_CZ_53,Pardubický kraj,CTR_CZE,Region
+FLAD_CZ_32,Plzeňský kraj,CTR_CZE,Region
+FLAD_CZ_10,"Praha, Hlavní město",CTR_CZE,Capital city
+FLAD_CZ_20,Středočeský kraj,CTR_CZE,Region
+FLAD_CZ_42,Ústecký kraj,CTR_CZE,Region
+FLAD_CZ_72,Zlínský kraj,CTR_CZE,Region
+FLAD_CI_AB,Abidjan,CTR_CIV,Autonomous district
+FLAD_CI_BS,Bas-Sassandra,CTR_CIV,District
+FLAD_CI_CM,Comoé,CTR_CIV,District
+FLAD_CI_DN,Denguélé,CTR_CIV,District
+FLAD_CI_GD,Gôh-Djiboua,CTR_CIV,District
+FLAD_CI_LC,Lacs,CTR_CIV,District
+FLAD_CI_LG,Lagunes,CTR_CIV,District
+FLAD_CI_MG,Montagnes,CTR_CIV,District
+FLAD_CI_SM,Sassandra-Marahoué,CTR_CIV,District
+FLAD_CI_SV,Savanes,CTR_CIV,District
+FLAD_CI_VB,Vallée du Bandama,CTR_CIV,District
+FLAD_CI_WR,Woroba,CTR_CIV,District
+FLAD_CI_YM,Yamoussoukro,CTR_CIV,Autonomous district
+FLAD_CI_ZZ,Zanzan,CTR_CIV,District
+FLAD_DK_84,Hovedstaden,CTR_DNK,Region
+FLAD_DK_82,Midtjylland,CTR_DNK,Region
+FLAD_DK_81,Nordjylland,CTR_DNK,Region
+FLAD_DK_85,Sjælland,CTR_DNK,Region
+FLAD_DK_83,Syddanmark,CTR_DNK,Region
+FLAD_DJ_AS,Ali Sabieh,CTR_DJI,Region
+FLAD_DJ_AR,Arta,CTR_DJI,Region
+FLAD_DJ_DI,Dikhil,CTR_DJI,Region
+FLAD_DJ_DJ,Djibouti,CTR_DJI,City
+FLAD_DJ_OB,Obock,CTR_DJI,Region
+FLAD_DJ_TA,Tadjourah,CTR_DJI,Region
+FLAD_DM_02,Saint Andrew,CTR_DMA,Parish
+FLAD_DM_03,Saint David,CTR_DMA,Parish
+FLAD_DM_04,Saint George,CTR_DMA,Parish
+FLAD_DM_05,Saint John,CTR_DMA,Parish
+FLAD_DM_06,Saint Joseph,CTR_DMA,Parish
+FLAD_DM_07,Saint Luke,CTR_DMA,Parish
+FLAD_DM_08,Saint Mark,CTR_DMA,Parish
+FLAD_DM_09,Saint Patrick,CTR_DMA,Parish
+FLAD_DM_10,Saint Paul,CTR_DMA,Parish
+FLAD_DM_11,Saint Peter,CTR_DMA,Parish
+FLAD_DO_33,Cibao Nordeste,CTR_DOM,Region
+FLAD_DO_34,Cibao Noroeste,CTR_DOM,Region
+FLAD_DO_35,Cibao Norte,CTR_DOM,Region
+FLAD_DO_36,Cibao Sur,CTR_DOM,Region
+FLAD_DO_37,El Valle,CTR_DOM,Region
+FLAD_DO_38,Enriquillo,CTR_DOM,Region
+FLAD_DO_39,Higuamo,CTR_DOM,Region
+FLAD_DO_40,Ozama,CTR_DOM,Region
+FLAD_DO_41,Valdesia,CTR_DOM,Region
+FLAD_DO_42,Yuma,CTR_DOM,Region
+FLAD_EC_A,Azuay,CTR_ECU,Province
+FLAD_EC_B,Bolívar,CTR_ECU,Province
+FLAD_EC_F,Cañar,CTR_ECU,Province
+FLAD_EC_C,Carchi,CTR_ECU,Province
+FLAD_EC_H,Chimborazo,CTR_ECU,Province
+FLAD_EC_X,Cotopaxi,CTR_ECU,Province
+FLAD_EC_O,El Oro,CTR_ECU,Province
+FLAD_EC_E,Esmeraldas,CTR_ECU,Province
+FLAD_EC_W,Galápagos,CTR_ECU,Province
+FLAD_EC_G,Guayas,CTR_ECU,Province
+FLAD_EC_I,Imbabura,CTR_ECU,Province
+FLAD_EC_L,Loja,CTR_ECU,Province
+FLAD_EC_R,Los Ríos,CTR_ECU,Province
+FLAD_EC_M,Manabí,CTR_ECU,Province
+FLAD_EC_S,Morona Santiago,CTR_ECU,Province
+FLAD_EC_N,Napo,CTR_ECU,Province
+FLAD_EC_D,Orellana,CTR_ECU,Province
+FLAD_EC_Y,Pastaza,CTR_ECU,Province
+FLAD_EC_P,Pichincha,CTR_ECU,Province
+FLAD_EC_SE,Santa Elena,CTR_ECU,Province
+FLAD_EC_SD,Santo Domingo de los Tsáchilas,CTR_ECU,Province
+FLAD_EC_U,Sucumbíos,CTR_ECU,Province
+FLAD_EC_T,Tungurahua,CTR_ECU,Province
+FLAD_EC_Z,Zamora Chinchipe,CTR_ECU,Province
+FLAD_EG_DK,Ad Daqahlīyah,CTR_EGY,Governorate
+FLAD_EG_BA,Al Baḩr al Aḩmar,CTR_EGY,Governorate
+FLAD_EG_BH,Al Buḩayrah,CTR_EGY,Governorate
+FLAD_EG_FYM,Al Fayyūm,CTR_EGY,Governorate
+FLAD_EG_GH,Al Gharbīyah,CTR_EGY,Governorate
+FLAD_EG_ALX,Al Iskandarīyah,CTR_EGY,Governorate
+FLAD_EG_IS,Al Ismā'īlīyah,CTR_EGY,Governorate
+FLAD_EG_GZ,Al Jīzah,CTR_EGY,Governorate
+FLAD_EG_MNF,Al Minūfīyah,CTR_EGY,Governorate
+FLAD_EG_MN,Al Minyā,CTR_EGY,Governorate
+FLAD_EG_KB,Al Qalyūbīyah,CTR_EGY,Governorate
+FLAD_EG_C,Al Qāhirah,CTR_EGY,Governorate
+FLAD_EG_LX,Al Uqşur,CTR_EGY,Governorate
+FLAD_EG_WAD,Al Wādī al Jadīd,CTR_EGY,Governorate
+FLAD_EG_SUZ,As Suways,CTR_EGY,Governorate
+FLAD_EG_SHR,Ash Sharqīyah,CTR_EGY,Governorate
+FLAD_EG_ASN,Aswān,CTR_EGY,Governorate
+FLAD_EG_AST,Asyūţ,CTR_EGY,Governorate
+FLAD_EG_BNS,Banī Suwayf,CTR_EGY,Governorate
+FLAD_EG_PTS,Būr Sa‘īd,CTR_EGY,Governorate
+FLAD_EG_DT,Dumyāţ,CTR_EGY,Governorate
+FLAD_EG_JS,Janūb Sīnā',CTR_EGY,Governorate
+FLAD_EG_KFS,Kafr ash Shaykh,CTR_EGY,Governorate
+FLAD_EG_MT,Maţrūḩ,CTR_EGY,Governorate
+FLAD_EG_KN,Qinā,CTR_EGY,Governorate
+FLAD_EG_SIN,Shamāl Sīnā',CTR_EGY,Governorate
+FLAD_EG_SHG,Sūhāj,CTR_EGY,Governorate
+FLAD_SV_AH,Ahuachapán,CTR_SLV,Department
+FLAD_SV_CA,Cabañas,CTR_SLV,Department
+FLAD_SV_CH,Chalatenango,CTR_SLV,Department
+FLAD_SV_CU,Cuscatlán,CTR_SLV,Department
+FLAD_SV_LI,La Libertad,CTR_SLV,Department
+FLAD_SV_PA,La Paz,CTR_SLV,Department
+FLAD_SV_UN,La Unión,CTR_SLV,Department
+FLAD_SV_MO,Morazán,CTR_SLV,Department
+FLAD_SV_SM,San Miguel,CTR_SLV,Department
+FLAD_SV_SS,San Salvador,CTR_SLV,Department
+FLAD_SV_SV,San Vicente,CTR_SLV,Department
+FLAD_SV_SA,Santa Ana,CTR_SLV,Department
+FLAD_SV_SO,Sonsonate,CTR_SLV,Department
+FLAD_SV_US,Usulután,CTR_SLV,Department
+FLAD_GQ_C,Région Continentale,CTR_GNQ,Region
+FLAD_GQ_I,Région Insulaire,CTR_GNQ,Region
+FLAD_ER_MA,Al Awsaţ,CTR_ERI,Region
+FLAD_ER_DU,Al Janūbī,CTR_ERI,Region
+FLAD_ER_AN,Ansabā,CTR_ERI,Region
+FLAD_ER_DK,Debubawi K’eyyĭḥ Baḥri,CTR_ERI,Region
+FLAD_ER_GB,Gash-Barka,CTR_ERI,Region
+FLAD_ER_SK,Semienawi K’eyyĭḥ Baḥri,CTR_ERI,Region
+FLAD_EE_37,Harjumaa,CTR_EST,County
+FLAD_EE_39,Hiiumaa,CTR_EST,County
+FLAD_EE_45,Ida-Virumaa,CTR_EST,County
+FLAD_EE_52,Järvamaa,CTR_EST,County
+FLAD_EE_50,Jõgevamaa,CTR_EST,County
+FLAD_EE_60,Lääne-Virumaa,CTR_EST,County
+FLAD_EE_56,Läänemaa,CTR_EST,County
+FLAD_EE_68,Pärnumaa,CTR_EST,County
+FLAD_EE_64,Põlvamaa,CTR_EST,County
+FLAD_EE_71,Raplamaa,CTR_EST,County
+FLAD_EE_74,Saaremaa,CTR_EST,County
+FLAD_EE_79,Tartumaa,CTR_EST,County
+FLAD_EE_81,Valgamaa,CTR_EST,County
+FLAD_EE_84,Viljandimaa,CTR_EST,County
+FLAD_EE_87,Võrumaa,CTR_EST,County
+FLAD_SZ_HH,Hhohho,CTR_SWZ,Region
+FLAD_SZ_LU,Lubombo,CTR_SWZ,Region
+FLAD_SZ_MA,Manzini,CTR_SWZ,Region
+FLAD_SZ_SH,Shiselweni,CTR_SWZ,Region
+FLAD_ET_AA,Addis Ababa,CTR_ETH,Administration
+FLAD_ET_AF,Afar,CTR_ETH,Regional state
+FLAD_ET_AM,Amara,CTR_ETH,Regional state
+FLAD_ET_BE,Benshangul-Gumaz,CTR_ETH,Regional state
+FLAD_ET_DD,Dire Dawa,CTR_ETH,Administration
+FLAD_ET_GA,Gambela Peoples,CTR_ETH,Regional state
+FLAD_ET_HA,Harari People,CTR_ETH,Regional state
+FLAD_ET_OR,Oromia,CTR_ETH,Regional state
+FLAD_ET_SI,Sidama,CTR_ETH,Regional state
+FLAD_ET_SO,Somali,CTR_ETH,Regional state
+FLAD_ET_SN,"Southern Nations, Nationalities and Peoples",CTR_ETH,Regional state
+FLAD_ET_SW,Southwest Ethiopia Peoples,CTR_ETH,Regional state
+FLAD_ET_TI,Tigrai,CTR_ETH,Regional state
+FLAD_FJ_C,Central,CTR_FJI,Division
+FLAD_FJ_E,Eastern,CTR_FJI,Division
+FLAD_FJ_N,Northern,CTR_FJI,Division
+FLAD_FJ_R,Rotuma,CTR_FJI,Dependency
+FLAD_FJ_W,Western,CTR_FJI,Division
+FLAD_FI_02,Etelä-Karjala,CTR_FIN,Region
+FLAD_FI_03,Etelä-Pohjanmaa,CTR_FIN,Region
+FLAD_FI_04,Etelä-Savo,CTR_FIN,Region
+FLAD_FI_05,Kainuu,CTR_FIN,Region
+FLAD_FI_06,Kanta-Häme,CTR_FIN,Region
+FLAD_FI_07,Keski-Pohjanmaa,CTR_FIN,Region
+FLAD_FI_08,Keski-Suomi,CTR_FIN,Region
+FLAD_FI_09,Kymenlaakso,CTR_FIN,Region
+FLAD_FI_01,Landskapet Åland,CTR_FIN,Region
+FLAD_FI_10,Lappi,CTR_FIN,Region
+FLAD_FI_16,Päijät-Häme,CTR_FIN,Region
+FLAD_FI_11,Pirkanmaa,CTR_FIN,Region
+FLAD_FI_12,Pohjanmaa,CTR_FIN,Region
+FLAD_FI_13,Pohjois-Karjala,CTR_FIN,Region
+FLAD_FI_14,Pohjois-Pohjanmaa,CTR_FIN,Region
+FLAD_FI_15,Pohjois-Savo,CTR_FIN,Region
+FLAD_FI_17,Satakunta,CTR_FIN,Region
+FLAD_FI_18,Uusimaa,CTR_FIN,Region
+FLAD_FI_19,Varsinais-Suomi,CTR_FIN,Region
+FLAD_FR_ARA,Auvergne-Rhône-Alpes,CTR_FRA,Metropolitan region
+FLAD_FR_BFC,Bourgogne-Franche-Comté,CTR_FRA,Metropolitan region
+FLAD_FR_BRE,Bretagne,CTR_FRA,Metropolitan region
+FLAD_FR_CVL,Centre-Val de Loire,CTR_FRA,Metropolitan region
+FLAD_FR_CP,Clipperton,CTR_FRA,Dependency
+FLAD_FR_20R,Corse,CTR_FRA,Metropolitan collectivity with special status
+FLAD_FR_GES,Grand-Est,CTR_FRA,Metropolitan region
+FLAD_FR_971,Guadeloupe,CTR_FRA,Overseas departmental collectivity
+FLAD_FR_973,Guyane (française),CTR_FRA,Overseas unique territorial collectivity
+FLAD_FR_HDF,Hauts-de-France,CTR_FRA,Metropolitan region
+FLAD_FR_IDF,Île-de-France,CTR_FRA,Metropolitan region
+FLAD_FR_974,La Réunion,CTR_FRA,Overseas departmental collectivity
+FLAD_FR_972,Martinique,CTR_FRA,Overseas unique territorial collectivity
+FLAD_FR_976,Mayotte,CTR_FRA,Overseas departmental collectivity
+FLAD_FR_NOR,Normandie,CTR_FRA,Metropolitan region
+FLAD_FR_NAQ,Nouvelle-Aquitaine,CTR_FRA,Metropolitan region
+FLAD_FR_NC,Nouvelle-Calédonie,CTR_FRA,Overseas collectivity with special status
+FLAD_FR_OCC,Occitanie,CTR_FRA,Metropolitan region
+FLAD_FR_PDL,Pays-de-la-Loire,CTR_FRA,Metropolitan region
+FLAD_FR_PF,Polynésie française,CTR_FRA,Overseas collectivity
+FLAD_FR_PAC,Provence-Alpes-Côte-d’Azur,CTR_FRA,Metropolitan region
+FLAD_FR_BL,Saint-Barthélemy,CTR_FRA,Overseas collectivity
+FLAD_FR_MF,Saint-Martin,CTR_FRA,Overseas collectivity
+FLAD_FR_PM,Saint-Pierre-et-Miquelon,CTR_FRA,Overseas collectivity
+FLAD_FR_TF,Terres australes françaises,CTR_FRA,Overseas territory
+FLAD_FR_WF,Wallis-et-Futuna,CTR_FRA,Overseas collectivity
+FLAD_GA_1,Estuaire,CTR_GAB,Province
+FLAD_GA_2,Haut-Ogooué,CTR_GAB,Province
+FLAD_GA_3,Moyen-Ogooué,CTR_GAB,Province
+FLAD_GA_4,Ngounié,CTR_GAB,Province
+FLAD_GA_5,Nyanga,CTR_GAB,Province
+FLAD_GA_6,Ogooué-Ivindo,CTR_GAB,Province
+FLAD_GA_7,Ogooué-Lolo,CTR_GAB,Province
+FLAD_GA_8,Ogooué-Maritime,CTR_GAB,Province
+FLAD_GA_9,Woleu-Ntem,CTR_GAB,Province
+FLAD_GM_B,Banjul,CTR_GMB,City
+FLAD_GM_M,Central River,CTR_GMB,Division
+FLAD_GM_L,Lower River,CTR_GMB,Division
+FLAD_GM_N,North Bank,CTR_GMB,Division
+FLAD_GM_U,Upper River,CTR_GMB,Division
+FLAD_GM_W,Western,CTR_GMB,Division
+FLAD_GE_AB,Abkhazia,CTR_GEO,Autonomous republic
+FLAD_GE_AJ,Ajaria,CTR_GEO,Autonomous republic
+FLAD_GE_GU,Guria,CTR_GEO,Region
+FLAD_GE_IM,Imereti,CTR_GEO,Region
+FLAD_GE_KA,K'akheti,CTR_GEO,Region
+FLAD_GE_KK,Kvemo Kartli,CTR_GEO,Region
+FLAD_GE_MM,Mtskheta-Mtianeti,CTR_GEO,Region
+FLAD_GE_RL,Rach'a-Lechkhumi-Kvemo Svaneti,CTR_GEO,Region
+FLAD_GE_SZ,Samegrelo-Zemo Svaneti,CTR_GEO,Region
+FLAD_GE_SJ,Samtskhe-Javakheti,CTR_GEO,Region
+FLAD_GE_SK,Shida Kartli,CTR_GEO,Region
+FLAD_GE_TB,Tbilisi,CTR_GEO,City
+FLAD_DE_BW,Baden-Württemberg,CTR_DEU,Land
+FLAD_DE_BY,Bayern,CTR_DEU,Land
+FLAD_DE_BE,Berlin,CTR_DEU,Land
+FLAD_DE_BB,Brandenburg,CTR_DEU,Land
+FLAD_DE_HB,Bremen,CTR_DEU,Land
+FLAD_DE_HH,Hamburg,CTR_DEU,Land
+FLAD_DE_HE,Hessen,CTR_DEU,Land
+FLAD_DE_MV,Mecklenburg-Vorpommern,CTR_DEU,Land
+FLAD_DE_NI,Niedersachsen,CTR_DEU,Land
+FLAD_DE_NW,Nordrhein-Westfalen,CTR_DEU,Land
+FLAD_DE_RP,Rheinland-Pfalz,CTR_DEU,Land
+FLAD_DE_SL,Saarland,CTR_DEU,Land
+FLAD_DE_SN,Sachsen,CTR_DEU,Land
+FLAD_DE_ST,Sachsen-Anhalt,CTR_DEU,Land
+FLAD_DE_SH,Schleswig-Holstein,CTR_DEU,Land
+FLAD_DE_TH,Thüringen,CTR_DEU,Land
+FLAD_GH_AF,Ahafo,CTR_GHA,Region
+FLAD_GH_AH,Ashanti,CTR_GHA,Region
+FLAD_GH_BO,Bono,CTR_GHA,Region
+FLAD_GH_BE,Bono East,CTR_GHA,Region
+FLAD_GH_CP,Central,CTR_GHA,Region
+FLAD_GH_EP,Eastern,CTR_GHA,Region
+FLAD_GH_AA,Greater Accra,CTR_GHA,Region
+FLAD_GH_NE,North East,CTR_GHA,Region
+FLAD_GH_NP,Northern,CTR_GHA,Region
+FLAD_GH_OT,Oti,CTR_GHA,Region
+FLAD_GH_SV,Savannah,CTR_GHA,Region
+FLAD_GH_UE,Upper East,CTR_GHA,Region
+FLAD_GH_UW,Upper West,CTR_GHA,Region
+FLAD_GH_TV,Volta,CTR_GHA,Region
+FLAD_GH_WP,Western,CTR_GHA,Region
+FLAD_GH_WN,Western North,CTR_GHA,Region
+FLAD_GR_A,Anatolikí Makedonía kai Thráki,CTR_GRC,Administrative region
+FLAD_GR_I,Attikí,CTR_GRC,Administrative region
+FLAD_GR_69,Ágion Óros,CTR_GRC,Self-governed part
+FLAD_GR_G,Dytikí Elláda,CTR_GRC,Administrative region
+FLAD_GR_C,Dytikí Makedonía,CTR_GRC,Administrative region
+FLAD_GR_F,Ionía Nísia,CTR_GRC,Administrative region
+FLAD_GR_D,Ípeiros,CTR_GRC,Administrative region
+FLAD_GR_B,Kentrikí Makedonía,CTR_GRC,Administrative region
+FLAD_GR_M,Kríti,CTR_GRC,Administrative region
+FLAD_GR_L,Nótio Aigaío,CTR_GRC,Administrative region
+FLAD_GR_J,Pelopónnisos,CTR_GRC,Administrative region
+FLAD_GR_H,Stereá Elláda,CTR_GRC,Administrative region
+FLAD_GR_E,Thessalía,CTR_GRC,Administrative region
+FLAD_GR_K,Vóreio Aigaío,CTR_GRC,Administrative region
+FLAD_GL_AV,Avannaata Kommunia,CTR_GRL,Municipality
+FLAD_GL_KU,Kommune Kujalleq,CTR_GRL,Municipality
+FLAD_GL_QT,Kommune Qeqertalik,CTR_GRL,Municipality
+FLAD_GL_SM,Kommuneqarfik Sermersooq,CTR_GRL,Municipality
+FLAD_GL_QE,Qeqqata Kommunia,CTR_GRL,Municipality
+FLAD_GD_01,Saint Andrew,CTR_GRD,Parish
+FLAD_GD_02,Saint David,CTR_GRD,Parish
+FLAD_GD_03,Saint George,CTR_GRD,Parish
+FLAD_GD_04,Saint John,CTR_GRD,Parish
+FLAD_GD_05,Saint Mark,CTR_GRD,Parish
+FLAD_GD_06,Saint Patrick,CTR_GRD,Parish
+FLAD_GD_10,Southern Grenadine Islands,CTR_GRD,Dependency
+FLAD_GT_16,Alta Verapaz,CTR_GTM,Department
+FLAD_GT_15,Baja Verapaz,CTR_GTM,Department
+FLAD_GT_04,Chimaltenango,CTR_GTM,Department
+FLAD_GT_20,Chiquimula,CTR_GTM,Department
+FLAD_GT_02,El Progreso,CTR_GTM,Department
+FLAD_GT_05,Escuintla,CTR_GTM,Department
+FLAD_GT_01,Guatemala,CTR_GTM,Department
+FLAD_GT_13,Huehuetenango,CTR_GTM,Department
+FLAD_GT_18,Izabal,CTR_GTM,Department
+FLAD_GT_21,Jalapa,CTR_GTM,Department
+FLAD_GT_22,Jutiapa,CTR_GTM,Department
+FLAD_GT_17,Petén,CTR_GTM,Department
+FLAD_GT_09,Quetzaltenango,CTR_GTM,Department
+FLAD_GT_14,Quiché,CTR_GTM,Department
+FLAD_GT_11,Retalhuleu,CTR_GTM,Department
+FLAD_GT_03,Sacatepéquez,CTR_GTM,Department
+FLAD_GT_12,San Marcos,CTR_GTM,Department
+FLAD_GT_06,Santa Rosa,CTR_GTM,Department
+FLAD_GT_07,Sololá,CTR_GTM,Department
+FLAD_GT_10,Suchitepéquez,CTR_GTM,Department
+FLAD_GT_08,Totonicapán,CTR_GTM,Department
+FLAD_GT_19,Zacapa,CTR_GTM,Department
+FLAD_GN_B,Boké,CTR_GIN,Administrative region
+FLAD_GN_C,Conakry,CTR_GIN,Governorate
+FLAD_GN_F,Faranah,CTR_GIN,Administrative region
+FLAD_GN_K,Kankan,CTR_GIN,Administrative region
+FLAD_GN_D,Kindia,CTR_GIN,Administrative region
+FLAD_GN_L,Labé,CTR_GIN,Administrative region
+FLAD_GN_M,Mamou,CTR_GIN,Administrative region
+FLAD_GN_N,Nzérékoré,CTR_GIN,Administrative region
+FLAD_GW_BS,Bissau,CTR_GNB,Autonomous sector
+FLAD_GW_L,Leste,CTR_GNB,Province
+FLAD_GW_N,Norte,CTR_GNB,Province
+FLAD_GW_S,Sul,CTR_GNB,Province
+FLAD_GY_BA,Barima-Waini,CTR_GUY,Region
+FLAD_GY_CU,Cuyuni-Mazaruni,CTR_GUY,Region
+FLAD_GY_DE,Demerara-Mahaica,CTR_GUY,Region
+FLAD_GY_EB,East Berbice-Corentyne,CTR_GUY,Region
+FLAD_GY_ES,Essequibo Islands-West Demerara,CTR_GUY,Region
+FLAD_GY_MA,Mahaica-Berbice,CTR_GUY,Region
+FLAD_GY_PM,Pomeroon-Supenaam,CTR_GUY,Region
+FLAD_GY_PT,Potaro-Siparuni,CTR_GUY,Region
+FLAD_GY_UD,Upper Demerara-Berbice,CTR_GUY,Region
+FLAD_GY_UT,Upper Takutu-Upper Essequibo,CTR_GUY,Region
+FLAD_HT_AR,Artibonite,CTR_HTI,Department
+FLAD_HT_CE,Centre,CTR_HTI,Department
+FLAD_HT_GA,Grande’Anse,CTR_HTI,Department
+FLAD_HT_NI,Nippes,CTR_HTI,Department
+FLAD_HT_ND,Nord,CTR_HTI,Department
+FLAD_HT_NE,Nord-Est,CTR_HTI,Department
+FLAD_HT_NO,Nord-Ouest,CTR_HTI,Department
+FLAD_HT_OU,Ouest,CTR_HTI,Department
+FLAD_HT_SD,Sud,CTR_HTI,Department
+FLAD_HT_SE,Sud-Est,CTR_HTI,Department
+FLAD_HN_AT,Atlántida,CTR_HND,Department
+FLAD_HN_CH,Choluteca,CTR_HND,Department
+FLAD_HN_CL,Colón,CTR_HND,Department
+FLAD_HN_CM,Comayagua,CTR_HND,Department
+FLAD_HN_CP,Copán,CTR_HND,Department
+FLAD_HN_CR,Cortés,CTR_HND,Department
+FLAD_HN_EP,El Paraíso,CTR_HND,Department
+FLAD_HN_FM,Francisco Morazán,CTR_HND,Department
+FLAD_HN_GD,Gracias a Dios,CTR_HND,Department
+FLAD_HN_IN,Intibucá,CTR_HND,Department
+FLAD_HN_IB,Islas de la Bahía,CTR_HND,Department
+FLAD_HN_LP,La Paz,CTR_HND,Department
+FLAD_HN_LE,Lempira,CTR_HND,Department
+FLAD_HN_OC,Ocotepeque,CTR_HND,Department
+FLAD_HN_OL,Olancho,CTR_HND,Department
+FLAD_HN_SB,Santa Bárbara,CTR_HND,Department
+FLAD_HN_VA,Valle,CTR_HND,Department
+FLAD_HN_YO,Yoro,CTR_HND,Department
+FLAD_HU_BA,Baranya,CTR_HUN,County
+FLAD_HU_BK,Bács-Kiskun,CTR_HUN,County
+FLAD_HU_BE,Békés,CTR_HUN,County
+FLAD_HU_BC,Békéscsaba,CTR_HUN,City with county rights
+FLAD_HU_BZ,Borsod-Abaúj-Zemplén,CTR_HUN,County
+FLAD_HU_BU,Budapest,CTR_HUN,Capital city
+FLAD_HU_CS,Csongrád-Csanád,CTR_HUN,County
+FLAD_HU_DE,Debrecen,CTR_HUN,City with county rights
+FLAD_HU_DU,Dunaújváros,CTR_HUN,City with county rights
+FLAD_HU_EG,Eger,CTR_HUN,City with county rights
+FLAD_HU_ER,Érd,CTR_HUN,City with county rights
+FLAD_HU_FE,Fejér,CTR_HUN,County
+FLAD_HU_GY,Győr,CTR_HUN,City with county rights
+FLAD_HU_GS,Győr-Moson-Sopron,CTR_HUN,County
+FLAD_HU_HB,Hajdú-Bihar,CTR_HUN,County
+FLAD_HU_HE,Heves,CTR_HUN,County
+FLAD_HU_HV,Hódmezővásárhely,CTR_HUN,City with county rights
+FLAD_HU_JN,Jász-Nagykun-Szolnok,CTR_HUN,County
+FLAD_HU_KV,Kaposvár,CTR_HUN,City with county rights
+FLAD_HU_KM,Kecskemét,CTR_HUN,City with county rights
+FLAD_HU_KE,Komárom-Esztergom,CTR_HUN,County
+FLAD_HU_MI,Miskolc,CTR_HUN,City with county rights
+FLAD_HU_NK,Nagykanizsa,CTR_HUN,City with county rights
+FLAD_HU_NO,Nógrád,CTR_HUN,County
+FLAD_HU_NY,Nyíregyháza,CTR_HUN,City with county rights
+FLAD_HU_PE,Pest,CTR_HUN,County
+FLAD_HU_PS,Pécs,CTR_HUN,City with county rights
+FLAD_HU_ST,Salgótarján,CTR_HUN,City with county rights
+FLAD_HU_SO,Somogy,CTR_HUN,County
+FLAD_HU_SN,Sopron,CTR_HUN,City with county rights
+FLAD_HU_SZ,Szabolcs-Szatmár-Bereg,CTR_HUN,County
+FLAD_HU_SD,Szeged,CTR_HUN,City with county rights
+FLAD_HU_SS,Szekszárd,CTR_HUN,City with county rights
+FLAD_HU_SF,Székesfehérvár,CTR_HUN,City with county rights
+FLAD_HU_SK,Szolnok,CTR_HUN,City with county rights
+FLAD_HU_SH,Szombathely,CTR_HUN,City with county rights
+FLAD_HU_TB,Tatabánya,CTR_HUN,City with county rights
+FLAD_HU_TO,Tolna,CTR_HUN,County
+FLAD_HU_VA,Vas,CTR_HUN,County
+FLAD_HU_VE,Veszprém,CTR_HUN,County
+FLAD_HU_VM,Veszprém,CTR_HUN,City with county rights
+FLAD_HU_ZA,Zala,CTR_HUN,County
+FLAD_HU_ZE,Zalaegerszeg,CTR_HUN,City with county rights
+FLAD_IS_7,Austurland,CTR_ISL,Region
+FLAD_IS_1,Höfuðborgarsvæði,CTR_ISL,Region
+FLAD_IS_6,Norðurland eystra,CTR_ISL,Region
+FLAD_IS_5,Norðurland vestra,CTR_ISL,Region
+FLAD_IS_8,Suðurland,CTR_ISL,Region
+FLAD_IS_2,Suðurnes,CTR_ISL,Region
+FLAD_IS_4,Vestfirðir,CTR_ISL,Region
+FLAD_IS_3,Vesturland,CTR_ISL,Region
+FLAD_IN_AN,Andaman and Nicobar Islands,CTR_IND,Union territory
+FLAD_IN_AP,Andhra Pradesh,CTR_IND,State
+FLAD_IN_AR,Arunāchal Pradesh,CTR_IND,State
+FLAD_IN_AS,Assam,CTR_IND,State
+FLAD_IN_BR,Bihār,CTR_IND,State
+FLAD_IN_CH,Chandīgarh,CTR_IND,Union territory
+FLAD_IN_CG,Chhattīsgarh,CTR_IND,State
+FLAD_IN_DH,Dādra and Nagar Haveli and Damān and Diu,CTR_IND,Union territory
+FLAD_IN_DL,Delhi,CTR_IND,Union territory
+FLAD_IN_GA,Goa,CTR_IND,State
+FLAD_IN_GJ,Gujarāt,CTR_IND,State
+FLAD_IN_HR,Haryāna,CTR_IND,State
+FLAD_IN_HP,Himāchal Pradesh,CTR_IND,State
+FLAD_IN_JK,Jammu and Kashmīr,CTR_IND,Union territory
+FLAD_IN_JH,Jhārkhand,CTR_IND,State
+FLAD_IN_KA,Karnātaka,CTR_IND,State
+FLAD_IN_KL,Kerala,CTR_IND,State
+FLAD_IN_LA,Ladākh,CTR_IND,Union territory
+FLAD_IN_LD,Lakshadweep,CTR_IND,Union territory
+FLAD_IN_MP,Madhya Pradesh,CTR_IND,State
+FLAD_IN_MH,Mahārāshtra,CTR_IND,State
+FLAD_IN_MN,Manipur,CTR_IND,State
+FLAD_IN_ML,Meghālaya,CTR_IND,State
+FLAD_IN_MZ,Mizoram,CTR_IND,State
+FLAD_IN_NL,Nāgāland,CTR_IND,State
+FLAD_IN_OD,Odisha,CTR_IND,State
+FLAD_IN_PY,Puducherry,CTR_IND,Union territory
+FLAD_IN_PB,Punjab,CTR_IND,State
+FLAD_IN_RJ,Rājasthān,CTR_IND,State
+FLAD_IN_SK,Sikkim,CTR_IND,State
+FLAD_IN_TN,Tamil Nādu,CTR_IND,State
+FLAD_IN_TS,Telangāna,CTR_IND,State
+FLAD_IN_TR,Tripura,CTR_IND,State
+FLAD_IN_UP,Uttar Pradesh,CTR_IND,State
+FLAD_IN_UK,Uttarākhand,CTR_IND,State
+FLAD_IN_WB,West Bengal,CTR_IND,State
+FLAD_ID_JW,Jawa,CTR_IDN,Geographical unit
+FLAD_ID_KA,Kalimantan,CTR_IDN,Geographical unit
+FLAD_ID_ML,Maluku,CTR_IDN,Geographical unit
+FLAD_ID_NU,Nusa Tenggara,CTR_IDN,Geographical unit
+FLAD_ID_PP,Papua,CTR_IDN,Geographical unit
+FLAD_ID_SL,Sulawesi,CTR_IDN,Geographical unit
+FLAD_ID_SM,Sumatera,CTR_IDN,Geographical unit
+FLAD_IR_30,Alborz,CTR_IRN,Province
+FLAD_IR_24,Ardabīl,CTR_IRN,Province
+FLAD_IR_04,Āz̄ārbāyjān-e Ghārbī,CTR_IRN,Province
+FLAD_IR_03,Āz̄ārbāyjān-e Shārqī,CTR_IRN,Province
+FLAD_IR_18,Būshehr,CTR_IRN,Province
+FLAD_IR_14,Chahār Maḩāl va Bakhtīārī,CTR_IRN,Province
+FLAD_IR_10,Eşfahān,CTR_IRN,Province
+FLAD_IR_07,Fārs,CTR_IRN,Province
+FLAD_IR_01,Gīlān,CTR_IRN,Province
+FLAD_IR_27,Golestān,CTR_IRN,Province
+FLAD_IR_13,Hamadān,CTR_IRN,Province
+FLAD_IR_22,Hormozgān,CTR_IRN,Province
+FLAD_IR_16,Īlām,CTR_IRN,Province
+FLAD_IR_08,Kermān,CTR_IRN,Province
+FLAD_IR_05,Kermānshāh,CTR_IRN,Province
+FLAD_IR_29,Khorāsān-e Jonūbī,CTR_IRN,Province
+FLAD_IR_09,Khorāsān-e Raẕavī,CTR_IRN,Province
+FLAD_IR_28,Khorāsān-e Shomālī,CTR_IRN,Province
+FLAD_IR_06,Khūzestān,CTR_IRN,Province
+FLAD_IR_17,Kohgīlūyeh va Bowyer Aḩmad,CTR_IRN,Province
+FLAD_IR_12,Kordestān,CTR_IRN,Province
+FLAD_IR_15,Lorestān,CTR_IRN,Province
+FLAD_IR_00,Markazī,CTR_IRN,Province
+FLAD_IR_02,Māzandarān,CTR_IRN,Province
+FLAD_IR_26,Qazvīn,CTR_IRN,Province
+FLAD_IR_25,Qom,CTR_IRN,Province
+FLAD_IR_20,Semnān,CTR_IRN,Province
+FLAD_IR_11,Sīstān va Balūchestān,CTR_IRN,Province
+FLAD_IR_23,Tehrān,CTR_IRN,Province
+FLAD_IR_21,Yazd,CTR_IRN,Province
+FLAD_IR_19,Zanjān,CTR_IRN,Province
+FLAD_IQ_AN,Al Anbār,CTR_IRQ,Governorate
+FLAD_IQ_BA,Al Başrah,CTR_IRQ,Governorate
+FLAD_IQ_MU,Al Muthanná,CTR_IRQ,Governorate
+FLAD_IQ_QA,Al Qādisīyah,CTR_IRQ,Governorate
+FLAD_IQ_NA,An Najaf,CTR_IRQ,Governorate
+FLAD_IQ_BG,Baghdād,CTR_IRQ,Governorate
+FLAD_IQ_BB,Bābil,CTR_IRQ,Governorate
+FLAD_IQ_DQ,Dhī Qār,CTR_IRQ,Governorate
+FLAD_IQ_DI,Diyālá,CTR_IRQ,Governorate
+FLAD_IQ_KR,Herêm-î Kurdistan,CTR_IRQ,Region
+FLAD_IQ_KA,Karbalā’,CTR_IRQ,Governorate
+FLAD_IQ_KI,Kirkūk,CTR_IRQ,Governorate
+FLAD_IQ_MA,Maysān,CTR_IRQ,Governorate
+FLAD_IQ_NI,Nīnawá,CTR_IRQ,Governorate
+FLAD_IQ_SD,Şalāḩ ad Dīn,CTR_IRQ,Governorate
+FLAD_IQ_WA,Wāsiţ,CTR_IRQ,Governorate
+FLAD_IE_C,Connaught,CTR_IRL,Province
+FLAD_IE_L,Leinster,CTR_IRL,Province
+FLAD_IE_M,Munster,CTR_IRL,Province
+FLAD_IE_U,Ulster,CTR_IRL,Province
+FLAD_IL_M,Al Awsaţ,CTR_ISR,District
+FLAD_IL_D,Al Janūbī,CTR_ISR,District
+FLAD_IL_JM,Al Quds,CTR_ISR,District
+FLAD_IL_Z,Ash Shamālī,CTR_ISR,District
+FLAD_IL_HA,H̱efa,CTR_ISR,District
+FLAD_IL_TA,Tall Abīb,CTR_ISR,District
+FLAD_IT_65,Abruzzo,CTR_ITA,Region
+FLAD_IT_77,Basilicata,CTR_ITA,Region
+FLAD_IT_78,Calabria,CTR_ITA,Region
+FLAD_IT_72,Campania,CTR_ITA,Region
+FLAD_IT_45,Emilia-Romagna,CTR_ITA,Region
+FLAD_IT_36,Friuli Venezia Giulia,CTR_ITA,Autonomous region
+FLAD_IT_62,Lazio,CTR_ITA,Region
+FLAD_IT_42,Liguria,CTR_ITA,Region
+FLAD_IT_25,Lombardia,CTR_ITA,Region
+FLAD_IT_57,Marche,CTR_ITA,Region
+FLAD_IT_67,Molise,CTR_ITA,Region
+FLAD_IT_21,Piemonte,CTR_ITA,Region
+FLAD_IT_75,Puglia,CTR_ITA,Region
+FLAD_IT_88,Sardegna,CTR_ITA,Autonomous region
+FLAD_IT_82,Sicilia,CTR_ITA,Autonomous region
+FLAD_IT_52,Toscana,CTR_ITA,Region
+FLAD_IT_32,Trentino-Alto Adige,CTR_ITA,Autonomous region
+FLAD_IT_55,Umbria,CTR_ITA,Region
+FLAD_IT_23,Val d'Aoste,CTR_ITA,Autonomous region
+FLAD_IT_34,Veneto,CTR_ITA,Region
+FLAD_JM_13,Clarendon,CTR_JAM,Parish
+FLAD_JM_09,Hanover,CTR_JAM,Parish
+FLAD_JM_01,Kingston,CTR_JAM,Parish
+FLAD_JM_12,Manchester,CTR_JAM,Parish
+FLAD_JM_04,Portland,CTR_JAM,Parish
+FLAD_JM_02,Saint Andrew,CTR_JAM,Parish
+FLAD_JM_06,Saint Ann,CTR_JAM,Parish
+FLAD_JM_14,Saint Catherine,CTR_JAM,Parish
+FLAD_JM_11,Saint Elizabeth,CTR_JAM,Parish
+FLAD_JM_08,Saint James,CTR_JAM,Parish
+FLAD_JM_05,Saint Mary,CTR_JAM,Parish
+FLAD_JM_03,Saint Thomas,CTR_JAM,Parish
+FLAD_JM_07,Trelawny,CTR_JAM,Parish
+FLAD_JM_10,Westmoreland,CTR_JAM,Parish
+FLAD_JP_23,Aichi,CTR_JPN,Prefecture
+FLAD_JP_05,Akita,CTR_JPN,Prefecture
+FLAD_JP_02,Aomori,CTR_JPN,Prefecture
+FLAD_JP_12,Chiba,CTR_JPN,Prefecture
+FLAD_JP_38,Ehime,CTR_JPN,Prefecture
+FLAD_JP_18,Fukui,CTR_JPN,Prefecture
+FLAD_JP_40,Fukuoka,CTR_JPN,Prefecture
+FLAD_JP_07,Fukushima,CTR_JPN,Prefecture
+FLAD_JP_21,Gifu,CTR_JPN,Prefecture
+FLAD_JP_10,Gunma,CTR_JPN,Prefecture
+FLAD_JP_34,Hiroshima,CTR_JPN,Prefecture
+FLAD_JP_01,Hokkaido,CTR_JPN,Prefecture
+FLAD_JP_28,Hyogo,CTR_JPN,Prefecture
+FLAD_JP_08,Ibaraki,CTR_JPN,Prefecture
+FLAD_JP_17,Ishikawa,CTR_JPN,Prefecture
+FLAD_JP_03,Iwate,CTR_JPN,Prefecture
+FLAD_JP_37,Kagawa,CTR_JPN,Prefecture
+FLAD_JP_46,Kagoshima,CTR_JPN,Prefecture
+FLAD_JP_14,Kanagawa,CTR_JPN,Prefecture
+FLAD_JP_39,Kochi,CTR_JPN,Prefecture
+FLAD_JP_43,Kumamoto,CTR_JPN,Prefecture
+FLAD_JP_26,Kyoto,CTR_JPN,Prefecture
+FLAD_JP_24,Mie,CTR_JPN,Prefecture
+FLAD_JP_04,Miyagi,CTR_JPN,Prefecture
+FLAD_JP_45,Miyazaki,CTR_JPN,Prefecture
+FLAD_JP_20,Nagano,CTR_JPN,Prefecture
+FLAD_JP_42,Nagasaki,CTR_JPN,Prefecture
+FLAD_JP_29,Nara,CTR_JPN,Prefecture
+FLAD_JP_15,Niigata,CTR_JPN,Prefecture
+FLAD_JP_44,Oita,CTR_JPN,Prefecture
+FLAD_JP_33,Okayama,CTR_JPN,Prefecture
+FLAD_JP_47,Okinawa,CTR_JPN,Prefecture
+FLAD_JP_27,Osaka,CTR_JPN,Prefecture
+FLAD_JP_41,Saga,CTR_JPN,Prefecture
+FLAD_JP_11,Saitama,CTR_JPN,Prefecture
+FLAD_JP_25,Shiga,CTR_JPN,Prefecture
+FLAD_JP_32,Shimane,CTR_JPN,Prefecture
+FLAD_JP_22,Shizuoka,CTR_JPN,Prefecture
+FLAD_JP_09,Tochigi,CTR_JPN,Prefecture
+FLAD_JP_36,Tokushima,CTR_JPN,Prefecture
+FLAD_JP_13,Tokyo,CTR_JPN,Prefecture
+FLAD_JP_31,Tottori,CTR_JPN,Prefecture
+FLAD_JP_16,Toyama,CTR_JPN,Prefecture
+FLAD_JP_30,Wakayama,CTR_JPN,Prefecture
+FLAD_JP_06,Yamagata,CTR_JPN,Prefecture
+FLAD_JP_35,Yamaguchi,CTR_JPN,Prefecture
+FLAD_JP_19,Yamanashi,CTR_JPN,Prefecture
+FLAD_JO_BA,Al Balqā’,CTR_JOR,Governorate
+FLAD_JO_KA,Al Karak,CTR_JOR,Governorate
+FLAD_JO_MA,Al Mafraq,CTR_JOR,Governorate
+FLAD_JO_AQ,Al ‘Aqabah,CTR_JOR,Governorate
+FLAD_JO_AM,Al ‘A̅şimah,CTR_JOR,Governorate
+FLAD_JO_AT,Aţ Ţafīlah,CTR_JOR,Governorate
+FLAD_JO_AZ,Az Zarqā’,CTR_JOR,Governorate
+FLAD_JO_IR,Irbid,CTR_JOR,Governorate
+FLAD_JO_JA,Jarash,CTR_JOR,Governorate
+FLAD_JO_MD,Mādabā,CTR_JOR,Governorate
+FLAD_JO_MN,Ma‘ān,CTR_JOR,Governorate
+FLAD_JO_AJ,‘Ajlūn,CTR_JOR,Governorate
+FLAD_KZ_10,Abajskaja oblast’,CTR_KAZ,Region
+FLAD_KZ_11,Akmolinskaja oblast',CTR_KAZ,Region
+FLAD_KZ_15,Aktjubinskaja oblast',CTR_KAZ,Region
+FLAD_KZ_19,Almatinskaja oblast',CTR_KAZ,Region
+FLAD_KZ_75,Almaty,CTR_KAZ,City
+FLAD_KZ_71,Astana,CTR_KAZ,City
+FLAD_KZ_23,Atyrauskaja oblast',CTR_KAZ,Region
+FLAD_KZ_27,Batys Qazaqstan oblysy,CTR_KAZ,Region
+FLAD_KZ_35,Karagandinskaja oblast',CTR_KAZ,Region
+FLAD_KZ_39,Kostanajskaja oblast',CTR_KAZ,Region
+FLAD_KZ_43,Kyzylordinskaja oblast',CTR_KAZ,Region
+FLAD_KZ_47,Mangghystaū oblysy,CTR_KAZ,Region
+FLAD_KZ_55,Pavlodar oblysy,CTR_KAZ,Region
+FLAD_KZ_59,Severo-Kazahstanskaja oblast',CTR_KAZ,Region
+FLAD_KZ_63,Shyghys Qazaqstan oblysy,CTR_KAZ,Region
+FLAD_KZ_79,Shymkent,CTR_KAZ,City
+FLAD_KZ_61,Turkestankaya oblast',CTR_KAZ,Region
+FLAD_KZ_62,Ulytauskaja oblast’,CTR_KAZ,Region
+FLAD_KZ_31,Zhambyl oblysy,CTR_KAZ,Region
+FLAD_KZ_33,Zhetisū oblysy,CTR_KAZ,Region
+FLAD_KE_01,Baringo,CTR_KEN,County
+FLAD_KE_02,Bomet,CTR_KEN,County
+FLAD_KE_03,Bungoma,CTR_KEN,County
+FLAD_KE_04,Busia,CTR_KEN,County
+FLAD_KE_05,Elgeyo/Marakwet,CTR_KEN,County
+FLAD_KE_06,Embu,CTR_KEN,County
+FLAD_KE_07,Garissa,CTR_KEN,County
+FLAD_KE_08,Homa Bay,CTR_KEN,County
+FLAD_KE_09,Isiolo,CTR_KEN,County
+FLAD_KE_10,Kajiado,CTR_KEN,County
+FLAD_KE_11,Kakamega,CTR_KEN,County
+FLAD_KE_12,Kericho,CTR_KEN,County
+FLAD_KE_13,Kiambu,CTR_KEN,County
+FLAD_KE_14,Kilifi,CTR_KEN,County
+FLAD_KE_15,Kirinyaga,CTR_KEN,County
+FLAD_KE_16,Kisii,CTR_KEN,County
+FLAD_KE_17,Kisumu,CTR_KEN,County
+FLAD_KE_18,Kitui,CTR_KEN,County
+FLAD_KE_19,Kwale,CTR_KEN,County
+FLAD_KE_20,Laikipia,CTR_KEN,County
+FLAD_KE_21,Lamu,CTR_KEN,County
+FLAD_KE_22,Machakos,CTR_KEN,County
+FLAD_KE_23,Makueni,CTR_KEN,County
+FLAD_KE_24,Mandera,CTR_KEN,County
+FLAD_KE_25,Marsabit,CTR_KEN,County
+FLAD_KE_26,Meru,CTR_KEN,County
+FLAD_KE_27,Migori,CTR_KEN,County
+FLAD_KE_28,Mombasa,CTR_KEN,County
+FLAD_KE_29,Murang'a,CTR_KEN,County
+FLAD_KE_30,Nairobi City,CTR_KEN,County
+FLAD_KE_31,Nakuru,CTR_KEN,County
+FLAD_KE_32,Nandi,CTR_KEN,County
+FLAD_KE_33,Narok,CTR_KEN,County
+FLAD_KE_34,Nyamira,CTR_KEN,County
+FLAD_KE_35,Nyandarua,CTR_KEN,County
+FLAD_KE_36,Nyeri,CTR_KEN,County
+FLAD_KE_37,Samburu,CTR_KEN,County
+FLAD_KE_38,Siaya,CTR_KEN,County
+FLAD_KE_39,Taita/Taveta,CTR_KEN,County
+FLAD_KE_40,Tana River,CTR_KEN,County
+FLAD_KE_41,Tharaka-Nithi,CTR_KEN,County
+FLAD_KE_42,Trans Nzoia,CTR_KEN,County
+FLAD_KE_43,Turkana,CTR_KEN,County
+FLAD_KE_44,Uasin Gishu,CTR_KEN,County
+FLAD_KE_45,Vihiga,CTR_KEN,County
+FLAD_KE_46,Wajir,CTR_KEN,County
+FLAD_KE_47,West Pokot,CTR_KEN,County
+FLAD_KI_G,Gilbert Islands,CTR_KIR,Group of islands (20 inhabited islands)
+FLAD_KI_L,Line Islands,CTR_KIR,Group of islands (20 inhabited islands)
+FLAD_KI_P,Phoenix Islands,CTR_KIR,Group of islands (20 inhabited islands)
+FLAD_KP_04,Chagang-do,CTR_PRK,Province
+FLAD_KP_09,Hamgyǒng-bukto,CTR_PRK,Province
+FLAD_KP_08,Hamgyǒng-namdo,CTR_PRK,Province
+FLAD_KP_06,Hwanghae-bukto,CTR_PRK,Province
+FLAD_KP_05,Hwanghae-namdo,CTR_PRK,Province
+FLAD_KP_15,Kaeseong,CTR_PRK,Metropolitan city
+FLAD_KP_07,Kangweonto,CTR_PRK,Province
+FLAD_KP_14,Nampho,CTR_PRK,Metropolitan city
+FLAD_KP_03,P'yǒngan-bukto,CTR_PRK,Province
+FLAD_KP_02,P'yǒngan-namdo,CTR_PRK,Province
+FLAD_KP_01,P'yǒngyang,CTR_PRK,Capital city
+FLAD_KP_13,Raseon,CTR_PRK,Special city
+FLAD_KP_10,Ryanggang-do,CTR_PRK,Province
+FLAD_KR_26,Busan-gwangyeoksi,CTR_KOR,Metropolitan city
+FLAD_KR_43,Chungcheongbuk-do,CTR_KOR,Province
+FLAD_KR_44,Chungcheongnam-do,CTR_KOR,Province
+FLAD_KR_27,Daegu-gwangyeoksi,CTR_KOR,Metropolitan city
+FLAD_KR_30,Daejeon-gwangyeoksi,CTR_KOR,Metropolitan city
+FLAD_KR_42,Gangwon-teukbyeoljachido,CTR_KOR,Special self-governing province
+FLAD_KR_29,Gwangju-gwangyeoksi,CTR_KOR,Metropolitan city
+FLAD_KR_41,Gyeonggi-do,CTR_KOR,Province
+FLAD_KR_47,Gyeongsangbuk-do,CTR_KOR,Province
+FLAD_KR_48,Gyeongsangnam-do,CTR_KOR,Province
+FLAD_KR_28,Incheon-gwangyeoksi,CTR_KOR,Metropolitan city
+FLAD_KR_49,Jeju-teukbyeoljachido,CTR_KOR,Special self-governing province
+FLAD_KR_45,Jeollabuk-do,CTR_KOR,Province
+FLAD_KR_46,Jeollanam-do,CTR_KOR,Province
+FLAD_KR_50,Sejong,CTR_KOR,Special self-governing city
+FLAD_KR_11,Seoul-teukbyeolsi,CTR_KOR,Special city
+FLAD_KR_31,Ulsan-gwangyeoksi,CTR_KOR,Metropolitan city
+FLAD_KW_AH,Al Aḩmadī,CTR_KWT,Governorate
+FLAD_KW_FA,Al Farwānīyah,CTR_KWT,Governorate
+FLAD_KW_JA,Al Jahrā’,CTR_KWT,Governorate
+FLAD_KW_KU,Al ‘Āşimah,CTR_KWT,Governorate
+FLAD_KW_HA,Ḩawallī,CTR_KWT,Governorate
+FLAD_KW_MU,Mubārak al Kabīr,CTR_KWT,Governorate
+FLAD_KG_B,Batken,CTR_KGZ,Region
+FLAD_KG_GB,Bishkek Shaary,CTR_KGZ,City
+FLAD_KG_C,Chuyskaya oblast',CTR_KGZ,Region
+FLAD_KG_J,Dzhalal-Abadskaya oblast',CTR_KGZ,Region
+FLAD_KG_GO,Gorod Osh,CTR_KGZ,City
+FLAD_KG_Y,Issyk-Kul'skaja oblast',CTR_KGZ,Region
+FLAD_KG_N,Naryn,CTR_KGZ,Region
+FLAD_KG_O,Osh,CTR_KGZ,Region
+FLAD_KG_T,Talas,CTR_KGZ,Region
+FLAD_LA_AT,Attapu,CTR_LAO,Province
+FLAD_LA_BK,Bokèo,CTR_LAO,Province
+FLAD_LA_BL,Bolikhamxai,CTR_LAO,Province
+FLAD_LA_CH,Champasak,CTR_LAO,Province
+FLAD_LA_HO,Houaphan,CTR_LAO,Province
+FLAD_LA_KH,Khammouan,CTR_LAO,Province
+FLAD_LA_LM,Louang Namtha,CTR_LAO,Province
+FLAD_LA_LP,Louangphabang,CTR_LAO,Province
+FLAD_LA_OU,Oudômxai,CTR_LAO,Province
+FLAD_LA_PH,Phôngsali,CTR_LAO,Province
+FLAD_LA_SL,Salavan,CTR_LAO,Province
+FLAD_LA_SV,Savannakhét,CTR_LAO,Province
+FLAD_LA_VI,Viangchan,CTR_LAO,Province
+FLAD_LA_VT,Viangchan,CTR_LAO,Prefecture
+FLAD_LA_XA,Xaignabouli,CTR_LAO,Province
+FLAD_LA_XS,Xaisômboun,CTR_LAO,Province
+FLAD_LA_XE,Xékong,CTR_LAO,Province
+FLAD_LA_XI,Xiangkhouang,CTR_LAO,Province
+FLAD_LV_002,Aizkraukles novads,CTR_LVA,Municipality
+FLAD_LV_007,Alūksnes novads,CTR_LVA,Municipality
+FLAD_LV_111,Augšdaugavas novads,CTR_LVA,Municipality
+FLAD_LV_011,Ādažu novads,CTR_LVA,Municipality
+FLAD_LV_015,Balvu novads,CTR_LVA,Municipality
+FLAD_LV_016,Bauskas novads,CTR_LVA,Municipality
+FLAD_LV_022,Cēsu novads,CTR_LVA,Municipality
+FLAD_LV_DGV,Daugavpils,CTR_LVA,State city
+FLAD_LV_112,Dienvidkurzemes Novads,CTR_LVA,Municipality
+FLAD_LV_026,Dobeles novads,CTR_LVA,Municipality
+FLAD_LV_033,Gulbenes novads,CTR_LVA,Municipality
+FLAD_LV_JEL,Jelgava,CTR_LVA,State city
+FLAD_LV_041,Jelgavas novads,CTR_LVA,Municipality
+FLAD_LV_042,Jēkabpils novads,CTR_LVA,Municipality
+FLAD_LV_JUR,Jūrmala,CTR_LVA,State city
+FLAD_LV_047,Krāslavas novads,CTR_LVA,Municipality
+FLAD_LV_050,Kuldīgas novads,CTR_LVA,Municipality
+FLAD_LV_052,Ķekavas novads,CTR_LVA,Municipality
+FLAD_LV_LPX,Liepāja,CTR_LVA,State city
+FLAD_LV_054,Limbažu novads,CTR_LVA,Municipality
+FLAD_LV_056,Līvānu novads,CTR_LVA,Municipality
+FLAD_LV_058,Ludzas novads,CTR_LVA,Municipality
+FLAD_LV_059,Madonas novads,CTR_LVA,Municipality
+FLAD_LV_062,Mārupes novads,CTR_LVA,Municipality
+FLAD_LV_067,Ogres novads,CTR_LVA,Municipality
+FLAD_LV_068,Olaines novads,CTR_LVA,Municipality
+FLAD_LV_073,Preiļu novads,CTR_LVA,Municipality
+FLAD_LV_REZ,Rēzekne,CTR_LVA,State city
+FLAD_LV_077,Rēzeknes novads,CTR_LVA,Municipality
+FLAD_LV_RIX,Rīga,CTR_LVA,State city
+FLAD_LV_080,Ropažu novads,CTR_LVA,Municipality
+FLAD_LV_087,Salaspils novads,CTR_LVA,Municipality
+FLAD_LV_088,Saldus novads,CTR_LVA,Municipality
+FLAD_LV_089,Saulkrastu novads,CTR_LVA,Municipality
+FLAD_LV_091,Siguldas novads,CTR_LVA,Municipality
+FLAD_LV_094,Smiltenes novads,CTR_LVA,Municipality
+FLAD_LV_097,Talsu novads,CTR_LVA,Municipality
+FLAD_LV_099,Tukuma novads,CTR_LVA,Municipality
+FLAD_LV_101,Valkas novads,CTR_LVA,Municipality
+FLAD_LV_113,Valmieras Novads,CTR_LVA,Municipality
+FLAD_LV_102,Varakļānu novads,CTR_LVA,Municipality
+FLAD_LV_VEN,Ventspils,CTR_LVA,State city
+FLAD_LV_106,Ventspils novads,CTR_LVA,Municipality
+FLAD_LB_AK,Aakkâr,CTR_LBN,Governorate
+FLAD_LB_BI,Al Biqā‘,CTR_LBN,Governorate
+FLAD_LB_JA,Al Janūb,CTR_LBN,Governorate
+FLAD_LB_NA,An Nabaţīyah,CTR_LBN,Governorate
+FLAD_LB_AS,Ash Shimāl,CTR_LBN,Governorate
+FLAD_LB_BH,Baalbek-Hermel,CTR_LBN,Governorate
+FLAD_LB_BA,Bayrūt,CTR_LBN,Governorate
+FLAD_LB_JL,Jabal Lubnān,CTR_LBN,Governorate
+FLAD_LS_D,Berea,CTR_LSO,District
+FLAD_LS_B,Botha-Bothe,CTR_LSO,District
+FLAD_LS_C,Leribe,CTR_LSO,District
+FLAD_LS_E,Mafeteng,CTR_LSO,District
+FLAD_LS_A,Maseru,CTR_LSO,District
+FLAD_LS_F,Mohale's Hoek,CTR_LSO,District
+FLAD_LS_J,Mokhotlong,CTR_LSO,District
+FLAD_LS_H,Qacha's Nek,CTR_LSO,District
+FLAD_LS_G,Quthing,CTR_LSO,District
+FLAD_LS_K,Thaba-Tseka,CTR_LSO,District
+FLAD_LR_BM,Bomi,CTR_LBR,County
+FLAD_LR_BG,Bong,CTR_LBR,County
+FLAD_LR_GP,Gbarpolu,CTR_LBR,County
+FLAD_LR_GB,Grand Bassa,CTR_LBR,County
+FLAD_LR_CM,Grand Cape Mount,CTR_LBR,County
+FLAD_LR_GG,Grand Gedeh,CTR_LBR,County
+FLAD_LR_GK,Grand Kru,CTR_LBR,County
+FLAD_LR_LO,Lofa,CTR_LBR,County
+FLAD_LR_MG,Margibi,CTR_LBR,County
+FLAD_LR_MY,Maryland,CTR_LBR,County
+FLAD_LR_MO,Montserrado,CTR_LBR,County
+FLAD_LR_NI,Nimba,CTR_LBR,County
+FLAD_LR_RI,River Cess,CTR_LBR,County
+FLAD_LR_RG,River Gee,CTR_LBR,County
+FLAD_LR_SI,Sinoe,CTR_LBR,County
+FLAD_LY_BU,Al Buţnān,CTR_LBY,Popularate
+FLAD_LY_JA,Al Jabal al Akhḑar,CTR_LBY,Popularate
+FLAD_LY_JG,Al Jabal al Gharbī,CTR_LBY,Popularate
+FLAD_LY_JI,Al Jafārah,CTR_LBY,Popularate
+FLAD_LY_JU,Al Jufrah,CTR_LBY,Popularate
+FLAD_LY_KF,Al Kufrah,CTR_LBY,Popularate
+FLAD_LY_MJ,Al Marj,CTR_LBY,Popularate
+FLAD_LY_MB,Al Marqab,CTR_LBY,Popularate
+FLAD_LY_WA,Al Wāḩāt,CTR_LBY,Popularate
+FLAD_LY_NQ,An Nuqāţ al Khams,CTR_LBY,Popularate
+FLAD_LY_ZA,Az Zāwiyah,CTR_LBY,Popularate
+FLAD_LY_BA,Banghāzī,CTR_LBY,Popularate
+FLAD_LY_DR,Darnah,CTR_LBY,Popularate
+FLAD_LY_GT,Ghāt,CTR_LBY,Popularate
+FLAD_LY_MI,Mişrātah,CTR_LBY,Popularate
+FLAD_LY_MQ,Murzuq,CTR_LBY,Popularate
+FLAD_LY_NL,Nālūt,CTR_LBY,Popularate
+FLAD_LY_SB,Sabhā,CTR_LBY,Popularate
+FLAD_LY_SR,Surt,CTR_LBY,Popularate
+FLAD_LY_TB,Ţarābulus,CTR_LBY,Popularate
+FLAD_LY_WD,Wādī al Ḩayāt,CTR_LBY,Popularate
+FLAD_LY_WS,Wādī ash Shāţi’,CTR_LBY,Popularate
+FLAD_LI_01,Balzers,CTR_LIE,Commune
+FLAD_LI_02,Eschen,CTR_LIE,Commune
+FLAD_LI_03,Gamprin,CTR_LIE,Commune
+FLAD_LI_04,Mauren,CTR_LIE,Commune
+FLAD_LI_05,Planken,CTR_LIE,Commune
+FLAD_LI_06,Ruggell,CTR_LIE,Commune
+FLAD_LI_07,Schaan,CTR_LIE,Commune
+FLAD_LI_08,Schellenberg,CTR_LIE,Commune
+FLAD_LI_09,Triesen,CTR_LIE,Commune
+FLAD_LI_10,Triesenberg,CTR_LIE,Commune
+FLAD_LI_11,Vaduz,CTR_LIE,Commune
+FLAD_LT_AL,Alytaus apskritis,CTR_LTU,County
+FLAD_LT_KU,Kauno apskritis,CTR_LTU,County
+FLAD_LT_KL,Klaipėdos apskritis,CTR_LTU,County
+FLAD_LT_MR,Marijampolės apskritis,CTR_LTU,County
+FLAD_LT_PN,Panevėžio apskritis,CTR_LTU,County
+FLAD_LT_SA,Šiaulių apskritis,CTR_LTU,County
+FLAD_LT_TA,Tauragės apskritis,CTR_LTU,County
+FLAD_LT_TE,Telšių apskritis,CTR_LTU,County
+FLAD_LT_UT,Utenos apskritis,CTR_LTU,County
+FLAD_LT_VL,Vilniaus apskritis,CTR_LTU,County
+FLAD_LU_CA,Capellen,CTR_LUX,Canton
+FLAD_LU_CL,Clervaux,CTR_LUX,Canton
+FLAD_LU_DI,Diekirch,CTR_LUX,Canton
+FLAD_LU_EC,Echternach,CTR_LUX,Canton
+FLAD_LU_ES,Esch-sur-Alzette,CTR_LUX,Canton
+FLAD_LU_GR,Grevenmacher,CTR_LUX,Canton
+FLAD_LU_LU,Luxembourg,CTR_LUX,Canton
+FLAD_LU_ME,Mersch,CTR_LUX,Canton
+FLAD_LU_RD,Redange,CTR_LUX,Canton
+FLAD_LU_RM,Remich,CTR_LUX,Canton
+FLAD_LU_VD,Vianden,CTR_LUX,Canton
+FLAD_LU_WI,Wiltz,CTR_LUX,Canton
+FLAD_MG_T,Antananarivo,CTR_MDG,Province
+FLAD_MG_D,Antsiranana,CTR_MDG,Province
+FLAD_MG_F,Fianarantsoa,CTR_MDG,Province
+FLAD_MG_M,Mahajanga,CTR_MDG,Province
+FLAD_MG_A,Toamasina,CTR_MDG,Province
+FLAD_MG_U,Toliara,CTR_MDG,Province
+FLAD_MW_C,Central Region,CTR_MWI,Region
+FLAD_MW_N,Northern Region,CTR_MWI,Region
+FLAD_MW_S,Southern Region,CTR_MWI,Region
+FLAD_MY_01,Johor,CTR_MYS,State
+FLAD_MY_02,Kedah,CTR_MYS,State
+FLAD_MY_03,Kelantan,CTR_MYS,State
+FLAD_MY_04,Melaka,CTR_MYS,State
+FLAD_MY_05,Negeri Sembilan,CTR_MYS,State
+FLAD_MY_06,Pahang,CTR_MYS,State
+FLAD_MY_08,Perak,CTR_MYS,State
+FLAD_MY_09,Perlis,CTR_MYS,State
+FLAD_MY_07,Pulau Pinang,CTR_MYS,State
+FLAD_MY_12,Sabah,CTR_MYS,State
+FLAD_MY_13,Sarawak,CTR_MYS,State
+FLAD_MY_10,Selangor,CTR_MYS,State
+FLAD_MY_11,Terengganu,CTR_MYS,State
+FLAD_MY_14,Wilayah Persekutuan Kuala Lumpur,CTR_MYS,Federal territory
+FLAD_MY_15,Wilayah Persekutuan Labuan,CTR_MYS,Federal territory
+FLAD_MY_16,Wilayah Persekutuan Putrajaya,CTR_MYS,Federal territory
+FLAD_MV_01,Addu City,CTR_MDV,City
+FLAD_MV_03,Faadhippolhu,CTR_MDV,Administrative atoll
+FLAD_MV_04,Felidhu Atoll,CTR_MDV,Administrative atoll
+FLAD_MV_29,Fuvammulah,CTR_MDV,Administrative atoll
+FLAD_MV_05,Hahdhunmathi,CTR_MDV,Administrative atoll
+FLAD_MV_08,Kolhumadulu,CTR_MDV,Administrative atoll
+FLAD_MV_MLE,Male,CTR_MDV,City
+FLAD_MV_26,Male Atoll,CTR_MDV,Administrative atoll
+FLAD_MV_12,Mulaku Atoll,CTR_MDV,Administrative atoll
+FLAD_MV_02,North Ari Atoll,CTR_MDV,Administrative atoll
+FLAD_MV_27,North Huvadhu Atoll,CTR_MDV,Administrative atoll
+FLAD_MV_13,North Maalhosmadulu,CTR_MDV,Administrative atoll
+FLAD_MV_24,North Miladhunmadulu,CTR_MDV,Administrative atoll
+FLAD_MV_14,North Nilandhe Atoll,CTR_MDV,Administrative atoll
+FLAD_MV_07,North Thiladhunmathi,CTR_MDV,Administrative atoll
+FLAD_MV_00,South Ari Atoll,CTR_MDV,Administrative atoll
+FLAD_MV_28,South Huvadhu Atoll,CTR_MDV,Administrative atoll
+FLAD_MV_20,South Maalhosmadulu,CTR_MDV,Administrative atoll
+FLAD_MV_25,South Miladhunmadulu,CTR_MDV,Administrative atoll
+FLAD_MV_17,South Nilandhe Atoll,CTR_MDV,Administrative atoll
+FLAD_MV_23,South Thiladhunmathi,CTR_MDV,Administrative atoll
+FLAD_ML_BKO,Bamako,CTR_MLI,District
+FLAD_ML_7,Gao,CTR_MLI,Region
+FLAD_ML_1,Kayes,CTR_MLI,Region
+FLAD_ML_8,Kidal,CTR_MLI,Region
+FLAD_ML_2,Koulikoro,CTR_MLI,Region
+FLAD_ML_9,Ménaka,CTR_MLI,Region
+FLAD_ML_5,Mopti,CTR_MLI,Region
+FLAD_ML_4,Ségou,CTR_MLI,Region
+FLAD_ML_3,Sikasso,CTR_MLI,Region
+FLAD_ML_10,Taoudénit,CTR_MLI,Region
+FLAD_ML_6,Tombouctou,CTR_MLI,Region
+FLAD_MT_01,Attard,CTR_MLT,Local council
+FLAD_MT_02,Balzan,CTR_MLT,Local council
+FLAD_MT_03,Birgu,CTR_MLT,Local council
+FLAD_MT_04,Birkirkara,CTR_MLT,Local council
+FLAD_MT_05,Birżebbuġa,CTR_MLT,Local council
+FLAD_MT_06,Bormla,CTR_MLT,Local council
+FLAD_MT_07,Dingli,CTR_MLT,Local council
+FLAD_MT_08,Fgura,CTR_MLT,Local council
+FLAD_MT_09,Floriana,CTR_MLT,Local council
+FLAD_MT_10,Fontana,CTR_MLT,Local council
+FLAD_MT_11,Gudja,CTR_MLT,Local council
+FLAD_MT_12,Gżira,CTR_MLT,Local council
+FLAD_MT_13,Għajnsielem,CTR_MLT,Local council
+FLAD_MT_14,Għarb,CTR_MLT,Local council
+FLAD_MT_15,Għargħur,CTR_MLT,Local council
+FLAD_MT_16,Għasri,CTR_MLT,Local council
+FLAD_MT_17,Għaxaq,CTR_MLT,Local council
+FLAD_MT_19,Iklin,CTR_MLT,Local council
+FLAD_MT_20,Isla,CTR_MLT,Local council
+FLAD_MT_21,Kalkara,CTR_MLT,Local council
+FLAD_MT_22,Kerċem,CTR_MLT,Local council
+FLAD_MT_23,Kirkop,CTR_MLT,Local council
+FLAD_MT_24,Lija,CTR_MLT,Local council
+FLAD_MT_25,Luqa,CTR_MLT,Local council
+FLAD_MT_26,Marsa,CTR_MLT,Local council
+FLAD_MT_27,Marsaskala,CTR_MLT,Local council
+FLAD_MT_28,Marsaxlokk,CTR_MLT,Local council
+FLAD_MT_29,Mdina,CTR_MLT,Local council
+FLAD_MT_30,Mellieħa,CTR_MLT,Local council
+FLAD_MT_31,Mġarr,CTR_MLT,Local council
+FLAD_MT_32,Mosta,CTR_MLT,Local council
+FLAD_MT_33,Mqabba,CTR_MLT,Local council
+FLAD_MT_34,Msida,CTR_MLT,Local council
+FLAD_MT_35,Mtarfa,CTR_MLT,Local council
+FLAD_MT_36,Munxar,CTR_MLT,Local council
+FLAD_MT_37,Nadur,CTR_MLT,Local council
+FLAD_MT_38,Naxxar,CTR_MLT,Local council
+FLAD_MT_39,Paola,CTR_MLT,Local council
+FLAD_MT_40,Pembroke,CTR_MLT,Local council
+FLAD_MT_41,Pietà,CTR_MLT,Local council
+FLAD_MT_42,Qala,CTR_MLT,Local council
+FLAD_MT_43,Qormi,CTR_MLT,Local council
+FLAD_MT_44,Qrendi,CTR_MLT,Local council
+FLAD_MT_45,Rabat Gozo,CTR_MLT,Local council
+FLAD_MT_46,Rabat Malta,CTR_MLT,Local council
+FLAD_MT_47,Safi,CTR_MLT,Local council
+FLAD_MT_49,Saint John,CTR_MLT,Local council
+FLAD_MT_48,Saint Julian's,CTR_MLT,Local council
+FLAD_MT_50,Saint Lawrence,CTR_MLT,Local council
+FLAD_MT_53,Saint Lucia's,CTR_MLT,Local council
+FLAD_MT_51,Saint Paul's Bay,CTR_MLT,Local council
+FLAD_MT_52,Sannat,CTR_MLT,Local council
+FLAD_MT_54,Santa Venera,CTR_MLT,Local council
+FLAD_MT_55,Siġġiewi,CTR_MLT,Local council
+FLAD_MT_56,Sliema,CTR_MLT,Local council
+FLAD_MT_57,Swieqi,CTR_MLT,Local council
+FLAD_MT_58,Ta' Xbiex,CTR_MLT,Local council
+FLAD_MT_59,Tarxien,CTR_MLT,Local council
+FLAD_MT_60,Valletta,CTR_MLT,Local council
+FLAD_MT_61,Xagħra,CTR_MLT,Local council
+FLAD_MT_62,Xewkija,CTR_MLT,Local council
+FLAD_MT_63,Xgħajra,CTR_MLT,Local council
+FLAD_MT_64,Żabbar,CTR_MLT,Local council
+FLAD_MT_65,Żebbuġ Gozo,CTR_MLT,Local council
+FLAD_MT_66,Żebbuġ Malta,CTR_MLT,Local council
+FLAD_MT_67,Żejtun,CTR_MLT,Local council
+FLAD_MT_68,Żurrieq,CTR_MLT,Local council
+FLAD_MT_18,Ħamrun,CTR_MLT,Local council
+FLAD_MH_L,Ralik chain,CTR_MHL,Chain (of islands)
+FLAD_MH_T,Ratak chain,CTR_MHL,Chain (of islands)
+FLAD_MR_07,Adrar,CTR_MRT,Region
+FLAD_MR_03,Assaba,CTR_MRT,Region
+FLAD_MR_05,Brakna,CTR_MRT,Region
+FLAD_MR_08,Dakhlet Nouâdhibou,CTR_MRT,Region
+FLAD_MR_04,Gorgol,CTR_MRT,Region
+FLAD_MR_10,Guidimaka,CTR_MRT,Region
+FLAD_MR_01,Hodh ech Chargui,CTR_MRT,Region
+FLAD_MR_02,Hodh el Gharbi,CTR_MRT,Region
+FLAD_MR_12,Inchiri,CTR_MRT,Region
+FLAD_MR_14,Nouakchott Nord,CTR_MRT,Region
+FLAD_MR_13,Nouakchott Ouest,CTR_MRT,Region
+FLAD_MR_15,Nouakchott Sud,CTR_MRT,Region
+FLAD_MR_09,Tagant,CTR_MRT,Region
+FLAD_MR_11,Tiris Zemmour,CTR_MRT,Region
+FLAD_MR_06,Trarza,CTR_MRT,Region
+FLAD_MU_AG,Agalega Islands,CTR_MUS,Dependency
+FLAD_MU_BL,Black River,CTR_MUS,District
+FLAD_MU_CC,Cargados Carajos Shoals,CTR_MUS,Dependency
+FLAD_MU_FL,Flacq,CTR_MUS,District
+FLAD_MU_GP,Grand Port,CTR_MUS,District
+FLAD_MU_MO,Moka,CTR_MUS,District
+FLAD_MU_PA,Pamplemousses,CTR_MUS,District
+FLAD_MU_PW,Plaines Wilhems,CTR_MUS,District
+FLAD_MU_PL,Port Louis,CTR_MUS,District
+FLAD_MU_RR,Rivière du Rempart,CTR_MUS,District
+FLAD_MU_RO,Rodrigues Island,CTR_MUS,Dependency
+FLAD_MU_SA,Savanne,CTR_MUS,District
+FLAD_MX_AGU,Aguascalientes,CTR_MEX,State
+FLAD_MX_BCN,Baja California,CTR_MEX,State
+FLAD_MX_BCS,Baja California Sur,CTR_MEX,State
+FLAD_MX_CAM,Campeche,CTR_MEX,State
+FLAD_MX_CHP,Chiapas,CTR_MEX,State
+FLAD_MX_CHH,Chihuahua,CTR_MEX,State
+FLAD_MX_CMX,Ciudad de México,CTR_MEX,Federal entity
+FLAD_MX_COA,Coahuila de Zaragoza,CTR_MEX,State
+FLAD_MX_COL,Colima,CTR_MEX,State
+FLAD_MX_DUR,Durango,CTR_MEX,State
+FLAD_MX_GUA,Guanajuato,CTR_MEX,State
+FLAD_MX_GRO,Guerrero,CTR_MEX,State
+FLAD_MX_HID,Hidalgo,CTR_MEX,State
+FLAD_MX_JAL,Jalisco,CTR_MEX,State
+FLAD_MX_MEX,México,CTR_MEX,State
+FLAD_MX_MIC,Michoacán de Ocampo,CTR_MEX,State
+FLAD_MX_MOR,Morelos,CTR_MEX,State
+FLAD_MX_NAY,Nayarit,CTR_MEX,State
+FLAD_MX_NLE,Nuevo León,CTR_MEX,State
+FLAD_MX_OAX,Oaxaca,CTR_MEX,State
+FLAD_MX_PUE,Puebla,CTR_MEX,State
+FLAD_MX_QUE,Querétaro,CTR_MEX,State
+FLAD_MX_ROO,Quintana Roo,CTR_MEX,State
+FLAD_MX_SLP,San Luis Potosí,CTR_MEX,State
+FLAD_MX_SIN,Sinaloa,CTR_MEX,State
+FLAD_MX_SON,Sonora,CTR_MEX,State
+FLAD_MX_TAB,Tabasco,CTR_MEX,State
+FLAD_MX_TAM,Tamaulipas,CTR_MEX,State
+FLAD_MX_TLA,Tlaxcala,CTR_MEX,State
+FLAD_MX_VER,Veracruz de Ignacio de la Llave,CTR_MEX,State
+FLAD_MX_YUC,Yucatán,CTR_MEX,State
+FLAD_MX_ZAC,Zacatecas,CTR_MEX,State
+FLAD_FM_TRK,Chuuk,CTR_FSM,State
+FLAD_FM_KSA,Kosrae,CTR_FSM,State
+FLAD_FM_PNI,Pohnpei,CTR_FSM,State
+FLAD_FM_YAP,Yap,CTR_FSM,State
+FLAD_MD_AN,Anenii Noi,CTR_MDA,District
+FLAD_MD_BS,Basarabeasca,CTR_MDA,District
+FLAD_MD_BA,Bălți,CTR_MDA,City
+FLAD_MD_BD,Bender [Tighina],CTR_MDA,City
+FLAD_MD_BR,Briceni,CTR_MDA,District
+FLAD_MD_CA,Cahul,CTR_MDA,District
+FLAD_MD_CT,Cantemir,CTR_MDA,District
+FLAD_MD_CL,Călărași,CTR_MDA,District
+FLAD_MD_CS,Căușeni,CTR_MDA,District
+FLAD_MD_CU,Chișinău,CTR_MDA,City
+FLAD_MD_CM,Cimișlia,CTR_MDA,District
+FLAD_MD_CR,Criuleni,CTR_MDA,District
+FLAD_MD_DO,Dondușeni,CTR_MDA,District
+FLAD_MD_DR,Drochia,CTR_MDA,District
+FLAD_MD_DU,Dubăsari,CTR_MDA,District
+FLAD_MD_ED,Edineț,CTR_MDA,District
+FLAD_MD_FA,Fălești,CTR_MDA,District
+FLAD_MD_FL,Florești,CTR_MDA,District
+FLAD_MD_GA,"Găgăuzia, Unitatea teritorială autonomă (UTAG)",CTR_MDA,Autonomous territorial unit
+FLAD_MD_GL,Glodeni,CTR_MDA,District
+FLAD_MD_HI,Hîncești,CTR_MDA,District
+FLAD_MD_IA,Ialoveni,CTR_MDA,District
+FLAD_MD_LE,Leova,CTR_MDA,District
+FLAD_MD_NI,Nisporeni,CTR_MDA,District
+FLAD_MD_OC,Ocnița,CTR_MDA,District
+FLAD_MD_OR,Orhei,CTR_MDA,District
+FLAD_MD_RE,Rezina,CTR_MDA,District
+FLAD_MD_RI,Rîșcani,CTR_MDA,District
+FLAD_MD_SI,Sîngerei,CTR_MDA,District
+FLAD_MD_SO,Soroca,CTR_MDA,District
+FLAD_MD_SN,"Stînga Nistrului, unitatea teritorială din",CTR_MDA,Territorial unit
+FLAD_MD_ST,Strășeni,CTR_MDA,District
+FLAD_MD_SD,Șoldănești,CTR_MDA,District
+FLAD_MD_SV,Ștefan Vodă,CTR_MDA,District
+FLAD_MD_TA,Taraclia,CTR_MDA,District
+FLAD_MD_TE,Telenești,CTR_MDA,District
+FLAD_MD_UN,Ungheni,CTR_MDA,District
+FLAD_MC_FO,Fontvieille,CTR_MCO,Quarter
+FLAD_MC_JE,Jardin Exotique,CTR_MCO,Quarter
+FLAD_MC_CL,La Colle,CTR_MCO,Quarter
+FLAD_MC_CO,La Condamine,CTR_MCO,Quarter
+FLAD_MC_GA,La Gare,CTR_MCO,Quarter
+FLAD_MC_SO,La Source,CTR_MCO,Quarter
+FLAD_MC_LA,Larvotto,CTR_MCO,Quarter
+FLAD_MC_MA,Malbousquet,CTR_MCO,Quarter
+FLAD_MC_MO,Monaco-Ville,CTR_MCO,Quarter
+FLAD_MC_MG,Moneghetti,CTR_MCO,Quarter
+FLAD_MC_MC,Monte-Carlo,CTR_MCO,Quarter
+FLAD_MC_MU,Moulins,CTR_MCO,Quarter
+FLAD_MC_PH,Port-Hercule,CTR_MCO,Quarter
+FLAD_MC_SR,Saint-Roman,CTR_MCO,Quarter
+FLAD_MC_SD,Sainte-Dévote,CTR_MCO,Quarter
+FLAD_MC_SP,Spélugues,CTR_MCO,Quarter
+FLAD_MC_VR,Vallon de la Rousse,CTR_MCO,Quarter
+FLAD_MN_073,Arhangay,CTR_MNG,Province
+FLAD_MN_071,Bayan-Ölgiy,CTR_MNG,Province
+FLAD_MN_069,Bayanhongor,CTR_MNG,Province
+FLAD_MN_067,Bulgan,CTR_MNG,Province
+FLAD_MN_037,Darhan uul,CTR_MNG,Province
+FLAD_MN_061,Dornod,CTR_MNG,Province
+FLAD_MN_063,Dornogovĭ,CTR_MNG,Province
+FLAD_MN_059,Dundgovĭ,CTR_MNG,Province
+FLAD_MN_057,Dzavhan,CTR_MNG,Province
+FLAD_MN_065,Govĭ-Altay,CTR_MNG,Province
+FLAD_MN_064,Govĭ-Sümber,CTR_MNG,Province
+FLAD_MN_039,Hentiy,CTR_MNG,Province
+FLAD_MN_043,Hovd,CTR_MNG,Province
+FLAD_MN_041,Hövsgöl,CTR_MNG,Province
+FLAD_MN_035,Orhon,CTR_MNG,Province
+FLAD_MN_053,Ömnögovĭ,CTR_MNG,Province
+FLAD_MN_055,Övörhangay,CTR_MNG,Province
+FLAD_MN_049,Selenge,CTR_MNG,Province
+FLAD_MN_051,Sühbaatar,CTR_MNG,Province
+FLAD_MN_047,Töv,CTR_MNG,Province
+FLAD_MN_1,Ulaanbaatar,CTR_MNG,Capital city
+FLAD_MN_046,Uvs,CTR_MNG,Province
+FLAD_ME_01,Andrijevica,CTR_MNE,Municipality
+FLAD_ME_02,Bar,CTR_MNE,Municipality
+FLAD_ME_03,Berane,CTR_MNE,Municipality
+FLAD_ME_04,Bijelo Polje,CTR_MNE,Municipality
+FLAD_ME_05,Budva,CTR_MNE,Municipality
+FLAD_ME_06,Cetinje,CTR_MNE,Municipality
+FLAD_ME_07,Danilovgrad,CTR_MNE,Municipality
+FLAD_ME_22,Gusinje,CTR_MNE,Municipality
+FLAD_ME_08,Herceg-Novi,CTR_MNE,Municipality
+FLAD_ME_09,Kolašin,CTR_MNE,Municipality
+FLAD_ME_10,Kotor,CTR_MNE,Municipality
+FLAD_ME_11,Mojkovac,CTR_MNE,Municipality
+FLAD_ME_12,Nikšić,CTR_MNE,Municipality
+FLAD_ME_23,Petnjica,CTR_MNE,Municipality
+FLAD_ME_13,Plav,CTR_MNE,Municipality
+FLAD_ME_14,Pljevlja,CTR_MNE,Municipality
+FLAD_ME_15,Plužine,CTR_MNE,Municipality
+FLAD_ME_16,Podgorica,CTR_MNE,Municipality
+FLAD_ME_17,Rožaje,CTR_MNE,Municipality
+FLAD_ME_18,Šavnik,CTR_MNE,Municipality
+FLAD_ME_19,Tivat,CTR_MNE,Municipality
+FLAD_ME_24,Tuzi,CTR_MNE,Municipality
+FLAD_ME_20,Ulcinj,CTR_MNE,Municipality
+FLAD_ME_25,Zeta,CTR_MNE,Municipality
+FLAD_ME_21,Žabljak,CTR_MNE,Municipality
+FLAD_MA_05,Béni Mellal-Khénifra,CTR_MAR,Region
+FLAD_MA_06,Casablanca-Settat,CTR_MAR,Region
+FLAD_MA_12,Dakhla-Oued Ed-Dahab (EH),CTR_MAR,Region
+FLAD_MA_08,Drâa-Tafilalet,CTR_MAR,Region
+FLAD_MA_03,Fès-Meknès,CTR_MAR,Region
+FLAD_MA_10,Guelmim-Oued Noun (EH-partial),CTR_MAR,Region
+FLAD_MA_02,L'Oriental,CTR_MAR,Region
+FLAD_MA_11,Laâyoune-Sakia El Hamra (EH-partial),CTR_MAR,Region
+FLAD_MA_07,Marrakech-Safi,CTR_MAR,Region
+FLAD_MA_04,Rabat-Salé-Kénitra,CTR_MAR,Region
+FLAD_MA_09,Souss-Massa,CTR_MAR,Region
+FLAD_MA_01,Tanger-Tétouan-Al Hoceïma,CTR_MAR,Region
+FLAD_MZ_P,Cabo Delgado,CTR_MOZ,Province
+FLAD_MZ_G,Gaza,CTR_MOZ,Province
+FLAD_MZ_I,Inhambane,CTR_MOZ,Province
+FLAD_MZ_B,Manica,CTR_MOZ,Province
+FLAD_MZ_L,Maputo,CTR_MOZ,Province
+FLAD_MZ_MPM,Maputo,CTR_MOZ,City
+FLAD_MZ_N,Nampula,CTR_MOZ,Province
+FLAD_MZ_A,Niassa,CTR_MOZ,Province
+FLAD_MZ_S,Sofala,CTR_MOZ,Province
+FLAD_MZ_T,Tete,CTR_MOZ,Province
+FLAD_MZ_Q,Zambézia,CTR_MOZ,Province
+FLAD_MM_07,Ayeyarwady,CTR_MMR,Region
+FLAD_MM_02,Bago,CTR_MMR,Region
+FLAD_MM_14,Chin,CTR_MMR,State
+FLAD_MM_11,Kachin,CTR_MMR,State
+FLAD_MM_12,Kayah,CTR_MMR,State
+FLAD_MM_13,Kayin,CTR_MMR,State
+FLAD_MM_03,Magway,CTR_MMR,Region
+FLAD_MM_04,Mandalay,CTR_MMR,Region
+FLAD_MM_15,Mon,CTR_MMR,State
+FLAD_MM_18,Nay Pyi Taw,CTR_MMR,Union territory
+FLAD_MM_16,Rakhine,CTR_MMR,State
+FLAD_MM_01,Sagaing,CTR_MMR,Region
+FLAD_MM_17,Shan,CTR_MMR,State
+FLAD_MM_05,Tanintharyi,CTR_MMR,Region
+FLAD_MM_06,Yangon,CTR_MMR,Region
+FLAD_NA_KA,//Karas,CTR_NAM,Region
+FLAD_NA_ER,Erongo,CTR_NAM,Region
+FLAD_NA_HA,Hardap,CTR_NAM,Region
+FLAD_NA_KE,Kavango East,CTR_NAM,Region
+FLAD_NA_KW,Kavango West,CTR_NAM,Region
+FLAD_NA_KH,Khomas,CTR_NAM,Region
+FLAD_NA_KU,Kunene,CTR_NAM,Region
+FLAD_NA_OW,Ohangwena,CTR_NAM,Region
+FLAD_NA_OH,Omaheke,CTR_NAM,Region
+FLAD_NA_OS,Omusati,CTR_NAM,Region
+FLAD_NA_ON,Oshana,CTR_NAM,Region
+FLAD_NA_OT,Oshikoto,CTR_NAM,Region
+FLAD_NA_OD,Otjozondjupa,CTR_NAM,Region
+FLAD_NA_CA,Zambezi,CTR_NAM,Region
+FLAD_NR_01,Aiwo,CTR_NRU,District
+FLAD_NR_02,Anabar,CTR_NRU,District
+FLAD_NR_03,Anetan,CTR_NRU,District
+FLAD_NR_04,Anibare,CTR_NRU,District
+FLAD_NR_05,Baitsi,CTR_NRU,District
+FLAD_NR_06,Boe,CTR_NRU,District
+FLAD_NR_07,Buada,CTR_NRU,District
+FLAD_NR_08,Denigomodu,CTR_NRU,District
+FLAD_NR_09,Ewa,CTR_NRU,District
+FLAD_NR_10,Ijuw,CTR_NRU,District
+FLAD_NR_11,Meneng,CTR_NRU,District
+FLAD_NR_12,Nibok,CTR_NRU,District
+FLAD_NR_13,Uaboe,CTR_NRU,District
+FLAD_NR_14,Yaren,CTR_NRU,District
+FLAD_NP_P3,Bagmati,CTR_NPL,Province
+FLAD_NP_P4,Gandaki,CTR_NPL,Province
+FLAD_NP_P6,Karnali,CTR_NPL,Province
+FLAD_NP_P1,Koshi,CTR_NPL,Province
+FLAD_NP_P5,Lumbini,CTR_NPL,Province
+FLAD_NP_P2,Madhesh,CTR_NPL,Province
+FLAD_NP_P7,Sudurpashchim,CTR_NPL,Province
+FLAD_NL_AW,Aruba,CTR_NLD,Country
+FLAD_NL_BQ1,Bonaire,CTR_NLD,Special municipality
+FLAD_NL_CW,Curaçao,CTR_NLD,Country
+FLAD_NL_DR,Drenthe,CTR_NLD,Province
+FLAD_NL_FL,Flevoland,CTR_NLD,Province
+FLAD_NL_FR,Fryslân,CTR_NLD,Province
+FLAD_NL_GE,Gelderland,CTR_NLD,Province
+FLAD_NL_GR,Groningen,CTR_NLD,Province
+FLAD_NL_LI,Limburg,CTR_NLD,Province
+FLAD_NL_NB,Noord-Brabant,CTR_NLD,Province
+FLAD_NL_NH,Noord-Holland,CTR_NLD,Province
+FLAD_NL_OV,Overijssel,CTR_NLD,Province
+FLAD_NL_BQ2,Saba,CTR_NLD,Special municipality
+FLAD_NL_BQ3,Sint Eustatius,CTR_NLD,Special municipality
+FLAD_NL_SX,Sint Maarten,CTR_NLD,Country
+FLAD_NL_UT,Utrecht,CTR_NLD,Province
+FLAD_NL_ZE,Zeeland,CTR_NLD,Province
+FLAD_NL_ZH,Zuid-Holland,CTR_NLD,Province
+FLAD_NZ_AUK,Auckland,CTR_NZL,Region
+FLAD_NZ_BOP,Bay of Plenty,CTR_NZL,Region
+FLAD_NZ_CAN,Canterbury,CTR_NZL,Region
+FLAD_NZ_CIT,Chatham Islands Territory,CTR_NZL,Special island authority
+FLAD_NZ_GIS,Gisborne,CTR_NZL,Region
+FLAD_NZ_WGN,Greater Wellington,CTR_NZL,Region
+FLAD_NZ_HKB,Hawke's Bay,CTR_NZL,Region
+FLAD_NZ_MWT,Manawatū-Whanganui,CTR_NZL,Region
+FLAD_NZ_MBH,Marlborough,CTR_NZL,Region
+FLAD_NZ_NSN,Nelson,CTR_NZL,Region
+FLAD_NZ_NTL,Northland,CTR_NZL,Region
+FLAD_NZ_OTA,Otago,CTR_NZL,Region
+FLAD_NZ_STL,Southland,CTR_NZL,Region
+FLAD_NZ_TKI,Taranaki,CTR_NZL,Region
+FLAD_NZ_TAS,Tasman,CTR_NZL,Region
+FLAD_NZ_WKO,Waikato,CTR_NZL,Region
+FLAD_NZ_WTC,West Coast,CTR_NZL,Region
+FLAD_NI_BO,Boaco,CTR_NIC,Department
+FLAD_NI_CA,Carazo,CTR_NIC,Department
+FLAD_NI_CI,Chinandega,CTR_NIC,Department
+FLAD_NI_CO,Chontales,CTR_NIC,Department
+FLAD_NI_AN,Costa Caribe Norte,CTR_NIC,Autonomous region
+FLAD_NI_AS,Costa Caribe Sur,CTR_NIC,Autonomous region
+FLAD_NI_ES,Estelí,CTR_NIC,Department
+FLAD_NI_GR,Granada,CTR_NIC,Department
+FLAD_NI_JI,Jinotega,CTR_NIC,Department
+FLAD_NI_LE,León,CTR_NIC,Department
+FLAD_NI_MD,Madriz,CTR_NIC,Department
+FLAD_NI_MN,Managua,CTR_NIC,Department
+FLAD_NI_MS,Masaya,CTR_NIC,Department
+FLAD_NI_MT,Matagalpa,CTR_NIC,Department
+FLAD_NI_NS,Nueva Segovia,CTR_NIC,Department
+FLAD_NI_RI,Rivas,CTR_NIC,Department
+FLAD_NI_SJ,Río San Juan,CTR_NIC,Department
+FLAD_NE_1,Agadez,CTR_NER,Region
+FLAD_NE_2,Diffa,CTR_NER,Region
+FLAD_NE_3,Dosso,CTR_NER,Region
+FLAD_NE_4,Maradi,CTR_NER,Region
+FLAD_NE_8,Niamey,CTR_NER,Urban community
+FLAD_NE_5,Tahoua,CTR_NER,Region
+FLAD_NE_6,Tillabéri,CTR_NER,Region
+FLAD_NE_7,Zinder,CTR_NER,Region
+FLAD_NG_AB,Abia,CTR_NGA,State
+FLAD_NG_FC,Abuja Federal Capital Territory,CTR_NGA,Capital territory
+FLAD_NG_AD,Adamawa,CTR_NGA,State
+FLAD_NG_AK,Akwa Ibom,CTR_NGA,State
+FLAD_NG_AN,Anambra,CTR_NGA,State
+FLAD_NG_BA,Bauchi,CTR_NGA,State
+FLAD_NG_BY,Bayelsa,CTR_NGA,State
+FLAD_NG_BE,Benue,CTR_NGA,State
+FLAD_NG_BO,Borno,CTR_NGA,State
+FLAD_NG_CR,Cross River,CTR_NGA,State
+FLAD_NG_DE,Delta,CTR_NGA,State
+FLAD_NG_EB,Ebonyi,CTR_NGA,State
+FLAD_NG_ED,Edo,CTR_NGA,State
+FLAD_NG_EK,Ekiti,CTR_NGA,State
+FLAD_NG_EN,Enugu,CTR_NGA,State
+FLAD_NG_GO,Gombe,CTR_NGA,State
+FLAD_NG_IM,Imo,CTR_NGA,State
+FLAD_NG_JI,Jigawa,CTR_NGA,State
+FLAD_NG_KD,Kaduna,CTR_NGA,State
+FLAD_NG_KN,Kano,CTR_NGA,State
+FLAD_NG_KT,Katsina,CTR_NGA,State
+FLAD_NG_KE,Kebbi,CTR_NGA,State
+FLAD_NG_KO,Kogi,CTR_NGA,State
+FLAD_NG_KW,Kwara,CTR_NGA,State
+FLAD_NG_LA,Lagos,CTR_NGA,State
+FLAD_NG_NA,Nasarawa,CTR_NGA,State
+FLAD_NG_NI,Niger,CTR_NGA,State
+FLAD_NG_OG,Ogun,CTR_NGA,State
+FLAD_NG_ON,Ondo,CTR_NGA,State
+FLAD_NG_OS,Osun,CTR_NGA,State
+FLAD_NG_OY,Oyo,CTR_NGA,State
+FLAD_NG_PL,Plateau,CTR_NGA,State
+FLAD_NG_RI,Rivers,CTR_NGA,State
+FLAD_NG_SO,Sokoto,CTR_NGA,State
+FLAD_NG_TA,Taraba,CTR_NGA,State
+FLAD_NG_YO,Yobe,CTR_NGA,State
+FLAD_NG_ZA,Zamfara,CTR_NGA,State
+FLAD_MK_801,Aerodrom †,CTR_MKD,Municipality
+FLAD_MK_802,Aračinovo,CTR_MKD,Municipality
+FLAD_MK_201,Berovo,CTR_MKD,Municipality
+FLAD_MK_501,Bitola,CTR_MKD,Municipality
+FLAD_MK_401,Bogdanci,CTR_MKD,Municipality
+FLAD_MK_601,Bogovinje,CTR_MKD,Municipality
+FLAD_MK_402,Bosilovo,CTR_MKD,Municipality
+FLAD_MK_602,Brvenica,CTR_MKD,Municipality
+FLAD_MK_803,Butel †,CTR_MKD,Municipality
+FLAD_MK_313,Centar Župa,CTR_MKD,Municipality
+FLAD_MK_814,Centar †,CTR_MKD,Municipality
+FLAD_MK_815,Čair †,CTR_MKD,Municipality
+FLAD_MK_109,Čaška,CTR_MKD,Municipality
+FLAD_MK_210,Češinovo-Obleševo,CTR_MKD,Municipality
+FLAD_MK_816,Čučer-Sandevo,CTR_MKD,Municipality
+FLAD_MK_303,Debar,CTR_MKD,Municipality
+FLAD_MK_304,Debrca,CTR_MKD,Municipality
+FLAD_MK_203,Delčevo,CTR_MKD,Municipality
+FLAD_MK_502,Demir Hisar,CTR_MKD,Municipality
+FLAD_MK_103,Demir Kapija,CTR_MKD,Municipality
+FLAD_MK_406,Dojran,CTR_MKD,Municipality
+FLAD_MK_503,Dolneni,CTR_MKD,Municipality
+FLAD_MK_804,Gazi Baba †,CTR_MKD,Municipality
+FLAD_MK_405,Gevgelija,CTR_MKD,Municipality
+FLAD_MK_805,Gjorče Petrov †,CTR_MKD,Municipality
+FLAD_MK_604,Gostivar,CTR_MKD,Municipality
+FLAD_MK_102,Gradsko,CTR_MKD,Municipality
+FLAD_MK_807,Ilinden,CTR_MKD,Municipality
+FLAD_MK_606,Jegunovce,CTR_MKD,Municipality
+FLAD_MK_205,Karbinci,CTR_MKD,Municipality
+FLAD_MK_808,Karpoš †,CTR_MKD,Municipality
+FLAD_MK_104,Kavadarci,CTR_MKD,Municipality
+FLAD_MK_307,Kičevo,CTR_MKD,Municipality
+FLAD_MK_809,Kisela Voda †,CTR_MKD,Municipality
+FLAD_MK_206,Kočani,CTR_MKD,Municipality
+FLAD_MK_407,Konče,CTR_MKD,Municipality
+FLAD_MK_701,Kratovo,CTR_MKD,Municipality
+FLAD_MK_702,Kriva Palanka,CTR_MKD,Municipality
+FLAD_MK_504,Krivogaštani,CTR_MKD,Municipality
+FLAD_MK_505,Kruševo,CTR_MKD,Municipality
+FLAD_MK_703,Kumanovo,CTR_MKD,Municipality
+FLAD_MK_704,Lipkovo,CTR_MKD,Municipality
+FLAD_MK_105,Lozovo,CTR_MKD,Municipality
+FLAD_MK_207,Makedonska Kamenica,CTR_MKD,Municipality
+FLAD_MK_308,Makedonski Brod,CTR_MKD,Municipality
+FLAD_MK_607,Mavrovo i Rostuše,CTR_MKD,Municipality
+FLAD_MK_506,Mogila,CTR_MKD,Municipality
+FLAD_MK_106,Negotino,CTR_MKD,Municipality
+FLAD_MK_507,Novaci,CTR_MKD,Municipality
+FLAD_MK_408,Novo Selo,CTR_MKD,Municipality
+FLAD_MK_310,Ohrid,CTR_MKD,Municipality
+FLAD_MK_208,Pehčevo,CTR_MKD,Municipality
+FLAD_MK_810,Petrovec,CTR_MKD,Municipality
+FLAD_MK_311,Plasnica,CTR_MKD,Municipality
+FLAD_MK_508,Prilep,CTR_MKD,Municipality
+FLAD_MK_209,Probištip,CTR_MKD,Municipality
+FLAD_MK_409,Radoviš,CTR_MKD,Municipality
+FLAD_MK_705,Rankovce,CTR_MKD,Municipality
+FLAD_MK_509,Resen,CTR_MKD,Municipality
+FLAD_MK_107,Rosoman,CTR_MKD,Municipality
+FLAD_MK_811,Saraj †,CTR_MKD,Municipality
+FLAD_MK_812,Sopište,CTR_MKD,Municipality
+FLAD_MK_706,Staro Nagoričane,CTR_MKD,Municipality
+FLAD_MK_312,Struga,CTR_MKD,Municipality
+FLAD_MK_410,Strumica,CTR_MKD,Municipality
+FLAD_MK_813,Studeničani,CTR_MKD,Municipality
+FLAD_MK_108,Sveti Nikole,CTR_MKD,Municipality
+FLAD_MK_211,Štip,CTR_MKD,Municipality
+FLAD_MK_817,Šuto Orizari †,CTR_MKD,Municipality
+FLAD_MK_608,Tearce,CTR_MKD,Municipality
+FLAD_MK_609,Tetovo,CTR_MKD,Municipality
+FLAD_MK_403,Valandovo,CTR_MKD,Municipality
+FLAD_MK_404,Vasilevo,CTR_MKD,Municipality
+FLAD_MK_101,Veles,CTR_MKD,Municipality
+FLAD_MK_301,Vevčani,CTR_MKD,Municipality
+FLAD_MK_202,Vinica,CTR_MKD,Municipality
+FLAD_MK_603,Vrapčište,CTR_MKD,Municipality
+FLAD_MK_806,Zelenikovo,CTR_MKD,Municipality
+FLAD_MK_204,Zrnovci,CTR_MKD,Municipality
+FLAD_MK_605,Želino,CTR_MKD,Municipality
+FLAD_NO_42,Agder,CTR_NOR,County
+FLAD_NO_34,Innlandet,CTR_NOR,County
+FLAD_NO_22,Jan Mayen (Arctic Region),CTR_NOR,Arctic region
+FLAD_NO_15,Møre og Romsdal,CTR_NOR,County
+FLAD_NO_18,Nordland,CTR_NOR,County
+FLAD_NO_03,Oslo,CTR_NOR,County
+FLAD_NO_11,Rogaland,CTR_NOR,County
+FLAD_NO_54,Romssa ja Finnmárkku,CTR_NOR,County
+FLAD_NO_21,Svalbard (Arctic Region),CTR_NOR,Arctic region
+FLAD_NO_50,Trööndelage,CTR_NOR,County
+FLAD_NO_38,Vestfold og Telemark,CTR_NOR,County
+FLAD_NO_46,Vestland,CTR_NOR,County
+FLAD_NO_30,Viken,CTR_NOR,County
+FLAD_OM_DA,Ad Dākhilīyah,CTR_OMN,Governorate
+FLAD_OM_BU,Al Buraymī,CTR_OMN,Governorate
+FLAD_OM_WU,Al Wusţá,CTR_OMN,Governorate
+FLAD_OM_ZA,Az̧ Z̧āhirah,CTR_OMN,Governorate
+FLAD_OM_BJ,Janūb al Bāţinah,CTR_OMN,Governorate
+FLAD_OM_SJ,Janūb ash Sharqīyah,CTR_OMN,Governorate
+FLAD_OM_MA,Masqaţ,CTR_OMN,Governorate
+FLAD_OM_MU,Musandam,CTR_OMN,Governorate
+FLAD_OM_BS,Shamāl al Bāţinah,CTR_OMN,Governorate
+FLAD_OM_SS,Shamāl ash Sharqīyah,CTR_OMN,Governorate
+FLAD_OM_ZU,Z̧ufār,CTR_OMN,Governorate
+FLAD_PK_JK,Azad Jammu and Kashmir,CTR_PAK,Pakistan administered area
+FLAD_PK_BA,Balochistan,CTR_PAK,Province
+FLAD_PK_GB,Gilgit-Baltistan,CTR_PAK,Pakistan administered area
+FLAD_PK_IS,Islamabad,CTR_PAK,Federal capital territory
+FLAD_PK_KP,Khyber Pakhtunkhwa,CTR_PAK,Province
+FLAD_PK_PB,Punjab,CTR_PAK,Province
+FLAD_PK_SD,Sindh,CTR_PAK,Province
+FLAD_PW_002,Aimeliik,CTR_PLW,State
+FLAD_PW_004,Airai,CTR_PLW,State
+FLAD_PW_010,Angaur,CTR_PLW,State
+FLAD_PW_050,Hatohobei,CTR_PLW,State
+FLAD_PW_100,Kayangel,CTR_PLW,State
+FLAD_PW_150,Koror,CTR_PLW,State
+FLAD_PW_212,Melekeok,CTR_PLW,State
+FLAD_PW_214,Ngaraard,CTR_PLW,State
+FLAD_PW_218,Ngarchelong,CTR_PLW,State
+FLAD_PW_222,Ngardmau,CTR_PLW,State
+FLAD_PW_224,Ngatpang,CTR_PLW,State
+FLAD_PW_226,Ngchesar,CTR_PLW,State
+FLAD_PW_227,Ngeremlengui,CTR_PLW,State
+FLAD_PW_228,Ngiwal,CTR_PLW,State
+FLAD_PW_350,Peleliu,CTR_PLW,State
+FLAD_PW_370,Sonsorol,CTR_PLW,State
+FLAD_PS_BTH,Bethlehem,CTR_PSE,Governorate
+FLAD_PS_DEB,Deir El Balah,CTR_PSE,Governorate
+FLAD_PS_GZA,Gaza,CTR_PSE,Governorate
+FLAD_PS_HBN,Hebron,CTR_PSE,Governorate
+FLAD_PS_JEN,Jenin,CTR_PSE,Governorate
+FLAD_PS_JRH,Jericho and Al Aghwar,CTR_PSE,Governorate
+FLAD_PS_JEM,Jerusalem,CTR_PSE,Governorate
+FLAD_PS_KYS,Khan Yunis,CTR_PSE,Governorate
+FLAD_PS_NBS,Nablus,CTR_PSE,Governorate
+FLAD_PS_NGZ,North Gaza,CTR_PSE,Governorate
+FLAD_PS_QQA,Qalqilya,CTR_PSE,Governorate
+FLAD_PS_RFH,Rafah,CTR_PSE,Governorate
+FLAD_PS_RBH,Ramallah,CTR_PSE,Governorate
+FLAD_PS_SLT,Salfit,CTR_PSE,Governorate
+FLAD_PS_TBS,Tubas,CTR_PSE,Governorate
+FLAD_PS_TKM,Tulkarm,CTR_PSE,Governorate
+FLAD_PA_1,Bocas del Toro,CTR_PAN,Province
+FLAD_PA_4,Chiriquí,CTR_PAN,Province
+FLAD_PA_2,Coclé,CTR_PAN,Province
+FLAD_PA_3,Colón,CTR_PAN,Province
+FLAD_PA_5,Darién,CTR_PAN,Province
+FLAD_PA_EM,Emberá,CTR_PAN,Indigenous region
+FLAD_PA_KY,Guna Yala,CTR_PAN,Indigenous region
+FLAD_PA_6,Herrera,CTR_PAN,Province
+FLAD_PA_7,Los Santos,CTR_PAN,Province
+FLAD_PA_NT,Naso Tjër Di,CTR_PAN,Indigenous region
+FLAD_PA_NB,Ngäbe-Buglé,CTR_PAN,Indigenous region
+FLAD_PA_8,Panamá,CTR_PAN,Province
+FLAD_PA_10,Panamá Oeste,CTR_PAN,Province
+FLAD_PA_9,Veraguas,CTR_PAN,Province
+FLAD_PG_NSB,Bougainville,CTR_PNG,Autonomous region
+FLAD_PG_CPM,Central,CTR_PNG,Province
+FLAD_PG_CPK,Chimbu,CTR_PNG,Province
+FLAD_PG_EBR,East New Britain,CTR_PNG,Province
+FLAD_PG_ESW,East Sepik,CTR_PNG,Province
+FLAD_PG_EHG,Eastern Highlands,CTR_PNG,Province
+FLAD_PG_EPW,Enga,CTR_PNG,Province
+FLAD_PG_GPK,Gulf,CTR_PNG,Province
+FLAD_PG_HLA,Hela,CTR_PNG,Province
+FLAD_PG_JWK,Jiwaka,CTR_PNG,Province
+FLAD_PG_MPM,Madang,CTR_PNG,Province
+FLAD_PG_MRL,Manus,CTR_PNG,Province
+FLAD_PG_MBA,Milne Bay,CTR_PNG,Province
+FLAD_PG_MPL,Morobe,CTR_PNG,Province
+FLAD_PG_NCD,National Capital District (Port Moresby),CTR_PNG,District
+FLAD_PG_NIK,New Ireland,CTR_PNG,Province
+FLAD_PG_NPP,Northern,CTR_PNG,Province
+FLAD_PG_SHM,Southern Highlands,CTR_PNG,Province
+FLAD_PG_WBK,West New Britain,CTR_PNG,Province
+FLAD_PG_SAN,West Sepik,CTR_PNG,Province
+FLAD_PG_WPD,Western,CTR_PNG,Province
+FLAD_PG_WHM,Western Highlands,CTR_PNG,Province
+FLAD_PY_16,Alto Paraguay,CTR_PRY,Department
+FLAD_PY_10,Alto Paraná,CTR_PRY,Department
+FLAD_PY_13,Amambay,CTR_PRY,Department
+FLAD_PY_ASU,Asunción,CTR_PRY,Capital
+FLAD_PY_19,Boquerón,CTR_PRY,Department
+FLAD_PY_5,Caaguazú,CTR_PRY,Department
+FLAD_PY_6,Caazapá,CTR_PRY,Department
+FLAD_PY_14,Canindeyú,CTR_PRY,Department
+FLAD_PY_11,Central,CTR_PRY,Department
+FLAD_PY_1,Concepción,CTR_PRY,Department
+FLAD_PY_3,Cordillera,CTR_PRY,Department
+FLAD_PY_4,Guairá,CTR_PRY,Department
+FLAD_PY_7,Itapúa,CTR_PRY,Department
+FLAD_PY_8,Misiones,CTR_PRY,Department
+FLAD_PY_12,Ñeembucú,CTR_PRY,Department
+FLAD_PY_9,Paraguarí,CTR_PRY,Department
+FLAD_PY_15,Presidente Hayes,CTR_PRY,Department
+FLAD_PY_2,San Pedro,CTR_PRY,Department
+FLAD_PE_AMA,Amarumayu,CTR_PER,Region
+FLAD_PE_ANC,Ancash,CTR_PER,Region
+FLAD_PE_APU,Apurimaq,CTR_PER,Region
+FLAD_PE_ARE,Arequipa,CTR_PER,Region
+FLAD_PE_AYA,Ayacucho,CTR_PER,Region
+FLAD_PE_CAJ,Cajamarca,CTR_PER,Region
+FLAD_PE_CUS,Cusco,CTR_PER,Region
+FLAD_PE_CAL,El Callao,CTR_PER,Region
+FLAD_PE_HUV,Huancavelica,CTR_PER,Region
+FLAD_PE_HUC,Huánuco,CTR_PER,Region
+FLAD_PE_JUN,Hunin,CTR_PER,Region
+FLAD_PE_ICA,Ica,CTR_PER,Region
+FLAD_PE_LAL,La Libertad,CTR_PER,Region
+FLAD_PE_LAM,Lambayeque,CTR_PER,Region
+FLAD_PE_LIM,Lima,CTR_PER,Region
+FLAD_PE_LMA,Lima hatun llaqta,CTR_PER,Municipality
+FLAD_PE_LOR,Loreto,CTR_PER,Region
+FLAD_PE_MDD,Madre de Dios,CTR_PER,Region
+FLAD_PE_MOQ,Moquegua,CTR_PER,Region
+FLAD_PE_PAS,Pasco,CTR_PER,Region
+FLAD_PE_PIU,Piura,CTR_PER,Region
+FLAD_PE_PUN,Puno,CTR_PER,Region
+FLAD_PE_SAM,San Martin,CTR_PER,Region
+FLAD_PE_TAC,Tacna,CTR_PER,Region
+FLAD_PE_TUM,Tumbes,CTR_PER,Region
+FLAD_PE_UCA,Ucayali,CTR_PER,Region
+FLAD_PH_14,Autonomous Region in Muslim Mindanao (ARMM),CTR_PHL,Region
+FLAD_PH_05,Bicol (Region V),CTR_PHL,Region
+FLAD_PH_02,Cagayan Valley (Region II),CTR_PHL,Region
+FLAD_PH_40,Calabarzon (Region IV-A),CTR_PHL,Region
+FLAD_PH_13,Caraga (Region XIII),CTR_PHL,Region
+FLAD_PH_03,Central Luzon (Region III),CTR_PHL,Region
+FLAD_PH_07,Central Visayas (Region VII),CTR_PHL,Region
+FLAD_PH_15,Cordillera Administrative Region (CAR),CTR_PHL,Region
+FLAD_PH_11,Davao (Region XI),CTR_PHL,Region
+FLAD_PH_08,Eastern Visayas (Region VIII),CTR_PHL,Region
+FLAD_PH_01,Ilocos (Region I),CTR_PHL,Region
+FLAD_PH_41,Mimaropa (Region IV-B),CTR_PHL,Region
+FLAD_PH_00,National Capital Region,CTR_PHL,Region
+FLAD_PH_10,Northern Mindanao (Region X),CTR_PHL,Region
+FLAD_PH_12,Soccsksargen (Region XII),CTR_PHL,Region
+FLAD_PH_06,Western Visayas (Region VI),CTR_PHL,Region
+FLAD_PH_09,Zamboanga Peninsula (Region IX),CTR_PHL,Region
+FLAD_PL_02,Dolnośląskie,CTR_POL,Voivodship
+FLAD_PL_04,Kujawsko-Pomorskie,CTR_POL,Voivodship
+FLAD_PL_06,Lubelskie,CTR_POL,Voivodship
+FLAD_PL_08,Lubuskie,CTR_POL,Voivodship
+FLAD_PL_14,Mazowieckie,CTR_POL,Voivodship
+FLAD_PL_12,Małopolskie,CTR_POL,Voivodship
+FLAD_PL_16,Opolskie,CTR_POL,Voivodship
+FLAD_PL_18,Podkarpackie,CTR_POL,Voivodship
+FLAD_PL_20,Podlaskie,CTR_POL,Voivodship
+FLAD_PL_22,Pomorskie,CTR_POL,Voivodship
+FLAD_PL_24,Śląskie,CTR_POL,Voivodship
+FLAD_PL_26,Świętokrzyskie,CTR_POL,Voivodship
+FLAD_PL_28,Warmińsko-Mazurskie,CTR_POL,Voivodship
+FLAD_PL_30,Wielkopolskie,CTR_POL,Voivodship
+FLAD_PL_32,Zachodniopomorskie,CTR_POL,Voivodship
+FLAD_PL_10,Łódzkie,CTR_POL,Voivodship
+FLAD_PT_01,Aveiro,CTR_PRT,District
+FLAD_PT_02,Beja,CTR_PRT,District
+FLAD_PT_03,Braga,CTR_PRT,District
+FLAD_PT_04,Bragança,CTR_PRT,District
+FLAD_PT_05,Castelo Branco,CTR_PRT,District
+FLAD_PT_06,Coimbra,CTR_PRT,District
+FLAD_PT_07,Évora,CTR_PRT,District
+FLAD_PT_08,Faro,CTR_PRT,District
+FLAD_PT_09,Guarda,CTR_PRT,District
+FLAD_PT_10,Leiria,CTR_PRT,District
+FLAD_PT_11,Lisboa,CTR_PRT,District
+FLAD_PT_12,Portalegre,CTR_PRT,District
+FLAD_PT_13,Porto,CTR_PRT,District
+FLAD_PT_30,Região Autónoma da Madeira,CTR_PRT,Autonomous region
+FLAD_PT_20,Região Autónoma dos Açores,CTR_PRT,Autonomous region
+FLAD_PT_14,Santarém,CTR_PRT,District
+FLAD_PT_15,Setúbal,CTR_PRT,District
+FLAD_PT_16,Viana do Castelo,CTR_PRT,District
+FLAD_PT_17,Vila Real,CTR_PRT,District
+FLAD_PT_18,Viseu,CTR_PRT,District
+FLAD_QA_DA,Ad Dawḩah,CTR_QAT,Municipality
+FLAD_QA_KH,Al Khawr wa adh Dhakhīrah,CTR_QAT,Municipality
+FLAD_QA_WA,Al Wakrah,CTR_QAT,Municipality
+FLAD_QA_RA,Ar Rayyān,CTR_QAT,Municipality
+FLAD_QA_MS,Ash Shamāl,CTR_QAT,Municipality
+FLAD_QA_SH,Ash Shīḩānīyah,CTR_QAT,Municipality
+FLAD_QA_ZA,Az̧ Z̧a‘āyin,CTR_QAT,Municipality
+FLAD_QA_US,Umm Şalāl,CTR_QAT,Municipality
+FLAD_RO_AB,Alba,CTR_ROU,Department
+FLAD_RO_AR,Arad,CTR_ROU,Department
+FLAD_RO_AG,Argeș,CTR_ROU,Department
+FLAD_RO_BC,Bacău,CTR_ROU,Department
+FLAD_RO_BH,Bihor,CTR_ROU,Department
+FLAD_RO_BN,Bistrița-Năsăud,CTR_ROU,Department
+FLAD_RO_BT,Botoșani,CTR_ROU,Department
+FLAD_RO_BV,Brașov,CTR_ROU,Department
+FLAD_RO_BR,Brăila,CTR_ROU,Department
+FLAD_RO_B,București,CTR_ROU,Municipality
+FLAD_RO_BZ,Buzău,CTR_ROU,Department
+FLAD_RO_CS,Caraș-Severin,CTR_ROU,Department
+FLAD_RO_CL,Călărași,CTR_ROU,Department
+FLAD_RO_CJ,Cluj,CTR_ROU,Department
+FLAD_RO_CT,Constanța,CTR_ROU,Department
+FLAD_RO_CV,Covasna,CTR_ROU,Department
+FLAD_RO_DB,Dâmbovița,CTR_ROU,Department
+FLAD_RO_DJ,Dolj,CTR_ROU,Department
+FLAD_RO_GL,Galați,CTR_ROU,Department
+FLAD_RO_GR,Giurgiu,CTR_ROU,Department
+FLAD_RO_GJ,Gorj,CTR_ROU,Department
+FLAD_RO_HR,Harghita,CTR_ROU,Department
+FLAD_RO_HD,Hunedoara,CTR_ROU,Department
+FLAD_RO_IL,Ialomița,CTR_ROU,Department
+FLAD_RO_IS,Iași,CTR_ROU,Department
+FLAD_RO_IF,Ilfov,CTR_ROU,Department
+FLAD_RO_MM,Maramureș,CTR_ROU,Department
+FLAD_RO_MH,Mehedinți,CTR_ROU,Department
+FLAD_RO_MS,Mureș,CTR_ROU,Department
+FLAD_RO_NT,Neamț,CTR_ROU,Department
+FLAD_RO_OT,Olt,CTR_ROU,Department
+FLAD_RO_PH,Prahova,CTR_ROU,Department
+FLAD_RO_SM,Satu Mare,CTR_ROU,Department
+FLAD_RO_SJ,Sălaj,CTR_ROU,Department
+FLAD_RO_SB,Sibiu,CTR_ROU,Department
+FLAD_RO_SV,Suceava,CTR_ROU,Department
+FLAD_RO_TR,Teleorman,CTR_ROU,Department
+FLAD_RO_TM,Timiș,CTR_ROU,Department
+FLAD_RO_TL,Tulcea,CTR_ROU,Department
+FLAD_RO_VS,Vaslui,CTR_ROU,Department
+FLAD_RO_VL,Vâlcea,CTR_ROU,Department
+FLAD_RO_VN,Vrancea,CTR_ROU,Department
+FLAD_RU_AD,"Adygeja, Respublika",CTR_RUS,Republic
+FLAD_RU_AL,"Altaj, Respublika",CTR_RUS,Republic
+FLAD_RU_ALT,Altajskij kraj,CTR_RUS,Administrative territory
+FLAD_RU_AMU,Amurskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_ARK,Arhangel'skaja oblast',CTR_RUS,Administrative region
+FLAD_RU_AST,Astrahanskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_BA,"Bashkortostan, Respublika",CTR_RUS,Republic
+FLAD_RU_BEL,Belgorodskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_BRY,Brjanskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_BU,"Burjatija, Respublika",CTR_RUS,Republic
+FLAD_RU_CE,Chechenskaya Respublika,CTR_RUS,Republic
+FLAD_RU_CHE,Chelyabinskaya oblast',CTR_RUS,Administrative region
+FLAD_RU_CHU,Chukotskiy avtonomnyy okrug,CTR_RUS,Autonomous district
+FLAD_RU_CU,Chuvashskaya Respublika,CTR_RUS,Republic
+FLAD_RU_DA,"Dagestan, Respublika",CTR_RUS,Republic
+FLAD_RU_YEV,Evrejskaja avtonomnaja oblast',CTR_RUS,Autonomous region
+FLAD_RU_KHA,Habarovskij kraj,CTR_RUS,Administrative territory
+FLAD_RU_KK,"Hakasija, Respublika",CTR_RUS,Republic
+FLAD_RU_KHM,Hanty-Mansijskij avtonomnyj okrug,CTR_RUS,Autonomous district
+FLAD_RU_IN,"Ingushetiya, Respublika",CTR_RUS,Republic
+FLAD_RU_IRK,Irkutskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_IVA,Ivanovskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_YAN,Jamalo-Neneckij avtonomnyj okrug,CTR_RUS,Autonomous district
+FLAD_RU_YAR,Jaroslavskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_KB,Kabardino-Balkarskaja Respublika,CTR_RUS,Republic
+FLAD_RU_KGD,Kaliningradskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_KL,"Kalmykija, Respublika",CTR_RUS,Republic
+FLAD_RU_KLU,Kaluzhskaya oblast',CTR_RUS,Administrative region
+FLAD_RU_KAM,Kamchatskiy kray,CTR_RUS,Administrative territory
+FLAD_RU_KC,Karachayevo-Cherkesskaya Respublika,CTR_RUS,Republic
+FLAD_RU_KR,"Karelija, Respublika",CTR_RUS,Republic
+FLAD_RU_KEM,Kemerovskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_KIR,Kirovskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_KO,"Komi, Respublika",CTR_RUS,Republic
+FLAD_RU_KOS,Kostromskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_KDA,Krasnodarskij kraj,CTR_RUS,Administrative territory
+FLAD_RU_KYA,Krasnojarskij kraj,CTR_RUS,Administrative territory
+FLAD_RU_KGN,Kurganskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_KRS,Kurskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_LEN,Leningradskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_LIP,Lipeckaja oblast',CTR_RUS,Administrative region
+FLAD_RU_MAG,Magadanskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_ME,"Marij Èl, Respublika",CTR_RUS,Republic
+FLAD_RU_MO,"Mordovija, Respublika",CTR_RUS,Republic
+FLAD_RU_MOS,Moskovskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_MOW,Moskva,CTR_RUS,Autonomous city
+FLAD_RU_MUR,Murmanskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_NEN,Neneckij avtonomnyj okrug,CTR_RUS,Autonomous district
+FLAD_RU_NIZ,Nizhegorodskaya oblast',CTR_RUS,Administrative region
+FLAD_RU_NGR,Novgorodskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_NVS,Novosibirskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_OMS,Omskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_ORE,Orenburgskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_ORL,Orlovskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_PNZ,Penzenskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_PER,Permskij kraj,CTR_RUS,Administrative territory
+FLAD_RU_PRI,Primorskij kraj,CTR_RUS,Administrative territory
+FLAD_RU_PSK,Pskovskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_RYA,Rjazanskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_ROS,Rostovskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_SA,"Saha, Respublika",CTR_RUS,Republic
+FLAD_RU_SAK,Sahalinskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_SAM,Samarskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_SPE,Sankt-Peterburg,CTR_RUS,Autonomous city
+FLAD_RU_SAR,Saratovskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_SE,"Severnaja Osetija, Respublika",CTR_RUS,Republic
+FLAD_RU_SMO,Smolenskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_STA,Stavropol'skij kraj,CTR_RUS,Administrative territory
+FLAD_RU_SVE,Sverdlovskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_TAM,Tambovskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_TA,"Tatarstan, Respublika",CTR_RUS,Republic
+FLAD_RU_TYU,Tjumenskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_TOM,Tomskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_TUL,Tul'skaja oblast',CTR_RUS,Administrative region
+FLAD_RU_TVE,Tverskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_TY,"Tyva, Respublika",CTR_RUS,Republic
+FLAD_RU_UD,Udmurtskaja Respublika,CTR_RUS,Republic
+FLAD_RU_ULY,Ul'janovskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_VLA,Vladimirskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_VGG,Volgogradskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_VLG,Vologodskaja oblast',CTR_RUS,Administrative region
+FLAD_RU_VOR,Voronezhskaya oblast',CTR_RUS,Administrative region
+FLAD_RU_ZAB,Zabajkal'skij kraj,CTR_RUS,Administrative territory
+FLAD_RW_01,City of Kigali,CTR_RWA,City
+FLAD_RW_02,Eastern,CTR_RWA,Province
+FLAD_RW_03,Northern,CTR_RWA,Province
+FLAD_RW_05,Southern,CTR_RWA,Province
+FLAD_RW_04,Western,CTR_RWA,Province
+FLAD_SH_AC,Ascension,CTR_SHN,Geographical entity
+FLAD_SH_HL,Saint Helena,CTR_SHN,Geographical entity
+FLAD_SH_TA,Tristan da Cunha,CTR_SHN,Geographical entity
+FLAD_KN_N,Nevis,CTR_KNA,State
+FLAD_KN_K,Saint Kitts,CTR_KNA,State
+FLAD_LC_01,Anse la Raye,CTR_LCA,District
+FLAD_LC_12,Canaries,CTR_LCA,District
+FLAD_LC_02,Castries,CTR_LCA,District
+FLAD_LC_03,Choiseul,CTR_LCA,District
+FLAD_LC_05,Dennery,CTR_LCA,District
+FLAD_LC_06,Gros Islet,CTR_LCA,District
+FLAD_LC_07,Laborie,CTR_LCA,District
+FLAD_LC_08,Micoud,CTR_LCA,District
+FLAD_LC_10,Soufrière,CTR_LCA,District
+FLAD_LC_11,Vieux Fort,CTR_LCA,District
+FLAD_VC_01,Charlotte,CTR_VCT,Parish
+FLAD_VC_06,Grenadines,CTR_VCT,Parish
+FLAD_VC_02,Saint Andrew,CTR_VCT,Parish
+FLAD_VC_03,Saint David,CTR_VCT,Parish
+FLAD_VC_04,Saint George,CTR_VCT,Parish
+FLAD_VC_05,Saint Patrick,CTR_VCT,Parish
+FLAD_WS_AA,A'ana,CTR_WSM,District
+FLAD_WS_AL,Aiga-i-le-Tai,CTR_WSM,District
+FLAD_WS_AT,Atua,CTR_WSM,District
+FLAD_WS_FA,Fa'asaleleaga,CTR_WSM,District
+FLAD_WS_GE,Gaga'emauga,CTR_WSM,District
+FLAD_WS_GI,Gagaifomauga,CTR_WSM,District
+FLAD_WS_PA,Palauli,CTR_WSM,District
+FLAD_WS_SA,Satupa'itea,CTR_WSM,District
+FLAD_WS_TU,Tuamasaga,CTR_WSM,District
+FLAD_WS_VF,Va'a-o-Fonoti,CTR_WSM,District
+FLAD_WS_VS,Vaisigano,CTR_WSM,District
+FLAD_SM_01,Acquaviva,CTR_SMR,Municipality
+FLAD_SM_06,Borgo Maggiore,CTR_SMR,Municipality
+FLAD_SM_02,Chiesanuova,CTR_SMR,Municipality
+FLAD_SM_07,Città di San Marino,CTR_SMR,Municipality
+FLAD_SM_03,Domagnano,CTR_SMR,Municipality
+FLAD_SM_04,Faetano,CTR_SMR,Municipality
+FLAD_SM_05,Fiorentino,CTR_SMR,Municipality
+FLAD_SM_08,Montegiardino,CTR_SMR,Municipality
+FLAD_SM_09,Serravalle,CTR_SMR,Municipality
+FLAD_ST_01,Água Grande,CTR_STP,District
+FLAD_ST_02,Cantagalo,CTR_STP,District
+FLAD_ST_03,Caué,CTR_STP,District
+FLAD_ST_04,Lembá,CTR_STP,District
+FLAD_ST_05,Lobata,CTR_STP,District
+FLAD_ST_06,Mé-Zóchi,CTR_STP,District
+FLAD_ST_P,Príncipe,CTR_STP,Autonomous region
+FLAD_SA_14,'Asīr,CTR_SAU,Region
+FLAD_SA_11,Al Bāḩah,CTR_SAU,Region
+FLAD_SA_08,Al Ḩudūd ash Shamālīyah,CTR_SAU,Region
+FLAD_SA_12,Al Jawf,CTR_SAU,Region
+FLAD_SA_03,Al Madīnah al Munawwarah,CTR_SAU,Region
+FLAD_SA_05,Al Qaşīm,CTR_SAU,Region
+FLAD_SA_01,Ar Riyāḑ,CTR_SAU,Region
+FLAD_SA_04,Ash Sharqīyah,CTR_SAU,Region
+FLAD_SA_06,Ḩā'il,CTR_SAU,Region
+FLAD_SA_09,Jāzān,CTR_SAU,Region
+FLAD_SA_02,Makkah al Mukarramah,CTR_SAU,Region
+FLAD_SA_10,Najrān,CTR_SAU,Region
+FLAD_SA_07,Tabūk,CTR_SAU,Region
+FLAD_SN_DK,Dakar,CTR_SEN,Region
+FLAD_SN_DB,Diourbel,CTR_SEN,Region
+FLAD_SN_FK,Fatick,CTR_SEN,Region
+FLAD_SN_KA,Kaffrine,CTR_SEN,Region
+FLAD_SN_KL,Kaolack,CTR_SEN,Region
+FLAD_SN_KE,Kédougou,CTR_SEN,Region
+FLAD_SN_KD,Kolda,CTR_SEN,Region
+FLAD_SN_LG,Louga,CTR_SEN,Region
+FLAD_SN_MT,Matam,CTR_SEN,Region
+FLAD_SN_SL,Saint-Louis,CTR_SEN,Region
+FLAD_SN_SE,Sédhiou,CTR_SEN,Region
+FLAD_SN_TC,Tambacounda,CTR_SEN,Region
+FLAD_SN_TH,Thiès,CTR_SEN,Region
+FLAD_SN_ZG,Ziguinchor,CTR_SEN,Region
+FLAD_RS_00,Beograd,CTR_SRB,City
+FLAD_RS_14,Borski okrug,CTR_SRB,District
+FLAD_RS_11,Braničevski okrug,CTR_SRB,District
+FLAD_RS_23,Jablanički okrug,CTR_SRB,District
+FLAD_RS_09,Kolubarski okrug,CTR_SRB,District
+FLAD_RS_KM,Kosovo-Metohija,CTR_SRB,Autonomous province
+FLAD_RS_08,Mačvanski okrug,CTR_SRB,District
+FLAD_RS_17,Moravički okrug,CTR_SRB,District
+FLAD_RS_20,Nišavski okrug,CTR_SRB,District
+FLAD_RS_24,Pčinjski okrug,CTR_SRB,District
+FLAD_RS_22,Pirotski okrug,CTR_SRB,District
+FLAD_RS_10,Podunavski okrug,CTR_SRB,District
+FLAD_RS_13,Pomoravski okrug,CTR_SRB,District
+FLAD_RS_19,Rasinski okrug,CTR_SRB,District
+FLAD_RS_18,Raški okrug,CTR_SRB,District
+FLAD_RS_12,Šumadijski okrug,CTR_SRB,District
+FLAD_RS_21,Toplički okrug,CTR_SRB,District
+FLAD_RS_VO,Vojvodina,CTR_SRB,Autonomous province
+FLAD_RS_15,Zaječarski okrug,CTR_SRB,District
+FLAD_RS_16,Zlatiborski okrug,CTR_SRB,District
+FLAD_SC_01,Anse aux Pins,CTR_SYC,District
+FLAD_SC_02,Anse Boileau,CTR_SYC,District
+FLAD_SC_03,Anse Etoile,CTR_SYC,District
+FLAD_SC_05,Anse Royale,CTR_SYC,District
+FLAD_SC_04,Au Cap,CTR_SYC,District
+FLAD_SC_06,Baie Lazare,CTR_SYC,District
+FLAD_SC_07,Baie Sainte Anne,CTR_SYC,District
+FLAD_SC_08,Beau Vallon,CTR_SYC,District
+FLAD_SC_09,Bel Air,CTR_SYC,District
+FLAD_SC_10,Bel Ombre,CTR_SYC,District
+FLAD_SC_11,Cascade,CTR_SYC,District
+FLAD_SC_16,English River,CTR_SYC,District
+FLAD_SC_12,Glacis,CTR_SYC,District
+FLAD_SC_13,Grand Anse Mahe,CTR_SYC,District
+FLAD_SC_14,Grand Anse Praslin,CTR_SYC,District
+FLAD_SC_26,Ile Perseverance I,CTR_SYC,District
+FLAD_SC_27,Ile Perseverance II,CTR_SYC,District
+FLAD_SC_15,La Digue,CTR_SYC,District
+FLAD_SC_24,Les Mamelles,CTR_SYC,District
+FLAD_SC_17,Mont Buxton,CTR_SYC,District
+FLAD_SC_18,Mont Fleuri,CTR_SYC,District
+FLAD_SC_19,Plaisance,CTR_SYC,District
+FLAD_SC_20,Pointe Larue,CTR_SYC,District
+FLAD_SC_21,Port Glaud,CTR_SYC,District
+FLAD_SC_25,Roche Caiman,CTR_SYC,District
+FLAD_SC_22,Saint Louis,CTR_SYC,District
+FLAD_SC_23,Takamaka,CTR_SYC,District
+FLAD_SL_E,Eastern,CTR_SLE,Province
+FLAD_SL_NW,North Western,CTR_SLE,Province
+FLAD_SL_N,Northern,CTR_SLE,Province
+FLAD_SL_S,Southern,CTR_SLE,Province
+FLAD_SL_W,Western Area (Freetown),CTR_SLE,Area
+FLAD_SG_01,Central Singapore,CTR_SGP,District
+FLAD_SG_02,North East,CTR_SGP,District
+FLAD_SG_03,North West,CTR_SGP,District
+FLAD_SG_04,South East,CTR_SGP,District
+FLAD_SG_05,South West,CTR_SGP,District
+FLAD_SK_BC,Banskobystrický kraj,CTR_SVK,Region
+FLAD_SK_BL,Bratislavský kraj,CTR_SVK,Region
+FLAD_SK_KI,Košický kraj,CTR_SVK,Region
+FLAD_SK_NI,Nitriansky kraj,CTR_SVK,Region
+FLAD_SK_PV,Prešovský kraj,CTR_SVK,Region
+FLAD_SK_TC,Trenčiansky kraj,CTR_SVK,Region
+FLAD_SK_TA,Trnavský kraj,CTR_SVK,Region
+FLAD_SK_ZI,Žilinský kraj,CTR_SVK,Region
+FLAD_SI_001,Ajdovščina,CTR_SVN,Municipality
+FLAD_SI_213,Ankaran,CTR_SVN,Municipality
+FLAD_SI_195,Apače,CTR_SVN,Municipality
+FLAD_SI_002,Beltinci,CTR_SVN,Municipality
+FLAD_SI_148,Benedikt,CTR_SVN,Municipality
+FLAD_SI_149,Bistrica ob Sotli,CTR_SVN,Municipality
+FLAD_SI_003,Bled,CTR_SVN,Municipality
+FLAD_SI_150,Bloke,CTR_SVN,Municipality
+FLAD_SI_004,Bohinj,CTR_SVN,Municipality
+FLAD_SI_005,Borovnica,CTR_SVN,Municipality
+FLAD_SI_006,Bovec,CTR_SVN,Municipality
+FLAD_SI_151,Braslovče,CTR_SVN,Municipality
+FLAD_SI_007,Brda,CTR_SVN,Municipality
+FLAD_SI_008,Brezovica,CTR_SVN,Municipality
+FLAD_SI_009,Brežice,CTR_SVN,Municipality
+FLAD_SI_152,Cankova,CTR_SVN,Municipality
+FLAD_SI_011,Celje,CTR_SVN,Urban municipality
+FLAD_SI_012,Cerklje na Gorenjskem,CTR_SVN,Municipality
+FLAD_SI_013,Cerknica,CTR_SVN,Municipality
+FLAD_SI_014,Cerkno,CTR_SVN,Municipality
+FLAD_SI_153,Cerkvenjak,CTR_SVN,Municipality
+FLAD_SI_196,Cirkulane,CTR_SVN,Municipality
+FLAD_SI_015,Črenšovci,CTR_SVN,Municipality
+FLAD_SI_016,Črna na Koroškem,CTR_SVN,Municipality
+FLAD_SI_017,Črnomelj,CTR_SVN,Municipality
+FLAD_SI_018,Destrnik,CTR_SVN,Municipality
+FLAD_SI_019,Divača,CTR_SVN,Municipality
+FLAD_SI_154,Dobje,CTR_SVN,Municipality
+FLAD_SI_020,Dobrepolje,CTR_SVN,Municipality
+FLAD_SI_155,Dobrna,CTR_SVN,Municipality
+FLAD_SI_021,Dobrova-Polhov Gradec,CTR_SVN,Municipality
+FLAD_SI_156,Dobrovnik,CTR_SVN,Municipality
+FLAD_SI_022,Dol pri Ljubljani,CTR_SVN,Municipality
+FLAD_SI_157,Dolenjske Toplice,CTR_SVN,Municipality
+FLAD_SI_023,Domžale,CTR_SVN,Municipality
+FLAD_SI_024,Dornava,CTR_SVN,Municipality
+FLAD_SI_025,Dravograd,CTR_SVN,Municipality
+FLAD_SI_026,Duplek,CTR_SVN,Municipality
+FLAD_SI_027,Gorenja vas-Poljane,CTR_SVN,Municipality
+FLAD_SI_028,Gorišnica,CTR_SVN,Municipality
+FLAD_SI_207,Gorje,CTR_SVN,Municipality
+FLAD_SI_029,Gornja Radgona,CTR_SVN,Municipality
+FLAD_SI_030,Gornji Grad,CTR_SVN,Municipality
+FLAD_SI_031,Gornji Petrovci,CTR_SVN,Municipality
+FLAD_SI_158,Grad,CTR_SVN,Municipality
+FLAD_SI_032,Grosuplje,CTR_SVN,Municipality
+FLAD_SI_159,Hajdina,CTR_SVN,Municipality
+FLAD_SI_160,Hoče-Slivnica,CTR_SVN,Municipality
+FLAD_SI_161,Hodoš,CTR_SVN,Municipality
+FLAD_SI_162,Horjul,CTR_SVN,Municipality
+FLAD_SI_034,Hrastnik,CTR_SVN,Municipality
+FLAD_SI_035,Hrpelje-Kozina,CTR_SVN,Municipality
+FLAD_SI_036,Idrija,CTR_SVN,Municipality
+FLAD_SI_037,Ig,CTR_SVN,Municipality
+FLAD_SI_038,Ilirska Bistrica,CTR_SVN,Municipality
+FLAD_SI_039,Ivančna Gorica,CTR_SVN,Municipality
+FLAD_SI_040,Izola,CTR_SVN,Municipality
+FLAD_SI_041,Jesenice,CTR_SVN,Municipality
+FLAD_SI_163,Jezersko,CTR_SVN,Municipality
+FLAD_SI_042,Juršinci,CTR_SVN,Municipality
+FLAD_SI_043,Kamnik,CTR_SVN,Municipality
+FLAD_SI_044,Kanal ob Soči,CTR_SVN,Municipality
+FLAD_SI_045,Kidričevo,CTR_SVN,Municipality
+FLAD_SI_046,Kobarid,CTR_SVN,Municipality
+FLAD_SI_047,Kobilje,CTR_SVN,Municipality
+FLAD_SI_048,Kočevje,CTR_SVN,Municipality
+FLAD_SI_049,Komen,CTR_SVN,Municipality
+FLAD_SI_164,Komenda,CTR_SVN,Municipality
+FLAD_SI_050,Koper,CTR_SVN,Urban municipality
+FLAD_SI_197,Kostanjevica na Krki,CTR_SVN,Municipality
+FLAD_SI_165,Kostel,CTR_SVN,Municipality
+FLAD_SI_051,Kozje,CTR_SVN,Municipality
+FLAD_SI_052,Kranj,CTR_SVN,Urban municipality
+FLAD_SI_053,Kranjska Gora,CTR_SVN,Municipality
+FLAD_SI_166,Križevci,CTR_SVN,Municipality
+FLAD_SI_054,Krško,CTR_SVN,Urban municipality
+FLAD_SI_055,Kungota,CTR_SVN,Municipality
+FLAD_SI_056,Kuzma,CTR_SVN,Municipality
+FLAD_SI_057,Laško,CTR_SVN,Municipality
+FLAD_SI_058,Lenart,CTR_SVN,Municipality
+FLAD_SI_059,Lendava,CTR_SVN,Municipality
+FLAD_SI_060,Litija,CTR_SVN,Municipality
+FLAD_SI_061,Ljubljana,CTR_SVN,Urban municipality
+FLAD_SI_062,Ljubno,CTR_SVN,Municipality
+FLAD_SI_063,Ljutomer,CTR_SVN,Municipality
+FLAD_SI_208,Log-Dragomer,CTR_SVN,Municipality
+FLAD_SI_064,Logatec,CTR_SVN,Municipality
+FLAD_SI_065,Loška dolina,CTR_SVN,Municipality
+FLAD_SI_066,Loški Potok,CTR_SVN,Municipality
+FLAD_SI_167,Lovrenc na Pohorju,CTR_SVN,Municipality
+FLAD_SI_067,Luče,CTR_SVN,Municipality
+FLAD_SI_068,Lukovica,CTR_SVN,Municipality
+FLAD_SI_069,Majšperk,CTR_SVN,Municipality
+FLAD_SI_198,Makole,CTR_SVN,Municipality
+FLAD_SI_070,Maribor,CTR_SVN,Urban municipality
+FLAD_SI_168,Markovci,CTR_SVN,Municipality
+FLAD_SI_071,Medvode,CTR_SVN,Municipality
+FLAD_SI_072,Mengeš,CTR_SVN,Municipality
+FLAD_SI_073,Metlika,CTR_SVN,Municipality
+FLAD_SI_074,Mežica,CTR_SVN,Municipality
+FLAD_SI_169,Miklavž na Dravskem polju,CTR_SVN,Municipality
+FLAD_SI_075,Miren-Kostanjevica,CTR_SVN,Municipality
+FLAD_SI_212,Mirna,CTR_SVN,Municipality
+FLAD_SI_170,Mirna Peč,CTR_SVN,Municipality
+FLAD_SI_076,Mislinja,CTR_SVN,Municipality
+FLAD_SI_199,Mokronog-Trebelno,CTR_SVN,Municipality
+FLAD_SI_077,Moravče,CTR_SVN,Municipality
+FLAD_SI_078,Moravske Toplice,CTR_SVN,Municipality
+FLAD_SI_079,Mozirje,CTR_SVN,Municipality
+FLAD_SI_080,Murska Sobota,CTR_SVN,Urban municipality
+FLAD_SI_081,Muta,CTR_SVN,Municipality
+FLAD_SI_082,Naklo,CTR_SVN,Municipality
+FLAD_SI_083,Nazarje,CTR_SVN,Municipality
+FLAD_SI_084,Nova Gorica,CTR_SVN,Urban municipality
+FLAD_SI_085,Novo Mesto,CTR_SVN,Urban municipality
+FLAD_SI_086,Odranci,CTR_SVN,Municipality
+FLAD_SI_171,Oplotnica,CTR_SVN,Municipality
+FLAD_SI_087,Ormož,CTR_SVN,Municipality
+FLAD_SI_088,Osilnica,CTR_SVN,Municipality
+FLAD_SI_089,Pesnica,CTR_SVN,Municipality
+FLAD_SI_090,Piran,CTR_SVN,Municipality
+FLAD_SI_091,Pivka,CTR_SVN,Municipality
+FLAD_SI_092,Podčetrtek,CTR_SVN,Municipality
+FLAD_SI_172,Podlehnik,CTR_SVN,Municipality
+FLAD_SI_093,Podvelka,CTR_SVN,Municipality
+FLAD_SI_200,Poljčane,CTR_SVN,Municipality
+FLAD_SI_173,Polzela,CTR_SVN,Municipality
+FLAD_SI_094,Postojna,CTR_SVN,Municipality
+FLAD_SI_174,Prebold,CTR_SVN,Municipality
+FLAD_SI_095,Preddvor,CTR_SVN,Municipality
+FLAD_SI_175,Prevalje,CTR_SVN,Municipality
+FLAD_SI_096,Ptuj,CTR_SVN,Urban municipality
+FLAD_SI_097,Puconci,CTR_SVN,Municipality
+FLAD_SI_098,Rače-Fram,CTR_SVN,Municipality
+FLAD_SI_099,Radeče,CTR_SVN,Municipality
+FLAD_SI_100,Radenci,CTR_SVN,Municipality
+FLAD_SI_101,Radlje ob Dravi,CTR_SVN,Municipality
+FLAD_SI_102,Radovljica,CTR_SVN,Municipality
+FLAD_SI_103,Ravne na Koroškem,CTR_SVN,Municipality
+FLAD_SI_176,Razkrižje,CTR_SVN,Municipality
+FLAD_SI_209,Rečica ob Savinji,CTR_SVN,Municipality
+FLAD_SI_201,Renče-Vogrsko,CTR_SVN,Municipality
+FLAD_SI_104,Ribnica,CTR_SVN,Municipality
+FLAD_SI_177,Ribnica na Pohorju,CTR_SVN,Municipality
+FLAD_SI_106,Rogaška Slatina,CTR_SVN,Municipality
+FLAD_SI_105,Rogašovci,CTR_SVN,Municipality
+FLAD_SI_107,Rogatec,CTR_SVN,Municipality
+FLAD_SI_108,Ruše,CTR_SVN,Municipality
+FLAD_SI_178,Selnica ob Dravi,CTR_SVN,Municipality
+FLAD_SI_109,Semič,CTR_SVN,Municipality
+FLAD_SI_110,Sevnica,CTR_SVN,Municipality
+FLAD_SI_111,Sežana,CTR_SVN,Municipality
+FLAD_SI_112,Slovenj Gradec,CTR_SVN,Urban municipality
+FLAD_SI_113,Slovenska Bistrica,CTR_SVN,Municipality
+FLAD_SI_114,Slovenske Konjice,CTR_SVN,Municipality
+FLAD_SI_179,Sodražica,CTR_SVN,Municipality
+FLAD_SI_180,Solčava,CTR_SVN,Municipality
+FLAD_SI_202,Središče ob Dravi,CTR_SVN,Municipality
+FLAD_SI_115,Starše,CTR_SVN,Municipality
+FLAD_SI_203,Straža,CTR_SVN,Municipality
+FLAD_SI_181,Sveta Ana,CTR_SVN,Municipality
+FLAD_SI_204,Sveta Trojica v Slovenskih goricah,CTR_SVN,Municipality
+FLAD_SI_182,Sveti Andraž v Slovenskih goricah,CTR_SVN,Municipality
+FLAD_SI_116,Sveti Jurij ob Ščavnici,CTR_SVN,Municipality
+FLAD_SI_210,Sveti Jurij v Slovenskih goricah,CTR_SVN,Municipality
+FLAD_SI_205,Sveti Tomaž,CTR_SVN,Municipality
+FLAD_SI_033,Šalovci,CTR_SVN,Municipality
+FLAD_SI_183,Šempeter-Vrtojba,CTR_SVN,Municipality
+FLAD_SI_117,Šenčur,CTR_SVN,Municipality
+FLAD_SI_118,Šentilj,CTR_SVN,Municipality
+FLAD_SI_119,Šentjernej,CTR_SVN,Municipality
+FLAD_SI_120,Šentjur,CTR_SVN,Municipality
+FLAD_SI_211,Šentrupert,CTR_SVN,Municipality
+FLAD_SI_121,Škocjan,CTR_SVN,Municipality
+FLAD_SI_122,Škofja Loka,CTR_SVN,Municipality
+FLAD_SI_123,Škofljica,CTR_SVN,Municipality
+FLAD_SI_124,Šmarje pri Jelšah,CTR_SVN,Municipality
+FLAD_SI_206,Šmarješke Toplice,CTR_SVN,Municipality
+FLAD_SI_125,Šmartno ob Paki,CTR_SVN,Municipality
+FLAD_SI_194,Šmartno pri Litiji,CTR_SVN,Municipality
+FLAD_SI_126,Šoštanj,CTR_SVN,Municipality
+FLAD_SI_127,Štore,CTR_SVN,Municipality
+FLAD_SI_184,Tabor,CTR_SVN,Municipality
+FLAD_SI_010,Tišina,CTR_SVN,Municipality
+FLAD_SI_128,Tolmin,CTR_SVN,Municipality
+FLAD_SI_129,Trbovlje,CTR_SVN,Municipality
+FLAD_SI_130,Trebnje,CTR_SVN,Municipality
+FLAD_SI_185,Trnovska Vas,CTR_SVN,Municipality
+FLAD_SI_186,Trzin,CTR_SVN,Municipality
+FLAD_SI_131,Tržič,CTR_SVN,Municipality
+FLAD_SI_132,Turnišče,CTR_SVN,Municipality
+FLAD_SI_133,Velenje,CTR_SVN,Urban municipality
+FLAD_SI_187,Velika Polana,CTR_SVN,Municipality
+FLAD_SI_134,Velike Lašče,CTR_SVN,Municipality
+FLAD_SI_188,Veržej,CTR_SVN,Municipality
+FLAD_SI_135,Videm,CTR_SVN,Municipality
+FLAD_SI_136,Vipava,CTR_SVN,Municipality
+FLAD_SI_137,Vitanje,CTR_SVN,Municipality
+FLAD_SI_138,Vodice,CTR_SVN,Municipality
+FLAD_SI_139,Vojnik,CTR_SVN,Municipality
+FLAD_SI_189,Vransko,CTR_SVN,Municipality
+FLAD_SI_140,Vrhnika,CTR_SVN,Municipality
+FLAD_SI_141,Vuzenica,CTR_SVN,Municipality
+FLAD_SI_142,Zagorje ob Savi,CTR_SVN,Municipality
+FLAD_SI_143,Zavrč,CTR_SVN,Municipality
+FLAD_SI_144,Zreče,CTR_SVN,Municipality
+FLAD_SI_190,Žalec,CTR_SVN,Municipality
+FLAD_SI_146,Železniki,CTR_SVN,Municipality
+FLAD_SI_191,Žetale,CTR_SVN,Municipality
+FLAD_SI_147,Žiri,CTR_SVN,Municipality
+FLAD_SI_192,Žirovnica,CTR_SVN,Municipality
+FLAD_SI_193,Žužemberk,CTR_SVN,Municipality
+FLAD_SB_CT,Capital Territory (Honiara),CTR_SLB,Capital territory
+FLAD_SB_CE,Central,CTR_SLB,Province
+FLAD_SB_CH,Choiseul,CTR_SLB,Province
+FLAD_SB_GU,Guadalcanal,CTR_SLB,Province
+FLAD_SB_IS,Isabel,CTR_SLB,Province
+FLAD_SB_MK,Makira-Ulawa,CTR_SLB,Province
+FLAD_SB_ML,Malaita,CTR_SLB,Province
+FLAD_SB_RB,Rennell and Bellona,CTR_SLB,Province
+FLAD_SB_TE,Temotu,CTR_SLB,Province
+FLAD_SB_WE,Western,CTR_SLB,Province
+FLAD_SO_AW,Awdal,CTR_SOM,Region
+FLAD_SO_BK,Bakool,CTR_SOM,Region
+FLAD_SO_BN,Banaadir,CTR_SOM,Region
+FLAD_SO_BR,Bari,CTR_SOM,Region
+FLAD_SO_BY,Bay,CTR_SOM,Region
+FLAD_SO_GA,Galguduud,CTR_SOM,Region
+FLAD_SO_GE,Gedo,CTR_SOM,Region
+FLAD_SO_HI,Hiiraan,CTR_SOM,Region
+FLAD_SO_JD,Jubbada Dhexe,CTR_SOM,Region
+FLAD_SO_JH,Jubbada Hoose,CTR_SOM,Region
+FLAD_SO_MU,Mudug,CTR_SOM,Region
+FLAD_SO_NU,Nugaal,CTR_SOM,Region
+FLAD_SO_SA,Sanaag,CTR_SOM,Region
+FLAD_SO_SD,Shabeellaha Dhexe,CTR_SOM,Region
+FLAD_SO_SH,Shabeellaha Hoose,CTR_SOM,Region
+FLAD_SO_SO,Sool,CTR_SOM,Region
+FLAD_SO_TO,Togdheer,CTR_SOM,Region
+FLAD_SO_WO,Woqooyi Galbeed,CTR_SOM,Region
+FLAD_ZA_EC,Eastern Cape,CTR_ZAF,Province
+FLAD_ZA_FS,Free State,CTR_ZAF,Province
+FLAD_ZA_GP,Gauteng,CTR_ZAF,Province
+FLAD_ZA_KZN,Kwazulu-Natal,CTR_ZAF,Province
+FLAD_ZA_LP,Limpopo,CTR_ZAF,Province
+FLAD_ZA_MP,Mpumalanga,CTR_ZAF,Province
+FLAD_ZA_NW,North-West,CTR_ZAF,Province
+FLAD_ZA_NC,Northern Cape,CTR_ZAF,Province
+FLAD_ZA_WC,Western Cape,CTR_ZAF,Province
+FLAD_SS_EC,Central Equatoria,CTR_SSD,State
+FLAD_SS_EE,Eastern Equatoria,CTR_SSD,State
+FLAD_SS_JG,Jonglei,CTR_SSD,State
+FLAD_SS_LK,Lakes,CTR_SSD,State
+FLAD_SS_BN,Northern Bahr el Ghazal,CTR_SSD,State
+FLAD_SS_UY,Unity,CTR_SSD,State
+FLAD_SS_NU,Upper Nile,CTR_SSD,State
+FLAD_SS_WR,Warrap,CTR_SSD,State
+FLAD_SS_BW,Western Bahr el Ghazal,CTR_SSD,State
+FLAD_SS_EW,Western Equatoria,CTR_SSD,State
+FLAD_ES_AN,Andalucía,CTR_ESP,Autonomous community
+FLAD_ES_AR,Aragón,CTR_ESP,Autonomous community
+FLAD_ES_AS,"Asturias, Principado de",CTR_ESP,Autonomous community
+FLAD_ES_CN,Canarias,CTR_ESP,Autonomous community
+FLAD_ES_CB,Cantabria,CTR_ESP,Autonomous community
+FLAD_ES_CL,Castilla y León,CTR_ESP,Autonomous community
+FLAD_ES_CM,Castilla-La Mancha,CTR_ESP,Autonomous community
+FLAD_ES_CT,Catalunya [Cataluña],CTR_ESP,Autonomous community
+FLAD_ES_CE,Ceuta,CTR_ESP,Autonomous city in north africa
+FLAD_ES_PV,Euskal Herria,CTR_ESP,Autonomous community
+FLAD_ES_EX,Extremadura,CTR_ESP,Autonomous community
+FLAD_ES_GA,Galicia [Galicia],CTR_ESP,Autonomous community
+FLAD_ES_IB,Illes Balears [Islas Baleares],CTR_ESP,Autonomous community
+FLAD_ES_RI,La Rioja,CTR_ESP,Autonomous community
+FLAD_ES_MD,"Madrid, Comunidad de",CTR_ESP,Autonomous community
+FLAD_ES_ML,Melilla,CTR_ESP,Autonomous city in north africa
+FLAD_ES_MC,"Murcia, Región de",CTR_ESP,Autonomous community
+FLAD_ES_NC,Nafarroako Foru Komunitatea*,CTR_ESP,Autonomous community
+FLAD_ES_VC,"Valenciana, Comunidad",CTR_ESP,Autonomous community
+FLAD_LK_2,Central Province,CTR_LKA,Province
+FLAD_LK_5,Eastern Province,CTR_LKA,Province
+FLAD_LK_7,North Central Province,CTR_LKA,Province
+FLAD_LK_6,North Western Province,CTR_LKA,Province
+FLAD_LK_4,Northern Province,CTR_LKA,Province
+FLAD_LK_9,Sabaragamuwa Province,CTR_LKA,Province
+FLAD_LK_3,Southern Province,CTR_LKA,Province
+FLAD_LK_8,Uva Province,CTR_LKA,Province
+FLAD_LK_1,Western Province,CTR_LKA,Province
+FLAD_SD_NB,Blue Nile,CTR_SDN,State
+FLAD_SD_DC,Central Darfur,CTR_SDN,State
+FLAD_SD_DE,East Darfur,CTR_SDN,State
+FLAD_SD_GD,Gedaref,CTR_SDN,State
+FLAD_SD_GZ,Gezira,CTR_SDN,State
+FLAD_SD_KA,Kassala,CTR_SDN,State
+FLAD_SD_KH,Khartoum,CTR_SDN,State
+FLAD_SD_DN,North Darfur,CTR_SDN,State
+FLAD_SD_KN,North Kordofan,CTR_SDN,State
+FLAD_SD_NO,Northern,CTR_SDN,State
+FLAD_SD_RS,Red Sea,CTR_SDN,State
+FLAD_SD_NR,River Nile,CTR_SDN,State
+FLAD_SD_SI,Sennar,CTR_SDN,State
+FLAD_SD_DS,South Darfur,CTR_SDN,State
+FLAD_SD_KS,South Kordofan,CTR_SDN,State
+FLAD_SD_DW,West Darfur,CTR_SDN,State
+FLAD_SD_GK,West Kordofan,CTR_SDN,State
+FLAD_SD_NW,White Nile,CTR_SDN,State
+FLAD_SR_BR,Brokopondo,CTR_SUR,District
+FLAD_SR_CM,Commewijne,CTR_SUR,District
+FLAD_SR_CR,Coronie,CTR_SUR,District
+FLAD_SR_MA,Marowijne,CTR_SUR,District
+FLAD_SR_NI,Nickerie,CTR_SUR,District
+FLAD_SR_PR,Para,CTR_SUR,District
+FLAD_SR_PM,Paramaribo,CTR_SUR,District
+FLAD_SR_SA,Saramacca,CTR_SUR,District
+FLAD_SR_SI,Sipaliwini,CTR_SUR,District
+FLAD_SR_WA,Wanica,CTR_SUR,District
+FLAD_SE_K,Blekinge län [SE-10],CTR_SWE,County
+FLAD_SE_W,Dalarnas län [SE-20],CTR_SWE,County
+FLAD_SE_X,Gävleborgs län [SE-21],CTR_SWE,County
+FLAD_SE_I,Gotlands län [SE-09],CTR_SWE,County
+FLAD_SE_N,Hallands län [SE-13],CTR_SWE,County
+FLAD_SE_Z,Jämtlands län [SE-23],CTR_SWE,County
+FLAD_SE_F,Jönköpings län [SE-06],CTR_SWE,County
+FLAD_SE_H,Kalmar län [SE-08],CTR_SWE,County
+FLAD_SE_G,Kronobergs län [SE-07],CTR_SWE,County
+FLAD_SE_BD,Norrbottens län [SE-25],CTR_SWE,County
+FLAD_SE_T,Örebro län [SE-18],CTR_SWE,County
+FLAD_SE_E,Östergötlands län [SE-05],CTR_SWE,County
+FLAD_SE_M,Skåne län [SE-12],CTR_SWE,County
+FLAD_SE_D,Södermanlands län [SE-04],CTR_SWE,County
+FLAD_SE_AB,Stockholms län [SE-01],CTR_SWE,County
+FLAD_SE_C,Uppsala län [SE-03],CTR_SWE,County
+FLAD_SE_S,Värmlands län [SE-17],CTR_SWE,County
+FLAD_SE_AC,Västerbottens län [SE-24],CTR_SWE,County
+FLAD_SE_Y,Västernorrlands län [SE-22],CTR_SWE,County
+FLAD_SE_U,Västmanlands län [SE-19],CTR_SWE,County
+FLAD_SE_O,Västra Götalands län [SE-14],CTR_SWE,County
+FLAD_CH_AG,Aargau,CTR_CHE,Canton
+FLAD_CH_AR,Appenzell Ausserrhoden,CTR_CHE,Canton
+FLAD_CH_AI,Appenzell Innerrhoden,CTR_CHE,Canton
+FLAD_CH_BL,Basel-Landschaft,CTR_CHE,Canton
+FLAD_CH_BS,Basel-Stadt,CTR_CHE,Canton
+FLAD_CH_BE,Berne,CTR_CHE,Canton
+FLAD_CH_FR,Fribourg,CTR_CHE,Canton
+FLAD_CH_GE,Genève,CTR_CHE,Canton
+FLAD_CH_GL,Glarus,CTR_CHE,Canton
+FLAD_CH_GR,Graubünden,CTR_CHE,Canton
+FLAD_CH_JU,Jura,CTR_CHE,Canton
+FLAD_CH_LU,Luzern,CTR_CHE,Canton
+FLAD_CH_NE,Neuchâtel,CTR_CHE,Canton
+FLAD_CH_NW,Nidwalden,CTR_CHE,Canton
+FLAD_CH_OW,Obwalden,CTR_CHE,Canton
+FLAD_CH_SG,Sankt Gallen,CTR_CHE,Canton
+FLAD_CH_SH,Schaffhausen,CTR_CHE,Canton
+FLAD_CH_SZ,Schwyz,CTR_CHE,Canton
+FLAD_CH_SO,Solothurn,CTR_CHE,Canton
+FLAD_CH_TG,Thurgau,CTR_CHE,Canton
+FLAD_CH_TI,Ticino,CTR_CHE,Canton
+FLAD_CH_UR,Uri,CTR_CHE,Canton
+FLAD_CH_VS,Valais,CTR_CHE,Canton
+FLAD_CH_VD,Vaud,CTR_CHE,Canton
+FLAD_CH_ZG,Zug,CTR_CHE,Canton
+FLAD_CH_ZH,Zürich,CTR_CHE,Canton
+FLAD_SY_HA,Al Ḩasakah,CTR_SYR,Province
+FLAD_SY_LA,Al Lādhiqīyah,CTR_SYR,Province
+FLAD_SY_QU,Al Qunayţirah,CTR_SYR,Province
+FLAD_SY_RA,Ar Raqqah,CTR_SYR,Province
+FLAD_SY_SU,As Suwaydā',CTR_SYR,Province
+FLAD_SY_DR,Dar'ā,CTR_SYR,Province
+FLAD_SY_DY,Dayr az Zawr,CTR_SYR,Province
+FLAD_SY_DI,Dimashq,CTR_SYR,Province
+FLAD_SY_HL,Ḩalab,CTR_SYR,Province
+FLAD_SY_HM,Ḩamāh,CTR_SYR,Province
+FLAD_SY_HI,Ḩimş,CTR_SYR,Province
+FLAD_SY_ID,Idlib,CTR_SYR,Province
+FLAD_SY_RD,Rīf Dimashq,CTR_SYR,Province
+FLAD_SY_TA,Ţarţūs,CTR_SYR,Province
+FLAD_TW_CHA,Changhua,CTR_TWN,County
+FLAD_TW_CYI,Chiayi,CTR_TWN,City
+FLAD_TW_CYQ,Chiayi,CTR_TWN,County
+FLAD_TW_HSQ,Hsinchu,CTR_TWN,County
+FLAD_TW_HSZ,Hsinchu,CTR_TWN,City
+FLAD_TW_HUA,Hualien,CTR_TWN,County
+FLAD_TW_KHH,Kaohsiung,CTR_TWN,Special municipality
+FLAD_TW_KEE,Keelung,CTR_TWN,City
+FLAD_TW_KIN,Kinmen,CTR_TWN,County
+FLAD_TW_LIE,Lienchiang,CTR_TWN,County
+FLAD_TW_MIA,Miaoli,CTR_TWN,County
+FLAD_TW_NAN,Nantou,CTR_TWN,County
+FLAD_TW_NWT,New Taipei,CTR_TWN,Special municipality
+FLAD_TW_PEN,Penghu,CTR_TWN,County
+FLAD_TW_PIF,Pingtung,CTR_TWN,County
+FLAD_TW_TXG,Taichung,CTR_TWN,Special municipality
+FLAD_TW_TNN,Tainan,CTR_TWN,Special municipality
+FLAD_TW_TPE,Taipei,CTR_TWN,Special municipality
+FLAD_TW_TTT,Taitung,CTR_TWN,County
+FLAD_TW_TAO,Taoyuan,CTR_TWN,Special municipality
+FLAD_TW_ILA,Yilan,CTR_TWN,County
+FLAD_TW_YUN,Yunlin,CTR_TWN,County
+FLAD_TJ_DU,Dushanbe,CTR_TJK,Capital territory
+FLAD_TJ_KT,Khatlon,CTR_TJK,Region
+FLAD_TJ_GB,Kŭhistoni Badakhshon,CTR_TJK,Autonomous region
+FLAD_TJ_RA,nohiyahoi tobei jumhurí,CTR_TJK,Districts under republic administration
+FLAD_TJ_SU,Sughd,CTR_TJK,Region
+FLAD_TZ_01,Arusha,CTR_TZA,Region
+FLAD_TZ_19,Coast,CTR_TZA,Region
+FLAD_TZ_02,Dar es Salaam,CTR_TZA,Region
+FLAD_TZ_03,Dodoma,CTR_TZA,Region
+FLAD_TZ_27,Geita,CTR_TZA,Region
+FLAD_TZ_04,Iringa,CTR_TZA,Region
+FLAD_TZ_05,Kagera,CTR_TZA,Region
+FLAD_TZ_28,Katavi,CTR_TZA,Region
+FLAD_TZ_08,Kigoma,CTR_TZA,Region
+FLAD_TZ_09,Kilimanjaro,CTR_TZA,Region
+FLAD_TZ_12,Lindi,CTR_TZA,Region
+FLAD_TZ_26,Manyara,CTR_TZA,Region
+FLAD_TZ_13,Mara,CTR_TZA,Region
+FLAD_TZ_14,Mbeya,CTR_TZA,Region
+FLAD_TZ_16,Morogoro,CTR_TZA,Region
+FLAD_TZ_17,Mtwara,CTR_TZA,Region
+FLAD_TZ_18,Mwanza,CTR_TZA,Region
+FLAD_TZ_29,Njombe,CTR_TZA,Region
+FLAD_TZ_06,Pemba North,CTR_TZA,Region
+FLAD_TZ_10,Pemba South,CTR_TZA,Region
+FLAD_TZ_20,Rukwa,CTR_TZA,Region
+FLAD_TZ_21,Ruvuma,CTR_TZA,Region
+FLAD_TZ_22,Shinyanga,CTR_TZA,Region
+FLAD_TZ_30,Simiyu,CTR_TZA,Region
+FLAD_TZ_23,Singida,CTR_TZA,Region
+FLAD_TZ_31,Songwe,CTR_TZA,Region
+FLAD_TZ_24,Tabora,CTR_TZA,Region
+FLAD_TZ_25,Tanga,CTR_TZA,Region
+FLAD_TZ_07,Zanzibar North,CTR_TZA,Region
+FLAD_TZ_11,Zanzibar South,CTR_TZA,Region
+FLAD_TZ_15,Zanzibar West,CTR_TZA,Region
+FLAD_TH_37,Amnat Charoen,CTR_THA,Province
+FLAD_TH_15,Ang Thong,CTR_THA,Province
+FLAD_TH_38,Bueng Kan,CTR_THA,Province
+FLAD_TH_31,Buri Ram,CTR_THA,Province
+FLAD_TH_24,Chachoengsao,CTR_THA,Province
+FLAD_TH_18,Chai Nat,CTR_THA,Province
+FLAD_TH_36,Chaiyaphum,CTR_THA,Province
+FLAD_TH_22,Chanthaburi,CTR_THA,Province
+FLAD_TH_50,Chiang Mai,CTR_THA,Province
+FLAD_TH_57,Chiang Rai,CTR_THA,Province
+FLAD_TH_20,Chon Buri,CTR_THA,Province
+FLAD_TH_86,Chumphon,CTR_THA,Province
+FLAD_TH_46,Kalasin,CTR_THA,Province
+FLAD_TH_62,Kamphaeng Phet,CTR_THA,Province
+FLAD_TH_71,Kanchanaburi,CTR_THA,Province
+FLAD_TH_40,Khon Kaen,CTR_THA,Province
+FLAD_TH_81,Krabi,CTR_THA,Province
+FLAD_TH_10,Krung Thep Maha Nakhon,CTR_THA,Metropolitan administration
+FLAD_TH_52,Lampang,CTR_THA,Province
+FLAD_TH_51,Lamphun,CTR_THA,Province
+FLAD_TH_42,Loei,CTR_THA,Province
+FLAD_TH_16,Lop Buri,CTR_THA,Province
+FLAD_TH_58,Mae Hong Son,CTR_THA,Province
+FLAD_TH_44,Maha Sarakham,CTR_THA,Province
+FLAD_TH_49,Mukdahan,CTR_THA,Province
+FLAD_TH_26,Nakhon Nayok,CTR_THA,Province
+FLAD_TH_73,Nakhon Pathom,CTR_THA,Province
+FLAD_TH_48,Nakhon Phanom,CTR_THA,Province
+FLAD_TH_30,Nakhon Ratchasima,CTR_THA,Province
+FLAD_TH_60,Nakhon Sawan,CTR_THA,Province
+FLAD_TH_80,Nakhon Si Thammarat,CTR_THA,Province
+FLAD_TH_55,Nan,CTR_THA,Province
+FLAD_TH_96,Narathiwat,CTR_THA,Province
+FLAD_TH_39,Nong Bua Lam Phu,CTR_THA,Province
+FLAD_TH_43,Nong Khai,CTR_THA,Province
+FLAD_TH_12,Nonthaburi,CTR_THA,Province
+FLAD_TH_13,Pathum Thani,CTR_THA,Province
+FLAD_TH_94,Pattani,CTR_THA,Province
+FLAD_TH_82,Phangnga,CTR_THA,Province
+FLAD_TH_93,Phatthalung,CTR_THA,Province
+FLAD_TH_S,Phatthaya,CTR_THA,Special administrative city
+FLAD_TH_56,Phayao,CTR_THA,Province
+FLAD_TH_67,Phetchabun,CTR_THA,Province
+FLAD_TH_76,Phetchaburi,CTR_THA,Province
+FLAD_TH_66,Phichit,CTR_THA,Province
+FLAD_TH_65,Phitsanulok,CTR_THA,Province
+FLAD_TH_14,Phra Nakhon Si Ayutthaya,CTR_THA,Province
+FLAD_TH_54,Phrae,CTR_THA,Province
+FLAD_TH_83,Phuket,CTR_THA,Province
+FLAD_TH_25,Prachin Buri,CTR_THA,Province
+FLAD_TH_77,Prachuap Khiri Khan,CTR_THA,Province
+FLAD_TH_85,Ranong,CTR_THA,Province
+FLAD_TH_70,Ratchaburi,CTR_THA,Province
+FLAD_TH_21,Rayong,CTR_THA,Province
+FLAD_TH_45,Roi Et,CTR_THA,Province
+FLAD_TH_27,Sa Kaeo,CTR_THA,Province
+FLAD_TH_47,Sakon Nakhon,CTR_THA,Province
+FLAD_TH_11,Samut Prakan,CTR_THA,Province
+FLAD_TH_74,Samut Sakhon,CTR_THA,Province
+FLAD_TH_75,Samut Songkhram,CTR_THA,Province
+FLAD_TH_19,Saraburi,CTR_THA,Province
+FLAD_TH_91,Satun,CTR_THA,Province
+FLAD_TH_33,Si Sa Ket,CTR_THA,Province
+FLAD_TH_17,Sing Buri,CTR_THA,Province
+FLAD_TH_90,Songkhla,CTR_THA,Province
+FLAD_TH_64,Sukhothai,CTR_THA,Province
+FLAD_TH_72,Suphan Buri,CTR_THA,Province
+FLAD_TH_84,Surat Thani,CTR_THA,Province
+FLAD_TH_32,Surin,CTR_THA,Province
+FLAD_TH_63,Tak,CTR_THA,Province
+FLAD_TH_92,Trang,CTR_THA,Province
+FLAD_TH_23,Trat,CTR_THA,Province
+FLAD_TH_34,Ubon Ratchathani,CTR_THA,Province
+FLAD_TH_41,Udon Thani,CTR_THA,Province
+FLAD_TH_61,Uthai Thani,CTR_THA,Province
+FLAD_TH_53,Uttaradit,CTR_THA,Province
+FLAD_TH_95,Yala,CTR_THA,Province
+FLAD_TH_35,Yasothon,CTR_THA,Province
+FLAD_TL_AL,Aileu,CTR_TLS,Municipality
+FLAD_TL_AN,Ainaro,CTR_TLS,Municipality
+FLAD_TL_BA,Baucau,CTR_TLS,Municipality
+FLAD_TL_BO,Bobonaro,CTR_TLS,Municipality
+FLAD_TL_CO,Cova Lima,CTR_TLS,Municipality
+FLAD_TL_DI,Díli,CTR_TLS,Municipality
+FLAD_TL_ER,Ermera,CTR_TLS,Municipality
+FLAD_TL_LA,Lautein,CTR_TLS,Municipality
+FLAD_TL_LI,Likisá,CTR_TLS,Municipality
+FLAD_TL_MT,Manatuto,CTR_TLS,Municipality
+FLAD_TL_MF,Manufahi,CTR_TLS,Municipality
+FLAD_TL_OE,Oekusi-Ambenu,CTR_TLS,Special administrative region
+FLAD_TL_VI,Vikeke,CTR_TLS,Municipality
+FLAD_TG_C,Centrale,CTR_TGO,Region
+FLAD_TG_K,Kara,CTR_TGO,Region
+FLAD_TG_M,Maritime (Région),CTR_TGO,Region
+FLAD_TG_P,Plateaux,CTR_TGO,Region
+FLAD_TG_S,Savanes,CTR_TGO,Region
+FLAD_TO_01,'Eua,CTR_TON,Division
+FLAD_TO_02,Ha'apai,CTR_TON,Division
+FLAD_TO_03,Niuas,CTR_TON,Division
+FLAD_TO_04,Tongatapu,CTR_TON,Division
+FLAD_TO_05,Vava'u,CTR_TON,Division
+FLAD_TT_ARI,Arima,CTR_TTO,Borough
+FLAD_TT_CHA,Chaguanas,CTR_TTO,Borough
+FLAD_TT_CTT,Couva-Tabaquite-Talparo,CTR_TTO,Region
+FLAD_TT_DMN,Diego Martin,CTR_TTO,Region
+FLAD_TT_MRC,Mayaro-Rio Claro,CTR_TTO,Region
+FLAD_TT_PED,Penal-Debe,CTR_TTO,Region
+FLAD_TT_PTF,Point Fortin,CTR_TTO,Borough
+FLAD_TT_POS,Port of Spain,CTR_TTO,City
+FLAD_TT_PRT,Princes Town,CTR_TTO,Region
+FLAD_TT_SFO,San Fernando,CTR_TTO,City
+FLAD_TT_SJL,San Juan-Laventille,CTR_TTO,Region
+FLAD_TT_SGE,Sangre Grande,CTR_TTO,Region
+FLAD_TT_SIP,Siparia,CTR_TTO,Region
+FLAD_TT_TOB,Tobago,CTR_TTO,Ward
+FLAD_TT_TUP,Tunapuna-Piarco,CTR_TTO,Region
+FLAD_TN_13,Ben Arous,CTR_TUN,Governorate
+FLAD_TN_31,Béja,CTR_TUN,Governorate
+FLAD_TN_23,Bizerte,CTR_TUN,Governorate
+FLAD_TN_81,Gabès,CTR_TUN,Governorate
+FLAD_TN_71,Gafsa,CTR_TUN,Governorate
+FLAD_TN_32,Jendouba,CTR_TUN,Governorate
+FLAD_TN_41,Kairouan,CTR_TUN,Governorate
+FLAD_TN_42,Kasserine,CTR_TUN,Governorate
+FLAD_TN_73,Kébili,CTR_TUN,Governorate
+FLAD_TN_12,L'Ariana,CTR_TUN,Governorate
+FLAD_TN_14,La Manouba,CTR_TUN,Governorate
+FLAD_TN_33,Le Kef,CTR_TUN,Governorate
+FLAD_TN_53,Mahdia,CTR_TUN,Governorate
+FLAD_TN_82,Médenine,CTR_TUN,Governorate
+FLAD_TN_52,Monastir,CTR_TUN,Governorate
+FLAD_TN_21,Nabeul,CTR_TUN,Governorate
+FLAD_TN_61,Sfax,CTR_TUN,Governorate
+FLAD_TN_43,Sidi Bouzid,CTR_TUN,Governorate
+FLAD_TN_34,Siliana,CTR_TUN,Governorate
+FLAD_TN_51,Sousse,CTR_TUN,Governorate
+FLAD_TN_83,Tataouine,CTR_TUN,Governorate
+FLAD_TN_72,Tozeur,CTR_TUN,Governorate
+FLAD_TN_11,Tunis,CTR_TUN,Governorate
+FLAD_TN_22,Zaghouan,CTR_TUN,Governorate
+FLAD_TM_A,Ahal,CTR_TKM,Region
+FLAD_TM_S,Aşgabat,CTR_TKM,City
+FLAD_TM_B,Balkan,CTR_TKM,Region
+FLAD_TM_D,Daşoguz,CTR_TKM,Region
+FLAD_TM_L,Lebap,CTR_TKM,Region
+FLAD_TM_M,Mary,CTR_TKM,Region
+FLAD_TV_FUN,Funafuti,CTR_TUV,Town council
+FLAD_TV_NMG,Nanumaga,CTR_TUV,Island council
+FLAD_TV_NMA,Nanumea,CTR_TUV,Island council
+FLAD_TV_NIT,Niutao,CTR_TUV,Island council
+FLAD_TV_NUI,Nui,CTR_TUV,Island council
+FLAD_TV_NKF,Nukufetau,CTR_TUV,Island council
+FLAD_TV_NKL,Nukulaelae,CTR_TUV,Island council
+FLAD_TV_VAI,Vaitupu,CTR_TUV,Island council
+FLAD_TR_01,Adana,CTR_TUR,Province
+FLAD_TR_02,Adıyaman,CTR_TUR,Province
+FLAD_TR_03,Afyonkarahisar,CTR_TUR,Province
+FLAD_TR_04,Ağrı,CTR_TUR,Province
+FLAD_TR_68,Aksaray,CTR_TUR,Province
+FLAD_TR_05,Amasya,CTR_TUR,Province
+FLAD_TR_06,Ankara,CTR_TUR,Province
+FLAD_TR_07,Antalya,CTR_TUR,Province
+FLAD_TR_75,Ardahan,CTR_TUR,Province
+FLAD_TR_08,Artvin,CTR_TUR,Province
+FLAD_TR_09,Aydın,CTR_TUR,Province
+FLAD_TR_10,Balıkesir,CTR_TUR,Province
+FLAD_TR_74,Bartın,CTR_TUR,Province
+FLAD_TR_72,Batman,CTR_TUR,Province
+FLAD_TR_69,Bayburt,CTR_TUR,Province
+FLAD_TR_11,Bilecik,CTR_TUR,Province
+FLAD_TR_12,Bingöl,CTR_TUR,Province
+FLAD_TR_13,Bitlis,CTR_TUR,Province
+FLAD_TR_14,Bolu,CTR_TUR,Province
+FLAD_TR_15,Burdur,CTR_TUR,Province
+FLAD_TR_16,Bursa,CTR_TUR,Province
+FLAD_TR_17,Çanakkale,CTR_TUR,Province
+FLAD_TR_18,Çankırı,CTR_TUR,Province
+FLAD_TR_19,Çorum,CTR_TUR,Province
+FLAD_TR_20,Denizli,CTR_TUR,Province
+FLAD_TR_21,Diyarbakır,CTR_TUR,Province
+FLAD_TR_81,Düzce,CTR_TUR,Province
+FLAD_TR_22,Edirne,CTR_TUR,Province
+FLAD_TR_23,Elazığ,CTR_TUR,Province
+FLAD_TR_24,Erzincan,CTR_TUR,Province
+FLAD_TR_25,Erzurum,CTR_TUR,Province
+FLAD_TR_26,Eskişehir,CTR_TUR,Province
+FLAD_TR_27,Gaziantep,CTR_TUR,Province
+FLAD_TR_28,Giresun,CTR_TUR,Province
+FLAD_TR_29,Gümüşhane,CTR_TUR,Province
+FLAD_TR_30,Hakkâri,CTR_TUR,Province
+FLAD_TR_31,Hatay,CTR_TUR,Province
+FLAD_TR_76,Iğdır,CTR_TUR,Province
+FLAD_TR_32,Isparta,CTR_TUR,Province
+FLAD_TR_34,İstanbul,CTR_TUR,Province
+FLAD_TR_35,İzmir,CTR_TUR,Province
+FLAD_TR_46,Kahramanmaraş,CTR_TUR,Province
+FLAD_TR_78,Karabük,CTR_TUR,Province
+FLAD_TR_70,Karaman,CTR_TUR,Province
+FLAD_TR_36,Kars,CTR_TUR,Province
+FLAD_TR_37,Kastamonu,CTR_TUR,Province
+FLAD_TR_38,Kayseri,CTR_TUR,Province
+FLAD_TR_79,Kilis,CTR_TUR,Province
+FLAD_TR_41,Kocaeli,CTR_TUR,Province
+FLAD_TR_42,Konya,CTR_TUR,Province
+FLAD_TR_43,Kütahya,CTR_TUR,Province
+FLAD_TR_39,Kırklareli,CTR_TUR,Province
+FLAD_TR_40,Kırşehir,CTR_TUR,Province
+FLAD_TR_71,Kırıkkale,CTR_TUR,Province
+FLAD_TR_44,Malatya,CTR_TUR,Province
+FLAD_TR_45,Manisa,CTR_TUR,Province
+FLAD_TR_47,Mardin,CTR_TUR,Province
+FLAD_TR_33,Mersin,CTR_TUR,Province
+FLAD_TR_48,Muğla,CTR_TUR,Province
+FLAD_TR_49,Muş,CTR_TUR,Province
+FLAD_TR_50,Nevşehir,CTR_TUR,Province
+FLAD_TR_51,Niğde,CTR_TUR,Province
+FLAD_TR_52,Ordu,CTR_TUR,Province
+FLAD_TR_80,Osmaniye,CTR_TUR,Province
+FLAD_TR_53,Rize,CTR_TUR,Province
+FLAD_TR_54,Sakarya,CTR_TUR,Province
+FLAD_TR_55,Samsun,CTR_TUR,Province
+FLAD_TR_56,Siirt,CTR_TUR,Province
+FLAD_TR_57,Sinop,CTR_TUR,Province
+FLAD_TR_58,Sivas,CTR_TUR,Province
+FLAD_TR_63,Şanlıurfa,CTR_TUR,Province
+FLAD_TR_73,Şırnak,CTR_TUR,Province
+FLAD_TR_59,Tekirdağ,CTR_TUR,Province
+FLAD_TR_60,Tokat,CTR_TUR,Province
+FLAD_TR_61,Trabzon,CTR_TUR,Province
+FLAD_TR_62,Tunceli,CTR_TUR,Province
+FLAD_TR_64,Uşak,CTR_TUR,Province
+FLAD_TR_65,Van,CTR_TUR,Province
+FLAD_TR_77,Yalova,CTR_TUR,Province
+FLAD_TR_66,Yozgat,CTR_TUR,Province
+FLAD_TR_67,Zonguldak,CTR_TUR,Province
+FLAD_UG_C,Central,CTR_UGA,Geographical region
+FLAD_UG_E,Eastern,CTR_UGA,Geographical region
+FLAD_UG_N,Northern,CTR_UGA,Geographical region
+FLAD_UG_W,Western,CTR_UGA,Geographical region
+FLAD_UA_43,Avtonomna Respublika Krym,CTR_UKR,Republic
+FLAD_UA_71,Cherkaska oblast,CTR_UKR,Region
+FLAD_UA_74,Chernihivska oblast,CTR_UKR,Region
+FLAD_UA_77,Chernivetska oblast,CTR_UKR,Region
+FLAD_UA_12,Dnipropetrovska oblast,CTR_UKR,Region
+FLAD_UA_14,Donetska oblast,CTR_UKR,Region
+FLAD_UA_26,Ivano-Frankivska oblast,CTR_UKR,Region
+FLAD_UA_63,Kharkivska oblast,CTR_UKR,Region
+FLAD_UA_65,Khersonska oblast,CTR_UKR,Region
+FLAD_UA_68,Khmelnytska oblast,CTR_UKR,Region
+FLAD_UA_35,Kirovohradska oblast,CTR_UKR,Region
+FLAD_UA_30,Kyiv,CTR_UKR,City
+FLAD_UA_32,Kyivska oblast,CTR_UKR,Region
+FLAD_UA_09,Luhanska oblast,CTR_UKR,Region
+FLAD_UA_46,Lvivska oblast,CTR_UKR,Region
+FLAD_UA_48,Mykolaivska oblast,CTR_UKR,Region
+FLAD_UA_51,Odeska oblast,CTR_UKR,Region
+FLAD_UA_53,Poltavska oblast,CTR_UKR,Region
+FLAD_UA_56,Rivnenska oblast,CTR_UKR,Region
+FLAD_UA_40,Sevastopol,CTR_UKR,City
+FLAD_UA_59,Sumska oblast,CTR_UKR,Region
+FLAD_UA_61,Ternopilska oblast,CTR_UKR,Region
+FLAD_UA_05,Vinnytska oblast,CTR_UKR,Region
+FLAD_UA_07,Volynska oblast,CTR_UKR,Region
+FLAD_UA_21,Zakarpatska oblast,CTR_UKR,Region
+FLAD_UA_23,Zaporizka oblast,CTR_UKR,Region
+FLAD_UA_18,Zhytomyrska oblast,CTR_UKR,Region
+FLAD_AE_AZ,Abū Z̧aby,CTR_ARE,Emirate
+FLAD_AE_FU,Al Fujayrah,CTR_ARE,Emirate
+FLAD_AE_SH,Ash Shāriqah,CTR_ARE,Emirate
+FLAD_AE_DU,Dubayy,CTR_ARE,Emirate
+FLAD_AE_RK,Ra’s al Khaymah,CTR_ARE,Emirate
+FLAD_AE_UQ,Umm al Qaywayn,CTR_ARE,Emirate
+FLAD_AE_AJ,‘Ajmān,CTR_ARE,Emirate
+FLAD_GB_ENG,England,CTR_GBR,Country
+FLAD_GB_NIR,Northern Ireland,CTR_GBR,Province
+FLAD_GB_SCT,Scotland,CTR_GBR,Country
+FLAD_GB_WLS,Wales [Cymru GB-CYM],CTR_GBR,Country
+FLAD_US_AL,Alabama,CTR_USA,State
+FLAD_US_AK,Alaska,CTR_USA,State
+FLAD_US_AS,American Samoa,CTR_USA,Outlying area
+FLAD_US_AZ,Arizona,CTR_USA,State
+FLAD_US_AR,Arkansas,CTR_USA,State
+FLAD_US_CA,California,CTR_USA,State
+FLAD_US_CO,Colorado,CTR_USA,State
+FLAD_US_CT,Connecticut,CTR_USA,State
+FLAD_US_DE,Delaware,CTR_USA,State
+FLAD_US_DC,District of Columbia,CTR_USA,District
+FLAD_US_FL,Florida,CTR_USA,State
+FLAD_US_GA,Georgia,CTR_USA,State
+FLAD_US_GU,Guam,CTR_USA,Outlying area
+FLAD_US_HI,Hawaii,CTR_USA,State
+FLAD_US_ID,Idaho,CTR_USA,State
+FLAD_US_IL,Illinois,CTR_USA,State
+FLAD_US_IN,Indiana,CTR_USA,State
+FLAD_US_IA,Iowa,CTR_USA,State
+FLAD_US_KS,Kansas,CTR_USA,State
+FLAD_US_KY,Kentucky,CTR_USA,State
+FLAD_US_LA,Louisiana,CTR_USA,State
+FLAD_US_ME,Maine,CTR_USA,State
+FLAD_US_MD,Maryland,CTR_USA,State
+FLAD_US_MA,Massachusetts,CTR_USA,State
+FLAD_US_MI,Michigan,CTR_USA,State
+FLAD_US_MN,Minnesota,CTR_USA,State
+FLAD_US_MS,Mississippi,CTR_USA,State
+FLAD_US_MO,Missouri,CTR_USA,State
+FLAD_US_MT,Montana,CTR_USA,State
+FLAD_US_NE,Nebraska,CTR_USA,State
+FLAD_US_NV,Nevada,CTR_USA,State
+FLAD_US_NH,New Hampshire,CTR_USA,State
+FLAD_US_NJ,New Jersey,CTR_USA,State
+FLAD_US_NM,New Mexico,CTR_USA,State
+FLAD_US_NY,New York,CTR_USA,State
+FLAD_US_NC,North Carolina,CTR_USA,State
+FLAD_US_ND,North Dakota,CTR_USA,State
+FLAD_US_MP,Northern Mariana Islands,CTR_USA,Outlying area
+FLAD_US_OH,Ohio,CTR_USA,State
+FLAD_US_OK,Oklahoma,CTR_USA,State
+FLAD_US_OR,Oregon,CTR_USA,State
+FLAD_US_PA,Pennsylvania,CTR_USA,State
+FLAD_US_PR,Puerto Rico,CTR_USA,Outlying area
+FLAD_US_RI,Rhode Island,CTR_USA,State
+FLAD_US_SC,South Carolina,CTR_USA,State
+FLAD_US_SD,South Dakota,CTR_USA,State
+FLAD_US_TN,Tennessee,CTR_USA,State
+FLAD_US_TX,Texas,CTR_USA,State
+FLAD_US_UM,United States Minor Outlying Islands,CTR_USA,Outlying area
+FLAD_US_UT,Utah,CTR_USA,State
+FLAD_US_VT,Vermont,CTR_USA,State
+FLAD_US_VI,"Virgin Islands, U.S.",CTR_USA,Outlying area
+FLAD_US_VA,Virginia,CTR_USA,State
+FLAD_US_WA,Washington,CTR_USA,State
+FLAD_US_WV,West Virginia,CTR_USA,State
+FLAD_US_WI,Wisconsin,CTR_USA,State
+FLAD_US_WY,Wyoming,CTR_USA,State
+FLAD_UM_81,Baker Island,CTR_UMI,"Islands, groups of islands"
+FLAD_UM_84,Howland Island,CTR_UMI,"Islands, groups of islands"
+FLAD_UM_86,Jarvis Island,CTR_UMI,"Islands, groups of islands"
+FLAD_UM_67,Johnston Atoll,CTR_UMI,"Islands, groups of islands"
+FLAD_UM_89,Kingman Reef,CTR_UMI,"Islands, groups of islands"
+FLAD_UM_71,Midway Islands,CTR_UMI,"Islands, groups of islands"
+FLAD_UM_76,Navassa Island,CTR_UMI,"Islands, groups of islands"
+FLAD_UM_95,Palmyra Atoll,CTR_UMI,"Islands, groups of islands"
+FLAD_UM_79,Wake Island,CTR_UMI,"Islands, groups of islands"
+FLAD_UY_AR,Artigas,CTR_URY,Department
+FLAD_UY_CA,Canelones,CTR_URY,Department
+FLAD_UY_CL,Cerro Largo,CTR_URY,Department
+FLAD_UY_CO,Colonia,CTR_URY,Department
+FLAD_UY_DU,Durazno,CTR_URY,Department
+FLAD_UY_FS,Flores,CTR_URY,Department
+FLAD_UY_FD,Florida,CTR_URY,Department
+FLAD_UY_LA,Lavalleja,CTR_URY,Department
+FLAD_UY_MA,Maldonado,CTR_URY,Department
+FLAD_UY_MO,Montevideo,CTR_URY,Department
+FLAD_UY_PA,Paysandú,CTR_URY,Department
+FLAD_UY_RV,Rivera,CTR_URY,Department
+FLAD_UY_RN,Río Negro,CTR_URY,Department
+FLAD_UY_RO,Rocha,CTR_URY,Department
+FLAD_UY_SA,Salto,CTR_URY,Department
+FLAD_UY_SJ,San José,CTR_URY,Department
+FLAD_UY_SO,Soriano,CTR_URY,Department
+FLAD_UY_TA,Tacuarembó,CTR_URY,Department
+FLAD_UY_TT,Treinta y Tres,CTR_URY,Department
+FLAD_UZ_AN,Andijon,CTR_UZB,Region
+FLAD_UZ_BU,Buxoro,CTR_UZB,Region
+FLAD_UZ_FA,Farg‘ona,CTR_UZB,Region
+FLAD_UZ_JI,Jizzax,CTR_UZB,Region
+FLAD_UZ_NG,Namangan,CTR_UZB,Region
+FLAD_UZ_NW,Navoiy,CTR_UZB,Region
+FLAD_UZ_QA,Qashqadaryo,CTR_UZB,Region
+FLAD_UZ_QR,Qoraqalpog‘iston Respublikasi,CTR_UZB,Republic
+FLAD_UZ_SA,Samarqand,CTR_UZB,Region
+FLAD_UZ_SI,Sirdaryo,CTR_UZB,Region
+FLAD_UZ_SU,Surxondaryo,CTR_UZB,Region
+FLAD_UZ_TK,Toshkent,CTR_UZB,City
+FLAD_UZ_TO,Toshkent,CTR_UZB,Region
+FLAD_UZ_XO,Xorazm,CTR_UZB,Region
+FLAD_VU_MAP,Malampa,CTR_VUT,Province
+FLAD_VU_PAM,Pénama,CTR_VUT,Province
+FLAD_VU_SAM,Sanma,CTR_VUT,Province
+FLAD_VU_SEE,Shéfa,CTR_VUT,Province
+FLAD_VU_TAE,Taféa,CTR_VUT,Province
+FLAD_VU_TOB,Torba,CTR_VUT,Province
+FLAD_VE_Z,Amazonas,CTR_VEN,State
+FLAD_VE_B,Anzoátegui,CTR_VEN,State
+FLAD_VE_C,Apure,CTR_VEN,State
+FLAD_VE_D,Aragua,CTR_VEN,State
+FLAD_VE_E,Barinas,CTR_VEN,State
+FLAD_VE_F,Bolívar,CTR_VEN,State
+FLAD_VE_G,Carabobo,CTR_VEN,State
+FLAD_VE_H,Cojedes,CTR_VEN,State
+FLAD_VE_Y,Delta Amacuro,CTR_VEN,State
+FLAD_VE_W,Dependencias Federales,CTR_VEN,Federal dependency
+FLAD_VE_A,Distrito Capital,CTR_VEN,Capital district
+FLAD_VE_I,Falcón,CTR_VEN,State
+FLAD_VE_J,Guárico,CTR_VEN,State
+FLAD_VE_X,La Guaira,CTR_VEN,State
+FLAD_VE_K,Lara,CTR_VEN,State
+FLAD_VE_L,Mérida,CTR_VEN,State
+FLAD_VE_M,Miranda,CTR_VEN,State
+FLAD_VE_N,Monagas,CTR_VEN,State
+FLAD_VE_O,Nueva Esparta,CTR_VEN,State
+FLAD_VE_P,Portuguesa,CTR_VEN,State
+FLAD_VE_R,Sucre,CTR_VEN,State
+FLAD_VE_S,Táchira,CTR_VEN,State
+FLAD_VE_T,Trujillo,CTR_VEN,State
+FLAD_VE_U,Yaracuy,CTR_VEN,State
+FLAD_VE_V,Zulia,CTR_VEN,State
+FLAD_VN_44,An Giang,CTR_VNM,Province
+FLAD_VN_43,Bà Rịa - Vũng Tàu,CTR_VNM,Province
+FLAD_VN_54,Bắc Giang,CTR_VNM,Province
+FLAD_VN_53,Bắc Kạn,CTR_VNM,Province
+FLAD_VN_56,Bắc Ninh,CTR_VNM,Province
+FLAD_VN_55,Bạc Liêu,CTR_VNM,Province
+FLAD_VN_50,Bến Tre,CTR_VNM,Province
+FLAD_VN_57,Bình Dương,CTR_VNM,Province
+FLAD_VN_58,Bình Phước,CTR_VNM,Province
+FLAD_VN_40,Bình Thuận,CTR_VNM,Province
+FLAD_VN_31,Bình Định,CTR_VNM,Province
+FLAD_VN_04,Cao Bằng,CTR_VNM,Province
+FLAD_VN_59,Cà Mau,CTR_VNM,Province
+FLAD_VN_CT,Cần Thơ,CTR_VNM,Municipality
+FLAD_VN_30,Gia Lai,CTR_VNM,Province
+FLAD_VN_03,Hà Giang,CTR_VNM,Province
+FLAD_VN_63,Hà Nam,CTR_VNM,Province
+FLAD_VN_HN,Hà Nội,CTR_VNM,Municipality
+FLAD_VN_23,Hà Tĩnh,CTR_VNM,Province
+FLAD_VN_61,Hải Dương,CTR_VNM,Province
+FLAD_VN_HP,Hải Phòng,CTR_VNM,Municipality
+FLAD_VN_73,Hậu Giang,CTR_VNM,Province
+FLAD_VN_14,Hòa Bình,CTR_VNM,Province
+FLAD_VN_SG,Hồ Chí Minh,CTR_VNM,Municipality
+FLAD_VN_66,Hưng Yên,CTR_VNM,Province
+FLAD_VN_34,Khánh Hòa,CTR_VNM,Province
+FLAD_VN_47,Kiến Giang,CTR_VNM,Province
+FLAD_VN_28,Kon Tum,CTR_VNM,Province
+FLAD_VN_01,Lai Châu,CTR_VNM,Province
+FLAD_VN_02,Lào Cai,CTR_VNM,Province
+FLAD_VN_35,Lâm Đồng,CTR_VNM,Province
+FLAD_VN_09,Lạng Sơn,CTR_VNM,Province
+FLAD_VN_41,Long An,CTR_VNM,Province
+FLAD_VN_67,Nam Định,CTR_VNM,Province
+FLAD_VN_22,Nghệ An,CTR_VNM,Province
+FLAD_VN_18,Ninh Bình,CTR_VNM,Province
+FLAD_VN_36,Ninh Thuận,CTR_VNM,Province
+FLAD_VN_68,Phú Thọ,CTR_VNM,Province
+FLAD_VN_32,Phú Yên,CTR_VNM,Province
+FLAD_VN_24,Quảng Bình,CTR_VNM,Province
+FLAD_VN_27,Quảng Nam,CTR_VNM,Province
+FLAD_VN_29,Quảng Ngãi,CTR_VNM,Province
+FLAD_VN_13,Quảng Ninh,CTR_VNM,Province
+FLAD_VN_25,Quảng Trị,CTR_VNM,Province
+FLAD_VN_52,Sóc Trăng,CTR_VNM,Province
+FLAD_VN_05,Sơn La,CTR_VNM,Province
+FLAD_VN_37,Tây Ninh,CTR_VNM,Province
+FLAD_VN_21,Thanh Hóa,CTR_VNM,Province
+FLAD_VN_20,Thái Bình,CTR_VNM,Province
+FLAD_VN_69,Thái Nguyên,CTR_VNM,Province
+FLAD_VN_26,Thừa Thiên-Huế,CTR_VNM,Province
+FLAD_VN_46,Tiền Giang,CTR_VNM,Province
+FLAD_VN_51,Trà Vinh,CTR_VNM,Province
+FLAD_VN_07,Tuyên Quang,CTR_VNM,Province
+FLAD_VN_49,Vĩnh Long,CTR_VNM,Province
+FLAD_VN_70,Vĩnh Phúc,CTR_VNM,Province
+FLAD_VN_06,Yên Bái,CTR_VNM,Province
+FLAD_VN_DN,Đà Nẵng,CTR_VNM,Municipality
+FLAD_VN_33,Đắk Lắk,CTR_VNM,Province
+FLAD_VN_72,Đắk Nông,CTR_VNM,Province
+FLAD_VN_71,Điện Biên,CTR_VNM,Province
+FLAD_VN_39,Đồng Nai,CTR_VNM,Province
+FLAD_VN_45,Đồng Tháp,CTR_VNM,Province
+FLAD_WF_AL,Alo,CTR_WLF,Administrative precinct
+FLAD_WF_SG,Sigave,CTR_WLF,Administrative precinct
+FLAD_WF_UV,Uvea,CTR_WLF,Administrative precinct
+FLAD_YE_AB,Abyan,CTR_YEM,Governorate
+FLAD_YE_DA,Aḑ Ḑāli‘,CTR_YEM,Governorate
+FLAD_YE_BA,Al Bayḑā’,CTR_YEM,Governorate
+FLAD_YE_HU,Al Ḩudaydah,CTR_YEM,Governorate
+FLAD_YE_JA,Al Jawf,CTR_YEM,Governorate
+FLAD_YE_MR,Al Mahrah,CTR_YEM,Governorate
+FLAD_YE_MW,Al Maḩwīt,CTR_YEM,Governorate
+FLAD_YE_SA,Amānat al ‘Āşimah [city],CTR_YEM,Municipality
+FLAD_YE_SU,Arkhabīl Suquţrá,CTR_YEM,Governorate
+FLAD_YE_DH,Dhamār,CTR_YEM,Governorate
+FLAD_YE_HD,Ḩaḑramawt,CTR_YEM,Governorate
+FLAD_YE_HJ,Ḩajjah,CTR_YEM,Governorate
+FLAD_YE_IB,Ibb,CTR_YEM,Governorate
+FLAD_YE_LA,Laḩij,CTR_YEM,Governorate
+FLAD_YE_MA,Ma’rib,CTR_YEM,Governorate
+FLAD_YE_RA,Raymah,CTR_YEM,Governorate
+FLAD_YE_SH,Shabwah,CTR_YEM,Governorate
+FLAD_YE_SN,Şanʻā’,CTR_YEM,Governorate
+FLAD_YE_SD,Şāʻdah,CTR_YEM,Governorate
+FLAD_YE_TA,Tāʻizz,CTR_YEM,Governorate
+FLAD_YE_AD,‘Adan,CTR_YEM,Governorate
+FLAD_YE_AM,‘Amrān,CTR_YEM,Governorate
+FLAD_ZM_02,Central,CTR_ZMB,Province
+FLAD_ZM_08,Copperbelt,CTR_ZMB,Province
+FLAD_ZM_03,Eastern,CTR_ZMB,Province
+FLAD_ZM_04,Luapula,CTR_ZMB,Province
+FLAD_ZM_09,Lusaka,CTR_ZMB,Province
+FLAD_ZM_10,Muchinga,CTR_ZMB,Province
+FLAD_ZM_06,North-Western,CTR_ZMB,Province
+FLAD_ZM_05,Northern,CTR_ZMB,Province
+FLAD_ZM_07,Southern,CTR_ZMB,Province
+FLAD_ZM_01,Western,CTR_ZMB,Province
+FLAD_ZW_BU,Bulawayo,CTR_ZWE,Province
+FLAD_ZW_HA,Harare,CTR_ZWE,Province
+FLAD_ZW_MA,Manicaland,CTR_ZWE,Province
+FLAD_ZW_MC,Mashonaland Central,CTR_ZWE,Province
+FLAD_ZW_ME,Mashonaland East,CTR_ZWE,Province
+FLAD_ZW_MW,Mashonaland West,CTR_ZWE,Province
+FLAD_ZW_MV,Masvingo,CTR_ZWE,Province
+FLAD_ZW_MN,Matabeleland North,CTR_ZWE,Province
+FLAD_ZW_MS,Matabeleland South,CTR_ZWE,Province
+FLAD_ZW_MI,Midlands,CTR_ZWE,Province
