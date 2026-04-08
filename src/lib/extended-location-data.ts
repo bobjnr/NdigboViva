@@ -1,7 +1,7 @@
 // Extended Location Data for Genealogy Form hierarchies (from dropdown data CSVs)
 import dropdownData from './dropdown-data.json';
 
-const data = dropdownData as {
+const data = dropdownData as unknown as {
   continentSubContinents: { [continent: string]: string[] };
   culturalRegionsByContinent: { [continent: string]: string[] };
   geopoliticalBlocs: string[];
