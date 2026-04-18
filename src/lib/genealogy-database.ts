@@ -104,6 +104,32 @@ export interface GenealogyFormSubmission {
   originKindred?: string;
   originUmunna?: string;
 
+  // ─── Diaspora Origin (Non-Nigerian Ancestral Location) ───────────────────
+  /** Which origin path is active: 'nigerian' | 'diaspora' */
+  originType?: 'nigerian' | 'diaspora';
+  /** Country where their lineage developed outside Nigeria */
+  diasporaAncestralCountry?: string;
+  /** Region / Province / State within that country */
+  diasporaAncestralRegion?: string;
+  /** District / Parish / County */
+  diasporaAncestralDistrict?: string;
+  /** Town / City / Settlement */
+  diasporaAncestralTown?: string;
+  /** Self-declared ethnic identity */
+  diasporaEthnicIdentity?: string;
+  /** Open-ended ethnic identity text */
+  diasporaAssociatedEthnicIdentity?: string;
+  /** Migration path / narrative */
+  diasporaMigrationNarrative?: string;
+  /** Do you speak Igbo? */
+  diasporaSpeaksIgbo?: 'Yes' | 'No' | '';
+  /** Do you speak your associated ethnic language? */
+  diasporaSpeaksEthnicLanguage?: 'Yes' | 'No' | '';
+  /** Have you visited Nigeria? */
+  diasporaVisitedNigeria?: 'Yes' | 'No' | '';
+  /** Do you know your ancestral town? */
+  diasporaKnowsAncestralTown?: 'Yes' | 'No' | '';
+
   // Family Information
   kindred: string;
   familyName: string;

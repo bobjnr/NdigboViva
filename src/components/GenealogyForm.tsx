@@ -84,6 +84,20 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
     originKindred: '',
     originUmunna: '',
 
+    // Diaspora Origin fields
+    originType: 'nigerian',
+    diasporaAncestralCountry: '',
+    diasporaAncestralRegion: '',
+    diasporaAncestralDistrict: '',
+    diasporaAncestralTown: '',
+    diasporaEthnicIdentity: '',
+    diasporaAssociatedEthnicIdentity: '',
+    diasporaMigrationNarrative: '',
+    diasporaSpeaksIgbo: '',
+    diasporaSpeaksEthnicLanguage: '',
+    diasporaVisitedNigeria: '',
+    diasporaKnowsAncestralTown: '',
+
     kindred: '',
     familyName: '',
     personalName: '',
@@ -152,6 +166,10 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   const [availableAncestralRegions, setAvailableAncestralRegions] = useState<any[]>([])
   const [availableAncestralDistricts, setAvailableAncestralDistricts] = useState<any[]>([])
   const [availableAncestralTowns, setAvailableAncestralTowns] = useState<any[]>([])
+
+  // Diaspora Origin — kick off country list from diaspora-origin-data.json
+  // (loaded once; does NOT depend on isDiasporaRelative)
+  const diasporaOriginCountries: any[] = (diasporaOriginData as any).countryOfAncestralOrigin ?? []
 
   // Diaspora Residence Cascading (for DIASPORA_UNKNOWN branch)
   const [availableOriginAdmin1, setAvailableOriginAdmin1] = useState<any[]>([])
@@ -1354,8 +1372,8 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
                   >
                     <option value="">Select Citizenship Status</option>
-                    {(diasporaData?.citizenship || []).map((status: string) => (
-                      <option key={status} value={status}>{status}</option>
+                    {(diasporaData?.citizenshipStatuses || []).map((status: any) => (
+                      <option key={status.id} value={status.name}>{status.name}</option>
                     ))}
                   </select>
                 ) : (
@@ -1410,7 +1428,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                       const country = diasporaData?.countries?.[subContinent.id]?.find((c: any) => c.name.trim().toLowerCase() === formData.currentCountry?.trim().toLowerCase());
                       if (!country) return null;
                       return (diasporaData?.firstLevel?.[country.id] || []).map((flad: any) => (
-                        <option key={flad.id} value={flad.name}>{flad.name} ({flad.type})</option>
+                        <option key={flad.id} value={flad.name}>{flad.name}</option>
                       ));
                     })()}
                   </select>
@@ -1435,76 +1453,6 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                   />
                 )}
               </div>
-
-              {/* Second-Level Administrative Division */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Second-Level Administrative Division</label>
-                {(() => {
-                  if (!diasporaData) {
-                    return (
-                      <input
-                        type="text"
-                        value={formData.currentLGA || ''}
-                        onChange={(e) => handleInputChange('currentLGA', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                        placeholder="Second-level Admin"
-                      />
-                    );
-                  }
-
-                  const continent = diasporaData?.continents?.find((c: any) => c.name === formData.currentContinent);
-                  const subContinent = continent ? diasporaData?.subContinents?.[continent.id]?.find((sc: any) => sc.name === formData.currentSubContinent) : null;
-                  const country = subContinent ? diasporaData?.countries?.[subContinent.id]?.find((c: any) => c.name.trim().toLowerCase() === formData.currentCountry?.trim().toLowerCase()) : null;
-                  const flad = country ? diasporaData?.firstLevel?.[country.id]?.find((f: any) => 
-                    f.name.trim().toLowerCase() === formData.currentState?.trim().toLowerCase()
-                  ) : null;
-                  
-                  const sladOptions = flad ? (diasporaData?.secondLevel?.[flad.id] || []) : [];
-                  
-                  // Final list of options, falling back to local Nigerian data if Diaspora data is missing for Nigeria
-                  let finalSladOptions = [...sladOptions];
-                  if (finalSladOptions.length === 0 && country?.name === 'Nigeria' && flad) {
-                    const stateName = flad.name.replace(' (State)', '').trim().toLowerCase();
-                    const nigeriaState = nigerianStates.find(s => 
-                      s.state.toLowerCase() === stateName || 
-                      s.state.toLowerCase().includes(stateName)
-                    );
-                    if (nigeriaState) {
-                      finalSladOptions = nigeriaState.lgas.map(lga => ({ 
-                        id: `NGA_${lga}`, 
-                        name: lga, 
-                        type: 'LGA' 
-                      }));
-                    }
-                  }
-
-                  if (finalSladOptions.length > 0) {
-                    return (
-                      <select
-                        value={formData.currentLGA || ''}
-                        onChange={(e) => handleDiasporaLocationChange('currentLGA', e.target.value)}
-                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                      >
-                        <option value="">Select Second-Level Admin</option>
-                        {finalSladOptions.map((slad: any) => (
-                          <option key={slad.id} value={slad.name}>{slad.name} ({slad.type})</option>
-                        ))}
-                      </select>
-                    );
-                  }
-
-                  return (
-                    <input
-                      type="text"
-                      value={formData.currentLGA || ''}
-                      onChange={(e) => handleInputChange('currentLGA', e.target.value)}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                      placeholder="Second-level Admin (e.g. County, District)"
-                    />
-                  );
-                })()}
-              </div>
-
 
               {/* Town/City */}
               <div>
@@ -1534,11 +1482,22 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                   
                   // Final list of options, falling back to local Nigerian data if Diaspora data is missing for Nigeria
                   let finalCityOptions = [...cityOptions];
-                  if (finalCityOptions.length === 0 && country?.name === 'Nigeria' && availableTowns.length > 0) {
-                    finalCityOptions = availableTowns.map(town => ({
-                      id: `NGA_TOWN_${town}`,
-                      name: town
-                    }));
+                  if (finalCityOptions.length === 0 && country?.name === 'Nigeria' && flad) {
+                    const stateName = flad.name.replace(' (State)', '').trim().toLowerCase();
+                    const nigeriaState = nigerianStates.find(s => 
+                      s.state.toLowerCase() === stateName || 
+                      s.state.toLowerCase().includes(stateName)
+                    );
+                    if (nigeriaState) {
+                      // Get all LGAs for this state
+                      const lgas = nigeriaState.lgas || [];
+                      // Combine LGAs with any towns data available
+                      finalCityOptions = lgas.map((lga: string) => ({ 
+                        id: `NGA_LGA_${lga}`, 
+                        name: lga, 
+                        type: 'LGA' 
+                      }));
+                    }
                   }
 
                   if (finalCityOptions.length > 0) {
@@ -1583,9 +1542,37 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         </h3>
         <p className="text-gray-600 mb-6">Please provide details about your ancestral roots and place of origin.</p>
 
-        {/* ==========================================
+        {/* ── Origin Type Toggle (mirrors Current Location toggle) ── */}
+        <div className="bg-green-50 p-4 rounded-lg border border-green-100 mb-8">
+          <span className="block text-sm font-medium text-green-900 mb-3">What is your ancestral origin?</span>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <label className="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="radio"
+                name="originType"
+                checked={formData.originType !== 'diaspora'}
+                onChange={() => handleInputChange('originType', 'nigerian')}
+                className="text-brand-gold focus:ring-brand-gold h-4 w-4"
+              />
+              <span className="text-gray-800">Nigerian Origin</span>
+            </label>
+            <label className="flex items-center space-x-2 cursor-pointer">
+              <input
+                type="radio"
+                name="originType"
+                checked={formData.originType === 'diaspora'}
+                onChange={() => handleInputChange('originType', 'diaspora')}
+                className="text-brand-gold focus:ring-brand-gold h-4 w-4"
+              />
+              <span className="text-gray-800">Diaspora Origin</span>
+            </label>
+          </div>
+        </div>
+
+        {formData.originType !== 'diaspora' ? (
+        /* ==========================================
             NIGERIAN ORIGIN 
-           ========================================== */}
+           ========================================== */
         <div className="space-y-6">
             <h4 className="text-lg font-semibold text-gray-800 border-b pb-2">Nigerian Ancestry Details</h4>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -1602,7 +1589,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                   value={formData.originState}
                   onChange={(e) => handleInputChange('originState', e.target.value)}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                  required
+                  required={formData.originType === 'nigerian'}
                 >
                   <option value="">Select State</option>
                   {nigerianStates.map(s => <option key={s.state} value={s.state}>{s.state}</option>)}
@@ -1623,6 +1610,31 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                 </select>
               </div>
 
+              {/* Federal Constituency */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Federal Constituency</label>
+                {(() => {
+                  const stateKey = normalizeLookupKey(formData.originState)
+                  const zoneKey = normalizeLookupKey(formData.originSenatorialDistrict)
+                  const byState = stateKey ? federalConstituencies[stateKey] : undefined
+                  const byZone = stateKey && zoneKey
+                    ? federalConstituenciesByStateAndSenatorialDistrict[stateKey]?.[zoneKey]
+                    : undefined
+                  const opts = (byZone?.length ? byZone : byState) ?? []
+                  return (
+                    <select
+                      value={formData.originFederalConstituency || ''}
+                      onChange={(e) => handleInputChange('originFederalConstituency', e.target.value)}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                      disabled={!formData.originState || opts.length === 0}
+                    >
+                      <option value="">Select Federal Constituency</option>
+                      {opts.map(fc => <option key={fc} value={fc}>{fc}</option>)}
+                    </select>
+                  )
+                })()}
+              </div>
+
               {/* LGA of Origin */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">LGA of Origin *</label>
@@ -1630,12 +1642,37 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                   value={formData.originLGA}
                   onChange={(e) => handleInputChange('originLGA', e.target.value)}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                  required
+                  required={formData.originType === 'nigerian'}
                   disabled={!originLGAs.length}
                 >
                   <option value="">Select LGA</option>
                   {originLGAs.map(lga => <option key={lga} value={lga}>{lga}</option>)}
                 </select>
+              </div>
+
+              {/* State Constituency */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">State Constituency</label>
+                {(() => {
+                  const stateKey = normalizeLookupKey(formData.originState)
+                  const fedKey = normalizeLookupKey(formData.originFederalConstituency)
+                  const byState = stateKey ? stateConstituenciesByState[stateKey] : undefined
+                  const byFederal = stateKey && fedKey
+                    ? stateConstituenciesByStateAndFederalConstituency[stateKey]?.[fedKey]
+                    : undefined
+                  const opts = (byFederal?.length ? byFederal : byState) ?? []
+                  return (
+                    <select
+                      value={formData.originStateConstituency || ''}
+                      onChange={(e) => handleInputChange('originStateConstituency', e.target.value)}
+                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                      disabled={!formData.originState || opts.length === 0}
+                    >
+                      <option value="">Select State Constituency</option>
+                      {opts.map(sc => <option key={sc} value={sc}>{sc}</option>)}
+                    </select>
+                  )
+                })()}
               </div>
 
               {/* Town of Origin */}
@@ -1645,7 +1682,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                   value={formData.originTown}
                   onChange={(e) => handleInputChange('originTown', e.target.value)}
                   className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                  required
+                  required={formData.originType === 'nigerian'}
                   disabled={!originTowns.length}
                 >
                   <option value="">Select Town</option>
@@ -1715,6 +1752,271 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
               </div>
             </div>
           </div>
+        ) : (
+        /* ==========================================
+            DIASPORA ORIGIN
+           ========================================== */
+        <div className="space-y-6">
+          <h4 className="text-lg font-semibold text-gray-800 border-b pb-2">Diaspora Ancestry Details</h4>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            {/* Country of Ancestral Origin */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Country of Ancestral Origin *</label>
+              <select
+                value={formData.diasporaAncestralCountry || ''}
+                onChange={(e) => {
+                  const val = e.target.value
+                  handleInputChange('diasporaAncestralCountry', val)
+                  handleInputChange('diasporaAncestralRegion', '')
+                  handleInputChange('diasporaAncestralDistrict', '')
+                  handleInputChange('diasporaAncestralTown', '')
+                  // Populate regions for selected country
+                  const countryObj = diasporaOriginCountries.find((c: any) => c.name === val)
+                  if (countryObj) {
+                    const regions = ((diasporaOriginData as any).adminLevel1 ?? []).filter((a: any) => a.countryId === countryObj.id)
+                    setAvailableAncestralRegions(regions)
+                    setAvailableAncestralDistricts([])
+                    setAvailableAncestralTowns([])
+                  } else {
+                    setAvailableAncestralRegions([])
+                    setAvailableAncestralDistricts([])
+                    setAvailableAncestralTowns([])
+                  }
+                }}
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+              >
+                <option value="">Select Country</option>
+                {diasporaOriginCountries.map((c: any) => (
+                  <option key={c.id} value={c.name}>{c.name}</option>
+                ))}
+              </select>
+              <p className="text-xs text-gray-500 mt-1">e.g. Jamaica, Sierra Leone, United Kingdom, United States</p>
+            </div>
+
+            {/* Ancestral Region / Province / State */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Ancestral Region / Province / State</label>
+              {availableAncestralRegions.length > 0 ? (
+                <select
+                  value={formData.diasporaAncestralRegion || ''}
+                  onChange={(e) => {
+                    const val = e.target.value
+                    handleInputChange('diasporaAncestralRegion', val)
+                    handleInputChange('diasporaAncestralDistrict', '')
+                    handleInputChange('diasporaAncestralTown', '')
+                    const regionObj = availableAncestralRegions.find((r: any) => r.name === val)
+                    if (regionObj) {
+                      const districts = ((diasporaOriginData as any).adminLevel2 ?? []).filter((a: any) => a.adminLevel1Id === regionObj.id)
+                      setAvailableAncestralDistricts(districts)
+                      setAvailableAncestralTowns([])
+                    } else {
+                      setAvailableAncestralDistricts([])
+                      setAvailableAncestralTowns([])
+                    }
+                  }}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  disabled={!formData.diasporaAncestralCountry}
+                >
+                  <option value="">{formData.diasporaAncestralCountry ? 'Select Region / Province / State' : 'Select Country first'}</option>
+                  {availableAncestralRegions.map((r: any) => (
+                    <option key={r.id} value={r.name}>{r.name}</option>
+                  ))}
+                </select>
+              ) : (
+                <input
+                  type="text"
+                  value={formData.diasporaAncestralRegion || ''}
+                  onChange={(e) => handleInputChange('diasporaAncestralRegion', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  placeholder={formData.diasporaAncestralCountry ? 'Enter Region / Province / State' : 'Select Country first'}
+                  disabled={!formData.diasporaAncestralCountry}
+                />
+              )}
+            </div>
+
+            {/* District / Parish / County */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">District / Parish / County</label>
+              {availableAncestralDistricts.length > 0 ? (
+                <select
+                  value={formData.diasporaAncestralDistrict || ''}
+                  onChange={(e) => {
+                    const val = e.target.value
+                    handleInputChange('diasporaAncestralDistrict', val)
+                    handleInputChange('diasporaAncestralTown', '')
+                    const districtObj = availableAncestralDistricts.find((d: any) => d.name === val)
+                    if (districtObj) {
+                      const towns = ((diasporaOriginData as any).adminLevel3 ?? []).filter((a: any) => a.adminLevel2Id === districtObj.id)
+                      setAvailableAncestralTowns(towns)
+                    } else {
+                      setAvailableAncestralTowns([])
+                    }
+                  }}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  disabled={!formData.diasporaAncestralRegion}
+                >
+                  <option value="">{formData.diasporaAncestralRegion ? 'Select District / Parish / County' : 'Select Region first'}</option>
+                  {availableAncestralDistricts.map((d: any) => (
+                    <option key={d.id} value={d.name}>{d.name}</option>
+                  ))}
+                </select>
+              ) : (
+                <input
+                  type="text"
+                  value={formData.diasporaAncestralDistrict || ''}
+                  onChange={(e) => handleInputChange('diasporaAncestralDistrict', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  placeholder={formData.diasporaAncestralRegion ? 'Enter District / Parish / County' : 'Select Region first'}
+                  disabled={!formData.diasporaAncestralRegion}
+                />
+              )}
+            </div>
+
+            {/* Town / City / Settlement */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Town / City / Settlement</label>
+              <input
+                type="text"
+                value={formData.diasporaAncestralTown || ''}
+                onChange={(e) => handleInputChange('diasporaAncestralTown', e.target.value)}
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                placeholder={formData.diasporaAncestralCountry ? 'Enter Town / City / Settlement' : 'Select Country first'}
+                disabled={!formData.diasporaAncestralCountry}
+              />
+            </div>
+
+            {/* Ethnic Identity (Self-Declared) */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Ethnic Identity (Self-Declared)</label>
+              <select
+                value={formData.diasporaEthnicIdentity || ''}
+                onChange={(e) => handleInputChange('diasporaEthnicIdentity', e.target.value)}
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+              >
+                <option value="">Select Ethnic Identity</option>
+                <option value="Igbo">Igbo</option>
+                <option value="Igbo-descendant">Igbo-descendant</option>
+                <option value="Mixed (Igbo + other)">Mixed (Igbo + other)</option>
+                <option value="Not sure">Not sure</option>
+              </select>
+            </div>
+
+            {/* Associated Ethnic Identity - Open Ended */}
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-2">Associated Ethnic Identity (Open-ended)</label>
+              <input
+                type="text"
+                value={formData.diasporaAssociatedEthnicIdentity || ''}
+                onChange={(e) => handleInputChange('diasporaAssociatedEthnicIdentity', e.target.value)}
+                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                placeholder="e.g. Krio, Creole, Afro-Caribbean, Maroon..."
+              />
+            </div>
+
+          </div>
+
+          {/* Migration Path / Narrative */}
+          <div>
+            <label className="block text-sm font-medium text-gray-700 mb-2">Migration Path / Narrative (optional)</label>
+            <textarea
+              value={formData.diasporaMigrationNarrative || ''}
+              onChange={(e) => handleInputChange('diasporaMigrationNarrative', e.target.value)}
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold resize-y"
+              rows={3}
+              placeholder="Describe how your family migrated, e.g. 'Igbo ancestors enslaved in the 18th century, resettled in Jamaica...' or structured tags like [Nigeria → Jamaica → UK]"
+            />
+          </div>
+
+          {/* Cultural Connection Indicators */}
+          <div className="bg-amber-50 p-5 rounded-lg border border-amber-100">
+            <h5 className="text-sm font-semibold text-amber-900 mb-4">Cultural Connection Indicators</h5>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+              {/* Do you speak Igbo? */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Do you speak Igbo?</label>
+                <div className="flex gap-4">
+                  {(['Yes', 'No'] as const).map(opt => (
+                    <label key={opt} className="flex items-center gap-2 cursor-pointer">
+                      <input
+                        type="radio"
+                        name="diasporaSpeaksIgbo"
+                        value={opt}
+                        checked={formData.diasporaSpeaksIgbo === opt}
+                        onChange={() => handleInputChange('diasporaSpeaksIgbo', opt)}
+                        className="h-4 w-4 text-brand-gold focus:ring-brand-gold"
+                      />
+                      <span className="text-gray-700">{opt}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              {/* Do you speak your associated ethnic language? */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Do you speak your associated ethnic language?</label>
+                <div className="flex gap-4">
+                  {(['Yes', 'No'] as const).map(opt => (
+                    <label key={opt} className="flex items-center gap-2 cursor-pointer">
+                      <input
+                        type="radio"
+                        name="diasporaSpeaksEthnicLanguage"
+                        value={opt}
+                        checked={formData.diasporaSpeaksEthnicLanguage === opt}
+                        onChange={() => handleInputChange('diasporaSpeaksEthnicLanguage', opt)}
+                        className="h-4 w-4 text-brand-gold focus:ring-brand-gold"
+                      />
+                      <span className="text-gray-700">{opt}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              {/* Have you visited Nigeria? */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Have you visited Nigeria?</label>
+                <div className="flex gap-4">
+                  {(['Yes', 'No'] as const).map(opt => (
+                    <label key={opt} className="flex items-center gap-2 cursor-pointer">
+                      <input
+                        type="radio"
+                        name="diasporaVisitedNigeria"
+                        value={opt}
+                        checked={formData.diasporaVisitedNigeria === opt}
+                        onChange={() => handleInputChange('diasporaVisitedNigeria', opt)}
+                        className="h-4 w-4 text-brand-gold focus:ring-brand-gold"
+                      />
+                      <span className="text-gray-700">{opt}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+              {/* Do you know your ancestral town? */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Do you know your ancestral town?</label>
+                <div className="flex gap-4">
+                  {(['Yes', 'No'] as const).map(opt => (
+                    <label key={opt} className="flex items-center gap-2 cursor-pointer">
+                      <input
+                        type="radio"
+                        name="diasporaKnowsAncestralTown"
+                        value={opt}
+                        checked={formData.diasporaKnowsAncestralTown === opt}
+                        onChange={() => handleInputChange('diasporaKnowsAncestralTown', opt)}
+                        className="h-4 w-4 text-brand-gold focus:ring-brand-gold"
+                      />
+                      <span className="text-gray-700">{opt}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        )}
       </div>
 
       <div className="mb-8">
