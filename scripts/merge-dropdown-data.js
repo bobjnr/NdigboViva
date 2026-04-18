@@ -18,7 +18,7 @@ async function mergeAllDropdownData() {
     const nigerianOriginPath = path.join(libPath, 'nigerian-origin-data.json');
     const nigerianCurrentLocationPath = path.join(libPath, 'nigerian-current-location-data.json');
     const diasporaOriginPath = path.join(libPath, 'diaspora-origin-data.json');
-    const diasporaCurrentLocationPath = path.join(publicDataPath, 'diaspora-location-data.json');
+    const diasporaCurrentLocationPath = path.join(libPath, 'diaspora-location-data.json');
     
     // Read all JSON files
     const nigerianOriginData = JSON.parse(fs.readFileSync(nigerianOriginPath, 'utf8'));
@@ -132,6 +132,12 @@ async function mergeAllDropdownData() {
       JSON.stringify(diasporaOriginData, null, 2)
     );
     console.log(`✓ Saved ${path.join(publicDataPath, 'diaspora-origin-data.json')}`);
+
+    fs.writeFileSync(
+      path.join(publicDataPath, 'diaspora-location-data.json'),
+      JSON.stringify(diasporaCurrentLocationData, null, 2)
+    );
+    console.log(`✓ Saved ${path.join(publicDataPath, 'diaspora-location-data.json')}`);
 
     console.log('\n✓ All dropdown data successfully merged and committed!');
   } catch (error) {
