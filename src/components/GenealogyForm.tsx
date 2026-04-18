@@ -541,122 +541,87 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
     }
   }, [formData.originLGA, ontologyTownsOrigin.data, ontologyWardsOrigin.data])
 
-  // Deep cascading logic for Origin
-
-  // Town -> Quarter
+  // Deep cascading logic for Origin (Flattened for UI without Quarter/Obi)
   useEffect(() => {
-    if (formData.originTown && townHierarchy[formData.originTown]) {
-      const quarters = Object.keys(townHierarchy[formData.originTown].quarters)
-      setAvailableQuarters(quarters)
-      setIsManualQuarter(quarters.length === 0)
-    } else {
+    if (!formData.originTown) {
       setAvailableQuarters([])
-      setIsManualQuarter(true)
-    }
-    // Reset dependent fields if town changes (unless it's initial load/same value)
-    // Note: We might want to be careful not to clear if user is just typing in manual mode
-  }, [formData.originTown])
-
-  // Quarter -> Obi
-  useEffect(() => {
-    if (formData.originTown && formData.originTownQuarter && townHierarchy[formData.originTown]?.quarters[formData.originTownQuarter]) {
-      const obis = Object.keys(townHierarchy[formData.originTown].quarters[formData.originTownQuarter].obis)
-      setAvailableObis(obis)
-      setIsManualObi(obis.length === 0)
-    } else {
       setAvailableObis([])
+      setAvailableClans([])
+      setOriginVillages([])
+      setAvailableKindreds([])
+      setAvailableUmunnas([])
+      setIsManualQuarter(true)
       setIsManualObi(true)
+      setIsManualClan(true)
+      setIsManualVillage(true)
+      setIsManualKindred(true)
+      setIsManualUmunna(true)
+      return
     }
-  }, [formData.originTown, formData.originTownQuarter])
 
-  // Obi -> Clan
-  useEffect(() => {
-    if (formData.originTown && formData.originTownQuarter && formData.originObiAreas &&
-      townHierarchy[formData.originTown]?.quarters[formData.originTownQuarter]?.obis[formData.originObiAreas]) {
-      const clans = Object.keys(townHierarchy[formData.originTown].quarters[formData.originTownQuarter].obis[formData.originObiAreas].clans)
-      setAvailableClans(clans)
-      setIsManualClan(clans.length === 0)
+    const town = townHierarchy[formData.originTown]
+    
+    // If town exists in hierarchy json, flatten the deep structure.
+    if (town) {
+      const clansSet = new Set<string>()
+      const villagesSet = new Set<string>()
+      const kindredsSet = new Set<string>()
+      const umunnasSet = new Set<string>()
+
+      Object.values(town.quarters || {}).forEach(q => {
+        Object.values(q.obis || {}).forEach(o => {
+          Object.entries(o.clans || {}).forEach(([clanName, clanObj]) => {
+            clansSet.add(clanName)
+            if (formData.originClan && formData.originClan !== clanName) return
+
+            Object.entries(clanObj.villages || {}).forEach(([villageName, villageObj]) => {
+              villagesSet.add(villageName)
+              if (formData.originVillage && formData.originVillage !== villageName) return
+
+              Object.entries(villageObj.kindreds || {}).forEach(([kindredName, umunnaList]) => {
+                kindredsSet.add(kindredName)
+                if (formData.kindred && formData.kindred !== kindredName) return
+
+                umunnaList.forEach(u => umunnasSet.add(u))
+              })
+            })
+          })
+        })
+      })
+
+      const cArr = Array.from(clansSet)
+      const vArr = Array.from(villagesSet)
+      const kArr = Array.from(kindredsSet)
+      const uArr = Array.from(umunnasSet)
+
+      setAvailableClans(cArr)
+      setOriginVillages(vArr)
+      setAvailableKindreds(kArr)
+      setAvailableUmunnas(uArr)
+
+      setIsManualClan(cArr.length === 0)
+      setIsManualVillage(vArr.length === 0)
+      setIsManualKindred(kArr.length === 0)
+      setIsManualUmunna(uArr.length === 0)
     } else {
+      // Fallback for towns not mapped in genealogy-hierarchy.json
       setAvailableClans([])
       setIsManualClan(true)
-    }
-  }, [formData.originTown, formData.originTownQuarter, formData.originObiAreas])
+      setAvailableKindreds([])
+      setIsManualKindred(true)
+      setAvailableUmunnas([])
+      setIsManualUmunna(true)
 
-  // Clan -> Village
-  useEffect(() => {
-    if (formData.originTown && formData.originTownQuarter && formData.originObiAreas && formData.originClan &&
-      townHierarchy[formData.originTown]?.quarters[formData.originTownQuarter]?.obis[formData.originObiAreas]?.clans[formData.originClan]) {
-      const villages = Object.keys(townHierarchy[formData.originTown].quarters[formData.originTownQuarter].obis[formData.originObiAreas].clans[formData.originClan].villages)
-      setOriginVillages(villages) // Update originVillages instead of availableVillages to match existing pattern
-      setIsManualVillage(villages.length === 0)
-    } else if (formData.originTown && townsData[formData.originLGA]?.includes(formData.originTown)) {
-      // Fallback to existing flat village data if deep hierarchy path is broken/missing
-      // But only if we are not in a deep path that just happens to have no villages
-      // Actually, if we are in deep mode, we should stick to it?
-      // The user said "Filter those that are filled completely, then those that aren't, the users will fill them in the form"
-      // So if deep path fails, we fall back to manual or flat list?
-      // Existing logic uses villagesData[formData.originTown].
-      if (villagesData[formData.originTown]) {
-        setOriginVillages(villagesData[formData.originTown])
+      const flatVillages = villagesData[formData.originTown]
+      if (flatVillages && flatVillages.length > 0) {
+        setOriginVillages(flatVillages)
         setIsManualVillage(false)
       } else {
         setOriginVillages([])
         setIsManualVillage(true)
       }
-    } else {
-      setOriginVillages([])
-      setIsManualVillage(true)
     }
-  }, [formData.originTown, formData.originTownQuarter, formData.originObiAreas, formData.originClan, formData.originLGA])
-
-  // Village -> Kindred
-  useEffect(() => {
-    if (!formData.originTown) {
-      setAvailableKindreds([])
-      setIsManualKindred(true)
-      return
-    }
-
-    // Need to traverse full path to get kindreds
-    const town = townHierarchy[formData.originTown]
-    const quarter = formData.originTownQuarter ? town?.quarters[formData.originTownQuarter] : undefined
-    const obi = formData.originObiAreas ? quarter?.obis[formData.originObiAreas] : undefined
-    const clan = formData.originClan ? obi?.clans[formData.originClan] : undefined
-    const village = formData.originVillage ? clan?.villages[formData.originVillage] : undefined
-
-    if (village) {
-      const kindreds = Object.keys(village.kindreds)
-      setAvailableKindreds(kindreds)
-      setIsManualKindred(kindreds.length === 0)
-    } else {
-      setAvailableKindreds([])
-      setIsManualKindred(true)
-    }
-  }, [formData.originTown, formData.originTownQuarter, formData.originObiAreas, formData.originClan, formData.originVillage])
-
-  // Kindred -> Umunna
-  useEffect(() => {
-    if (!formData.originTown) {
-      setAvailableUmunnas([])
-      setIsManualUmunna(true)
-      return
-    }
-
-    const town = townHierarchy[formData.originTown]
-    const quarter = formData.originTownQuarter ? town?.quarters[formData.originTownQuarter] : undefined
-    const obi = formData.originObiAreas ? quarter?.obis[formData.originObiAreas] : undefined
-    const clan = formData.originClan ? obi?.clans[formData.originClan] : undefined
-    const village = formData.originVillage ? clan?.villages[formData.originVillage] : undefined
-    const umunnas = formData.kindred ? village?.kindreds[formData.kindred] : undefined
-
-    if (umunnas) {
-      setAvailableUmunnas(umunnas)
-      setIsManualUmunna(umunnas.length === 0)
-    } else {
-      setAvailableUmunnas([])
-      setIsManualUmunna(true)
-    }
-  }, [formData.originTown, formData.originTownQuarter, formData.originObiAreas, formData.originClan, formData.originVillage, formData.kindred])
+  }, [formData.originTown, formData.originClan, formData.originVillage, formData.kindred])
 
   // ── CSV-driven cascades ──────────────────────────────────────────────────
 
