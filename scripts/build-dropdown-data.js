@@ -7,7 +7,7 @@
 const fs = require('fs');
 const path = require('path');
 
-const DROPDOWN_DIR = path.join(__dirname, '..', 'dropdown data');
+const DROPDOWN_DIR = path.join(__dirname, '..', 'docs', 'dropdown data');
 const OUT_FILE = path.join(__dirname, '..', 'src', 'lib', 'dropdown-data.json');
 
 function parseCsv(filePath) {
