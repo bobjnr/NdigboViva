@@ -28,6 +28,11 @@ function parseCsv(filePath) {
   return rows;
 }
 
+function pushUnique(target, value) {
+  if (!value) return;
+  if (!target.includes(value)) target.push(value);
+}
+
 function main() {
   const continents = parseCsv(path.join(DROPDOWN_DIR, 'continents.csv'));
   const countries = parseCsv(path.join(DROPDOWN_DIR, 'countries.csv'));
@@ -257,7 +262,7 @@ function main() {
     const stateName = getStateName(state_id);
     if (!stateName) { console.warn('Unknown state_id in senatorial_districts:', state_id); return; }
     if (!senatorialDistricts[stateName]) senatorialDistricts[stateName] = [];
-    senatorialDistricts[stateName].push(name);
+    pushUnique(senatorialDistricts[stateName], name);
   });
   Object.keys(senatorialDistricts).forEach((s) => { senatorialDistricts[s].sort(); });
 
@@ -279,12 +284,12 @@ function main() {
     const stateName = getStateName(state_id);
     if (!stateName) { console.warn('Unknown state_id in federal_constituencies:', state_id); return; }
     if (!federalConstituencies[stateName]) federalConstituencies[stateName] = [];
-    federalConstituencies[stateName].push(name);
+    pushUnique(federalConstituencies[stateName], name);
     const zoneName = s_id ? senatorialZoneById[s_id] : null;
     if (zoneName) {
       if (!federalConstituenciesByStateAndSenatorialDistrict[stateName]) federalConstituenciesByStateAndSenatorialDistrict[stateName] = {};
       if (!federalConstituenciesByStateAndSenatorialDistrict[stateName][zoneName]) federalConstituenciesByStateAndSenatorialDistrict[stateName][zoneName] = [];
-      federalConstituenciesByStateAndSenatorialDistrict[stateName][zoneName].push(name);
+      pushUnique(federalConstituenciesByStateAndSenatorialDistrict[stateName][zoneName], name);
     }
   });
   Object.keys(federalConstituencies).forEach((s) => { federalConstituencies[s].sort(); });
@@ -305,12 +310,12 @@ function main() {
     const stateName = getStateName(state_id);
     if (!stateName) { console.warn('Unknown state_id in state_constituencies:', state_id); return; }
     if (!stateConstituenciesByState[stateName]) stateConstituenciesByState[stateName] = [];
-    stateConstituenciesByState[stateName].push(name);
+    pushUnique(stateConstituenciesByState[stateName], name);
     const federalName = f_id ? federalById[f_id] : null;
     if (federalName) {
       if (!stateConstituenciesByStateAndFederalConstituency[stateName]) stateConstituenciesByStateAndFederalConstituency[stateName] = {};
       if (!stateConstituenciesByStateAndFederalConstituency[stateName][federalName]) stateConstituenciesByStateAndFederalConstituency[stateName][federalName] = [];
-      stateConstituenciesByStateAndFederalConstituency[stateName][federalName].push(name);
+      pushUnique(stateConstituenciesByStateAndFederalConstituency[stateName][federalName], name);
     }
   });
   Object.keys(stateConstituenciesByState).forEach((s) => { stateConstituenciesByState[s].sort(); });

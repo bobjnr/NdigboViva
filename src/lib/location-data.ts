@@ -2,6 +2,8 @@ import genealogyHierarchy from './genealogy-hierarchy.json';
 import townsByLga from './towns-by-lga.json';
 import worldLocations from './world-locations.json';
 import dropdownData from './dropdown-data.json';
+import csvDropdownData from './csv-dropdown-data.json';
+import nigerianLocationFallback from './nigerian-location-fallback.json';
 
 // Nigerian States and their LGAs data structure
 export interface LocationData {
@@ -48,14 +50,72 @@ export interface GenealogyHierarchy {
   [town: string]: HierarchyTown;
 }
 
+type NigerianFallbackData = {
+  stateLgas: { [state: string]: string[] };
+  townsByLga: { [lga: string]: string[] };
+};
+
+const fallbackData = nigerianLocationFallback as NigerianFallbackData;
+
+function mergeUniqueStrings(...lists: Array<string[] | undefined>): string[] {
+  const seen = new Set<string>();
+  const merged: string[] = [];
+
+  for (const list of lists) {
+    for (const item of list ?? []) {
+      const normalized = item.trim().toLowerCase();
+      if (!normalized || seen.has(normalized)) continue;
+      seen.add(normalized);
+      merged.push(item);
+    }
+  }
+
+  return merged.sort((a, b) => a.localeCompare(b));
+}
+
+function mergeStateLocations(
+  baseStates: LocationData[],
+  fallbackStates: { [state: string]: string[] }
+): LocationData[] {
+  const byState = new Map<string, string[]>();
+
+  for (const state of baseStates) {
+    byState.set(state.state, mergeUniqueStrings(state.lgas));
+  }
+
+  for (const [stateName, fallbackLgas] of Object.entries(fallbackStates)) {
+    const existing = byState.get(stateName) ?? [];
+    byState.set(
+      stateName,
+      existing.length > 0 ? mergeUniqueStrings(existing, fallbackLgas) : mergeUniqueStrings(fallbackLgas)
+    );
+  }
+
+  return Array.from(byState.entries())
+    .map(([state, lgas]) => ({ state, lgas }))
+    .sort((a, b) => a.state.localeCompare(b.state));
+}
+
 export const townHierarchy: GenealogyHierarchy = genealogyHierarchy as unknown as GenealogyHierarchy;
 
-// Nigerian States with their LGAs (from dropdown data CSVs)
-export const nigerianStates: LocationData[] = (dropdownData as { nigerianStates: LocationData[] }).nigerianStates;
+// Nigerian States with their LGAs.
+// Use the curated dropdown data first, then backfill missing or incomplete states from
+// the nationwide current-location CSV-derived fallback dataset.
+export const nigerianStates: LocationData[] = mergeStateLocations(
+  (dropdownData as { nigerianStates: LocationData[] }).nigerianStates,
+  fallbackData.stateLgas
+);
 
-// Towns by LGA only. Do not use wards as towns — Town dropdown must show towns, not political wards.
-// LGAs not in this list will get an empty Town dropdown (form falls back to free-text input).
-export const townsData: { [lga: string]: string[] } = { ...(townsByLga as { [lga: string]: string[] }) };
+// Towns by LGA.
+// Order of precedence:
+// 1. Fallback nationwide current-location data
+// 2. Legacy towns-by-lga map
+// 3. Curated towns.csv-derived map
+export const townsData: { [lga: string]: string[] } = {
+  ...(fallbackData.townsByLga ?? {}),
+  ...(townsByLga as { [lga: string]: string[] }),
+  ...((csvDropdownData as { townsByLgaName: { [lga: string]: string[] } }).townsByLgaName ?? {}),
+};
 
 // Political wards by LGA (from dropdown data CSVs)
 export const wardsData: { [lga: string]: string[] } = { ...(dropdownData as { wardsData: { [lga: string]: string[] } }).wardsData };

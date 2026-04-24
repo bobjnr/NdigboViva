@@ -66,7 +66,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} ${playfair.variable} font-sans antialiased`}>
+      <body
+        suppressHydrationWarning
+        className={`${inter.variable} ${playfair.variable} font-sans antialiased`}
+      >
         <GoogleAnalytics />
         <SessionProvider>
           <Providers>

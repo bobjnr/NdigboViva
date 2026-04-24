@@ -289,6 +289,44 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   const normalizeLookupKey = (v: string | null | undefined): string =>
     (v ?? '').replace(/\s+/g, ' ').trim()
 
+  const mergeOptionLists = (...lists: Array<string[] | undefined>): string[] => {
+    const seen = new Set<string>()
+    const merged: string[] = []
+
+    for (const list of lists) {
+      for (const item of list ?? []) {
+        const normalized = normalizeLookupKey(item).toLowerCase()
+        if (!normalized || seen.has(normalized)) continue
+        seen.add(normalized)
+        merged.push(item)
+      }
+    }
+
+    return merged
+  }
+
+  const getMappedOptions = (map: { [key: string]: string[] }, key: string): string[] => {
+    const exact = map[key]
+    if (exact?.length) return exact
+
+    const normalizedKey = normalizeLookupKey(key).toLowerCase()
+    const matchedEntry = Object.entries(map).find(
+      ([candidate]) => normalizeLookupKey(candidate).toLowerCase() === normalizedKey
+    )
+    if (matchedEntry?.[1]?.length) return matchedEntry[1]
+
+    const compactKey = normalizedKey.replace(/[^a-z0-9]/g, '')
+    const fuzzyMatch = Object.entries(map).find(([candidate]) => {
+      const compactCandidate = normalizeLookupKey(candidate).toLowerCase().replace(/[^a-z0-9]/g, '')
+      return compactCandidate.includes(compactKey) || compactKey.includes(compactCandidate)
+    })
+
+    return fuzzyMatch?.[1] ?? []
+  }
+
+  const getUniqueOptions = (options: string[] | undefined): string[] =>
+    mergeOptionLists(options)
+
   const mergeLocationStateLists = (...lists: LocationData[]): LocationData[] => {
     const byName = new Map<string, LocationData>()
     for (const item of lists) {
@@ -402,13 +440,11 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   // Auto-fill logic for current location (LGA list from ontology or static)
   useEffect(() => {
     if (formData.currentState) {
-      const stateName = (formData.currentState.toLowerCase() === 'abuja' || formData.currentState.toLowerCase() === 'fct') ? 'FCT' : formData.currentState;
-      if (ontologyStates.data?.length && ontologyLgasCurrent.data) {
-        setAvailableLGAs(ontologyLgasCurrent.data.map((e) => e.displayName || e.name))
-      } else {
-        const stateData = availableStates.find((state) => state.state === stateName) || nigerianStates.find((state) => state.state === stateName)
-        setAvailableLGAs(stateData?.lgas ?? [])
-      }
+      const stateName = (formData.currentState.toLowerCase() === 'abuja' || formData.currentState.toLowerCase() === 'fct') ? 'FCT Abuja' : formData.currentState;
+      const stateData = availableStates.find((state) => state.state === stateName) || nigerianStates.find((state) => state.state === stateName)
+      const staticLgas = stateData?.lgas ?? []
+      const ontologyLgas = ontologyLgasCurrent.data?.map((e) => e.displayName || e.name) ?? []
+      setAvailableLGAs(mergeOptionLists(staticLgas, ontologyLgas))
       setFormData(prev => ({
         ...prev,
         currentLGA: '',
@@ -425,13 +461,13 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
 
   useEffect(() => {
     if (formData.currentLGA) {
-      if (ontologyTownsCurrent.data?.length || ontologyWardsCurrent.data?.length) {
-        setAvailableTowns(ontologyTownsCurrent.data?.map((e) => e.displayName || e.name) ?? [])
-        setAvailableWards(ontologyWardsCurrent.data?.map((e) => e.displayName || e.name) ?? [])
-      } else {
-        setAvailableTowns(townsData[formData.currentLGA] ?? [])
-        setAvailableWards(wardsData[formData.currentLGA] ?? [])
-      }
+      const staticTowns = getMappedOptions(townsData, formData.currentLGA)
+      const staticWards = getMappedOptions(wardsData, formData.currentLGA)
+      const ontologyTowns = ontologyTownsCurrent.data?.map((e) => e.displayName || e.name) ?? []
+      const ontologyWards = ontologyWardsCurrent.data?.map((e) => e.displayName || e.name) ?? []
+
+      setAvailableTowns(mergeOptionLists(staticTowns, ontologyTowns))
+      setAvailableWards(mergeOptionLists(staticWards, ontologyWards))
       setFormData(prev => ({ ...prev, currentTown: '', currentVillage: '', currentPoliticalWard: '' }))
     } else {
       setAvailableTowns([])
@@ -515,25 +551,23 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         originFederalConstituency: '',
         originStateConstituency: ''
       }))
-      if (ontologyStates.data?.length && ontologyLgasOrigin.data) {
-        setOriginLGAs(ontologyLgasOrigin.data.map((e) => e.displayName || e.name))
-      } else {
-        const stateData = nigerianStates.find((state) => state.state === formData.originState)
-        if (stateData) setOriginLGAs(stateData.lgas)
-      }
+      const stateData = nigerianStates.find((state) => state.state === formData.originState)
+      const staticLgas = stateData?.lgas ?? []
+      const ontologyLgas = ontologyLgasOrigin.data?.map((e) => e.displayName || e.name) ?? []
+      setOriginLGAs(mergeOptionLists(staticLgas, ontologyLgas))
       setFormData(prev => ({ ...prev, originLGA: '', originTown: '', originVillage: '' }))
     }
   }, [formData.originState, ontologyStates.data, ontologyLgasOrigin.data])
 
   useEffect(() => {
     if (formData.originLGA) {
-      if (ontologyTownsOrigin.data?.length || ontologyWardsOrigin.data?.length) {
-        setOriginTowns(ontologyTownsOrigin.data?.map((e) => e.displayName || e.name) ?? [])
-        setOriginWards(ontologyWardsOrigin.data?.map((e) => e.displayName || e.name) ?? [])
-      } else {
-        setOriginTowns(townsData[formData.originLGA] ?? [])
-        setOriginWards(wardsData[formData.originLGA] ?? [])
-      }
+      const staticTowns = getMappedOptions(townsData, formData.originLGA)
+      const staticWards = getMappedOptions(wardsData, formData.originLGA)
+      const ontologyTowns = ontologyTownsOrigin.data?.map((e) => e.displayName || e.name) ?? []
+      const ontologyWards = ontologyWardsOrigin.data?.map((e) => e.displayName || e.name) ?? []
+
+      setOriginTowns(mergeOptionLists(staticTowns, ontologyTowns))
+      setOriginWards(mergeOptionLists(staticWards, ontologyWards))
       setFormData(prev => ({ ...prev, originTown: '', originVillage: '', originWard: '' }))
     } else {
       setOriginTowns([])
@@ -1131,14 +1165,14 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                   <option value="">Select Senatorial District</option>
                   {(() => {
                     const districts = formData.currentState && senatorialDistricts[formData.currentState]
-                      ? senatorialDistricts[formData.currentState]
+                      ? getUniqueOptions(senatorialDistricts[formData.currentState])
                       : (formData.currentState ? [
                         `${formData.currentState} North`,
                         `${formData.currentState} South`,
                         `${formData.currentState} Central`
                       ] : []);
 
-                    return districts.map(sd => <option key={sd} value={sd}>{sd}</option>);
+                    return districts.map((sd, index) => <option key={`${sd}-${index}`} value={sd}>{sd}</option>);
                   })()}
                 </select>
               </div>
@@ -1153,7 +1187,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                   const byZone = stateKey && zoneKey
                     ? federalConstituenciesByStateAndSenatorialDistrict[stateKey]?.[zoneKey]
                     : undefined
-                  const options = (byZone?.length ? byZone : byState) ?? []
+                  const options = getUniqueOptions((byZone?.length ? byZone : byState) ?? [])
                   return (
                     <select
                       value={formData.currentFederalConstituency || ''}
@@ -1168,7 +1202,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                       ) : (
                         <>
                           <option value="">Select Federal Constituency</option>
-                          {options.map(fc => <option key={fc} value={fc}>{fc}</option>)}
+                          {options.map((fc, index) => <option key={`${fc}-${index}`} value={fc}>{fc}</option>)}
                         </>
                       )}
                     </select>
@@ -1206,7 +1240,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                   const byFederal = stateKey && fedKey
                     ? stateConstituenciesByStateAndFederalConstituency[stateKey]?.[fedKey]
                     : undefined
-                  const options = (byFederal?.length ? byFederal : byState) ?? []
+                  const options = getUniqueOptions((byFederal?.length ? byFederal : byState) ?? [])
                   return (
                     <select
                       value={formData.currentStateConstituency || ''}
@@ -1221,7 +1255,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                       ) : (
                         <>
                           <option value="">Select State Constituency</option>
-                          {options.map(sc => <option key={sc} value={sc}>{sc}</option>)}
+                          {options.map((sc, index) => <option key={`${sc}-${index}`} value={sc}>{sc}</option>)}
                         </>
                       )}
                     </select>
@@ -1571,7 +1605,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                   disabled={!formData.originState}
                 >
                   <option value="">Select Senatorial District</option>
-                  {(senatorialDistricts[formData.originState] ?? []).map(sd => <option key={sd} value={sd}>{sd}</option>)}
+                  {getUniqueOptions(senatorialDistricts[formData.originState] ?? []).map((sd, index) => <option key={`${sd}-${index}`} value={sd}>{sd}</option>)}
                 </select>
               </div>
 
@@ -1585,7 +1619,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                   const byZone = stateKey && zoneKey
                     ? federalConstituenciesByStateAndSenatorialDistrict[stateKey]?.[zoneKey]
                     : undefined
-                  const opts = (byZone?.length ? byZone : byState) ?? []
+                  const opts = getUniqueOptions((byZone?.length ? byZone : byState) ?? [])
                   return (
                     <select
                       value={formData.originFederalConstituency || ''}
@@ -1594,7 +1628,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                       disabled={!formData.originState || opts.length === 0}
                     >
                       <option value="">Select Federal Constituency</option>
-                      {opts.map(fc => <option key={fc} value={fc}>{fc}</option>)}
+                      {opts.map((fc, index) => <option key={`${fc}-${index}`} value={fc}>{fc}</option>)}
                     </select>
                   )
                 })()}
@@ -1625,7 +1659,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                   const byFederal = stateKey && fedKey
                     ? stateConstituenciesByStateAndFederalConstituency[stateKey]?.[fedKey]
                     : undefined
-                  const opts = (byFederal?.length ? byFederal : byState) ?? []
+                  const opts = getUniqueOptions((byFederal?.length ? byFederal : byState) ?? [])
                   return (
                     <select
                       value={formData.originStateConstituency || ''}
@@ -1634,7 +1668,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                       disabled={!formData.originState || opts.length === 0}
                     >
                       <option value="">Select State Constituency</option>
-                      {opts.map(sc => <option key={sc} value={sc}>{sc}</option>)}
+                      {opts.map((sc, index) => <option key={`${sc}-${index}`} value={sc}>{sc}</option>)}
                     </select>
                   )
                 })()}
