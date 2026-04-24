@@ -9,6 +9,7 @@ const path = require('path');
 
 const DROPDOWN_DIR = path.join(__dirname, '..', 'docs', 'dropdown data');
 const OUT_FILE = path.join(__dirname, '..', 'src', 'lib', 'dropdown-data.json');
+const NIGERIAN_FALLBACK_FILE = path.join(__dirname, '..', 'src', 'lib', 'nigerian-location-fallback.json');
 
 function parseCsv(filePath) {
   const text = fs.readFileSync(filePath, 'utf8');
@@ -33,6 +34,18 @@ function pushUnique(target, value) {
   if (!target.includes(value)) target.push(value);
 }
 
+function normalizeName(value) {
+  return (value || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+}
+
+function toTitleCaseFromId(value) {
+  return (value || '')
+    .split('_')
+    .filter(Boolean)
+    .map((part) => part.charAt(0).toUpperCase() + part.slice(1).toLowerCase())
+    .join(' ');
+}
+
 function main() {
   const continents = parseCsv(path.join(DROPDOWN_DIR, 'continents.csv'));
   const countries = parseCsv(path.join(DROPDOWN_DIR, 'countries.csv'));
@@ -45,6 +58,7 @@ function main() {
   const economicRegions = parseCsv(path.join(DROPDOWN_DIR, 'economicRegions.csv'));
   const culturalRegions = parseCsv(path.join(DROPDOWN_DIR, 'culturalRegions.csv'));
   const geopoliticalBlocs = parseCsv(path.join(DROPDOWN_DIR, 'geopoliticalBlocs.csv'));
+  const nigerianFallback = JSON.parse(fs.readFileSync(NIGERIAN_FALLBACK_FILE, 'utf8'));
 
   // ── COMPLETE mapping of ST_XX codes → state name (all 36 states + FCT) ──
   // This is required because senatorial_districts.csv, federal_constituencies.csv,
@@ -56,10 +70,12 @@ function main() {
     ST_AK: 'Akwa Ibom',
     ST_AN: 'Anambra',
     ST_BA: 'Bauchi',
+    ST_BN: 'Benue',
     ST_BY: 'Bayelsa',
     ST_BE: 'Benue',
     ST_BO: 'Borno',
     ST_CR: 'Cross River',
+    ST_DT: 'Delta',
     ST_DE: 'Delta',
     ST_EB: 'Ebonyi',
     ST_ED: 'Edo',
@@ -67,14 +83,18 @@ function main() {
     ST_EN: 'Enugu',
     ST_GO: 'Gombe',
     ST_IM: 'Imo',
+    ST_JG: 'Jigawa',
     ST_JI: 'Jigawa',
     ST_KD: 'Kaduna',
     ST_KN: 'Kano',
     ST_KT: 'Katsina',
+    ST_KB: 'Kebbi',
     ST_KE: 'Kebbi',
+    ST_KG: 'Kogi',
     ST_KO: 'Kogi',
     ST_KW: 'Kwara',
     ST_LA: 'Lagos',
+    ST_NG: 'Niger',
     ST_NA: 'Nasarawa',
     ST_NI: 'Niger',
     ST_OG: 'Ogun',
@@ -82,10 +102,13 @@ function main() {
     ST_OS: 'Osun',
     ST_OY: 'Oyo',
     ST_PL: 'Plateau',
+    ST_RV: 'Rivers',
     ST_RI: 'Rivers',
+    ST_SK: 'Sokoto',
     ST_SO: 'Sokoto',
     ST_TA: 'Taraba',
     ST_YO: 'Yobe',
+    ST_ZF: 'Zamfara',
     ST_ZA: 'Zamfara',
     ST_FC: 'FCT Abuja',
   };
@@ -151,9 +174,52 @@ function main() {
 
   // LGA lookup by ID (snake_case as in lgas.csv)
   const lgaById = {};
+  const lgaByNormalizedName = {};
+  const lgaByStateSnakeAndNormalizedName = {};
   lgas.forEach((l) => {
     if (l.id) lgaById[l.id.toLowerCase()] = l.name;
+    const normalized = normalizeName(l.name);
+    if (normalized) lgaByNormalizedName[normalized] = l.name;
+    if (l.stateId && normalized) {
+      const stateSnake = l.stateId.toLowerCase();
+      if (!lgaByStateSnakeAndNormalizedName[stateSnake]) lgaByStateSnakeAndNormalizedName[stateSnake] = {};
+      lgaByStateSnakeAndNormalizedName[stateSnake][normalized] = l.name;
+    }
   });
+  Object.entries(nigerianFallback.stateLgas || {}).forEach(([stateName, lgaNames]) => {
+    const stateSnake = Object.keys(STATE_SNAKE_TO_NAME).find((key) => STATE_SNAKE_TO_NAME[key] === stateName);
+    (lgaNames || []).forEach((lgaName) => {
+      const normalized = normalizeName(lgaName);
+      if (!normalized) return;
+      if (!lgaByNormalizedName[normalized]) lgaByNormalizedName[normalized] = lgaName;
+      if (stateSnake) {
+        if (!lgaByStateSnakeAndNormalizedName[stateSnake]) lgaByStateSnakeAndNormalizedName[stateSnake] = {};
+        if (!lgaByStateSnakeAndNormalizedName[stateSnake][normalized]) {
+          lgaByStateSnakeAndNormalizedName[stateSnake][normalized] = lgaName;
+        }
+      }
+    });
+  });
+
+  const LGA_NAME_ALIASES = {
+    osisioma: 'Osisioma Ngwa',
+    akamkpa: 'Akampka',
+    izzi: 'Izzi',
+    ohaozara: 'Ohaozara',
+    udenu: 'Udenu',
+    ezinihitte: 'Ezinihitte Mbaise',
+    obioakpor: 'Obio/Akpor',
+    ogbaegbemandoni: 'Ogba/Egbema/Ndoni',
+    ogubolo: 'Ogu/Bolo',
+    opobonkoro: 'Opobo/Nkoro',
+    aboaodual: 'Aboa/Odual',
+    ahodaeast: 'Ahoda East',
+    ahodawest: 'Ahoda West',
+    mopamuro: 'Mopa Muro',
+    ogorimagongo: 'Ogori/Magongo',
+    ibesiikpoasutan: 'Ibesikpo Asutan',
+    nsitubiumeast: 'Nsit Ubium East',
+  };
 
   // Wards reference LGAs using the LGA_AB_ABA_NORTH format.
   // Convert: LGA_AB_ABA_NORTH → lga_id prefix "ab" → map "ab" to state code "ST_AB"
@@ -182,8 +248,18 @@ function main() {
       if (stateSnake) {
         const candidate = `${stateSnake}_${m[2]}`;
         if (lgaById[candidate]) return lgaById[candidate];
+
+        const normalizedDerivedName = normalizeName(toTitleCaseFromId(m[2]));
+        const stateScopedMatch = lgaByStateSnakeAndNormalizedName[stateSnake]?.[normalizedDerivedName];
+        if (stateScopedMatch) return stateScopedMatch;
+
+        const aliasedName = LGA_NAME_ALIASES[normalizedDerivedName];
+        if (aliasedName) return aliasedName;
       }
     }
+    const fallbackName = normalizeName(toTitleCaseFromId(lower.replace(/^lga_[a-z]{2}_/, '')));
+    if (lgaByNormalizedName[fallbackName]) return lgaByNormalizedName[fallbackName];
+    if (LGA_NAME_ALIASES[fallbackName]) return LGA_NAME_ALIASES[fallbackName];
     return null;
   }
 

@@ -30,10 +30,27 @@ import {
   stateConstituenciesByStateAndFederalConstituency
 } from '@/lib/extended-location-data'
 import { PersonFormSubmission, Gender, SourceType, VerificationLevel, VisibilitySetting } from '@/lib/person-schema'
+import type { OntologyEntity } from '@/lib/ontology-types'
 import { useOntologyChildren } from '@/lib/use-ontology-children'
 import { MapPin, User, Mail, Phone, FileText, ArrowRight, CheckCircle, ChevronDown, ChevronUp, Award, Calendar, Shield, Globe, Trash2, Plus } from 'lucide-react'
 interface GenealogyFormProps {
   onSubmit: (data: GenealogyFormSubmission) => void
+}
+
+function normalizeOntologyLabel(value: string | null | undefined): string {
+  return (value ?? '').replace(/\s+/g, ' ').trim().toLowerCase()
+}
+
+function getOntologyEntityLabel(entity: OntologyEntity): string {
+  return entity.displayName || entity.name
+}
+
+function findOntologyEntityByLabel(entities: OntologyEntity[], value: string | null | undefined): OntologyEntity | null {
+  const normalizedValue = normalizeOntologyLabel(value)
+  if (!normalizedValue) return null
+  return (
+    entities.find((entity) => normalizeOntologyLabel(getOntologyEntityLabel(entity)) === normalizedValue) ?? null
+  )
 }
 
 export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
@@ -120,7 +137,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   const [availableVillages, setAvailableVillages] = useState<string[]>([])
 
   // Ontology (Firestore) data for dropdowns — used when political data has been imported
-  const useOntologyForNigeria = formData.currentCountry === 'Nigeria'
+  const useOntologyForNigeria = formData.currentCountry === 'Nigeria' || formData.originType !== 'diaspora'
   const ontologyStates = useOntologyChildren(useOntologyForNigeria ? 'CO-NGA' : null, 'STATE')
   const currentStateId = ontologyStates.data?.find((e) => (e.displayName || e.name) === formData.currentState)?.id ?? null
   const ontologyLgasCurrent = useOntologyChildren(currentStateId, 'LGA')
@@ -132,6 +149,32 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   const originLgaId = ontologyLgasOrigin.data?.find((e) => (e.displayName || e.name) === formData.originLGA)?.id ?? null
   const ontologyWardsOrigin = useOntologyChildren(originLgaId, 'WARD')
   const ontologyTownsOrigin = useOntologyChildren(originLgaId, 'TOWN')
+  const originTownEntity = findOntologyEntityByLabel(ontologyTownsOrigin.data, formData.originTown)
+  const originTownId = originTownEntity?.id ?? null
+  const ontologyClansOrigin = useOntologyChildren(originTownId, 'CLAN')
+  const originClanEntity = findOntologyEntityByLabel(ontologyClansOrigin.data, formData.originClan)
+  const originClanId = originClanEntity?.id ?? null
+  const ontologyVillagesOrigin = useOntologyChildren(originClanId, 'VILLAGE')
+  const originVillageEntity = findOntologyEntityByLabel(ontologyVillagesOrigin.data, formData.originVillage)
+  const originVillageId = originVillageEntity?.id ?? null
+  const ontologyHamletsOrigin = useOntologyChildren(originVillageId, 'HAMLET')
+  const ontologyVillageKindredsOrigin = useOntologyChildren(originVillageId, 'KINDRED')
+  const originHamletEntity = findOntologyEntityByLabel(ontologyHamletsOrigin.data, formData.originHamlet)
+  const originHamletId = originHamletEntity?.id ?? null
+  const ontologyKindredsOrigin = useOntologyChildren(originHamletId, 'KINDRED')
+  const selectedKindredValue = formData.kindred || formData.originKindred || ''
+  const originKindredEntity =
+    findOntologyEntityByLabel(ontologyKindredsOrigin.data, selectedKindredValue) ??
+    findOntologyEntityByLabel(ontologyVillageKindredsOrigin.data, selectedKindredValue)
+  const originKindredId = originKindredEntity?.id ?? null
+  const ontologyExtendedFamiliesOrigin = useOntologyChildren(originKindredId, 'EXTENDED_FAMILY')
+  const selectedExtendedFamilyValue = formData.umunna || formData.originUmunna || ''
+  const originExtendedFamilyEntity = findOntologyEntityByLabel(
+    ontologyExtendedFamiliesOrigin.data,
+    selectedExtendedFamilyValue
+  )
+  const originExtendedFamilyId = originExtendedFamilyEntity?.id ?? null
+  const originWardEntity = findOntologyEntityByLabel(ontologyWardsOrigin.data, formData.originWard)
 
   // Deep hierarchy state (genealogy-hierarchy.json based)
   const [availableQuarters, setAvailableQuarters] = useState<string[]>([])
@@ -730,6 +773,105 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
     }
   }, [formData.kindred])
 
+  // Ontology-driven deep origin cascade overrides legacy JSON/CSV sources when present.
+  useEffect(() => {
+    const ontologyClans = getUniqueOptions(ontologyClansOrigin.data?.map(getOntologyEntityLabel))
+    if (ontologyClans.length > 0) {
+      setAvailableClans(ontologyClans)
+      setIsManualClan(false)
+    }
+  }, [ontologyClansOrigin.data])
+
+  useEffect(() => {
+    const ontologyVillages = getUniqueOptions(ontologyVillagesOrigin.data?.map(getOntologyEntityLabel))
+    if (ontologyVillages.length > 0) {
+      setOriginVillages(ontologyVillages)
+      setIsManualVillage(false)
+    }
+  }, [ontologyVillagesOrigin.data])
+
+  useEffect(() => {
+    const ontologyHamlets = getUniqueOptions(ontologyHamletsOrigin.data?.map(getOntologyEntityLabel))
+    if (ontologyHamlets.length > 0) {
+      setAvailableHamlets(ontologyHamlets)
+      setIsManualHamlet(false)
+    }
+  }, [ontologyHamletsOrigin.data])
+
+  useEffect(() => {
+    const ontologyKindreds = getUniqueOptions(
+      (formData.originHamlet ? ontologyKindredsOrigin.data : ontologyVillageKindredsOrigin.data).map(getOntologyEntityLabel)
+    )
+    if (ontologyKindreds.length > 0) {
+      setAvailableKindreds(ontologyKindreds)
+      setIsManualKindred(false)
+    }
+  }, [formData.originHamlet, ontologyKindredsOrigin.data, ontologyVillageKindredsOrigin.data])
+
+  useEffect(() => {
+    const ontologyExtendedFamilies = getUniqueOptions(
+      ontologyExtendedFamiliesOrigin.data?.map(getOntologyEntityLabel)
+    )
+    if (ontologyExtendedFamilies.length > 0) {
+      setAvailableUmunnas(ontologyExtendedFamilies)
+      setIsManualUmunna(false)
+    }
+  }, [ontologyExtendedFamiliesOrigin.data])
+
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      originClan: '',
+      originVillage: '',
+      originHamlet: '',
+      kindred: '',
+      originKindred: '',
+      umunna: '',
+      originUmunna: '',
+    }))
+  }, [formData.originTown])
+
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      originVillage: '',
+      originHamlet: '',
+      kindred: '',
+      originKindred: '',
+      umunna: '',
+      originUmunna: '',
+    }))
+  }, [formData.originClan])
+
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      originHamlet: '',
+      kindred: '',
+      originKindred: '',
+      umunna: '',
+      originUmunna: '',
+    }))
+  }, [formData.originVillage])
+
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      kindred: '',
+      originKindred: '',
+      umunna: '',
+      originUmunna: '',
+    }))
+  }, [formData.originHamlet])
+
+  useEffect(() => {
+    setFormData((prev) => ({
+      ...prev,
+      umunna: '',
+      originUmunna: '',
+    }))
+  }, [formData.kindred])
+
   const handleInputChange = (field: keyof GenealogyFormSubmission, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }))
   }
@@ -842,6 +984,15 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         originHamlet: formData.originHamlet,
         originKindred: formData.kindred, 
         originUmunna: formData.umunna,
+        originStateId: originStateId || undefined,
+        originLgaId: originLgaId || undefined,
+        originTownId: originTownId || undefined,
+        originWardId: originWardEntity?.id,
+        originClanId: originClanId || undefined,
+        originVillageId: originVillageId || undefined,
+        originHamletId: originHamletId || undefined,
+        originKindredId: originKindredId || undefined,
+        originExtendedFamilyId: originExtendedFamilyId || undefined,
 
         // Parents
         fatherName: formData.fatherName,
@@ -1703,30 +1854,6 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                 </select>
               </div>
 
-              {/* Village */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Village (Ogbe)</label>
-                {originVillages.length > 0 && !isManualVillage ? (
-                  <select
-                    value={formData.originVillage}
-                    onChange={(e) => e.target.value === 'OTHER' ? setIsManualVillage(true) : handleInputChange('originVillage', e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                  >
-                    <option value="">Select Village</option>
-                    {originVillages.map(v => <option key={v} value={v}>{v}</option>)}
-                    <option value="OTHER">Other (Manual)</option>
-                  </select>
-                ) : (
-                  <input
-                    type="text"
-                    value={formData.originVillage}
-                    onChange={(e) => handleInputChange('originVillage', e.target.value)}
-                    placeholder="Enter Village"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                  />
-                )}
-              </div>
-
               {/* Clan */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Clan</label>
@@ -1745,6 +1872,30 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                     value={formData.originClan || ''}
                     onChange={(e) => handleInputChange('originClan', e.target.value)}
                     placeholder="Enter Clan"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  />
+                )}
+              </div>
+
+              {/* Village */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Village (Ogbe)</label>
+                {originVillages.length > 0 && !isManualVillage ? (
+                  <select
+                    value={formData.originVillage}
+                    onChange={(e) => e.target.value === 'OTHER' ? setIsManualVillage(true) : handleInputChange('originVillage', e.target.value)}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  >
+                    <option value="">{formData.originClan ? 'Select Village' : 'Select Clan first'}</option>
+                    {originVillages.map(v => <option key={v} value={v}>{v}</option>)}
+                    <option value="OTHER">Other (Manual)</option>
+                  </select>
+                ) : (
+                  <input
+                    type="text"
+                    value={formData.originVillage}
+                    onChange={(e) => handleInputChange('originVillage', e.target.value)}
+                    placeholder={formData.originClan ? 'Enter Village' : 'Select or enter clan first'}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg"
                   />
                 )}
@@ -2055,14 +2206,13 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
             </div>
           ) : (
             <div className="space-y-2">
-              <select
+              <input
+                type="text"
                 value={formData.originHamlet || ''}
                 onChange={(e) => handleInputChange('originHamlet', e.target.value)}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-                disabled
-              >
-                <option value="">{formData.originVillage ? 'Select Hamlet' : 'Select Village first'}</option>
-              </select>
+                placeholder={formData.originVillage ? 'Enter Hamlet' : 'Select or enter village first'}
+              />
             </div>
           )}
         </div>
@@ -2095,14 +2245,17 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
             </div>
           ) : (
             <div className="space-y-2">
-              <select
+              <input
+                type="text"
                 value={formData.kindred || ''}
                 onChange={(e) => handleInputChange('kindred', e.target.value)}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-                disabled
-              >
-                <option value="">{formData.originHamlet ? 'Select Kindred' : 'Select Hamlet first'}</option>
-              </select>
+                placeholder={
+                  formData.originHamlet || formData.originVillage
+                    ? 'Enter Kindred'
+                    : 'Select or enter hamlet first'
+                }
+              />
             </div>
           )}
         </div>
@@ -2135,14 +2288,13 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
             </div>
           ) : (
             <div className="space-y-2">
-              <select
+              <input
+                type="text"
                 value={formData.umunna || ''}
                 onChange={(e) => handleInputChange('umunna', e.target.value)}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-                disabled
-              >
-                <option value="">{formData.kindred ? 'Select Umunna' : 'Select Kindred first'}</option>
-              </select>
+                placeholder={formData.kindred ? 'Enter Extended Family' : 'Select or enter kindred first'}
+              />
             </div>
           )}
         </div>

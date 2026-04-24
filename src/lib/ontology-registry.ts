@@ -140,6 +140,11 @@ export async function getTowns(lgaId: string): Promise<OntologyEntity[]> {
   return getOntologyChildren(lgaId, 'TOWN');
 }
 
+/** Get clans under a town */
+export async function getClans(townId: string): Promise<OntologyEntity[]> {
+  return getOntologyChildren(townId, 'CLAN');
+}
+
 /** Get town admin level 1 under a town */
 export async function getTownLevel1(townId: string): Promise<OntologyEntity[]> {
   return getOntologyChildren(townId, 'TOWN_LEVEL_1');
@@ -157,9 +162,9 @@ export async function getTownLevel4(tl3Id: string): Promise<OntologyEntity[]> {
   return getOntologyChildren(tl3Id, 'TOWN_LEVEL_4');
 }
 
-/** Get villages under a town */
-export async function getVillages(townId: string): Promise<OntologyEntity[]> {
-  return getOntologyChildren(townId, 'VILLAGE');
+/** Get villages under a clan */
+export async function getVillages(clanId: string): Promise<OntologyEntity[]> {
+  return getOntologyChildren(clanId, 'VILLAGE');
 }
 
 /** Get hamlets under a village */

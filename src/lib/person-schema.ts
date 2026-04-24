@@ -84,6 +84,7 @@ export interface LineageFields {
   originStateConstituencyId?: string; // SC-*
   originWardId?: string; // WD-*
   originTownId?: string; // TW-*
+  originClanId?: string; // CL-*
   originTownLevel1Id?: string; // TL1-*
   originTownLevel2Id?: string; // TL2-*
   originTownLevel3Id?: string; // TL3-*
@@ -416,6 +417,7 @@ export interface PersonFormSubmission {
   originStateConstituencyId?: string;
   originWardId?: string;
   originTownId?: string;
+  originClanId?: string;
   originTownLevel1Id?: string;
   originTownLevel2Id?: string;
   originTownLevel3Id?: string;
@@ -688,6 +690,7 @@ export function createPersonFromForm(
       ...(formData.originStateConstituencyId && { originStateConstituencyId: formData.originStateConstituencyId }),
       ...(formData.originWardId && { originWardId: formData.originWardId }),
       ...(formData.originTownId && { originTownId: formData.originTownId }),
+      ...(formData.originClanId && { originClanId: formData.originClanId }),
       ...(formData.originTownLevel1Id && { originTownLevel1Id: formData.originTownLevel1Id }),
       ...(formData.originTownLevel2Id && { originTownLevel2Id: formData.originTownLevel2Id }),
       ...(formData.originTownLevel3Id && { originTownLevel3Id: formData.originTownLevel3Id }),
@@ -867,4 +870,3 @@ export function createPersonFromForm(
     source: 'FORM_SUBMISSION',
   } as PersonRecord;
 }
-

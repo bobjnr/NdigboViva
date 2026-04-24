@@ -119,6 +119,10 @@ export function townId(lgaIdVal: string, townName: string): string {
   return `TW-${lgaIdVal}-${toIdSegment(townName) || 'UNKNOWN'}`;
 }
 
+export function clanId(townIdVal: string, clanName: string): string {
+  return `CL-${townIdVal}-${toIdSegment(clanName) || 'UNKNOWN'}`;
+}
+
 // ─── 13. TOWN ADMIN LEVELS ───────────────────────────────────────────────
 /** TL1-{TOWN_ID}-{NAME} */
 export function townLevel1Id(townIdVal: string, name: string): string {
@@ -139,8 +143,8 @@ export function townLevel4Id(tl3Id: string, name: string): string {
 
 // ─── 14. VILLAGE ─────────────────────────────────────────────────────────
 /** Format: VL-{TOWN_ID}-{VILLAGE} */
-export function villageId(townIdVal: string, villageName: string): string {
-  return `VL-${townIdVal}-${toIdSegment(villageName) || 'UNKNOWN'}`;
+export function villageId(clanIdVal: string, villageName: string): string {
+  return `VL-${clanIdVal}-${toIdSegment(villageName) || 'UNKNOWN'}`;
 }
 
 // ─── 15. HAMLET ──────────────────────────────────────────────────────────
@@ -156,7 +160,7 @@ export function lineageId(townIdVal: string, lineageName: string): string {
 }
 
 // ─── 17. KINDRED ─────────────────────────────────────────────────────────
-/** Format: KD-{HAMLET_ID}-{KINDRED} or KD-{LINEAGE_ID}-{KINDRED} (parent can be hamlet or lineage) */
+/** Format: KD-{HAMLET_ID}-{KINDRED} or KD-{VILLAGE_ID}-{KINDRED} or KD-{LINEAGE_ID}-{KINDRED} */
 export function kindredId(parentIdVal: string, kindredName: string): string {
   return `KD-${parentIdVal}-${toIdSegment(kindredName) || 'UNKNOWN'}`;
 }

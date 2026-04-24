@@ -100,6 +100,12 @@ export interface GenealogyFormSubmission {
   originTownLevel4?: string;
   /** Political ward (e.g. Ward 1) - after Town Level 4, before Village */
   originWard?: string;
+  originTownId?: string;
+  originClanId?: string;
+  originVillageId?: string;
+  originHamletId?: string;
+  originKindredId?: string;
+  originExtendedFamilyId?: string;
   originHamlet?: string;
   originKindred?: string;
   originUmunna?: string;

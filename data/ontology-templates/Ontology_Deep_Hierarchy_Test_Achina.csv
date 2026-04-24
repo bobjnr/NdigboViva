@@ -1,0 +1,6 @@
+type,name,displayName,parentId,country,state,lga,town,clan,village,hamlet,kindred,isPublic,sortOrder,code
+CLAN,ZZ TEST CLAN,ZZ Test Clan,,Nigeria,Anambra,Aguata,Achina I,,,,,TRUE,9001,
+VILLAGE,ZZ TEST VILLAGE,ZZ Test Village,,Nigeria,Anambra,Aguata,Achina I,ZZ TEST CLAN,,,,TRUE,9002,
+HAMLET,ZZ TEST HAMLET,ZZ Test Hamlet,,Nigeria,Anambra,Aguata,Achina I,ZZ TEST CLAN,ZZ TEST VILLAGE,,,TRUE,9003,
+KINDRED,ZZ TEST KINDRED,ZZ Test Kindred,,Nigeria,Anambra,Aguata,Achina I,ZZ TEST CLAN,ZZ TEST VILLAGE,ZZ TEST HAMLET,,TRUE,9004,
+EXTENDED_FAMILY,ZZ TEST EXTENDED FAMILY,ZZ Test Extended Family,,Nigeria,Anambra,Aguata,Achina I,ZZ TEST CLAN,ZZ TEST VILLAGE,ZZ TEST HAMLET,ZZ TEST KINDRED,TRUE,9005,

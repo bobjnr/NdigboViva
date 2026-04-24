@@ -15,6 +15,7 @@ export const ONTOLOGY_TYPES = [
   'STATE_CONSTITUENCY',
   'WARD',
   'TOWN',
+  'CLAN',
   'TOWN_LEVEL_1',
   'TOWN_LEVEL_2',
   'TOWN_LEVEL_3',

@@ -1,0 +1,6 @@
+﻿type,name,displayName,parentId,country,state,lga,town,clan,village,hamlet,kindred,isPublic,sortOrder,code
+CLAN,AB TEST CLAN,AB Test Clan,,Nigeria,Abia,Bende,Ozuitem,,,,,TRUE,9001,
+VILLAGE,AB TEST VILLAGE,AB Test Village,,Nigeria,Abia,Bende,Ozuitem,AB TEST CLAN,,,,TRUE,9002,
+HAMLET,AB TEST HAMLET,AB Test Hamlet,,Nigeria,Abia,Bende,Ozuitem,AB TEST CLAN,AB TEST VILLAGE,,,TRUE,9003,
+KINDRED,AB TEST KINDRED,AB Test Kindred,,Nigeria,Abia,Bende,Ozuitem,AB TEST CLAN,AB TEST VILLAGE,AB TEST HAMLET,,TRUE,9004,
+EXTENDED_FAMILY,AB TEST EXTENDED FAMILY,AB Test Extended Family,,Nigeria,Abia,Bende,Ozuitem,AB TEST CLAN,AB TEST VILLAGE,AB TEST HAMLET,AB TEST KINDRED,TRUE,9005,

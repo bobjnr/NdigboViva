@@ -5,13 +5,19 @@
  */
 
 import { NextResponse } from 'next/server';
+import { requireAdminSession } from '@/lib/admin-auth';
 import { buildOntologySeed } from '@/lib/ontology-seed';
-import { upsertOntologyEntities } from '@/lib/ontology-registry';
+import { upsertOntologyEntitiesAdmin } from '@/lib/ontology-admin';
 
 export async function POST() {
+  const access = await requireAdminSession();
+  if (!access.ok) {
+    return NextResponse.json({ success: false, error: access.message }, { status: access.status });
+  }
+
   try {
     const entities = buildOntologySeed();
-    const { success, errors } = await upsertOntologyEntities(entities);
+    const { success, errors } = await upsertOntologyEntitiesAdmin(entities);
     return NextResponse.json({
       success: true,
       message: `Seeded ${success} ontology entities`,

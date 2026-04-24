@@ -16,6 +16,7 @@ import {
   stateConstituencyId,
   wardId,
   townId,
+  clanId,
   villageId,
   kindredId,
   toIdSegment,
@@ -95,7 +96,6 @@ export function buildOntologySeed(): OntologyEntity[] {
   const list: OntologyEntity[] = [];
   const stateIdsByStateName: Record<string, string> = {};
   const lgaIdsByLgaKey: Record<string, string> = {};
-  const townIdsList: string[] = [];
 
   const ngaId = countryId('Nigeria');
 
@@ -189,7 +189,6 @@ export function buildOntologySeed(): OntologyEntity[] {
     if (!lgaIdVal) return;
     towns.forEach((town) => {
       const id = townId(lgaIdVal, town);
-      townIdsList.push(id);
       list.push(entity(id, town, 'TOWN', lgaIdVal, town));
     });
   });
@@ -203,11 +202,15 @@ export function buildOntologySeed(): OntologyEntity[] {
     const quarters = townData.quarters || {};
     Object.values(quarters).forEach((quarter) => {
       Object.values(quarter.obis || {}).forEach((obi) => {
-        Object.values(obi.clans || {}).forEach((clan) => {
+        Object.entries(obi.clans || {}).forEach(([clanName, clan]) => {
+          const clId = clanId(twId, clanName);
+          if (!list.some((e) => e.id === clId)) {
+            list.push(entity(clId, clanName, 'CLAN', twId, titleCase(clanName)));
+          }
           Object.entries(clan.villages || {}).forEach(([villageName, villageData]) => {
-            const vlId = villageId(twId, villageName);
+            const vlId = villageId(clId, villageName);
             if (!list.some((e) => e.id === vlId)) {
-              list.push(entity(vlId, villageName, 'VILLAGE', twId, titleCase(villageName)));
+              list.push(entity(vlId, villageName, 'VILLAGE', clId, titleCase(villageName)));
             }
             Object.keys(villageData.kindreds || {}).forEach((kindredName) => {
               const kdId = kindredId(vlId, kindredName);
