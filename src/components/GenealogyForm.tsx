@@ -5,7 +5,6 @@ import csvDropdownData from '@/lib/csv-dropdown-data.json'
 import {
   nigerianStates,
   townsData,
-  wardsData,
   villagesData,
   continents,
   countries,
@@ -15,6 +14,7 @@ import {
   type LocationData,
   type GenealogyFormData
 } from '@/lib/location-data'
+import { getWardOptions } from '@/lib/nigeria-dropdown-utils'
 import { genealogyDB, type GenealogyFormSubmission } from '@/lib/genealogy-database'
 import diasporaOriginData from '@/lib/diaspora-origin-data.json'
 import {
@@ -505,7 +505,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   useEffect(() => {
     if (formData.currentLGA) {
       const staticTowns = getMappedOptions(townsData, formData.currentLGA)
-      const staticWards = getMappedOptions(wardsData, formData.currentLGA)
+      const staticWards = getWardOptions(formData.currentState, formData.currentLGA)
       const ontologyTowns = ontologyTownsCurrent.data?.map((e) => e.displayName || e.name) ?? []
       const ontologyWards = ontologyWardsCurrent.data?.map((e) => e.displayName || e.name) ?? []
 
@@ -605,7 +605,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   useEffect(() => {
     if (formData.originLGA) {
       const staticTowns = getMappedOptions(townsData, formData.originLGA)
-      const staticWards = getMappedOptions(wardsData, formData.originLGA)
+      const staticWards = getWardOptions(formData.originState, formData.originLGA)
       const ontologyTowns = ontologyTownsOrigin.data?.map((e) => e.displayName || e.name) ?? []
       const ontologyWards = ontologyWardsOrigin.data?.map((e) => e.displayName || e.name) ?? []
 

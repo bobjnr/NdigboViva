@@ -7,13 +7,13 @@
 const fs = require('fs');
 const path = require('path');
 
-const DROPDOWN_DIR = path.join(__dirname, '..', 'docs', 'dropdown data');
+const DROPDOWN_DIR = path.join(__dirname, '..', 'docs', 'dropdown data', 'Nigeria Current Location Info');
 const OUT_FILE = path.join(__dirname, '..', 'src', 'lib', 'dropdown-data.json');
 const NIGERIAN_FALLBACK_FILE = path.join(__dirname, '..', 'src', 'lib', 'nigerian-location-fallback.json');
 
 function parseCsv(filePath) {
   const text = fs.readFileSync(filePath, 'utf8');
-  const lines = text.split(/\r?\n/).filter((line) => line.trim());
+  const lines = text.replace(/\r/g, '\n').split('\n').filter((line) => line.trim());
   if (lines.length < 2) return [];
   const header = lines[0].split(',').map((h) => h.trim());
   const rows = [];
@@ -177,13 +177,16 @@ function main() {
   const lgaByNormalizedName = {};
   const lgaByStateSnakeAndNormalizedName = {};
   lgas.forEach((l) => {
-    if (l.id) lgaById[l.id.toLowerCase()] = l.name;
-    const normalized = normalizeName(l.name);
-    if (normalized) lgaByNormalizedName[normalized] = l.name;
-    if (l.stateId && normalized) {
-      const stateSnake = l.stateId.toLowerCase();
+    const lgaId = l.lga_id || l.id;
+    const lgaName = l.lga_name || l.name;
+    const stateId = l.state_id || l.stateId;
+    if (lgaId && lgaName) lgaById[lgaId.toLowerCase()] = lgaName;
+    const normalized = normalizeName(lgaName);
+    if (normalized) lgaByNormalizedName[normalized] = lgaName;
+    if (stateId && normalized) {
+      const stateSnake = stateId.toLowerCase();
       if (!lgaByStateSnakeAndNormalizedName[stateSnake]) lgaByStateSnakeAndNormalizedName[stateSnake] = {};
-      lgaByStateSnakeAndNormalizedName[stateSnake][normalized] = l.name;
+      lgaByStateSnakeAndNormalizedName[stateSnake][normalized] = lgaName;
     }
   });
   Object.entries(nigerianFallback.stateLgas || {}).forEach(([stateName, lgaNames]) => {
@@ -311,16 +314,30 @@ function main() {
 
   // ── wardsData ──
   const wardsData = {};
+  const wardsByStateAndLga = {};
   wards.forEach((w) => {
     const lga_id = w.lga_id || w.lgaId;
+    const state_id = w.state_id || w.stateId;
     const ward_name = w.ward_name || w.name;
     if (!lga_id || !ward_name) return;
     const lgaName = getLgaName(lga_id);
     if (!lgaName) return;
     if (!wardsData[lgaName]) wardsData[lgaName] = [];
     wardsData[lgaName].push(ward_name);
+
+    const stateName = getStateName(state_id);
+    if (stateName) {
+      if (!wardsByStateAndLga[stateName]) wardsByStateAndLga[stateName] = {};
+      if (!wardsByStateAndLga[stateName][lgaName]) wardsByStateAndLga[stateName][lgaName] = [];
+      pushUnique(wardsByStateAndLga[stateName][lgaName], ward_name);
+    }
   });
   Object.keys(wardsData).forEach((lga) => { wardsData[lga].sort(); });
+  Object.keys(wardsByStateAndLga).forEach((stateName) => {
+    Object.keys(wardsByStateAndLga[stateName]).forEach((lgaName) => {
+      wardsByStateAndLga[stateName][lgaName].sort();
+    });
+  });
 
   // ── Senatorial districts ──
   const senatorialZoneById = {};
@@ -432,6 +449,7 @@ function main() {
     continentCountries,
     nigerianStates,
     wardsData,
+    wardsByStateAndLga,
     senatorialDistricts,
     federalConstituencies,
     federalConstituenciesByStateAndSenatorialDistrict,

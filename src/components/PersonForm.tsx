@@ -12,6 +12,7 @@ import { PersonFormSubmission, Gender, SourceType, VerificationLevel, Visibility
 import { User, Users, Award, Calendar, FileText, Shield, Globe, CheckCircle, ArrowRight, ArrowLeft } from 'lucide-react'
 import dropdownData from '@/lib/dropdown-data.json'
 import { nigerianGeoZones } from '@/lib/extended-location-data'
+import { getWardOptions } from '@/lib/nigeria-dropdown-utils'
 
 interface PersonFormProps {
   onSubmit?: (data: PersonFormSubmission) => void
@@ -838,7 +839,7 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                   disabled={!formData.originLocalGovernmentArea}
                 >
                   <option value="">Select Ward</option>
-                  {formData.originLocalGovernmentArea && (dropdownData.wardsData as any)[formData.originLocalGovernmentArea]?.map((w: string) => (
+                  {getWardOptions(formData.originState, formData.originLocalGovernmentArea).map((w: string) => (
                     <option key={w} value={w}>{w}</option>
                   ))}
                 </select>
@@ -2218,7 +2219,7 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                     disabled={!formData.currentLocalGovernmentArea}
                   >
                     <option value="">Select Ward</option>
-                    {formData.currentLocalGovernmentArea && (dropdownData.wardsData as any)[formData.currentLocalGovernmentArea]?.map((w: string) => (
+                    {getWardOptions(formData.currentState, formData.currentLocalGovernmentArea).map((w: string) => (
                       <option key={w} value={w}>{w}</option>
                     ))}
                   </select>
@@ -2401,4 +2402,3 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
     </form>
   )
 }
-

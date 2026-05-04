@@ -46,7 +46,7 @@ if (!nextAuthSecret) {
 // Auto-detect or validate NEXTAUTH_URL
 const nextAuthUrl = process.env.NEXTAUTH_URL ||
     (process.env.NODE_ENV === 'production'
-        ? 'https://www.ndigboviva.com.ng'
+        ? 'https://www.ndigboviva.com'
         : 'http://localhost:3000');
 
 if (!process.env.NEXTAUTH_URL) {

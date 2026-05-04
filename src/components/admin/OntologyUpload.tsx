@@ -27,12 +27,88 @@ type PreviewResponse = {
   error?: string
 }
 
-const CSV_TEMPLATE = `type,name,displayName,parentId,country,state,lga,town,clan,village,hamlet,kindred,isPublic,sortOrder,code
-CLAN,DIOHA,Dioha,,Nigeria,Anambra,Aguata,Achina,,,,,true,10,
-VILLAGE,ELEKECHEM,Elekchem,,Nigeria,Anambra,Aguata,Achina,DIOHA,,,,true,20,
-HAMLET,AMA EZI,Ama Ezi,,Nigeria,Anambra,Aguata,Achina,DIOHA,ELEKECHEM,,,true,30,
-KINDRED,UMU OKPARA,Umu Okpara,,Nigeria,Anambra,Aguata,Achina,DIOHA,ELEKECHEM,AMA EZI,,true,40,
-EXTENDED_FAMILY,OKAFOR HOUSE,Okafor House,,Nigeria,Anambra,Aguata,Achina,DIOHA,ELEKECHEM,AMA EZI,UMU OKPARA,true,50,`
+const TEMPLATE_ROWS = [
+  {
+    type: 'CLAN',
+    name: 'DIOHA',
+    displayName: 'Dioha',
+    country: 'Nigeria',
+    state: 'Anambra',
+    lga: 'Aguata',
+    town: 'Achina',
+    clan: '',
+    village: '',
+    hamlet: '',
+    kindred: '',
+    isPublic: 'true',
+    sortOrder: '10',
+    code: '',
+  },
+  {
+    type: 'VILLAGE',
+    name: 'ELEKECHEM',
+    displayName: 'Elekchem',
+    country: 'Nigeria',
+    state: 'Anambra',
+    lga: 'Aguata',
+    town: 'Achina',
+    clan: 'DIOHA',
+    village: '',
+    hamlet: '',
+    kindred: '',
+    isPublic: 'true',
+    sortOrder: '20',
+    code: '',
+  },
+  {
+    type: 'HAMLET',
+    name: 'AMA EZI',
+    displayName: 'Ama Ezi',
+    country: 'Nigeria',
+    state: 'Anambra',
+    lga: 'Aguata',
+    town: 'Achina',
+    clan: 'DIOHA',
+    village: 'ELEKECHEM',
+    hamlet: '',
+    kindred: '',
+    isPublic: 'true',
+    sortOrder: '30',
+    code: '',
+  },
+  {
+    type: 'KINDRED',
+    name: 'UMU OKPARA',
+    displayName: 'Umu Okpara',
+    country: 'Nigeria',
+    state: 'Anambra',
+    lga: 'Aguata',
+    town: 'Achina',
+    clan: 'DIOHA',
+    village: 'ELEKECHEM',
+    hamlet: 'AMA EZI',
+    kindred: '',
+    isPublic: 'true',
+    sortOrder: '40',
+    code: '',
+  },
+  {
+    type: 'EXTENDED_FAMILY',
+    name: 'OKAFOR HOUSE',
+    displayName: 'Okafor House',
+    country: 'Nigeria',
+    state: 'Anambra',
+    lga: 'Aguata',
+    town: 'Achina',
+    clan: 'DIOHA',
+    village: 'ELEKECHEM',
+    hamlet: 'AMA EZI',
+    kindred: 'UMU OKPARA',
+    isPublic: 'true',
+    sortOrder: '50',
+    code: '',
+  },
+]
 
 function statusClasses(status: PreviewStatus): string {
   switch (status) {
@@ -72,6 +148,26 @@ export default function OntologyUpload() {
     if (!file) return
     resetPreview()
     setFileName(file.name)
+
+    const lowerName = file.name.toLowerCase()
+    if (lowerName.endsWith('.xlsx') || lowerName.endsWith('.xls')) {
+      const XLSX = await import('xlsx')
+      const buffer = await file.arrayBuffer()
+      const workbook = XLSX.read(buffer, { type: 'array' })
+      const firstSheetName = workbook.SheetNames[0]
+
+      if (!firstSheetName) {
+        setCsvText('')
+        setMessage({ type: 'error', text: 'The uploaded spreadsheet does not contain any sheets.' })
+        return
+      }
+
+      const firstSheet = workbook.Sheets[firstSheetName]
+      const convertedCsv = XLSX.utils.sheet_to_csv(firstSheet, { blankrows: false })
+      setCsvText(convertedCsv)
+      return
+    }
+
     setCsvText(await file.text())
   }
 
@@ -79,12 +175,20 @@ export default function OntologyUpload() {
     await loadFile(event.target.files?.[0])
   }
 
-  function handleTemplateDownload() {
-    const blob = new Blob([CSV_TEMPLATE], { type: 'text/csv;charset=utf-8' })
+  async function handleTemplateDownload() {
+    const XLSX = await import('xlsx')
+    const worksheet = XLSX.utils.json_to_sheet(TEMPLATE_ROWS)
+    const workbook = XLSX.utils.book_new()
+    XLSX.utils.book_append_sheet(workbook, worksheet, 'Ontology Upload')
+
+    const output = XLSX.write(workbook, { bookType: 'xlsx', type: 'array' })
+    const blob = new Blob([output], {
+      type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+    })
     const url = URL.createObjectURL(blob)
     const anchor = document.createElement('a')
     anchor.href = url
-    anchor.download = 'ontology-upload-template.csv'
+    anchor.download = 'ontology-upload-template.xlsx'
     anchor.click()
     URL.revokeObjectURL(url)
   }
@@ -177,7 +281,7 @@ export default function OntologyUpload() {
             <p className="mt-2 text-sm text-emerald-900">
               This tool imports deep ancestry structure into the Firestore ontology collection. Supported types are
               <span className="font-medium"> CLAN, VILLAGE, HAMLET, KINDRED, and EXTENDED_FAMILY</span>.
-              Nuclear family and person records stay manual.
+              Upload a spreadsheet exported from Google Sheets or Excel. Nuclear family and person records stay manual.
             </p>
           </div>
         </div>
@@ -187,7 +291,7 @@ export default function OntologyUpload() {
         <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900">Upload CSV</h3>
+              <h3 className="text-xl font-semibold text-gray-900">Upload Spreadsheet</h3>
               <p className="mt-1 text-sm text-gray-600">Preview first, then commit only the ready rows.</p>
             </div>
             <button
@@ -211,14 +315,14 @@ export default function OntologyUpload() {
           >
             <FileText className="h-9 w-9 text-brand-gold" />
             <span className="mt-4 text-base font-medium text-gray-900">
-              {fileName ? fileName : 'Choose an ontology CSV file'}
+              {fileName ? fileName : 'Choose an ontology spreadsheet'}
             </span>
-            <span className="mt-2 text-sm text-gray-600">Upload a CSV for preview before any data is written.</span>
+            <span className="mt-2 text-sm text-gray-600">Upload an `.xlsx`, `.xls`, or `.csv` file for preview before any data is written.</span>
           </button>
           <input
             ref={inputRef}
             type="file"
-            accept=".csv,text/csv"
+            accept=".xlsx,.xls,.csv,application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,text/csv"
             className="hidden"
             onChange={handleFileChange}
           />
