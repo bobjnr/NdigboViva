@@ -7,6 +7,10 @@ import { Metadata } from 'next';
 import ShareButtons from "@/components/ShareButtons";
 import VideoHover from "@/components/VideoHover";
 
+function serializeJsonLd(data: unknown): string {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
 // Fallback data in case YouTube API fails
 const fallbackPost = {
   id: "power-of-igbo-culture",
@@ -120,8 +124,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     <>
       <script
         type="application/ld+json"
+        suppressHydrationWarning
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(blogPostSchema({
+          __html: serializeJsonLd(blogPostSchema({
             title: blogPost.title,
             description: blogPost.excerpt,
             slug: blogPost.id,

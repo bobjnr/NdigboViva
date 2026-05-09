@@ -9,6 +9,10 @@ import GoogleAnalytics from "@/components/GoogleAnalytics";
 import SessionProvider from "@/components/SessionProvider";
 import { organizationSchema } from "@/lib/seo";
 
+function serializeJsonLd(data: unknown): string {
+  return JSON.stringify(data).replace(/</g, "\\u003c");
+}
+
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
@@ -58,18 +62,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify(organizationSchema),
-          }}
-        />
-      </head>
       <body
         suppressHydrationWarning
         className={`${inter.variable} ${playfair.variable} font-sans antialiased`}
       >
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: serializeJsonLd(organizationSchema),
+          }}
+        />
         <GoogleAnalytics />
         <SessionProvider>
           <Providers>

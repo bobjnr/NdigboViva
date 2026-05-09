@@ -11,8 +11,11 @@ import { useState, useEffect } from 'react'
 import { PersonFormSubmission, Gender, SourceType, VerificationLevel, VisibilitySetting } from '@/lib/person-schema'
 import { User, Users, Award, Calendar, FileText, Shield, Globe, CheckCircle, ArrowRight, ArrowLeft } from 'lucide-react'
 import dropdownData from '@/lib/dropdown-data.json'
+import csvDropdownData from '@/lib/csv-dropdown-data.json'
 import { nigerianGeoZones } from '@/lib/extended-location-data'
 import { getWardOptions } from '@/lib/nigeria-dropdown-utils'
+import type { OntologyEntity } from '@/lib/ontology-types'
+import { useOntologyChildren } from '@/lib/use-ontology-children'
 
 interface PersonFormProps {
   onSubmit?: (data: PersonFormSubmission) => void
@@ -27,6 +30,74 @@ const FORM_TABS = [
   { id: 'documentation', label: 'Sources', icon: FileText },
   { id: 'verification', label: 'Privacy', icon: Shield },
 ]
+
+function normalizeTownHierarchyKey(value: string | null | undefined): string {
+  return (value ?? '')
+    .replace(/\((.*?)\)/g, ' $1 ')
+    .replace(/\b(i|ii|iii|iv|v|vi|vii|viii|ix|x|\d+)\b$/i, '')
+    .replace(/[^a-z0-9]+/gi, ' ')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .toLowerCase()
+}
+
+function getHierarchyOptions(
+  source: Record<string, string[] | undefined> | undefined,
+  selectedValue: string | null | undefined
+): string[] {
+  if (!source || !selectedValue) return []
+
+  const exact = source[selectedValue]
+  if (exact?.length) return exact
+
+  const normalizedSelected = normalizeTownHierarchyKey(selectedValue)
+  if (!normalizedSelected) return []
+
+  const partialMatches = Object.entries(source).filter(([key]) => {
+    const normalizedKey = normalizeTownHierarchyKey(key)
+    return (
+      normalizedKey === normalizedSelected ||
+      normalizedKey.startsWith(normalizedSelected) ||
+      normalizedSelected.startsWith(normalizedKey)
+    )
+  })
+
+  if (partialMatches.length === 1) {
+    return partialMatches[0][1] ?? []
+  }
+
+  return []
+}
+
+function normalizeOntologyLabel(value: string | null | undefined): string {
+  return (value ?? '').replace(/\s+/g, ' ').trim().toLowerCase()
+}
+
+function getOntologyEntityLabel(entity: OntologyEntity): string {
+  return entity.displayName || entity.name
+}
+
+function findOntologyEntityByLabel(entities: OntologyEntity[], value: string | null | undefined): OntologyEntity | null {
+  const normalizedValue = normalizeOntologyLabel(value)
+  if (!normalizedValue) return null
+  return entities.find((entity) => normalizeOntologyLabel(getOntologyEntityLabel(entity)) === normalizedValue) ?? null
+}
+
+function mergeUniqueOptions(...lists: Array<string[] | undefined>): string[] {
+  const seen = new Set<string>()
+  const merged: string[] = []
+
+  for (const list of lists) {
+    for (const item of list ?? []) {
+      const normalized = item.trim().toLowerCase()
+      if (!normalized || seen.has(normalized)) continue
+      seen.add(normalized)
+      merged.push(item)
+    }
+  }
+
+  return merged.sort((a, b) => a.localeCompare(b))
+}
 
 export default function PersonForm({ onSubmit }: PersonFormProps) {
   const [activeTab, setActiveTab] = useState(0)
@@ -50,6 +121,20 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
   const [diasporaData, setDiasporaData] = useState<any>(null)
   const [isLoadingDiaspora, setIsLoadingDiaspora] = useState(false)
 
+  const ontologyStates = useOntologyChildren('CO-NGA', 'STATE')
+  const originStateId =
+    ontologyStates.data?.find((entity) => (entity.displayName || entity.name) === formData.originState)?.id ?? null
+  const ontologyLgasOrigin = useOntologyChildren(originStateId, 'LGA')
+  const originLgaId =
+    ontologyLgasOrigin.data?.find((entity) => (entity.displayName || entity.name) === formData.originLocalGovernmentArea)?.id ?? null
+  const ontologyTownsOrigin = useOntologyChildren(originLgaId, 'TOWN')
+  const originTownEntity = findOntologyEntityByLabel(ontologyTownsOrigin.data, formData.originTown)
+  const originTownId = originTownEntity?.id ?? null
+  const ontologyTownLevel1Origin = useOntologyChildren(originTownId, 'TOWN_LEVEL_1')
+  const originTownLevel1Entity = findOntologyEntityByLabel(ontologyTownLevel1Origin.data, formData.originTownLevel1)
+  const originTownLevel1Id = originTownLevel1Entity?.id ?? null
+  const ontologyTownLevel2Origin = useOntologyChildren(originTownLevel1Id, 'TOWN_LEVEL_2')
+
   // Load Diaspora data when needed
   useEffect(() => {
     if ((activeTab === 2 || formData.isDiasporaRelative) && !diasporaData && !isLoadingDiaspora) {
@@ -69,6 +154,43 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
         })
     }
   }, [activeTab, formData.isDiasporaRelative, diasporaData, isLoadingDiaspora])
+
+  const csvTownOptions = ((csvDropdownData as any).townsByLgaName?.[formData.originLocalGovernmentArea || ''] as string[]) ?? []
+  const ontologyTownOptions = ontologyTownsOrigin.data?.map(getOntologyEntityLabel) ?? []
+  const nigerianTownOptions = mergeUniqueOptions(csvTownOptions, ontologyTownOptions)
+  const csvTownLevel1Options = getHierarchyOptions((csvDropdownData as any).level1sByTownName, formData.originTown)
+  const ontologyTownLevel1Options = ontologyTownLevel1Origin.data?.map(getOntologyEntityLabel) ?? []
+  const originTownLevel1Options = mergeUniqueOptions(csvTownLevel1Options, ontologyTownLevel1Options)
+  const csvTownLevel2Options = getHierarchyOptions((csvDropdownData as any).level2sByLevel1Name, formData.originTownLevel1)
+  const ontologyTownLevel2Options = ontologyTownLevel2Origin.data?.map(getOntologyEntityLabel) ?? []
+  const originTownLevel2Options = mergeUniqueOptions(csvTownLevel2Options, ontologyTownLevel2Options)
+
+  useEffect(() => {
+    setFormData(prev => ({
+      ...prev,
+      originTownLevel1: '',
+      originTownLevel2: '',
+      originTownLevel3: '',
+      originTownLevel4: '',
+    }))
+  }, [formData.originTown])
+
+  useEffect(() => {
+    setFormData(prev => ({
+      ...prev,
+      originTownLevel2: '',
+      originTownLevel3: '',
+      originTownLevel4: '',
+    }))
+  }, [formData.originTownLevel1])
+
+  useEffect(() => {
+    setFormData(prev => ({
+      ...prev,
+      originTownLevel3: '',
+      originTownLevel4: '',
+    }))
+  }, [formData.originTownLevel2])
 
   const handleInputChange = (field: keyof PersonFormSubmission, value: any) => {
     setFormData(prev => ({ ...prev, [field]: value }))
@@ -103,6 +225,15 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
       setFormData(prev => ({
         ...prev,
         [`${prefix}LocalGovernmentArea`]: value,
+        [`${prefix}Town`]: '',
+        ...(type === 'origin'
+          ? {
+              originTownLevel1: '',
+              originTownLevel2: '',
+              originTownLevel3: '',
+              originTownLevel4: '',
+            }
+          : {}),
         [type === 'origin' ? 'originWard' : 'currentPoliticalWard']: '',
       }))
     } else if (field === 'SenatorialDistrict') {
@@ -799,12 +930,102 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Town</label>
+                  {nigerianTownOptions.length > 0 ? (
+                    <select
+                      value={formData.originTown || ''}
+                      onChange={(e) => handleInputChange('originTown', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      disabled={!formData.originLocalGovernmentArea}
+                    >
+                      <option value="">Select Town</option>
+                      {nigerianTownOptions.map((town: string) => (
+                        <option key={town} value={town}>{town}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.originTown || ''}
+                      onChange={(e) => handleInputChange('originTown', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      placeholder="ACHINA"
+                    />
+                  )}
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Town Level 1</label>
+                  {originTownLevel1Options.length > 0 ? (
+                    <select
+                      value={formData.originTownLevel1 || ''}
+                      onChange={(e) => handleInputChange('originTownLevel1', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      disabled={!formData.originTown}
+                    >
+                      <option value="">Select Town Level 1</option>
+                      {originTownLevel1Options.map((level: string) => (
+                        <option key={level} value={level}>{level}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.originTownLevel1 || ''}
+                      onChange={(e) => handleInputChange('originTownLevel1', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      placeholder="Town Level 1"
+                      disabled={!formData.originTown}
+                    />
+                  )}
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Town Level 2</label>
+                  {originTownLevel2Options.length > 0 ? (
+                    <select
+                      value={formData.originTownLevel2 || ''}
+                      onChange={(e) => handleInputChange('originTownLevel2', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      disabled={!formData.originTownLevel1}
+                    >
+                      <option value="">Select Town Level 2</option>
+                      {originTownLevel2Options.map((level: string) => (
+                        <option key={level} value={level}>{level}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.originTownLevel2 || ''}
+                      onChange={(e) => handleInputChange('originTownLevel2', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      placeholder="Town Level 2"
+                      disabled={!formData.originTownLevel1}
+                    />
+                  )}
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Town Level 3</label>
                   <input
                     type="text"
-                    value={formData.originTown || ''}
-                    onChange={(e) => handleInputChange('originTown', e.target.value)}
+                    value={formData.originTownLevel3 || ''}
+                    onChange={(e) => handleInputChange('originTownLevel3', e.target.value)}
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="ACHINA"
+                    placeholder="Town Level 3"
+                  />
+                </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Town Level 4</label>
+                  <input
+                    type="text"
+                    value={formData.originTownLevel4 || ''}
+                    onChange={(e) => handleInputChange('originTownLevel4', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    placeholder="Town Level 4"
                   />
                 </div>
                 <div>

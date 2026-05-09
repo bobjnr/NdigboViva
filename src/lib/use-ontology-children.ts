@@ -18,18 +18,31 @@ export function useOntologyChildren(
   useEffect(() => {
     if (!parentId || !type) {
       setData([]);
+      setLoading(false);
       return;
     }
+
+    let isActive = true;
+    setData([]);
     setLoading(true);
     const params = new URLSearchParams({ parentId, type });
     fetch(`/api/ontology/children?${params}`)
       .then((r) => r.json())
       .then((res) => {
+        if (!isActive) return;
         if (res?.success && Array.isArray(res.data)) setData(res.data);
         else setData([]);
       })
-      .catch(() => setData([]))
-      .finally(() => setLoading(false));
+      .catch(() => {
+        if (isActive) setData([]);
+      })
+      .finally(() => {
+        if (isActive) setLoading(false);
+      });
+
+    return () => {
+      isActive = false;
+    };
   }, [parentId, type]);
 
   return { data, loading };

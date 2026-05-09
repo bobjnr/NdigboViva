@@ -6,7 +6,12 @@ import {
   hamletId,
   kindredId,
   lgaId,
+  nuclearFamilyId,
   stateId,
+  townLevel1Id,
+  townLevel2Id,
+  townLevel3Id,
+  townLevel4Id,
   toIdSegment,
   townId,
   villageId,
@@ -15,7 +20,21 @@ import { getOntologyDocumentsByIdsAdmin } from './ontology-admin';
 import { buildOntologySeed } from './ontology-seed';
 import type { OntologyEntity } from './ontology-types';
 
-const SUPPORTED_UPLOAD_TYPES = ['CLAN', 'VILLAGE', 'HAMLET', 'KINDRED', 'EXTENDED_FAMILY'] as const;
+const SUPPORTED_UPLOAD_TYPES = [
+  'TOWN_LEVEL_1',
+  'TOWN_LEVEL_2',
+  'TOWN_LEVEL_3',
+  'TOWN_LEVEL_4',
+  'CLAN',
+  'VILLAGE',
+  'HAMLET',
+  'MATERNAL_KINDRED',
+  'NATAL_EXTENDED_FAMILY',
+  'MARITAL_EXTENDED_FAMILY',
+  'KINDRED',
+  'EXTENDED_FAMILY',
+  'NUCLEAR_FAMILY',
+] as const;
 type SupportedUploadType = (typeof SUPPORTED_UPLOAD_TYPES)[number];
 type PreviewStatus = 'create' | 'update' | 'conflict' | 'invalid';
 
@@ -28,9 +47,15 @@ type ParsedCsvRow = {
   state?: string;
   lga?: string;
   town?: string;
+  townLevel1?: string;
+  townLevel2?: string;
+  townLevel3?: string;
+  townLevel4?: string;
   clan?: string;
   village?: string;
   hamlet?: string;
+  maternalKindred?: string;
+  natalExtendedFamily?: string;
   kindred?: string;
   isPublic?: string;
   sortOrder?: string;
@@ -46,9 +71,15 @@ const HEADER_ALIASES: Record<string, keyof ParsedCsvRow> = {
   state: 'state',
   lga: 'lga',
   town: 'town',
+  townlevel1: 'townLevel1',
+  townlevel2: 'townLevel2',
+  townlevel3: 'townLevel3',
+  townlevel4: 'townLevel4',
   clan: 'clan',
   village: 'village',
   hamlet: 'hamlet',
+  maternalkindred: 'maternalKindred',
+  natalextendedfamily: 'natalExtendedFamily',
   kindred: 'kindred',
   ispublic: 'isPublic',
   sortorder: 'sortOrder',
@@ -81,28 +112,67 @@ export type OntologyUploadPreview = {
 };
 
 const EXPECTED_PARENT_PREFIX: Record<SupportedUploadType, string[]> = {
+  TOWN_LEVEL_1: ['TW'],
+  TOWN_LEVEL_2: ['TL1'],
+  TOWN_LEVEL_3: ['TL2'],
+  TOWN_LEVEL_4: ['TL3'],
   CLAN: ['TW'],
   VILLAGE: ['CL'],
   HAMLET: ['VL'],
+  MATERNAL_KINDRED: ['HM', 'VL', 'LN'],
+  NATAL_EXTENDED_FAMILY: ['KD'],
+  MARITAL_EXTENDED_FAMILY: ['EF'],
   KINDRED: ['HM', 'VL', 'LN'],
   EXTENDED_FAMILY: ['KD'],
+  NUCLEAR_FAMILY: ['EF'],
 };
 
 const REQUIRED_PARENT_TYPE: Record<SupportedUploadType, string> = {
+  TOWN_LEVEL_1: 'TOWN',
+  TOWN_LEVEL_2: 'TOWN_LEVEL_1',
+  TOWN_LEVEL_3: 'TOWN_LEVEL_2',
+  TOWN_LEVEL_4: 'TOWN_LEVEL_3',
   CLAN: 'TOWN',
   VILLAGE: 'CLAN',
   HAMLET: 'VILLAGE',
+  MATERNAL_KINDRED: 'HAMLET, VILLAGE, or LINEAGE',
+  NATAL_EXTENDED_FAMILY: 'MATERNAL_KINDRED',
+  MARITAL_EXTENDED_FAMILY: 'NATAL_EXTENDED_FAMILY',
   KINDRED: 'HAMLET, VILLAGE, or LINEAGE',
   EXTENDED_FAMILY: 'KINDRED',
+  NUCLEAR_FAMILY: 'EXTENDED_FAMILY',
 };
 
 const SAME_CSV_PARENT_ALLOWED: Record<SupportedUploadType, boolean> = {
+  TOWN_LEVEL_1: false,
+  TOWN_LEVEL_2: true,
+  TOWN_LEVEL_3: true,
+  TOWN_LEVEL_4: true,
   CLAN: false,
   VILLAGE: true,
   HAMLET: true,
+  MATERNAL_KINDRED: true,
+  NATAL_EXTENDED_FAMILY: true,
+  MARITAL_EXTENDED_FAMILY: true,
   KINDRED: true,
   EXTENDED_FAMILY: true,
+  NUCLEAR_FAMILY: true,
 };
+
+function normalizeUploadType(type: string): SupportedUploadType | undefined {
+  switch (type) {
+    case 'KINDRED':
+      return 'MATERNAL_KINDRED';
+    case 'EXTENDED_FAMILY':
+      return 'NATAL_EXTENDED_FAMILY';
+    case 'NUCLEAR_FAMILY':
+      return 'MARITAL_EXTENDED_FAMILY';
+    default:
+      return SUPPORTED_UPLOAD_TYPES.includes(type as SupportedUploadType)
+        ? (type as SupportedUploadType)
+        : undefined;
+  }
+}
 
 const SEEDED_ONTOLOGY_IDS = new Set(buildOntologySeed().map((entity) => entity.id));
 
@@ -196,41 +266,64 @@ function buildAncestorIds(row: ParsedCsvRow) {
   const stateName = normalizeLabel(row.state);
   const lgaName = normalizeLabel(row.lga);
   const townName = normalizeLabel(row.town);
+  const townLevel1Name = normalizeLabel(row.townLevel1);
+  const townLevel2Name = normalizeLabel(row.townLevel2);
+  const townLevel3Name = normalizeLabel(row.townLevel3);
+  const townLevel4Name = normalizeLabel(row.townLevel4);
   const clanName = normalizeLabel(row.clan);
   const villageName = normalizeLabel(row.village);
   const hamletName = normalizeLabel(row.hamlet);
-  const kindredName = normalizeLabel(row.kindred);
+  const maternalKindredName = normalizeLabel(row.maternalKindred || row.kindred);
+  const natalExtendedFamilyName = normalizeLabel(row.natalExtendedFamily);
 
   const countryIdValue = countryId(countryName);
   const stateIdValue = stateName ? stateId(countryIdValue, stateName) : undefined;
   const lgaIdValue = stateIdValue && lgaName ? lgaId(stateIdValue, lgaName) : undefined;
   const townIdValue = lgaIdValue && townName ? townId(lgaIdValue, townName) : undefined;
+  const townLevel1IdValue = townIdValue && townLevel1Name ? townLevel1Id(townIdValue, townLevel1Name) : undefined;
+  const townLevel2IdValue =
+    townLevel1IdValue && townLevel2Name ? townLevel2Id(townLevel1IdValue, townLevel2Name) : undefined;
+  const townLevel3IdValue =
+    townLevel2IdValue && townLevel3Name ? townLevel3Id(townLevel2IdValue, townLevel3Name) : undefined;
+  const townLevel4IdValue =
+    townLevel3IdValue && townLevel4Name ? townLevel4Id(townLevel3IdValue, townLevel4Name) : undefined;
   const clanIdValue = townIdValue && clanName ? clanId(townIdValue, clanName) : undefined;
   const villageIdValue = clanIdValue && villageName ? villageId(clanIdValue, villageName) : undefined;
   const hamletIdValue = villageIdValue && hamletName ? hamletId(villageIdValue, hamletName) : undefined;
-  const kindredIdValue = hamletIdValue && kindredName ? kindredId(hamletIdValue, kindredName) : undefined;
+  const kindredIdValue = hamletIdValue && maternalKindredName ? kindredId(hamletIdValue, maternalKindredName) : undefined;
+  const extendedFamilyIdValue =
+    kindredIdValue && natalExtendedFamilyName ? extendedFamilyId(kindredIdValue, natalExtendedFamilyName) : undefined;
+  const nuclearFamilyIdValue =
+    extendedFamilyIdValue ? nuclearFamilyId(extendedFamilyIdValue, 'placeholder') : undefined;
 
   return {
     countryIdValue,
     stateIdValue,
     lgaIdValue,
     townIdValue,
+    townLevel1IdValue,
+    townLevel2IdValue,
+    townLevel3IdValue,
+    townLevel4IdValue,
     clanIdValue,
     villageIdValue,
     hamletIdValue,
     kindredIdValue,
+    extendedFamilyIdValue,
+    nuclearFamilyIdValue,
   };
 }
 
 function buildEntityFromRow(rowNumber: number, row: ParsedCsvRow): DraftRow {
-  const type = normalizeLabel(row.type).toUpperCase() as SupportedUploadType;
+  const requestedType = normalizeLabel(row.type).toUpperCase();
+  const type = normalizeUploadType(requestedType);
   const name = normalizeLabel(row.name);
 
-  if (!SUPPORTED_UPLOAD_TYPES.includes(type)) {
+  if (!type) {
     return {
       rowNumber,
       raw: row,
-      error: `Unsupported type "${row.type}". Supported types are ${SUPPORTED_UPLOAD_TYPES.join(', ')}.`,
+      error: 'Unsupported type. Use TOWN_LEVEL_1, TOWN_LEVEL_2, TOWN_LEVEL_3, TOWN_LEVEL_4, CLAN, VILLAGE, HAMLET, MATERNAL_KINDRED, NATAL_EXTENDED_FAMILY, or MARITAL_EXTENDED_FAMILY.',
     };
   }
 
@@ -251,16 +344,29 @@ function buildEntityFromRow(rowNumber: number, row: ParsedCsvRow): DraftRow {
   const ancestors = buildAncestorIds(row);
   const parentId = normalizeLabel(row.parentId) || (() => {
     switch (type) {
+      case 'TOWN_LEVEL_1':
+        return ancestors.townIdValue;
+      case 'TOWN_LEVEL_2':
+        return ancestors.townLevel1IdValue;
+      case 'TOWN_LEVEL_3':
+        return ancestors.townLevel2IdValue;
+      case 'TOWN_LEVEL_4':
+        return ancestors.townLevel3IdValue;
       case 'CLAN':
         return ancestors.townIdValue;
       case 'VILLAGE':
         return ancestors.clanIdValue;
       case 'HAMLET':
         return ancestors.villageIdValue;
+      case 'MATERNAL_KINDRED':
       case 'KINDRED':
         return ancestors.hamletIdValue;
+      case 'NATAL_EXTENDED_FAMILY':
       case 'EXTENDED_FAMILY':
         return ancestors.kindredIdValue;
+      case 'MARITAL_EXTENDED_FAMILY':
+      case 'NUCLEAR_FAMILY':
+        return ancestors.extendedFamilyIdValue;
       default:
         return undefined;
     }
@@ -277,6 +383,18 @@ function buildEntityFromRow(rowNumber: number, row: ParsedCsvRow): DraftRow {
 
   let id: string;
   switch (type) {
+    case 'TOWN_LEVEL_1':
+      id = townLevel1Id(parentId, name);
+      break;
+    case 'TOWN_LEVEL_2':
+      id = townLevel2Id(parentId, name);
+      break;
+    case 'TOWN_LEVEL_3':
+      id = townLevel3Id(parentId, name);
+      break;
+    case 'TOWN_LEVEL_4':
+      id = townLevel4Id(parentId, name);
+      break;
     case 'CLAN':
       id = clanId(parentId, name);
       break;
@@ -286,13 +404,32 @@ function buildEntityFromRow(rowNumber: number, row: ParsedCsvRow): DraftRow {
     case 'HAMLET':
       id = hamletId(parentId, name);
       break;
+    case 'MATERNAL_KINDRED':
     case 'KINDRED':
       id = kindredId(parentId, name);
       break;
+    case 'NATAL_EXTENDED_FAMILY':
     case 'EXTENDED_FAMILY':
       id = extendedFamilyId(parentId, name);
       break;
+    case 'MARITAL_EXTENDED_FAMILY':
+    case 'NUCLEAR_FAMILY':
+      id = nuclearFamilyId(parentId, name);
+      break;
   }
+
+  const entityType = (() => {
+    switch (type) {
+      case 'MATERNAL_KINDRED':
+        return 'KINDRED';
+      case 'NATAL_EXTENDED_FAMILY':
+        return 'EXTENDED_FAMILY';
+      case 'MARITAL_EXTENDED_FAMILY':
+        return 'NUCLEAR_FAMILY';
+      default:
+        return type;
+    }
+  })();
 
   return {
     rowNumber,
@@ -301,7 +438,7 @@ function buildEntityFromRow(rowNumber: number, row: ParsedCsvRow): DraftRow {
     entity: {
       id,
       name: toIdSegment(name),
-      type,
+      type: entityType,
       parentId,
       isPublic: parseBoolean(row.isPublic),
       sortOrder,
@@ -374,12 +511,12 @@ function buildMissingParentMessage(
     return `Parent ${parentId} is present in this CSV at row ${providers[0].rowNumber}, but that parent row is invalid. Fix the parent row first, then preview again.`;
   }
 
-  if (uploadType === 'CLAN') {
+  if (uploadType === 'CLAN' || uploadType === 'TOWN_LEVEL_1') {
     if (SEEDED_ONTOLOGY_IDS.has(parentId) && !existingIds.has(parentId)) {
-      return `Missing parent ${parentId} for CLAN. This is a base TOWN node from the ontology seed blueprint, so it must exist in Firestore first. Run the ontology seed or import that town before previewing this CSV again.`;
+      return `Missing parent ${parentId} for ${uploadType}. This is a base TOWN node from the ontology seed blueprint, so it must exist in Firestore first. Run the ontology seed or import that town before previewing this CSV again.`;
     }
 
-    return `Missing parent ${parentId} for CLAN. CLAN rows must attach to an existing TOWN in Firestore; they cannot create the town from the same CSV. Seed or import the town first, then retry.`;
+    return `Missing parent ${parentId} for ${uploadType}. ${uploadType} rows must attach to an existing TOWN in Firestore; they cannot create the town from the same CSV. Seed or import the town first, then retry.`;
   }
 
   if (SEEDED_ONTOLOGY_IDS.has(parentId) && !existingIds.has(parentId)) {
