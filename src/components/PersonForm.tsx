@@ -12,10 +12,17 @@ import { PersonFormSubmission, Gender, SourceType, VerificationLevel, Visibility
 import { User, Users, Award, Calendar, FileText, Shield, Globe, CheckCircle, ArrowRight, ArrowLeft } from 'lucide-react'
 import dropdownData from '@/lib/dropdown-data.json'
 import csvDropdownData from '@/lib/csv-dropdown-data.json'
+import originDropdownData from '@/lib/nigerian-origin-dropdown-data.json'
 import { nigerianGeoZones } from '@/lib/extended-location-data'
 import { getWardOptions } from '@/lib/nigeria-dropdown-utils'
 import type { OntologyEntity } from '@/lib/ontology-types'
 import { useOntologyChildren } from '@/lib/use-ontology-children'
+
+type OriginStateOption = {
+  state: string
+  region: string
+  lgas: string[]
+}
 
 interface PersonFormProps {
   onSubmit?: (data: PersonFormSubmission) => void
@@ -99,6 +106,8 @@ function mergeUniqueOptions(...lists: Array<string[] | undefined>): string[] {
   return merged.sort((a, b) => a.localeCompare(b))
 }
 
+const CSV_ORIGIN_STATES = ((originDropdownData as any).originStates ?? []) as OriginStateOption[]
+
 export default function PersonForm({ onSubmit }: PersonFormProps) {
   const [activeTab, setActiveTab] = useState(0)
   const [isSubmitting, setIsSubmitting] = useState(false)
@@ -155,9 +164,10 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
     }
   }, [activeTab, formData.isDiasporaRelative, diasporaData, isLoadingDiaspora])
 
-  const csvTownOptions = ((csvDropdownData as any).townsByLgaName?.[formData.originLocalGovernmentArea || ''] as string[]) ?? []
-  const ontologyTownOptions = ontologyTownsOrigin.data?.map(getOntologyEntityLabel) ?? []
-  const nigerianTownOptions = mergeUniqueOptions(csvTownOptions, ontologyTownOptions)
+  const csvTownOptions = ((originDropdownData as any).townsByLgaName?.[formData.originLocalGovernmentArea || ''] as string[]) ?? []
+  const csvOriginStateOptions = CSV_ORIGIN_STATES.map((entry: OriginStateOption) => entry.state)
+  const csvOriginLgaOptions = CSV_ORIGIN_STATES.find((entry: OriginStateOption) => entry.state === formData.originState)?.lgas ?? []
+  const nigerianTownOptions = mergeUniqueOptions(csvTownOptions)
   const csvTownLevel1Options = getHierarchyOptions((csvDropdownData as any).level1sByTownName, formData.originTown)
   const ontologyTownLevel1Options = ontologyTownLevel1Origin.data?.map(getOntologyEntityLabel) ?? []
   const originTownLevel1Options = mergeUniqueOptions(csvTownLevel1Options, ontologyTownLevel1Options)
@@ -846,10 +856,10 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                     className="w-full px-4 py-2 border border-gray-300 rounded-lg"
                   >
                     <option value="">Select State</option>
-                    {dropdownData.nigerianStates
-                      .filter(s => !formData.originRegion || nigerianGeoZones[formData.originRegion as keyof typeof nigerianGeoZones]?.includes(s.state))
-                      .map(s => (
-                        <option key={s.state} value={s.state}>{s.state}</option>
+                    {csvOriginStateOptions
+                      .filter((state: string) => !formData.originRegion || nigerianGeoZones[formData.originRegion as keyof typeof nigerianGeoZones]?.includes(state))
+                      .map((state: string) => (
+                        <option key={state} value={state}>{state}</option>
                       ))}
                   </select>
                 </div>
@@ -901,7 +911,7 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                     disabled={!formData.originState}
                   >
                     <option value="">Select LGA</option>
-                    {formData.originState && dropdownData.nigerianStates.find(s => s.state === formData.originState)?.lgas.map(l => (
+                    {formData.originState && csvOriginLgaOptions.map((l: string) => (
                       <option key={l} value={l}>{l}</option>
                     ))}
                   </select>

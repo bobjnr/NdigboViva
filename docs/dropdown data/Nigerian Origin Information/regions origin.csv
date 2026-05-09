@@ -1,0 +1,4 @@
+id,name,countryId,continentId,type,officialOrder
+south_east,South East,nigeria,africa,region,1
+south_south,South-South,nigeria,africa,region,2
+north_central,North Central,nigeria,africa,region,3
