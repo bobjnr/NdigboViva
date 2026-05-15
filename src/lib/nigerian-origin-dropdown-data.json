@@ -9,12 +9,12 @@
         "Arochukwu",
         "Bende",
         "Ikwuano",
-        "Isiala Ngwa North",
-        "Isiala Ngwa South",
+        "Isialangwa North",
+        "Isialangwa South",
         "Isuikwuato",
         "Obingwa",
         "Ohafia",
-        "Osisioma Ngwa",
+        "Osisioma",
         "Ugwunagbo",
         "Ukwa East",
         "Ukwa West",
@@ -97,7 +97,7 @@
         "Aboh Mbaise",
         "Ahiazu Mbaise",
         "Ehime Mbano",
-        "Ezinihitte Mbaise",
+        "Ezinihitte",
         "Ideato North",
         "Ideato South",
         "Ihitte Uboma",
@@ -140,11 +140,11 @@
         "Patani",
         "Sapele",
         "Udu",
-        "Ughelli North",
-        "Ughelli South",
+        "Ughelu North",
+        "Ughelu South",
         "Ukwani",
         "Uvwie",
-        "Warri South"
+        "Warri"
       ]
     },
     {
@@ -157,7 +157,7 @@
       "region": "South-South",
       "lgas": [
         "Ekeremor",
-        "Kolokuma/Opokuma",
+        "Kolokuma Opokuma",
         "Sagbama",
         "Southern Ijaw",
         "Yenagoa"
@@ -178,12 +178,13 @@
         "Akuku Toru",
         "Bonny",
         "Degema",
+        "Egbema",
         "Emohua",
         "Etche",
         "Ikwerre",
         "Ndoni",
-        "Obio/Akpor",
-        "Ogba/Egbema/Ndoni",
+        "Obio Akpor",
+        "Ogba",
         "Okirika",
         "Port Harcourt"
       ]
@@ -195,21 +196,61 @@
         "Adavi",
         "Ajaokuta",
         "Ankpa",
+        "Bunu",
         "Dekina",
         "Ibaji",
         "Idah",
-        "Igalamela Odolu",
+        "Igalamela",
         "Ijimu",
-        "Kabba/Bunu",
+        "Kabba Bunu Ijimu",
         "Koton Karfe",
         "Lokoja",
+        "Magongo",
         "Mopa Muro",
         "Ofu",
         "Ogori",
-        "Ogori/Magongo",
         "Okehi",
         "Yagba East",
         "Yagba West"
+      ]
+    },
+    {
+      "state": "Akwa",
+      "region": "",
+      "lgas": [
+        "Ibom Eastern Obolo",
+        "Ibom Eket Onna Esit Eket Ibeno",
+        "Ibom Esit Eke",
+        "Ibom Ibeno",
+        "Ibom Ikot Abasi",
+        "Ibom Mbo",
+        "Ibom Mkpat Enin",
+        "Ibom Okobo",
+        "Ibom Onna",
+        "Ibom Oron",
+        "Ibom Udung Uko",
+        "Ibom Urue Offong Oruko"
+      ]
+    },
+    {
+      "state": "Cross",
+      "region": "",
+      "lgas": [
+        "River Abi",
+        "River Akamkpa",
+        "River Bekwarra",
+        "River Biase",
+        "River Boki",
+        "River Calabar Municipal",
+        "River Calabar South",
+        "River Etung",
+        "River Ikom",
+        "River Obubra",
+        "River Obudu",
+        "River Odukpani",
+        "River Ogoja",
+        "River Yakurr",
+        "River Yala"
       ]
     }
   ],
@@ -270,7 +311,7 @@
       "Ariam/Usaka",
       "Oloko"
     ],
-    "Isiala Ngwa North": [
+    "Isialangwa North": [
       "Ama-Asa",
       "Amasa-Ntigha",
       "Amapu-Ntigha",
@@ -282,7 +323,7 @@
       "Mbubo",
       "Umuogele"
     ],
-    "Isiala Ngwa South": [
+    "Isialangwa South": [
       "Ngwa Obi",
       "Amaku",
       "Mbutu",
@@ -348,7 +389,7 @@
       "Okon-Aku",
       "Ufiele"
     ],
-    "Osisioma Ngwa": [
+    "Osisioma": [
       "Uratta",
       "Okpu-Umuobo",
       "Amaitoli",
@@ -441,6 +482,132 @@
       "Lekwesi",
       "Mbala",
       "Nkwoagu"
+    ],
+    "Ibom Eastern Obolo": [
+      "Koroete",
+      "Iko",
+      "Atabrikang",
+      "Elek-Okpoon",
+      "Otunene",
+      "Emeroke",
+      "Ikonta",
+      "Obianga"
+    ],
+    "Ibom Eket Onna Esit Eket Ibeno": [
+      "Afaha Ukwa",
+      "Esit Urua",
+      "Idung Offiong",
+      "Odio",
+      "Iko Ekwa",
+      "Effoi",
+      "Edebuk",
+      "Ikot Udota"
+    ],
+    "Ibom Esit Eke": [
+      "Uquo",
+      "Etebi",
+      "Urua Okok",
+      "Mbakuyo",
+      "Idung Ita",
+      "Akwaita",
+      "Akpautong",
+      "Idung Assam"
+    ],
+    "Ibom Ibeno": [
+      "Okposo",
+      "Atabrikang",
+      "Ukpenekang",
+      "Iwuochang",
+      "Mkpanak",
+      "Ntafre",
+      "Opolum"
+    ],
+    "Ibom Ikot Abasi": [
+      "Ikpa Ibekwe",
+      "Ikpa Edemaya",
+      "Ukpum Okon",
+      "Ikpa Nnung Assang",
+      "Ukpum Ette",
+      "Ikot Obong",
+      "Uta Ewa",
+      "Ikot Etetuk"
+    ],
+    "Ibom Mbo": [
+      "Afaha Okpo",
+      "Effiat",
+      "Nkwong",
+      "Ibiaku",
+      "Ikpo Ikono",
+      "Ikpa Ibom",
+      "Atanuk",
+      "Ekpuk"
+    ],
+    "Ibom Mkpat Enin": [
+      "Ikpa Ibom",
+      "Ukpum Minya",
+      "Ikpa Ikono",
+      "Ibiaku",
+      "Eka Nung Ukim",
+      "Ikot Obong",
+      "Ikot Eti",
+      "Iffe"
+    ],
+    "Ibom Okobo": [
+      "Okopedi",
+      "Okiuso",
+      "Ukwong",
+      "Eta",
+      "Odu",
+      "Atabong",
+      "Ibighi",
+      "Ebughu",
+      "Ufok Esuk"
+    ],
+    "Ibom Onna": [
+      "Oniong",
+      "Nnung Ndem",
+      "Awa",
+      "Afaha",
+      "Ikot Idem Udo",
+      "Iquita",
+      "Ikot Ndua Iman",
+      "Ikot Nkan",
+      "Ndon Eyo"
+    ],
+    "Ibom Oron": [
+      "Oron Town",
+      "Eyo Abasi",
+      "Uya Oro",
+      "Afaha Okpo",
+      "Eyotong"
+    ],
+    "Ibom Udung Uko": [
+      "Okpo",
+      "Afaha Okpo",
+      "Uboro Isong Inyang",
+      "Enino",
+      "Eyo Ating Osung",
+      "Eyiba"
+    ],
+    "Ibom Urue Offong Oruko": [
+      "Abak Elibi",
+      "Anai Okpo",
+      "Edok",
+      "Eyetong",
+      "Eyo Eyekip",
+      "Eyo Okwong",
+      "Eyo Ufuo",
+      "Eyo Uwesong",
+      "Eyo Uya",
+      "Eyobiasang",
+      "Eyokpifie",
+      "Eyulor",
+      "Isong Inyang",
+      "Okuku",
+      "Oyoku Ibighi",
+      "Oyubia",
+      "Ukuda",
+      "Urue Offong"
     ],
     "Aguata": [
       "Achina",
@@ -673,7 +840,7 @@
       "Tamogbene",
       "Toru-Foutorugbene"
     ],
-    "Kolokuma/Opokuma": [
+    "Kolokuma Opokuma": [
       "Kaiama",
       "Odi",
       "Sabagreia",
@@ -720,6 +887,180 @@
       "Opolo",
       "Polaku",
       "Tombia"
+    ],
+    "River Abi": [
+      "Itigidi",
+      "Ediba",
+      "Usumutong",
+      "Ebom",
+      "Afafanyi",
+      "Igonigoni",
+      "Anong",
+      "Ekureku",
+      "Imabana"
+    ],
+    "River Akamkpa": [
+      "Akamkpa",
+      "Uyanga",
+      "Ikpi",
+      "Awi",
+      "Mbarakon",
+      "Eku",
+      "Iko",
+      "Oban"
+    ],
+    "River Bekwarra": [
+      "Abuochiche",
+      "Abuagbor-Iye",
+      "Nyanya-Ulim",
+      "Nyanya-Idigwe",
+      "Gakem",
+      "Itekpa",
+      "Ugboro",
+      "Ibiragidi",
+      "Utukwe",
+      "Afrike",
+      "Ukpah",
+      "Ijibor",
+      "Beten",
+      "Anyikang",
+      "Ebegang",
+      "Utukpuru",
+      "Ebewo"
+    ],
+    "River Biase": [
+      "Akpet",
+      "Ubaghara",
+      "Okurike",
+      "Agwagune",
+      "Obum",
+      "Umuolor",
+      "Egbor",
+      "Akparavuni"
+    ],
+    "River Boki": [
+      "Ntamante",
+      "Borum",
+      "Kakwagom-Irruan",
+      "Bunyia",
+      "Nkim Osokom",
+      "Boje",
+      "Dadi",
+      "Iman",
+      "Okundi"
+    ],
+    "River Calabar Municipal": [
+      "Atamunu",
+      "Ekorinim",
+      "Etta Agbo",
+      "Ikot Efa",
+      "Ikot Uduak",
+      "Mbora",
+      "Satellite Town"
+    ],
+    "River Calabar South": [
+      "Anantigha",
+      "Henshaw Town",
+      "Effut Uwanse",
+      "Efut Ebua"
+    ],
+    "River Etung": [
+      "Anantigha",
+      "Henshaw Town",
+      "Effut Uwanse",
+      "Efut Ebua"
+    ],
+    "River Ikom": [
+      "Bisiri",
+      "Abakpa",
+      "Ukelle",
+      "Ukwel",
+      "Okuku",
+      "Udama Ubug",
+      "Akparabong",
+      "Abanyum",
+      "Olulumo"
+    ],
+    "River Obubra": [
+      "Ababene",
+      "Iyamitet",
+      "Okom",
+      "Osopong",
+      "Iyalla",
+      "Ofat",
+      "Ofodua",
+      "Ofombo-Ngha"
+    ],
+    "River Obudu": [
+      "Bette",
+      "Okpe",
+      "Alege",
+      "Becheve",
+      "Unpe",
+      "Utanga",
+      "Ugang",
+      "Utugwang"
+    ],
+    "River Odukpani": [
+      "Akpap Okoyong",
+      "Eki",
+      "Eniong Abatim",
+      "Ito",
+      "Idere",
+      "Ukwa Ibom",
+      "Creek Town",
+      "Inuakpa Okoyong",
+      "Okurikang"
+    ],
+    "River Ogoja": [
+      "Ishibori",
+      "Ekumtak",
+      "Oboso",
+      "Bansan",
+      "Idum",
+      "Ekajuk",
+      "Egbong",
+      "Nnang",
+      "Bansara"
+    ],
+    "River Yakurr": [
+      "Ugep",
+      "Mkpani",
+      "Idomi",
+      "Ekori",
+      "Inyima",
+      "Nko",
+      "Assiga",
+      "Agoi Ibami",
+      "Agoi Ekpo",
+      "Agoi Efreke"
+    ],
+    "River Yala": [
+      "Okpoma",
+      "Okuku",
+      "Yahe",
+      "Ugaga",
+      "Ijego",
+      "Oloko",
+      "Imaje",
+      "Oke",
+      "Echumoga",
+      "Woda",
+      "Ebo",
+      "Igede Edii Nation",
+      "Itekpa",
+      "Maa",
+      "Wonye",
+      "Uchu",
+      "Osina",
+      "Mbuor",
+      "Aliforkpa",
+      "Echumofana",
+      "Wanihem",
+      "Wanikade",
+      "Wanokom",
+      "Ijiraga",
+      "Ntrigom"
     ],
     "Aniocha North": [
       "Issele-Uku (Headquarters)",
@@ -900,14 +1241,14 @@
       "Okpaka",
       "Enerhen"
     ],
-    "Ughelli North": [
+    "Ughelu North": [
       "Ughelli",
       "Agbarha-Otor",
       "Orogun",
       "Ogor",
       "Evwreni"
     ],
-    "Ughelli South": [
+    "Ughelu South": [
       "Otu-Jeremi",
       "Effurun-Otor",
       "Ekakpamre",
@@ -947,7 +1288,7 @@
       "Ugboroke",
       "Ughoton"
     ],
-    "Warri South": [
+    "Warri": [
       "Ode-Itsekiri",
       "Egbokodo",
       "Jelu",
@@ -1303,7 +1644,7 @@
       "Umuanunu",
       "Abosi"
     ],
-    "Ezinihitte Mbaise": [
+    "Ezinihitte": [
       "Chokoneze",
       "Akpodim",
       "Akueke",
@@ -1658,12 +1999,11 @@
       "Eboyi",
       "Akpagidigbo"
     ],
-    "Kabba/Bunu": [
+    "Bunu": [
       "Bunu",
       "Aiyede",
       "Odo-Ape",
-      "Okebukun",
-      "Kabba"
+      "Okebukun"
     ],
     "Dekina": [
       "Dekina",
@@ -1699,7 +2039,7 @@
       "Alimoke",
       "Alla-Okweje"
     ],
-    "Igalamela Odolu": [
+    "Igalamela": [
       "Ajaka",
       "Odolu",
       "Ojoku",
@@ -1728,6 +2068,13 @@
       "Oton-Ade",
       "Origa"
     ],
+    "Kabba Bunu Ijimu": [
+      "Kabba",
+      "Bunu",
+      "Aiyede",
+      "Odo-Ape",
+      "Okebukun"
+    ],
     "Koton Karfe": [
       "Koton-Karfe",
       "Ukwo",
@@ -1748,7 +2095,7 @@
       "Kupa",
       "Oworo"
     ],
-    "Ogori/Magongo": [
+    "Magongo": [
       "Magongo"
     ],
     "Mopa Muro": [
@@ -1899,7 +2246,7 @@
       "Obuama",
       "Bukuma"
     ],
-    "Ogba/Egbema/Ndoni": [
+    "Egbema": [
       "Agah",
       "Akabuka",
       "Alinso-Okenu",
@@ -1917,16 +2264,7 @@
       "Omoku",
       "Onuesi-Ogu",
       "Osiakpu",
-      "Usomini",
-      "Obrikom",
-      "Egbeda",
-      "Ereama",
-      "Obuburu",
-      "Obie",
-      "Obokroha",
-      "Obosi",
-      "Okpurukpula",
-      "Uju"
+      "Usomini"
     ],
     "Emohua": [
       "Oduoha",
@@ -2000,7 +2338,7 @@
       "Umuorieke",
       "Utu"
     ],
-    "Obio/Akpor": [
+    "Obio Akpor": [
       "Elelenwo",
       "Nkpelu",
       "Rumueme",
@@ -2009,6 +2347,26 @@
       "Trans-Amadi",
       "Rumuoji",
       "Choba"
+    ],
+    "Ogba": [
+      "Omoku",
+      "Obrikom",
+      "Egbeda",
+      "Ereama",
+      "Obite",
+      "Obagi",
+      "Obuburu",
+      "Obie",
+      "Obokroha",
+      "Obosi",
+      "Ogbogu",
+      "Okansu",
+      "Okposi",
+      "Okpurukpula",
+      "Onuesi-Ogu",
+      "Osiakpu",
+      "Uju",
+      "Usomini"
     ],
     "Okirika": [
       "Kirike",
@@ -2033,6 +2391,207 @@
       "Etche"
     ]
   },
+  "level1sByTownName": {
+    "Agulu": [
+      "Ifite - Enu"
+    ],
+    "Anaku": [
+      "Umuria",
+      "Ikenga",
+      "Umuereagu"
+    ],
+    "Oraifite": [
+      "Unodu",
+      "Ifite"
+    ],
+    "Obosi (Adike)": [
+      "Oba",
+      "Okudo"
+    ],
+    "Nnobi": [
+      "Ebenesi",
+      "Ngo",
+      "Awuda"
+    ],
+    "Okija": [
+      "Ubahua Bu Ubahu",
+      "Ihitea Bu Ihite",
+      "Uhuobo Na Uhuowelle"
+    ]
+  },
+  "level2sByLevel1Name": {
+    "Ubahua Bu Ubahu": [
+      "Ubahu",
+      "Umuohi",
+      "Ezinaukpodu"
+    ],
+    "Ihitea Bu Ihite": [
+      "Ubahu - Eze",
+      "Ubahumonum",
+      "Isieke/Ubahu - Udara"
+    ],
+    "Uhuobo Na Uhuowelle": [
+      "Uhuowelle",
+      "Umuatuegwu/Uhudim/Ohukabia",
+      "Ofor Na Ngwu"
+    ],
+    "Unodu": [
+      "Isingwu",
+      "Ibolo",
+      "Umuezopi"
+    ],
+    "Ifite": [
+      "Awo",
+      "Urudunu",
+      "Umuezeakwa",
+      "Umunakwa",
+      "Umuonyeaka",
+      "Amakofa"
+    ],
+    "Ifite - Enu": [
+      "Amatutu",
+      "Okpu - Ifite",
+      "Umubiala",
+      "Nkitaku",
+      "Umuowelle"
+    ],
+    "Ebenesi": [
+      "Umuona",
+      "Ifite Ogbeaduji",
+      "Ubaha",
+      "Amadunu",
+      "Umuafor",
+      "Umuru"
+    ],
+    "Ngo": [
+      "Umuegbu Ezigbom",
+      "Umunebo Ezigbom",
+      "Umuikechem Ndam",
+      "Umuezeme Ndam",
+      "Obinuno Umuagu",
+      "Obinagu Umuagu"
+    ],
+    "Umuria": [
+      "Akpaa",
+      "Umuerechi",
+      "Umuagu",
+      "Umuriana",
+      "Umurienu"
+    ],
+    "Ikenga": [
+      "Atava",
+      "Obukwu"
+    ],
+    "Umuereagu": [
+      "Akpi",
+      "Umuotobo",
+      "Umuowa",
+      "Isiokwe",
+      "Umuoka",
+      "Umuerekwelagu"
+    ]
+  },
+  "clansByLevel1Name": {
+    "Ubahua Bu Ubahu": [
+      "Etiti - Ubahu",
+      "Ubahu - Uduru",
+      "Ezieke",
+      "Isifulu",
+      "Umudioka",
+      "Umuhu",
+      "Ubahu - Ezike"
+    ],
+    "Ihitea Bu Ihite": [
+      "Ubahu - Eze",
+      "Ubahumonum",
+      "Isieke",
+      "Ubahu - Udara"
+    ],
+    "Uhuobo Na Uhuowelle": [
+      "Oghalaegbu",
+      "Umuogu",
+      "Umuzu",
+      "Umuatuegwu",
+      "Uhudim",
+      "0Hukabia",
+      "Umuofor Akoba",
+      "Uhungwu",
+      "Ezewulum"
+    ],
+    "Unodu": [
+      "Umuenwe",
+      "Umuodum",
+      "Umuekwuanya",
+      "Umuetiti",
+      "Ugwuezeama",
+      "Okpuno",
+      "Ogbo - Opi"
+    ],
+    "Ifite - Enu": [
+      "Umudimakasi",
+      "Enugwu",
+      "Umuezoli",
+      "Akaezi",
+      "Umugwo"
+    ],
+    "Ebenesi": [
+      "Umudiokpala",
+      "Ihuobi",
+      "Umuobi",
+      "Ihuolile",
+      "Dunuagha",
+      "Odokwe",
+      "Umuchime",
+      "Umuodata",
+      "Dunu Nebo",
+      "Ochom",
+      "Ochuga",
+      "Umuezeobi",
+      "Umushim",
+      "Umunnamelighi",
+      "Uhunyalagu",
+      "Umuezealor",
+      "Umuezeokana",
+      "Umudalaezike",
+      "Umuobianochie"
+    ],
+    "Ngo": [
+      "Umuechem",
+      "Umuezugankwo",
+      "Umunafor I",
+      "Umunafor Ii",
+      "Umuezeagbom",
+      "Umuamalum",
+      "Umuobum",
+      "Umuokpala",
+      "Umudiokpala",
+      "Umuakpojelu",
+      "Umuobi",
+      "Isiofia",
+      "Umuezekpelu",
+      "Umuezeani",
+      "Agugo - Na - Nwego",
+      "Umuobia",
+      "Umu - Eruchalu",
+      "Umu - Ezisi Amazu",
+      "Umu - Nnaemelu",
+      "Igwuedo",
+      "Umudunanna",
+      "Umuoghu",
+      "Umuebube",
+      "Umuokwuoha",
+      "Umuneli",
+      "Ihuotutu",
+      "Uhuoshi",
+      "Umugwala"
+    ],
+    "Ikenga": [
+      "Iruowelle",
+      "Isiakpume",
+      "Opuatava"
+    ]
+  },
+  "clansByLevel2Name": {},
   "stateRegions": {
     "Abia": "South East",
     "Anambra": "South East",
@@ -2044,13 +2603,18 @@
     "Bayelsa": "South-South",
     "Cross River": "South-South",
     "Rivers": "South-South",
-    "Kogi": "North Central"
+    "Kogi": "North Central",
+    "Akwa": "",
+    "Cross": ""
   },
   "_meta": {
-    "generatedAt": "2026-05-09T11:24:41.086Z",
+    "generatedAt": "2026-05-11T20:55:34.127Z",
     "sourceFiles": [
       "docs/dropdown data/Nigerian Origin Information/state origin.csv",
-      "docs/dropdown data/Nigerian Origin Information/town origin.csv"
+      "docs/dropdown data/Nigerian Origin Information/town origin.csv",
+      "docs/dropdown data/Nigerian Origin Information/townAdminLevel1 clean test data.csv",
+      "docs/dropdown data/Nigerian Origin Information/townAdminLevel2.csv",
+      "docs/dropdown data/Nigerian Origin Information/clans.csv"
     ]
   }
 }

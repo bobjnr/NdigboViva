@@ -786,8 +786,9 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
 
   // Town → TownAdminLevel1
   useEffect(() => {
+    const originCsv = originDropdownData as any
     const csv = csvDropdownData as any
-    const csvLevel1s = getHierarchyOptions(csv.level1sByTownName, formData.originTown)
+    const csvLevel1s = getHierarchyOptions(originCsv.level1sByTownName ?? csv.level1sByTownName, formData.originTown)
     const ontologyLevel1s = ontologyTownLevel1Origin.data?.map(getOntologyEntityLabel) ?? []
     const level1s = mergeUniqueOptions(csvLevel1s, ontologyLevel1s)
     setAvailableLevel1s(level1s)
@@ -808,8 +809,12 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
       setAvailableLevel4s([])
       return
     }
+    const originCsv = originDropdownData as any
     const csv = csvDropdownData as any
-    const csvLevel2s = getHierarchyOptions(csv.level2sByLevel1Name, formData.originTownLevel1)
+    const csvLevel2s = getHierarchyOptions(
+      originCsv.level2sByLevel1Name ?? csv.level2sByLevel1Name,
+      formData.originTownLevel1
+    )
     const ontologyLevel2s = ontologyTownLevel2Origin.data?.map(getOntologyEntityLabel) ?? []
     const level2s = mergeUniqueOptions(csvLevel2s, ontologyLevel2s)
     setAvailableLevel2s(level2s)
@@ -853,15 +858,21 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
 
   // TownAdminLevel2 → Clans (CSV-driven, overrides genealogy-hierarchy)
   useEffect(() => {
-    if (!formData.originTownLevel2) return
+    const originCsv = originDropdownData as any
     const csv = csvDropdownData as any
-    const clans = (csv.clansByLevel2Name?.[formData.originTownLevel2] as string[]) ?? []
+    const selectedLevel2 = formData.originTownLevel2 || ''
+    const selectedLevel1 = formData.originTownLevel1 || ''
+    const clans =
+      (originCsv.clansByLevel1Name?.[selectedLevel1] as string[]) ??
+      (originCsv.clansByLevel2Name?.[selectedLevel2] as string[]) ??
+      (csv.clansByLevel2Name?.[selectedLevel2] as string[]) ??
+      []
     if (clans.length > 0) {
       setAvailableClans(clans)
       setIsManualClan(false)
     }
     // don't clear if already set from another source — only override if CSV has data
-  }, [formData.originTownLevel2])
+  }, [formData.originTownLevel1, formData.originTownLevel2])
 
   // Clan → Villages (CSV-driven)
   useEffect(() => {
@@ -1031,6 +1042,14 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
 
   const handleInputChange = (field: keyof GenealogyFormSubmission, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }))
+  }
+
+  const handleKindredChange = (value: string) => {
+    setFormData((prev) => ({
+      ...prev,
+      kindred: value,
+      originKindred: value,
+    }))
   }
 
   const handlePersonFieldChange = (field: keyof PersonFormSubmission, value: any) => {
@@ -2007,6 +2026,20 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                 })()}
               </div>
 
+              {/* Ward */}
+              <div>
+                <label className="block text-sm font-medium text-gray-700 mb-2">Political Ward</label>
+                <select
+                  value={formData.originWard || ''}
+                  onChange={(e) => handleInputChange('originWard', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
+                  disabled={!originWards.length}
+                >
+                  <option value="">Select Ward</option>
+                  {originWards.map(w => <option key={w} value={w}>{w}</option>)}
+                </select>
+              </div>
+
               {/* Town of Origin */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Town of Origin *</label>
@@ -2116,20 +2149,6 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                     disabled={!formData.originTownLevel3}
                   />
                 )}
-              </div>
-
-              {/* Ward */}
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Political Ward</label>
-                <select
-                  value={formData.originWard || ''}
-                  onChange={(e) => handleInputChange('originWard', e.target.value)}
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                  disabled={!originWards.length}
-                >
-                  <option value="">Select Ward</option>
-                  {originWards.map(w => <option key={w} value={w}>{w}</option>)}
-                </select>
               </div>
 
               {/* Clan */}
@@ -2495,10 +2514,10 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
           )}
         </div>
 
-        {/* 2. Maternal Kindred */}
+        {/* 2. Kindred */}
         <div>
           <label className="block text-sm font-medium text-gray-700 mb-2">
-            Maternal Kindred (Iku Nne) *
+            Kindred (Umunna) *
           </label>
           {availableKindreds.length > 0 && !isManualKindred ? (
             <div className="space-y-2">
@@ -2507,14 +2526,14 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                 onChange={(e) => {
                   if (e.target.value === 'OTHER') {
                     setIsManualKindred(true)
-                    handleInputChange('kindred', '')
+                    handleKindredChange('')
                   } else {
-                    handleInputChange('kindred', e.target.value)
+                    handleKindredChange(e.target.value)
                   }
                 }}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
               >
-                <option value="">Enter Maternal Kindred</option>
+                <option value="">Enter Kindred</option>
                 {[...new Set(availableKindreds)].map(k => (
                   <option key={k} value={k}>{k}</option>
                 ))}
@@ -2526,11 +2545,11 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
               <input
                 type="text"
                 value={formData.kindred || ''}
-                onChange={(e) => handleInputChange('kindred', e.target.value)}
+                onChange={(e) => handleKindredChange(e.target.value)}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
                 placeholder={
                   formData.originHamlet || formData.originVillage
-                    ? 'Enter Maternal Kindred'
+                    ? 'Enter Kindred'
                     : 'Enter Hamlet First'
                 }
               />
@@ -2571,7 +2590,7 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                 value={formData.umunna || ''}
                 onChange={(e) => handleInputChange('umunna', e.target.value)}
                 className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-                placeholder={formData.kindred ? 'Enter Natal Extended Family' : 'Enter Maternal Kindred First'}
+                placeholder={formData.kindred ? 'Enter Natal Extended Family' : 'Enter Kindred First'}
               />
             </div>
           )}

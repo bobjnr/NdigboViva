@@ -27,74 +27,18 @@ type PreviewResponse = {
   error?: string
 }
 
+const PARENT_RULES = [
+  { child: 'townLevel1', parent: 'town', note: 'Only fill this if the town is known.' },
+  { child: 'townLevel2', parent: 'townLevel1', note: 'Skip if townLevel1 is blank.' },
+  { child: 'townLevel3', parent: 'townLevel2', note: 'Skip if townLevel2 is blank.' },
+  { child: 'clan', parent: 'town', note: 'Clan attaches directly to town in this uploader.' },
+  { child: 'village', parent: 'clan', note: 'Village needs a clan.' },
+  { child: 'hamlet', parent: 'village', note: 'Hamlet needs a village.' },
+  { child: 'kindred', parent: 'hamlet', note: 'Kindred needs a hamlet.' },
+] as const
+
 const TEMPLATE_ROWS = [
   {
-    type: 'TOWN_LEVEL_1',
-    name: 'UMUDA',
-    displayName: 'Umuda',
-    country: 'Nigeria',
-    state: 'Anambra',
-    lga: 'Aguata',
-    town: 'Achina I',
-    townLevel1: '',
-    townLevel2: '',
-    townLevel3: '',
-    townLevel4: '',
-    clan: '',
-    village: '',
-    hamlet: '',
-    maternalKindred: '',
-    natalExtendedFamily: '',
-    isPublic: 'true',
-    sortOrder: '10',
-    code: '',
-  },
-  {
-    type: 'TOWN_LEVEL_2',
-    name: 'OGBE CENTRAL',
-    displayName: 'Ogbe Central',
-    country: 'Nigeria',
-    state: 'Anambra',
-    lga: 'Aguata',
-    town: 'Achina I',
-    townLevel1: 'UMUDA',
-    townLevel2: '',
-    townLevel3: '',
-    townLevel4: '',
-    clan: '',
-    village: '',
-    hamlet: '',
-    maternalKindred: '',
-    natalExtendedFamily: '',
-    isPublic: 'true',
-    sortOrder: '20',
-    code: '',
-  },
-  {
-    type: 'TOWN_LEVEL_3',
-    name: 'ISI OGBE',
-    displayName: 'Isi Ogbe',
-    country: 'Nigeria',
-    state: 'Anambra',
-    lga: 'Aguata',
-    town: 'Achina I',
-    townLevel1: 'UMUDA',
-    townLevel2: 'OGBE CENTRAL',
-    townLevel3: '',
-    townLevel4: '',
-    clan: '',
-    village: '',
-    hamlet: '',
-    maternalKindred: '',
-    natalExtendedFamily: '',
-    isPublic: 'true',
-    sortOrder: '30',
-    code: '',
-  },
-  {
-    type: 'TOWN_LEVEL_4',
-    name: 'EZI SQUARE',
-    displayName: 'Ezi Square',
     country: 'Nigeria',
     state: 'Anambra',
     lga: 'Aguata',
@@ -102,141 +46,23 @@ const TEMPLATE_ROWS = [
     townLevel1: 'UMUDA',
     townLevel2: 'OGBE CENTRAL',
     townLevel3: 'ISI OGBE',
-    townLevel4: '',
-    clan: '',
-    village: '',
-    hamlet: '',
-    maternalKindred: '',
-    natalExtendedFamily: '',
-    isPublic: 'true',
-    sortOrder: '40',
-    code: '',
-  },
-  {
-    type: 'CLAN',
-    name: 'DIOHA',
-    displayName: 'Dioha',
-    country: 'Nigeria',
-    state: 'Anambra',
-    lga: 'Aguata',
-    town: 'Achina I',
-    townLevel1: '',
-    townLevel2: '',
-    townLevel3: '',
-    townLevel4: '',
-    clan: '',
-    village: '',
-    hamlet: '',
-    maternalKindred: '',
-    natalExtendedFamily: '',
-    isPublic: 'true',
-    sortOrder: '50',
-    code: '',
-  },
-  {
-    type: 'VILLAGE',
-    name: 'ELEKECHEM',
-    displayName: 'Elekchem',
-    country: 'Nigeria',
-    state: 'Anambra',
-    lga: 'Aguata',
-    town: 'Achina I',
-    townLevel1: '',
-    townLevel2: '',
-    townLevel3: '',
-    townLevel4: '',
-    clan: 'DIOHA',
-    village: '',
-    hamlet: '',
-    maternalKindred: '',
-    natalExtendedFamily: '',
-    isPublic: 'true',
-    sortOrder: '60',
-    code: '',
-  },
-  {
-    type: 'HAMLET',
-    name: 'AMA EZI',
-    displayName: 'Ama Ezi',
-    country: 'Nigeria',
-    state: 'Anambra',
-    lga: 'Aguata',
-    town: 'Achina I',
-    townLevel1: '',
-    townLevel2: '',
-    townLevel3: '',
-    townLevel4: '',
-    clan: 'DIOHA',
-    village: 'ELEKECHEM',
-    hamlet: '',
-    maternalKindred: '',
-    natalExtendedFamily: '',
-    isPublic: 'true',
-    sortOrder: '70',
-    code: '',
-  },
-  {
-    type: 'MATERNAL_KINDRED',
-    name: 'UMU OKPARA',
-    displayName: 'Umu Okpara',
-    country: 'Nigeria',
-    state: 'Anambra',
-    lga: 'Aguata',
-    town: 'Achina I',
-    townLevel1: '',
-    townLevel2: '',
-    townLevel3: '',
-    townLevel4: '',
     clan: 'DIOHA',
     village: 'ELEKECHEM',
     hamlet: 'AMA EZI',
-    maternalKindred: '',
-    natalExtendedFamily: '',
-    isPublic: 'true',
-    sortOrder: '80',
-    code: '',
+    kindred: 'UMU OKPARA',
   },
   {
-    type: 'NATAL_EXTENDED_FAMILY',
-    name: 'OKAFOR HOUSE',
-    displayName: 'Okafor House',
     country: 'Nigeria',
     state: 'Anambra',
     lga: 'Aguata',
     town: 'Achina I',
-    townLevel1: '',
-    townLevel2: '',
+    townLevel1: 'UMUDA',
+    townLevel2: 'OGBE CENTRAL',
     townLevel3: '',
-    townLevel4: '',
-    clan: 'DIOHA',
-    village: 'ELEKECHEM',
-    hamlet: 'AMA EZI',
-    maternalKindred: 'UMU OKPARA',
-    natalExtendedFamily: '',
-    isPublic: 'true',
-    sortOrder: '90',
-    code: '',
-  },
-  {
-    type: 'MARITAL_EXTENDED_FAMILY',
-    name: 'NWOGU HOUSE',
-    displayName: 'Nwogu House',
-    country: 'Nigeria',
-    state: 'Anambra',
-    lga: 'Aguata',
-    town: 'Achina I',
-    townLevel1: '',
-    townLevel2: '',
-    townLevel3: '',
-    townLevel4: '',
-    clan: 'DIOHA',
-    village: 'ELEKECHEM',
-    hamlet: 'AMA EZI',
-    maternalKindred: 'UMU OKPARA',
-    natalExtendedFamily: 'OKAFOR HOUSE',
-    isPublic: 'true',
-    sortOrder: '100',
-    code: '',
+    clan: 'UMUAGU',
+    village: 'NDUKAKU',
+    hamlet: '',
+    kindred: '',
   },
 ]
 
@@ -409,9 +235,12 @@ export default function OntologyUpload() {
           <div>
             <h2 className="text-lg font-semibold text-emerald-950">Ontology Upload Guardrails</h2>
             <p className="mt-2 text-sm text-emerald-900">
-              This tool imports deep ancestry structure into the Firestore ontology collection. Supported types are
-              <span className="font-medium"> TOWN_LEVEL_1, TOWN_LEVEL_2, TOWN_LEVEL_3, TOWN_LEVEL_4, CLAN, VILLAGE, HAMLET, MATERNAL_KINDRED, NATAL_EXTENDED_FAMILY, and MARITAL_EXTENDED_FAMILY</span>.
-              Upload a spreadsheet exported from Google Sheets or Excel. Person-level records still stay manual.
+              This tool now supports a simple spreadsheet where <span className="font-medium">one row can describe a whole lineage path</span>.
+              Upload Excel, Google Sheets export, or CSV, and the system will automatically create the matching town levels,
+              clan, village, hamlet, and kindred records in bulk.
+            </p>
+            <p className="mt-2 text-sm text-emerald-900">
+              Legacy technical CSVs with `type` and `name` still work, but non-technical users should use the simple template below.
             </p>
           </div>
         </div>
@@ -421,8 +250,8 @@ export default function OntologyUpload() {
         <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
           <div className="flex items-center justify-between gap-4">
             <div>
-              <h3 className="text-xl font-semibold text-gray-900">Upload Spreadsheet</h3>
-              <p className="mt-1 text-sm text-gray-600">Preview first, then commit only the ready rows.</p>
+              <h3 className="text-xl font-semibold text-gray-900">Upload Simple Spreadsheet</h3>
+              <p className="mt-1 text-sm text-gray-600">Fill one row per location or family line, preview it, then commit the ready records.</p>
             </div>
             <button
               type="button"
@@ -447,7 +276,7 @@ export default function OntologyUpload() {
             <span className="mt-4 text-base font-medium text-gray-900">
               {fileName ? fileName : 'Choose an ontology spreadsheet'}
             </span>
-            <span className="mt-2 text-sm text-gray-600">Upload an `.xlsx`, `.xls`, or `.csv` file for preview before any data is written.</span>
+            <span className="mt-2 text-sm text-gray-600">Upload an `.xlsx`, `.xls`, or `.csv` file. The simple template lets one row generate multiple ontology records.</span>
           </button>
           <input
             ref={inputRef}
@@ -492,15 +321,69 @@ export default function OntologyUpload() {
         </div>
 
         <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
-          <h3 className="text-xl font-semibold text-gray-900">CSV Rules</h3>
+          <h3 className="text-xl font-semibold text-gray-900">How The Simple Sheet Works</h3>
           <ul className="mt-4 space-y-3 text-sm text-gray-700">
-            <li><span className="font-medium">Required:</span> `type` and `name`.</li>
-            <li><span className="font-medium">Ancestor chain:</span> `country,state,lga,town,townLevel1,townLevel2,townLevel3,townLevel4,clan,village,hamlet,maternalKindred,natalExtendedFamily`.</li>
-            <li><span className="font-medium">Town admin rows:</span> `TOWN_LEVEL_1` uses `town`, `TOWN_LEVEL_2` uses `town + townLevel1`, `TOWN_LEVEL_3` uses `town + townLevel1 + townLevel2`, and `TOWN_LEVEL_4` uses `town + townLevel1 + townLevel2 + townLevel3`.</li>
-            <li><span className="font-medium">Family rows:</span> `MATERNAL_KINDRED` uses `hamlet`, `NATAL_EXTENDED_FAMILY` uses `hamlet + maternalKindred`, and `MARITAL_EXTENDED_FAMILY` uses `hamlet + maternalKindred + natalExtendedFamily`.</li>
+            <li><span className="font-medium">One row can create many records:</span> if a row contains `townLevel1`, `townLevel2`, `clan`, `village`, and `kindred`, all of those ontology records will be generated automatically.</li>
+            <li><span className="font-medium">Main columns:</span> `country`, `state`, `lga`, `town`, `townLevel1`, `townLevel2`, `townLevel3`, `clan`, `village`, `hamlet`, `kindred`.</li>
+            <li><span className="font-medium">Only fill what you know:</span> blank columns are skipped, so users do not need to understand ontology types before uploading.</li>
+            <li><span className="font-medium">Duplicates are merged:</span> if the same clan or village appears in many rows, the preview keeps only one ontology record for it.</li>
             <li><span className="font-medium">Preview statuses:</span> `create`, `update`, `conflict`, `invalid`.</li>
             <li><span className="font-medium">Commitable rows:</span> only `create` and `update` rows can be selected.</li>
           </ul>
+        </div>
+      </div>
+
+      <div className="rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
+        <h3 className="text-xl font-semibold text-gray-900">Parent Map</h3>
+        <p className="mt-2 text-sm text-gray-600">
+          Fill each row from left to right and stop at the deepest level you actually know. Do not fill a child column if its parent column is blank.
+        </p>
+
+        <div className="mt-6 overflow-x-auto">
+          <table className="min-w-full divide-y divide-gray-200">
+            <thead className="bg-gray-50">
+              <tr>
+                <th className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">Column</th>
+                <th className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">Needs This Parent</th>
+                <th className="px-4 py-3 text-left text-xs font-medium uppercase tracking-wide text-gray-500">What To Do</th>
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-gray-200 bg-white">
+              {PARENT_RULES.map((rule) => (
+                <tr key={rule.child}>
+                  <td className="px-4 py-4 text-sm font-medium text-gray-900">
+                    <code>{rule.child}</code>
+                  </td>
+                  <td className="px-4 py-4 text-sm text-gray-700">
+                    <code>{rule.parent}</code>
+                  </td>
+                  <td className="px-4 py-4 text-sm text-gray-700">{rule.note}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+
+        <div className="mt-6 grid gap-4 lg:grid-cols-2">
+          <div className="rounded-xl bg-green-50 p-4 ring-1 ring-green-200">
+            <h4 className="text-sm font-semibold text-green-900">Good Example</h4>
+            <p className="mt-2 text-sm text-green-800">
+              <code>Nigeria, Anambra, Aguata, Achina I, , , , , Dioha, Elekchem, , , ,</code>
+            </p>
+            <p className="mt-2 text-sm text-green-800">
+              This works because <code>clan</code> depends on <code>town</code>, and <code>village</code> depends on <code>clan</code>.
+            </p>
+          </div>
+
+          <div className="rounded-xl bg-amber-50 p-4 ring-1 ring-amber-200">
+            <h4 className="text-sm font-semibold text-amber-900">Invalid Example</h4>
+            <p className="mt-2 text-sm text-amber-800">
+              <code>Nigeria, Anambra, Aguata, Achina I, , , , , Dioha, , Ama Ezi, Umu Okpara, ,</code>
+            </p>
+            <p className="mt-2 text-sm text-amber-800">
+              This fails because <code>hamlet</code> needs <code>village</code>, and <code>kindred</code> needs <code>hamlet</code>.
+            </p>
+          </div>
         </div>
       </div>
 

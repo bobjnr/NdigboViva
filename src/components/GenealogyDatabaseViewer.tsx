@@ -46,6 +46,8 @@ export default function GenealogyDatabaseViewer() {
       filtered = filtered.filter(record => 
         record.town.toLowerCase().includes(searchTerm.toLowerCase()) ||
         record.village.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        record.hamlet.toLowerCase().includes(searchTerm.toLowerCase()) ||
+        record.kindred.toLowerCase().includes(searchTerm.toLowerCase()) ||
         record.kindredHamlet.toLowerCase().includes(searchTerm.toLowerCase()) ||
         record.extendedFamily.some(family => 
           family.familyName.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -215,7 +217,7 @@ export default function GenealogyDatabaseViewer() {
                   {record.village}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                  {record.kindredHamlet}
+                  {record.kindred}
                 </td>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   {record.extendedFamily.map(family => family.familyName).join(', ')}
@@ -283,7 +285,8 @@ export default function GenealogyDatabaseViewer() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-2">Family Information</h4>
                   <div className="space-y-2 text-sm">
-                    <div><span className="font-medium">Kindred/Hamlet:</span> {selectedRecord.kindredHamlet}</div>
+                    <div><span className="font-medium">Hamlet:</span> {selectedRecord.hamlet}</div>
+                    <div><span className="font-medium">Kindred:</span> {selectedRecord.kindred}</div>
                     <div><span className="font-medium">Umunna:</span> {selectedRecord.umunna}</div>
                     <div><span className="font-medium">Record ID:</span> {selectedRecord.recordId}</div>
                     <div><span className="font-medium">Created:</span> {selectedRecord.createdAt.toLocaleDateString()}</div>

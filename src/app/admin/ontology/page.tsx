@@ -34,7 +34,7 @@ export default async function AdminOntologyPage() {
             <p className="text-sm font-medium uppercase tracking-[0.18em] text-brand-gold">Data Management</p>
             <h1 className="mt-2 text-3xl font-bold text-gray-900">Ontology Bulk Upload</h1>
             <p className="mt-2 max-w-3xl text-gray-600">
-              Upload field-collected ancestry structure into the Firestore ontology collection, preview every row, and commit only the safe additions or updates.
+              Upload ancestry structure into the Firestore ontology collection with a simple spreadsheet, preview the generated records, and commit only the safe additions or updates.
             </p>
           </div>
           <Link href="/admin" className="text-sm font-medium text-gray-600 hover:text-gray-900">

@@ -41,9 +41,6 @@ export function getWardOptions(state: string | null | undefined, lga: string | n
   if (stateMap && lgaKeyWithinState) {
     return stateMap[lgaKeyWithinState] ?? []
   }
-  if (stateMap) {
-    return []
-  }
 
   const flatLgaKey = findMatchingKey(data.wardsData, lga)
   return flatLgaKey ? data.wardsData?.[flatLgaKey] ?? [] : []

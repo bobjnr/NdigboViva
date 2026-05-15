@@ -62,6 +62,22 @@ type ParsedCsvRow = {
   code?: string;
 };
 
+type SimpleUploadRow = {
+  country?: string;
+  state?: string;
+  lga?: string;
+  town?: string;
+  townLevel1?: string;
+  townLevel2?: string;
+  townLevel3?: string;
+  clan?: string;
+  village?: string;
+  hamlet?: string;
+  kindred?: string;
+  extendedFamily?: string;
+  nuclearFamily?: string;
+};
+
 const HEADER_ALIASES: Record<string, keyof ParsedCsvRow> = {
   type: 'type',
   name: 'name',
@@ -84,6 +100,26 @@ const HEADER_ALIASES: Record<string, keyof ParsedCsvRow> = {
   ispublic: 'isPublic',
   sortorder: 'sortOrder',
   code: 'code',
+};
+
+const SIMPLE_HEADER_ALIASES: Record<string, keyof SimpleUploadRow> = {
+  country: 'country',
+  state: 'state',
+  lga: 'lga',
+  localgovernmentarea: 'lga',
+  town: 'town',
+  townlevel1: 'townLevel1',
+  townlevel2: 'townLevel2',
+  townlevel3: 'townLevel3',
+  clan: 'clan',
+  village: 'village',
+  hamlet: 'hamlet',
+  kindred: 'kindred',
+  maternalkindred: 'kindred',
+  extendedfamily: 'extendedFamily',
+  natalextendedfamily: 'extendedFamily',
+  nuclearfamily: 'nuclearFamily',
+  maritalextendedfamily: 'nuclearFamily',
 };
 
 type DraftRow = {
@@ -212,15 +248,8 @@ function parseCsvLine(line: string): string[] {
   return values;
 }
 
-function parseCsv(csvText: string): ParsedCsvRow[] {
-  const normalizedText = csvText.replace(/^\uFEFF/, '');
-  const lines = normalizedText.split(/\r?\n/).filter((line) => line.trim().length > 0);
-
-  if (lines.length < 2) return [];
-
-  const headers = parseCsvLine(lines[0]).map((header) => header.trim().toLowerCase());
-
-  return lines.slice(1).map((line) => {
+function parseAdvancedCsv(headers: string[], lines: string[]): ParsedCsvRow[] {
+  return lines.map((line) => {
     const values = parseCsvLine(line);
     const row: Partial<Record<keyof ParsedCsvRow, string>> = {};
 
@@ -232,6 +261,152 @@ function parseCsv(csvText: string): ParsedCsvRow[] {
 
     return row as ParsedCsvRow;
   });
+}
+
+function parseSimpleCsv(headers: string[], lines: string[]): ParsedCsvRow[] {
+  const generatedRows: ParsedCsvRow[] = [];
+  const seenKeys = new Set<string>();
+
+  for (const line of lines) {
+    const values = parseCsvLine(line);
+    const row: Partial<Record<keyof SimpleUploadRow, string>> = {};
+
+    headers.forEach((header, index) => {
+      const normalizedHeader = SIMPLE_HEADER_ALIASES[header];
+      if (!normalizedHeader) return;
+      row[normalizedHeader] = (values[index] ?? '').trim();
+    });
+
+    const baseAncestors = {
+      country: row.country || 'Nigeria',
+      state: row.state || '',
+      lga: row.lga || '',
+      town: row.town || '',
+      townLevel1: row.townLevel1 || '',
+      townLevel2: row.townLevel2 || '',
+      townLevel3: row.townLevel3 || '',
+      clan: row.clan || '',
+      village: row.village || '',
+      hamlet: row.hamlet || '',
+      kindred: row.kindred || '',
+    };
+
+    const expansions: ParsedCsvRow[] = [
+      row.townLevel1
+        ? {
+            type: 'TOWN_LEVEL_1',
+            name: row.townLevel1,
+            displayName: row.townLevel1,
+            ...baseAncestors,
+          }
+        : null,
+      row.townLevel2
+        ? {
+            type: 'TOWN_LEVEL_2',
+            name: row.townLevel2,
+            displayName: row.townLevel2,
+            ...baseAncestors,
+          }
+        : null,
+      row.townLevel3
+        ? {
+            type: 'TOWN_LEVEL_3',
+            name: row.townLevel3,
+            displayName: row.townLevel3,
+            ...baseAncestors,
+          }
+        : null,
+      row.clan
+        ? {
+            type: 'CLAN',
+            name: row.clan,
+            displayName: row.clan,
+            ...baseAncestors,
+          }
+        : null,
+      row.village
+        ? {
+            type: 'VILLAGE',
+            name: row.village,
+            displayName: row.village,
+            ...baseAncestors,
+          }
+        : null,
+      row.hamlet
+        ? {
+            type: 'HAMLET',
+            name: row.hamlet,
+            displayName: row.hamlet,
+            ...baseAncestors,
+          }
+        : null,
+      row.kindred
+        ? {
+            type: 'MATERNAL_KINDRED',
+            name: row.kindred,
+            displayName: row.kindred,
+            ...baseAncestors,
+          }
+        : null,
+      row.extendedFamily
+        ? {
+            type: 'NATAL_EXTENDED_FAMILY',
+            name: row.extendedFamily,
+            displayName: row.extendedFamily,
+            ...baseAncestors,
+          }
+        : null,
+      row.nuclearFamily
+        ? {
+            type: 'MARITAL_EXTENDED_FAMILY',
+            name: row.nuclearFamily,
+            displayName: row.nuclearFamily,
+            ...baseAncestors,
+            natalExtendedFamily: row.extendedFamily || '',
+          }
+        : null,
+    ].filter(Boolean) as ParsedCsvRow[];
+
+    for (const expansion of expansions) {
+      const key = JSON.stringify([
+        expansion.type,
+        expansion.name,
+        expansion.country,
+        expansion.state,
+        expansion.lga,
+        expansion.town,
+        expansion.townLevel1,
+        expansion.townLevel2,
+        expansion.townLevel3,
+        expansion.clan,
+        expansion.village,
+        expansion.hamlet,
+        expansion.kindred,
+        expansion.natalExtendedFamily,
+      ]);
+
+      if (seenKeys.has(key)) continue;
+      seenKeys.add(key);
+      generatedRows.push(expansion);
+    }
+  }
+
+  return generatedRows;
+}
+
+function parseCsv(csvText: string): ParsedCsvRow[] {
+  const normalizedText = csvText.replace(/^\uFEFF/, '');
+  const lines = normalizedText.split(/\r?\n/).filter((line) => line.trim().length > 0);
+
+  if (lines.length < 2) return [];
+
+  const headers = parseCsvLine(lines[0]).map((header) => header.trim().toLowerCase());
+  const dataLines = lines.slice(1);
+  const isAdvancedFormat = headers.includes('type') || headers.includes('name');
+
+  return isAdvancedFormat
+    ? parseAdvancedCsv(headers, dataLines)
+    : parseSimpleCsv(headers, dataLines);
 }
 
 function parseBoolean(value?: string): boolean {

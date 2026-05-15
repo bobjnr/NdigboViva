@@ -23,7 +23,7 @@ export async function POST(request: NextRequest) {
 
     if (!csvText.trim()) {
       return NextResponse.json(
-        { success: false, error: 'CSV content is required.' },
+        { success: false, error: 'Spreadsheet content is required.' },
         { status: 400 }
       );
     }

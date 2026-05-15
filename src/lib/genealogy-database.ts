@@ -23,9 +23,11 @@ export interface GenealogyRecord {
   obiAreas: string; // "AMAMU"
   clan: string; // "DIOHA"
   village: string; // "ELEKECHEM"
+  hamlet: string; // "AMA EZI"
+  kindred: string; // "UMU OKPARA"
 
   // Family Structure
-  kindredHamlet: string; // "UMUNNEBOGBU", "UMUOKPARAUGHANZE"
+  kindredHamlet: string; // Legacy alias for kindred
   umunna: string; // Extended family groups
 
   // Individual Family Members
@@ -195,6 +197,8 @@ export class GenealogyDatabase {
       obiAreas: formData.originObiAreas?.toUpperCase() || "",
       clan: formData.originClan?.toUpperCase() || "",
       village: formData.originVillage.toUpperCase(),
+      hamlet: formData.originHamlet?.toUpperCase() || "",
+      kindred: formData.kindred.toUpperCase(),
 
       // Family Structure
       kindredHamlet: formData.kindred.toUpperCase(),
@@ -302,7 +306,7 @@ export class GenealogyDatabase {
 
   // Get records by kindred
   getRecordsByKindred(kindred: string): GenealogyRecord[] {
-    return this.records.filter(record => record.kindredHamlet === kindred.toUpperCase());
+    return this.records.filter(record => record.kindred === kindred.toUpperCase());
   }
 
   // Export to CSV format (matching your database structure)
@@ -311,7 +315,7 @@ export class GenealogyDatabase {
       "THE SPECIE", "RACE", "CONTINENT", "SUB-CONTINENT", "SUB-REGION", "NATIONALITY",
       "ETHNICITY", "REGION", "STATE", "SENATORIAL DISTRICT", "FEDERAL CONSTITUENCY",
       "LOCAL GOVERNMENT AREA", "STATE CONSTITUENCY", "TOWN", "TOWN QUARTER", "OBI AREAS",
-      "CLAN", "VILLAGE", "KINDRED/HAMLET", "UMUNNA", "EXT. FAMILY"
+      "CLAN", "VILLAGE", "HAMLET", "KINDRED"
     ];
 
     const csvRows = [headers.join(",")];
@@ -338,10 +342,8 @@ export class GenealogyDatabase {
             record.obiAreas,
             record.clan,
             record.village,
-            record.kindredHamlet,
-            record.umunna,
-            family.familyName,
-            name
+            record.hamlet,
+            record.kindred
           ];
           csvRows.push(row.join(","));
         });

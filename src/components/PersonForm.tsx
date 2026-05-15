@@ -143,6 +143,7 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
   const originTownLevel1Entity = findOntologyEntityByLabel(ontologyTownLevel1Origin.data, formData.originTownLevel1)
   const originTownLevel1Id = originTownLevel1Entity?.id ?? null
   const ontologyTownLevel2Origin = useOntologyChildren(originTownLevel1Id, 'TOWN_LEVEL_2')
+  const ontologyClansOrigin = useOntologyChildren(originTownId, 'CLAN')
 
   // Load Diaspora data when needed
   useEffect(() => {
@@ -168,12 +169,25 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
   const csvOriginStateOptions = CSV_ORIGIN_STATES.map((entry: OriginStateOption) => entry.state)
   const csvOriginLgaOptions = CSV_ORIGIN_STATES.find((entry: OriginStateOption) => entry.state === formData.originState)?.lgas ?? []
   const nigerianTownOptions = mergeUniqueOptions(csvTownOptions)
-  const csvTownLevel1Options = getHierarchyOptions((csvDropdownData as any).level1sByTownName, formData.originTown)
+  const csvTownLevel1Options = getHierarchyOptions(
+    ((originDropdownData as any).level1sByTownName ?? (csvDropdownData as any).level1sByTownName),
+    formData.originTown
+  )
   const ontologyTownLevel1Options = ontologyTownLevel1Origin.data?.map(getOntologyEntityLabel) ?? []
   const originTownLevel1Options = mergeUniqueOptions(csvTownLevel1Options, ontologyTownLevel1Options)
-  const csvTownLevel2Options = getHierarchyOptions((csvDropdownData as any).level2sByLevel1Name, formData.originTownLevel1)
+  const csvTownLevel2Options = getHierarchyOptions(
+    ((originDropdownData as any).level2sByLevel1Name ?? (csvDropdownData as any).level2sByLevel1Name),
+    formData.originTownLevel1
+  )
   const ontologyTownLevel2Options = ontologyTownLevel2Origin.data?.map(getOntologyEntityLabel) ?? []
   const originTownLevel2Options = mergeUniqueOptions(csvTownLevel2Options, ontologyTownLevel2Options)
+  const originClanOptions = mergeUniqueOptions(
+    (((originDropdownData as any).clansByLevel1Name?.[formData.originTownLevel1 || ''] as string[]) ??
+      ((originDropdownData as any).clansByLevel2Name?.[formData.originTownLevel2 || ''] as string[]) ??
+      ((csvDropdownData as any).clansByLevel2Name?.[formData.originTownLevel2 || ''] as string[]) ??
+      []),
+    ontologyClansOrigin.data?.map(getOntologyEntityLabel) ?? []
+  )
 
   useEffect(() => {
     setFormData(prev => ({
@@ -939,6 +953,20 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
+                  <label className="block text-sm font-medium text-gray-700 mb-1">Political Ward</label>
+                  <select
+                    value={formData.originWard || ''}
+                    onChange={(e) => handleInputChange('originWard', e.target.value)}
+                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    disabled={!formData.originLocalGovernmentArea}
+                  >
+                    <option value="">Select Ward</option>
+                    {getWardOptions(formData.originState, formData.originLocalGovernmentArea).map((w: string) => (
+                      <option key={w} value={w}>{w}</option>
+                    ))}
+                  </select>
+                </div>
+                <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Town</label>
                   {nigerianTownOptions.length > 0 ? (
                     <select
@@ -962,6 +990,9 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                     />
                   )}
                 </div>
+              </div>
+
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Town Level 1</label>
                   {originTownLevel1Options.length > 0 ? (
@@ -1061,31 +1092,29 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                 />
               </div>
 
-              <div className="mt-4">
-                <label className="block text-sm font-medium text-gray-700 mb-1">Political Ward</label>
-                <select
-                  value={formData.originWard || ''}
-                  onChange={(e) => handleInputChange('originWard', e.target.value)}
-                  className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                  disabled={!formData.originLocalGovernmentArea}
-                >
-                  <option value="">Select Ward</option>
-                  {getWardOptions(formData.originState, formData.originLocalGovernmentArea).map((w: string) => (
-                    <option key={w} value={w}>{w}</option>
-                  ))}
-                </select>
-              </div>
-
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Clan</label>
-                  <input
-                    type="text"
-                    value={formData.originClan || ''}
-                    onChange={(e) => handleInputChange('originClan', e.target.value)}
-                    className="w-full px-4 py-2 border border-gray-300 rounded-lg"
-                    placeholder="DIOHA"
-                  />
+                  {originClanOptions.length > 0 ? (
+                    <select
+                      value={formData.originClan || ''}
+                      onChange={(e) => handleInputChange('originClan', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                    >
+                      <option value="">Select Clan</option>
+                      {originClanOptions.map((clan: string) => (
+                        <option key={clan} value={clan}>{clan}</option>
+                      ))}
+                    </select>
+                  ) : (
+                    <input
+                      type="text"
+                      value={formData.originClan || ''}
+                      onChange={(e) => handleInputChange('originClan', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      placeholder={formData.originTownLevel2 ? 'Enter Clan' : 'Select Town Level 2 first'}
+                    />
+                  )}
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-1">Village</label>

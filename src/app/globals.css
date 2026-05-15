@@ -30,6 +30,8 @@
   --warm-gray-700: #44403c;
   --warm-gray-800: #292524;
   --warm-gray-900: #1c1917;
+  --font-inter: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-playfair: Georgia, "Times New Roman", serif;
 }
 
 @theme inline {
