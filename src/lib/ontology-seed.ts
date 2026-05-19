@@ -73,6 +73,13 @@ function formatStateName(slug: string): string {
   return titleCase(slug);
 }
 
+function normalizeSeedTownName(name: string): string {
+  return name
+    .trim()
+    .replace(/\s+(I|II|III|IV|V|VI|VII|VIII|IX|X)$/i, '')
+    .trim();
+}
+
 function entity(
   id: string,
   name: string,
@@ -187,9 +194,13 @@ export function buildOntologySeed(): OntologyEntity[] {
   Object.entries(townsData).forEach(([lgaName, towns]) => {
     const lgaIdVal = lgaIdsByLgaKey[lgaName];
     if (!lgaIdVal) return;
+    const seenTownIds = new Set<string>();
     towns.forEach((town) => {
-      const id = townId(lgaIdVal, town);
-      list.push(entity(id, town, 'TOWN', lgaIdVal, town));
+      const normalizedTown = normalizeSeedTownName(town);
+      const id = townId(lgaIdVal, normalizedTown);
+      if (seenTownIds.has(id)) return;
+      seenTownIds.add(id);
+      list.push(entity(id, normalizedTown, 'TOWN', lgaIdVal, normalizedTown));
     });
   });
 

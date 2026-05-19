@@ -368,22 +368,128 @@ function parseSimpleCsv(headers: string[], lines: string[]): ParsedCsvRow[] {
     ].filter(Boolean) as ParsedCsvRow[];
 
     for (const expansion of expansions) {
-      const key = JSON.stringify([
-        expansion.type,
-        expansion.name,
-        expansion.country,
-        expansion.state,
-        expansion.lga,
-        expansion.town,
-        expansion.townLevel1,
-        expansion.townLevel2,
-        expansion.townLevel3,
-        expansion.clan,
-        expansion.village,
-        expansion.hamlet,
-        expansion.kindred,
-        expansion.natalExtendedFamily,
-      ]);
+      const key = JSON.stringify(
+        (() => {
+          switch (expansion.type) {
+            case 'TOWN_LEVEL_1':
+              return [
+                expansion.type,
+                expansion.country,
+                expansion.state,
+                expansion.lga,
+                expansion.town,
+                expansion.name,
+              ];
+            case 'TOWN_LEVEL_2':
+              return [
+                expansion.type,
+                expansion.country,
+                expansion.state,
+                expansion.lga,
+                expansion.town,
+                expansion.townLevel1,
+                expansion.name,
+              ];
+            case 'TOWN_LEVEL_3':
+              return [
+                expansion.type,
+                expansion.country,
+                expansion.state,
+                expansion.lga,
+                expansion.town,
+                expansion.townLevel1,
+                expansion.townLevel2,
+                expansion.name,
+              ];
+            case 'CLAN':
+              return [
+                expansion.type,
+                expansion.country,
+                expansion.state,
+                expansion.lga,
+                expansion.town,
+                expansion.name,
+              ];
+            case 'VILLAGE':
+              return [
+                expansion.type,
+                expansion.country,
+                expansion.state,
+                expansion.lga,
+                expansion.town,
+                expansion.clan,
+                expansion.name,
+              ];
+            case 'HAMLET':
+              return [
+                expansion.type,
+                expansion.country,
+                expansion.state,
+                expansion.lga,
+                expansion.town,
+                expansion.clan,
+                expansion.village,
+                expansion.name,
+              ];
+            case 'MATERNAL_KINDRED':
+              return [
+                expansion.type,
+                expansion.country,
+                expansion.state,
+                expansion.lga,
+                expansion.town,
+                expansion.clan,
+                expansion.village,
+                expansion.hamlet,
+                expansion.name,
+              ];
+            case 'NATAL_EXTENDED_FAMILY':
+              return [
+                expansion.type,
+                expansion.country,
+                expansion.state,
+                expansion.lga,
+                expansion.town,
+                expansion.clan,
+                expansion.village,
+                expansion.hamlet,
+                expansion.kindred,
+                expansion.name,
+              ];
+            case 'MARITAL_EXTENDED_FAMILY':
+              return [
+                expansion.type,
+                expansion.country,
+                expansion.state,
+                expansion.lga,
+                expansion.town,
+                expansion.clan,
+                expansion.village,
+                expansion.hamlet,
+                expansion.kindred,
+                expansion.natalExtendedFamily,
+                expansion.name,
+              ];
+            default:
+              return [
+                expansion.type,
+                expansion.name,
+                expansion.country,
+                expansion.state,
+                expansion.lga,
+                expansion.town,
+                expansion.townLevel1,
+                expansion.townLevel2,
+                expansion.townLevel3,
+                expansion.clan,
+                expansion.village,
+                expansion.hamlet,
+                expansion.kindred,
+                expansion.natalExtendedFamily,
+              ];
+          }
+        })()
+      );
 
       if (seenKeys.has(key)) continue;
       seenKeys.add(key);
@@ -664,6 +770,38 @@ function providerCanSatisfyParent(
   return result;
 }
 
+function findUnresolvableParentCause(
+  parentId: string,
+  existingIds: Set<string>,
+  draftsById: Map<string, DraftRow[]>,
+  visiting = new Set<string>()
+): { kind: 'missing' | 'duplicated'; parentId: string } | null {
+  if (!parentId || existingIds.has(parentId)) return null;
+  if (visiting.has(parentId)) {
+    return { kind: 'missing', parentId };
+  }
+
+  const providers = draftsById.get(parentId);
+  if (!providers || providers.length === 0) {
+    return { kind: 'missing', parentId };
+  }
+
+  if (providers.length > 1) {
+    return { kind: 'duplicated', parentId };
+  }
+
+  const [provider] = providers;
+  if (!provider.entity) {
+    return { kind: 'missing', parentId };
+  }
+
+  visiting.add(parentId);
+  const nested = findUnresolvableParentCause(provider.entity.parentId ?? '', existingIds, draftsById, visiting);
+  visiting.delete(parentId);
+
+  return nested;
+}
+
 function buildMissingParentMessage(
   draft: DraftRow,
   parentId: string,
@@ -680,6 +818,19 @@ function buildMissingParentMessage(
   const providers = draftsById.get(parentId);
   if (providers && providers.length > 1) {
     return `Parent ${parentId} is duplicated in this CSV, so the preview cannot resolve a single parent row.`;
+  }
+
+  const cause = findUnresolvableParentCause(parentId, existingIds, draftsById);
+  if (cause && cause.parentId !== parentId) {
+    if (cause.kind === 'duplicated') {
+      return `Parent ${parentId} is present in this CSV, but its ancestor ${cause.parentId} is duplicated, so the preview cannot resolve a single parent chain.`;
+    }
+
+    if (uploadType && SAME_CSV_PARENT_ALLOWED[uploadType]) {
+      return `Parent ${parentId} is present in this CSV, but its ancestor ${cause.parentId} is still unresolved. Add or fix that ancestor row in the same CSV, or commit it to Firestore first.`;
+    }
+
+    return `Parent ${parentId} is present in this CSV, but its ancestor ${cause.parentId} could not be resolved from Firestore or the same CSV.`;
   }
 
   if (providers?.[0] && !providers[0].entity) {
