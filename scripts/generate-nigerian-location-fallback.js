@@ -7,7 +7,7 @@ const INPUT_FILE = path.join(
   '..',
   'docs',
   'dropdown data',
-  'Diaspora Current Location Information',
+  'Nigeria Current Location Info',
   'towns_current location information.csv'
 );
 
@@ -66,6 +66,13 @@ function titleCase(text) {
     .join(' ');
 }
 
+function normalizeTownName(townName) {
+  return townName
+    .replace(/\s+(?:(?:I|II|III|IV|V|VI|VII|VIII|IX|X)(?:\s*(?:&|,|\/|-)\s*(?:I|II|III|IV|V|VI|VII|VIII|IX|X))*)$/i, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
 function decodeLgaName(lgaId) {
   const match = /^LGA_[A-Z]{2}_(.+)$/.exec(lgaId || '');
   if (!match) return null;
@@ -82,7 +89,7 @@ async function main() {
       .on('data', (row) => {
         const stateName = STATE_CODE_TO_NAME[row.state_id];
         const lgaName = decodeLgaName(row.lga_id);
-        const townName = (row.town_name || '').trim();
+        const townName = normalizeTownName((row.town_name || '').trim());
 
         if (!stateName || !lgaName) return;
 
