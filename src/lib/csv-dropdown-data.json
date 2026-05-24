@@ -1,5 +1,412 @@
 {
   "townsByLgaName": {
+    "Aba North": [
+      "Aba",
+      "Ariaria",
+      "Eziama",
+      "Ogbor Hill",
+      "Osusu",
+      "Umuogor",
+      "Umuokoji",
+      "Umuola",
+      "Umuola-Egbule",
+      "Uratta"
+    ],
+    "Aba South": [
+      "Aba",
+      "Aba River",
+      "Asa",
+      "Ekeoha",
+      "Enyimba",
+      "Eziukwu",
+      "Gloucester",
+      "Igwebuike",
+      "Ngwa",
+      "Ohazu"
+    ],
+    "Arochukwu": [
+      "Amangwu Arochukwu",
+      "Amuvi",
+      "Arochukwu",
+      "Asaga Arochukwu",
+      "Atani Abam",
+      "Ibom",
+      "Ihechiowa",
+      "Isu",
+      "Ndi Oji Abam",
+      "Obinkita",
+      "Ozu Abam",
+      "Ugbo",
+      "Ututu"
+    ],
+    "Bende": [
+      "Akoliufu",
+      "Alayi",
+      "Amankalu",
+      "Bende",
+      "Ezeukwu",
+      "Igbere",
+      "Item",
+      "Itumbauzo",
+      "Ozuitem",
+      "Ugwueke",
+      "Umuhu-Ezechi",
+      "Umuimenyi",
+      "Uzuakoli"
+    ],
+    "Ikwuano": [
+      "Amaoba Ime",
+      "Amaoba Oboro",
+      "Amawom",
+      "Ariam",
+      "Elemaga",
+      "Ibere",
+      "Inyila",
+      "Ndoro",
+      "Oboro",
+      "Oloko",
+      "Usaka"
+    ],
+    "Isiala Ngwa North": [
+      "Amapu Ntigha",
+      "Amasaa Nsulu",
+      "Ihie",
+      "Ijie",
+      "Isiala Nsulu",
+      "Mbawsi",
+      "Ngwa Ukwu",
+      "Ntigha",
+      "Umunna Nsulu",
+      "Umuoha"
+    ],
+    "Isiala Ngwa South": [
+      "Akunekpu",
+      "Amaise",
+      "Ehi na Guru",
+      "Eziama",
+      "Mbutu",
+      "Ngwaobi",
+      "Obuba",
+      "Okporo Ahaba",
+      "Omoba",
+      "Ovungwu",
+      "Ovuokwu"
+    ],
+    "Isuikwuato": [
+      "Achara",
+      "Amauwu",
+      "Eluama",
+      "Ezere",
+      "Ikeagha",
+      "Imenyi",
+      "Isu-Amawu",
+      "Isuikwuato",
+      "Oguduasa",
+      "Ovim",
+      "Umuanyi",
+      "Uturu"
+    ],
+    "Obingwa": [
+      "Abayi",
+      "Ahiaba",
+      "Akumaimo",
+      "Alaukwu",
+      "Ibeme",
+      "Mgboko",
+      "Mgboko Itungwa",
+      "Mgboko Umuanunu",
+      "Ndiakata",
+      "Ntighauzo",
+      "Ohanze"
+    ],
+    "Osisioma Ngwa": [
+      "Ama-Asaa",
+      "Amator",
+      "Amavo",
+      "Aro-Ngwa",
+      "Okpu-Umuobo",
+      "Osisioma",
+      "Oso-Okwa",
+      "Owerre Aba",
+      "Umueze",
+      "Umunneise",
+      "Uratta"
+    ],
+    "Ugwunagbo": [
+      "Akanu Ngwa",
+      "Amapu",
+      "Asa-Umunka",
+      "Ihie",
+      "Obegu",
+      "Ozaa",
+      "Ugwunagbo",
+      "Umuaja",
+      "Umuodo",
+      "Umuogele"
+    ],
+    "Ukwa East": [
+      "Akwete",
+      "Azumini",
+      "Ikwueke",
+      "Ikwuorie",
+      "Ikwuriator",
+      "Mkporobe",
+      "Nkporobe",
+      "Obohia",
+      "Ohanso",
+      "Umuigube Achara"
+    ],
+    "Ukwa West": [
+      "Asa",
+      "Ipu",
+      "Obehie",
+      "Obokwe",
+      "Obuzor",
+      "Ogwe",
+      "Ozaa",
+      "Ozar Ukwu",
+      "Ozar West",
+      "Umuahala",
+      "Umuorie"
+    ],
+    "Umuahia North": [
+      "Afara",
+      "Afugiri",
+      "Ibeku",
+      "Isingwu",
+      "Ndume",
+      "Nkwoachara",
+      "Nkwoegwu",
+      "Okwuta",
+      "Ugba",
+      "Umuahia",
+      "Umuhu"
+    ],
+    "Umuahia South": [
+      "Amakama",
+      "Amibo",
+      "Ezeleke",
+      "Nsirimo",
+      "Ogbodiukwu",
+      "Ohiaocha",
+      "Old Umuahia",
+      "Olokoro",
+      "Ubakala",
+      "Umuopara"
+    ],
+    "Umunneochi": [
+      "Akawa",
+      "Amuda",
+      "Aroikpa",
+      "Eziama-Agbo",
+      "Eziama-Ugwu",
+      "Isuochi",
+      "Leru",
+      "Lokpaukwu",
+      "Lomara",
+      "Mbala",
+      "Nneato",
+      "Ubahu",
+      "Umuaku",
+      "Umuchieze"
+    ],
+    "Ohafia": [
+      "Abia",
+      "Abiriba",
+      "Akanu",
+      "Amaekpu",
+      "Amangwu",
+      "Asaga",
+      "Ebem",
+      "Elu",
+      "Isiugwu",
+      "Ndi Ibe",
+      "Ndi Uduma",
+      "Nkporo",
+      "Ohafia",
+      "Okagwe",
+      "Okon",
+      "Ufiele"
+    ],
+    "Abak": [
+      "Abak Clan",
+      "Afaha Obong Clan",
+      "Ediene Clan",
+      "Midim Clan",
+      "Otoro Clan"
+    ],
+    "Eastern Obolo": [
+      "Eastern Obolo Clan"
+    ],
+    "Eket": [
+      "Afaha Clan",
+      "Eket Offiong Clan",
+      "Idua Clan",
+      "Okon Clan"
+    ],
+    "Esit Eket": [
+      "Eket Afaha Clan",
+      "Eket Offiong Clan"
+    ],
+    "Essien Udim": [
+      "Adiasim Clan",
+      "Afaha Clan",
+      "Ekpenyong Atai Clan",
+      "Ikpe Annang Clan",
+      "Odoro Ikot Clan",
+      "Okon Clan",
+      "Ukana East Clan",
+      "Ukana West Clan"
+    ],
+    "Etim Ekpo": [
+      "Ika Annang Clan",
+      "Ikono Clan",
+      "Obong Clan",
+      "Uruk Clan",
+      "Utu Clan"
+    ],
+    "Etinan": [
+      "Iman Clan"
+    ],
+    "Ibeno": [
+      "Ibeno Clan"
+    ],
+    "Ibesikpo Asutan": [
+      "Asutan Ekpe Clan",
+      "Ibesikpo Clan"
+    ],
+    "Ibiono Ibom": [
+      "Ibiono Clan",
+      "Ikpanya Clan"
+    ],
+    "Ika": [
+      "Achan Ika",
+      "Ika Annang",
+      "Ito Ika"
+    ],
+    "Ikono": [
+      "Ediene Clan",
+      "Ikono Clan",
+      "Itak Clan",
+      "Ndiya Clan"
+    ],
+    "Ikot Abasi": [
+      "Edemaya Clan",
+      "Ikpa Ibekwe Clan",
+      "Ikpa Nung Asang Clan",
+      "Ukpom Okom Clan",
+      "Ukpum Ete Clan"
+    ],
+    "Ikot Ekpene": [
+      "Amanyam Clan"
+    ],
+    "Ini": [
+      "Ikono Clan",
+      "Ikpe Clan",
+      "Itu Mbonuso Clan",
+      "Iwerre Clan",
+      "Nkari Clan"
+    ],
+    "Itu": [
+      "Ayadehe Clan",
+      "Itam Clan",
+      "Itu Clan",
+      "Mbiabo Clan",
+      "Oku Clan"
+    ],
+    "Mbo": [
+      "Afaha Okpo Clan",
+      "Ebughu Clan",
+      "Effiat Clan",
+      "Effiat Villages in Bakassi",
+      "Ubodung Clan",
+      "Ukwong Clan"
+    ],
+    "Mkpat Enin": [
+      "Ibiaku Clan",
+      "Ikpa Ibom Clan",
+      "Ikpa Ikono Clan",
+      "Ukpum Minya Clan"
+    ],
+    "Nsit Atai": [
+      "Eastern Nsit Clan"
+    ],
+    "Nsit Ibom": [
+      "Western Nsit Clan"
+    ],
+    "Nsit Ubium": [
+      "Ubium Clan",
+      "Western Nsit Clan"
+    ],
+    "Obot Akara": [
+      "Ikot Abia Clan",
+      "Nto Edino Clan",
+      "Obot Akara Clan"
+    ],
+    "Okobo": [
+      "Atabong Clan",
+      "Atabong Village in Bakassi",
+      "Ebughu Clan",
+      "Eta Clan",
+      "Ibighi Clan",
+      "Odu Clan",
+      "Okiuso Clan",
+      "Ukwong Clan"
+    ],
+    "Onna": [
+      "Asuna-Nung Oku Clan",
+      "Awa-Afaha Clan",
+      "Nung Ndem Clan",
+      "Oniong Clan"
+    ],
+    "Oron": [
+      "Afaha Okpo Clan",
+      "Ibighe Clan",
+      "Idua Clan",
+      "Ubodung Clan"
+    ],
+    "Oruk Anam": [
+      "Abak/Midim Clan",
+      "Ekparakwa Clan",
+      "Ibesit Clan",
+      "Ibesit Nung Ikot Clan",
+      "Inen Clan",
+      "Ndot Clan",
+      "Nung Ikot Clan",
+      "Nung Ita Clan",
+      "Obio Akpa Clan"
+    ],
+    "Udung-Uko": [
+      "Afaha Okpo Clan",
+      "Ubodung Clan"
+    ],
+    "Ukanafun": [
+      "Adat Ifang Clan",
+      "Northern Afaha Clan",
+      "Northern Ukanafun Clan",
+      "Southern Afaha Clan",
+      "Southern Ukanafun Clan"
+    ],
+    "Uruan": [
+      "Central Uruan Clan",
+      "Northern Uruan Clan",
+      "South East Uruan Clan",
+      "South South Uruan Clan"
+    ],
+    "Urue-Offong/Oruko": [
+      "Afaha Okpo Clan",
+      "Ebughu Clan",
+      "Ibighi Clan",
+      "Okiuso Clan",
+      "Ubodung Clan",
+      "Ukwong Clan"
+    ],
+    "Uyo": [
+      "Etoi Clan",
+      "Ikono Clan",
+      "Offot Clan",
+      "Oku Clan"
+    ],
     "Aguata": [
       "Achina",
       "Aguluezechukwu",
@@ -7,7 +414,7 @@
       "Amesi",
       "Ekwulobia",
       "Ezinifite",
-      "Igbo - Ukwu",
+      "Igboukwu",
       "Ikenga",
       "Isuofia",
       "Nkpologwu",
@@ -17,29 +424,36 @@
       "Umuona"
     ],
     "Anambra East": [
-      "Umueri",
       "Aguleri",
-      "Otuocha",
-      "Enugwu Out Agulu",
+      "Enugwu Aguleri",
+      "Enugwu-Otu Aguleri",
+      "Eziagulu-Otu Aguleri",
+      "Igbariam",
+      "Ikem Ivite",
+      "Mkpunando-Otu Aguleri",
       "Nando",
       "Nsugbe",
-      "Igbariam",
-      "Umuoba - Anam"
+      "Umueri",
+      "Umuoba Anam"
     ],
     "Anambra West": [
-      "Umuezeanam",
-      "Umuoba - Abegbu Anam",
-      "Umuenwelum Anam",
+      "Ezi Anam",
+      "Ifite Anam",
+      "Innoma/Inoma",
+      "Nzam",
+      "Olumbanasa",
       "Oroma Etiti",
-      "Olumbanasa Ode",
-      "Inoma Akator"
+      "Owelle/Owele",
+      "Ukwalla",
+      "Umuenwelum Anam",
+      "Umueze Anam"
     ],
     "Anaocha": [
-      "Agulu",
-      "Aguluzigbo",
       "Adazi Ani",
       "Adazi Enu",
       "Adazi Nnukwu",
+      "Agulu",
+      "Aguluzigbo",
       "Akwaeze",
       "Ichida",
       "Neni",
@@ -47,16 +461,16 @@
       "Obeledu"
     ],
     "Awka North": [
-      "Awba",
-      "Ugbene",
-      "Ebenebe",
       "Achalla",
-      "Urum",
       "Amansea",
       "Amanuke",
+      "Awba-Ofemili",
+      "Ebenebe",
       "Isu Aniocha",
       "Mgbakwu",
-      "Ugbenu"
+      "Ugbene",
+      "Ugbenu",
+      "Urum"
     ],
     "Awka South": [
       "Amawbia",
@@ -65,30 +479,31 @@
       "Isiagu",
       "Mbaukwu",
       "Nibo",
+      "Nise",
       "Okpuno",
-      "Umuawulu",
-      "Nise"
+      "Umuawulu"
     ],
     "Ayamelum": [
-      "Omor",
       "Anaku",
       "Ifite Ogwari",
       "Igbakwu",
       "Omasi",
-      "Umerum",
+      "Omor",
       "Umueje",
+      "Umuerum",
       "Umumbo"
     ],
     "Dunukofia": [
-      "Akwa",
       "Ifitedunu",
       "Nawgu",
       "Ukpo",
       "Ukwulu",
       "Umudioka",
-      "Umunachi"
+      "Umunnachi"
     ],
     "Ekwusigo": [
+      "Ichi",
+      "Ihembosi",
       "Oraifite",
       "Ozubulu"
     ],
@@ -98,16 +513,16 @@
       "Eziowelle",
       "Ideani",
       "Nkpor",
-      "Obosi(Adike)",
+      "Obosi",
       "Ogidi",
       "Oraukwu",
       "Uke",
       "Umuoji"
     ],
     "Idemili South": [
-      "Akwa Ukwu",
+      "Akwukwu/Akwu-Ukwu",
       "Alor",
-      "Awka Etiti",
+      "Awka-Etiti",
       "Nnobi",
       "Nnokwa",
       "Oba",
@@ -115,22 +530,23 @@
     ],
     "Ihiala": [
       "Amorka",
-      "Uli",
-      "Ihiala",
       "Azia",
-      "Orsumoghu",
-      "Ubuluisiuzor",
+      "Ihiala",
       "Isseke",
       "Lilu",
       "Mbosi",
-      "Okija"
+      "Okija",
+      "Orsumoghu",
+      "Ubuluisuzor",
+      "Uli"
     ],
     "Njikoka": [
       "Abagana",
       "Abba",
-      "Enugwu Agidi",
-      "Enugwu Ukwu",
-      "Nawfia"
+      "Enugwu-Agidi",
+      "Enugwu-Ukwu",
+      "Nawfia",
+      "Nimo"
     ],
     "Nnewi North": [
       "Nnewi"
@@ -138,8 +554,8 @@
     "Nnewi South": [
       "Akwaihedi",
       "Amichi",
-      "Azuigbo",
-      "Ebenato Ozulogu",
+      "Azigbo",
+      "Ebenator",
       "Ekwulumili",
       "Ezinifite",
       "Osumenyi",
@@ -148,73 +564,6075 @@
       "Utuh"
     ],
     "Ogbaru": [
-      "Akili Ozizor",
-      "Akili Ogidi",
-      "Abeagwe",
-      "Atani",
-      "Ohita",
-      "Odekpe",
-      "Ochuche Umuodu",
-      "Ogbakuba",
+      "Akili-Ogidi",
+      "Akili-Ozizor",
       "Amiyi",
-      "Ogwuikpele",
-      "Ogwuaniocha",
+      "Atani",
+      "Mputu",
+      "Obeagwe",
+      "Ochuche-Umuodu",
+      "Odekpe/Ohita",
+      "Ogbakuba",
+      "Ogwu-Aniocha",
+      "Ogwu-Ikpele",
       "Okpoko",
       "Ossomala",
       "Umunankwo",
-      "Mputu"
+      "Umuzu"
     ],
     "Onitsha North": [
       "Onitsha"
     ],
     "Onitsha South": [
-      "Fegge",
-      "Awada",
-      "Odoakpu",
-      "Woliwo",
-      "Upper Iweka",
-      "Ochanja"
+      "Onitsha"
     ],
     "Orumba North": [
-      "Awgbu",
+      "Ajalli",
       "Amaetiti",
       "Amaokpala",
       "Awa",
-      "Ndiokpalaeze",
-      "Ndiokolo",
-      "Ndiokpalaeke",
-      "Omoghu",
-      "Oko",
-      "Ndiukwuenu",
+      "Awgbu",
+      "Nanka",
       "Ndikelionwu",
-      "Okpeze",
-      "Ajalli",
-      "Ufuma",
+      "Ndiokolo",
+      "Ndiokpalaeke/Ndiokpalaeze",
+      "Ndiokpaleke/related spelling variant appears in lists",
       "Ndiowu",
-      "Nanka"
+      "Ndiukwuenu",
+      "Oko",
+      "Okpeze",
+      "Omogho",
+      "Ufuma"
     ],
     "Orumba South": [
-      "Umunze",
-      "Akpujiugo (Akpu)",
-      "Umuomaku",
+      "Agbudu",
+      "Akpu",
+      "Enugwu-Umuonyia",
       "Eziagu",
       "Ezira",
-      "Nawfia",
+      "Ihite",
+      "Isulo",
+      "Nawfija",
+      "Nkerehi/Umuchukwu",
       "Ogboji",
       "Ogbunka",
-      "Owerre Ezukala",
-      "Isulo",
-      "Ihite",
-      "Umuchukwu",
-      "Agbudu",
-      "Enugu - Umuonyia"
+      "Onneh",
+      "Owerre-Ezukala",
+      "Umunze",
+      "Umuomaku"
     ],
     "Oyi": [
       "Awkuzu",
-      "Nkwelle Ezunaka",
+      "Nkwelle-Ezunaka",
       "Nteje",
       "Ogbunike",
       "Umunya"
+    ],
+    "Alkaleri": [
+      "Alkaleri",
+      "Duguri",
+      "Futuk",
+      "Gwana",
+      "Pali",
+      "Yalo"
+    ],
+    "Bauchi": [
+      "Bauchi",
+      "Galambi",
+      "Miri",
+      "Tirwun",
+      "Yelwa",
+      "Zungur"
+    ],
+    "Bogoro": [
+      "Bar",
+      "Bogoro",
+      "Boi",
+      "Gambar",
+      "Lusa",
+      "Mwari"
+    ],
+    "Dambam": [
+      "Dagauda",
+      "Damban",
+      "Gadau",
+      "Garuza",
+      "Jalam",
+      "Kwata"
+    ],
+    "Darazo": [
+      "Darazo",
+      "Gabchiyari",
+      "Konkiyel",
+      "Lanzai",
+      "Sade",
+      "Wahu"
+    ],
+    "Dass": [
+      "Baraza",
+      "Bundot",
+      "Dass",
+      "Durr",
+      "Lukshi",
+      "Wandi"
+    ],
+    "Gamawa": [
+      "Gamawa",
+      "Gololo",
+      "Kafin Madaki",
+      "Raga",
+      "Tumbi",
+      "Udubo"
+    ],
+    "Ganjuwa": [
+      "Ganjuwa",
+      "Gungura",
+      "Kafin Madaki",
+      "Kubi",
+      "Miya",
+      "Ningi"
+    ],
+    "Giade": [
+      "Faggo",
+      "Giade",
+      "Isawa",
+      "Sabon Sara",
+      "Uzum",
+      "Zirami"
+    ],
+    "Itas/Gadau": [
+      "Abdallawa",
+      "Buzawa",
+      "Gadau",
+      "Itas",
+      "Kashuri",
+      "Mashema"
+    ],
+    "Jama'are": [
+      "Dogon Jeji",
+      "Galdimari",
+      "Gongo",
+      "Hanafari",
+      "Jama’are",
+      "Jurara"
+    ],
+    "Katagum": [
+      "Azare",
+      "Bulkachuwa",
+      "Buskuri",
+      "Chinade",
+      "Madara",
+      "Nasarawa"
+    ],
+    "Kirfi": [
+      "Badara",
+      "Bara",
+      "Cheledi",
+      "Dewu",
+      "Kirfi",
+      "Wanka"
+    ],
+    "Misau": [
+      "Akuyam",
+      "Hardawa",
+      "Kukadi",
+      "Misau",
+      "Sirko",
+      "Zadawa"
+    ],
+    "Ningi": [
+      "Balma",
+      "Bashe",
+      "Burra",
+      "Jangu",
+      "Kudu",
+      "Ningi"
+    ],
+    "Shira": [
+      "Andubun",
+      "Disina",
+      "Kilbori",
+      "Shira",
+      "Tumfafi",
+      "Yana"
+    ],
+    "Tafawa-Balewa": [
+      "Ball",
+      "Bununu",
+      "Kardam",
+      "Lere",
+      "Tafawa Balewa",
+      "Tapshin"
+    ],
+    "Toro": [
+      "Jama’a",
+      "Lame",
+      "Nabardo",
+      "Rishi",
+      "Tilden Fulani",
+      "Toro"
+    ],
+    "Warji": [
+      "Baima",
+      "Dagu",
+      "Gwaram",
+      "Katanga",
+      "Rangim",
+      "Warji"
+    ],
+    "Zaki": [
+      "Gadai",
+      "Katagum",
+      "Mainako",
+      "Murmur",
+      "Sakwa",
+      "Zaki"
+    ],
+    "Brass": [
+      "Akassa",
+      "Brass",
+      "Ewoama",
+      "Odioma",
+      "Okpoama",
+      "Sangana",
+      "Twon-Brass"
+    ],
+    "Ekeremor": [
+      "Aleibiri",
+      "Amatu",
+      "Ekeremor",
+      "Isampou",
+      "Ndoro",
+      "Oporomor",
+      "Peretorugbene"
+    ],
+    "Kolokuma/Opokuma": [
+      "Ayibabiri",
+      "Igbedi",
+      "Kaiama",
+      "Odi",
+      "Opokuma",
+      "Sabagreia",
+      "Sampou"
+    ],
+    "Nembe": [
+      "Bassambiri",
+      "Igbeta-Ewoama",
+      "Nembe",
+      "Obioku",
+      "Ogbolomabiri",
+      "Okoroba",
+      "Oluasiri"
+    ],
+    "Ogbia": [
+      "Emeyal",
+      "Imiringi",
+      "Kolo",
+      "Ogbia",
+      "Oloibiri",
+      "Opume",
+      "Otuoke"
+    ],
+    "Sagbama": [
+      "Adagbabiri",
+      "Agbere",
+      "Angalabiri",
+      "Ofoni",
+      "Sagbama",
+      "Toru-Orua",
+      "Tungbo"
+    ],
+    "Southern Ijaw": [
+      "Amassoma",
+      "Koluama",
+      "Korokorosei",
+      "Olugbobiri",
+      "Oporoma",
+      "Otuan",
+      "Ukubie"
+    ],
+    "Yenagoa": [
+      "Amarata",
+      "Biogbolo",
+      "Ekeki",
+      "Kpansia",
+      "Okaka",
+      "Opolo",
+      "Swali",
+      "Yenagoa"
+    ],
+    "Ado": [
+      "Apa-Agila",
+      "Igumale",
+      "Ijigban",
+      "Utonkon"
+    ],
+    "Agatu": [
+      "Egba",
+      "Enungba",
+      "Obagaji",
+      "Oshigbudu"
+    ],
+    "Apa": [
+      "Iga-Okpaya",
+      "Ikobi",
+      "Oiji",
+      "Ugbokpo"
+    ],
+    "Buruku": [
+      "Abwa",
+      "Binev",
+      "Buruku",
+      "Tyowanye"
+    ],
+    "Gboko": [
+      "Gboko",
+      "Mkar",
+      "Tarka Junction",
+      "Yandev"
+    ],
+    "Guma": [
+      "Daudu",
+      "Gbajimba",
+      "Uikpam",
+      "Yogbo"
+    ],
+    "Gwer East": [
+      "Aliade",
+      "Ikpayongo",
+      "Taraku",
+      "Tse-Kucha"
+    ],
+    "Gwer West": [
+      "Agagbe",
+      "Aondoana",
+      "Naka",
+      "Sengev"
+    ],
+    "Katsina-Ala": [
+      "Abaji",
+      "Katsina-Ala",
+      "Shitile",
+      "Tor-Donga"
+    ],
+    "Konshisha": [
+      "Gungur",
+      "Korinya",
+      "Tse-Agber",
+      "Tse-Agberagba"
+    ],
+    "Kwande": [
+      "Adikpo",
+      "Ikyogen",
+      "Jato-Aka",
+      "Turan"
+    ],
+    "Logo": [
+      "Abeda",
+      "Anyiin",
+      "Anyilamo",
+      "Ugba",
+      "Zanzan"
+    ],
+    "Makurdi": [
+      "Kanshio",
+      "Makurdi",
+      "North Bank",
+      "Wadata",
+      "Wurukum"
+    ],
+    "Obi": [
+      "Adudu",
+      "Adum West",
+      "Agwatashi",
+      "Deddere",
+      "Duduguru",
+      "Gidinye",
+      "Gude",
+      "Irabi",
+      "Obarike-Ito",
+      "Obi",
+      "Obi Town",
+      "Ojuwo",
+      "Riri",
+      "Tudun Adabu"
+    ],
+    "Ogbadibo": [
+      "Ai-Fam",
+      "Orokam",
+      "Otukpa",
+      "Owukpa"
+    ],
+    "Ohimini": [
+      "Awume",
+      "Idekpa",
+      "Ochobo",
+      "Onyagede"
+    ],
+    "Oju": [
+      "Ainu",
+      "Ibilla",
+      "Oju",
+      "Ukpa"
+    ],
+    "Okpokwu": [
+      "Ichama",
+      "Ojapo",
+      "Okpoga",
+      "Ugbokolo"
+    ],
+    "Otukpo": [
+      "Adoka",
+      "Akpa",
+      "Otukpo",
+      "Ugboju"
+    ],
+    "Tarka": [
+      "Asukunya",
+      "Tiortyu",
+      "Wannune"
+    ],
+    "Ukum": [
+      "Afia",
+      "Kyado",
+      "Sankera",
+      "Zaki-Biam"
+    ],
+    "Ushongo": [
+      "Atirkyese",
+      "Ihugh",
+      "Lessel",
+      "Mbaaka"
+    ],
+    "Vandeikya": [
+      "Korinya",
+      "Mbaduku",
+      "Tsar",
+      "Vandeikya"
+    ],
+    "Abadam": [
+      "Abadam",
+      "Arege",
+      "Banuwa",
+      "Malamfatori",
+      "Metele",
+      "Yau"
+    ],
+    "Askira/Uba": [
+      "Askira",
+      "Bagiau",
+      "Dille",
+      "Lassa",
+      "Ngulde",
+      "Uba"
+    ],
+    "Bama": [
+      "Bama",
+      "Banki",
+      "Dar-el-Jamal",
+      "Gulumba",
+      "Soye",
+      "Woloji"
+    ],
+    "Bayo": [
+      "Balbaya",
+      "Bayo",
+      "Briyel",
+      "Fikayel",
+      "Gunda",
+      "Teli"
+    ],
+    "Biu": [
+      "Biu",
+      "Buratai",
+      "Dugja",
+      "Garubula",
+      "Mandaragirau",
+      "Miringa"
+    ],
+    "Chibok": [
+      "Chibok",
+      "Gatamarwa",
+      "Kautikari",
+      "Likama",
+      "Mbalala",
+      "Pemi"
+    ],
+    "Damboa": [
+      "Azir",
+      "Bego",
+      "Damboa",
+      "Multe",
+      "Nguda",
+      "Sabon Gari"
+    ],
+    "Ngala": [
+      "Afuye",
+      "Ajiri",
+      "Boboshe",
+      "Dikwa",
+      "Fuye",
+      "Gajibo",
+      "Gamboru",
+      "Logumane",
+      "Mudu",
+      "Ngala",
+      "Sagir",
+      "Wulgo"
+    ],
+    "Gubio": [
+      "Felo",
+      "Gamowo",
+      "Gazabure",
+      "Gubio",
+      "Kingowa",
+      "Zowo"
+    ],
+    "Nganzai": [
+      "Adua",
+      "Alarge",
+      "Damaram",
+      "Gajiram",
+      "Gudumbali",
+      "Guworam",
+      "Guzamala",
+      "Moduri",
+      "Nganzai",
+      "Sugundure",
+      "Wamiri",
+      "Zulum"
+    ],
+    "Gwoza": [
+      "Gwoza",
+      "Hambagda",
+      "Izge",
+      "Kirawa",
+      "Limankara",
+      "Pulka"
+    ],
+    "Hawul": [
+      "Azare",
+      "Kwajaffa",
+      "Marama",
+      "Pama",
+      "Sakwa",
+      "Shaffa"
+    ],
+    "Jere": [
+      "Dusuman",
+      "Gongulong",
+      "Khaddamari",
+      "Mairi",
+      "Mashamari",
+      "Old Maiduguri"
+    ],
+    "Kaga": [
+      "Benisheikh",
+      "Borgozo",
+      "Mainok",
+      "Marguba",
+      "Ngamdu",
+      "Tobolo"
+    ],
+    "Kalabalge": [
+      "Balge",
+      "Jilbe",
+      "Kala",
+      "Mada",
+      "Rann",
+      "Sigal"
+    ],
+    "Konduga": [
+      "Auno",
+      "Bama Road",
+      "Dalwa",
+      "Kawuri",
+      "Konduga",
+      "Yale"
+    ],
+    "Kukawa": [
+      "Baga",
+      "Cross Kauwa",
+      "Doron Baga",
+      "Kauwa",
+      "Kekeno",
+      "Kukawa"
+    ],
+    "Kwaya Kusar": [
+      "Guwal",
+      "Kubuku",
+      "Kwaya Kusar",
+      "Peta",
+      "Wawa",
+      "Yimirthalang"
+    ],
+    "Mafa": [
+      "Ajiri",
+      "Gawa",
+      "Koshebe",
+      "Loskuri",
+      "Mafa",
+      "Masu"
+    ],
+    "Magumeri": [
+      "Furram",
+      "Gajiganna",
+      "Hoyo",
+      "Kareram",
+      "Magumeri",
+      "Ngamma"
+    ],
+    "Maiduguri": [
+      "Bolori",
+      "Bulabulin",
+      "Gwange",
+      "Maiduguri",
+      "Maisandari",
+      "Shehuri"
+    ],
+    "Marte": [
+      "Ala",
+      "Kirenowa",
+      "Marte",
+      "New Marte",
+      "Njine",
+      "Zaga"
+    ],
+    "Mobbar": [
+      "Asaga",
+      "Bogum",
+      "Chamba",
+      "Damasak",
+      "Kareto",
+      "Mobbar"
+    ],
+    "Monguno": [
+      "Kumalia",
+      "Mintar",
+      "Monguno",
+      "Ngurno",
+      "Wulo",
+      "Yele"
+    ],
+    "Shani": [
+      "Bargu",
+      "Buma",
+      "Gwaskara",
+      "Kombo",
+      "Lakundum",
+      "Shani"
+    ],
+    "Abi": [
+      "Adadama",
+      "Ediba",
+      "Ekureku",
+      "Igonigoni",
+      "Itigidi"
+    ],
+    "Akamkpa": [
+      "Akamkpa",
+      "Awi",
+      "Mbarakom",
+      "Oban",
+      "Uyanga"
+    ],
+    "Akpabuyo": [
+      "Atimbo",
+      "Eneyo",
+      "Idundu",
+      "Ikang",
+      "Ikot Nakanda"
+    ],
+    "Bakassi": [
+      "Abana",
+      "Akpankanya",
+      "Atai Ema",
+      "Ekpri Ikang",
+      "Ikot Effiom"
+    ],
+    "Bekwarra": [
+      "Abuochiche",
+      "Afrike",
+      "Beten",
+      "Gakem",
+      "Ugboro"
+    ],
+    "Biase": [
+      "Adim",
+      "Akpet Central",
+      "Ehom",
+      "Ibogo",
+      "Umon"
+    ],
+    "Boki": [
+      "Bashua",
+      "Bateriko",
+      "Boje",
+      "Kakwagom",
+      "Okundi"
+    ],
+    "Calabar Municipal": [
+      "Big Qua Town",
+      "Calabar",
+      "Diamond Hill",
+      "Ikot Ansa",
+      "Ikot Ishie"
+    ],
+    "Calabar South": [
+      "Anantigha",
+      "Edibe Edibe",
+      "Efut Abua",
+      "Henshaw Town",
+      "Mbukpa"
+    ],
+    "Etung": [
+      "Agbokim",
+      "Ajassor",
+      "Bendeghe Ekiem",
+      "Effraya",
+      "Nsofang"
+    ],
+    "Ikom": [
+      "Akparabong",
+      "Ikom",
+      "Nde",
+      "Ofutop",
+      "Okuni"
+    ],
+    "Obanliku": [
+      "Bebi",
+      "Becheve",
+      "Bendi",
+      "Sankwala",
+      "Utanga"
+    ],
+    "Obubra": [
+      "Apiapum",
+      "Iyamoyong",
+      "Obubra",
+      "Ochon",
+      "Ofodua"
+    ],
+    "Obudu": [
+      "Alege",
+      "Begiading",
+      "Ipong",
+      "Obudu",
+      "Utugwang"
+    ],
+    "Odukpani": [
+      "Adiabo",
+      "Creek Town",
+      "Eki",
+      "Ikoneto",
+      "Odukpani"
+    ],
+    "Ogoja": [
+      "Ekajuk",
+      "Igoli",
+      "Mbube",
+      "Nkum",
+      "Ogoja"
+    ],
+    "Yakurr": [
+      "Ekori",
+      "Idomi",
+      "Mkpani",
+      "Nko",
+      "Ugep"
+    ],
+    "Yala": [
+      "Echumofana",
+      "Okpoma",
+      "Okuku",
+      "Ukelle",
+      "Wanikade"
+    ],
+    "Abakaliki": [
+      "Abakaliki",
+      "Amike Aba",
+      "Azuiyiokwu",
+      "Nkaliki",
+      "Timber Shade"
+    ],
+    "Afikpo North": [
+      "Afikpo",
+      "Akpoha",
+      "Amasiri",
+      "Ozizza",
+      "Unwana"
+    ],
+    "Afikpo South": [
+      "Amangwu Edda",
+      "Ebunwana",
+      "Edda",
+      "Nguzu Edda",
+      "Owutu Edda"
+    ],
+    "Ebonyi": [
+      "Echiaba",
+      "Kpirikpiri",
+      "Ndiegu Echara",
+      "Ogbala",
+      "Ugbodo"
+    ],
+    "Ezza North": [
+      "Ebiaji",
+      "Nkomoro",
+      "Omege",
+      "Oriuzor",
+      "Umuezeoka"
+    ],
+    "Ezza South": [
+      "Amana",
+      "Amuzu",
+      "Echara",
+      "Izzikworo",
+      "Onueke"
+    ],
+    "Ikwo": [
+      "Alike",
+      "Ekpa Omaka",
+      "Ndiagu Echara",
+      "Noyo",
+      "Onuebonyi Echara"
+    ],
+    "Ishielu": [
+      "Agba",
+      "Ezillo",
+      "Ezzagu",
+      "Iyonu",
+      "Nkalagu"
+    ],
+    "Ivo": [
+      "Akaeze",
+      "Amonye",
+      "Ihie",
+      "Ishiagu",
+      "Ngwogwo"
+    ],
+    "Izzi": [
+      "Iboko",
+      "Igbeagu",
+      "Ishieke",
+      "Mgbabeluzor",
+      "Nwofe"
+    ],
+    "Ohaozara": [
+      "Mgbom",
+      "Obiozara",
+      "Okposi",
+      "Uburu",
+      "Ugwulangwu"
+    ],
+    "Ohaukwu": [
+      "Effium",
+      "Ezzamgbo",
+      "Ngbo",
+      "Okposhi",
+      "Umuogudu Akpu"
+    ],
+    "Onicha": [
+      "Abaomege",
+      "Isu",
+      "Onicha Igboeze",
+      "Oshiri",
+      "Ukawu"
+    ],
+    "Akoko-Edo": [
+      "Ibillo",
+      "Igarra",
+      "Lampese",
+      "Ososo",
+      "Somorika",
+      "Uneme-Nekhua"
+    ],
+    "Egor": [
+      "Egor",
+      "Evbareke",
+      "Ogida",
+      "Ugbowo",
+      "Uselu",
+      "Uwelu"
+    ],
+    "Esan Central": [
+      "Ewu",
+      "Irrua",
+      "Opoji",
+      "Udomi",
+      "Ugbegun",
+      "Uwessan"
+    ],
+    "Esan North-East": [
+      "Amedokhian",
+      "Ebhoiyi",
+      "Efandion",
+      "Uromi",
+      "Uzea"
+    ],
+    "Esan South-East": [
+      "Emu",
+      "Ewatto",
+      "Ewohimi",
+      "Ohordua",
+      "Oria",
+      "Ubiaja"
+    ],
+    "Esan West": [
+      "Ekpoma",
+      "Ihumudumu",
+      "Iruekpen",
+      "Ukpenu",
+      "Urohi"
+    ],
+    "Etsako Central": [
+      "Anegbette",
+      "Ekperi",
+      "Fugar",
+      "Iraokhor",
+      "Ogbona"
+    ],
+    "Etsako East": [
+      "Agenebode",
+      "Imiegba",
+      "Iviukwe",
+      "Okpella",
+      "Weppa"
+    ],
+    "Etsako West": [
+      "Agbede",
+      "Auchi",
+      "Aviele",
+      "Jattu",
+      "South Ibie",
+      "Uzairue"
+    ],
+    "Igueben": [
+      "Amahor",
+      "Ebele",
+      "Ekpon",
+      "Igueben",
+      "Udo",
+      "Ugun"
+    ],
+    "Ikpoba-Okha": [
+      "Aduwawa",
+      "Idogbo",
+      "Ologbo",
+      "Oregbeni",
+      "St. Saviour",
+      "Ugbekun"
+    ],
+    "Oredo": [
+      "Benin City",
+      "Ihama",
+      "New Benin",
+      "Sakponba",
+      "Ugbekun"
+    ],
+    "Orhionmwon": [
+      "Abudu",
+      "Evboesi",
+      "Igbanke",
+      "Ugboko-Niro",
+      "Ugo",
+      "Urhonigbe"
+    ],
+    "Ovia North-East": [
+      "Ekiadolor",
+      "Iguoshodin",
+      "Isiuwa",
+      "Okada",
+      "Oluku",
+      "Uhen"
+    ],
+    "Ovia South-West": [
+      "Iguobazuwa",
+      "Ofunama",
+      "Ora",
+      "Siluko",
+      "Udo",
+      "Usen"
+    ],
+    "Owan East": [
+      "Afuze",
+      "Emai",
+      "Ihievbe",
+      "Otuo",
+      "Uokha",
+      "Warrake"
+    ],
+    "Owan West": [
+      "Avbiosi",
+      "Eruere",
+      "Ozalla",
+      "Sabongida-Ora",
+      "Uhonmora"
+    ],
+    "Uhunnmwonde": [
+      "Egba",
+      "Ehor",
+      "Irhue",
+      "Isi",
+      "Oke",
+      "Umagbae"
+    ],
+    "Ado Ekiti": [
+      "Ado-Ekiti",
+      "Dallimore",
+      "Ereguru",
+      "Idofin",
+      "Idolofin",
+      "Igbehin",
+      "Ijigbo",
+      "Ijoka",
+      "Inisa",
+      "Irona",
+      "Odo-Ado",
+      "Oke-Ila",
+      "Okesa",
+      "Okeyinmi"
+    ],
+    "Efon": [
+      "Efon",
+      "Efon-Alaaye"
+    ],
+    "Ekiti East": [
+      "Araromi Omuo",
+      "Ikun",
+      "Ilasa",
+      "Isinbode",
+      "Kota",
+      "Obadore",
+      "Omuo-Ekiti"
+    ],
+    "Ekiti South West": [
+      "Igbara-Odo",
+      "Ilawe-Ekiti",
+      "Ogotun"
+    ],
+    "Ekiti West": [
+      "Aramoko-Ekiti",
+      "Erijiyan",
+      "Ido-Ajinare",
+      "Ikogosi",
+      "Ipole-Iloro",
+      "Okemesi"
+    ],
+    "Emure": [
+      "Emure-Ekiti",
+      "Idamudu",
+      "Odo-Emure",
+      "Ogbontioro",
+      "Oke-Emure"
+    ],
+    "Gbonyin": [
+      "Agbado",
+      "Aisegba",
+      "Egbe",
+      "Ijan",
+      "Iluomoba",
+      "Imesi",
+      "Iro",
+      "Ode-Ekiti"
+    ],
+    "Ido-Osi": [
+      "Aaye",
+      "Ayetoro",
+      "Ido-Ekiti",
+      "Ifaki",
+      "Ifisin",
+      "Igbole",
+      "Ilogbo",
+      "Ora",
+      "Orin",
+      "Osi",
+      "Usi"
+    ],
+    "Ijero": [
+      "Ekamarun",
+      "Ekameta",
+      "Ijero-Ekiti",
+      "Ijunrin",
+      "Ikoro",
+      "Iloro",
+      "Ipoti",
+      "Odo-Owa"
+    ],
+    "Ikere": [
+      "Aafin",
+      "Afao",
+      "Agbodo",
+      "Araromi",
+      "Are",
+      "Aroku",
+      "Atiba",
+      "Idemo",
+      "Ijao",
+      "Ikere-Ekiti",
+      "Ilapetu",
+      "Kajola",
+      "Odose",
+      "Ogbonjana",
+      "Oke-Osun",
+      "Okeruku",
+      "Oyo",
+      "Ugele"
+    ],
+    "Ikole": [
+      "Araromi",
+      "Ayebode",
+      "Bolorunduro",
+      "Ijesa-Isu",
+      "Ikole-Ekiti",
+      "Ipao",
+      "Irele",
+      "Itapaji",
+      "Iyemero",
+      "Odo-Ayedun",
+      "Oke-Ako",
+      "Oke-Ayedun"
+    ],
+    "Ilejemeje": [
+      "Eda Obada",
+      "Eda Oniyo",
+      "Ewu",
+      "Ijesamodu",
+      "Iludun",
+      "Ipere",
+      "Iye"
+    ],
+    "Irepodun/Ifelodun": [
+      "Afao",
+      "Are",
+      "Awo",
+      "Esure",
+      "Eyio",
+      "Igbemo",
+      "Igede-Ekiti",
+      "Iropora",
+      "Iworoko",
+      "Iyin"
+    ],
+    "Ise/Orun": [
+      "Erinwa",
+      "Ise-Ekiti",
+      "Oraye",
+      "Orun-Ekiti"
+    ],
+    "Moba": [
+      "Erinmope",
+      "Igogo",
+      "Ikun",
+      "Osan",
+      "Osun",
+      "Otun-Ekiti"
+    ],
+    "Oye": [
+      "Ayede",
+      "Ayegbaju",
+      "Ijelu",
+      "Ilafon",
+      "Ilemeso",
+      "Ilupeju",
+      "Ire",
+      "Isan",
+      "Itaji",
+      "Itapa",
+      "Omu-Odo",
+      "Omu-Oke",
+      "Osin",
+      "Oye-Ekiti"
+    ],
+    "Aninri": [
+      "Mpu",
+      "Ndeaboh",
+      "Nenwe",
+      "Oduma",
+      "Okpanku"
+    ],
+    "Awgu": [
+      "Agbogugu",
+      "Awgu",
+      "Ihe",
+      "Ituku",
+      "Mgbowo",
+      "Owelli"
+    ],
+    "Enugu East": [
+      "Abakpa",
+      "Emene",
+      "Iji-Nike",
+      "Nike",
+      "Trans-Ekulu",
+      "Ugwuomu"
+    ],
+    "Enugu North": [
+      "Asata",
+      "New Haven",
+      "Ogui"
+    ],
+    "Enugu South": [
+      "Agbani Road",
+      "Amechi",
+      "Idaw River",
+      "Maryland",
+      "Uwani"
+    ],
+    "Ezeagu": [
+      "Aguobu-Owa",
+      "Akama-Oghe",
+      "Iwollo",
+      "Mgbagbu-Owa",
+      "Olo",
+      "Umana"
+    ],
+    "Igbo-Etiti": [
+      "Aku",
+      "Diogbe",
+      "Ekwegbe",
+      "Ogbede",
+      "Ozalla",
+      "Ukehe"
+    ],
+    "Igbo-Eze North": [
+      "Aji",
+      "Enugu-Ezike",
+      "Ette",
+      "Ogrute",
+      "Umuitodo",
+      "Umuozzi"
+    ],
+    "Igbo-Eze South": [
+      "Alor-Agu",
+      "Ibagwa-Aka",
+      "Iheaka",
+      "Itchi",
+      "Ovoko",
+      "Unadu"
+    ],
+    "Isi-Uzo": [
+      "Aguamede",
+      "Eha-Amufu",
+      "Ikem",
+      "Mbu",
+      "Neke",
+      "Umualor"
+    ],
+    "Nkanu East": [
+      "Akpawfu",
+      "Amagunze",
+      "Mburubu",
+      "Nara",
+      "Nkerefi",
+      "Ugbawka"
+    ],
+    "Nkanu West": [
+      "Agbani",
+      "Akpugo",
+      "Amurri",
+      "Obuoffia",
+      "Ozalla",
+      "Umueze"
+    ],
+    "Nsukka": [
+      "Ede-Oballa",
+      "Lejja",
+      "Nsukka",
+      "Obukpa",
+      "Okpuje",
+      "Opi"
+    ],
+    "Oji River": [
+      "Achi",
+      "Akpugoeze",
+      "Awlaw",
+      "Inyi",
+      "Oji River",
+      "Ugwuoba"
+    ],
+    "Udenu": [
+      "Amalla",
+      "Ezimo",
+      "Imilike",
+      "Obollo-Afor",
+      "Ogbodu-Aba",
+      "Orba"
+    ],
+    "Udi": [
+      "Abia",
+      "Affa",
+      "Eke",
+      "Nachi",
+      "Ngwo",
+      "Udi"
+    ],
+    "Uzo-Uwani": [
+      "Abbi",
+      "Adani",
+      "Nimbo",
+      "Nkpologu",
+      "Opanda",
+      "Umulokpa"
+    ],
+    "Abaji": [
+      "Abaji",
+      "Abaji Central",
+      "Abaji North East",
+      "Abaji South East",
+      "Agyana",
+      "Alu",
+      "Ebagi",
+      "Gawu",
+      "Gurdi",
+      "Mamagi",
+      "Nuku",
+      "Pandagi",
+      "Rimba",
+      "Yaba"
+    ],
+    "Abuja Municipal": [
+      "Abuja City Centre",
+      "Apo",
+      "Asokoro",
+      "Garki",
+      "Gui",
+      "Gwagwa",
+      "Gwarinpa",
+      "Jabi",
+      "Jiwa",
+      "Kabusa",
+      "Karshi",
+      "Karu",
+      "Lugbe",
+      "Maitama",
+      "Nyanya",
+      "Orozo",
+      "Utako",
+      "Wuse",
+      "Wuye"
+    ],
+    "Bwari": [
+      "Bwari",
+      "Byazhin",
+      "Dawaki",
+      "Deidei",
+      "Dutsen Alhaji",
+      "Igu",
+      "Katampe",
+      "Kawu",
+      "Kubwa",
+      "Kuduru",
+      "Mpape",
+      "Shere",
+      "Ushafa",
+      "Usuma"
+    ],
+    "Gwagwalada": [
+      "Dagiri",
+      "Dobi",
+      "Giri",
+      "Gwagwalada",
+      "Gwako",
+      "Ibwa",
+      "Ikwa",
+      "Kutunku",
+      "Paiko",
+      "Staff Quarters",
+      "Tungan Maje",
+      "Zuba"
+    ],
+    "Kuje": [
+      "Chibiri",
+      "Gaube",
+      "Gudaji",
+      "Gudun Karya",
+      "Gwargwada",
+      "Kabi",
+      "Kuchako",
+      "Kuje",
+      "Kujekwa",
+      "Kwaku",
+      "Old Kuje",
+      "Rubochi",
+      "Yenche"
+    ],
+    "Kwali": [
+      "Ashara",
+      "Bako",
+      "Dabi",
+      "Dafa",
+      "Gumbo",
+      "Kilankwa",
+      "Kundu",
+      "Kwali",
+      "Lambata",
+      "Pai",
+      "Sheda",
+      "Wako",
+      "Yangoji",
+      "Yebu"
+    ],
+    "Akko": [
+      "Garko",
+      "Kalshingi",
+      "Kashere",
+      "Kumo",
+      "Pindiga",
+      "Tumu"
+    ],
+    "Balanga": [
+      "Bambam",
+      "Dadiya",
+      "Degri",
+      "Gelengu",
+      "Nyuwar",
+      "Talasse"
+    ],
+    "Billiri": [
+      "Bare",
+      "Billiri",
+      "Kalmai",
+      "Tal",
+      "Tanglang",
+      "Todi"
+    ],
+    "Dukku": [
+      "Dukku",
+      "Gombe Abba",
+      "Hashidu",
+      "Jamari",
+      "Lafiya",
+      "Malala"
+    ],
+    "Funakaye": [
+      "Ashaka",
+      "Bage",
+      "Bajoga",
+      "Jilli",
+      "Ribadu",
+      "Tilde",
+      "Tongo"
+    ],
+    "Gombe": [
+      "Ajiya",
+      "Bolari",
+      "Dawaki",
+      "Gombe",
+      "Herwagana",
+      "Jekadafari",
+      "Pantami"
+    ],
+    "Kaltungo": [
+      "Awak",
+      "Kaltungo",
+      "Kamo",
+      "Tula",
+      "Tungo",
+      "Ture"
+    ],
+    "Kwami": [
+      "Bojude",
+      "Doho",
+      "Dukul",
+      "Gadam",
+      "Kwami",
+      "Mallam Sidi"
+    ],
+    "Nafada": [
+      "Barwo",
+      "Birin Fulani",
+      "Gudukku",
+      "Jigawa",
+      "Nafada",
+      "Nasarawo"
+    ],
+    "Shongom": [
+      "Boh",
+      "Burak",
+      "Filiya",
+      "Gundale",
+      "Kushi",
+      "Lapan",
+      "Shongom"
+    ],
+    "Yamaltu/Deba": [
+      "Dadin Kowa",
+      "Deba",
+      "Hinna",
+      "Kanawa",
+      "Kwadon",
+      "Lubo",
+      "Zambuk"
+    ],
+    "Aboh Mbaise": [
+      "Aboh",
+      "Amuzu",
+      "Enyiogugu",
+      "Ibeku",
+      "Lagwa",
+      "Lorji",
+      "Mbutu",
+      "Nguru",
+      "Umuhu",
+      "Uvuru"
+    ],
+    "Ahiazu Mbaise": [
+      "Afor Oru",
+      "Aguneze",
+      "Amuzi",
+      "Ihitteafoukwu",
+      "Mpam",
+      "Nnarambia",
+      "Ogbe",
+      "Okrika",
+      "Oparanadim",
+      "Otulu"
+    ],
+    "Ehime Mbano": [
+      "Agbaja",
+      "Ehime",
+      "Nsu",
+      "Nzerem",
+      "Umuakagu",
+      "Umualumaku",
+      "Umuezeala",
+      "Umunakanu"
+    ],
+    "Ezinihitte Mbaise": [
+      "Akpodim",
+      "Amumara",
+      "Chokoneze",
+      "Eziagbogu",
+      "Eziudo",
+      "Ihitte",
+      "Itu",
+      "Okpofe",
+      "Onicha"
+    ],
+    "Ideato North": [
+      "Akokwa",
+      "Akpulu",
+      "Arondizuogu",
+      "Isiokpo",
+      "Ndikem",
+      "Osina",
+      "Urualla",
+      "Uzii"
+    ],
+    "Ideato South": [
+      "Dikenafai",
+      "Isiekenesi",
+      "Ntueke",
+      "Obiohia",
+      "Ogboko",
+      "Ugbelle",
+      "Umuchima",
+      "Umuobom"
+    ],
+    "Ihitte/Uboma": [
+      "Abueke",
+      "Amainyi",
+      "Amakohia",
+      "Atonerim",
+      "Awuchinumo",
+      "Dimneze",
+      "Ikperejere",
+      "Isinweke"
+    ],
+    "Ikeduru": [
+      "Akabo",
+      "Amaimo",
+      "Amakohia",
+      "Amatta",
+      "Atta",
+      "Avuvu",
+      "Iho",
+      "Inyishi",
+      "Uzoagba"
+    ],
+    "Isiala Mbano": [
+      "Amaraku",
+      "Amauzari",
+      "Anara",
+      "Ibeme",
+      "Obollo",
+      "Ogbor",
+      "Ugiri",
+      "Umuelemai",
+      "Umunkwo"
+    ],
+    "Isu": [
+      "Amandugba",
+      "Amurie Omanze",
+      "Ekwe",
+      "Isu-Njaba",
+      "Umundugba"
+    ],
+    "Mbaitoli": [
+      "Amaike",
+      "Eziama",
+      "Ifakala",
+      "Mbieri",
+      "Nwaorieubi",
+      "Ogbaku",
+      "Ogwa",
+      "Orodo",
+      "Ubomiri"
+    ],
+    "Ngor Okpala": [
+      "Alulu",
+      "Imerienwe",
+      "Logara",
+      "Nguru",
+      "Obike",
+      "Obokwe",
+      "Okpala",
+      "Umuneke"
+    ],
+    "Njaba": [
+      "Amucha",
+      "Atta",
+      "Nkume",
+      "Nnenasa",
+      "Okwudor",
+      "Umuaka"
+    ],
+    "Nwangele": [
+      "Abajah",
+      "Abba",
+      "Amaigbo",
+      "Dim-Na-Nume",
+      "Kara-Na-Orlu",
+      "Umuozu"
+    ],
+    "Nkwerre": [
+      "Amaokpara",
+      "Eziama Obaire",
+      "Nkwerre",
+      "Nnanano",
+      "Onusa",
+      "Owerre Nkworji",
+      "Umudi",
+      "Umukor"
+    ],
+    "Obowo": [
+      "Alike",
+      "Amanze",
+      "Amuzi",
+      "Avutu",
+      "Ehume",
+      "Okenalogho",
+      "Okwuohia",
+      "Otoko"
+    ],
+    "Oguta": [
+      "Awa",
+      "Egbuoma",
+      "Egwe",
+      "Izombe",
+      "Mbala",
+      "Obudi",
+      "Oguta",
+      "Osemoto"
+    ],
+    "Ohaji/Egbema": [
+      "Assa",
+      "Awarra",
+      "Egbema",
+      "Mmahu",
+      "Obile",
+      "Obitti",
+      "Ohoba",
+      "Umuagwo",
+      "Umuapu"
+    ],
+    "Okigwe": [
+      "Aku",
+      "Amuro",
+      "Ezinachi",
+      "Ihube",
+      "Ogii",
+      "Okigwe",
+      "Umualumoke",
+      "Umulolo"
+    ],
+    "Onuimo": [
+      "Ezelu",
+      "Eziama",
+      "Okwe",
+      "Okwelle",
+      "Owerre",
+      "Umucheke",
+      "Umuna"
+    ],
+    "Orlu": [
+      "Amaifeke",
+      "Ihioma",
+      "Ihite-Owerre",
+      "Mgbee",
+      "Okporo",
+      "Orlu",
+      "Umudioka",
+      "Umuna"
+    ],
+    "Orsu": [
+      "Amaruru",
+      "Awo-Idemili",
+      "Ebenator",
+      "Ihitenansa",
+      "Okwufuruaku",
+      "Orsu Ihiteukwa",
+      "Umuhu Okabia"
+    ],
+    "Oru East": [
+      "Akata",
+      "Akuma",
+      "Amagu",
+      "Amiri",
+      "Awo-Omamma",
+      "Omuma"
+    ],
+    "Oru West": [
+      "Aji",
+      "Amafuo",
+      "Ibiasoegbe",
+      "Mgbidi",
+      "Nempi",
+      "Ohakpu",
+      "Otulu",
+      "Ozara",
+      "Ubulu"
+    ],
+    "Owerri Municipal": [
+      "Aladinma",
+      "Azuzu",
+      "Ikenegbu",
+      "New Owerri",
+      "Owerri"
+    ],
+    "Owerri North": [
+      "Awaka",
+      "Egbu",
+      "Emekuku",
+      "Naze",
+      "Obibi-Uratta",
+      "Obube",
+      "Orie Uratta",
+      "Orji",
+      "Ulakwo"
+    ],
+    "Owerri West": [
+      "Avu",
+      "Emeabiam",
+      "Eziobodo",
+      "Ihiagwa",
+      "Irete",
+      "Nekede",
+      "Obinze",
+      "Oforola",
+      "Okuku",
+      "Orogwe",
+      "Umuguma"
+    ],
+    "Auyo": [
+      "Auyakayi",
+      "Auyo",
+      "Ayama",
+      "Ayan",
+      "Gatafa",
+      "Kafur"
+    ],
+    "Babura": [
+      "Babura",
+      "Batali",
+      "Dorawa",
+      "Garu",
+      "Jigawa",
+      "Kanya"
+    ],
+    "Birnin Kudu": [
+      "Birnin Kudu",
+      "Kangire",
+      "Kantoga",
+      "Sundimina",
+      "Surko",
+      "Wurno"
+    ],
+    "Biriniwa": [
+      "Birniwa",
+      "Dangwaleri",
+      "Diginsa",
+      "Fagi",
+      "Kazura",
+      "Matamu"
+    ],
+    "Buji": [
+      "Buji",
+      "Churbun",
+      "Falageri",
+      "Gantsa",
+      "Kafin Madaki",
+      "Madabe"
+    ],
+    "Dutse": [
+      "Dutse",
+      "Kachi",
+      "Karnaya",
+      "Kudai",
+      "Limawa",
+      "Sakwaya"
+    ],
+    "Gagarawa": [
+      "Gagarawa",
+      "Kore",
+      "Madaka",
+      "Maiaduwa",
+      "Yalawa",
+      "Zarada"
+    ],
+    "Garki": [
+      "Buduru",
+      "Doko",
+      "Garki",
+      "Kanya",
+      "Muku",
+      "Siyori"
+    ],
+    "Gumel": [
+      "Baikarya",
+      "Dantanoma",
+      "Garin Gambo",
+      "Gumel",
+      "Hammado",
+      "Kofar Arewa"
+    ],
+    "Guri": [
+      "Abunabo",
+      "Adiyani",
+      "Guri",
+      "Kadira",
+      "Lafiya",
+      "Musari"
+    ],
+    "Gwaram": [
+      "Basirka",
+      "Fagam",
+      "Gwaram",
+      "Kila",
+      "Sara",
+      "Zandan Nagogo"
+    ],
+    "Gwiwa": [
+      "Buntusu",
+      "Gwiwa",
+      "Korayel",
+      "Rorau",
+      "Shafe",
+      "Zaumar Sainawa"
+    ],
+    "Hadejia": [
+      "Dubantu",
+      "Gagulmari",
+      "Hadejia",
+      "Kasuwar Kofa",
+      "Majema",
+      "Yayari"
+    ],
+    "Jahun": [
+      "Aujara",
+      "Gangawa",
+      "Ganuwar Kuka",
+      "Gunka",
+      "Harbo Sabuwa",
+      "Jahun"
+    ],
+    "Kafin Hausa": [
+      "Balangu",
+      "Bulangu",
+      "Dumadumin Toka",
+      "Gafaya",
+      "Kafin Hausa",
+      "Kazalewa"
+    ],
+    "Kaugama": [
+      "Arbus",
+      "Askandu",
+      "Dakaiyawa",
+      "Jarkasa",
+      "Kaugama",
+      "Marke"
+    ],
+    "Kazaure": [
+      "Daba",
+      "Dabaza",
+      "Gada",
+      "Kanti",
+      "Kazaure",
+      "Unguwar Gabas"
+    ],
+    "Kiri Kasamma": [
+      "Bulunchai",
+      "Fandum",
+      "Kiri Kasama",
+      "Marma",
+      "Tarabu",
+      "Tsheguwa"
+    ],
+    "Kiyawa": [
+      "Abalago",
+      "Andaza",
+      "Gurduba",
+      "Katanga",
+      "Kiyawa",
+      "Shuwarin"
+    ],
+    "Maigatari": [
+      "Galadi",
+      "Jajeri",
+      "Kukayasku",
+      "Maigatari",
+      "Matoya",
+      "Turbus"
+    ],
+    "Malam Madori": [
+      "Arki",
+      "Dunari",
+      "Garun Gabas",
+      "Malam Madori",
+      "Tashena",
+      "Tonikutara"
+    ],
+    "Miga": [
+      "Dangyatin",
+      "Hantsu",
+      "Miga",
+      "Sansani",
+      "Tsakuwawa",
+      "Zareku"
+    ],
+    "Ringim": [
+      "Dabi",
+      "Karshi",
+      "Ringim",
+      "Sankara",
+      "Sintilmawa",
+      "Yandutse"
+    ],
+    "Roni": [
+      "Fara",
+      "Gora",
+      "Roni",
+      "Sankau",
+      "Tunas",
+      "Yanzaki"
+    ],
+    "Sule Tankarkar": [
+      "Albasu",
+      "Amanga",
+      "Dangwanki",
+      "Danladi",
+      "Danzomo",
+      "Sule Tankarkar"
+    ],
+    "Taura": [
+      "Chakwaikwaiwa",
+      "Gujungu",
+      "Maje",
+      "S/Garin Yaya",
+      "Taura",
+      "Zangon Maje"
+    ],
+    "Yankwashi": [
+      "Achilafiya",
+      "Dawan-Gawo",
+      "Gwarta",
+      "Karkarna",
+      "Yankwashi",
+      "Zungumba"
+    ],
+    "Birnin Gwari": [
+      "Birnin Gwari",
+      "Dogon Dawa",
+      "Kakangi",
+      "Kazage",
+      "Kuyelo",
+      "Magajin Gari",
+      "Randagi",
+      "Tabanni"
+    ],
+    "Chikun": [
+      "Chikun",
+      "Gwagwada",
+      "Kakau",
+      "Kujama",
+      "Kunai",
+      "Kuriga",
+      "Narayi",
+      "Nasarawa",
+      "Rido",
+      "Sabon Tasha"
+    ],
+    "Giwa": [
+      "Danmahawayi",
+      "Gangara",
+      "Giwa",
+      "Kakangi",
+      "Kidandan",
+      "Shika",
+      "Yakawada"
+    ],
+    "Igabi": [
+      "Afaka",
+      "Birnin Yero",
+      "Igabi",
+      "Kerawa",
+      "Kwarau",
+      "Rigachikun",
+      "Rigasa",
+      "Turunku"
+    ],
+    "Ikara": [
+      "Auchan",
+      "Ikara",
+      "Janfala",
+      "Kurmin Kogi",
+      "Kuya",
+      "Paki",
+      "Pala",
+      "Rumi",
+      "Saulawa",
+      "Saya-Saya"
+    ],
+    "Jaba": [
+      "Chori",
+      "Daddu",
+      "Dura-Bitaro",
+      "Fada",
+      "Fai",
+      "Kwoi",
+      "Nok",
+      "Sambam"
+    ],
+    "Jema'a": [
+      "Gidan Waya",
+      "Godogodo",
+      "Jagindi",
+      "Kafanchan",
+      "Kagoma",
+      "Kaninkon",
+      "Takau"
+    ],
+    "Kachia": [
+      "Agunu",
+      "Awon",
+      "Doka",
+      "Gidan Tagwai",
+      "Gumel",
+      "Kachia",
+      "Katari",
+      "Kurmin Musa"
+    ],
+    "Kaduna North": [
+      "Badarawa",
+      "Gabasawa",
+      "Hayin Banki",
+      "Kaduna",
+      "Kawo",
+      "Unguwan Dosa",
+      "Unguwan Sarki"
+    ],
+    "Kaduna South": [
+      "Badiko",
+      "Barnawa",
+      "Kakuri",
+      "Makera",
+      "Sabon Gari",
+      "Television",
+      "Tudun Nuwapa",
+      "Tudun Wada",
+      "Unguwan Sanusi"
+    ],
+    "Kagarko": [
+      "Aribi",
+      "Iddah",
+      "Jere",
+      "Kagarko",
+      "Katugal",
+      "Kukui",
+      "Kurmin Jibrin",
+      "Kushe"
+    ],
+    "Kajuru": [
+      "Idon",
+      "Kajuru",
+      "Kallah",
+      "Kasuwan Magani",
+      "Kufana",
+      "Maro",
+      "Rimau",
+      "Tantatu"
+    ],
+    "Kaura": [
+      "Bondong",
+      "Fadan Attakar",
+      "Kagoro",
+      "Kaura",
+      "Mallagum",
+      "Manchok",
+      "Zankan"
+    ],
+    "Kauru": [
+      "Bital",
+      "Dawaki",
+      "Geshere",
+      "Kamaru",
+      "Kauru",
+      "Kumana",
+      "Kwassam",
+      "Makami",
+      "Pari"
+    ],
+    "Kubau": [
+      "Anchau",
+      "Damau",
+      "Dutsen Wai",
+      "Haskiya",
+      "Kargi",
+      "Kubau",
+      "Pambegua",
+      "Zuntu"
+    ],
+    "Kudan": [
+      "Doka",
+      "Garu",
+      "Hunkuyi",
+      "Kauran Wali",
+      "Kudan",
+      "Likoro",
+      "Taban Sani",
+      "Zabi"
+    ],
+    "Lere": [
+      "Dan Alhaji",
+      "Gure",
+      "Kahugu",
+      "Kayarda",
+      "Lazuru",
+      "Lere",
+      "Sabon Birnin",
+      "Saminaka",
+      "Yarkasuwa"
+    ],
+    "Makarfi": [
+      "Dandamisa",
+      "Danguziri",
+      "Gazara",
+      "Gimi",
+      "Gubuchi",
+      "Gwanki",
+      "Makarfi",
+      "Mayere",
+      "Tudun Wada"
+    ],
+    "Sabon Gari": [
+      "Basawa",
+      "Chikaji",
+      "Dogarawa",
+      "Hanwa",
+      "Muchia",
+      "Sabon Gari",
+      "Samaru",
+      "Zabi"
+    ],
+    "Sanga": [
+      "Aboro",
+      "Arak",
+      "Ayu",
+      "Fadan Karshi",
+      "Gwantu",
+      "Nandu",
+      "Ninzam",
+      "Wasa Station"
+    ],
+    "Soba": [
+      "Gamagira",
+      "Gimba",
+      "Kwassallo",
+      "Maigana",
+      "Rahama",
+      "Richifa",
+      "Soba",
+      "Turawa"
+    ],
+    "Zangon Kataf": [
+      "Gidan Jatau",
+      "Gora",
+      "Kamantan",
+      "Madakiya",
+      "Samaru Kataf",
+      "Unguwan Rimi",
+      "Zangon Kataf",
+      "Zonkwa"
+    ],
+    "Zaria": [
+      "Gyallesu",
+      "Kaura",
+      "Kofar Gayan",
+      "Limancin-Kona",
+      "Tudun Wada Zaria",
+      "Unguwan Juma",
+      "Wucicciri",
+      "Zaria"
+    ],
+    "Ajingi": [
+      "Ajingi",
+      "Balare",
+      "Chula",
+      "Dabin Kanawa",
+      "Gafasa",
+      "Kunkurawa"
+    ],
+    "Albasu": [
+      "Albasu",
+      "Chamarana",
+      "Fanda",
+      "Hungu",
+      "Saya-Saya",
+      "Tsangaya"
+    ],
+    "Bagwai": [
+      "Bagwai",
+      "Dangada",
+      "Gadanya",
+      "Gogori",
+      "Kiyawa",
+      "Romo"
+    ],
+    "Bebeji": [
+      "Baguda",
+      "Bebeji",
+      "Damau",
+      "Gargai",
+      "Kofa",
+      "Rahama"
+    ],
+    "Bichi": [
+      "Badume",
+      "Bichi",
+      "Fagolo",
+      "Kaukau",
+      "Kyalli",
+      "Muntsira"
+    ],
+    "Bunkure": [
+      "Bono",
+      "Bunkure",
+      "Chirin",
+      "Gafan",
+      "Gurjiya",
+      "Kulluwa"
+    ],
+    "Dala": [
+      "Dala",
+      "Gwammaja",
+      "Kofar Mazugal",
+      "Kofar Ruwa",
+      "Madigawa",
+      "Yalwa"
+    ],
+    "Dambatta": [
+      "Ajumawa",
+      "Dambatta",
+      "Danbatta East",
+      "Danbatta West",
+      "Fagwalawa",
+      "Gwarabjawa"
+    ],
+    "Dawakin Kudu": [
+      "Danbagina",
+      "Dawakin Kudu",
+      "Dawakin Kudu Central",
+      "Dosan",
+      "Jido",
+      "Tsakuwa"
+    ],
+    "Dawakin Tofa": [
+      "Dawakin Tofa",
+      "Dawanau",
+      "Ganduje",
+      "Gargari",
+      "Jalli",
+      "Kwa"
+    ],
+    "Doguwa": [
+      "Dadin Kowa",
+      "Doguwa",
+      "Falgore",
+      "Maraku",
+      "Riruwai",
+      "Unguwar Natsohuwa"
+    ],
+    "Fagge": [
+      "Fagge",
+      "Kurna",
+      "Kwachiri",
+      "Rijiyar Lemo",
+      "Sabon Gari",
+      "Yammata"
+    ],
+    "Gabasawa": [
+      "Gabasawa",
+      "Garun Danga",
+      "Joda",
+      "Mekiya",
+      "Tarauni",
+      "Yautar Arewa"
+    ],
+    "Garko": [
+      "Dal",
+      "Garko",
+      "Gurjiya",
+      "Kafin Malamai",
+      "Kwas",
+      "Zakarawa"
+    ],
+    "Garun Mallam": [
+      "Chiromawa",
+      "Fankurun",
+      "Garun Malam",
+      "Jobawa",
+      "Kadawa",
+      "Yad Akwari"
+    ],
+    "Gaya": [
+      "Balan",
+      "Gamarya",
+      "Gamoji",
+      "Gaya",
+      "Kademi",
+      "Wudilawa"
+    ],
+    "Gezawa": [
+      "Babawa",
+      "Gawo",
+      "Gezawa",
+      "Ketawa",
+      "Sararin Gezawa",
+      "Tsamiya"
+    ],
+    "Gwale": [
+      "Dorayi",
+      "Galadanchi",
+      "Gwale",
+      "Kabuga",
+      "Mandawari",
+      "Sani Mai Nagge"
+    ],
+    "Gwarzo": [
+      "Getso",
+      "Gwarzo",
+      "Jama’a",
+      "Kutama",
+      "Lakwaya",
+      "Unguwar Tudu"
+    ],
+    "Kabo": [
+      "Dugabau",
+      "Durun",
+      "Gammo",
+      "Garo",
+      "Kabo",
+      "Kanwa"
+    ],
+    "Kano Municipal": [
+      "Kankarofi",
+      "Kano City",
+      "Kofar Mata",
+      "Kofar Nassarawa",
+      "Sharada",
+      "Tudun Wazirchi"
+    ],
+    "Karaye": [
+      "Daura",
+      "Karaye",
+      "Kurugu",
+      "Kwanyawa",
+      "Turawa",
+      "Unguwar Hajji"
+    ],
+    "Kibiya": [
+      "Durba",
+      "Fammar",
+      "Fassi",
+      "Kahu",
+      "Kibiya",
+      "Tarai"
+    ],
+    "Kiru": [
+      "Ba’awa",
+      "Dangora",
+      "Dansoshiya",
+      "Kiru",
+      "Kogo",
+      "Yako"
+    ],
+    "Kumbotso": [
+      "Chiranchi",
+      "Danbare",
+      "Kumbotso",
+      "Naibawa",
+      "Panshekara",
+      "Unguwa Uku"
+    ],
+    "Kunchi": [
+      "Kasuwar Kuka",
+      "Kunchi",
+      "Matakayi",
+      "Ridawa",
+      "Shamakawa",
+      "Yandadi"
+    ],
+    "Kura": [
+      "Dalili",
+      "Dan Hassan",
+      "Dukawa",
+      "Gundutse",
+      "Karfi",
+      "Kura"
+    ],
+    "Madobi": [
+      "Burji",
+      "Cinkoso",
+      "Gora",
+      "Kafin Agur",
+      "Kanwa",
+      "Madobi"
+    ],
+    "Makoda": [
+      "Durma",
+      "Jibga",
+      "Kadan Dani",
+      "Maitsidau",
+      "Makoda",
+      "Tangaji"
+    ],
+    "Minjibir": [
+      "Azore",
+      "Kunya",
+      "Kuru",
+      "Kwarkiya",
+      "Minjibir",
+      "Wasai"
+    ],
+    "Nassarawa": [
+      "Gawuna",
+      "Giginyu",
+      "Gwagwarwa",
+      "Hotoro",
+      "Nassarawa",
+      "Tudun Murtala"
+    ],
+    "Rano": [
+      "Dawaki",
+      "Lausu",
+      "Madachi",
+      "Rano",
+      "Rurum",
+      "Saji"
+    ],
+    "Rimin Gado": [
+      "Butu-Butu",
+      "Dawaki Gulu",
+      "Doka Dawa",
+      "Karofin Yashi",
+      "Rimin Gado",
+      "Tamawa"
+    ],
+    "Rogo": [
+      "Beli",
+      "Fulatan",
+      "Gwangwan",
+      "Jajaye",
+      "Rogo",
+      "Zoza"
+    ],
+    "Shanono": [
+      "Alajawa",
+      "Dutsen-Bakoshi",
+      "Faruruwa",
+      "Kadamu",
+      "Shanono",
+      "Tsoure"
+    ],
+    "Sumaila": [
+      "Gani",
+      "Garfa",
+      "Magami",
+      "Masu",
+      "Rumo",
+      "Sumaila"
+    ],
+    "Takai": [
+      "Bagwaro",
+      "Durbunde",
+      "Fajewa",
+      "Kachako",
+      "Takai",
+      "Zuga"
+    ],
+    "Tarauni": [
+      "Babban Giji",
+      "Darmanawa",
+      "Gyadi-Gyadi",
+      "Hotoro",
+      "Tarauni",
+      "Unguwa Uku"
+    ],
+    "Tofa": [
+      "Dindere",
+      "Doka",
+      "Janguza",
+      "Lambu",
+      "Tofa",
+      "Unguwar Rimi"
+    ],
+    "Tsanyawa": [
+      "Dunbulun",
+      "Gozaki",
+      "Gurun",
+      "Kabagiwa",
+      "Tatsan",
+      "Tsanyawa"
+    ],
+    "Tudun Wada": [
+      "Baburi",
+      "Burumburum",
+      "Dalawa",
+      "Jandutse",
+      "Shuwaki",
+      "Tudun Wada"
+    ],
+    "Ungogo": [
+      "Bachirawa",
+      "Kadawa",
+      "Rimin Zakara",
+      "Ungogo",
+      "Yadakunya",
+      "Zango"
+    ],
+    "Warawa": [
+      "Ammani",
+      "Garin Dau",
+      "J/Galadima",
+      "Jemagu",
+      "Katarkawa",
+      "Warawa"
+    ],
+    "Wudil": [
+      "Achika",
+      "Dagumawa",
+      "Dankaza",
+      "Indabo",
+      "Utai",
+      "Wudil"
+    ],
+    "Bakori": [
+      "Bakori",
+      "Jargaba",
+      "Kabomo",
+      "Kakumi",
+      "Kurami",
+      "Tsiga"
+    ],
+    "Batagorawa": [
+      "Ajiwa",
+      "Bakiyawa",
+      "Barawa",
+      "Batagarawa",
+      "Dandagoro",
+      "Tsanni"
+    ],
+    "Batsari": [
+      "Batsari",
+      "Kandawa",
+      "Karare",
+      "Manawa",
+      "Ruma",
+      "Wagini"
+    ],
+    "Baure": [
+      "Baure",
+      "Garki",
+      "Kagara",
+      "Taramnawa",
+      "Unguwar Rai",
+      "Yanduna"
+    ],
+    "Bindawa": [
+      "Bindawa",
+      "Doro",
+      "Faru",
+      "Jibawa",
+      "Shibdawa",
+      "Tama"
+    ],
+    "Charanchi": [
+      "Banye",
+      "Charanchi",
+      "Kadanye",
+      "Kuraye",
+      "Radda",
+      "Tsakatsa"
+    ],
+    "Dandume": [
+      "Dandume",
+      "Dantankari",
+      "Magaji Wando",
+      "Mahuta",
+      "Nasarawa",
+      "Tumburkai"
+    ],
+    "Danja": [
+      "Dabai",
+      "Danja",
+      "Jiba",
+      "Kahutu",
+      "Tandama",
+      "Yakaji"
+    ],
+    "Dan Musa": [
+      "Dan Ali",
+      "Dan Musa",
+      "Dandire",
+      "Maidabino",
+      "Mara",
+      "Yantumaki"
+    ],
+    "Daura": [
+      "Daberam",
+      "Daura",
+      "Kofar Baru",
+      "Kusugu",
+      "Sabon Gari",
+      "Tafkin Madara"
+    ],
+    "Dutsi": [
+      "Dan Aunai",
+      "Dutsi",
+      "Kayawa",
+      "Makera",
+      "Ruwan Dorawa",
+      "Sirika"
+    ],
+    "Dutsin-Ma": [
+      "Dabawa",
+      "Dutsin-Ma",
+      "Karofi",
+      "Kutawa",
+      "Makera",
+      "Shema"
+    ],
+    "Faskari": [
+      "Daudawa",
+      "Faskari",
+      "Mairuwa",
+      "Sheme",
+      "Tafoki",
+      "Yankara"
+    ],
+    "Funtua": [
+      "Dikke",
+      "Funtua",
+      "Goya",
+      "Makera",
+      "Maska",
+      "Sabon Layi"
+    ],
+    "Ingawa": [
+      "Agayawa",
+      "Daunaka",
+      "Doro",
+      "Ingawa",
+      "Manomawa",
+      "Yandoma"
+    ],
+    "Jibia": [
+      "Farfaru",
+      "Gurbin Baure",
+      "Jibia",
+      "Magama",
+      "Mazanya",
+      "Riko"
+    ],
+    "Kafur": [
+      "Kafur",
+      "Mahuta",
+      "Masari",
+      "Rugoji",
+      "Sabuwar Kasa",
+      "Yari Bori"
+    ],
+    "Kaita": [
+      "Ba’awa",
+      "Dankaba",
+      "Gafiya",
+      "Kaita",
+      "Yandaki",
+      "Yanhoho"
+    ],
+    "Kankara": [
+      "Burdugau",
+      "Dan Murabu",
+      "Garagi",
+      "Kankara",
+      "Kukasheka",
+      "Pauwa"
+    ],
+    "Kankia": [
+      "Galadima",
+      "Kankia",
+      "Kunduru",
+      "Rimaye",
+      "Sukuntuni",
+      "Tafashiya"
+    ],
+    "Katsina": [
+      "Katsina City",
+      "Kofar Durbi",
+      "Kofar Kaura",
+      "Kofar Kwaya",
+      "Kofar Marusa",
+      "Kofar Sauri"
+    ],
+    "Kurfi": [
+      "Barkiya",
+      "Birchi",
+      "Kurfi",
+      "Rawayau",
+      "Tsauri",
+      "Wurma"
+    ],
+    "Kusada": [
+      "Bauranya",
+      "Dudunni",
+      "Kaikai",
+      "Kusada",
+      "Mawashi",
+      "Yashe"
+    ],
+    "Mai'Adua": [
+      "Bumbum",
+      "Danyashe",
+      "Koza",
+      "Kwadage",
+      "Mai’Adua",
+      "Natsalle"
+    ],
+    "Malumfashi": [
+      "Borin Dawa",
+      "Dayi",
+      "Gora",
+      "Karfi",
+      "Malumfashi",
+      "Yaba"
+    ],
+    "Mani": [
+      "Bujawa",
+      "Jani",
+      "Magami",
+      "Mani",
+      "Muduru",
+      "Tsagem"
+    ],
+    "Mashi": [
+      "Bamble",
+      "Doka",
+      "Karau",
+      "Mashi",
+      "Sona",
+      "Tamilo"
+    ],
+    "Matazu": [
+      "Gwarjo",
+      "Karaduwa",
+      "Matazu",
+      "Mazoji",
+      "Rinjin Idi",
+      "Sayaya"
+    ],
+    "Musawa": [
+      "Dan Ali",
+      "Jikamshi",
+      "Kira",
+      "Kurkujan",
+      "Musawa",
+      "Yar’adua"
+    ],
+    "Rimi": [
+      "Fardami",
+      "Kadandani",
+      "Majengobir",
+      "Remawa",
+      "Rimi",
+      "Sabon Garin Alarain"
+    ],
+    "Sabuwa": [
+      "Damari",
+      "Gazari",
+      "Machika",
+      "Maibakko",
+      "Rafin Iwa",
+      "Sabuwa"
+    ],
+    "Safana": [
+      "Baure",
+      "Ketare",
+      "Runka",
+      "Safana",
+      "Tsaskiya",
+      "Zakka"
+    ],
+    "Sandamu": [
+      "Fago",
+      "Karkarku",
+      "Kauyen Baure",
+      "Rade",
+      "Sandamu",
+      "Unguwar Gawo"
+    ],
+    "Zango": [
+      "Garni",
+      "Kawarin Kudi",
+      "Rogogo",
+      "Sara",
+      "Yardaje",
+      "Zango"
+    ],
+    "Aleiro": [
+      "Aleiro",
+      "Dangaladima",
+      "Jiga Birni",
+      "Jiga Makera",
+      "Kashin Zama",
+      "Rafin Bauna",
+      "Sabiyal"
+    ],
+    "Arewa Dandi": [
+      "Biu",
+      "Chibike",
+      "Dantsoho",
+      "Falde",
+      "Gorun Dikko",
+      "Jantullu",
+      "Kangiwa",
+      "Laima",
+      "Sarka",
+      "Yeldu"
+    ],
+    "Argungu": [
+      "Alwasa",
+      "Argungu",
+      "Dikko",
+      "Felande",
+      "Gotomo",
+      "Gulma",
+      "Kaurar Sani",
+      "Kokani",
+      "Lailaba",
+      "Sauwa"
+    ],
+    "Augie": [
+      "Augie",
+      "Bagaye",
+      "Bayawa",
+      "Birnin Tudu",
+      "Bubuce",
+      "Dundaye",
+      "Gudale",
+      "Mera",
+      "Tiggi",
+      "Yola"
+    ],
+    "Bagudo": [
+      "Bagudo",
+      "Bani",
+      "Boki-Doma",
+      "Illela",
+      "Kaoje",
+      "Kende",
+      "Lafagu",
+      "Lolo",
+      "Tsamiya",
+      "Tuga",
+      "Zagga"
+    ],
+    "Birnin Kebbi": [
+      "Ambursa",
+      "Birnin Kebbi",
+      "Dangaladima",
+      "Gawasu",
+      "Gulumba",
+      "Kardi",
+      "Mafara",
+      "Makera",
+      "Nassarawa",
+      "Ujariyo",
+      "Zauro"
+    ],
+    "Bunza": [
+      "Bunza",
+      "Gwade",
+      "Hilema",
+      "Maidahini",
+      "Raha",
+      "Sabon Birni",
+      "Salwai",
+      "Tilli",
+      "Tunga",
+      "Zogrima"
+    ],
+    "Dandi": [
+      "Bani Zumbu",
+      "Buma",
+      "Dolekaina",
+      "Fana",
+      "Geza",
+      "Kamba",
+      "Kwakkwaba",
+      "Kyangakwai",
+      "Maigwaza",
+      "Maihausawa"
+    ],
+    "Fakai": [
+      "Bajida",
+      "Bangu",
+      "Birnin Tudu",
+      "Fakai",
+      "Kangi",
+      "Mahuta",
+      "Marafa",
+      "Penin Amana",
+      "Penin Gaba",
+      "Zussun"
+    ],
+    "Gwandu": [
+      "Bada",
+      "Cheberu",
+      "Dalijan",
+      "Dodoru",
+      "Gulmare",
+      "Gwandu",
+      "Kambaza",
+      "Malisa",
+      "Maruda",
+      "Masama"
+    ],
+    "Jega": [
+      "Alelu",
+      "Bausara",
+      "Birnin Malam",
+      "Dangamaji",
+      "Dunbegu",
+      "Gehuru",
+      "Jega",
+      "Katanga",
+      "Kimba"
+    ],
+    "Kalgo": [
+      "Badariya",
+      "Dangoma",
+      "Diggi",
+      "Etene",
+      "Gayi",
+      "Kalgo",
+      "Kuka",
+      "Magarza",
+      "Mutubari",
+      "Nayilwa",
+      "Zuguru"
+    ],
+    "Koko/Besse": [
+      "Amirun",
+      "Besse",
+      "Dulmeru",
+      "Dutsin Mari",
+      "Firini",
+      "Illela",
+      "Jadadi",
+      "Koko",
+      "Madacci",
+      "Zariya Kalakala"
+    ],
+    "Maiyama": [
+      "Andarai",
+      "Botoro",
+      "Dogondaji",
+      "Giwa Tazo",
+      "Gumbin Kure",
+      "Karaye",
+      "Kuben",
+      "Kurunkwu",
+      "Maiyama",
+      "Mungadi",
+      "Zara"
+    ],
+    "Ngaski": [
+      "Birnin Yauri",
+      "Gafara",
+      "Garin Baka",
+      "Hoge",
+      "Kambuwa",
+      "Libata",
+      "Makawa",
+      "Ngaski",
+      "Utono",
+      "Wara"
+    ],
+    "Sakaba": [
+      "Adai",
+      "Bere",
+      "Dankolo",
+      "Doka",
+      "Fada",
+      "Gelwasa",
+      "Janbirni",
+      "Makuku",
+      "Maza",
+      "Sakaba",
+      "Tudun Kuka"
+    ],
+    "Shanga": [
+      "Atawo",
+      "Binuwa",
+      "Bunkuji",
+      "Dugu",
+      "Gebe",
+      "Kawara",
+      "Rafin Kirya",
+      "Shanga",
+      "Sokage",
+      "Takware",
+      "Yarbesse"
+    ],
+    "Suru": [
+      "Bakuwai",
+      "Bandan",
+      "Barbarejo",
+      "Dakingari",
+      "Daniya",
+      "Dendane",
+      "Ginga",
+      "Giro",
+      "Kwaifa",
+      "Shema",
+      "Suru"
+    ],
+    "Wasagu/Danko": [
+      "Ayu",
+      "Bena",
+      "Danko",
+      "Gwanfi",
+      "Kandu",
+      "Kanya",
+      "Kele",
+      "Kyabu",
+      "Machika",
+      "Ribah",
+      "Waje",
+      "Wasagu"
+    ],
+    "Yauri": [
+      "Chulu",
+      "Gungun Sarki",
+      "Jijima",
+      "Koma",
+      "Tondi",
+      "Yauri",
+      "Yelwa",
+      "Zamare"
+    ],
+    "Zuru": [
+      "Bedi",
+      "Dabai",
+      "Dago",
+      "Isgogo",
+      "Manga",
+      "Rafin Zuru",
+      "Rikoto",
+      "Senchi",
+      "Tadorga",
+      "Ushe",
+      "Zodi",
+      "Zuru"
+    ],
+    "Adavi": [
+      "Adavi-Eba",
+      "Inoziomi",
+      "Kuroko",
+      "Nagazi",
+      "Ogaminana",
+      "Osara"
+    ],
+    "Ajaokuta": [
+      "Adogo",
+      "Ajaokuta",
+      "Ebiya",
+      "Eganyi",
+      "Ganaja",
+      "Geregu"
+    ],
+    "Ankpa": [
+      "Ankpa",
+      "Emekutu",
+      "Enjema",
+      "Inye",
+      "Ojoku"
+    ],
+    "Bassa": [
+      "Akakana",
+      "Bassa",
+      "Buji",
+      "Gabia",
+      "Gboloko",
+      "Gurum",
+      "Jengre",
+      "Kadamo",
+      "Kakkek",
+      "Kasuru",
+      "Kimakpa",
+      "Kishika",
+      "Kpata",
+      "Mafara",
+      "Miango",
+      "Mozum",
+      "Oguma",
+      "Rimi",
+      "Sheria",
+      "Ta’agbe",
+      "Tahu",
+      "Zabolo",
+      "Zobwo"
+    ],
+    "Dekina": [
+      "Abocho",
+      "Anyigba",
+      "Dekina",
+      "Egume",
+      "Iyale",
+      "Odu"
+    ],
+    "Ibaji": [
+      "Ayah",
+      "Ejule-Ojebe",
+      "Iyano",
+      "Odeke",
+      "Onyedega",
+      "Unale"
+    ],
+    "Idah": [
+      "Ede",
+      "Ichala",
+      "Idah",
+      "Igalaogba",
+      "Owoli-Apa",
+      "Sabon Gari"
+    ],
+    "Igala-Mela/Odolu": [
+      "Ajaka",
+      "Alade",
+      "Ekwuloko",
+      "Odolu",
+      "Ofuloko",
+      "Ubele"
+    ],
+    "Ijumu": [
+      "Ayetoro-Gbede",
+      "Egbeda-Egga",
+      "Ekinrin-Adde",
+      "Iyamoye",
+      "Iyara",
+      "Ogale"
+    ],
+    "Kabba/Bunu": [
+      "Aiyegunle-Gbede",
+      "Ayede",
+      "Iluke",
+      "Kabba",
+      "Odo-Ape",
+      "Okebukun"
+    ],
+    "Kogi": [
+      "Gegu South",
+      "Gegu-Beki",
+      "Girinya",
+      "Koton-Karfi",
+      "Tawari",
+      "Ukwo"
+    ],
+    "Lokoja": [
+      "Adankolo",
+      "Felele",
+      "Ganaja",
+      "Kabawa",
+      "Lokoja",
+      "Sarkin Noma"
+    ],
+    "Mopa-Muro": [
+      "Aiyedayo",
+      "Mopa",
+      "Muro",
+      "Odole",
+      "Orokere",
+      "Takete-Ide"
+    ],
+    "Ofu": [
+      "Alloma",
+      "Aloji",
+      "Ejule",
+      "Itobe",
+      "Ochadamu",
+      "Ugwolawo"
+    ],
+    "Ogori/Magongo": [
+      "Enyidudu",
+      "Magongo",
+      "Ogori",
+      "Oke-Ilete",
+      "Okibo",
+      "Ovia-Osese"
+    ],
+    "Okehi": [
+      "Eika",
+      "Ihima",
+      "Obangede",
+      "Ohuepe",
+      "Ohueta",
+      "Okaito"
+    ],
+    "Okene": [
+      "Abuga",
+      "Bariki",
+      "Obehira",
+      "Okene",
+      "Onyukoko",
+      "Otutu"
+    ],
+    "Olamaboro": [
+      "Etutekpe",
+      "Igah",
+      "Imane",
+      "Oforachi",
+      "Ogugu",
+      "Okpo"
+    ],
+    "Omala": [
+      "Abejukolo",
+      "Ajiche",
+      "Akpacha",
+      "Bagana",
+      "Ogodu",
+      "Oji-Aji"
+    ],
+    "Yagba East": [
+      "Ejuku",
+      "Ife-Olukotun",
+      "Isanlu",
+      "Jege",
+      "Makutu",
+      "Ponyan"
+    ],
+    "Yagba West": [
+      "Egbe",
+      "Ejiba",
+      "Isanlu-Esa",
+      "Odo-Ere",
+      "Odo-Eri",
+      "Okoloke"
+    ],
+    "Asa": [
+      "Aboto",
+      "Afon",
+      "Alapa",
+      "Ballah",
+      "Budo-Egba",
+      "Laduba",
+      "Ogbondoroko",
+      "Ogele",
+      "Okesho",
+      "Onire",
+      "Otte",
+      "Owode"
+    ],
+    "Baruten": [
+      "Boriya",
+      "Gwanara",
+      "Ilesha Baruba",
+      "Kenu",
+      "Kosubosu",
+      "Okuta",
+      "Shinawu",
+      "Shiya",
+      "Taberu",
+      "Tunbuyan",
+      "Yashikira"
+    ],
+    "Edu": [
+      "Lafiagi",
+      "Tsaragi",
+      "Tsonga"
+    ],
+    "Ekiti": [
+      "Araromi-Opin",
+      "Eruku",
+      "Etan",
+      "Isapa",
+      "Koro",
+      "Obbo-Aiyegunle",
+      "Obbo-Ile",
+      "Opin",
+      "Osi"
+    ],
+    "Ife lodun": [
+      "Agunjin",
+      "Idofian",
+      "Igbaja",
+      "Ile-Ire",
+      "Oke-Ode",
+      "Omupo",
+      "Ora",
+      "Oro-Ago",
+      "Share"
+    ],
+    "Ilorin East": [
+      "Agbeyangi",
+      "Apado",
+      "Gambari",
+      "Gbadamu",
+      "Ibagun",
+      "Iponrin",
+      "Magaji Are",
+      "Maya",
+      "Oke-Oyi",
+      "Osin",
+      "Zango"
+    ],
+    "Ilorin South": [
+      "Akanbi",
+      "Balogun-Fulani",
+      "Fufu",
+      "Okaka",
+      "Oke-Ogun"
+    ],
+    "Ilorin West": [
+      "Adewole",
+      "Ajikobi",
+      "Alalubosa",
+      "Baboko",
+      "Badari",
+      "Ilorin",
+      "Ogidi",
+      "Oko-Erin",
+      "Oloje",
+      "Warrah"
+    ],
+    "Irepodun": [
+      "Ajase-Ipo",
+      "Aran-Orin",
+      "Arandun",
+      "Elerin",
+      "Erin-Osun",
+      "Esie",
+      "Esinmirin",
+      "Ijan",
+      "Ilie",
+      "Ilobu",
+      "Ipetu",
+      "Oko",
+      "Olobu",
+      "Omu-Aran",
+      "Oro",
+      "Rore"
+    ],
+    "Isin": [
+      "Alla",
+      "Edidi",
+      "Ijara",
+      "Isanlu-Isin",
+      "Iwo",
+      "Oke-Aba",
+      "Oke-Onigbin",
+      "Olla",
+      "Owu-Isin",
+      "Sabaja"
+    ],
+    "Kaiama": [
+      "Adena",
+      "Bani",
+      "Gwanabe",
+      "Gwari/Gwaria",
+      "Kaiama",
+      "Kemanji",
+      "Wajibe"
+    ],
+    "Moro": [
+      "Ajanaku",
+      "Bode-Saadu",
+      "Ejidongari",
+      "Jebba",
+      "Lanwa",
+      "Malete",
+      "Okemi",
+      "Oloru",
+      "Pakunmo",
+      "Shao"
+    ],
+    "Offa": [
+      "Balogun",
+      "Essa",
+      "Igboidun",
+      "Offa",
+      "Ojomu",
+      "Shawo"
+    ],
+    "Oke-Ero": [
+      "Aiyedun",
+      "Egosi",
+      "Ekan",
+      "Erinmope",
+      "Idofin-Igbana",
+      "Ilale",
+      "Iloffa",
+      "Imoji",
+      "Odo-Owa"
+    ],
+    "Olorunda": [
+      "Ahogbada",
+      "Erin-Ile",
+      "Igbona",
+      "Igbonna",
+      "Igosun",
+      "Ijagbo",
+      "Ikotun",
+      "Ilemona",
+      "Ilie",
+      "Inaja",
+      "Ipee",
+      "Irra",
+      "Oba-Ile",
+      "Oba-Oke",
+      "Ojoku",
+      "Osogbo",
+      "Owode"
+    ],
+    "Patigi": [
+      "Kpada",
+      "Lade",
+      "Patigi/Pategi"
+    ],
+    "Agege": [
+      "Agege",
+      "Dopemu",
+      "Isale Odo",
+      "Keke",
+      "Oko-Oba",
+      "Orile Agege"
+    ],
+    "Ajeromi-Ifelodun": [
+      "Ajegunle",
+      "Alaba Oro",
+      "Boundary",
+      "Ifelodun",
+      "Layeni",
+      "Tolu"
+    ],
+    "Alimosho": [
+      "Akowonjo",
+      "Egbeda",
+      "Idimu",
+      "Igando",
+      "Ikotun",
+      "Ipaja",
+      "Shasha"
+    ],
+    "Amuwo-Odofin": [
+      "Amuwo",
+      "Festac Town",
+      "Ijegun-Egba",
+      "Kirikiri",
+      "Mile 2",
+      "Satellite Town"
+    ],
+    "Apapa": [
+      "Ajegunle-Apapa",
+      "Apapa",
+      "Gaskiya",
+      "Ijora",
+      "Olodi-Apapa",
+      "Tincan"
+    ],
+    "Badagry": [
+      "Ajara",
+      "Apa",
+      "Aradagun",
+      "Badagry",
+      "Ibereko",
+      "Seme",
+      "Topo"
+    ],
+    "Epe": [
+      "Ejirin",
+      "Epe",
+      "Noforija",
+      "Odo-Egiri",
+      "Odomola",
+      "Poka"
+    ],
+    "Eti-Osa": [
+      "Ajah",
+      "Ikate",
+      "Ikoyi",
+      "Lekki",
+      "Maroko",
+      "Obalende",
+      "Victoria Island"
+    ],
+    "Ibeju-Lekki": [
+      "Akodo",
+      "Awoyaya",
+      "Bogije",
+      "Eleko",
+      "Eputu",
+      "Ibeju",
+      "Lekki"
+    ],
+    "Ifako-Ijaiye": [
+      "Fagba",
+      "Ifako",
+      "Ijaiye",
+      "Iju",
+      "Ogba"
+    ],
+    "Ikeja": [
+      "Agidingbi",
+      "Alausa",
+      "Allen",
+      "Ikeja",
+      "Maryland",
+      "Ojodu",
+      "Oregun"
+    ],
+    "Ikorodu": [
+      "Agbowa",
+      "Baiyeku",
+      "Igbogbo",
+      "Ijede",
+      "Ikorodu",
+      "Imota",
+      "Isiu"
+    ],
+    "Kosofe": [
+      "Anthony",
+      "Ifako-Gbagada",
+      "Ketu",
+      "Mende",
+      "Mile 12",
+      "Ogudu",
+      "Ojota"
+    ],
+    "Lagos Island": [
+      "Balogun",
+      "Campos",
+      "Ebute-Ero",
+      "Idumota",
+      "Isale Eko",
+      "Lagos Island"
+    ],
+    "Lagos Mainland": [
+      "Ebute Metta",
+      "Iddo",
+      "Makoko",
+      "Oyingbo",
+      "Sabo",
+      "Yaba"
+    ],
+    "Mushin": [
+      "Idi-Araba",
+      "Ilupeju",
+      "Ladipo",
+      "Mushin",
+      "Olosha",
+      "Papa Ajao"
+    ],
+    "Ojo": [
+      "Ajangbadi",
+      "Alaba",
+      "Iba",
+      "Ijanikin",
+      "Ojo",
+      "Okokomaiko"
+    ],
+    "Oshodi-Isolo": [
+      "Ejigbo",
+      "Isolo",
+      "Mafoluku",
+      "Okota",
+      "Oshodi"
+    ],
+    "Shomolu": [
+      "Bajulaiye",
+      "Bariga",
+      "Onipanu",
+      "Palmgrove",
+      "Pedro",
+      "Shomolu"
+    ],
+    "Surulere": [
+      "Aguda",
+      "Coker",
+      "Gambari",
+      "Iponri",
+      "Iresa-Adu",
+      "Iresa-Apa",
+      "Itire",
+      "Iwofin",
+      "Lawanson",
+      "Mayin",
+      "Ojuelegba",
+      "Oko",
+      "Surulere"
+    ],
+    "Akwanga": [
+      "Agyaga",
+      "Akwanga",
+      "Ancho Nighaan",
+      "Anchobaba",
+      "Andaha",
+      "Bohar",
+      "Gudi",
+      "Gwanje",
+      "Moroa",
+      "Ningo",
+      "Nunku"
+    ],
+    "Awe": [
+      "Akiri",
+      "Awe",
+      "Azara",
+      "Galadima",
+      "Gidan Danladi",
+      "Jangaru",
+      "Madaki",
+      "Makwangiji",
+      "Ribi",
+      "Tunga",
+      "Wuse"
+    ],
+    "Doma": [
+      "Agbashi",
+      "Akpanaja",
+      "Alagye",
+      "Doka",
+      "Doma",
+      "Madaki",
+      "Rukubi",
+      "Sabon Gari",
+      "Sarkin Dawaki",
+      "Ungwan Sarki Dawaki"
+    ],
+    "Karu": [
+      "Agada",
+      "Aso",
+      "Bagaji",
+      "Gitata",
+      "Gurku",
+      "Kare",
+      "Karshi",
+      "Karu",
+      "Kodape",
+      "Mararaba",
+      "Masaka",
+      "New Nyanya",
+      "Panda",
+      "Uke"
+    ],
+    "Keana": [
+      "Agaza",
+      "Aloshi",
+      "Amiri",
+      "Giza Galadima",
+      "Iwagu",
+      "Kadarko",
+      "Keana",
+      "Kwara",
+      "Madaki",
+      "Obene",
+      "Oki"
+    ],
+    "Keffi": [
+      "Angwan Iya",
+      "Angwan Rimi",
+      "Gangare Tudu",
+      "Jigwada",
+      "Keffi",
+      "Kofar Goriya",
+      "Liman Abaji",
+      "Sabon Gari",
+      "Tudun Kofa",
+      "Yara"
+    ],
+    "Kokona": [
+      "Agwada",
+      "Amba",
+      "Bassa",
+      "Dari",
+      "Garaku",
+      "Hadari",
+      "Kana",
+      "Kofar Gwari",
+      "Kokona",
+      "Koya",
+      "Ninkoro",
+      "Yelwa"
+    ],
+    "Lafia": [
+      "Adogi",
+      "Agyaragun Tofa",
+      "Akurba",
+      "Arikya",
+      "Ashigie",
+      "Assakio",
+      "Chiroma",
+      "Gayam",
+      "Kwandere",
+      "Lafia",
+      "Shabu",
+      "Wakwa",
+      "Zanwa"
+    ],
+    "Nasarawa": [
+      "Aisa",
+      "Akum",
+      "Apawu",
+      "Ara",
+      "Bakono",
+      "Guto",
+      "Kanah",
+      "Laminga",
+      "Loko",
+      "Nasarawa",
+      "Odu",
+      "Ondo",
+      "Tunga",
+      "Udenin",
+      "Udenin Gida"
+    ],
+    "Nasarawa Eggon": [
+      "Agunji",
+      "Aloce",
+      "Alogani",
+      "Arikpa",
+      "Burumburum",
+      "Ende",
+      "Ezzen",
+      "Ginda",
+      "Igga",
+      "Kagbu Wana",
+      "Lambaga",
+      "Lizzin Keffi",
+      "Mada Station",
+      "Nassarawa Eggon",
+      "Ubbe",
+      "Umme",
+      "Wakama"
+    ],
+    "Toto": [
+      "Bugakarmo",
+      "Dere",
+      "Gadabuke",
+      "Karmo",
+      "Katakpa",
+      "Kenyehu",
+      "Shafan Abakpa",
+      "Shafan Kwatto",
+      "Toto",
+      "Ugya",
+      "Umaisha"
+    ],
+    "Wamba": [
+      "Arum",
+      "Gitta",
+      "Jimiya",
+      "Konvah",
+      "Mangar",
+      "Nakere",
+      "Wamba",
+      "Wamba East",
+      "Wamba West",
+      "Wayah"
+    ],
+    "Agaie": [
+      "Agaie",
+      "Baro",
+      "Boku",
+      "Ekossa",
+      "Kutiriko",
+      "Tagagi"
+    ],
+    "Agwara": [
+      "Adehe",
+      "Agwara",
+      "Galkogo",
+      "Kashini",
+      "Kokoli",
+      "Papiri"
+    ],
+    "Bida": [
+      "Bariki",
+      "Bida",
+      "Dokodza",
+      "Esso",
+      "Landzun",
+      "Masaba"
+    ],
+    "Borgu": [
+      "Babanna",
+      "Karabonde",
+      "Malale",
+      "New Bussa",
+      "Shagunu",
+      "Wawa"
+    ],
+    "Bosso": [
+      "Beji",
+      "Bosso",
+      "Garatu",
+      "Maikunkele",
+      "Maitumbi"
+    ],
+    "Chanchaga": [
+      "Kpakungu",
+      "Maitumbi",
+      "Minna",
+      "Sauka Kahuta",
+      "Tudun Wada",
+      "Tunga"
+    ],
+    "Edati": [
+      "Enagi",
+      "Etsu Tasha",
+      "Gazhe",
+      "Gbangban",
+      "Rokota",
+      "Sakpe"
+    ],
+    "Gbako": [
+      "Batagi",
+      "Edozhigi",
+      "Gbadafu",
+      "Lemu",
+      "Nuwankota",
+      "Sammajiko"
+    ],
+    "Gurara": [
+      "Bonu",
+      "Dikko",
+      "Gawu Babangida",
+      "Izom",
+      "Lambata",
+      "Tufa"
+    ],
+    "Katcha": [
+      "Badeggi",
+      "Bisanti",
+      "Edotsu",
+      "Essa",
+      "Gbakogi",
+      "Katcha"
+    ],
+    "Kontagora": [
+      "Kawo",
+      "Kontagora",
+      "Madara",
+      "Masuga",
+      "Nagwamatse",
+      "Rafin Gora"
+    ],
+    "Lapai": [
+      "Arewa",
+      "Ebbo",
+      "Gulu",
+      "Lapai",
+      "Muye",
+      "Takuti"
+    ],
+    "Lavun": [
+      "Batati",
+      "Dabban",
+      "Doko",
+      "Kuchi",
+      "Kusotachi",
+      "Kutigi"
+    ],
+    "Magama": [
+      "Auna",
+      "Ibeto",
+      "Magama",
+      "Nasko",
+      "Salka",
+      "Tungan Magajiya"
+    ],
+    "Mariga": [
+      "Bangi",
+      "Bobi",
+      "Gulbin Boka",
+      "Inkwai",
+      "Kotonkoro",
+      "Mariga"
+    ],
+    "Mashegu": [
+      "Ibbi",
+      "Kulho",
+      "Kwakuti",
+      "Mashegu",
+      "Mazakuka",
+      "Sahon Rami"
+    ],
+    "Mokwa": [
+      "Ja’agi",
+      "Jebba North",
+      "Kudu",
+      "Mokwa",
+      "Muwo",
+      "Rabba"
+    ],
+    "Muya": [
+      "Dandaudu",
+      "Guni",
+      "Gwada",
+      "Kabula",
+      "Kuchi",
+      "Sarkin Pawa"
+    ],
+    "Paikoro": [
+      "Chimbi",
+      "Gwam",
+      "Ishau",
+      "Kaffin Koro",
+      "Paiko",
+      "Tutungo"
+    ],
+    "Rafi": [
+      "Gunu",
+      "Kagara",
+      "Kusherki",
+      "Pandogari",
+      "Sabon Gari",
+      "Tegina"
+    ],
+    "Rijau": [
+      "Danrangi",
+      "Dukku",
+      "Genu",
+      "Rijau",
+      "Shambo",
+      "Tungan Bunu"
+    ],
+    "Shiroro": [
+      "Allawa",
+      "Erena",
+      "Gurmana",
+      "Gwada",
+      "Kuta",
+      "Zumba"
+    ],
+    "Suleja": [
+      "Hashimi",
+      "Iku",
+      "Kwamba",
+      "Madalla",
+      "Maje",
+      "Suleja"
+    ],
+    "Tafa": [
+      "Dikko",
+      "Ija Gwari",
+      "New Bwari",
+      "Sabon Wuse",
+      "Tafa",
+      "Zuma"
+    ],
+    "Wushishi": [
+      "Akare",
+      "Gwarjiko",
+      "Kodo",
+      "Lokogoma",
+      "Wushishi",
+      "Zungeru"
+    ],
+    "Abeokuta North": [
+      "Ago-Oko",
+      "Akomoje",
+      "Elega",
+      "Gbagura",
+      "Ibara-Orile",
+      "Iberekodo",
+      "Idiemi",
+      "Ika",
+      "Ikereku",
+      "Ikija",
+      "Ilugun",
+      "Imala",
+      "Isaga-Ilewo",
+      "Ita-Oshin",
+      "Lafenwa",
+      "Oke-Ago Owu",
+      "Olomore",
+      "Olorunda-Ijale",
+      "Onisasa",
+      "Sabo",
+      "Sokori",
+      "Totoro"
+    ],
+    "Abeokuta South": [
+      "Abeokuta",
+      "Adigbe",
+      "Ago-Egun",
+      "Ago-Oba",
+      "Ake",
+      "Erunbe",
+      "Ibara",
+      "Idi-Aba",
+      "Igbore",
+      "Ijaye",
+      "Ijemo",
+      "Ijesa",
+      "Imo",
+      "Isabo",
+      "Oke-Ijeun",
+      "Omida",
+      "Onikolobo",
+      "Sodeke"
+    ],
+    "Ajegunle": [
+      "Ado-Odo",
+      "Agbara",
+      "Ajilete",
+      "Alapoti",
+      "Atan",
+      "Ere",
+      "Igbesa",
+      "Ijoko",
+      "Iju-Ota",
+      "Ilogbo",
+      "Itele",
+      "Ketu-Adie-Owe",
+      "Oke-Ore",
+      "Ota",
+      "Sango-Ota"
+    ],
+    "Egbado North": [
+      "Ayetoro",
+      "Ebute-Igbooro",
+      "Ibese",
+      "Iboro",
+      "Ido-Foi",
+      "Igbogila",
+      "Igua",
+      "Ijoun",
+      "Imasayi",
+      "Joga-Orile",
+      "Ohunbe",
+      "Sunwa"
+    ],
+    "Egbado South": [
+      "Ajilete",
+      "Erinja",
+      "Idogo",
+      "Ilaro",
+      "Ilobi",
+      "Iwoye",
+      "Oke-Odan",
+      "Owode-Yewa"
+    ],
+    "Ewekoro": [
+      "Abalabi",
+      "Arigbajo",
+      "Asa",
+      "Elere",
+      "Itori",
+      "Mosan",
+      "Obada-Oko",
+      "Onigbedu",
+      "Owowo",
+      "Papalanto",
+      "Wasimi",
+      "Yobo"
+    ],
+    "Ifo": [
+      "Agbado",
+      "Ajuwon",
+      "Akute",
+      "Coker",
+      "Ibaragun",
+      "Ibogun",
+      "Ifo",
+      "Iseri",
+      "Oke-Aro",
+      "Ososun",
+      "Robiyan",
+      "Sunren"
+    ],
+    "Ijebu East": [
+      "Ajebandele",
+      "Fetedo",
+      "Ijebu-Ife",
+      "Ikija",
+      "Imobi",
+      "Itamarun",
+      "Itele",
+      "Ogbere",
+      "Owu"
+    ],
+    "Ijebu North": [
+      "Ago-Iwoye",
+      "Atikori",
+      "Awa",
+      "Ijebu-Igbo",
+      "Ilaporu",
+      "Japara",
+      "Mamu",
+      "Ojowo",
+      "Omen",
+      "Oru"
+    ],
+    "Ijebu North East": [
+      "Atan",
+      "Erunwon",
+      "Idowa",
+      "Ilese",
+      "Imewuro",
+      "Imomo",
+      "Isonyin",
+      "Odosenlu",
+      "Ogbogbo",
+      "Tiradona"
+    ],
+    "Ijebu Ode": [
+      "Igbeba",
+      "Ijasi",
+      "Ijebu-Ode",
+      "Imoru",
+      "Isoku",
+      "Ita-Osu",
+      "Itantebo",
+      "Itoro",
+      "Molipa",
+      "Oke-Aje",
+      "Porogun"
+    ],
+    "Ikenne": [
+      "Ikenne",
+      "Ilisan",
+      "Iperu",
+      "Irolu",
+      "Ogere"
+    ],
+    "Imeko-Afon": [
+      "Afon",
+      "Agborogbomo",
+      "Atapele",
+      "Idofa",
+      "Ilara",
+      "Imeko",
+      "Kajola",
+      "Moriwi",
+      "Oke-Agbede",
+      "Owode"
+    ],
+    "Ipokia": [
+      "Agada",
+      "Ajegunle",
+      "Aseko",
+      "Idiroko",
+      "Ifonyintedo",
+      "Ihunbo",
+      "Ipokia",
+      "Ita-Egbe",
+      "Maun",
+      "Mede",
+      "Oniro",
+      "Tube"
+    ],
+    "Obafemi-Owode": [
+      "Ajebo",
+      "Ajura",
+      "Ibafo",
+      "Iro",
+      "Kajola",
+      "Kobape",
+      "Mowe",
+      "Oba",
+      "Obafemi",
+      "Ofada",
+      "Owode-Egba",
+      "Siun"
+    ],
+    "Odoeda": [
+      "Alabata",
+      "Apojola",
+      "Aregbe",
+      "Bakatari",
+      "Ilugun-Alaro",
+      "Kila",
+      "Obantoko",
+      "Odeda",
+      "Olodo",
+      "Opeji",
+      "Osiele"
+    ],
+    "Odogbolu": [
+      "Aiyepe",
+      "Ala",
+      "Ibefun",
+      "Idowa",
+      "Imodi",
+      "Jobore",
+      "Odo-Jobore",
+      "Odogbolu",
+      "Okun-Owa"
+    ],
+    "Ogun Waterside": [
+      "Abigi",
+      "Ayede",
+      "Efire",
+      "Ibiade",
+      "Itebu",
+      "Iwopin",
+      "J4",
+      "Makun-Omi",
+      "Ode-Omi",
+      "Oni"
+    ],
+    "Remo North": [
+      "Akaka",
+      "Awa",
+      "Igan",
+      "Ilara",
+      "Imagbon",
+      "Ipara",
+      "Irolu-Remo",
+      "Isara-Remo",
+      "Ode-Remo",
+      "Orile-Oko"
+    ],
+    "Sagamu": [
+      "Agbowa",
+      "Alara",
+      "Epe",
+      "Ibido",
+      "Itula",
+      "Ituwa",
+      "Iwelepe",
+      "Likosi",
+      "Makun",
+      "Ode-Lemo",
+      "Offin",
+      "Ogijo",
+      "Sagamu",
+      "Simawa",
+      "Sonyindo"
+    ],
+    "Akoko North-East": [
+      "Akunnu-Akoko",
+      "Auga-Akoko",
+      "Ese-Akoko",
+      "Iboropa",
+      "Ikare-Akoko",
+      "Ogbagi-Akoko"
+    ],
+    "Akoko North-West": [
+      "Afin-Akoko",
+      "Arigidi-Akoko",
+      "Irun-Akoko",
+      "Ogbagi",
+      "Okeagbe-Akoko",
+      "Oyin-Akoko"
+    ],
+    "Akoko South-East": [
+      "Epinmi-Akoko",
+      "Ifira-Akoko",
+      "Ipe-Akoko",
+      "Ipesi-Akoko",
+      "Isua-Akoko",
+      "Sosan-Akoko"
+    ],
+    "Akoko South-West": [
+      "Akungba-Akoko",
+      "Ikun-Akoko",
+      "Iwaro-Oka",
+      "Oba-Akoko",
+      "Oka-Akoko",
+      "Supare-Akoko"
+    ],
+    "Akure North": [
+      "Igoba",
+      "Iju",
+      "Ilu-Abo",
+      "Ita-Ogbolu",
+      "Oba-Ile",
+      "Ogbese"
+    ],
+    "Akure South": [
+      "Akure",
+      "Aponmu",
+      "Ijapo",
+      "Ijoka",
+      "Isinkan",
+      "Oda"
+    ],
+    "Ese-Odo": [
+      "Ajapa",
+      "Arogbo",
+      "Igbekebo",
+      "Igbotu",
+      "Kiribo",
+      "Ukparama"
+    ],
+    "Idanre": [
+      "Alade",
+      "Atosin",
+      "Idanre",
+      "Odode",
+      "Ofosu",
+      "Owena"
+    ],
+    "Ifedore": [
+      "Ero",
+      "Ibule",
+      "Igbara-Oke",
+      "Ijare",
+      "Ilara-Mokin",
+      "Ipogun"
+    ],
+    "Ilaje": [
+      "Aheri",
+      "Etikan",
+      "Igbokoda",
+      "Mahin",
+      "Ode-Ugbo",
+      "Ugbo"
+    ],
+    "Ile-Oluji/Okeigbo": [
+      "Akinlalu",
+      "Araromi",
+      "Bamikemo",
+      "Igbo-Olodu",
+      "Ile-Oluji",
+      "Okeigbo"
+    ],
+    "Irele": [
+      "Ajagba",
+      "Akotogbo",
+      "Iyasan",
+      "Ode-Aye",
+      "Ode-Irele",
+      "Omi"
+    ],
+    "Odigbo": [
+      "Ajue",
+      "Araromi-Obu",
+      "Kajola",
+      "Odigbo",
+      "Oniparaga",
+      "Ore"
+    ],
+    "Okitipupa": [
+      "Erinje",
+      "Igbotako",
+      "Ikoya",
+      "Ilutitun",
+      "Ode-Aye",
+      "Okitipupa"
+    ],
+    "Ondo East": [
+      "Araromi-Obu",
+      "Asantan-Oja",
+      "Bolorunduro",
+      "Epe",
+      "Fagbo",
+      "Oboto"
+    ],
+    "Ondo West": [
+      "Igbindo",
+      "Laje",
+      "Oke-Otunba",
+      "Ondo City",
+      "Sabo",
+      "Yaba"
+    ],
+    "Ose": [
+      "Afo",
+      "Idoani",
+      "Idogun",
+      "Ifon",
+      "Imeri",
+      "Okeluse"
+    ],
+    "Owo": [
+      "Emure-Ile",
+      "Ipele",
+      "Isuada",
+      "Iyere",
+      "Owo",
+      "Uso"
+    ],
+    "Atakunmosa East": [
+      "Ajebandele",
+      "Ayegunle",
+      "Eti-Oni",
+      "Faforiji",
+      "Igangan",
+      "Iperindo",
+      "Ipole",
+      "Iwara"
+    ],
+    "Atakunmosa West": [
+      "Ibodi",
+      "Ifewara",
+      "Isa Obi",
+      "Ita Gunmodi",
+      "Muroko",
+      "Oke Bode",
+      "Osu"
+    ],
+    "Ayedade": [
+      "Amola",
+      "Araromi-Owu",
+      "Gbongan",
+      "Lagere",
+      "Obalufon",
+      "Ode-Omu",
+      "Orile-Owu"
+    ],
+    "Ayedire": [
+      "Alajue",
+      "Idi-Ore",
+      "Ile-Ogbo",
+      "Kuta",
+      "Oke-Osun",
+      "Oluponna"
+    ],
+    "Boluwaduro": [
+      "Eripa",
+      "Iloro",
+      "Iresi",
+      "Obaala",
+      "Oke-Irun",
+      "Otan-Ayegbaju"
+    ],
+    "Boripe": [
+      "Aagba",
+      "Ada",
+      "Iragbiji",
+      "Iree",
+      "Isale Asa",
+      "Ororuwo"
+    ],
+    "Ede North": [
+      "Apaso",
+      "Ede",
+      "Isibo",
+      "Oja Timi",
+      "Olusokun",
+      "Sagba"
+    ],
+    "Ede South": [
+      "Akoda",
+      "Alajue",
+      "Ede",
+      "Kuye",
+      "Loogun",
+      "Oloki",
+      "Sekona"
+    ],
+    "Egbedore": [
+      "Abudo",
+      "Ara",
+      "Awo",
+      "Ido-Osun",
+      "Idoo",
+      "Ikotun",
+      "Ira Gberi",
+      "Iwoye",
+      "Ofatedo",
+      "Origo"
+    ],
+    "Ejigbo": [
+      "Agurodo",
+      "Ejigbo",
+      "Ife-Odan",
+      "Ilawo",
+      "Inisa",
+      "Masifa",
+      "Ola"
+    ],
+    "Ife Central": [
+      "Akarabata",
+      "Enuwa",
+      "Ilare",
+      "Ile-Ife",
+      "Iremo",
+      "Moore",
+      "Yekemi"
+    ],
+    "Ife East": [
+      "Ilesa Road",
+      "Ilode",
+      "Modakeke",
+      "Oke-Ogbo",
+      "Olode",
+      "Yekemi"
+    ],
+    "Ife North": [
+      "Akinlalu",
+      "Asipa",
+      "Edunabon",
+      "Famia",
+      "Ipetumodu",
+      "Moro",
+      "Oyere",
+      "Yakoyo"
+    ],
+    "Ife South": [
+      "Aare",
+      "Garage-Olode",
+      "Ifetedo",
+      "Ikija",
+      "Ilode",
+      "Mefoworade",
+      "Oke-Owena"
+    ],
+    "Ifedayo": [
+      "Ayetoro",
+      "Balogun",
+      "Ilale",
+      "Oke-Ila Orangun",
+      "Ora",
+      "Oyi"
+    ],
+    "Ifelodun": [
+      "Dagbolu",
+      "Eko-Ende",
+      "Iba",
+      "Ikirun",
+      "Obaagun",
+      "Olondun",
+      "Seke"
+    ],
+    "Ila": [
+      "Ajaba",
+      "Edemosi",
+      "Eyindi",
+      "Ila-Orangun",
+      "Iperin",
+      "Isedo"
+    ],
+    "Ilesa East": [
+      "Biladu",
+      "Ifosan",
+      "Ijamo",
+      "Ilerin",
+      "Ilesa",
+      "Iloro",
+      "Imo",
+      "Isare",
+      "Itisin",
+      "Ogudu",
+      "Oke-Eso",
+      "Okesa",
+      "Roye"
+    ],
+    "Ilesa West": [
+      "Ayeso",
+      "Ere",
+      "Ereja",
+      "Ijofi",
+      "Ilesa",
+      "Isida",
+      "Isokun",
+      "Itakogun"
+    ],
+    "Irewole": [
+      "Akinlalu",
+      "Araromi",
+      "Ikire",
+      "Odeyinka",
+      "Sango",
+      "Wasinmi"
+    ],
+    "Isokan": [
+      "Afolu",
+      "Alapomu",
+      "Apomu",
+      "Ikoyi",
+      "Oloya",
+      "Oranran"
+    ],
+    "Iwo": [
+      "Gidigbo",
+      "Isale-Oba",
+      "Iwo",
+      "Kajola",
+      "Molete",
+      "Oke-Adan",
+      "Oke-Oba"
+    ],
+    "Obokun": [
+      "Esa-Odo",
+      "Esa-Oke",
+      "Ibokun",
+      "Idominasi",
+      "Ikinyinwa",
+      "Ilase",
+      "Imesi-Ile",
+      "Iponda",
+      "Otan-Ile"
+    ],
+    "Odo-Otin": [
+      "Asi",
+      "Baale",
+      "Ekosin",
+      "Erin-Ile",
+      "Faji",
+      "Igbaye",
+      "Ijabe",
+      "Ila-Odo",
+      "Inisa",
+      "Okuku",
+      "Oyan"
+    ],
+    "Ola-Oluwa": [
+      "Ajagunlase",
+      "Asa",
+      "Asamu",
+      "Bode-Osi",
+      "Ikonifin",
+      "Ilemowu",
+      "Ogbaagba",
+      "Telemu"
+    ],
+    "Oriade": [
+      "Erin-Ijesa",
+      "Ijebu-Jesa",
+      "Ijeda",
+      "Ikeji-Arakeji",
+      "Ipetu-Ijesa",
+      "Iwoye-Ijesa"
+    ],
+    "Orolu": [
+      "Asalu",
+      "Elepo",
+      "Idi-Iroko",
+      "Ifon-Osun",
+      "Olufon"
+    ],
+    "Osogbo": [
+      "Alekuwodo",
+      "Ataoja",
+      "Isale-Osun",
+      "Jaleyemi",
+      "Ogo-Oluwa",
+      "Oke-Fia",
+      "Osogbo"
+    ],
+    "Afijio": [
+      "Akinmorin",
+      "Awe",
+      "Fiditi",
+      "Ilora",
+      "Iware",
+      "Jobele"
+    ],
+    "Akinyele": [
+      "Akinyele",
+      "Ijaye",
+      "Iroko",
+      "Moniya",
+      "Ojoo",
+      "Olorisa-Oko"
+    ],
+    "Atiba": [
+      "Ajagba",
+      "Bashorun",
+      "Isale-Oyo",
+      "Kosobo",
+      "Ofa-Meta",
+      "Oyo Town"
+    ],
+    "Atisbo": [
+      "Ago-Are",
+      "Baasi",
+      "Irawo",
+      "Ofiki",
+      "Owo",
+      "Tede"
+    ],
+    "Egbeda": [
+      "Adegbayi",
+      "Alakia",
+      "Asejire",
+      "Egbeda",
+      "Erunmu",
+      "Olodo"
+    ],
+    "Ibadan North": [
+      "Agodi",
+      "Bodija",
+      "Mokola",
+      "Sango",
+      "University of Ibadan",
+      "Yemetu"
+    ],
+    "Ibadan North-East": [
+      "Agodi Gate",
+      "Bashorun",
+      "Beere",
+      "Iwo Road",
+      "Oje",
+      "Yemetu Aladorin"
+    ],
+    "Ibadan North-West": [
+      "Dugbe",
+      "Ekotedo",
+      "Eleyele",
+      "Mokola",
+      "Oke-Are",
+      "Onireke"
+    ],
+    "Ibadan South-East": [
+      "Beere",
+      "Mapo",
+      "Molete",
+      "Odinjo",
+      "Oja’ba",
+      "Oranyan"
+    ],
+    "Ibadan South-West": [
+      "Apata",
+      "Challenge",
+      "Liberty Road",
+      "Odo-Ona",
+      "Oke-Ado",
+      "Ring Road"
+    ],
+    "Ibarapa Central": [
+      "Idere",
+      "Igbo-Ora",
+      "Isale-Oba",
+      "Pako",
+      "Saganun"
+    ],
+    "Ibarapa East": [
+      "Anko",
+      "Eruwa",
+      "Lanlate",
+      "Maya",
+      "New Eruwa",
+      "Oke-Oba"
+    ],
+    "Ibarapa North": [
+      "Ayete",
+      "Idiko",
+      "Igangan",
+      "Tapa"
+    ],
+    "Ido": [
+      "Akufo",
+      "Alabata",
+      "Apete",
+      "Bakatari",
+      "Ido",
+      "Omi-Adio"
+    ],
+    "Irepo": [
+      "Agoro",
+      "Budo-Are",
+      "Iluju",
+      "Kisi",
+      "Oke-Amu"
+    ],
+    "Iseyin": [
+      "Ado-Awaye",
+      "Isalu",
+      "Iseyin",
+      "Koso",
+      "Ladogan",
+      "Odo-Ogun"
+    ],
+    "Itesiwaju": [
+      "Baba Ode",
+      "Ipapo",
+      "Komu",
+      "Okaka",
+      "Oke-Amu",
+      "Otu"
+    ],
+    "Iwajowa": [
+      "Ayetoro-Ile",
+      "Elekokan",
+      "Idiko-Ile",
+      "Iganna",
+      "Ilaji-Ile",
+      "Iwere-Ile"
+    ],
+    "Kajola": [
+      "Ayetoro-Oke",
+      "Ilero",
+      "Ilua",
+      "Imia",
+      "Isemi-Ile",
+      "Okeho"
+    ],
+    "Lagelu": [
+      "Ejioku",
+      "Iyana-Offa",
+      "Lalupon",
+      "Monatan",
+      "Olorunda",
+      "Oyedeji"
+    ],
+    "Ogo Oluwa": [
+      "Ajawa",
+      "Idewure",
+      "Kinnira",
+      "Odo-Oba",
+      "Opete",
+      "Otamokun"
+    ],
+    "Ogbomoso North": [
+      "Arowomole",
+      "Isale-Afon",
+      "Masifa",
+      "Ogbomoso",
+      "Okelerin",
+      "Sabo"
+    ],
+    "Ogbomoso South": [
+      "Ajaawa",
+      "Ibapon",
+      "Ijeru",
+      "Lagbedu",
+      "Oke-Alapata",
+      "Oke-Ola"
+    ],
+    "Olorunsogo": [
+      "Aboke",
+      "Apata",
+      "Igbeti",
+      "Oke-Elerin",
+      "Onigbeti"
+    ],
+    "Oluyole": [
+      "Aba-Nla",
+      "Ayegun",
+      "Idi-Ayunre",
+      "Muslim",
+      "Odo-Ona Nla",
+      "Olomi"
+    ],
+    "Ona Ara": [
+      "Akanran",
+      "Amuloko",
+      "Araromi",
+      "Badeku",
+      "Gbada",
+      "Olorunsogo"
+    ],
+    "Oorelope": [
+      "Aare",
+      "Alepata",
+      "Bonni",
+      "Idi-Emi",
+      "Igboho",
+      "Onibode"
+    ],
+    "Orire": [
+      "Ahorodada",
+      "Alagbon",
+      "Eleesun",
+      "Ikoyi-Ile",
+      "Iluju",
+      "Tewure"
+    ],
+    "Oyo East": [
+      "Agboye",
+      "Alaodi",
+      "Apaara",
+      "Araromi",
+      "Kosobo",
+      "Oyo Town"
+    ],
+    "Oyo West": [
+      "Ajokidero",
+      "Akeetan",
+      "Fasola",
+      "Isokun",
+      "Ojongbodu",
+      "Oyo Town"
+    ],
+    "Saki East": [
+      "Agbonle",
+      "Ago-Amodu",
+      "Iya",
+      "Ogbooro",
+      "Oje-Owode",
+      "Sepeteri"
+    ],
+    "Saki West": [
+      "Ajegunle",
+      "Challenge",
+      "Isale-Taba",
+      "Ogidigbo",
+      "Oke-Ogun",
+      "Saki"
+    ],
+    "Barkin Ladi": [
+      "Barkin Ladi",
+      "Bisichi",
+      "Foron",
+      "Gassa",
+      "Gindin Akwati",
+      "Heipang",
+      "Kapwis",
+      "Kurra Falls",
+      "Lobiring",
+      "Marit",
+      "Mazat",
+      "Rafan",
+      "Sho",
+      "Tafan",
+      "Zabot"
+    ],
+    "Bokkos": [
+      "Bokkos",
+      "Butura",
+      "Daffo",
+      "Damwai",
+      "Kwatas",
+      "Mangar",
+      "Mangor",
+      "Manguna",
+      "Mbar",
+      "Mushere",
+      "Richa",
+      "Sha",
+      "Tangur",
+      "Toff"
+    ],
+    "Jos East": [
+      "Angware",
+      "Federe",
+      "Fobur",
+      "Fursum",
+      "Jarawan Kogi",
+      "Maigemu",
+      "Maijuju",
+      "Shere East",
+      "Shere West",
+      "Zandi"
+    ],
+    "Jos North": [
+      "Ali Kazaure",
+      "Gangare",
+      "Garba Daho",
+      "Ibrahim Katsina",
+      "Jenta Adamu",
+      "Jenta Apata",
+      "Jos",
+      "Kabong",
+      "Naraguta",
+      "Sarkin Arab",
+      "Tafawa Balewa",
+      "Terminus",
+      "Tudun Wada",
+      "Vanderpuye"
+    ],
+    "Jos South": [
+      "Bukuru",
+      "Du",
+      "Giring",
+      "Gyel",
+      "Kuru",
+      "Rayfield",
+      "Shen",
+      "Turu",
+      "Vom",
+      "Vwang",
+      "Zawan"
+    ],
+    "Kanam": [
+      "Dengi",
+      "Dengi Central",
+      "Gagdi",
+      "Garga",
+      "Gwamlar",
+      "Jarmai",
+      "Kantana",
+      "Kunkyam",
+      "Munbutbo",
+      "Namaran",
+      "Zalli"
+    ],
+    "Kanke": [
+      "Ampang",
+      "Amper",
+      "Dawaki",
+      "Garram",
+      "Kabwir",
+      "Kanke",
+      "Kwal",
+      "Langshi",
+      "Nemel",
+      "Tuwan"
+    ],
+    "Langtang North": [
+      "Funyalang",
+      "Jat",
+      "Keller",
+      "Kuffen",
+      "Kwallak",
+      "Kwande",
+      "Langtang",
+      "Lipchok",
+      "Mban",
+      "Nyer",
+      "Pajat",
+      "Pil Gani",
+      "Pishe",
+      "Reak",
+      "Waroh",
+      "Yashi",
+      "Zamko"
+    ],
+    "Langtang South": [
+      "Dadin Kowa",
+      "Fajul",
+      "Gamakai",
+      "Lashel",
+      "Mabudi",
+      "Magama",
+      "Sabon Gida",
+      "Talgwang",
+      "Timbol",
+      "Turaki"
+    ],
+    "Mangu": [
+      "Ampang West",
+      "Chakfem",
+      "Gindiri",
+      "Jipal",
+      "Kadunu",
+      "Kerang",
+      "Kombun",
+      "Langai",
+      "Mangu",
+      "Mangu Halle",
+      "Mangun",
+      "Panyam",
+      "Pushit"
+    ],
+    "Mikang": [
+      "Baltep",
+      "Garkawa",
+      "Garkawa Central",
+      "Garkawa North",
+      "Garkawa South",
+      "Koenoem",
+      "Montol",
+      "Piapung",
+      "Tunkus",
+      "Yakoep"
+    ],
+    "Pankshin": [
+      "Belning",
+      "Chip",
+      "Dok-Pai",
+      "Fier",
+      "Jiblik",
+      "Kadung",
+      "Kangshu",
+      "Lankan",
+      "Pankshin",
+      "Tal",
+      "Wokkos"
+    ],
+    "Qua'an Pan": [
+      "Ba’ap",
+      "Bwall",
+      "Doemak",
+      "Dokan Tofa",
+      "Jepjan",
+      "Kurgwi",
+      "Kwa",
+      "Kwa’an Pan",
+      "Kwalla",
+      "Kwande",
+      "Namu"
+    ],
+    "Riyom": [
+      "Attakar",
+      "Bum",
+      "Ganawuri",
+      "Hoss",
+      "Jol",
+      "Ra-Hoss",
+      "Rim",
+      "Riyom",
+      "Sopp",
+      "Ta-Hoss",
+      "Wereng"
+    ],
+    "Shendam": [
+      "Derteng",
+      "Kalong",
+      "Kurungbau",
+      "Moekat",
+      "Pangshom",
+      "PoeShip",
+      "Shendam",
+      "Shimankar",
+      "Yelwa"
+    ],
+    "Wase": [
+      "Bashar",
+      "Danbiram",
+      "Gudus",
+      "Kadarko",
+      "Kumbong",
+      "Kumbur",
+      "Kuyambana",
+      "Mavo",
+      "Pinau",
+      "Sabon Layi",
+      "Wase",
+      "Yola-Wakat"
+    ],
+    "Abua/Odual": [
+      "Abua",
+      "Agada",
+      "Ayama",
+      "Emago",
+      "Odual",
+      "Okpeden"
+    ],
+    "Ahoada East": [
+      "Ahoada",
+      "Akoh",
+      "Ihuaba",
+      "Ochigba",
+      "Odiabidi",
+      "Ula-Upata"
+    ],
+    "Ahoada West": [
+      "Akinima",
+      "Idu",
+      "Isua",
+      "Joinkrama",
+      "Odiereke",
+      "Okarki"
+    ],
+    "Akuku-Toru": [
+      "Abissa",
+      "Abonnema",
+      "Idama",
+      "Kula",
+      "Obonoma",
+      "Soku"
+    ],
+    "Andoni": [
+      "Asarama",
+      "Ataba",
+      "Dema",
+      "Ikuru Town",
+      "Ngo",
+      "Unyeada"
+    ],
+    "Asari-Toru": [
+      "Angulama",
+      "Buguma",
+      "Ido",
+      "Ifoko",
+      "Krakrama",
+      "Sama"
+    ],
+    "Bonny": [
+      "Abalamabie",
+      "Banigo",
+      "Bonny",
+      "Finima",
+      "Oloma",
+      "Peterside"
+    ],
+    "Degema": [
+      "Bakana",
+      "Bille",
+      "Bukuma",
+      "Degema",
+      "Tombia",
+      "Usokun"
+    ],
+    "Eleme": [
+      "Agbonchia",
+      "Alesa",
+      "Ebubu",
+      "Nchia",
+      "Ogale",
+      "Onne"
+    ],
+    "Emohua": [
+      "Elele-Alimini",
+      "Emohua",
+      "Ibaa",
+      "Ndele",
+      "Ogbakiri",
+      "Rumuji"
+    ],
+    "Etche": [
+      "Afara",
+      "Chokocho",
+      "Igbo-Etche",
+      "Okehi",
+      "Omuma",
+      "Ulakwo"
+    ],
+    "Gokana": [
+      "Biara",
+      "Bodo",
+      "Bomu",
+      "Kpor",
+      "Lewe",
+      "Mogho"
+    ],
+    "Ikwerre": [
+      "Aluu",
+      "Elele",
+      "Ipo",
+      "Isiokpo",
+      "Omagwa",
+      "Omerelu"
+    ],
+    "Khana": [
+      "Baen",
+      "Bori",
+      "Kaani",
+      "Kono",
+      "Sogho",
+      "Wiiyaakara"
+    ],
+    "Obio-Akpor": [
+      "Choba",
+      "Elelenwo",
+      "Rumuekini",
+      "Rumuodumaya",
+      "Rumuokoro",
+      "Woji"
+    ],
+    "Ogba/Egbema/Ndoni": [
+      "Egbema",
+      "Erema",
+      "Ndoni",
+      "Obagi",
+      "Obrikom",
+      "Omoku"
+    ],
+    "Ogu/Bolo": [
+      "Bolo",
+      "Ele",
+      "Ibaka",
+      "Ogu",
+      "Tende-Ama",
+      "Wakama"
+    ],
+    "Okrika": [
+      "Abuloma",
+      "Ibaka Town",
+      "Kalio-Ama",
+      "Ogan",
+      "Ogoloma",
+      "Okrika"
+    ],
+    "Omuma": [
+      "Eberi",
+      "Obibi",
+      "Ofeh",
+      "Oyoro",
+      "Umuechem",
+      "Umuogba"
+    ],
+    "Opobo/Nkoro": [
+      "Epellema",
+      "Kalaibiama",
+      "Minima",
+      "Nkoro",
+      "Opobo Town",
+      "Queenstown"
+    ],
+    "Oyigbo": [
+      "Afam",
+      "Komkom",
+      "Mirinwanyi",
+      "Obete",
+      "Okoloma",
+      "Oyigbo"
+    ],
+    "Port Harcourt": [
+      "Borokiri",
+      "D-Line",
+      "Diobu",
+      "Mile 1",
+      "Port Harcourt"
+    ],
+    "Tai": [
+      "Botem",
+      "Kira",
+      "Korokoro",
+      "Nonwa",
+      "Saakpenwa",
+      "Sime"
+    ],
+    "Binji": [
+      "Binji",
+      "Bunkari",
+      "Gawazzai",
+      "Inname",
+      "Jammali",
+      "Maikulki",
+      "Samama",
+      "Soro Gabas",
+      "Soro Yamma",
+      "T/Kose"
+    ],
+    "Bodinga": [
+      "Badau",
+      "Bagarawa",
+      "Bangi",
+      "Bodinga",
+      "Dabaga",
+      "Danchadi",
+      "Darhela",
+      "Dingyadi",
+      "Jirga Miyo",
+      "Kwacciyar Lalle",
+      "Lukuyawa",
+      "Madorawa",
+      "Mazan Gari",
+      "Sifawa",
+      "Takatuku",
+      "Tauma"
+    ],
+    "Dange-Shuni": [
+      "Amanawa",
+      "Bodai",
+      "Dange",
+      "Fajaldu",
+      "Gajara",
+      "Giere",
+      "Jurga",
+      "Rikina",
+      "Rudu",
+      "Ruggar Gidado",
+      "Salau",
+      "Shuni",
+      "Tsafanade",
+      "Tsehe",
+      "Tuntube",
+      "Wababe"
+    ],
+    "Gada": [
+      "Dukamaje",
+      "Gada",
+      "Gilbadi",
+      "Holai",
+      "Ilah",
+      "Kadadin Buda",
+      "Kadassaka",
+      "Kaddi",
+      "Kaffe",
+      "Kiri",
+      "Kwarma",
+      "Kyadawa",
+      "Tsitse"
+    ],
+    "Goronyo": [
+      "Birjingo",
+      "Boyeka",
+      "Dan Tasakko",
+      "Giyawa",
+      "Goronyo",
+      "Kagara",
+      "Kojiyo",
+      "Kwakwazo",
+      "Rimawa",
+      "Sabon Gari Dole",
+      "Shinaka",
+      "Takakume"
+    ],
+    "Gudu": [
+      "Awulkiti",
+      "Bachaka",
+      "Balle",
+      "Boto",
+      "Chilas",
+      "Gudu",
+      "Gwazange",
+      "Karfen Chana",
+      "Karfen Sarki",
+      "Kurdula",
+      "Makuya",
+      "Maraken Bori",
+      "Tulun Doya"
+    ],
+    "Gwadabawa": [
+      "Asara Arewa",
+      "Asara Kudu",
+      "Atakwanyo",
+      "Chimola",
+      "Gidan Kaya",
+      "Gigane",
+      "Gwadabawa",
+      "Huchi",
+      "Mammande",
+      "Salame"
+    ],
+    "Illela": [
+      "Araba",
+      "Damba",
+      "Darna",
+      "Darne",
+      "Garu",
+      "Gidan Hamma",
+      "Gidan Katta",
+      "Illela",
+      "Kalmalo",
+      "R. Gati",
+      "Sabon Gari",
+      "Tozai",
+      "Tsolawo"
+    ],
+    "Isa": [
+      "Bargaja",
+      "Gebe",
+      "Isa",
+      "Isa North",
+      "Isa South",
+      "Tidibale",
+      "Tozai",
+      "Tsabren Sarkin Darai",
+      "Turba",
+      "Yanfako"
+    ],
+    "Kware": [
+      "Bankanu",
+      "Basansan",
+      "Gidan Rugga",
+      "Hamma Ali",
+      "Kabanga",
+      "Kware",
+      "Mallamawa",
+      "Marabawa",
+      "Tsaki",
+      "Tunga",
+      "Walake’e"
+    ],
+    "Kebbe": [
+      "Fakku",
+      "Girkau",
+      "Kebbe",
+      "Kuchi",
+      "Margai",
+      "Nasagudu",
+      "Sangi",
+      "Ungushi"
+    ],
+    "Rabah": [
+      "Gandi",
+      "Gawakuke",
+      "Gidan Bu Wai",
+      "Gwaddodi",
+      "Kurya",
+      "Maikujera",
+      "Rabah",
+      "Rara",
+      "Riji",
+      "Tsamiya",
+      "Tursa",
+      "Yar Tsakuwa"
+    ],
+    "Sabon Birni": [
+      "Gangara",
+      "Gatawa",
+      "Kalgo",
+      "Kuruwa",
+      "Lajinge",
+      "Makuwana",
+      "Sabon Birni",
+      "Tara",
+      "Tsamaye",
+      "Unguwar Lalle"
+    ],
+    "Shagari": [
+      "Dandin Mahe",
+      "Gangam",
+      "Horo Birni",
+      "Jarekuka",
+      "Kajiji",
+      "Kambama",
+      "Lambara",
+      "Mandera",
+      "Sanyinna",
+      "Shagari"
+    ],
+    "Silame": [
+      "Gande",
+      "Gidan Katta",
+      "Katami",
+      "Kubodu",
+      "Kwasare",
+      "Labani",
+      "Marafa East",
+      "Marafa West",
+      "Silame"
+    ],
+    "Sokoto North": [
+      "Gidan Gandu",
+      "Gidan Igwai",
+      "Magajin Gari",
+      "Magajin Rafi",
+      "Sarkin Adar",
+      "Sarkin Musulmi",
+      "Sokoto",
+      "Waziri"
+    ],
+    "Sokoto South": [
+      "Gagi",
+      "Kwanni",
+      "Mabera",
+      "Runjin Sambo",
+      "Sarkin Adar",
+      "Sokoto South",
+      "Tudun Wada"
+    ],
+    "Tambuwal": [
+      "Bakaya",
+      "Barkeji",
+      "Goshe",
+      "Jabo",
+      "Kagara",
+      "Nabaguda",
+      "Romon Sarki",
+      "Saida",
+      "Sanyinna",
+      "Tambuwal"
+    ],
+    "Tangaza": [
+      "Gidan Madi",
+      "Kalanjeni",
+      "Kwacce-Huru",
+      "Magonho",
+      "Raka",
+      "Ruwa-Wuri",
+      "Sakkwai",
+      "Salewa",
+      "Sutti",
+      "Tangaza"
+    ],
+    "Tureta": [
+      "Barayar Giwa",
+      "Duma",
+      "Fura Girke",
+      "Kuruwa",
+      "Kwarare",
+      "Lambar Tureta",
+      "Tureta"
+    ],
+    "Wamakko": [
+      "Arkilla",
+      "Bado",
+      "Dundaye",
+      "Girabshi",
+      "Gumbi",
+      "Gumburawa",
+      "Gwamatsai",
+      "Kalambaina",
+      "Kammata",
+      "Kasarawa",
+      "Wajake",
+      "Wamakko"
+    ],
+    "Wurno": [
+      "Achida",
+      "Alkammu",
+      "Chacho",
+      "Dinawa",
+      "Kwasare",
+      "Lahodu",
+      "Magarya",
+      "Marafa",
+      "Raha",
+      "Sabon Birni",
+      "Wurno"
+    ],
+    "Yabo": [
+      "Agala",
+      "Bakale",
+      "Binji",
+      "Birnin Ruwa",
+      "Fakka",
+      "Kilgori",
+      "Rijiya",
+      "Ruggar Iya",
+      "Torankawa",
+      "Yabo"
+    ],
+    "Ardo-Kola": [
+      "Alim Gora",
+      "Ardo-Kola",
+      "Iware",
+      "Jauro Yinu",
+      "Lamido Borno",
+      "Sunkani"
+    ],
+    "Bali": [
+      "Bali",
+      "Gang Dole",
+      "Garba-Chede",
+      "Gazabu",
+      "Maihula",
+      "Suntai"
+    ],
+    "Donga": [
+      "Donga",
+      "Fada",
+      "Gayama",
+      "Mararraba",
+      "Nyita",
+      "Suntai"
+    ],
+    "Gashaka": [
+      "Gangumi",
+      "Garbabi",
+      "Gashaka",
+      "Jamtari",
+      "Mayo-Selbe",
+      "Serti"
+    ],
+    "Gassol": [
+      "Gassol",
+      "Mutum Biyu",
+      "Nam Nai",
+      "Sabon Gida",
+      "Sendirde",
+      "Wurojam"
+    ],
+    "Ibi": [
+      "Dampar",
+      "Ibi",
+      "Nwonyo",
+      "Rimi Uku",
+      "Sarkin Kudu"
+    ],
+    "Jalingo": [
+      "Barade",
+      "Jalingo",
+      "Kachalla Sembe",
+      "Magami",
+      "Mayo-Gwoi",
+      "Sintali"
+    ],
+    "Karim Lamido": [
+      "Andamin",
+      "Beli",
+      "Darofai",
+      "Jen",
+      "Karim Lamido",
+      "Mutum Daya"
+    ],
+    "Kurmi": [
+      "Abong",
+      "Ashuku",
+      "Baissa",
+      "Bente",
+      "Didan",
+      "Ndaforo"
+    ],
+    "Lau": [
+      "Abbare",
+      "Donadda",
+      "Garin Dogo",
+      "Kunini",
+      "Lau",
+      "Mayo-Lope"
+    ],
+    "Sardauna": [
+      "Gembu",
+      "Kakara",
+      "Maisamari",
+      "Mayo-Ndaga",
+      "Mbamnga",
+      "Nguroje"
+    ],
+    "Takum": [
+      "Bete",
+      "Chanchanji",
+      "Fete",
+      "Kashimbila",
+      "Rogo",
+      "Takum"
+    ],
+    "Ussa": [
+      "Kpambo",
+      "Kwesati",
+      "Lissam",
+      "Rufu"
+    ],
+    "Wukari": [
+      "Avyi",
+      "Bantaje",
+      "Kente",
+      "Rafin Kada",
+      "Tsokundi",
+      "Wukari"
+    ],
+    "Yorro": [
+      "Bikassa",
+      "Kassa",
+      "Nyaja",
+      "Pantisawa",
+      "Pupule",
+      "Sumbu"
+    ],
+    "Zing": [
+      "Bitako",
+      "Bubong",
+      "Lamma",
+      "Monkin",
+      "Yakoko",
+      "Zing"
+    ],
+    "Bade": [
+      "Dagona",
+      "Gashua",
+      "Gwio-Kura",
+      "Katuzu",
+      "Lawan Musa",
+      "Sabon Garin Gashua",
+      "Sugum",
+      "Tagali",
+      "Usur",
+      "Zango"
+    ],
+    "Bursari": [
+      "Bayamari",
+      "Danani",
+      "Dapchi",
+      "Garin Alkali",
+      "Guba",
+      "Gujba",
+      "Juluri",
+      "Kaliari",
+      "Kurnawa",
+      "Masaba"
+    ],
+    "Damaturu": [
+      "Bindigari",
+      "Damaturu",
+      "Gwange",
+      "Kalallawa",
+      "Kukareta",
+      "Maisandari",
+      "Murfakalam",
+      "Nayi-Nawa",
+      "Sasawa"
+    ],
+    "Fika": [
+      "Fika",
+      "Gadaka",
+      "Goya",
+      "Gudi",
+      "Janga",
+      "Mazawaun",
+      "Mubi/Fusami",
+      "Ngalda",
+      "Ngeji",
+      "Turmi"
+    ],
+    "Fune": [
+      "Abakire",
+      "Alagarno",
+      "Damagum",
+      "Daura",
+      "Dawura",
+      "Dogon Kuka",
+      "Fune Ngirbuwa",
+      "Gaba Tasha",
+      "Jajere",
+      "Mashio",
+      "Ngelzarma",
+      "Tongo"
+    ],
+    "Geidam": [
+      "Asheikri",
+      "Balle",
+      "Futchimiram",
+      "Geidam",
+      "Gumsa",
+      "Hausari",
+      "Kawuri",
+      "Maanna",
+      "Shuwari",
+      "Zurgu Ngilewa"
+    ],
+    "Gujba": [
+      "Buni Yadi",
+      "Goniri",
+      "Gotala",
+      "Gujba",
+      "Katarko",
+      "Mallam Dunari",
+      "Mandunari",
+      "Mutai",
+      "Ngurbuwa",
+      "Wagir"
+    ],
+    "Gulani": [
+      "Bara",
+      "Bularafa",
+      "Bumsa",
+      "Dokshi",
+      "Gabai",
+      "Garin Tuwo",
+      "Gulani",
+      "Kushimaga",
+      "Njibulwa",
+      "Ruhu"
+    ],
+    "Jakusko": [
+      "Buduwa",
+      "Dumbari",
+      "Gidgid",
+      "Gogaram",
+      "Gwayo",
+      "Jaba",
+      "Jakusko",
+      "Jawur",
+      "Lafiya Loi-Loi",
+      "Muguram",
+      "Zabudum"
+    ],
+    "Karasuwa": [
+      "Bukarti",
+      "Falali",
+      "Galu",
+      "Garin Gawo",
+      "Jaji-Maji",
+      "Karasuwa",
+      "Waro"
+    ],
+    "Machina": [
+      "Damai",
+      "Dole",
+      "Falimaram",
+      "Garin Gada",
+      "Kom-Kaya",
+      "Lamisu",
+      "Machina",
+      "Maskandare",
+      "Taganama"
+    ],
+    "Nangere": [
+      "Dadiso",
+      "Dawasa",
+      "Degubi",
+      "Garin Gambo",
+      "Langawa",
+      "Nangere",
+      "Pakarau Kare-Kare",
+      "Sabon Garin Nangere",
+      "Tikau",
+      "Watinani"
+    ],
+    "Nguru": [
+      "Bulabulin",
+      "Bulanguwa",
+      "Dabule",
+      "Garbi/Bambori",
+      "Hausari",
+      "Kanuri",
+      "Maja-Kura",
+      "Mirba-Kabir",
+      "Nglaiwa",
+      "Nguru"
+    ],
+    "Potiskum": [
+      "Bare-Bare Bauya",
+      "Bolewa A",
+      "Bolewa B",
+      "Danchuwa",
+      "Dogo Nini",
+      "Hausawa",
+      "Mamudo",
+      "Ngojin",
+      "Potiskum",
+      "Yerimaram"
+    ],
+    "Tarmuwa": [
+      "Babbangida",
+      "Barkami",
+      "Biriri",
+      "Jumbam",
+      "Koka",
+      "Koriyel",
+      "Lantaiwa",
+      "Mafa",
+      "Mandadawa",
+      "Shekau"
+    ],
+    "Yunusari": [
+      "Degeltura",
+      "Dikwa",
+      "Dilala/Kalgi",
+      "Kanamma",
+      "Mairari",
+      "Mozogun",
+      "Ngirabo",
+      "Wadi/Kafiya",
+      "Yunusari",
+      "Zajibiri"
+    ],
+    "Yusufari": [
+      "Alanjirori",
+      "Gumshi",
+      "Guya",
+      "Jebuwa",
+      "Kaska",
+      "Kumagannam",
+      "Mayori",
+      "Sumbar",
+      "Tulo-Tulo",
+      "Yusufari"
+    ],
+    "Anka": [
+      "Anka",
+      "Bagega",
+      "Matseri",
+      "Sabon Birnin",
+      "Waramu",
+      "Wuya"
+    ],
+    "Bakura": [
+      "Bakura",
+      "Birnin Tudu",
+      "Damri",
+      "Dankadu",
+      "Rini",
+      "Yar Geda"
+    ],
+    "Birnin Magaji": [
+      "Birnin Magaji",
+      "Gora",
+      "Kiyaw",
+      "Modomawa",
+      "Nasarawa Godal",
+      "Shamushalle"
+    ],
+    "Bukkuyum": [
+      "Bukkuyum",
+      "Gwashi",
+      "Kyaram",
+      "Nassarawa Burkullu",
+      "Yashi",
+      "Zarumman"
+    ],
+    "Bungudu": [
+      "Bungudu",
+      "Furfuri",
+      "Kwatarkwashi",
+      "Nahuche",
+      "Samawa",
+      "Sankalawa"
+    ],
+    "Gummi": [
+      "Bardoki",
+      "Birnin Tudu",
+      "Falale",
+      "Gayari",
+      "Gummi",
+      "Shiyar Rafi"
+    ],
+    "Gusau": [
+      "Damba",
+      "Gusau",
+      "Mada",
+      "Mayana",
+      "Ruwan Bore",
+      "Wonaka"
+    ],
+    "Kaura Namoda": [
+      "Banga",
+      "Dan Isa",
+      "Kagara",
+      "Kaura Namoda",
+      "Kungurki",
+      "Sakajiki"
+    ],
+    "Maradun": [
+      "Faru",
+      "Gidan Goga",
+      "Janbako",
+      "Kaya",
+      "Maradun",
+      "Tsibiri"
+    ],
+    "Maru": [
+      "Bindin",
+      "Dansadau",
+      "Kanoma",
+      "Magami",
+      "Maru",
+      "Ruwan Dorawa"
+    ],
+    "Shinkafi": [
+      "Badarawa",
+      "Galadi",
+      "Jangeru",
+      "Katuru",
+      "Shanawa",
+      "Shinkafi"
+    ],
+    "Talata Mafara": [
+      "Gwaram",
+      "Jangebe",
+      "Morai",
+      "Ruwan Bore",
+      "Take Tsaba",
+      "Talata Mafara"
+    ],
+    "Tsafe": [
+      "Bilbis",
+      "Chediya",
+      "Keta",
+      "Kwaren Ganuwa",
+      "Tsafe",
+      "Yan Waren Daji"
+    ],
+    "Zurmi": [
+      "Boko",
+      "Dauran",
+      "Dole",
+      "Kanwa",
+      "Yan Buki",
+      "Zurmi"
     ]
   },
   "level1sByTownName": {
@@ -1149,7 +7567,8 @@
     ]
   },
   "_meta": {
-    "generatedAt": "2026-03-16T06:52:08.984Z",
+    "generatedAt": "2026-05-24T19:01:20.581Z",
+    "townFolderRowCount": 5283,
     "townCount": 174,
     "level1Count": 14,
     "level2Count": 58,

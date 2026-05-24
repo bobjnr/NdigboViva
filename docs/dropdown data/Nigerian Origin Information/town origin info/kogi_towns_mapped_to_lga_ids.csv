@@ -1,0 +1,106 @@
+state_id,lga_id,town_id,town_name
+kogi,kogi_adavi,town_kogi_adavi_ogaminana,Ogaminana
+kogi,kogi_adavi,town_kogi_adavi_adavi_eba,Adavi-Eba
+kogi,kogi_adavi,town_kogi_adavi_inoziomi,Inoziomi
+kogi,kogi_adavi,town_kogi_adavi_kuroko,Kuroko
+kogi,kogi_adavi,town_kogi_adavi_iruvucheba,Iruvucheba
+kogi,kogi_ajaokuta,town_kogi_ajaokuta_ajaokuta,Ajaokuta
+kogi,kogi_ajaokuta,town_kogi_ajaokuta_adogo,Adogo
+kogi,kogi_ajaokuta,town_kogi_ajaokuta_ganaja_village,Ganaja Village
+kogi,kogi_ajaokuta,town_kogi_ajaokuta_ebiya,Ebiya
+kogi,kogi_ajaokuta,town_kogi_ajaokuta_eganyi,Eganyi
+kogi,kogi_ankpa,town_kogi_ankpa_ankpa,Ankpa
+kogi,kogi_ankpa,town_kogi_ankpa_enabo,Enabo
+kogi,kogi_ankpa,town_kogi_ankpa_ojoku,Ojoku
+kogi,kogi_ankpa,town_kogi_ankpa_ogaji,Ogaji
+kogi,kogi_ankpa,town_kogi_ankpa_inye,Inye
+kogi,kogi_bassa,town_kogi_bassa_oguma,Oguma
+kogi,kogi_bassa,town_kogi_bassa_sheria,Sheria
+kogi,kogi_bassa,town_kogi_bassa_gboloko,Gboloko
+kogi,kogi_bassa,town_kogi_bassa_mozum,Mozum
+kogi,kogi_bassa,town_kogi_bassa_akakana,Akakana
+kogi,kogi_dekina,town_kogi_dekina_dekina,Dekina
+kogi,kogi_dekina,town_kogi_dekina_anyigba,Anyigba
+kogi,kogi_dekina,town_kogi_dekina_egume,Egume
+kogi,kogi_dekina,town_kogi_dekina_abocho,Abocho
+kogi,kogi_dekina,town_kogi_dekina_iyale,Iyale
+kogi,kogi_ibaji,town_kogi_ibaji_onyedega,Onyedega
+kogi,kogi_ibaji,town_kogi_ibaji_idah_ibaji_axis,Idah-Ibaji axis
+kogi,kogi_ibaji,town_kogi_ibaji_ejule_ojebe,Ejule Ojebe
+kogi,kogi_ibaji,town_kogi_ibaji_akpanyo,Akpanyo
+kogi,kogi_ibaji,town_kogi_ibaji_ujeh,Ujeh
+kogi,kogi_idah,town_kogi_idah_idah,Idah
+kogi,kogi_idah,town_kogi_idah_ede,Ede
+kogi,kogi_idah,town_kogi_idah_sabon_gari,Sabon Gari
+kogi,kogi_idah,town_kogi_idah_owoli_apa,Owoli Apa
+kogi,kogi_idah,town_kogi_idah_ichala,Ichala
+kogi,kogi_igalamela_odolu,town_kogi_igalamela_odolu_ajaka,Ajaka
+kogi,kogi_igalamela_odolu,town_kogi_igalamela_odolu_odolu,Odolu
+kogi,kogi_igalamela_odolu,town_kogi_igalamela_odolu_oforachi,Oforachi
+kogi,kogi_igalamela_odolu,town_kogi_igalamela_odolu_ekwuloko,Ekwuloko
+kogi,kogi_igalamela_odolu,town_kogi_igalamela_odolu_ubele,Ubele
+kogi,kogi_ijumu,town_kogi_ijumu_iyara,Iyara
+kogi,kogi_ijumu,town_kogi_ijumu_aiyetoro_gbede,Aiyetoro Gbede
+kogi,kogi_ijumu,town_kogi_ijumu_ekinrin_adde,Ekinrin-Adde
+kogi,kogi_ijumu,town_kogi_ijumu_ogidi,Ogidi
+kogi,kogi_ijumu,town_kogi_ijumu_iyamoye,Iyamoye
+kogi,kogi_kabba_bunu,town_kogi_kabba_bunu_kabba,Kabba
+kogi,kogi_kabba_bunu,town_kogi_kabba_bunu_aiyede,Aiyede
+kogi,kogi_kabba_bunu,town_kogi_kabba_bunu_odo_ape,Odo-Ape
+kogi,kogi_kabba_bunu,town_kogi_kabba_bunu_okebukun,Okebukun
+kogi,kogi_kabba_bunu,town_kogi_kabba_bunu_ayede_bunu,Ayede Bunu
+kogi,kogi_kogi,town_kogi_kogi_koton_karfe,Koton Karfe
+kogi,kogi_kogi,town_kogi_kogi_gegu_beki,Gegu Beki
+kogi,kogi_kogi,town_kogi_kogi_girinya,Girinya
+kogi,kogi_kogi,town_kogi_kogi_odaki,Odaki
+kogi,kogi_kogi,town_kogi_kogi_akpaku,Akpaku
+kogi,kogi_lokoja,town_kogi_lokoja_lokoja,Lokoja
+kogi,kogi_lokoja,town_kogi_lokoja_felele,Felele
+kogi,kogi_lokoja,town_kogi_lokoja_ganaja,Ganaja
+kogi,kogi_lokoja,town_kogi_lokoja_adankolo,Adankolo
+kogi,kogi_lokoja,town_kogi_lokoja_sarkin_noma,Sarkin Noma
+kogi,kogi_mopa_muro,town_kogi_mopa_muro_mopa,Mopa
+kogi,kogi_mopa_muro,town_kogi_mopa_muro_muro,Muro
+kogi,kogi_mopa_muro,town_kogi_mopa_muro_aiyedayo,Aiyedayo
+kogi,kogi_mopa_muro,town_kogi_mopa_muro_takete_ide,Takete Ide
+kogi,kogi_mopa_muro,town_kogi_mopa_muro_orokere,Orokere
+kogi,kogi_ofu,town_kogi_ofu_ugwolawo,Ugwolawo
+kogi,kogi_ofu,town_kogi_ofu_itobe,Itobe
+kogi,kogi_ofu,town_kogi_ofu_aloji,Aloji
+kogi,kogi_ofu,town_kogi_ofu_ochadamu,Ochadamu
+kogi,kogi_ofu,town_kogi_ofu_ejule,Ejule
+kogi,kogi_ogori_magongo,town_kogi_ogori_magongo_ogori,Ogori
+kogi,kogi_ogori_magongo,town_kogi_ogori_magongo_magongo,Magongo
+kogi,kogi_ogori_magongo,town_kogi_ogori_magongo_okibo,Okibo
+kogi,kogi_ogori_magongo,town_kogi_ogori_magongo_aiyeromi,Aiyeromi
+kogi,kogi_ogori_magongo,town_kogi_ogori_magongo_eni,Eni
+kogi,kogi_okehi,town_kogi_okehi_obangede,Obangede
+kogi,kogi_okehi,town_kogi_okehi_ihima,Ihima
+kogi,kogi_okehi,town_kogi_okehi_eika,Eika
+kogi,kogi_okehi,town_kogi_okehi_ohuepe,Ohuepe
+kogi,kogi_okehi,town_kogi_okehi_ohueta,Ohueta
+kogi,kogi_okene,town_kogi_okene_okene,Okene
+kogi,kogi_okene,town_kogi_okene_otutu,Otutu
+kogi,kogi_okene,town_kogi_okene_okengwe,Okengwe
+kogi,kogi_okene,town_kogi_okene_obehira,Obehira
+kogi,kogi_okene,town_kogi_okene_bariki,Bariki
+kogi,kogi_omala,town_kogi_omala_abejukolo,Abejukolo
+kogi,kogi_omala,town_kogi_omala_bagana,Bagana
+kogi,kogi_omala,town_kogi_omala_ogodu,Ogodu
+kogi,kogi_omala,town_kogi_omala_olla,Olla
+kogi,kogi_omala,town_kogi_omala_akpacha,Akpacha
+kogi,kogi_yagba_east,town_kogi_yagba_east_isanlu,Isanlu
+kogi,kogi_yagba_east,town_kogi_yagba_east_ejuku,Ejuku
+kogi,kogi_yagba_east,town_kogi_yagba_east_mopa_east_axis,Mopa East axis
+kogi,kogi_yagba_east,town_kogi_yagba_east_ifin,Ifin
+kogi,kogi_yagba_east,town_kogi_yagba_east_ife_olukotun,Ife Olukotun
+kogi,kogi_yagba_west,town_kogi_yagba_west_odo_ere,Odo Ere
+kogi,kogi_yagba_west,town_kogi_yagba_west_egbe,Egbe
+kogi,kogi_yagba_west,town_kogi_yagba_west_odo_eri,Odo Eri
+kogi,kogi_yagba_west,town_kogi_yagba_west_okoloke,Okoloke
+kogi,kogi_yagba_west,town_kogi_yagba_west_ejiba,Ejiba
+kogi,kogi_ogori,town_kogi_ogori_ogori,Ogori
+kogi,kogi_ogori,town_kogi_ogori_magongo,Magongo
+kogi,kogi_ogori,town_kogi_ogori_okibo,Okibo
+kogi,kogi_ogori,town_kogi_ogori_uro,Uro
+kogi,kogi_ogori,town_kogi_ogori_aiyeromi,Aiyeromi

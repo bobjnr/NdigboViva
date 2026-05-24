@@ -14,7 +14,7 @@ import dropdownData from '@/lib/dropdown-data.json'
 import csvDropdownData from '@/lib/csv-dropdown-data.json'
 import originDropdownData from '@/lib/nigerian-origin-dropdown-data.json'
 import { nigerianGeoZones } from '@/lib/extended-location-data'
-import { getWardOptions } from '@/lib/nigeria-dropdown-utils'
+import { getLookupOptions, getWardOptions } from '@/lib/nigeria-dropdown-utils'
 import type { OntologyEntity } from '@/lib/ontology-types'
 import { useOntologyChildren } from '@/lib/use-ontology-children'
 
@@ -166,9 +166,16 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
   }, [activeTab, formData.isDiasporaRelative, diasporaData, isLoadingDiaspora])
 
   const csvTownOptions = ((originDropdownData as any).townsByLgaName?.[formData.originLocalGovernmentArea || ''] as string[]) ?? []
+  const originWardOptions = getLookupOptions(
+    (originDropdownData as any).originWardsByLgaName,
+    formData.originLocalGovernmentArea
+  )
+  const currentCsvTownOptions =
+    ((csvDropdownData as any).townsByLgaName?.[formData.currentLocalGovernmentArea || ''] as string[]) ?? []
   const csvOriginStateOptions = CSV_ORIGIN_STATES.map((entry: OriginStateOption) => entry.state)
   const csvOriginLgaOptions = CSV_ORIGIN_STATES.find((entry: OriginStateOption) => entry.state === formData.originState)?.lgas ?? []
   const nigerianTownOptions = mergeUniqueOptions(csvTownOptions)
+  const currentNigerianTownOptions = mergeUniqueOptions(currentCsvTownOptions)
   const csvTownLevel1Options = getHierarchyOptions(
     ((originDropdownData as any).level1sByTownName ?? (csvDropdownData as any).level1sByTownName),
     formData.originTown
@@ -961,7 +968,7 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                     disabled={!formData.originLocalGovernmentArea}
                   >
                     <option value="">Select Ward</option>
-                    {getWardOptions(formData.originState, formData.originLocalGovernmentArea).map((w: string) => (
+                    {originWardOptions.map((w: string) => (
                       <option key={w} value={w}>{w}</option>
                     ))}
                   </select>
@@ -2422,7 +2429,19 @@ export default function PersonForm({ onSubmit }: PersonFormProps) {
                   <label className="block text-sm font-medium text-gray-700 mb-1">
                     {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? 'Current Town/City' : 'City / Town'}
                   </label>
-                  {diasporaData && (formData.currentRegion || formData.currentNationality) ? (
+                  {formData.currentNationality?.toUpperCase() === 'NIGERIA' ? (
+                    <select
+                      value={formData.currentTown || ''}
+                      onChange={(e) => handleInputChange('currentTown', e.target.value)}
+                      className="w-full px-4 py-2 border border-gray-300 rounded-lg"
+                      disabled={!formData.currentLocalGovernmentArea}
+                    >
+                      <option value="">Select City/Town</option>
+                      {currentNigerianTownOptions.map((town: string) => (
+                        <option key={town} value={town}>{town}</option>
+                      ))}
+                    </select>
+                  ) : diasporaData && (formData.currentRegion || formData.currentNationality) ? (
                     <select
                       value={formData.currentTown || ''}
                       onChange={(e) => handleInputChange('currentTown', e.target.value)}

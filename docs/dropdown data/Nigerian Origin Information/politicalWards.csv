@@ -1,0 +1,2834 @@
+id,name,lgaId,officialOrder
+abia_aba_north_eziama,Eziama,abia_aba_north,1
+abia_aba_north_industrial_area,Industrial Area,abia_aba_north,2
+abia_aba_north_osusu_i,Osusu I,abia_aba_north,3
+abia_aba_north_osusu_ii,Osusu II,abia_aba_north,4
+abia_aba_north_st_eugenes_by_okigwe_rd,St. Eugenes By Okigwe Rd.,abia_aba_north,5
+abia_aba_north_uratta,Uratta,abia_aba_north,6
+abia_aba_north_old_aba_gra,Old Aba Gra,abia_aba_north,7
+abia_aba_north_umuola,Umuola,abia_aba_north,8
+abia_aba_north_ariaria_market,Ariaria Market,abia_aba_north,9
+abia_aba_north_ogbor_i,Ogbor I,abia_aba_north,10
+abia_aba_north_ogbor_ii,Ogbor II,abia_aba_north,11
+abia_aba_north_umuogor,Umuogor,abia_aba_north,12
+,,,
+abia_aba_south_eziukwu,Eziukwu,abia_aba_south,1
+abia_aba_south_asa,Asa,abia_aba_south,2
+abia_aba_south_enyimba,Enyimba,abia_aba_south,3
+abia_aba_south_ngwa,Ngwa,abia_aba_south,4
+abia_aba_south_ohazu_i,Ohazu I,abia_aba_south,5
+abia_aba_south_ohazu_ii,Ohazu II,abia_aba_south,6
+abia_aba_south_igwebuike,Igwebuike,abia_aba_south,7
+abia_aba_south_ekeoha,Ekeoha,abia_aba_south,8
+abia_aba_south_gloucester,Gloucester,abia_aba_south,9
+abia_aba_south_mosque,Mosque,abia_aba_south,10
+abia_aba_south_aba_river,Aba River,abia_aba_south,11
+abia_aba_south_aba_town_hall,Aba Town Hall,abia_aba_south,12
+,,,
+abia_arochukwu_ovukwu,Ovukwu,abia_arochukwu,1
+abia_arochukwu_ohaeke,Ohaeke,abia_arochukwu,2
+abia_arochukwu_ohafor_i,Ohafor I,abia_arochukwu,3
+abia_arochukwu_ohafor_ii,Ohafor II,abia_arochukwu,4
+abia_arochukwu_arochukwu_i,Arochukwu I,abia_arochukwu,5
+abia_arochukwu_arochukwu_ii,Arochukwu II,abia_arochukwu,6
+abia_arochukwu_ikwun_ihechiowa,Ikwun Ihechiowa,abia_arochukwu,7
+abia_arochukwu_eleoha_ihechiowa,Eleoha Ihechiowa,abia_arochukwu,8
+abia_arochukwu_ututu,Ututu,abia_arochukwu,9
+abia_arochukwu_isu,Isu,abia_arochukwu,10
+abia_arochukwu_arochukwu_iii,Arochukwu III,abia_arochukwu,11
+,,,
+abia_bende_amankalu_akoliufu,Amankalu/Akoliufu,abia_bende,1
+abia_bende_bende,Bende,abia_bende,2
+abia_bende_ugwueke_ezeukwu,Ugwueke/Ezeukwu,abia_bende,3
+abia_bende_igbere_a,Igbere A,abia_bende,4
+abia_bende_igbere_b,Igbere B,abia_bende,5
+abia_bende_item_a,Item A,abia_bende,6
+abia_bende_item_b,Item B,abia_bende,7
+abia_bende_item_c,Item C,abia_bende,8
+abia_bende_ozuitem,Ozuitem,abia_bende,9
+abia_bende_umuhu_ezechi,Umuhu/Ezechi,abia_bende,10
+abia_bende_umu_imeny,iUmu-Imenyi,abia_bende,11
+abia_bende_uzuakoli,Uzuakoli,abia_bende,12
+,,,
+abia_ikwuano_oloko_i,Oloko I,abia_ikwuano,1
+abia_ikwuano_oloko_ii,Oloko II,abia_ikwuano,2
+abia_ikwuano_ibere_i,Ibere I,abia_ikwuano,3
+abia_ikwuano_ibere_ii,Ibere II,abia_ikwuano,4
+abia_ikwuano_oboro_i,Oboro I,abia_ikwuano,5
+abia_ikwuano_oboro_ii,Oboro II,abia_ikwuano,6
+abia_ikwuano_oboro_iii,Oboro III,abia_ikwuano,7
+abia_ikwuano_oboro_iv,Oboro IV,abia_ikwuano,8
+abia_ikwuano_ariam,Ariam,abia_ikwuano,9
+abia_ikwuano_usaka,Usaka,abia_ikwuano,10
+,,,
+abia_isiala_ngwa_north_amasaa_nsulu,Amasaa Nsulu,abia_isiala_ngwa_north,1
+abia_isiala_ngwa_north_umunna_nsulu,Umunna Nsulu,abia_isiala_ngwa_north,2
+abia_isiala_ngwa_north_isiala_nsulu,Isiala Nsulu,abia_isiala_ngwa_north,3
+abia_isiala_ngwa_north_ngwa_ukwu_i,Ngwa Ukwu I,abia_isiala_ngwa_north,4
+abia_isiala_ngwa_north_ngwa_ukwu_ii,Ngwa Ukwu II,abia_isiala_ngwa_north,5
+abia_isiala_ngwa_north_ihie,Ihie,abia_isiala_ngwa_north,6
+abia_isiala_ngwa_north_amasaa_ntigha,Amasaa Ntigha,abia_isiala_ngwa_north,7
+abia_isiala_ngwa_north_amapu_ntigha,Amapu Ntigha,abia_isiala_ngwa_north,8
+abia_isiala_ngwa_north_umuoha,Umuoha,abia_isiala_ngwa_north,9
+abia_isiala_ngwa_north_mbawsi_umuomainta,Mbawsi/Umuomainta,abia_isiala_ngwa_north,10
+,,,
+abia_isiala_ngwa_south_amaise_amaise_anaba,Amaise/Amaise Anaba,abia_isiala_ngwa_south,1
+abia_isiala_ngwa_south_ngwaobi,Ngwaobi,abia_isiala_ngwa_south,2
+abia_isiala_ngwa_south_mbutu_ukwu,Mbutu Ukwu,abia_isiala_ngwa_south,3
+abia_isiala_ngwa_south_mbutu_ngwa,Mbutu Ngwa,abia_isiala_ngwa_south,4
+abia_isiala_ngwa_south_ehina_guru_osokwa,Ehina Guru Osokwa,abia_isiala_ngwa_south,5
+abia_isiala_ngwa_south_akunekpu_eziama_na_obuba,Akunekpu Eziama Na Obuba,abia_isiala_ngwa_south,6
+abia_isiala_ngwa_south_omoba,Omoba,abia_isiala_ngwa_south,7
+abia_isiala_ngwa_south_ovungwu,Ovungwu,abia_isiala_ngwa_south,8
+abia_isiala_ngwa_south_ovuokwu,Ovuokwu,abia_isiala_ngwa_south,9
+abia_isiala_ngwa_south_okporo_ahaba,Okporo Ahaba,abia_isiala_ngwa_south,10
+,,,
+abia_isuikwuato_imenyI,Imenyi,abia_isuikwuato,1
+abia_isuikwuato_ezere,Ezere,abia_isuikwuato,2
+abia_isuikwuato_isiala_amawu,Isiala Amawu,abia_isuikwuato,3
+abia_isuikwuato_isu_amawu,Isu Amawu,abia_isuikwuato,4
+abia_isuikwuato_ogunduasa,Ogunduasa,abia_isuikwuato,5
+abia_isuikwuato_umunnekwu,Umunnekwu,abia_isuikwuato,6
+abia_isuikwuato_achara_mgbugwu,Achara/Mgbugwu,abia_isuikwuato,7
+abia_isuikwuato_ikeagha_i,Ikeagha I,abia_isuikwuato,8
+abia_isuikwuato_ikeagha_ii,Ikeagha II,abia_isuikwuato,9
+abia_isuikwuato_umuanyi_absu,Umuanyi/Absu,abia_isuikwuato,10
+,,,
+abia_obingwa_abayi_i,Abayi I,abia_obingwa,1
+abia_obingwa_abayi_ii,Abayi II,abia_obingwa,2
+abia_obingwa_mgboko_umuannunu,Mgboko Umuannunu,abia_obingwa,3
+abia_obingwa_mgboko_itungwa,Mgboko Itungwa,abia_obingwa,4
+abia_obingwa_ahiaba,Ahiaba,abia_obingwa,5
+abia_obingwa_maboko_amairi,Maboko Amairi,abia_obingwa,6
+abia_obingwa_alaukwu_ohanze,Alaukwu Ohanze,abia_obingwa,7
+abia_obingwa_akumaimo,Akumaimo,abia_obingwa,8
+abia_obingwa_ndiakata_amairinabua,Ndiakata/Amairinabua,abia_obingwa,9
+abia_obingwa_ntighauzo_amairi,Ntighauzo Amairi,abia_obingwa,10
+abia_obingwa_ibeme,Ibeme,abia_obingwa,11
+,,,
+abia_ohafia_isiama_ohafia,Isiama Ohafia,abia_ohafia,1
+abia_ohafia_ebem_ohafia,Ebem Ohafia,abia_ohafia,2
+abia_ohafia_ndi_elu_nkporo,Ndi Elu Nkporo,abia_ohafia,3
+abia_ohafia_ndi_etiti_nkporo,Ndi Etiti Nkporo,abia_ohafia,4
+abia_ohafia_amaeke_abiriba,Amaeke Abiriba,abia_ohafia,5
+abia_ohafia_amaogudu_abiriba,Amaogudu Abiriba,abia_ohafia,6
+abia_ohafia_agboji_abiriba,Agboji Abiriba,abia_ohafia,7
+abia_ohafia_ohafor_ohafia,Ohafor Ohafia,abia_ohafia,8
+abia_ohafia_okamu_ohafia,Okamu Ohafia,abia_ohafia,9
+abia_ohafia_ania_ohafia,Ania Ohafia,abia_ohafia,10
+abia_ohafia_ndi_agbo_nkporo,Ndi Agbo Nkporo,abia_ohafia,11
+,,,
+abia_osisoma_amavo,Amavo,abia_osisoma,1
+abia_osisoma_amaitolu_mbutu_umuojima,Amaitolu Mbutu Umuojima,abia_osisoma,2
+abia_osisoma_amasator,Amasator,abia_osisoma,3
+abia_osisoma_aro_ngwa,Aro-Ngwa,abia_osisoma,4
+abia_osisoma_ama_asaa,Ama-Asaa,abia_osisoma,5
+abia_osisoma_oso_okwa,Oso-Okwa,abia_osisoma,6
+abia_osisoma_uratta,Uratta,abia_osisoma,7
+abia_osisoma_amator,Amator,abia_osisoma,8
+abia_osisoma_umunneise,Umunneise,abia_osisoma,9
+abia_osisoma_okporumuobo,Okporumuobo,abia_osisoma,10
+,,,
+abia_ugwunagbo_ward_one,Ward One,abia_ugwunagbo,1
+abia_ugwunagbo_ward_two,Ward Two,abia_ugwunagbo,2
+abia_ugwunagbo_ward_three,Ward Three,abia_ugwunagbo,3
+abia_ugwunagbo_ward_four,Ward Four,abia_ugwunagbo,4
+abia_ugwunagbo_ward_five,Ward Five,abia_ugwunagbo,5
+abia_ugwunagbo_ward_six,Ward Six,abia_ugwunagbo,6
+abia_ugwunagbo_ward_seven,Ward Seven,abia_ugwunagbo,7
+abia_ugwunagbo_ward_eight,Ward Eight,abia_ugwunagbo,8
+abia_ugwunagbo_ward_nine,Ward Nine,abia_ugwunagbo,9
+abia_ugwunagbo_ward_ten,Ward Ten,abia_ugwunagbo,10
+,,,
+abia_ukwa_east_ikwuriator_east,Ikwuriator East,abia_ukwa_east,1
+abia_ukwa_east_ikwuriator_west,Ikwuriator West,abia_ukwa_east,2
+abia_ukwa_east_azumini,Azumini,abia_ukwa_east,3
+abia_ukwa_east_umuigube_achara,Umuigube Achara,abia_ukwa_east,4
+abia_ukwa_east_akwete,Akwete,abia_ukwa_east,5
+abia_ukwa_east_obohia,Obohia,abia_ukwa_east,6
+abia_ukwa_east_ikwueke_east,Ikwueke East,abia_ukwa_east,7
+abia_ukwa_east_ikwueke_west,Ikwueke West,abia_ukwa_east,8
+abia_ukwa_east_nkporobe_ohuru,Nkporobe/Ohuru,abia_ukwa_east,9
+abia_ukwa_east_ikwuorie,Ikwuorie,abia_ukwa_east,10
+,,,
+abia_ukwa_west_asa_north,Asa North,abia_ukwa_west,1
+abia_ukwa_west_obokwe,Obokwe,abia_ukwa_west,2
+abia_ukwa_west_ogwe,Ogwe,abia_ukwa_west,3
+abia_ukwa_west_asa_south,Asa South,abia_ukwa_west,4
+abia_ukwa_west_obuzor,Obuzor,abia_ukwa_west,5
+abia_ukwa_west_ipu_west,Ipu West,abia_ukwa_west,6
+abia_ukwa_west_ipu_east,Ipu East,abia_ukwa_west,7
+abia_ukwa_west_ipu_south,Ipu South,abia_ukwa_west,8
+abia_ukwa_west_ozaa_ukwu,Ozaa Ukwu,abia_ukwa_west,9
+abia_ukwa_west_ozaa_west,Ozaa West,abia_ukwa_west,10
+,,,
+abia_umuahia_north_ibeku_east_i,Ibeku East I,abia_umuahia_north,1
+abia_umuahia_north_ibeku_east_ii,Ibeku East II,abia_umuahia_north,2
+abia_umuahia_north_ndume,Ndume,abia_umuahia_north,3
+abia_umuahia_north_ibeku_west,Ibeku West,abia_umuahia_north,4
+abia_umuahia_north_umuahia_urban_i,Umuahia Urban I,abia_umuahia_north,5
+abia_umuahia_north_umuahia_urban_ii,Umuahia Urban II,abia_umuahia_north,6
+abia_umuahia_north_umuahia_urban_iii,Umuahia Urban III,abia_umuahia_north,7
+abia_umuahia_north_nkwoachara,Nkwoachara,abia_umuahia_north,8
+abia_umuahia_north_nkwoegwu,Nkwoegwu,abia_umuahia_north,9
+abia_umuahia_north_afugiri,Afugiri,abia_umuahia_north,10
+abia_umuahia_north_umuhu,Umuhu,abia_umuahia_north,11
+abia_umuahia_north_isingwu,Isingwu,abia_umuahia_north,12
+,,,
+abia_umuahia_south_ezeleke_ogbodiukwu,Ezeleke/Ogbodiukwu,abia_umuahia_south,1
+abia_umuahia_south_omaegwu,Omaegwu,abia_umuahia_south,2
+abia_umuahia_south_ohiaocha,Ohiaocha,abia_umuahia_south,3
+abia_umuahia_south_ahiaukwu_i,Ahiaukwu I,abia_umuahia_south,4
+abia_umuahia_south_ahiaukwu_ii,Ahiaukwu II,abia_umuahia_south,5
+abia_umuahia_south_old_umuahia,Old Umuahia,abia_umuahia_south,6
+abia_umuahia_south_amakama,Amakama,abia_umuahia_south,7
+abia_umuahia_south_ubakala_a,Ubakala A,abia_umuahia_south,8
+abia_umuahia_south_nsirimo,Nsirimo,abia_umuahia_south,9
+abia_umuahia_south_ubakala_b,Ubakala B,abia_umuahia_south,10
+,,,
+abia_umunneochi_amuda,Amuda,abia_umunneochi,1
+abia_umunneochi_umuaku,Umuaku,abia_umunneochi,2
+abia_umunneochi_mbala_achara,Mbala/Achara,abia_umunneochi,3
+abia_umunneochi_ezingodo,Ezingodo,abia_umunneochi,4
+abia_umunneochi_ndiawa_umuelem_i,Ndiawa/Umuelem/I,abia_umunneochi,5
+abia_umunneochi_eziama_ugwu,Eziama Ugwu,abia_umunneochi,6
+abia_umunneochi_eziama_agbo,Eziama-Agbo,abia_umunneochi,7
+abia_umunneochi_ubahu_akawa_arokpa,Ubahu/Akawa/Arokpa,abia_umunneochi,8
+abia_umunneochi_umuchieze_i,Umuchieze I,abia_umunneochi,9
+abia_umunneochi_umuchieze_ii,Umuchieze II,abia_umunneochi,10
+abia_umunneochi_umuchieze_iii,Umuchieze III,abia_umunneochi,11
+abia_umunneochi_obinolu_obiagu_la,Obinolu/Obiagu/La,abia_umunneochi,12
+,,,
+anambra_aguata_achina_i,Achina I,anambra_aguata,1
+anambra_aguata_achina_ii,Achina II,anambra_aguata,2
+anambra_aguata_agulueze_chukwu,Agulueze Chukwu,anambra_aguata,3
+anambra_aguata_akpo,Akpo,anambra_aguata,4
+anambra_aguata_amesi,Amesi,anambra_aguata,5
+anambra_aguata_ekwulobia_i,Ekwulobia I,anambra_aguata,6
+anambra_aguata_ekwulobia_ii,Ekwulobia II,anambra_aguata,7
+anambra_aguata_ezinifite_i,Ezinifite I,anambra_aguata,8
+anambra_aguata_ezinifite_ii,Ezinifite II,anambra_aguata,9
+anambra_aguata_igbo_ukwu_i,Igbo Ukwu I,anambra_aguata,10
+anambra_aguata_igbo_ukwu_ii,Igbo Ukwu II,anambra_aguata,11
+anambra_aguata_ikenga,Ikenga,anambra_aguata,12
+anambra_aguata_isuofia,Isuofia,anambra_aguata,13
+anambra_aguata_nkpologwu,Nkpologwu,anambra_aguata,14
+anambra_aguata_oraeri,Oraeri,anambra_aguata,15
+anambra_aguata_uga_i,Uga I,anambra_aguata,16
+anambra_aguata_uga_ii,Uga II,anambra_aguata,17
+anambra_aguata_umuchu_i,Umuchu I,anambra_aguata,18
+anambra_aguata_umuchu_ii,Umuchu II,anambra_aguata,19
+anambra_aguata_omuona,Omuona,anambra_aguata,20
+,,,
+anambra_ayamulum_anaku,Anaku,anambra_ayamulum,1
+anambra_ayamulum_ifite_ogwari_i,Ifite Ogwari I,anambra_ayamulum,2
+anambra_ayamulum_ifite_ogwari_ii,Ifite Ogwari II,anambra_ayamulum,3
+anambra_ayamulum_igbakwu,Igbakwu,anambra_ayamulum,4
+anambra_ayamulum_omasi,Omasi,anambra_ayamulum,5
+anambra_ayamulum_omor_i,Omor I,anambra_ayamulum,6
+anambra_ayamulum_omor_ii,Omor II,anambra_ayamulum,7
+anambra_ayamulum_omor_iii,Omor III,anambra_ayamulum,8
+anambra_ayamulum_umu_elum,Umu Elum,anambra_ayamulum,9
+anambra_ayamulum_umueje,Umueje,anambra_ayamulum,10
+anambra_ayamulum_umumbo,Umumbo,anambra_ayamulum,11
+,,,
+anambra_anambra_east_aguleri_i,Aguleri I,anambra_anambra_east,1
+anambra_anambra_east_aguleri_ii,Aguleri II,anambra_anambra_east,2
+anambra_anambra_east_enugwu_otu,Enugwu-Otu,anambra_anambra_east,3
+anambra_anambra_east_eziagulu_otu,Eziagulu-Otu,anambra_anambra_east,4
+anambra_anambra_east_igbariam,Igbariam,anambra_anambra_east,5
+anambra_anambra_east_nando_i,Nando I,anambra_anambra_east,6
+anambra_anambra_east_nando_ii,Nando II,anambra_anambra_east,7
+anambra_anambra_east_nando_iii,Nando III,anambra_anambra_east,8
+anambra_anambra_east_nsugbe_i,Nsugbe I,anambra_anambra_east,9
+anambra_anambra_east_nsugbe_ii,Nsugbe II,anambra_anambra_east,10
+anambra_anambra_east_otuochai,Otuocha I,anambra_anambra_east,11
+anambra_anambra_east_otuochaii,Otuocha II,anambra_anambra_east,12
+anambra_anambra_east_omureli_i,Omureli I,anambra_anambra_east,13
+anambra_anambra_east_omureli_ii,Omureli II,anambra_anambra_east,14
+anambra_anambra_east_umuoba_anam,Umuoba-Anam,anambra_anambra_east,15
+,,,
+anambra_anambra_west_ifite_anam,Ifite Anam,anambra_anambra_west,1
+anambra_anambra_west_nzam,Nzam,anambra_anambra_west,2
+anambra_anambra_west_olumbanasa_ode,Olumbanasa-Ode,anambra_anambra_west,3
+anambra_anambra_west_olumbanasa_inoma,Olumbanasa-Inoma,anambra_anambra_west,4
+anambra_anambra_west_oroma_etiti_anam,Oroma Etiti Anam,anambra_anambra_west,5
+anambra_anambra_west_umuenwelum_anam,Umuenwelum Anam,anambra_anambra_west,6
+anambra_anambra_west_umueze_anam_i,Umueze Anam I,anambra_anambra_west,7
+anambra_anambra_west_umueze_anam_ii,Umueze Anam II,anambra_anambra_west,8
+anambra_anambra_west_umuoba_anam,Umuoba Anam,anambra_anambra_west,9
+,,,
+anambra_anaocha_adazi_ani,Adazi Ani,anambra_anaocha,1
+anambra_anaocha_adazi_ii,Adazi II,anambra_anaocha,2
+anambra_anaocha_adazi_enui_i,Adazi Enui I,anambra_anaocha,3
+anambra_anaocha_adazi_enui_ii,Adazi Enui II,anambra_anaocha,4
+anambra_anaocha_adazi_nnukwu_i,Adazi Nnukwu I,anambra_anaocha,5
+anambra_anaocha_adazi_nnukwu_ii,Adazi Nnukwu II,anambra_anaocha,6
+anambra_anaocha_agulu_i,Agulu I,anambra_anaocha,7
+anambra_anaocha_agulu_ii,Agulu II,anambra_anaocha,8
+anambra_anaocha_agulu_iii,Agulu III,anambra_anaocha,9
+anambra_anaocha_agulu_iv,Agulu IV,anambra_anaocha,10
+anambra_anaocha_agulu_uzoigbo,Agulu Uzoigbo,anambra_anaocha,11
+anambra_anaocha_akwaeze,Akwaeze,anambra_anaocha,12
+anambra_anaocha_ichida_i,Ichida I,anambra_anaocha,13
+anambra_anaocha_ichida_ii,Ichida II,anambra_anaocha,14
+anambra_anaocha_neni_i,Neni I,anambra_anaocha,15
+anambra_anaocha_neni_ii,Neni II,anambra_anaocha,16
+anambra_anaocha_nri_i,Nri I,anambra_anaocha,17
+anambra_anaocha_nri_ii,Nri II,anambra_anaocha,18
+anambra_anaocha_obeled,Obeledu,anambra_anaocha,19
+,,,
+anambra_awka_north_achalla_i,Achalla I,anambra_awka_north,1
+anambra_awka_north_achalla_ii,Achalla II,anambra_awka_north,2
+anambra_awka_north_achalla_iii,Achalla III,anambra_awka_north,3
+anambra_awka_north_amansea,Amansea,anambra_awka_north,4
+anambra_awka_north_amanuke,Amanuke,anambra_awka_north,5
+anambra_awka_north_awba_ofemmili,Awba Ofemmili,anambra_awka_north,6
+anambra_awka_north_ebenebe_i,Ebenebe I,anambra_awka_north,7
+anambra_awka_north_ebenebe_ii,Ebenebe II,anambra_awka_north,8
+anambra_awka_north_ebenebe_iii,Ebenebe III,anambra_awka_north,9
+anambra_awka_north_isu_aniocha,Isu Aniocha,anambra_awka_north,10
+anambra_awka_north_mgbakwu_i,Mgbakwu I,anambra_awka_north,11
+anambra_awka_north_ugbene,Ugbene,anambra_awka_north,12
+anambra_awka_north_ugbenu,Ugbenu,anambra_awka_north,13
+anambra_awka_north_urum,Urum,anambra_awka_north,14
+,,,
+anambra_awka_south_ogu_oka,Ogu Oka,anambra_awka_south,1
+anambra_awka_south_amawbia_i,Amawbia I,anambra_awka_south,2
+anambra_awka_south_amawbia_ii,Amawbia II,anambra_awka_south,3
+anambra_awka_south_amawbia_iii,Amawbia III,anambra_awka_south,4
+anambra_awka_south_awka_i,Awka I,anambra_awka_south,5
+anambra_awka_south_awka_ii,Awka II,anambra_awka_south,6
+anambra_awka_south_awka_iii,Awka III,anambra_awka_south,7
+anambra_awka_south_awka_iv,Awka IV,anambra_awka_south,8
+anambra_awka_south_awka_v,Awka V,anambra_awka_south,9
+anambra_awka_south_awka_vi,Awka VI,anambra_awka_south,10
+anambra_awka_south_awka_vii,Awka VII,anambra_awka_south,11
+anambra_awka_south_ezinato_isiagu,Ezinato/Isiagu,anambra_awka_south,12
+anambra_awka_south_mba_ukwu,Mba Ukwu,anambra_awka_south,13
+anambra_awka_south_nibo_i,Nibo I,anambra_awka_south,14
+anambra_awka_south_nibo_ii,Nibo II,anambra_awka_south,15
+anambra_awka_south_nibo_iii,Nibo III,anambra_awka_south,16
+anambra_awka_south_nise_i,Nise I,anambra_awka_south,17
+anambra_awka_south_nise_ii,Nise II,anambra_awka_south,18
+anambra_awka_south_okpuno,Okpuno,anambra_awka_south,19
+anambra_awka_south_umuawulu,Umuawulu,anambra_awka_south,20
+,,,
+anambra_dunukofia_akwa,Akwa,anambra_dunukofia,1
+anambra_dunukofia_ifitedunu_i,Ifitedunu I,anambra_dunukofia,2
+anambra_dunukofia_ifitedunu_ii,Ifitedunu II,anambra_dunukofia,3
+anambra_dunukofia_nawgu_i,Nawgu I,anambra_dunukofia,4
+anambra_dunukofia_nawgu_ii,Nawgu II,anambra_dunukofia,5
+anambra_dunukofia_ukpo_i,Ukpo I,anambra_dunukofia,6
+anambra_dunukofia_ukpo_ii,Ukpo II,anambra_dunukofia,7
+anambra_dunukofia_ukpo_iii,Ukpo III,anambra_dunukofia,8
+anambra_dunukofia_ukwulu_i,Ukwulu I,anambra_dunukofia,9
+anambra_dunukofia_ukwulu_ii,Ukwulu II,anambra_dunukofia,10
+anambra_dunukofia_umudioka_i,Umudioka I,anambra_dunukofia,11
+anambra_dunukofia_umudioka_ii,Umudioka II,anambra_dunukofia,12
+anambra_dunukofia_umunnachi_i,Umunnachi I,anambra_dunukofia,13
+anambra_dunukofia_umunnachi_ii,Umunnachi II,anambra_dunukofia,14
+,,,
+anambra_ekwusigo_ichi,Ichi,anambra_ekwusigo,1
+anambra_ekwusigo_ihembosi_anaubahu,Ihembosi/Anaubahu,anambra_ekwusigo,2
+anambra_ekwusigo_oraifite_i,Oraifite I,anambra_ekwusigo,3
+anambra_ekwusigo_oraifite_ii,Oraifite II,anambra_ekwusigo,4
+anambra_ekwusigo_oraifite_iii,Oraifite III,anambra_ekwusigo,5
+anambra_ekwusigo_ozubulu_i,Ozubulu I,anambra_ekwusigo,6
+anambra_ekwusigo_ozubulu_ii,Ozubulu II,anambra_ekwusigo,7
+anambra_ekwusigo_ozubulu_iii,Ozubulu III,anambra_ekwusigo,8
+anambra_ekwusigo_ozubulu_iv,Ozubulu IV,anambra_ekwusigo,9
+anambra_ekwusigo_ozubulu_v,Ozubulu V,anambra_ekwusigo,10
+anambra_ekwusigo_amakwa_iii,Amakwa III,anambra_ekwusigo,11
+anambra_ekwusigo_ihiteoha,Ihiteoha,anambra_ekwusigo,12
+,,,
+anambra_idemili_north_abacha,Abacha,anambra_idemili_north,1
+anambra_idemili_north_abatete,Abatete,anambra_idemili_north,2
+anambra_idemili_north_eziowelle,Eziowelle,anambra_idemili_north,3
+anambra_idemili_north_ideani,Ideani,anambra_idemili_north,4
+anambra_idemili_north_nkpor_i,Nkpor I,anambra_idemili_north,5
+anambra_idemili_north_nkpor_ii,Nkpor II,anambra_idemili_north,6
+anambra_idemili_north_obosi,Obosi,anambra_idemili_north,7
+anambra_idemili_north_ogidi_i,Ogidi I,anambra_idemili_north,8
+anambra_idemili_north_ogidi_ii,Ogidi II,anambra_idemili_north,9
+anambra_idemili_north_oraukwu,Oraukwu,anambra_idemili_north,10
+anambra_idemili_north_uke,Uke,anambra_idemili_north,11
+anambra_idemili_north_umuoji,Umuoji,anambra_idemili_north,12
+,,,
+anambra_idemili_south_alor_i,Alor I,anambra_idemili_south,1
+anambra_idemili_south_alor_ii,Alor II,anambra_idemili_south,2
+anambra_idemili_south_akwa_etiti_i,Akwa-Etiti I,anambra_idemili_south,3
+anambra_idemili_south_akwa_etiti_ii,Akwa-Etiti II,anambra_idemili_south,4
+anambra_idemili_south_nnobi_i,Nnobi I,anambra_idemili_south,5
+anambra_idemili_south_nnobi_ii,Nnobi II,anambra_idemili_south,6
+anambra_idemili_south_nnobi_iii,Nnobi III,anambra_idemili_south,7
+anambra_idemili_south_nnokwa,Nnokwa,anambra_idemili_south,8
+anambra_idemili_south_oba_i,Oba I,anambra_idemili_south,9
+anambra_idemili_south_oba_ii,Oba II,anambra_idemili_south,10
+anambra_idemili_south_ojoto,Ojoto,anambra_idemili_south,11
+,,,
+anambra_ihiala_amamu_i,Amamu I,anambra_ihiala,1
+anambra_ihiala_amamu_ii,Amamu II,anambra_ihiala,2
+anambra_ihiala_amoka,Amoka,anambra_ihiala,3
+anambra_ihiala_azia,Azia,anambra_ihiala,4
+anambra_ihiala_ihite,Ihite,anambra_ihiala,5
+anambra_ihiala_isseke,Isseke,anambra_ihiala,6
+anambra_ihiala_ogbolo,Ogbolo,anambra_ihiala,7
+anambra_ihiala_okija_i,Okija I,anambra_ihiala,8
+anambra_ihiala_okija_ii,Okija II,anambra_ihiala,9
+anambra_ihiala_okija_iii,Okija III,anambra_ihiala,10
+anambra_ihiala_okija_iv,Okija IV,anambra_ihiala,11
+anambra_ihiala_okija_v,Okija V,anambra_ihiala,12
+anambra_ihiala_orsumoghu,Orsumoghu,anambra_ihiala,13
+anambra_ihiala_ubuluisiuzor,Ubuluisiuzor,anambra_ihiala,14
+anambra_ihiala_uli_i,Uli I,anambra_ihiala,15
+anambra_ihiala_uli_ii,Uli II,anambra_ihiala,16
+anambra_ihiala_uli_iii,Uli III,anambra_ihiala,17
+anambra_ihiala_lilu,Lilu,anambra_ihiala,18
+anambra_ihiala_uzoakwa,Uzoakwa,anambra_ihiala,19
+anambra_ihiala_mbosi,Mbosi,anambra_ihiala,20
+,,,
+anambra_njikoka_abba_i,Abba I,anambra_njikoka,1
+anambra_njikoka_abba_ii,Abba II,anambra_njikoka,2
+anambra_njikoka_abagana_i,Abagana I,anambra_njikoka,3
+anambra_njikoka_abagana_ii,Abagana II,anambra_njikoka,4
+anambra_njikoka_abagana_iii,Abagana III,anambra_njikoka,5
+anambra_njikoka_abagana_iv,Abagana IV,anambra_njikoka,6
+anambra_njikoka_enugwu_agidi_i,Enugwu Agidi I,anambra_njikoka,7
+anambra_njikoka_enugwu_agidi_ii,Enugwu Agidi II,anambra_njikoka,8
+anambra_njikoka_enugwu_ukwu_i,Enugwu Ukwu I,anambra_njikoka,9
+anambra_njikoka_enugwu_ukwu_ii,Enugwu Ukwu II,anambra_njikoka,10
+anambra_njikoka_enugwu_ukwu_iii,Enugwu Ukwu III,anambra_njikoka,11
+anambra_njikoka_enugwu_ukwu_iv,Enugwu Ukwu IV,anambra_njikoka,12
+anambra_njikoka_nawfia_i,Nawfia I,anambra_njikoka,13
+anambra_njikoka_nawfia_ii,Nawfia II,anambra_njikoka,14
+anambra_njikoka_nimo_i,Nimo I,anambra_njikoka,15
+anambra_njikoka_nimo_ii,Nimo II,anambra_njikoka,16
+anambra_njikoka_nimo_iii,Nimo III,anambra_njikoka,17
+anambra_njikoka_nimo_iv,Nimo IV,anambra_njikoka,18
+,,,
+anambra_nnewi_north_nnewi_ichi_i,Nnewi Ichi I,anambra_nnewi_north,1
+anambra_nnewi_north_nnewi_ichi_ii,Nnewi Ichi II,anambra_nnewi_north,2
+anambra_nnewi_north_otolo_i,Otolo I,anambra_nnewi_north,3
+anambra_nnewi_north_otolo_ii,Otolo II,anambra_nnewi_north,4
+anambra_nnewi_north_otolo_iii,Otolo III,anambra_nnewi_north,5
+anambra_nnewi_north_umudim_i,Umudim I,anambra_nnewi_north,6
+anambra_nnewi_north_umudim_ii,Umudim II,anambra_nnewi_north,7
+anambra_nnewi_north_uruagu_i,Uruagu I,anambra_nnewi_north,8
+anambra_nnewi_north_orangun_ii,Orangun II,anambra_nnewi_north,9
+anambra_nnewi_north_orangun_iii,Orangun III,anambra_nnewi_north,10
+,,,
+anambra_nnewi_south_akwa_ihedi,Akwa-Ihedi,anambra_nnewi_south,1
+anambra_nnewi_south_amichi_i,Amichi I,anambra_nnewi_south,2
+anambra_nnewi_south_amichi_ii,Amichi II,anambra_nnewi_south,3
+anambra_nnewi_south_amichi_iii,Amichi III,anambra_nnewi_south,4
+anambra_nnewi_south_azuigbo,Azuigbo,anambra_nnewi_south,5
+anambra_nnewi_south_ebenator,Ebenator,anambra_nnewi_south,6
+anambra_nnewi_south_ekwulumili,Ekwulumili,anambra_nnewi_south,7
+anambra_nnewi_south_ezinifite_i,Ezinifite I,anambra_nnewi_south,8
+anambra_nnewi_south_ezinifite_ii,Ezinifite II,anambra_nnewi_south,9
+anambra_nnewi_south_ezinifite_iii,Ezinifite III,anambra_nnewi_south,10
+anambra_nnewi_south_osumenyi_i,Osumenyi I,anambra_nnewi_south,11
+anambra_nnewi_south_osumenyi_ii,Osumenyi II,anambra_nnewi_south,12
+anambra_nnewi_south_ukpor_i,Ukpor I,anambra_nnewi_south,13
+anambra_nnewi_south_ukpor_ii,Ukpor II,anambra_nnewi_south,14
+anambra_nnewi_south_ukpor_iii,Ukpor III,anambra_nnewi_south,15
+anambra_nnewi_south_ukpor_iv,Ukpor IV,anambra_nnewi_south,16
+anambra_nnewi_south_ukpor_v,Ukpor V,anambra_nnewi_south,17
+anambra_nnewi_south_ukpor_vi,Ukpor VI,anambra_nnewi_south,18
+anambra_nnewi_south_unubi,Unubi,anambra_nnewi_south,19
+anambra_nnewi_south_utuh,Utuh,anambra_nnewi_south,20
+,,,
+anambra_ogbaru_akili_ogidi_obeagwe,Akili-Ogidi/Obeagwe,anambra_ogbaru,1
+anambra_ogbaru_akili_ozizor,Akili-Ozizor,anambra_ogbaru,2
+anambra_ogbaru_atani_i,Atani I,anambra_ogbaru,3
+anambra_ogbaru_atani_ii,Atani II,anambra_ogbaru,4
+anambra_ogbaru_iyowa_odeekpe_ohita,Iyowa/Odeekpe/Ohita,anambra_ogbaru,5
+anambra_ogbaru_ochuche_umuodu_ogbakuba_amiyi,Ochuche-Umuodu/Ogbakuba/Amiyi,anambra_ogbaru,6
+anambra_ogbaru_ogwuani_ocha,Ogwuani-Ocha,anambra_ogbaru,7
+anambra_ogbaru_ogwu_ikpele,Ogwu-Ikpele,anambra_ogbaru,8
+anambra_ogbaru_okpoko_i,Okpoko I,anambra_ogbaru,9
+anambra_ogbaru_okpoko_ii,Okpoko II,anambra_ogbaru,10
+anambra_ogbaru_okpoko_iii,Okpoko III,anambra_ogbaru,11
+anambra_ogbaru_okpoko_iv,Okpoko IV,anambra_ogbaru,12
+anambra_ogbaru_okpoko_v,Okpoko V,anambra_ogbaru,13
+anambra_ogbaru_okpoko_vi,Okpoko VI,anambra_ogbaru,14
+anambra_ogbaru_ossomala,Ossomala,anambra_ogbaru,15
+anambra_ogbaru_umunankwo_mputu,Umunankwo/Mputu,anambra_ogbaru,16
+,,,
+anambra_onitsha_north_american_quarters,American Quarters,anambra_onitsha_north,1
+anambra_onitsha_north_gra,GRA,anambra_onitsha_north,2
+anambra_onitsha_north_inland_town_i,Inland Town I,anambra_onitsha_north,3
+anambra_onitsha_north_inland_town_ii,Inland Town II,anambra_onitsha_north,4
+anambra_onitsha_north_inland_town_iii,Inland Town III,anambra_onitsha_north,5
+anambra_onitsha_north_inland_town_iv,Inland Town IV,anambra_onitsha_north,6
+anambra_onitsha_north_inland_town_v,Inland Town V,anambra_onitsha_north,7
+anambra_onitsha_north_inland_town_vi,Inland Town VI,anambra_onitsha_north,8
+anambra_onitsha_north_inland_town_vii,Inland Town VII,anambra_onitsha_north,9
+anambra_onitsha_north_inland_town_viii,Inland Town VIII,anambra_onitsha_north,10
+anambra_onitsha_north_ogbe_umuonicha,Ogbe Umuonicha,anambra_onitsha_north,11
+anambra_onitsha_north_trans_nkisi,Trans Nkisi,anambra_onitsha_north,12
+anambra_onitsha_north_waterside_central_i,Waterside Central I,anambra_onitsha_north,13
+anambra_onitsha_north_waterside_central_ii,Waterside Central II,anambra_onitsha_north,14
+anambra_onitsha_north_woluwo_layout,Woluwo Layout,anambra_onitsha_north,15
+,,,
+anambra_onitsha_south_bridge_head_i,Bridge Head I,anambra_onitsha_south,1
+anambra_onitsha_south_bridge_head_ii,Bridge Head II,anambra_onitsha_south,2
+anambra_onitsha_south_bridge_head_iii,Bridge Head III,anambra_onitsha_south,3
+anambra_onitsha_south_fegge_i,Fegge I,anambra_onitsha_south,4
+anambra_onitsha_south_fegge_ii,Fegge II,anambra_onitsha_south,5
+anambra_onitsha_south_fegge_iii,Fegge III,anambra_onitsha_south,6
+anambra_onitsha_south_fegge_iv,Fegge IV,anambra_onitsha_south,7
+anambra_onitsha_south_fegge_v,Fegge V,anambra_onitsha_south,8
+anambra_onitsha_south_fegge_vi,Fegge VI,anambra_onitsha_south,9
+anambra_onitsha_south_fegge_vii,Fegge VII,anambra_onitsha_south,10
+anambra_onitsha_south_odoakpu_i,Odoakpu I,anambra_onitsha_south,11
+anambra_onitsha_south_odoakpu_ii,Odoakpu II,anambra_onitsha_south,12
+anambra_onitsha_south_odoakpu_iii,Odoakpu III,anambra_onitsha_south,13
+anambra_onitsha_south_odoakpu_iv,Odoakpu IV,anambra_onitsha_south,14
+anambra_onitsha_south_odoakpu_v,Odoakpu V,anambra_onitsha_south,15
+anambra_onitsha_south_odoakpu_vi,Odoakpu VI,anambra_onitsha_south,16
+anambra_onitsha_south_odoakpu_vii,Odoakpu VII,anambra_onitsha_south,17
+,,,
+anambra_orumba_north_ajalli_i,Ajalli I,anambra_orumba_north,1
+anambra_orumba_north_ajalli_ii,Ajalli II,anambra_orumba_north,2
+anambra_orumba_north_amaetiti,Amaetiti,anambra_orumba_north,3
+anambra_orumba_north_amaokpala_omogho,Amaokpala/Omogho,anambra_orumba_north,4
+anambra_orumba_north_awa,Awa,anambra_orumba_north,5
+anambra_orumba_north_awgbu_i,Awgbu I,anambra_orumba_north,6
+anambra_orumba_north_awgbu_ii,Awgbu II,anambra_orumba_north,7
+anambra_orumba_north_nanka_i,Nanka I,anambra_orumba_north,8
+anambra_orumba_north_nanka_ii,Nanka II,anambra_orumba_north,9
+anambra_orumba_north_ndiokolo_ndiokpalaeke,Ndziokolo/Ndiokpalaeke,anambra_orumba_north,10
+anambra_orumba_north_ndiowu,Ndiowu,anambra_orumba_north,11
+anambra_orumba_north_ndiukwenu_okpeze,Ndiukwenu/Okpeze,anambra_orumba_north,12
+anambra_orumba_north_oko_i,Oko I,anambra_orumba_north,13
+anambra_orumba_north_oko_ii,Oko II,anambra_orumba_north,14
+anambra_orumba_north_ndiokpalaeze,Ndiokpalaeze,anambra_orumba_north,15
+anambra_orumba_north_ufuma_i,Ufuma I,anambra_orumba_north,16
+anambra_orumba_north_ufuma_ii,Ufuma II,anambra_orumba_north,17
+,,,
+anambra_orumba_south_agbudu,Agbudu,anambra_orumba_south,1
+anambra_orumba_south_akpa,Akpa,anambra_orumba_south,2
+anambra_orumba_south_enugu_umonyia,Enugu/Umonyia,anambra_orumba_south,3
+anambra_orumba_south_ezira,Ezira,anambra_orumba_south,4
+anambra_orumba_south_ihite,Ihite,anambra_orumba_south,5
+anambra_orumba_south_isulo,Isulo,anambra_orumba_south,6
+anambra_orumba_south_nawfija,Nawfija,anambra_orumba_south,7
+anambra_orumba_south_umuchukwu,Umuchukwu,anambra_orumba_south,8
+anambra_orumba_south_ogboji,Ogboji,anambra_orumba_south,9
+anambra_orumba_south_ogbunka_i,Ogbunka I,anambra_orumba_south,10
+anambra_orumba_south_ogbunka_ii,Ogbunka II,anambra_orumba_south,11
+anambra_orumba_south_owerre_ezukala_i,Owerre-Ezukala I,anambra_orumba_south,12
+anambra_orumba_south_owerre_ezukala_ii,Owerre-Ezukala II,anambra_orumba_south,13
+anambra_orumba_south_umunze_i,Umunze I,anambra_orumba_south,14
+anambra_orumba_south_umunze_ii,Umunze II,anambra_orumba_south,15
+anambra_orumba_south_umunze_iii,Umunze III,anambra_orumba_south,16
+anambra_orumba_south_umuomaku,Umuomaku,anambra_orumba_south,17
+anambra_orumba_south_eziagu,Eziagu,anambra_orumba_south,18
+,,,
+anambra_oyi_awkuzu_i,Awkuzu I,anambra_oyi,1
+anambra_oyi_awkuzu_ii,Awkuzu II,anambra_oyi,2
+anambra_oyi_awkuzu_iii,Awkuzu III,anambra_oyi,3
+anambra_oyi_awkuzu_iv,Awkuzu IV,anambra_oyi,4
+anambra_oyi_nteje_i,Nteje I,anambra_oyi,5
+anambra_oyi_nteje_ii,Nteje II,anambra_oyi,6
+anambra_oyi_nteje_iii,Nteje III,anambra_oyi,7
+anambra_oyi_nteje_iv,Nteje IV,anambra_oyi,8
+anambra_oyi_nteje_v,Nteje V,anambra_oyi,9
+anambra_oyi_nkwelle_ezunaka_i,Nkwelle Ezunaka I,anambra_oyi,10
+anambra_oyi_nkwelle_ezunaka_ii,Nkwelle Ezunaka II,anambra_oyi,11
+anambra_oyi_ogbunike_i,Ogbunike I,anambra_oyi,12
+anambra_oyi_ogbunike_ii,Ogbunike II,anambra_oyi,13
+anambra_oyi_umunya_i,Umunya I,anambra_oyi,14
+anambra_oyi_umunya_ii,Umunya II,anambra_oyi,15
+,,,
+enugu_aninri_oduma_i,Oduma I,enugu_aninri,1
+enugu_aninri_oduma_ii,Oduma II,enugu_aninri,2
+enugu_aninri_oduma_iii,Oduma III,enugu_aninri,3
+enugu_aninri_oduma_iv,Oduma IV,enugu_aninri,4
+enugu_aninri_nnenwe_i,Nnenwe I,enugu_aninri,5
+enugu_aninri_nnenwe_ii,Nnenwe II,enugu_aninri,6
+enugu_aninri_nnenwe_iii,Nnenwe III,enugu_aninri,7
+enugu_aninri_ndeabo,Ndeabo,enugu_aninri,8
+enugu_aninri_okpanku,Okpanku,enugu_aninri,9
+enugu_aninri_mpu,Mpu,enugu_aninri,10
+,,,
+enugu_awgu_awgu_i,Awgu I,enugu_awgu,1
+enugu_awgu_awgu_ii,Awgu II,enugu_awgu,2
+enugu_awgu_mgbowo,Mgbowo,enugu_awgu,3
+enugu_awgu_agbogugu,Agbogugu,enugu_awgu,4
+enugu_awgu_ihe,Ihe,enugu_awgu,5
+enugu_awgu_obeagu,Obeagu,enugu_awgu,6
+enugu_awgu_mgbidi,Mgbidi,enugu_awgu,7
+enugu_awgu_anikenano_ugwueme,Anikenano Ugwueme,enugu_awgu,8
+enugu_awgu_owelli,Oweli,enugu_awgu,9
+enugu_awgu_isu_awa,Isu Awa,enugu_awgu,10
+enugu_awgu_ogbaku,Ogbaku,enugu_awgu,11
+,,,
+enugu_enugu_east_abakpa_i,Abakpa I,enugu_enugu_east,1
+enugu_enugu_east_abakpa_ii,Abakpa II,enugu_enugu_east,2
+enugu_enugu_east_umuenwene,Umuenwene,enugu_enugu_east,3
+enugu_enugu_east_amorji,Amorji,enugu_enugu_east,4
+enugu_enugu_east_mbuluiyukwu,Mbuluiyukwu,enugu_enugu_east,5
+enugu_enugu_east_mbuluowohe,Mbuluowohe,enugu_enugu_east,6
+enugu_enugu_east_mbulu_ndjodo,Mbulu Ndjodo,enugu_enugu_east,7
+enugu_enugu_east_umuchigbo,Umuchigbo,enugu_enugu_east,8
+enugu_enugu_east_trans_ekulu,Trans Ekulu,enugu_enugu_east,9
+enugu_enugu_east_ibagwa,Ibagwa,enugu_enugu_east,10
+enugu_enugu_east_uguwugo,Uguwugo,enugu_enugu_east,11
+enugu_enugu_east_mbulu_ndjodo_east,Mbulu Ndjodo East,enugu_enugu_east,12
+,,,
+enugu_enugu_north_asata_township,Asata Township,enugu_enugu_north,1
+enugu_enugu_north_umunevo,Umunevo,enugu_enugu_north,2
+enugu_enugu_north_ihewuzie,Ihewuzie,enugu_enugu_north,3
+enugu_enugu_north_onu_asata,Onu Asata,enugu_enugu_north,4
+enugu_enugu_north_ogbette_east,Ogbette East,enugu_enugu_north,5
+enugu_enugu_north_ogbette_west,Ogbette West,enugu_enugu_north,6
+enugu_enugu_north_gra,GRA,enugu_enugu_north,7
+enugu_enugu_north_gui_new_layout,GUI New Layout,enugu_enugu_north,8
+enugu_enugu_north_china_township,China Township,enugu_enugu_north,9
+enugu_enugu_north_new_haven,New Haven,enugu_enugu_north,10
+enugu_enugu_north_independence_layout,Independence Layout,enugu_enugu_north,11
+enugu_enugu_north_udi_siding,Udi Siding,enugu_enugu_north,12
+enugu_enugu_north_ogui_township,Ogui Township,enugu_enugu_north,13
+,,,
+enugu_enugu_south_amechi_i,Amechi I,enugu_enugu_south,1
+enugu_enugu_south_amechi_ii,Amechi II,enugu_enugu_south,2
+enugu_enugu_south_obeagu_i,Obeagu I,enugu_enugu_south,3
+enugu_enugu_south_uwani_east,Uwani East,enugu_enugu_south,4
+enugu_enugu_south_uwani_west,Uwani West,enugu_enugu_south,5
+enugu_enugu_south_achara_layout_east,Achara Layout East,enugu_enugu_south,6
+enugu_enugu_south_achara_layout_west,Achara Layout West,enugu_enugu_south,7
+enugu_enugu_south_awkunanaw_east,Awkunanaw East,enugu_enugu_south,8
+enugu_enugu_south_awkunanaw_west,Awkunanaw West,enugu_enugu_south,9
+enugu_enugu_south_ugwuaji,Ugwuaji,enugu_enugu_south,10
+enugu_enugu_south_obeagu_ii,Obeagu II,enugu_enugu_south,11
+enugu_enugu_south_akwuke,Akwuke,enugu_enugu_south,12
+enugu_enugu_south_maryland,Maryland,enugu_enugu_south,13
+,,,
+enugu_ezeagu_olo_amagu,Olo/Amagu,enugu_ezeagu,1
+enugu_ezeagu_awha,Awha,enugu_ezeagu,2
+enugu_ezeagu_aguobu_owa_i,Aguobu Owa I,enugu_ezeagu,3
+enugu_ezeagu_aguobu_owa_ii,Aguobu Owa II,enugu_ezeagu,4
+enugu_ezeagu_umana,Umana,enugu_ezeagu,5
+enugu_ezeagu_agba_umana,Agba Umana,enugu_ezeagu,6
+enugu_ezeagu_aguobu,Aguobu,enugu_ezeagu,7
+enugu_ezeagu_umumba_ndiumo,Umumba Ndiumo,enugu_ezeagu,8
+enugu_ezeagu_oghe_i,Oghe I,enugu_ezeagu,9
+enugu_ezeagu_oghe_ii,Oghe II,enugu_ezeagu,10
+enugu_ezeagu_imezi_owa_i,Imezi Owa I,enugu_ezeagu,11
+enugu_ezeagu_imezi_owa_ii,Imezi Owa II,enugu_ezeagu,12
+enugu_ezeagu_mgbagu_owa_i,Mgbagu Owa I,enugu_ezeagu,13
+enugu_ezeagu_mgbagu_owa_ii,Mgbagu Owa II,enugu_ezeagu,14
+enugu_ezeagu_mgbagu_owa_iii,Mgbagu Owa III,enugu_ezeagu,15
+enugu_ezeagu_iwollo,Iwollo,enugu_ezeagu,16
+enugu_ezeagu_obinofia,Obinofia,enugu_ezeagu,17
+enugu_ezeagu_okpogho,Okpogho,enugu_ezeagu,18
+enugu_ezeagu_obe_agu,Obe Agu,enugu_ezeagu,19
+enugu_ezeagu_ulo_amagu,Ulo/Amagu,enugu_ezeagu,20
+,,,
+enugu_igbo_etiti_aku_i,Aku I,enugu_igbo_etiti,1
+enugu_igbo_etiti_aku_ii,Aku II,enugu_igbo_etiti,2
+enugu_igbo_etiti_aku_iii,Aku III,enugu_igbo_etiti,3
+enugu_igbo_etiti_aku_iv,Aku IV,enugu_igbo_etiti,4
+enugu_igbo_etiti_aku_v,Aku V,enugu_igbo_etiti,5
+enugu_igbo_etiti_ekwegbe_i,Ekwegbe I,enugu_igbo_etiti,6
+enugu_igbo_etiti_ekwegbe_ii,Ekwegbe II,enugu_igbo_etiti,7
+enugu_igbo_etiti_ohaodo_i,Ohaodo I,enugu_igbo_etiti,8
+enugu_igbo_etiti_ohaodo_ii,Ohaodo II,enugu_igbo_etiti,9
+enugu_igbo_etiti_ohazala_i,Ohazala I,enugu_igbo_etiti,10
+enugu_igbo_etiti_ohazala_ii,Ohazala II,enugu_igbo_etiti,11
+enugu_igbo_etiti_diogbe_umuoka,Diogbe Umuoka,enugu_igbo_etiti,12
+enugu_igbo_etiti_ikolo_ohaebe,Ikolo/Ohaebe,enugu_igbo_etiti,13
+enugu_igbo_etiti_onyohor,Onyohor,enugu_igbo_etiti,14
+enugu_igbo_etiti_ejuoha,Ejuoha,enugu_igbo_etiti,15
+enugu_igbo_etiti_ukehe_i,Ukehe I,enugu_igbo_etiti,16
+enugu_igbo_etiti_ukehe_ii,Ukehe II,enugu_igbo_etiti,17
+enugu_igbo_etiti_ukehe_iii,Ukehe III,enugu_igbo_etiti,18
+enugu_igbo_etiti_ukehe_iv,Ukehe IV,enugu_igbo_etiti,19
+enugu_igbo_etiti_ukehe_v,Ukehe V,enugu_igbo_etiti,20
+,,,
+enugu_igbo_eze_north_essodo_i,Essodo I,enugu_igbo_eze_north,1
+enugu_igbo_eze_north_essodo_ii,Essodo II,enugu_igbo_eze_north,2
+enugu_igbo_eze_north_essodo_iii,Essodo III,enugu_igbo_eze_north,3
+enugu_igbo_eze_north_ette_i,Ette I,enugu_igbo_eze_north,4
+enugu_igbo_eze_north_ette_ii,Ette II,enugu_igbo_eze_north,5
+enugu_igbo_eze_north_ette_central,Ette Central,enugu_igbo_eze_north,6
+enugu_igbo_eze_north_umoitodo_i,Umoitodo I,enugu_igbo_eze_north,7
+enugu_igbo_eze_north_umoitodo_ii,Umoitodo II,enugu_igbo_eze_north,8
+enugu_igbo_eze_north_umoitodo_iii,Umoitodo III,enugu_igbo_eze_north,9
+enugu_igbo_eze_north_ezzodo,Ezzodo,enugu_igbo_eze_north,10
+enugu_igbo_eze_north_umuozzi_i,Umuozzi I,enugu_igbo_eze_north,11
+enugu_igbo_eze_north_umuozzi_ii,Umuozzi II,enugu_igbo_eze_north,12
+enugu_igbo_eze_north_umuozzi_iii,Umuozzi III,enugu_igbo_eze_north,13
+enugu_igbo_eze_north_umuozzi_iv,Umuozzi IV,enugu_igbo_eze_north,14
+enugu_igbo_eze_north_umuozzi_v,Umuozzi V,enugu_igbo_eze_north,15
+enugu_igbo_eze_north_umuozzi_vi,Umuozzi VI,enugu_igbo_eze_north,16
+enugu_igbo_eze_north_umuozzi_vii,Umuozzi VII,enugu_igbo_eze_north,17
+enugu_igbo_eze_north_umuozzi_viii,Umuozzi VIII,enugu_igbo_eze_north,18
+enugu_igbo_eze_north_umuozzi_ix,Umuozzi IX,enugu_igbo_eze_north,19
+enugu_igbo_eze_north_umuozzi_x,Umuozzi X,enugu_igbo_eze_north,20
+,,,
+enugu_igbo_eze_south_alor_agu,Alor Agu,enugu_igbo_eze_south,1
+enugu_igbo_eze_south_amebo_hausa_yoruba,Amebo/Hausa/Yoruba,enugu_igbo_eze_south,2
+enugu_igbo_eze_south_ezema_ward,Ezema Ward,enugu_igbo_eze_south,3
+enugu_igbo_eze_south_echara,Echara,enugu_igbo_eze_south,4
+enugu_igbo_eze_south_iheaka_i,Iheaka I,enugu_igbo_eze_south,5
+enugu_igbo_eze_south_iheaka_ii,Iheaka II,enugu_igbo_eze_south,6
+enugu_igbo_eze_south_iheakpu,Iheakpu,enugu_igbo_eze_south,7
+enugu_igbo_eze_south_iheakpu_ii,Iheakpu II,enugu_igbo_eze_south,8
+enugu_igbo_eze_south_itchi_uwani_i,Itchi/Uwani I,enugu_igbo_eze_south,9
+enugu_igbo_eze_south_itchi_uwani_ii,Itchi/Uwani II,enugu_igbo_eze_south,10
+enugu_igbo_eze_south_nkalagu_obkpa,Nkalagu Obkpa,enugu_igbo_eze_south,11
+enugu_igbo_eze_south_ovoko_i,Ovoko I,enugu_igbo_eze_south,12
+enugu_igbo_eze_south_ovoko_ii,Ovoko II,enugu_igbo_eze_south,13
+enugu_igbo_eze_south_ovoko_iii,Ovoko III,enugu_igbo_eze_south,14
+enugu_igbo_eze_south_uhunowerre,Uhunowerre,enugu_igbo_eze_south,15
+enugu_igbo_eze_south_unadu,Unadu,enugu_igbo_eze_south,16
+,,,
+enugu_isi_uzo_ikem_i,Ikem I,enugu_isi_uzo,1
+enugu_isi_uzo_ikem_ii,Ikem II,enugu_isi_uzo,2
+enugu_isi_uzo_neke_i,Neke I,enugu_isi_uzo,3
+enugu_isi_uzo_neke_ii,Neke II,enugu_isi_uzo,4
+enugu_isi_uzo_mbu_i,Mbu I,enugu_isi_uzo,5
+enugu_isi_uzo_mbu_ii,Mbu II,enugu_isi_uzo,6
+enugu_isi_uzo_umualor,Umualor,enugu_isi_uzo,7
+enugu_isi_uzo_ehamufu_i,Ehamufu I,enugu_isi_uzo,8
+enugu_isi_uzo_ehamufu_ii,Ehamufu II,enugu_isi_uzo,9
+enugu_isi_uzo_ehamufu_iii,Ehamufu III,enugu_isi_uzo,10
+enugu_isi_uzo_ehamufu_iv,Ehamufu IV,enugu_isi_uzo,11
+,,,
+enugu_nkanu_east_amechi_idodo_oruku,Amechi/Idodo/Oruku,enugu_nkanu_east,1
+enugu_nkanu_east_amankanu_ogbahu,Amankanu Ogbahu,enugu_nkanu_east,2
+enugu_nkanu_east_akpofu_isienu,Akpofu Isienu,enugu_nkanu_east,3
+enugu_nkanu_east_ihuokpara,Ihuokpara,enugu_nkanu_east,4
+enugu_nkanu_east_nara_i,Nara I,enugu_nkanu_east,5
+enugu_nkanu_east_nara_ii,Nara II,enugu_nkanu_east,6
+enugu_nkanu_east_nkerefi_i,Nkerefi I,enugu_nkanu_east,7
+enugu_nkanu_east_nkerefi_ii,Nkerefi II,enugu_nkanu_east,8
+enugu_nkanu_east_ouhani_onicha_agu,Ouhani/Onicha-Agu,enugu_nkanu_east,9
+enugu_nkanu_east_ugbawka_i,Ugbawka I,enugu_nkanu_east,10
+enugu_nkanu_east_ugbawka_ii,Ugbawka II,enugu_nkanu_east,11
+enugu_nkanu_east_nomeh,Nomeh,enugu_nkanu_east,12
+enugu_nkanu_east_mburubu,Mburubu,enugu_nkanu_east,13
+enugu_nkanu_east_owo,Owo,enugu_nkanu_east,14
+,,,
+enugu_nkanu_west_agbani,Agbani,enugu_nkanu_west,1
+enugu_nkanu_west_amurri,Amurri,enugu_nkanu_west,2
+enugu_nkanu_west_akegbe_ugwu,Akegbe-Ugwu,enugu_nkanu_west,3
+enugu_nkanu_west_amodu,Amodu,enugu_nkanu_west,4
+enugu_nkanu_west_obuoffia,Obuoffia,enugu_nkanu_west,5
+enugu_nkanu_west_obe,Obe,enugu_nkanu_west,6
+enugu_nkanu_west_ozalla,Ozalla,enugu_nkanu_west,7
+enugu_nkanu_west_akpugo_i,Akpugo I,enugu_nkanu_west,8
+enugu_nkanu_west_akpugo_ii,Akpugo II,enugu_nkanu_west,9
+enugu_nkanu_west_akpugo_iii,Akpugo III,enugu_nkanu_west,10
+enugu_nkanu_west_akpugo_iv,Akpugo IV,enugu_nkanu_west,11
+enugu_nkanu_west_umueze,Umueze,enugu_nkanu_west,12
+enugu_nkanu_west_ibite_akegbe_ugwu,Ibite Akegbe-Ugwu,enugu_nkanu_west,13
+enugu_nkanu_west_ndiuno,Ndiuno,enugu_nkanu_west,14
+,,,
+enugu_nsukka_edem_ukwu,Edem Ukwu,enugu_nsukka,1
+enugu_nsukka_edem_nta,Edem Nta,enugu_nsukka,2
+enugu_nsukka_edem_ani,Edem Ani,enugu_nsukka,3
+enugu_nsukka_akpa_ozzi,Akpa/Ozzi,enugu_nsukka,4
+enugu_nsukka_agbemere,Agbemere,enugu_nsukka,5
+enugu_nsukka_eha_uno,Eha Uno,enugu_nsukka,6
+enugu_nsukka_eha_ndiagu,Eha Ndiagu,enugu_nsukka,7
+enugu_nsukka_ibagwani,Ibagwani,enugu_nsukka,8
+enugu_nsukka_ejuwona_uwani,Ejuwona/Uwani,enugu_nsukka,9
+enugu_nsukka_akalite,Akalite,enugu_nsukka,10
+enugu_nsukka_mkpunano,Mkpunano,enugu_nsukka,11
+enugu_nsukka_ihe,Ihe,enugu_nsukka,12
+enugu_nsukka_nnu,Nnu,enugu_nsukka,13
+enugu_nsukka_owerre_umuoyo,Owerre/Umuoyo,enugu_nsukka,14
+enugu_nsukka_obimo_ikwoka,Obimo/Ikwoka,enugu_nsukka,15
+enugu_nsukka_okpuje_okuta,Okpuje/Okuta,enugu_nsukka,16
+enugu_nsukka_obukpa,Obukpa,enugu_nsukka,17
+enugu_nsukka_okutu,Okutu,enugu_nsukka,18
+enugu_nsukka_okpaligbo,Okpaligbo,enugu_nsukka,19
+enugu_nsukka_ihuokpara_nsukka,Ihuokpara Nsukka,enugu_nsukka,20
+,,,
+enugu_oji_river_oji_river_i,Oji River I,enugu_oji_river,1
+enugu_oji_river_oji_river_ii,Oji River II,enugu_oji_river,2
+enugu_oji_river_oji_river_iii,Oji River III,enugu_oji_river,3
+enugu_oji_river_oji_river_iv,Oji River IV,enugu_oji_river,4
+enugu_oji_river_ugwuoba_i,Ugwuoba I,enugu_oji_river,5
+enugu_oji_river_ugwuoba_ii,Ugwuoba II,enugu_oji_river,6
+enugu_oji_river_ugwuoba_iii,Ugwuoba III,enugu_oji_river,7
+enugu_oji_river_achiagu_i,Achiagu I,enugu_oji_river,8
+enugu_oji_river_achiagu_ii,Achiagu II,enugu_oji_river,9
+enugu_oji_river_achiagu_iii,Achiagu III,enugu_oji_river,10
+enugu_oji_river_achiuno_i,Achiuno I,enugu_oji_river,11
+enugu_oji_river_achiuno_ii,Achiuno II,enugu_oji_river,12
+enugu_oji_river_achiuno_iii,Achiuno III,enugu_oji_river,13
+enugu_oji_river_achiuno_iv,Achiuno IV,enugu_oji_river,14
+enugu_oji_river_inyli_i,Inyli I,enugu_oji_river,15
+enugu_oji_river_inyli_ii,Inyli II,enugu_oji_river,16
+enugu_oji_river_inyli_iii,Inyli III,enugu_oji_river,17
+enugu_oji_river_inyli_iv,Inyli IV,enugu_oji_river,18
+enugu_oji_river_awlaw,Awlaw,enugu_oji_river,19
+enugu_oji_river_akpugeze,Akpugeze,enugu_oji_river,20
+,,,
+enugu_udenu_amala,Amala,enugu_udenu,1
+enugu_udenu_ezimo,Ezimo,enugu_udenu,2
+enugu_udenu_imilike,Imilike,enugu_udenu,3
+enugu_udenu_obollo,Obollo,enugu_udenu,4
+enugu_udenu_obollo_etiti,Obollo Etiti,enugu_udenu,5
+enugu_udenu_obollo_eke,Obollo Eke,enugu_udenu,6
+enugu_udenu_ogbodu_aba,Ogbodu Aba,enugu_udenu,7
+enugu_udenu_arba_i,Arba I,enugu_udenu,8
+enugu_udenu_arba_ii,Arba II,enugu_udenu,9
+enugu_udenu_udunedem,Udunedem,enugu_udenu,10
+enugu_udenu_ukpata,Ukpata,enugu_udenu,11
+,,,
+enugu_udi_udi_agbudu,Udi/Agbudu,enugu_udi,1
+enugu_udi_nsude,Nsude,enugu_udi,2
+enugu_udi_umuaga,Umuaga,enugu_udi,3
+enugu_udi_umuabi,Umuabi,enugu_udi,4
+enugu_udi_obinagu,Obinagu,enugu_udi,5
+enugu_udi_nachi,Nachi,enugu_udi,6
+enugu_udi_abia,Abia,enugu_udi,7
+enugu_udi_ngwo_asa,Ngwo Asa,enugu_udi,8
+enugu_udi_ngwo_une,Ngwo Une,enugu_udi,9
+enugu_udi_ebe,Ebe,enugu_udi,10
+enugu_udi_awhum_ukaka,Awhum/Ukaka,enugu_udi,11
+enugu_udi_egbede_umuoka,Egbede/Umuoka,enugu_udi,12
+enugu_udi_akpa_kwume,Akpa Kwume,enugu_udi,13
+enugu_udi_affa_oghu,Affa Oghu,enugu_udi,14
+enugu_udi_abor,Abor,enugu_udi,15
+enugu_udi_okpatu,Okpatu,enugu_udi,16
+enugu_udi_obioma,Obioma,enugu_udi,17
+enugu_udi_umulumgbe,Umulumgbe,enugu_udi,18
+enugu_udi_eke,Eke,enugu_udi,19
+enugu_udi_amokwe,Amokwe,enugu_udi,20
+,,,
+enugu_uzo_uwani_igga_asaba,Igga/Asaba,enugu_uzo_uwani,1
+enugu_uzo_uwani_adaba_nkume,Adaba-Nkume,enugu_uzo_uwani,2
+enugu_uzo_uwani_umulokpa,Umulokpa,enugu_uzo_uwani,3
+enugu_uzo_uwani_ogurugu,Ogurugu,enugu_uzo_uwani,4
+enugu_uzo_uwani_abbi,Abbi,enugu_uzo_uwani,5
+enugu_uzo_uwani_okpogu,Okpogu,enugu_uzo_uwani,6
+enugu_uzo_uwani_uvuru,Uvuru,enugu_uzo_uwani,7
+enugu_uzo_uwani_nimbo_i,Nimbo I,enugu_uzo_uwani,8
+enugu_uzo_uwani_nimbo_ii,Nimbo II,enugu_uzo_uwani,9
+enugu_uzo_uwani_ugbene_i,Ugbene I,enugu_uzo_uwani,10
+enugu_uzo_uwani_ugbene_ii,Ugbene II,enugu_uzo_uwani,11
+enugu_uzo_uwani_nrobo,Nrobo,enugu_uzo_uwani,12
+enugu_uzo_uwani_nkpologu,Nkpologu,enugu_uzo_uwani,13
+,,,
+ebonyi_abakaliki_abakpa,Abakpa,ebonyi_abakaliki,1
+ebonyi_abakaliki_amachi_i,Amachi I,ebonyi_abakaliki,2
+ebonyi_abakaliki_amachi_ii,Amachi II,ebonyi_abakaliki,3
+ebonyi_abakaliki_amachi_iii,Amachi III,ebonyi_abakaliki,4
+ebonyi_abakaliki_amugu,Amugu,ebonyi_abakaliki,5
+ebonyi_abakaliki_azumini,Azumini,ebonyi_abakaliki,6
+ebonyi_abakaliki_azuyiwokwu_layout,Azuyiwokwu Layout,ebonyi_abakaliki,7
+ebonyi_abakaliki_azuiyi_ndeme,Azuiyi Ndeme,ebonyi_abakaliki,8
+ebonyi_abakaliki_eda,Eda,ebonyi_abakaliki,9
+ebonyi_abakaliki_izzi_unuhu,Izzi Unuhu,ebonyi_abakaliki,10
+ebonyi_abakaliki_ndiagu,Ndiagu,ebonyi_abakaliki,11
+ebonyi_abakaliki_okpoitumo_ndebor,Okpoitumo Ndebor,ebonyi_abakaliki,12
+ebonyi_abakaliki_okpoitumo_ndiegu,Okpoitumo Ndiegu,ebonyi_abakaliki,13
+ebonyi_abakaliki_timber_sade,Timber Shade,ebonyi_abakaliki,14
+,,,
+ebonyi_afikpo_north_atamata_akpoha,Atamata Akpoha,ebonyi_afikpo_north,1
+ebonyi_afikpo_north_amogu_akpoha,Amogu Akpoha,ebonyi_afikpo_north,2
+ebonyi_afikpo_north_ezeke_amasiri,Ezeke Amasiri,ebonyi_afikpo_north,3
+ebonyi_afikpo_north_poperi_amasiri,Poperi Amasiri,ebonyi_afikpo_north,4
+ebonyi_afikpo_north_itim_afikpo,Itim Afikpo,ebonyi_afikpo_north,5
+ebonyi_afikpo_north_ibii_oziza_afikpo,Ibii/Oziza Afikpo,ebonyi_afikpo_north,6
+ebonyi_afikpo_north_nkopogo_afikpo,Nkopogo Afikpo,ebonyi_afikpo_north,7
+ebonyi_afikpo_north_ohaisu_afikpo_a,Ohaisu Afikpo A,ebonyi_afikpo_north,8
+ebonyi_afikpo_north_ohaisu_afikpo_b,Ohaisu Afikpo B,ebonyi_afikpo_north,9
+ebonyi_afikpo_north_ugwuegu_afikpo,Ugwuegu Afikpo,ebonyi_afikpo_north,10
+ebonyi_afikpo_north_unana_afikpo_i,Unana Afikpo I,ebonyi_afikpo_north,11
+ebonyi_afikpo_north_unana_afikpo_ii,Unana Afikpo II,ebonyi_afikpo_north,12
+,,,
+ebonyi_afikpo_south_amaeke_ekoli,Amaeke Ekoli,ebonyi_afikpo_south,1
+ebonyi_afikpo_south_amaigbo,Amaigbo,ebonyi_afikpo_south,2
+ebonyi_afikpo_south_amangwu,Amangwu,ebonyi_afikpo_south,3
+ebonyi_afikpo_south_amiri_ekoli,Amiri Ekoli,ebonyi_afikpo_south,4
+ebonyi_afikpo_south_amosu,Amosu,ebonyi_afikpo_south,5
+ebonyi_afikpo_south_ebunwana,Ebunwana,ebonyi_afikpo_south,6
+ebonyi_afikpo_south_ndimoke,Ndimoke,ebonyi_afikpo_south,7
+ebonyi_afikpo_south_nguzu,Nguzu,ebonyi_afikpo_south,8
+ebonyi_afikpo_south_ogbu,Ogbu,ebonyi_afikpo_south,9
+ebonyi_afikpo_south_oso,Oso,ebonyi_afikpo_south,10
+ebonyi_afikpo_south_owotu,Owotu,ebonyi_afikpo_south,11
+,,,
+ebonyi_ebonyi_abakpa,Abakpa,ebonyi_ebonyi,1
+ebonyi_ebonyi_abofia,Abofia,ebonyi_ebonyi,2
+ebonyi_ebonyi_agalegu,Agalegu,ebonyi_ebonyi,3
+ebonyi_ebonyi_echiaba,Echiaba,ebonyi_ebonyi,4
+ebonyi_ebonyi_egwudinagu,Egwudinagu,ebonyi_ebonyi,5
+ebonyi_ebonyi_eyinbichiri_i,Eyinbichiri I,ebonyi_ebonyi,6
+ebonyi_ebonyi_eyinbichiri_ii,Eyinbichiri II,ebonyi_ebonyi,7
+ebonyi_ebonyi_kpirikpiri,Kpirikpiri,ebonyi_ebonyi,8
+ebonyi_ebonyi_mbake,Mbake,ebonyi_ebonyi,9
+ebonyi_ebonyi_ndiagu,Ndiagu,ebonyi_ebonyi,10
+ebonyi_ebonyi_ndiebor,Ndiebor,ebonyi_ebonyi,11
+ebonyi_ebonyi_onuenyim,Onuenyim,ebonyi_ebonyi,12
+ebonyi_ebonyi_urban_layout,Urban Layout,ebonyi_ebonyi,13
+,,,
+ebonyi_ezza_north_amuda_amawula,Amuda/Amawula,ebonyi_ezza_north,1
+ebonyi_ezza_north_ekka,Ekka,ebonyi_ezza_north,2
+ebonyi_ezza_north_inyere,Inyere,ebonyi_ezza_north,3
+ebonyi_ezza_north_ndiaguazu,Ndiaguazu,ebonyi_ezza_north,4
+ebonyi_ezza_north_nkomoro,Nkomoro,ebonyi_ezza_north,5
+ebonyi_ezza_north_ogboji,Ogboji,ebonyi_ezza_north,6
+ebonyi_ezza_north_okposi,Okposi,ebonyi_ezza_north,7
+ebonyi_ezza_north_omega,Omega,ebonyi_ezza_north,8
+ebonyi_ezza_north_oriuzor,Oriuzor,ebonyi_ezza_north,9
+ebonyi_ezza_north_oshiegbe,Oshiegbe,ebonyi_ezza_north,10
+ebonyi_ezza_north_umuezeoka,Umuezeoka,ebonyi_ezza_north,11
+,,,
+ebonyi_ezza_south_amaezekwe,Amaezekwe,ebonyi_ezza_south,1
+ebonyi_ezza_south_amagu_nsokkara,Amagu/Nsokkara,ebonyi_ezza_south,2
+ebonyi_ezza_south_amana,Amana,ebonyi_ezza_south,3
+ebonyi_ezza_south_emeka,Emeka,ebonyi_ezza_south,4
+ebonyi_ezza_south_amudo_okoffia,Amudo Okoffia,ebonyi_ezza_south,5
+ebonyi_ezza_south_amuzu,Amuzu,ebonyi_ezza_south,6
+ebonyi_ezza_south_echara,Echara,ebonyi_ezza_south,7
+ebonyi_ezza_south_ezema,Ezema,ebonyi_ezza_south,8
+ebonyi_ezza_south_ikwuator,Ikwuator,ebonyi_ezza_south,9
+ebonyi_ezza_south_onueke,Onueke,ebonyi_ezza_south,10
+ebonyi_ezza_south_umuwagba,Umuwagba,ebonyi_ezza_south,11
+,,,
+ebonyi_ikwo_ama_inyima,Ama Inyima,ebonyi_ikwo,1
+ebonyi_ikwo_echialike,Echialike,ebonyi_ikwo,2
+ebonyi_ikwo_eka_awoke,Eka Awoke,ebonyi_ikwo,3
+ebonyi_ikwo_ekpanwudele,Ekpanwudele,ebonyi_ikwo,4
+ebonyi_ikwo_ekpelu,Ekpelu,ebonyi_ikwo,5
+ebonyi_ikwo_eyinbichiri,Eyinbichiri,ebonyi_ikwo,6
+ebonyi_ikwo_etam,Etam,ebonyi_ikwo,7
+ebonyi_ikwo_igbudu_i,Igbudu I,ebonyi_ikwo,8
+ebonyi_ikwo_igbudu_ii,Igbudu II,ebonyi_ikwo,9
+ebonyi_ikwo_iyimagbu_i,Iyimagbu I,ebonyi_ikwo,10
+ebonyi_ikwo_iyimagbu_ii,Iyimagbu II,ebonyi_ikwo,11
+ebonyi_ikwo_ndiagu_amagu_i,Ndiagu Amagu I,ebonyi_ikwo,12
+ebonyi_ikwo_ndiagu_amagu_ii,Ndiagu Amagu II,ebonyi_ikwo,13
+ebonyi_ikwo_ndiagu_echara_i,Ndiagu Echara I,ebonyi_ikwo,14
+ebonyi_ikwo_ndiagu_echara_ii,Ndiagu Echara II,ebonyi_ikwo,15
+ebonyi_ikwo_ndufu_amagu_i,Ndufu Amagu I,ebonyi_ikwo,16
+ebonyi_ikwo_ndufu_amagu_ii,Ndufu Amagu II,ebonyi_ikwo,17
+ebonyi_ikwo_ndufu_echara,Ndufu Echara,ebonyi_ikwo,18
+ebonyi_ikwo_ndufu_alike,Ndufu Alike,ebonyi_ikwo,19
+ebonyi_ikwo_noye_alike,Noye Alike,ebonyi_ikwo,20
+,,,
+ebonyi_ishielu_agba,Agba,ebonyi_ishielu,1
+ebonyi_ishielu_amaezu,Amaezu,ebonyi_ishielu,2
+ebonyi_ishielu_azuinyaba_a,Azuinyaba A,ebonyi_ishielu,3
+ebonyi_ishielu_azuinyaba_b,Azuinyaba B,ebonyi_ishielu,4
+ebonyi_ishielu_ezillo_i,Ezillo I,ebonyi_ishielu,5
+ebonyi_ishielu_ezillo_ii,Ezillo II,ebonyi_ishielu,6
+ebonyi_ishielu_ezzagu_i,Ezzagu I,ebonyi_ishielu,7
+ebonyi_ishielu_ezzagu_ii,Ezzagu II,ebonyi_ishielu,8
+ebonyi_ishielu_iyonu,Iyonu,ebonyi_ishielu,9
+ebonyi_ishielu_nkalagu,Nkalagu,ebonyi_ishielu,10
+ebonyi_ishielu_nkalaha,Nkalaha,ebonyi_ishielu,11
+ebonyi_ishielu_nyezi,Nyezi,ebonyi_ishielu,12
+ebonyi_ishielu_obeagu,Obeagu,ebonyi_ishielu,13
+ebonyi_ishielu_ohafia,Ohafia,ebonyi_ishielu,14
+ebonyi_ishielu_okpoto,Okpoto,ebonyi_ishielu,15
+ebonyi_ishielu_umuhuali,Umuhuali,ebonyi_ishielu,16
+,,,
+ebonyi_ivo_amaeze_ukwu,Amaeze Ukwu,ebonyi_ivo,1
+ebonyi_ivo_amaeze_ishiagu,Amaeze Ishiagu,ebonyi_ivo,2
+ebonyi_ivo_amagu,Amagu,ebonyi_ivo,3
+ebonyi_ivo_amonye,Amonye,ebonyi_ivo,4
+ebonyi_ivo_inyita_ogidi,Inyita Ogidi,ebonyi_ivo,5
+ebonyi_ivo_iyioji_akaeze,Iyioji Akaeze,ebonyi_ivo,6
+ebonyi_ivo_ndiokoro_ukwu,Ndiokoro Ukwu,ebonyi_ivo,7
+ebonyi_ivo_ngwogwo,Ngwogwo,ebonyi_ivo,8
+ebonyi_ivo_obinagu,Obinagu,ebonyi_ivo,9
+ebonyi_ivo_okie,Okie,ebonyi_ivo,10
+ebonyi_ivo_umuobo,Umuobo,ebonyi_ivo,11
+,,,
+ebonyi_izzi_agbaja_mgbo,Agbaja Mgbo,ebonyi_izzi,1
+ebonyi_izzi_agbaja_anyanwuigwe,Agbaja Anyanwuigwe,ebonyi_izzi,2
+ebonyi_izzi_agbaja_offia,Agbaja Offia,ebonyi_izzi,3
+ebonyi_izzi_ezza_inyimagu_i,Ezza Inyimagu I,ebonyi_izzi,4
+ebonyi_izzi_ezza_inyimagu_iziogo,Ezza Inyimagu Iziogo,ebonyi_izzi,5
+ebonyi_izzi_ezza_inyimagu_igweledoha,Ezza Inyimagu Igweledoha,ebonyi_izzi,6
+ebonyi_izzi_ezza_inyimagu_ii,Ezza Inyimagu II,ebonyi_izzi,7
+ebonyi_izzi_igbeagu_nduogbu,Igbeagu Nduogbu,ebonyi_izzi,8
+ebonyi_izzi_igbeagu_ndi,Igbeagu Ndi,ebonyi_izzi,9
+ebonyi_izzi_igbeagu_iii,Igbeagu III,ebonyi_izzi,10
+ebonyi_izzi_mgbalukwu_i,Mgbalukwu I,ebonyi_izzi,11
+ebonyi_izzi_mgbalukwu_ii,Mgbalukwu II,ebonyi_izzi,12
+ebonyi_izzi_ndieze_nyagu_i,Ndieze Nyagu I,ebonyi_izzi,13
+ebonyi_izzi_ndieze_nyagu_ii,Ndieze Nyagu II,ebonyi_izzi,14
+,,,
+ebonyi_ohaozara_amachi_okposi,Amachi Okposi,ebonyi_ohaozara,1
+ebonyi_ohaozara_ene_na_ezeraku,Ene Na Ezeraku,ebonyi_ohaozara,2
+ebonyi_ohaozara_mgbom_okposi,Mgbom Okposi,ebonyi_ohaozara,3
+ebonyi_ohaozara_obiozara,Obiozara,ebonyi_ohaozara,4
+ebonyi_ohaozara_okposi_achara,Okposi Achara,ebonyi_ohaozara,5
+ebonyi_ohaozara_okposi_okwu,Okposi Okwu,ebonyi_ohaozara,6
+ebonyi_ohaozara_ugbo_logo,Ugbologo,ebonyi_ohaozara,7
+ebonyi_ohaozara_uhuatar,Uhuatar,ebonyi_ohaozara,8
+ebonyi_ohaozara_umuchima,Umuchima,ebonyi_ohaozara,9
+ebonyi_ohaozara_umunaga,Umunaga,ebonyi_ohaozara,10
+ebonyi_ohaozara_umuobuna,Umuobuna,ebonyi_ohaozara,11
+,,,
+ebonyi_ohaukwu_effium_i,Effium I,ebonyi_ohaukwu,1
+ebonyi_ohaukwu_effium_ii,Effium II,ebonyi_ohaukwu,2
+ebonyi_ohaukwu_ezzamgbo,Ezzamgbo,ebonyi_ohaukwu,3
+ebonyi_ohaukwu_ishi_ngbo_i,Ishi Ngbo I,ebonyi_ohaukwu,4
+ebonyi_ohaukwu_ishi_ngbo_ii,Ishi Ngbo II,ebonyi_ohaukwu,5
+ebonyi_ohaukwu_ngbo,Ngbo,ebonyi_ohaukwu,6
+ebonyi_ohaukwu_okposhi_i,Okposhi I,ebonyi_ohaukwu,7
+ebonyi_ohaukwu_okposhi_ii,Okposhi II,ebonyi_ohaukwu,8
+ebonyi_ohaukwu_umuagara,Umuagara,ebonyi_ohaukwu,9
+ebonyi_ohaukwu_umuogudu_i,Umuogudu I,ebonyi_ohaukwu,10
+ebonyi_ohaukwu_umuogudu_ii,Umuogudu II,ebonyi_ohaukwu,11
+ebonyi_ohaukwu_umuogudu_iii,Umuogudu III,ebonyi_ohaukwu,12
+ebonyi_ohaukwu_wigbeke_i,Wigbeke I,ebonyi_ohaukwu,13
+ebonyi_ohaukwu_wigbeke_ii,Wigbeke II,ebonyi_ohaukwu,14
+ebonyi_ohaukwu_wigbeke_iii,Wigbeke III,ebonyi_ohaukwu,15
+,,,
+ebonyi_onicha_abaomege,Abaomege,ebonyi_onicha,1
+ebonyi_onicha_agbabor_isu,Agbabor Isu,ebonyi_onicha,2
+ebonyi_onicha_amanator_isu,Amanator Isu,ebonyi_onicha,3
+ebonyi_onicha_ebai,Ebai,ebonyi_onicha,4
+ebonyi_onicha_enuagu_onicha,Enuagu Onicha,ebonyi_onicha,5
+ebonyi_onicha_isinweke,Isinweke,ebonyi_onicha,6
+ebonyi_onicha_isi_onicha,Isi Onicha,ebonyi_onicha,7
+ebonyi_onicha_obeagu_isu,Obeagu Isu,ebonyi_onicha,8
+ebonyi_onicha_oguduokwo,Oguduokwo,ebonyi_onicha,9
+ebonyi_onicha_okuzu_ukawu,Okuzu Ukawu,ebonyi_onicha,10
+ebonyi_onicha_ugwuegu,Ugwuegu,ebonyi_onicha,11
+ebonyi_onicha_umudomi_onicha,Umudomi Onicha,ebonyi_onicha,12
+,,,
+imo_aboh_mbaise_enyiogugu,Enyiogugu,imo_aboh_mbaise,1
+imo_aboh_mbaise_nguru_ahiator,Nguru Ahiator,imo_aboh_mbaise,2
+imo_aboh_mbaise_nguru_nwenkwo,Nguru Nwenkwo,imo_aboh_mbaise,3
+imo_aboh_mbaise_nguru_nwenke,Nguru Nwenke,imo_aboh_mbaise,4
+imo_aboh_mbaise_mbutu,Mbutu,imo_aboh_mbaise,5
+imo_aboh_mbaise_uvuru_i,Uvuru I,imo_aboh_mbaise,6
+imo_aboh_mbaise_uvuru_ii,Uvuru II,imo_aboh_mbaise,7
+imo_aboh_mbaise_lorji,Lorji,imo_aboh_mbaise,8
+imo_aboh_mbaise_amuzu,Amuzu,imo_aboh_mbaise,9
+imo_aboh_mbaise_amuhu,Amuhu,imo_aboh_mbaise,10
+imo_aboh_mbaise_lagwa,Lagwa,imo_aboh_mbaise,11
+imo_aboh_mbaise_ibeku,Ibeku,imo_aboh_mbaise,12
+,,,
+imo_ahiazu_mbaise_otulu_agunezu,Otulu/Agunezu,imo_ahiazu_mbaise,1
+imo_ahiazu_mbaise_oru_na,Oru Na,imo_ahiazu_mbaise,2
+imo_ahiazu_mbaise_nnaramia,Nnaramia,imo_ahiazu_mbaise,3
+imo_ahiazu_mbaise_okrika_nwenkwo_i,Okrika Nwenkwo I,imo_ahiazu_mbaise,4
+imo_ahiazu_mbaise_amazi_lihenwor,Amazi Lihenwor,imo_ahiazu_mbaise,5
+imo_ahiazu_mbaise_okrika_nwenkwo_ii,Okrika Nwenkwo II,imo_ahiazu_mbaise,6
+imo_ahiazu_mbaise_obohia_ekwerazu,Obohia Ekwerazu,imo_ahiazu_mbaise,7
+imo_ahiazu_mbaise_mpam,Mpam,imo_ahiazu_mbaise,8
+imo_ahiazu_mbaise_oparanadim,Oparanadim,imo_ahiazu_mbaise,9
+imo_ahiazu_mbaise_umunumo,Umunumo,imo_ahiazu_mbaise,10
+imo_ahiazu_mbaise_ogbo_umuchieze,Ogbo/UmuChieze,imo_ahiazu_mbaise,11
+,,,
+imo_ehime_mbano_agbaja,Agbaja,imo_ehime_mbano,1
+imo_ehime_mbano_umukabia,Umukabia,imo_ehime_mbano,2
+imo_ehime_mbano_nsu_a_ikpe,Nsu A Ikpe,imo_ehime_mbano,3
+imo_ehime_mbano_nsu_b_ihitte,Nsu B Ihitte,imo_ehime_mbano,4
+imo_ehime_mbano_nzerem_ikpe,Nzerem Ikpe,imo_ehime_mbano,5
+imo_ehime_mbano_umuawulu_umuihim,Umuawulu Umuihim,imo_ehime_mbano,6
+imo_ehime_mbano_umuomaku,Umuomaku,imo_ehime_mbano,7
+imo_ehime_mbano_umunumo,Umunumo,imo_ehime_mbano,8
+imo_ehime_mbano_umuezealu,Umuezealu,imo_ehime_mbano,9
+imo_ehime_mbano_umueze_i,Umueze I,imo_ehime_mbano,10
+imo_ehime_mbano_umueze_ii,Umueze II,imo_ehime_mbano,11
+,,,
+imo_ezinihitte_mbaise_amumara,Amumara,imo_ezinihitte_mbaise,1
+imo_ezinihitte_mbaise_itu,Itu,imo_ezinihitte_mbaise,2
+imo_ezinihitte_mbaise_okpofe_ezeagbogu,Okpofe Ezeagbogu,imo_ezinihitte_mbaise,3
+imo_ezinihitte_mbaise_onicha_i,Onicha I,imo_ezinihitte_mbaise,4
+imo_ezinihitte_mbaise_onicha_ii,Onicha II,imo_ezinihitte_mbaise,5
+imo_ezinihitte_mbaise_onicha_iii,Onicha III,imo_ezinihitte_mbaise,6
+imo_ezinihitte_mbaise_onicha_iv,Onicha IV,imo_ezinihitte_mbaise,7
+imo_ezinihitte_mbaise_eziudo,Eziudo,imo_ezinihitte_mbaise,8
+imo_ezinihitte_mbaise_udo_na_obizi,Udo Na Obizi,imo_ezinihitte_mbaise,9
+imo_ezinihitte_mbaise_ihitte,Ihitte,imo_ezinihitte_mbaise,10
+imo_ezinihitte_mbaise_oboama_umunama,Oboama/Umunama,imo_ezinihitte_mbaise,11
+imo_ezinihitte_mbaise_chokoneze_akpodim,Chokoneze Akpodim,imo_ezinihitte_mbaise,12
+,,,
+imo_ideato_north_akpulu,Akpulu,imo_ideato_north,1
+imo_ideato_north_isiokpa,Isiokpa,imo_ideato_north,2
+imo_ideato_north_umuokwara,Umuokwara,imo_ideato_north,3
+imo_ideato_north_akwu,Akwu,imo_ideato_north,4
+imo_ideato_north_umuopia_umukewU,Umuopia UmukewU,imo_ideato_north,5
+imo_ideato_north_ndiheme,Ndiheme,imo_ideato_north,6
+imo_ideato_north_izuogu_i,Izuogu I,imo_ideato_north,7
+imo_ideato_north_ndimoke,Ndimoke,imo_ideato_north,8
+imo_ideato_north_obodoukwu,Obodoukwu,imo_ideato_north,9
+imo_ideato_north_osina,Osina,imo_ideato_north,10
+imo_ideato_north_uzu_umualoma,Uzu/Umualoma,imo_ideato_north,11
+imo_ideato_north_ezemazu_ozuomee,Ezemazu Ozuomee,imo_ideato_north,12
+imo_ideato_north_ozuakoli_umuago,Ozuakoli Umuago,imo_ideato_north,13
+imo_ideato_north_izuogu_ii,Izuogu II,imo_ideato_north,14
+,,,
+imo_ideato_south_amanator_umueshi,Amanator/Umueshi,imo_ideato_south,1
+imo_ideato_south_dikenafai,Dikenafai,imo_ideato_south,2
+imo_ideato_south_isiekenesi_i,Isiekenesi I,imo_ideato_south,3
+imo_ideato_south_isiekenesi_ii,Isiekenesi II,imo_ideato_south,4
+imo_ideato_south_ntueke,Ntueke,imo_ideato_south,5
+imo_ideato_south_ugbele,Ugbelle,imo_ideato_south,6
+imo_ideato_south_obiohia,Obiohia,imo_ideato_south,7
+imo_ideato_south_ogboko_i,Ogboko I,imo_ideato_south,8
+imo_ideato_south_ogboko_ii,Ogboko II,imo_ideato_south,9
+imo_ideato_south_umuakam_umuago,Umuakam/Umuago,imo_ideato_south,10
+imo_ideato_south_umuchima,Umuchima,imo_ideato_south,11
+imo_ideato_south_umumaisiakU,Umumaisiaku,imo_ideato_south,12
+imo_ideato_south_umuobom,Umuobom,imo_ideato_south,13
+,,,
+imo_ihitte_uboma_abueke,Abueke,imo_ihitte_uboma,1
+imo_ihitte_uboma_amakohia,Amakohia,imo_ihitte_uboma,2
+imo_ihitte_uboma_amainyi,Amainyi,imo_ihitte_uboma,3
+imo_ihitte_uboma_atonerim,Atonerim,imo_ihitte_uboma,4
+imo_ihitte_uboma_awuchinumo,Awuchinumo,imo_ihitte_uboma,5
+imo_ihitte_uboma_dimneze,Dimneze,imo_ihitte_uboma,6
+imo_ihitte_uboma_ikperejere,Ikperejere,imo_ihitte_uboma,7
+imo_ihitte_uboma_okata,Okata,imo_ihitte_uboma,8
+imo_ihitte_uboma_umuezegwu,Umuezegwu,imo_ihitte_uboma,9
+imo_ihitte_uboma_umuhi,Umuhi,imo_ihitte_uboma,10
+,,,
+imo_ikeduru_akabo,Akabo,imo_ikeduru,1
+imo_ikeduru_amatta,Amatta,imo_ikeduru,2
+imo_ikeduru_iho,Iho,imo_ikeduru,3
+imo_ikeduru_inyichi_umudomi,Inyichi/Umudomi,imo_ikeduru,4
+imo_ikeduru_amaimo,Amaimo,imo_ikeduru,5
+imo_ikeduru_amakohia,Amakohia,imo_ikeduru,6
+imo_ikeduru_avuvu,Avuvu,imo_ikeduru,7
+imo_ikeduru_atta_i,Atta I,imo_ikeduru,8
+imo_ikeduru_atta_ii,Atta II,imo_ikeduru,9
+imo_ikeduru_ugirike_okiru,Ugirike/Okiru,imo_ikeduru,10
+imo_ikeduru_ngugo_ikembala,Ngugo/Ikembala,imo_ikeduru,11
+imo_ikeduru_uzoagba,Uzoagba,imo_ikeduru,12
+,,,
+imo_isiala_mbano_umunkwo,Umunkwo,imo_isiala_mbano,1
+imo_isiala_mbano_ogbor,Ogbor,imo_isiala_mbano,2
+imo_isiala_mbano_ibeme,Ibeme,imo_isiala_mbano,3
+imo_isiala_mbano_osu_owere_i,Osu Owere I,imo_isiala_mbano,4
+imo_isiala_mbano_osu_owere_ii,Osu Owere II,imo_isiala_mbano,5
+imo_isiala_mbano_osuama_anara,Osuama Anara,imo_isiala_mbano,6
+imo_isiala_mbano_ogiri_oka,Ogiri Oka,imo_isiala_mbano,7
+imo_isiala_mbano_amauzari,Amauzari,imo_isiala_mbano,8
+imo_isiala_mbano_obollo,Obollo,imo_isiala_mbano,9
+imo_isiala_mbano_umuozu,Umuozu,imo_isiala_mbano,10
+imo_isiala_mbano_osuachara,Osuachara,imo_isiala_mbano,11
+imo_isiala_mbano_umuelemai,Umuelemai,imo_isiala_mbano,12
+,,,
+imo_isu_amandugba_i,Amandugba I,imo_isu,1
+imo_isu_amandugba_ii,Amandugba II,imo_isu,2
+imo_isu_umundugba_i,Umundugba I,imo_isu,3
+imo_isu_umundugba_ii,Umundugba II,imo_isu,4
+imo_isu_amurie_omanze_i,Amurie Omanze I,imo_isu,5
+imo_isu_amurie_omanze_ii,Amurie Omanze II,imo_isu,6
+imo_isu_ekwe_i,Ekwe I,imo_isu,7
+imo_isu_ekwe_ii,Ekwe II,imo_isu,8
+imo_isu_isu_njaba_i,Isu Njaba I,imo_isu,9
+imo_isu_isu_njaba_ii,Isu Njaba II,imo_isu,10
+imo_isu_isu_njaba_iii,Isu Njaba III,imo_isu,11
+,,,
+imo_mbaitoli_afara_eziama,Afara/Eziama,imo_mbaitoli,1
+imo_mbaitoli_ogbaku,Ogbaku,imo_mbaitoli,2
+imo_mbaitoli_umunoha_azara,Umunoha/Azara,imo_mbaitoli,3
+imo_mbaitoli_ubomiri,Ubomiri,imo_mbaitoli,4
+imo_mbaitoli_ifakala,Ifakala,imo_mbaitoli,5
+imo_mbaitoli_ogwa_i,Ogwa I,imo_mbaitoli,6
+imo_mbaitoli_ogwa_ii,Ogwa II,imo_mbaitoli,7
+imo_mbaitoli_orodo_i,Orodo I,imo_mbaitoli,8
+imo_mbaitoli_orodo_ii,Orodo II,imo_mbaitoli,9
+imo_mbaitoli_umunwoha_umuagwu,Umunwoha/Umuagwu,imo_mbaitoli,10
+imo_mbaitoli_amaike,Amaike,imo_mbaitoli,11
+imo_mbaitoli_ezinihitte,Ezinihitte,imo_mbaitoli,12
+,,,
+imo_ngor_okpala_amala_alulu_oboru,Amala/Alulu Oboru,imo_ngor_okpala,1
+imo_ngor_okpala_eleme_obike,Eleme/Obike,imo_ngor_okpala,2
+imo_ngor_okpala_ozuzu,Ozuzu,imo_ngor_okpala,3
+imo_ngor_okpala_eziama_okpala,Eziama/Okpala,imo_ngor_okpala,4
+imo_ngor_okpala_imer_enwe,Imer Enwe,imo_ngor_okpala,5
+imo_ngor_okpala_nguru_umuowa,Nguru Umuowa,imo_ngor_okpala,6
+imo_ngor_okpala_ngor_ihitte_umukabia,Ngor Ihitte/Umukabia,imo_ngor_okpala,7
+imo_ngor_okpala_ohekem_nnorie,Ohekem Nnorie,imo_ngor_okpala,8
+imo_ngor_okpala_umuhu,Umuhu,imo_ngor_okpala,9
+imo_ngor_okpala_obiangwu,Obiangwu,imo_ngor_okpala,10
+imo_ngor_okpala_logara_umoha_agu,Logara/Umoha/Agu,imo_ngor_okpala,11
+,,,
+imo_njaba_atta_i,Atta I,imo_njaba,1
+imo_njaba_atta_ii,Atta II,imo_njaba,2
+imo_njaba_atta_iii,Atta III,imo_njaba,3
+imo_njaba_amucha_i,Amucha I,imo_njaba,4
+imo_njaba_amucha_ii,Amucha II,imo_njaba,5
+imo_njaba_nkume,Nkume,imo_njaba,6
+imo_njaba_okwudor,Okwudor,imo_njaba,7
+imo_njaba_umuaka_i,Umuaka I,imo_njaba,8
+imo_njaba_umuaka_ii,Umuaka II,imo_njaba,9
+imo_njaba_umuaka_iii,Umuaka III,imo_njaba,10
+imo_njaba_umuaka_iv,Umuaka IV,imo_njaba,11
+,,,
+imo_nkwerre_onusa,Onusa,imo_nkwerre,1
+imo_nkwerre_nnanano,Nnanano,imo_nkwerre,2
+imo_nkwerre_umukor_iii,Umukor III,imo_nkwerre,3
+imo_nkwerre_umunobo_umunachi,Umunobo/Umunachi,imo_nkwerre,4
+imo_nkwerre_nkwerre_urban,Nkwerre Urban,imo_nkwerre,5
+imo_nkwerre_owere_nkworji_i,Owere Nkworji I,imo_nkwerre,6
+imo_nkwerre_owere_nkworji_ii,Owere Nkworji II,imo_nkwerre,7
+imo_nkwerre_umudi_umuwala,Umudi/UmuWala,imo_nkwerre,8
+imo_nkwerre_amaopara,Amaopara,imo_nkwerre,9
+imo_nkwerre_eziama_obaire,Eziama Obaire,imo_nkwerre,10
+,,,
+imo_nwangele_amaigbo_i,Amaigbo I,imo_nwangele,1
+imo_nwangele_amaigbo_ii,Amaigbo II,imo_nwangele,2
+imo_nwangele_amaigbo_iii,Amaigbo III,imo_nwangele,3
+imo_nwangele_amaigbo_iv,Amaigbo IV,imo_nwangele,4
+imo_nwangele_amaigbo_v,Amaigbo V,imo_nwangele,5
+imo_nwangele_abba,Abba,imo_nwangele,6
+imo_nwangele_umuozu,Umuozu,imo_nwangele,7
+imo_nwangele_kara_na_orlu,Kara Na Orlu,imo_nwangele,8
+imo_nwangele_dim_na_nume,Dim Na Nume,imo_nwangele,9
+imo_nwangele_abajah_i,Abajah I,imo_nwangele,10
+imo_nwangele_abajah_ii,Abajah II,imo_nwangele,11
+,,,
+imo_obowo_alike,Alike,imo_obowo,1
+imo_obowo_amanze_umungwa,Amanze/Umungwa,imo_obowo,2
+imo_obowo_amuzi,Amuzi,imo_obowo,3
+imo_obowo_avutu,Avutu,imo_obowo,4
+imo_obowo_ehume,Ehume,imo_obowo,5
+imo_obowo_odenkume_umuosochie,Odenkume Umuosochie,imo_obowo,6
+imo_obowo_okenalogho,Okenalogho,imo_obowo,7
+imo_obowo_okwuohia,Okwuohia,imo_obowo,8
+imo_obowo_umuariam_achara,Umuariam/Achara,imo_obowo,9
+imo_obowo_umunachi,Umunachi,imo_obowo,10
+,,,
+delta_aniocha_north_obior,Obior,delta_aniocha_north,1
+delta_aniocha_north_onicha_road,Onicha Road,delta_aniocha_north,2
+delta_aniocha_north_obomkpa,Obomkpa,delta_aniocha_north,3
+delta_aniocha_north_onicha_olona,Onicha Olona,delta_aniocha_north,4
+delta_aniocha_north_issele_azagba,Issele Azagba,delta_aniocha_north,5
+delta_aniocha_north_issele_uku_i,Issele Uku I,delta_aniocha_north,6
+delta_aniocha_north_issele_uku_ii,Issele Uku II,delta_aniocha_north,7
+delta_aniocha_north_idumuje_unor,Idumuje Unor,delta_aniocha_north,8
+delta_aniocha_north_ukwu_uzu,Ukwu Uzu,delta_aniocha_north,9
+delta_aniocha_north_ezi,Ezi,delta_aniocha_north,10
+,,,
+delta_aniocha_south_ogwashi_uku_i,Ogwashi Uku I,delta_aniocha_south,1
+delta_aniocha_south_ogwashi_uku_ii,Ogwashi Uku II,delta_aniocha_south,2
+delta_aniocha_south_ogwashi_uku_iii,Ogwashi Uku III,delta_aniocha_south,3
+delta_aniocha_south_ubulu_uku_i,Ubulu Uku I,delta_aniocha_south,4
+delta_aniocha_south_ubulu_uku_ii,Ubulu Uku II,delta_aniocha_south,5
+delta_aniocha_south_ubulu_unor,Ubulu Unor,delta_aniocha_south,6
+delta_aniocha_south_nsukwa,Nsukwa,delta_aniocha_south,7
+delta_aniocha_south_ejeme,Ejeme,delta_aniocha_south,8
+delta_aniocha_south_isheagu_ewulu,Isheagu Ewulu,delta_aniocha_south,9
+delta_aniocha_south_aba_unor,Aba Unor,delta_aniocha_south,10
+delta_aniocha_south_ubulu_okiti,Ubulu Okiti,delta_aniocha_south,11
+,,,
+delta_bomadi_bomadi,Bomadi,delta_bomadi,1
+delta_bomadi_kpaikiam,Kpaikiam,delta_bomadi,2
+delta_bomadi_esanma,Esanma,delta_bomadi,3
+delta_bomadi_oriagbena,Oriagbena,delta_bomadi,4
+delta_bomadi_kolafiogbena,Kolafiogbena,delta_bomadi,5
+delta_bomadi_ogbeinama,Ogbeinama,delta_bomadi,6
+delta_bomadi_akugbena_i,Akugbena I,delta_bomadi,7
+delta_bomadi_akugbena_ii,Akugbena II,delta_bomadi,8
+delta_bomadi_akugbena_iii,Akugbena III,delta_bomadi,9
+delta_bomadi_ogo_eze,Ogo Eze,delta_bomadi,10
+,,,
+delta_burutu_tuomo,Tuomo,delta_burutu,1
+delta_burutu_sebiri,Sebiri,delta_burutu,2
+delta_burutu_ojobo,Ojobo,delta_burutu,3
+delta_burutu_bulou_ndoro,Bulou Ndoro,delta_burutu,4
+delta_burutu_ngbilere_i,Ngbilere I,delta_burutu,5
+delta_burutu_ngbilere_ii,Ngbilere II,delta_burutu,6
+delta_burutu_ogbolubiri,Ogbolubiri,delta_burutu,7
+delta_burutu_obotebe,Obotebe,delta_burutu,8
+delta_burutu_ogulagha,Ogulagha,delta_burutu,9
+delta_burutu_abroaka_i,Abroaka I,delta_burutu,10
+delta_burutu_abroaka_ii,Abroaka II,delta_burutu,11
+,,,
+delta_ethiope_east_abroaka_i,Abroaka I,delta_ethiope_east,1
+delta_ethiope_east_abroaka_ii,Abroaka II,delta_ethiope_east,2
+delta_ethiope_east_abroaka_iii,Abroaka III,delta_ethiope_east,3
+delta_ethiope_east_agbona_i,Agbona I,delta_ethiope_east,4
+delta_ethiope_east_agbona_ii,Agbona II,delta_ethiope_east,5
+delta_ethiope_east_agbona_iii,Agbona III,delta_ethiope_east,6
+delta_ethiope_east_agbona_iv,Agbona IV,delta_ethiope_east,7
+delta_ethiope_east_agbona_v,Agbona V,delta_ethiope_east,8
+delta_ethiope_east_agbona_vi,Agbona VI,delta_ethiope_east,9
+delta_ethiope_east_agbona_vii,Agbona VII,delta_ethiope_east,10
+delta_ethiope_east_agbona_viii,Agbona VIII,delta_ethiope_east,11
+,,,
+delta_ethiope_west_mosogar_i,Mosogar I,delta_ethiope_west,1
+delta_ethiope_west_mosogar_ii,Mosogar II,delta_ethiope_west,2
+delta_ethiope_west_jesse_i,Jesse I,delta_ethiope_west,3
+delta_ethiope_west_jesse_ii,Jesse II,delta_ethiope_west,4
+delta_ethiope_west_jesse_iii,Jesse III,delta_ethiope_west,5
+delta_ethiope_west_jesse_iv,Jesse IV,delta_ethiope_west,6
+delta_ethiope_west_oghara_i,Oghara I,delta_ethiope_west,7
+delta_ethiope_west_oghara_ii,Oghara II,delta_ethiope_west,8
+delta_ethiope_west_oghara_iii,Oghara III,delta_ethiope_west,9
+delta_ethiope_west_oghara_iv,Oghara IV,delta_ethiope_west,10
+delta_ethiope_west_oghara_v,Oghara V,delta_ethiope_west,11
+,,,
+delta_ika_north_east_owa_i,Owa I,delta_ika_north_east,1
+delta_ika_north_east_owa_ii,Owa II,delta_ika_north_east,2
+delta_ika_north_east_owa_iii,Owa III,delta_ika_north_east,3
+delta_ika_north_east_owa_iv,Owa IV,delta_ika_north_east,4
+delta_ika_north_east_owa_v,Owa V,delta_ika_north_east,5
+delta_ika_north_east_owa_vi,Owa VI,delta_ika_north_east,6
+delta_ika_north_east_akumazi,Akumazi,delta_ika_north_east,7
+delta_ika_north_east_igbodo,Igbodo,delta_ika_north_east,8
+delta_ika_north_east_ute_okpu,Ute Okpu,delta_ika_north_east,9
+delta_ika_north_east_idumuesah,Idumuesah,delta_ika_north_east,10
+delta_ika_north_east_umunede,Umunede,delta_ika_north_east,11
+delta_ika_north_east_nbiri,Nbiri,delta_ika_north_east,12
+delta_ika_north_east_ute_ogbeje,Ute Ogbeje,delta_ika_north_east,13
+delta_ika_north_east_otolokpo,Otolokpo,delta_ika_north_east,14
+,,,
+delta_ika_south_agbor_town_i,Agbor Town I,delta_ika_south,1
+delta_ika_south_agbor_town_ii,Agbor Town II,delta_ika_south,2
+delta_ika_south_ihuozoamor,Ihuozoamor,delta_ika_south,3
+delta_ika_south_ihiuyase_i,Ihiuyase I,delta_ika_south,4
+delta_ika_south_ihiuyase_ii,Ihiuyase II,delta_ika_south,5
+delta_ika_south_ekuku_agbor,Ekuku Agbor,delta_ika_south,6
+delta_ika_south_boji_boji_i,Boji Boji I,delta_ika_south,7
+delta_ika_south_boji_boji_ii,Boji Boji II,delta_ika_south,8
+delta_ika_south_boji_boji_iii,Boji Boji III,delta_ika_south,9
+delta_ika_south_abavo_i,Abavo I,delta_ika_south,10
+delta_ika_south_abavo_ii,Abavo II,delta_ika_south,11
+delta_ika_south_abavo_iii,Abavo III,delta_ika_south,12
+,,,
+delta_ethiope_east_abroaka_i,Abroaka I,delta_ethiope_east,1
+delta_ethiope_east_abroaka_ii,Abroaka II,delta_ethiope_east,2
+delta_ethiope_east_abroaka_iii,Abroaka III,delta_ethiope_east,3
+delta_ethiope_east_agbona_i,Agbona I,delta_ethiope_east,4
+delta_ethiope_east_agbona_ii,Agbona II,delta_ethiope_east,5
+delta_ethiope_east_agbona_iii,Agbona III,delta_ethiope_east,6
+delta_ethiope_east_agbona_iv,Agbona IV,delta_ethiope_east,7
+delta_ethiope_east_agbona_v,Agbona V,delta_ethiope_east,8
+delta_ethiope_east_agbona_vi,Agbona VI,delta_ethiope_east,9
+delta_ethiope_east_agbona_vii,Agbona VII,delta_ethiope_east,10
+delta_ethiope_east_agbona_viii,Agbona VIII,delta_ethiope_east,11
+,,,
+delta_ethiope_west_mosogar_i,Mosogar I,delta_ethiope_west,1
+delta_ethiope_west_mosogar_ii,Mosogar II,delta_ethiope_west,2
+delta_ethiope_west_jesse_i,Jesse I,delta_ethiope_west,3
+delta_ethiope_west_jesse_ii,Jesse II,delta_ethiope_west,4
+delta_ethiope_west_jesse_iii,Jesse III,delta_ethiope_west,5
+delta_ethiope_west_jesse_iv,Jesse IV,delta_ethiope_west,6
+delta_ethiope_west_oghara_i,Oghara I,delta_ethiope_west,7
+delta_ethiope_west_oghara_ii,Oghara II,delta_ethiope_west,8
+delta_ethiope_west_oghara_iii,Oghara III,delta_ethiope_west,9
+delta_ethiope_west_oghara_iv,Oghara IV,delta_ethiope_west,10
+delta_ethiope_west_oghara_v,Oghara V,delta_ethiope_west,11
+,,,
+delta_ika_north_east_owa_i,Owa I,delta_ika_north_east,1
+delta_ika_north_east_owa_ii,Owa II,delta_ika_north_east,2
+delta_ika_north_east_owa_iii,Owa III,delta_ika_north_east,3
+delta_ika_north_east_owa_iv,Owa IV,delta_ika_north_east,4
+delta_ika_north_east_owa_v,Owa V,delta_ika_north_east,5
+delta_ika_north_east_owa_vi,Owa VI,delta_ika_north_east,6
+delta_ika_north_east_akumazi,Akumazi,delta_ika_north_east,7
+delta_ika_north_east_igbodo,Igbodo,delta_ika_north_east,8
+delta_ika_north_east_ute_okpu,Ute Okpu,delta_ika_north_east,9
+delta_ika_north_east_idumuesah,Idumuesah,delta_ika_north_east,10
+delta_ika_north_east_umunede,Umunede,delta_ika_north_east,11
+delta_ika_north_east_nbiri,Nbiri,delta_ika_north_east,12
+delta_ika_north_east_ute_ogbeje,Ute Ogbeje,delta_ika_north_east,13
+delta_ika_north_east_otolokpo,Otolokpo,delta_ika_north_east,14
+,,,
+delta_ika_south_agbor_town_i,Agbor Town I,delta_ika_south,1
+delta_ika_south_agbor_town_ii,Agbor Town II,delta_ika_south,2
+delta_ika_south_ihuozoamor,Ihuozoamor,delta_ika_south,3
+delta_ika_south_ihiuyase_i,Ihiuyase I,delta_ika_south,4
+delta_ika_south_ihiuyase_ii,Ihiuyase II,delta_ika_south,5
+delta_ika_south_ekuku_agbor,Ekuku Agbor,delta_ika_south,6
+delta_ika_south_boji_boji_i,Boji Boji I,delta_ika_south,7
+delta_ika_south_boji_boji_ii,Boji Boji II,delta_ika_south,8
+delta_ika_south_boji_boji_iii,Boji Boji III,delta_ika_south,9
+delta_ika_south_abavo_i,Abavo I,delta_ika_south,10
+delta_ika_south_abavo_ii,Abavo II,delta_ika_south,11
+delta_ika_south_abavo_iii,Abavo III,delta_ika_south,12
+,,,
+delta_isoko_north_iyede_i,Iyede I,delta_isoko_north,1
+delta_isoko_north_iyede_ii,Iyede II,delta_isoko_north,2
+delta_isoko_north_ellu_radheo,Ellu/Radheo,delta_isoko_north,3
+delta_isoko_north_ofagbe,Ofagbe,delta_isoko_north,4
+delta_isoko_north_iluelogbo,Iluelogbo,delta_isoko_north,5
+delta_isoko_north_owhe_akiehwe,Owhe/Akiehwe,delta_isoko_north,6
+delta_isoko_north_emevor,Emevor,delta_isoko_north,7
+delta_isoko_north_okpe_isoko,Okpe Isoko,delta_isoko_north,8
+delta_isoko_north_ozoro_i,Ozoro I,delta_isoko_north,9
+delta_isoko_north_ozoro_ii,Ozoro II,delta_isoko_north,10
+delta_isoko_north_ozoro_iii,Ozoro III,delta_isoko_north,11
+delta_isoko_north_oyede,Oyede,delta_isoko_north,12
+delta_isoko_north_otibio,Otibio,delta_isoko_north,13
+,,,
+delta_isoko_south_oleh_i,Oleh I,delta_isoko_south,1
+delta_isoko_south_oleh_ii,Oleh II,delta_isoko_south,2
+delta_isoko_south_aviara,Aviara,delta_isoko_south,3
+delta_isoko_south_uzere,Uzere,delta_isoko_south,4
+delta_isoko_south_emede,Emede,delta_isoko_south,5
+delta_isoko_south_olomoro,Olomoro,delta_isoko_south,6
+delta_isoko_south_igbide,Igbide,delta_isoko_south,7
+delta_isoko_south_erowa_umeh,Erowa/Umeh,delta_isoko_south,8
+delta_isoko_south_enhwe_okpolo,Enhwe/Okpolo,delta_isoko_south,9
+delta_isoko_south_irri_i,Irri I,delta_isoko_south,10
+delta_isoko_south_irri_ii,Irri II,delta_isoko_south,11
+,,,
+delta_ndokwa_east_ossissa,Ossissa,delta_ndokwa_east,1
+delta_ndokwa_east_afor_obikwele,Afor/Obikwele,delta_ndokwa_east,2
+delta_ndokwa_east_abarra_inyi_onuaboh,Abarra/Inyi/Onuaboh,delta_ndokwa_east,3
+delta_ndokwa_east_okpa_utchi_beneku,Okpa/Utchi/Beneku,delta_ndokwa_east,4
+delta_ndokwa_east_aboh_akarrai,Aboh/Akarrai,delta_ndokwa_east,5
+delta_ndokwa_east_onyia_adiai_otuoku,Onyia/Adiai/Otuoku,delta_ndokwa_east,6
+delta_ndokwa_east_ase,Ase,delta_ndokwa_east,7
+delta_ndokwa_east_ibedeni,Ibedeni,delta_ndokwa_east,8
+delta_ndokwa_east_iberede_igbuku,Iberede/Igbuku,delta_ndokwa_east,9
+delta_ndokwa_east_ashaka,Ashaka,delta_ndokwa_east,10
+,,,
+delta_ndokwa_west_utagba_ogbe,Utagba Ogbe,delta_ndokwa_west,1
+delta_ndokwa_west_utagba_uno_i,Utagba Uno I,delta_ndokwa_west,2
+delta_ndokwa_west_utagba_uno_ii,Utagba Uno II,delta_ndokwa_west,3
+delta_ndokwa_west_utagba_uno_iii,Utagba Uno III,delta_ndokwa_west,4
+delta_ndokwa_west_onicha_ukwani,Onicha Ukwani,delta_ndokwa_west,5
+delta_ndokwa_west_ogume_i,Ogume I,delta_ndokwa_west,6
+delta_ndokwa_west_ogume_ii,Ogume II,delta_ndokwa_west,7
+delta_ndokwa_west_abbi_i,Abbi I,delta_ndokwa_west,8
+delta_ndokwa_west_abbi_ii,Abbi II,delta_ndokwa_west,9
+delta_ndokwa_west_emu,Emu,delta_ndokwa_west,10
+,,,
+delta_okpe_orerokpe,Orerokpe,delta_okpe,1
+delta_okpe_oviri_okpe,Oviri Okpe,delta_okpe,2
+delta_okpe_oha_i,Oha I,delta_okpe,3
+delta_okpe_oha_ii,Oha II,delta_okpe,4
+delta_okpe_aghalokpe,Aghalokpe,delta_okpe,5
+delta_okpe_aragba_town,Aragba Town,delta_okpe,6
+delta_okpe_mereje_i,Mereje I,delta_okpe,7
+delta_okpe_mereje_ii,Mereje II,delta_okpe,8
+delta_okpe_mereje_iii,Mereje III,delta_okpe,9
+delta_okpe_ughoton,Ughoton,delta_okpe,10
+,,,
+delta_oshimili_north_akwukwu,Akwukwu,delta_oshimili_north,1
+delta_oshimili_north_ebu,Ebu,delta_oshimili_north,2
+delta_oshimili_north_illah,Illah,delta_oshimili_north,3
+delta_oshimili_north_ibusa_i,Ibusa I,delta_oshimili_north,4
+delta_oshimili_north_ibusa_ii,Ibusa II,delta_oshimili_north,5
+delta_oshimili_north_ibusa_iii,Ibusa III,delta_oshimili_north,6
+delta_oshimili_north_ibusa_iv,Ibusa IV,delta_oshimili_north,7
+delta_oshimili_north_ibusa_v,Ibusa V,delta_oshimili_north,8
+delta_oshimili_north_okpanam,Okpanam,delta_oshimili_north,9
+delta_oshimili_north_ukala,Ukala,delta_oshimili_north,10
+,,,
+delta_oshimili_south_ogbele_akpako,Ogbele/Akpako,delta_oshimili_south,1
+delta_oshimili_south_anala_amakom,Anala Amakom,delta_oshimili_south,2
+delta_oshimili_south_okwe,Okwe,delta_oshimili_south,3
+delta_oshimili_south_umuezie,Umuezie,delta_oshimili_south,4
+delta_oshimili_south_umuaji,Umuaji,delta_oshimili_south,5
+delta_oshimili_south_umuonaje,Umuonaje,delta_oshimili_south,6
+delta_oshimili_south_agu,Agu,delta_oshimili_south,7
+delta_oshimili_south_ugbomanta_quarter,Ugbomanta Quarter,delta_oshimili_south,8
+delta_oshimili_south_west_end,West End,delta_oshimili_south,9
+delta_oshimili_south_cable_point_i,Cable Point I,delta_oshimili_south,10
+delta_oshimili_south_cable_point_ii,Cable Point II,delta_oshimili_south,11
+,,,
+delta_patani_abbari,Abbari,delta_patani,1
+delta_patani_patani_i,Patani I,delta_patani,2
+delta_patani_patani_ii,Patani II,delta_patani,3
+delta_patani_patani_iii,Patani III,delta_patani,4
+delta_patani_taware,Taware,delta_patani,5
+delta_patani_agoloma,Agoloma,delta_patani,6
+delta_patani_toru_angiama,Toru Angiama,delta_patani,7
+delta_patani_boluo_angiama,Boluo Angiama,delta_patani,8
+delta_patani_uduophori,Uduophori,delta_patani,9
+delta_patani_odorubu_adobu,Odorubu/Adobu,delta_patani,10
+,,,
+delta_sapele_sapele_urban_i,Sapele Urban I,delta_sapele,1
+delta_sapele_sapele_urban_ii,Sapele Urban II,delta_sapele,2
+delta_sapele_sapele_urban_iii,Sapele Urban III,delta_sapele,3
+delta_sapele_sapele_urban_iv,Sapele Urban IV,delta_sapele,4
+delta_sapele_sapele_urban_v,Sapele Urban V,delta_sapele,5
+delta_sapele_sapele_urban_vi,Sapele Urban VI,delta_sapele,6
+delta_sapele_sapele_urban_vii,Sapele Urban VII,delta_sapele,7
+delta_sapele_sapele_urban_viii,Sapele Urban VIII,delta_sapele,8
+delta_sapele_amoukpe,Amoukpe,delta_sapele,9
+delta_sapele_elume,Elume,delta_sapele,10
+delta_sapele_okokporo_ugborhen,Okokporo/Ugborhen,delta_sapele,11
+,,,
+delta_udu_udu_i,Udu I,delta_udu,1
+delta_udu_udu_ii,Udu II,delta_udu,2
+delta_udu_udu_iii,Udu III,delta_udu,3
+delta_udu_udu_iv,Udu IV,delta_udu,4
+delta_udu_opete_assagba,Opete/Assagba,delta_udu,5
+delta_udu_ekete,Ekete,delta_udu,6
+delta_udu_ovwian_i,Ovwian I,delta_udu,7
+delta_udu_ovwian_ii,Ovwian II,delta_udu,8
+delta_udu_orhuwhurun,Orhuwhurun,delta_udu,9
+delta_udu_aladja,Aladja,delta_udu,10
+,,,
+delta_ughelli_north_agbarah,Agbarah,delta_ughelli_north,1
+delta_ughelli_north_ogor,Ogor,delta_ughelli_north,2
+delta_ughelli_north_orogun_i,Orogun I,delta_ughelli_north,3
+delta_ughelli_north_orogun_ii,Orogun II,delta_ughelli_north,4
+delta_ughelli_north_ughelli_i,Ughelli I,delta_ughelli_north,5
+delta_ughelli_north_ughelli_ii,Ughelli II,delta_ughelli_north,6
+delta_ughelli_north_ughelli_iii,Ughelli III,delta_ughelli_north,7
+delta_ughelli_north_evwereni,Evwereni,delta_ughelli_north,8
+delta_ughelli_north_uwhieru,Uwhieru,delta_ughelli_north,9
+delta_ughelli_north_agbarho_i,Agbarho I,delta_ughelli_north,10
+delta_ughelli_north_agbarho_ii,Agbarho II,delta_ughelli_north,11
+,,,
+delta_ughelli_south_ewu_i,Ewu I,delta_ughelli_south,1
+delta_ughelli_south_ewu_ii,Ewu II,delta_ughelli_south,2
+delta_ughelli_south_ewu_iii,Ewu III,delta_ughelli_south,3
+delta_ughelli_south_olomu_i,Olomu I,delta_ughelli_south,4
+delta_ughelli_south_olomu_ii,Olomu II,delta_ughelli_south,5
+delta_ughelli_south_effurun_otor,Effurun Otor,delta_ughelli_south,6
+delta_ughelli_south_ekakpamre,Ekakpamre,delta_ughelli_south,7
+delta_ughelli_south_jeremi_i,Jeremi I,delta_ughelli_south,8
+delta_ughelli_south_jeremi_ii,Jeremi II,delta_ughelli_south,9
+delta_ughelli_south_jeremi_iii,Jeremi III,delta_ughelli_south,10
+delta_ughelli_south_jeremi_iv,Jeremi IV,delta_ughelli_south,11
+,,,
+delta_ukwuani_umutu,Umutu,delta_ukwuani,1
+delta_ukwuani_akoku,Akoku,delta_ukwuani,2
+delta_ukwuani_ebedei,Ebedei,delta_ukwuani,3
+delta_ukwuani_umukwata,Umukwata,delta_ukwuani,4
+delta_ukwuani_eziokpor,Eziokpor,delta_ukwuani,5
+delta_ukwuani_amai,Amai,delta_ukwuani,6
+delta_ukwuani_ezionum,Ezionum,delta_ukwuani,7
+delta_ukwuani_umuebu,Umuebu,delta_ukwuani,8
+delta_ukwuani_obi_aruku_i,Obiaruku I,delta_ukwuani,9
+delta_ukwuani_obi_aruku_ii,Obiaruku II,delta_ukwuani,10
+,,,
+delta_uvwie_effurun_i,Effurun I,delta_uvwie,1
+delta_uvwie_effurun_ii,Effurun II,delta_uvwie,2
+delta_uvwie_enerhen_i,Enerhen I,delta_uvwie,3
+delta_uvwie_enerhen_ii,Enerhen II,delta_uvwie,4
+delta_uvwie_ugborikoko,Ugbirikoko,delta_uvwie,5
+delta_uvwie_ugboroke,Ugboroke,delta_uvwie,6
+delta_uvwie_ugbomro,Ugbomro,delta_uvwie,7
+delta_uvwie_army_barracks_area,Army Barracks Area,delta_uvwie,8
+delta_uvwie_ekpan_i,Ekpan I,delta_uvwie,9
+delta_uvwie_ekpan_ii,Ekpan II,delta_uvwie,10
+,,,
+delta_warri_north_ogheye,Ogheye,delta_warri_north,1
+delta_warri_north_gbokodo,Gbokodo,delta_warri_north,2
+delta_warri_north_ebrohimi,Ebrohimi,delta_warri_north,3
+delta_warri_north_eghoro,Eghoro,delta_warri_north,4
+delta_warri_north_koko_i,Koko I,delta_warri_north,5
+delta_warri_north_koko_ii,Koko II,delta_warri_north,6
+delta_warri_north_egbema_i,Egbema I,delta_warri_north,7
+delta_warri_north_egbema_ii,Egbema II,delta_warri_north,8
+delta_warri_north_egbema_iii,Egbema III,delta_warri_north,9
+delta_warri_north_egbema_iv,Egbema IV,delta_warri_north,10
+,,,
+delta_warri_south_obodo_omadino,Obodo/Omadino,delta_warri_south,1
+delta_warri_south_ode_itsekiri,Ode Itsekiri,delta_warri_south,2
+delta_warri_south_ogunu_ekurede,Ogunu/Ekurede,delta_warri_south,3
+delta_warri_south_ugbori_wangue,Ugbuwangue,delta_warri_south,4
+delta_warri_south_gra,GRA,delta_warri_south,5
+delta_warri_south_bowen,Bowen,delta_warri_south,6
+delta_warri_south_pessu,Pessu,delta_warri_south,7
+delta_warri_south_okere,Okere,delta_warri_south,8
+delta_warri_south_igbodu,Igbudu,delta_warri_south,9
+delta_warri_south_edujea,Edjeba,delta_warri_south,10
+delta_warri_south_okumagba_i,Okumagba I,delta_warri_south,11
+delta_warri_south_okumagba_ii,Okumagba II,delta_warri_south,12
+,,,
+delta_warri_south_west_ogbeijoh,Ogbeijoh,delta_warri_south_west,1
+delta_warri_south_west_isaba,Isaba,delta_warri_south_west,2
+delta_warri_south_west_oporoza,Oporoza,delta_warri_south_west,3
+delta_warri_south_west_gbaramatu,Gbaramatu,delta_warri_south_west,4
+delta_warri_south_west_ugborodo,Ugborodo,delta_warri_south_west,5
+delta_warri_south_west_akpakpa,Akpakpa,delta_warri_south_west,6
+delta_warri_south_west_madangho,Madangho,delta_warri_south_west,7
+delta_warri_south_west_orere,Orere,delta_warri_south_west,8
+delta_warri_south_west_aja_udaibo,Aja Udaibo,delta_warri_south_west,9
+delta_warri_south_west_ogidigben,Ogidigben,delta_warri_south_west,10
+,,,
+akwa_ibom_abak_abak_urban_i,Abak Urban I,akwa_ibom_abak,1
+akwa_ibom_abak_abak_urban_ii,Abak Urban II,akwa_ibom_abak,2
+akwa_ibom_abak_abak_urban_iii,Abak Urban III,akwa_ibom_abak,3
+akwa_ibom_abak_abak_urban_iv,Abak Urban IV,akwa_ibom_abak,4
+akwa_ibom_abak_afaha_obong_i,Afaha Obong I,akwa_ibom_abak,5
+akwa_ibom_abak_afaha_obong_ii,Afaha Obong II,akwa_ibom_abak,6
+akwa_ibom_abak_midim_i,Midim I,akwa_ibom_abak,7
+akwa_ibom_abak_midim_ii,Midim II,akwa_ibom_abak,8
+akwa_ibom_abak_otoro_i,Otoro I,akwa_ibom_abak,9
+akwa_ibom_abak_otoro_ii,Otoro II,akwa_ibom_abak,10
+akwa_ibom_abak_otoro_iii,Otoro III,akwa_ibom_abak,11
+,,,
+akwa_ibom_eastern_obolo_eastern_obolo_i,Eastern Obolo I,akwa_ibom_eastern_obolo,1
+akwa_ibom_eastern_obolo_eastern_obolo_ii,Eastern Obolo II,akwa_ibom_eastern_obolo,2
+akwa_ibom_eastern_obolo_eastern_obolo_iii,Eastern Obolo III,akwa_ibom_eastern_obolo,3
+akwa_ibom_eastern_obolo_eastern_obolo_iv,Eastern Obolo IV,akwa_ibom_eastern_obolo,4
+akwa_ibom_eastern_obolo_eastern_obolo_v,Eastern Obolo V,akwa_ibom_eastern_obolo,5
+akwa_ibom_eastern_obolo_eastern_obolo_vi,Eastern Obolo VI,akwa_ibom_eastern_obolo,6
+akwa_ibom_eastern_obolo_eastern_obolo_vii,Eastern Obolo VII,akwa_ibom_eastern_obolo,7
+akwa_ibom_eastern_obolo_eastern_obolo_viii,Eastern Obolo VIII,akwa_ibom_eastern_obolo,8
+akwa_ibom_eastern_obolo_eastern_obolo_ix,Eastern Obolo IX,akwa_ibom_eastern_obolo,9
+akwa_ibom_eastern_obolo_eastern_obolo_x,Eastern Obolo X,akwa_ibom_eastern_obolo,10
+,,,
+akwa_ibom_eket_urban_i,Urban I,akwa_ibom_eket,1
+akwa_ibom_eket_urban_ii,Urban II,akwa_ibom_eket,2
+akwa_ibom_eket_urban_iii,Urban III,akwa_ibom_eket,3
+akwa_ibom_eket_urban_iv,Urban IV,akwa_ibom_eket,4
+akwa_ibom_eket_central_i,Central I,akwa_ibom_eket,5
+akwa_ibom_eket_central_ii,Central II,akwa_ibom_eket,6
+akwa_ibom_eket_central_iii,Central III,akwa_ibom_eket,7
+akwa_ibom_eket_central_iv,Central IV,akwa_ibom_eket,8
+akwa_ibom_eket_central_v,Central V,akwa_ibom_eket,9
+akwa_ibom_eket_okon_i,Okon I,akwa_ibom_eket,10
+akwa_ibom_eket_okon_ii,Okon II,akwa_ibom_eket,11
+,,,
+akwa_ibom_esit_eket_uquo,Esit Eket Uquo,akwa_ibom_esit_eket,1
+akwa_ibom_esit_eket_ekpene_obo,Ekpene Obo,akwa_ibom_esit_eket,2
+akwa_ibom_esit_eket_edor,Edor,akwa_ibom_esit_eket,3
+akwa_ibom_esit_eket_ebe_ekpi,Ebe Ekpi,akwa_ibom_esit_eket,4
+akwa_ibom_esit_eket_ikpa,Ikpa,akwa_ibom_esit_eket,5
+akwa_ibom_esit_eket_ebighi_okpono,Ebighi Okpono,akwa_ibom_esit_eket,6
+akwa_ibom_esit_eket_etebi_idung_assan,Etebi Idung Assan,akwa_ibom_esit_eket,7
+akwa_ibom_esit_eket_etebi_akwata,Etebi Akwata,akwa_ibom_esit_eket,8
+akwa_ibom_esit_eket_akpabuyo,Akpabuyo,akwa_ibom_esit_eket,9
+akwa_ibom_esit_eket_ntaka_inyang,Ntaka Inyang,akwa_ibom_esit_eket,10
+,,,
+akwa_ibom_essien_udim_adiasim,Adiasim,akwa_ibom_essien_udim,1
+akwa_ibom_essien_udim_afaha,Afaha,akwa_ibom_essien_udim,2
+akwa_ibom_essien_udim_ekpeyong_i,Ekpeyong I,akwa_ibom_essien_udim,3
+akwa_ibom_essien_udim_ekpeyong_ii,Ekpeyong II,akwa_ibom_essien_udim,4
+akwa_ibom_essien_udim_ikpe_annang,Ikpe Annang,akwa_ibom_essien_udim,5
+akwa_ibom_essien_udim_odoro_ikot_i,Odoro Ikot I,akwa_ibom_essien_udim,6
+akwa_ibom_essien_udim_odoro_ikot_ii,Odoro Ikot II,akwa_ibom_essien_udim,7
+akwa_ibom_essien_udim_okon,Okon,akwa_ibom_essien_udim,8
+akwa_ibom_essien_udim_ukana_east,Ukana East,akwa_ibom_essien_udim,9
+akwa_ibom_essien_udim_ukana_west_i,Ukana West I,akwa_ibom_essien_udim,10
+akwa_ibom_essien_udim_ukana_west_ii,Ukana West II,akwa_ibom_essien_udim,11
+,,,
+akwa_ibom_etim_ekpo_etim_ekpo_i,Etim Ekpo I,akwa_ibom_etim_ekpo,1
+akwa_ibom_etim_ekpo_etim_ekpo_ii,Etim Ekpo II,akwa_ibom_etim_ekpo,2
+akwa_ibom_etim_ekpo_etim_ekpo_iii,Etim Ekpo III,akwa_ibom_etim_ekpo,3
+akwa_ibom_etim_ekpo_etim_ekpo_iv,Etim Ekpo IV,akwa_ibom_etim_ekpo,4
+akwa_ibom_etim_ekpo_etim_ekpo_v,Etim Ekpo V,akwa_ibom_etim_ekpo,5
+akwa_ibom_etim_ekpo_etim_ekpo_vi,Etim Ekpo VI,akwa_ibom_etim_ekpo,6
+akwa_ibom_etim_ekpo_etim_ekpo_vii,Etim Ekpo VII,akwa_ibom_etim_ekpo,7
+akwa_ibom_etim_ekpo_etim_ekpo_viii,Etim Ekpo VIII,akwa_ibom_etim_ekpo,8
+akwa_ibom_etim_ekpo_etim_ekpo_ix,Etim Ekpo IX,akwa_ibom_etim_ekpo,9
+akwa_ibom_etim_ekpo_etim_ekpo_x,Etim Ekpo X,akwa_ibom_etim_ekpo,10
+,,,
+akwa_ibom_etinan_etinan_urban_i,Etinan Urban I,akwa_ibom_etinan,1
+akwa_ibom_etinan_etinan_urban_ii,Etinan Urban II,akwa_ibom_etinan,2
+akwa_ibom_etinan_etinan_urban_iii,Etinan Urban III,akwa_ibom_etinan,3
+akwa_ibom_etinan_etinan_urban_iv,Etinan Urban IV,akwa_ibom_etinan,4
+akwa_ibom_etinan_etinan_urban_v,Etinan Urban V,akwa_ibom_etinan,5
+akwa_ibom_etinan_southern_iman_i,Southern Iman I,akwa_ibom_etinan,6
+akwa_ibom_etinan_southern_iman_ii,Southern Iman II,akwa_ibom_etinan,7
+akwa_ibom_etinan_southern_iman_iii,Southern Iman III,akwa_ibom_etinan,8
+akwa_ibom_etinan_southern_iman_iv,Southern Iman IV,akwa_ibom_etinan,9
+akwa_ibom_etinan_northern_iman_i,Northern Iman I,akwa_ibom_etinan,10
+akwa_ibom_etinan_northern_iman_ii,Northern Iman II,akwa_ibom_etinan,11
+,,,
+akwa_ibom_ibeno_ibeno_i,Ibeno I,akwa_ibom_ibeno,1
+akwa_ibom_ibeno_ibeno_ii,Ibeno II,akwa_ibom_ibeno,2
+akwa_ibom_ibeno_ibeno_iii,Ibeno III,akwa_ibom_ibeno,3
+akwa_ibom_ibeno_ibeno_iv,Ibeno IV,akwa_ibom_ibeno,4
+akwa_ibom_ibeno_ibeno_v,Ibeno V,akwa_ibom_ibeno,5
+akwa_ibom_ibeno_ibeno_vi,Ibeno VI,akwa_ibom_ibeno,6
+akwa_ibom_ibeno_ibeno_vii,Ibeno VII,akwa_ibom_ibeno,7
+akwa_ibom_ibeno_ibeno_viii,Ibeno VIII,akwa_ibom_ibeno,8
+akwa_ibom_ibeno_ibeno_ix,Ibeno IX,akwa_ibom_ibeno,9
+akwa_ibom_ibeno_ibeno_x,Ibeno X,akwa_ibom_ibeno,10
+,,,
+akwa_ibom_ib esikpo_asutan_ibesikpo_i,Ibesikpo I,akwa_ibom_ibesikpo_asutan,1
+akwa_ibom_ibesikpo_asutan_ibesikpo_ii,Ibesikpo II,akwa_ibom_ibesikpo_asutan,2
+akwa_ibom_ibesikpo_asutan_ibesikpo_iii,Ibesikpo III,akwa_ibom_ibesikpo_asutan,3
+akwa_ibom_ibesikpo_asutan_ibesikpo_iv,Ibesikpo IV,akwa_ibom_ibesikpo_asutan,4
+akwa_ibom_ibesikpo_asutan_ibesikpo_v,Ibesikpo V,akwa_ibom_ibesikpo_asutan,5
+akwa_ibom_ibesikpo_asutan_asutan_i,Asutan I,akwa_ibom_ibesikpo_asutan,6
+akwa_ibom_ibesikpo_asutan_asutan_ii,Asutan II,akwa_ibom_ibesikpo_asutan,7
+akwa_ibom_ibesikpo_asutan_asutan_iii,Asutan III,akwa_ibom_ibesikpo_asutan,8
+akwa_ibom_ibesikpo_asutan_asutan_iv,Asutan IV,akwa_ibom_ibesikpo_asutan,9
+akwa_ibom_ibesikpo_asutan_asutan_v,Asutan V,akwa_ibom_ibesikpo_asutan,10
+,,,
+akwa_ibom_ibiono_ibom_ibiono_eastern_i,Ibiono Eastern I,akwa_ibom_ibiono_ibom,1
+akwa_ibom_ibiono_ibom_ibiono_eastern_ii,Ibiono Eastern II,akwa_ibom_ibiono_ibom,2
+akwa_ibom_ibiono_ibom_ibiono_western_i,Ibiono Western I,akwa_ibom_ibiono_ibom,3
+akwa_ibom_ibiono_ibom_ibiono_western_ii,Ibiono Western II,akwa_ibom_ibiono_ibom,4
+akwa_ibom_ibiono_ibom_ibiono_southern_i,Ibiono Southern I,akwa_ibom_ibiono_ibom,5
+akwa_ibom_ibiono_ibom_ibiono_southern_ii,Ibiono Southern II,akwa_ibom_ibiono_ibom,6
+akwa_ibom_ibiono_ibom_ibiono_northern_i,Ibiono Northern I,akwa_ibom_ibiono_ibom,7
+akwa_ibom_ibiono_ibom_ibiono_northern_ii,Ibiono Northern II,akwa_ibom_ibiono_ibom,8
+akwa_ibom_ibiono_ibom_ibiono_central_i,Ibiono Central I,akwa_ibom_ibiono_ibom,9
+akwa_ibom_ibiono_ibom_ibiono_central_ii,Ibiono Central II,akwa_ibom_ibiono_ibom,10
+akwa_ibom_ibiono_ibom_ikpanya,Ikpanya,akwa_ibom_ibiono_ibom,11
+,,,
+akwa_ibom_ika_urban_i,Urban I,akwa_ibom_ika,1
+akwa_ibom_ika_urban_ii,Urban II,akwa_ibom_ika,2
+akwa_ibom_ika_achan_ika_i,Achan Ika I,akwa_ibom_ika,3
+akwa_ibom_ika_achan_ika_ii,Achan Ika II,akwa_ibom_ika,4
+akwa_ibom_ika_achan_ika_iii,Achan Ika III,akwa_ibom_ika,5
+akwa_ibom_ika_ito_i,Ito I,akwa_ibom_ika,6
+akwa_ibom_ika_ito_ii,Ito II,akwa_ibom_ika,7
+akwa_ibom_ika_ito_iii,Ito III,akwa_ibom_ika,8
+akwa_ibom_ika_odoro_i,Odoro I,akwa_ibom_ika,9
+akwa_ibom_ika_odoro_ii,Odoro II,akwa_ibom_ika,10
+,,,
+akwa_ibom_ikono_ikono_middle_i,Ikono Middle I,akwa_ibom_ikono,1
+akwa_ibom_ikono_ikono_middle_ii,Ikono Middle II,akwa_ibom_ikono,2
+akwa_ibom_ikono_ikono_middle_iii,Ikono Middle III,akwa_ibom_ikono,3
+akwa_ibom_ikono_ikono_middle_iv,Ikono Middle IV,akwa_ibom_ikono,4
+akwa_ibom_ikono_ikono_south,Ikono South,akwa_ibom_ikono,5
+akwa_ibom_ikono_nkwot_i,Nkwot I,akwa_ibom_ikono,6
+akwa_ibom_ikono_nkwot_ii,Nkwot II,akwa_ibom_ikono,7
+akwa_ibom_ikono_ndiyaa_ikot_idaha,Ndiya/Ikot Idaha,akwa_ibom_ikono,8
+akwa_ibom_ikono_ediene_i,Ediene I,akwa_ibom_ikono,9
+akwa_ibom_ikono_ediene_ii,Ediene II,akwa_ibom_ikono,10
+akwa_ibom_ikono_tak,Tak,akwa_ibom_ikono,11
+,,,
+akwa_ibom_ikot_abasi_ikpa_ibekwe_i,Ikpa Ibekwe I,akwa_ibom_ikot_abasi,1
+akwa_ibom_ikot_abasi_ikpa_ibekwe_ii,Ikpa Ibekwe II,akwa_ibom_ikot_abasi,2
+akwa_ibom_ikot_abasi_ukpum_ete_i,Ukpum Ete I,akwa_ibom_ikot_abasi,3
+akwa_ibom_ikot_abasi_ukpum_ete_ii,Ukpum Ete II,akwa_ibom_ikot_abasi,4
+akwa_ibom_ikot_abasi_ukpum_okon,Ukpum Okon,akwa_ibom_ikot_abasi,5
+akwa_ibom_ikot_abasi_edemaya_i,Edemaya I,akwa_ibom_ikot_abasi,6
+akwa_ibom_ikot_abasi_edemaya_ii,Edemaya II,akwa_ibom_ikot_abasi,7
+akwa_ibom_ikot_abasi_edemaya_iii,Edemaya III,akwa_ibom_ikot_abasi,8
+akwa_ibom_ikot_abasi_ikpa_nung_asang_i,Ikpa Nung Asang I,akwa_ibom_ikot_abasi,9
+akwa_ibom_ikot_abasi_ikpa_nung_asang_ii,Ikpa Nung Asang II,akwa_ibom_ikot_abasi,10
+,,,
+akwa_ibom_ikot_ekpene_ikot_ekpene_i,Ikot Ekpene I,akwa_ibom_ikot_ekpene,1
+akwa_ibom_ikot_ekpene_ikot_ekpene_ii,Ikot Ekpene II,akwa_ibom_ikot_ekpene,2
+akwa_ibom_ikot_ekpene_ikot_ekpene_iii,Ikot Ekpene III,akwa_ibom_ikot_ekpene,3
+akwa_ibom_ikot_ekpene_ikot_ekpene_iv,Ikot Ekpene IV,akwa_ibom_ikot_ekpene,4
+akwa_ibom_ikot_ekpene_ikot_ekpene_v,Ikot Ekpene V,akwa_ibom_ikot_ekpene,5
+akwa_ibom_ikot_ekpene_ikot_ekpene_vi,Ikot Ekpene VI,akwa_ibom_ikot_ekpene,6
+akwa_ibom_ikot_ekpene_ikot_ekpene_vii,Ikot Ekpene VII,akwa_ibom_ikot_ekpene,7
+akwa_ibom_ikot_ekpene_ikot_ekpene_viii,Ikot Ekpene VIII,akwa_ibom_ikot_ekpene,8
+akwa_ibom_ikot_ekpene_ikot_ekpene_ix,Ikot Ekpene IX,akwa_ibom_ikot_ekpene,9
+akwa_ibom_ikot_ekpene_ikot_ekpene_x,Ikot Ekpene X,akwa_ibom_ikot_ekpene,10
+akwa_ibom_ikot_ekpene_ikot_ekpene_xi,Ikot Ekpene XI,akwa_ibom_ikot_ekpene,11
+,,,
+akwa_ibom_ini_ikpe_i,Ikpe I,akwa_ibom_ini,1
+akwa_ibom_ini_ikpe_ii,Ikpe II,akwa_ibom_ini,2
+akwa_ibom_ini_itu_mbonusuo,Itu Mbonusuo,akwa_ibom_ini,3
+akwa_ibom_ini_nkari,Nkari,akwa_ibom_ini,4
+akwa_ibom_ini_iwerre,Iwerre,akwa_ibom_ini,5
+akwa_ibom_ini_ikono_north_i,Ikono North I,akwa_ibom_ini,6
+akwa_ibom_ini_ikono_north_ii,Ikono North II,akwa_ibom_ini,7
+akwa_ibom_ini_ikono_north_iii,Ikono North III,akwa_ibom_ini,8
+akwa_ibom_ini_odoro_ukwok,Odoro Ukwok,akwa_ibom_ini,9
+akwa_ibom_ini_usuk_ukwok,Usuk Ukwok,akwa_ibom_ini,10
+,,,
+akwa_ibom_itu_oku_iboku,Oku Iboku,akwa_ibom_itu,1
+akwa_ibom_itu_mbaise_ayadehe,Mbaise/Ayadehe,akwa_ibom_itu,2
+akwa_ibom_itu_east_itam_i,East Itam I,akwa_ibom_itu,3
+akwa_ibom_itu_east_itam_ii,East Itam II,akwa_ibom_itu,4
+akwa_ibom_itu_east_itam_iii,East Itam III,akwa_ibom_itu,5
+akwa_ibom_itu_east_itam_iv,East Itam IV,akwa_ibom_itu,6
+akwa_ibom_itu_east_itam_v,East Itam V,akwa_ibom_itu,7
+akwa_ibom_itu_west_itam_i,West Itam I,akwa_ibom_itu,8
+akwa_ibom_itu_west_itam_ii,West Itam II,akwa_ibom_itu,9
+akwa_ibom_itu_west_itam_iii,West Itam III,akwa_ibom_itu,10
+,,,
+akwa_ibom_mbo_enwang_i,Enwang I,akwa_ibom_mbo,1
+akwa_ibom_mbo_enwang_ii,Enwang II,akwa_ibom_mbo,2
+akwa_ibom_mbo_ebughu_i,Ebughu I,akwa_ibom_mbo,3
+akwa_ibom_mbo_ebughu_ii,Ebughu II,akwa_ibom_mbo,4
+akwa_ibom_mbo_udeshi,Udeshi,akwa_ibom_mbo,5
+akwa_ibom_mbo_efiat_i,Efiat I,akwa_ibom_mbo,6
+akwa_ibom_mbo_efiat_ii,Efiat II,akwa_ibom_mbo,7
+akwa_ibom_mbo_ibaka,Ibaka,akwa_ibom_mbo,8
+akwa_ibom_mbo_uda_i,Uda I,akwa_ibom_mbo,9
+akwa_ibom_mbo_uda_ii,Uda II,akwa_ibom_mbo,10
+,,,
+akwa_ibom_mkpat_enin_ukpum_minya_i,Ukpum Minya I,akwa_ibom_mkpat_enin,1
+akwa_ibom_mkpat_enin_ukpum_minya_ii,Ukpum Minya II,akwa_ibom_mkpat_enin,2
+akwa_ibom_mkpat_enin_ukpum_minya_iii,Ukpum Minya III,akwa_ibom_mkpat_enin,3
+akwa_ibom_mkpat_enin_ukpum_minya_iv,Ukpum Minya IV,akwa_ibom_mkpat_enin,4
+akwa_ibom_mkpat_enin_ikpa_ibom_i,Ikpa Ibom I,akwa_ibom_mkpat_enin,5
+akwa_ibom_mkpat_enin_ikpa_ibom_ii,Ikpa Ibom II,akwa_ibom_mkpat_enin,6
+akwa_ibom_mkpat_enin_ikpa_ibom_iii,Ikpa Ibom III,akwa_ibom_mkpat_enin,7
+akwa_ibom_mkpat_enin_ikpa_ibom_iv,Ikpa Ibom IV,akwa_ibom_mkpat_enin,8
+akwa_ibom_mkpat_enin_ibiaku_i,Ibiaku I,akwa_ibom_mkpat_enin,9
+akwa_ibom_mkpat_enin_ibiaku_ii,Ibiaku II,akwa_ibom_mkpat_enin,10
+akwa_ibom_mkpat_enin_ibiaku_iii,Ibiaku III,akwa_ibom_mkpat_enin,11
+akwa_ibom_mkpat_enin_ikpa_ikono_i,Ikpa Ikono I,akwa_ibom_mkpat_enin,12
+akwa_ibom_mkpat_enin_ikpa_ikono_ii,Ikpa Ikono II,akwa_ibom_mkpat_enin,13
+akwa_ibom_mkpat_enin_ikpa_ikono_iii,Ikpa Ikono III,akwa_ibom_mkpat_enin,14
+,,,
+akwa_ibom_nsit_atai_eastern_nsit_i,Eastern Nsit I,akwa_ibom_nsit_atai,1
+akwa_ibom_nsit_atai_eastern_nsit_ii,Eastern Nsit II,akwa_ibom_nsit_atai,2
+akwa_ibom_nsit_atai_eastern_nsit_iii,Eastern Nsit III,akwa_ibom_nsit_atai,3
+akwa_ibom_nsit_atai_eastern_nsit_iv,Eastern Nsit IV,akwa_ibom_nsit_atai,4
+akwa_ibom_nsit_atai_eastern_nsit_v,Eastern Nsit V,akwa_ibom_nsit_atai,5
+akwa_ibom_nsit_atai_eastern_nsit_vi,Eastern Nsit VI,akwa_ibom_nsit_atai,6
+akwa_ibom_nsit_atai_eastern_nsit_vii,Eastern Nsit VII,akwa_ibom_nsit_atai,7
+akwa_ibom_nsit_atai_eastern_nsit_viii,Eastern Nsit VIII,akwa_ibom_nsit_atai,8
+akwa_ibom_nsit_atai_eastern_nsit_ix,Eastern Nsit IX,akwa_ibom_nsit_atai,9
+akwa_ibom_nsit_atai_eastern_nsit_x,Eastern Nsit X,akwa_ibom_nsit_atai,10
+,,,
+akwa_ibom_nsit_ibom_asang_i,Asang I,akwa_ibom_nsit_ibom,1
+akwa_ibom_nsit_ibom_asang_ii,Asang II,akwa_ibom_nsit_ibom,2
+akwa_ibom_nsit_ibom_asang_iii,Asang III,akwa_ibom_nsit_ibom,3
+akwa_ibom_nsit_ibom_asang_iv,Asang IV,akwa_ibom_nsit_ibom,4
+akwa_ibom_nsit_ibom_asang_v,Asang V,akwa_ibom_nsit_ibom,5
+akwa_ibom_nsit_ibom_mbaiso_i,Mbaiso I,akwa_ibom_nsit_ibom,6
+akwa_ibom_nsit_ibom_mbaiso_ii,Mbaiso II,akwa_ibom_nsit_ibom,7
+akwa_ibom_nsit_ibom_mbaiso_iii,Mbaiso III,akwa_ibom_nsit_ibom,8
+akwa_ibom_nsit_ibom_mbaiso_iv,Mbaiso IV,akwa_ibom_nsit_ibom,9
+akwa_ibom_nsit_ibom_mbaiso_v,Mbaiso V,akwa_ibom_nsit_ibom,10
+,,,
+akwa_ibom_nsit_ubium_ibiapkp an_obotim_i,Ibiapkp an/Obotim I,akwa_ibom_nsit_ubium,1
+akwa_ibom_nsit_ubium_ibiapkp an_obotim_ii,Ibiapkp an/Obotim II,akwa_ibom_nsit_ubium,2
+akwa_ibom_nsit_ubium_itreyo,Itreyo,akwa_ibom_nsit_ubium,3
+akwa_ibom_nsit_ubium_ndiyaa,Ndiyaa,akwa_ibom_nsit_ubium,4
+akwa_ibom_nsit_ubium_ubium_north_i,Ubium North I,akwa_ibom_nsit_ubium,5
+akwa_ibom_nsit_ubium_ubium_north_ii,Ubium North II,akwa_ibom_nsit_ubium,6
+akwa_ibom_nsit_ubium_ubium_north_iii,Ubium North III,akwa_ibom_nsit_ubium,7
+akwa_ibom_nsit_ubium_ubium_south_i,Ubium South I,akwa_ibom_nsit_ubium,8
+akwa_ibom_nsit_ubium_ubium_south_ii,Ubium South II,akwa_ibom_nsit_ubium,9
+akwa_ibom_nsit_ubium_ubium_south_iii,Ubium South III,akwa_ibom_nsit_ubium,10
+,,,
+akwa_ibom_obot_akara_ikot_abia_i,Ikot Abia I,akwa_ibom_obot_akara,1
+akwa_ibom_obot_akara_ikot_abia_ii,Ikot Abia II,akwa_ibom_obot_akara,2
+akwa_ibom_obot_akara_ikot_abia_iii,Ikot Abia III,akwa_ibom_obot_akara,3
+akwa_ibom_obot_akara_obot_akara_i,Obot Akara I,akwa_ibom_obot_akara,4
+akwa_ibom_obot_akara_obot_akara_ii,Obot Akara II,akwa_ibom_obot_akara,5
+akwa_ibom_obot_akara_obot_akara_iii,Obot Akara III,akwa_ibom_obot_akara,6
+akwa_ibom_obot_akara_nto_edino_i,Nto Edino I,akwa_ibom_obot_akara,7
+akwa_ibom_obot_akara_nto_edino_ii,Nto Edino II,akwa_ibom_obot_akara,8
+akwa_ibom_obot_akara_nto_edino_iii,Nto Edino III,akwa_ibom_obot_akara,9
+akwa_ibom_obot_akara_nto_edino_iv,Nto Edino IV,akwa_ibom_obot_akara,10
+,,,
+akwa_ibom_okobo_okopedi_i,Okopedi I,akwa_ibom_okobo,1
+akwa_ibom_okobo_okopedi_ii,Okopedi II,akwa_ibom_okobo,2
+akwa_ibom_okobo_nung_atai_ube_i,Nung Atai Ube I,akwa_ibom_okobo,3
+akwa_ibom_okobo_nung_atai_ube_ii,Nung Atai Ube II,akwa_ibom_okobo,4
+akwa_ibom_okobo_akai_mbukpo_udung,Akai/Mbukpo Udung,akwa_ibom_okobo,5
+akwa_ibom_okobo_eweme_i,Eweme I,akwa_ibom_okobo,6
+akwa_ibom_okobo_eweme_ii,Eweme II,akwa_ibom_okobo,7
+akwa_ibom_okobo_offi_i,Offi I,akwa_ibom_okobo,8
+akwa_ibom_okobo_offi_ii,Offi II,akwa_ibom_okobo,9
+akwa_ibom_okobo_ekeya,Ekeya,akwa_ibom_okobo,10
+,,,
+akwa_ibom_onna_awa_i,Awa I,akwa_ibom_onna,1
+akwa_ibom_onna_awa_ii,Awa II,akwa_ibom_onna,2
+akwa_ibom_onna_awa_iii,Awa III,akwa_ibom_onna,3
+akwa_ibom_onna_awa_iv,Awa IV,akwa_ibom_onna,4
+akwa_ibom_onna_nung_idem_i,Nung Idem I,akwa_ibom_onna,5
+akwa_ibom_onna_nung_idem_ii,Nung Idem II,akwa_ibom_onna,6
+akwa_ibom_onna_oniong_east_i,Oniong East I,akwa_ibom_onna,7
+akwa_ibom_onna_oniong_east_ii,Oniong East II,akwa_ibom_onna,8
+akwa_ibom_onna_oniong_east_iii,Oniong East III,akwa_ibom_onna,9
+akwa_ibom_onna_oniong_west_i,Oniong West I,akwa_ibom_onna,10
+akwa_ibom_onna_oniong_west_ii,Oniong West II,akwa_ibom_onna,11
+akwa_ibom_onna_oniong_west_iii,Oniong West III,akwa_ibom_onna,12
+,,,
+akwa_ibom_oron_oron_urban_i,Oron Urban I,akwa_ibom_oron,1
+akwa_ibom_oron_oron_urban_ii,Oron Urban II,akwa_ibom_oron,2
+akwa_ibom_oron_oron_urban_iii,Oron Urban III,akwa_ibom_oron,3
+akwa_ibom_oron_oron_urban_iv,Oron Urban IV,akwa_ibom_oron,4
+akwa_ibom_oron_oron_urban_v,Oron Urban V,akwa_ibom_oron,5
+akwa_ibom_oron_oron_urban_vi,Oron Urban VI,akwa_ibom_oron,6
+akwa_ibom_oron_oron_vi,Oron VI,akwa_ibom_oron,7
+akwa_ibom_oron_oron_urban_viii,Oron Urban VIII,akwa_ibom_oron,8
+akwa_ibom_oron_oron_urban_ix,Oron Urban IX,akwa_ibom_oron,9
+akwa_ibom_oron_oron_urban_x,Oron Urban X,akwa_ibom_oron,10
+,,,
+akwa_ibom_oruk_anam_ikot_iritam_i,Ikot Ibritam I,akwa_ibom_oruk_anam,1
+akwa_ibom_oruk_anam_ikot_iritam_ii,Ikot Ibritam II,akwa_ibom_oruk_anam,2
+akwa_ibom_oruk_anam_ndot_ikot_okoro_i,Ndot Ikot Okoro I,akwa_ibom_oruk_anam,3
+akwa_ibom_oruk_anam_ndot_ikot_okoro_ii,Ndot Ikot Okoro II,akwa_ibom_oruk_anam,4
+akwa_ibom_oruk_anam_ndot_ikot_okoro_iii,Ndot Ikot Okoro III,akwa_ibom_oruk_anam,5
+akwa_ibom_oruk_anam_ibesit,Ibesit,akwa_ibom_oruk_anam,6
+akwa_ibom_oruk_anam_ekparakwa,Ekparakwa,akwa_ibom_oruk_anam,7
+akwa_ibom_oruk_anam_abak_midim_i,Abak Midim I,akwa_ibom_oruk_anam,8
+akwa_ibom_oruk_anam_abak_midim_ii,Abak Midim II,akwa_ibom_oruk_anam,9
+akwa_ibom_oruk_anam_abak_midim_iii,Abak Midim III,akwa_ibom_oruk_anam,10
+akwa_ibom_oruk_anam_abak_midim_iv,Abak Midim IV,akwa_ibom_oruk_anam,11
+akwa_ibom_oruk_anam_ibesit_nung_ikot_i,Ibesit Nung Ikot I,akwa_ibom_oruk_anam,12
+akwa_ibom_oruk_anam_ibesit_nung_ikot_ii,Ibesit Nung Ikot II,akwa_ibom_oruk_anam,13
+,,,
+akwa_ibom_udung_uko_udung_uko_i,Udung Uko I,akwa_ibom_udung_uko,1
+akwa_ibom_udung_uko_udung_uko_ii,Udung Uko II,akwa_ibom_udung_uko,2
+akwa_ibom_udung_uko_udung_uko_iii,Udung Uko III,akwa_ibom_udung_uko,3
+akwa_ibom_udung_uko_udung_uko_iv,Udung Uko IV,akwa_ibom_udung_uko,4
+akwa_ibom_udung_uko_udung_uko_v,Udung Uko V,akwa_ibom_udung_uko,5
+akwa_ibom_udung_uko_udung_uko_vi,Udung Uko VI,akwa_ibom_udung_uko,6
+akwa_ibom_udung_uko_udung_uko_vii,Udung Uko VII,akwa_ibom_udung_uko,7
+akwa_ibom_udung_uko_udung_uko_viii,Udung Uko VIII,akwa_ibom_udung_uko,8
+akwa_ibom_udung_uko_udung_uko_ix,Udung Uko IX,akwa_ibom_udung_uko,9
+akwa_ibom_udung_uko_udung_uko_x,Udung Uko X,akwa_ibom_udung_uko,10
+,,,
+akwa_ibom_ukanafun_ukanafun_urban,Ukanafun Urban,akwa_ibom_ukanafun,1
+akwa_ibom_ukanafun_southern_afaha_iii,Southern Afaha III,akwa_ibom_ukanafun,2
+akwa_ibom_ukanafun_southern_ukanafun_i,Southern Ukanafun I,akwa_ibom_ukanafun,3
+akwa_ibom_ukanafun_southern_ukanafun_ii,Southern Ukanafun II,akwa_ibom_ukanafun,4
+akwa_ibom_ukanafun_northern_ukanafun_i,Northern Ukanafun I,akwa_ibom_ukanafun,5
+akwa_ibom_ukanafun_northern_ukanafun_ii,Northern Ukanafun II,akwa_ibom_ukanafun,6
+akwa_ibom_ukanafun_northern_afaha_i,Northern Afaha I,akwa_ibom_ukanafun,7
+akwa_ibom_ukanafun_northern_afaha_ii,Northern Afaha II,akwa_ibom_ukanafun,8
+akwa_ibom_ukanafun_southern_afaha_i,Southern Afaha I,akwa_ibom_ukanafun,9
+akwa_ibom_ukanafun_southern_afaha_ii,Southern Afaha II,akwa_ibom_ukanafun,10
+akwa_ibom_ukanafun_southern_afaha_iv,Southern Afaha IV,akwa_ibom_ukanafun,11
+,,,
+akwa_ibom_uruan_central_uruan_i,Central Uruan I,akwa_ibom_uruan,1
+akwa_ibom_uruan_central_uruan_ii,Central Uruan II,akwa_ibom_uruan,2
+akwa_ibom_uruan_central_uruan_iii,Central Uruan III,akwa_ibom_uruan,3
+akwa_ibom_uruan_northern_uruan_i,Northern Uruan I,akwa_ibom_uruan,4
+akwa_ibom_uruan_northern_uruan_ii,Northern Uruan II,akwa_ibom_uruan,5
+akwa_ibom_uruan_southern_uruan_i,Southern Uruan I,akwa_ibom_uruan,6
+akwa_ibom_uruan_southern_uruan_ii,Southern Uruan II,akwa_ibom_uruan,7
+akwa_ibom_uruan_southern_uruan_iii,Southern Uruan III,akwa_ibom_uruan,8
+akwa_ibom_uruan_southern_uruan_iv,Southern Uruan IV,akwa_ibom_uruan,9
+akwa_ibom_uruan_southern_uruan_v,Southern Uruan V,akwa_ibom_uruan,10
+akwa_ibom_uruan_southern_uruan_vi,Southern Uruan VI,akwa_ibom_uruan,11
+,,,
+akwa_ibom_urue_offong_oruko_urue_offong_i,Urue Offong I,akwa_ibom_urue_offong_oruko,1
+akwa_ibom_urue_offong_oruko_urue_offong_ii,Urue Offong II,akwa_ibom_urue_offong_oruko,2
+akwa_ibom_urue_offong_oruko_urue_offong_iii,Urue Offong III,akwa_ibom_urue_offong_oruko,3
+akwa_ibom_urue_offong_oruko_urue_offong_iv,Urue Offong IV,akwa_ibom_urue_offong_oruko,4
+akwa_ibom_urue_offong_oruko_urue_offong_v,Urue Offong V,akwa_ibom_urue_offong_oruko,5
+akwa_ibom_urue_offong_oruko_oruko_i,Oruko I,akwa_ibom_urue_offong_oruko,6
+akwa_ibom_urue_offong_oruko_oruko_ii,Oruko II,akwa_ibom_urue_offong_oruko,7
+akwa_ibom_urue_offong_oruko_oruko_iii,Oruko III,akwa_ibom_urue_offong_oruko,8
+akwa_ibom_urue_offong_oruko_oruko_iv,Oruko IV,akwa_ibom_urue_offong_oruko,9
+akwa_ibom_urue_offong_oruko_oruko_v,Oruko V,akwa_ibom_urue_offong_oruko,10
+,,,
+akwa_ibom_uyo_uyo_urban_i,Uyo Urban I,akwa_ibom_uyo,1
+akwa_ibom_uyo_uyo_urban_ii,Uyo Urban II,akwa_ibom_uyo,2
+akwa_ibom_uyo_uyo_urban_iii,Uyo Urban III,akwa_ibom_uyo,3
+akwa_ibom_uyo_etoi_i,Etoi I,akwa_ibom_uyo,4
+akwa_ibom_uyo_etoi_ii,Etoi II,akwa_ibom_uyo,5
+akwa_ibom_uyo_offot_i,Offot I,akwa_ibom_uyo,6
+akwa_ibom_uyo_offot_ii,Offot II,akwa_ibom_uyo,7
+akwa_ibom_uyo_ikono_i,Ikono I,akwa_ibom_uyo,8
+akwa_ibom_uyo_ikono_ii,Ikono II,akwa_ibom_uyo,9
+akwa_ibom_uyo_oku_i,Oku I,akwa_ibom_uyo,10
+akwa_ibom_uyo_oku_ii,Oku II,akwa_ibom_uyo,11
+,,,
+bayelsa_brass_brass_i,Brass I,bayelsa_brass,1
+bayelsa_brass_brass_ii,Brass II,bayelsa_brass,2
+bayelsa_brass_ewoama,Ewoama,bayelsa_brass,3
+bayelsa_brass_okpoama,Okpoama,bayelsa_brass,4
+bayelsa_brass_odioma,Odioma,bayelsa_brass,5
+bayelsa_brass_cape_formosa,Cape Formosa,bayelsa_brass,6
+bayelsa_brass_kongho,Kongho,bayelsa_brass,7
+bayelsa_brass_oginbiri,Oginbiri,bayelsa_brass,8
+bayelsa_brass_minibie,Minibie,bayelsa_brass,9
+bayelsa_brass_sangana,Sangana,bayelsa_brass,10
+,,,
+bayelsa_ekeremor_tarakiri,Tarakiri,bayelsa_ekeremor,1
+bayelsa_ekeremor_oyiakiri_i,Oyiakiri I,bayelsa_ekeremor,2
+bayelsa_ekeremor_oyiakiri_ii,Oyiakiri II,bayelsa_ekeremor,3
+bayelsa_ekeremor_oyiakiri_iii,Oyiakiri III,bayelsa_ekeremor,4
+bayelsa_ekeremor_oyiakiri_iv,Oyiakiri IV,bayelsa_ekeremor,5
+bayelsa_ekeremor_oporomor_i,Oporomor I,bayelsa_ekeremor,6
+bayelsa_ekeremor_oporomor_ii,Oporomor II,bayelsa_ekeremor,7
+bayelsa_ekeremor_oporomor_iii,Oporomor III,bayelsa_ekeremor,8
+bayelsa_ekeremor_oporomor_iv,Oporomor IV,bayelsa_ekeremor,9
+bayelsa_ekeremor_oporomor_v,Oporomor V,bayelsa_ekeremor,10
+bayelsa_ekeremor_eduwini_i,Eduwini I,bayelsa_ekeremor,11
+bayelsa_ekeremor_eduwini_ii,Eduwini II,bayelsa_ekeremor,12
+,,,
+bayelsa_kolokuma_opokuma_odi_north,Odi North,bayelsa_kolokuma_opokuma,1
+bayelsa_kolokuma_opokuma_odi_central,Odi Central,bayelsa_kolokuma_opokuma,2
+bayelsa_kolokuma_opokuma_odi_south,Odi South,bayelsa_kolokuma_opokuma,3
+bayelsa_kolokuma_opokuma_kaiama,Kaiama,bayelsa_kolokuma_opokuma,4
+bayelsa_kolokuma_opokuma_kaiama_olobiri,Kaiama/Olobiri,bayelsa_kolokuma_opokuma,5
+bayelsa_kolokuma_opokuma_sampou,Sampou,bayelsa_kolokuma_opokuma,6
+bayelsa_kolokuma_opokuma_opokuma_north,Opokuma North,bayelsa_kolokuma_opokuma,7
+bayelsa_kolokuma_opokuma_opokuma_south,Opokuma South,bayelsa_kolokuma_opokuma,8
+bayelsa_kolokuma_opokuma_seibokorogha,Seibokorogha,bayelsa_kolokuma_opokuma,9
+bayelsa_kolokuma_opokuma_okoloba,Okoloba,bayelsa_kolokuma_opokuma,10
+bayelsa_kolokuma_opokuma_igbedi,Igbedi,bayelsa_kolokuma_opokuma,11
+,,,
+bayelsa_nembe_ogbolodimabiri_i,Ogbolodimabiri I,bayelsa_nembe,1
+bayelsa_nembe_ogbolodimabiri_ii,Ogbolodimabiri II,bayelsa_nembe,2
+bayelsa_nembe_ogbolodimabiri_iii,Ogbolodimabiri III,bayelsa_nembe,3
+bayelsa_nembe_bassambiri_i,Bassambiri I,bayelsa_nembe,4
+bayelsa_nembe_bassambiri_ii,Bassambiri II,bayelsa_nembe,5
+bayelsa_nembe_bassambiri_iii,Bassambiri III,bayelsa_nembe,6
+bayelsa_nembe_bassambiri_iv,Bassambiri IV,bayelsa_nembe,7
+bayelsa_nembe_igbeta_ewoama,Igbeta Ewoama,bayelsa_nembe,8
+bayelsa_nembe_okoroma_i,Okoroma I,bayelsa_nembe,9
+bayelsa_nembe_okoroma_ii,Okoroma II,bayelsa_nembe,10
+bayelsa_nembe_mini,Mini,bayelsa_nembe,11
+bayelsa_nembe_ikensi,Ikensi,bayelsa_nembe,12
+bayelsa_nembe_oluasiri,Oluasiri,bayelsa_nembe,13
+,,,
+bayelsa_ogbia_ogbia,Ogbia,bayelsa_ogbia,1
+bayelsa_ogbia_otuokpoti,Otuokpoti,bayelsa_ogbia,2
+bayelsa_ogbia_ologi,Ologi,bayelsa_ogbia,3
+bayelsa_ogbia_anyama,Anyama,bayelsa_ogbia,4
+bayelsa_ogbia_okodi,Okodi,bayelsa_ogbia,5
+bayelsa_ogbia_otuasega,Otuasega,bayelsa_ogbia,6
+bayelsa_ogbia_emeyal,Emeyal,bayelsa_ogbia,7
+bayelsa_ogbia_imiringi,Imiringi,bayelsa_ogbia,8
+bayelsa_ogbia_kolo,Kolo,bayelsa_ogbia,9
+bayelsa_ogbia_olobiri,Olobiri,bayelsa_ogbia,10
+bayelsa_ogbia_opume,Opume,bayelsa_ogbia,11
+bayelsa_ogbia_otakeme,Otakeme,bayelsa_ogbia,12
+bayelsa_ogbia_otuabula,Otuabula,bayelsa_ogbia,13
+,,,
+bayelsa_sagbama_agbere,Agbere,bayelsa_sagbama,1
+bayelsa_sagbama_angalabiri,Angalabiri,bayelsa_sagbama,2
+bayelsa_sagbama_ofoni_i,Ofoni I,bayelsa_sagbama,3
+bayelsa_sagbama_ofoni_ii,Ofoni II,bayelsa_sagbama,4
+bayelsa_sagbama_ebedebiri,Ebedebiri,bayelsa_sagbama,5
+bayelsa_sagbama_ossiama,Ossiama,bayelsa_sagbama,6
+bayelsa_sagbama_asamabiri,Asamabiri,bayelsa_sagbama,7
+bayelsa_sagbama_odoni,Odoni,bayelsa_sagbama,8
+bayelsa_sagbama_trofani,Trofani,bayelsa_sagbama,9
+bayelsa_sagbama_sagbama,Sagbama,bayelsa_sagbama,10
+bayelsa_sagbama_agiro,Agiro,bayelsa_sagbama,11
+bayelsa_sagbama_toru_ebeni,Toru Ebeni,bayelsa_sagbama,12
+bayelsa_sagbama_adagbabiri,Adagbabiri,bayelsa_sagbama,13
+bayelsa_sagbama_osekwenike,Osekwenike,bayelsa_sagbama,14
+,,,
+bayelsa_southern_ijaw_oporoma_i,Oporoma I,bayelsa_southern_ijaw,1
+bayelsa_southern_ijaw_oporoma_ii,Oporoma II,bayelsa_southern_ijaw,2
+bayelsa_southern_ijaw_olodiama_i,Olodiama I,bayelsa_southern_ijaw,3
+bayelsa_southern_ijaw_olodiama_ii,Olodiama II,bayelsa_southern_ijaw,4
+bayelsa_southern_ijaw_otuan,Otuan,bayelsa_southern_ijaw,5
+bayelsa_southern_ijaw_west_bomo,West Bomo,bayelsa_southern_ijaw,6
+bayelsa_southern_ijaw_central_bomo_i,Central Bomo I,bayelsa_southern_ijaw,7
+bayelsa_southern_ijaw_central_bomo_ii,Central Bomo II,bayelsa_southern_ijaw,8
+bayelsa_southern_ijaw_amassoma_i,Amassoma I,bayelsa_southern_ijaw,9
+bayelsa_southern_ijaw_amassoma_ii,Amassoma II,bayelsa_southern_ijaw,10
+bayelsa_southern_ijaw_amassoma_iii,Amassoma III,bayelsa_southern_ijaw,11
+bayelsa_southern_ijaw_east_bomo_i,East Bomo I,bayelsa_southern_ijaw,12
+bayelsa_southern_ijaw_east_bomo_ii,East Bomo II,bayelsa_southern_ijaw,13
+bayelsa_southern_ijaw_foropa,Foropa,bayelsa_southern_ijaw,14
+bayelsa_southern_ijaw_apoi,Apoi,bayelsa_southern_ijaw,15
+bayelsa_southern_ijaw_ukubie,Ukubie,bayelsa_southern_ijaw,16
+bayelsa_southern_ijaw_koluama,Koluama,bayelsa_southern_ijaw,17
+,,,
+bayelsa_yenagoa_attissa_i,Attissa I,bayelsa_yenagoa,1
+bayelsa_yenagoa_attissa_ii,Attissa II,bayelsa_yenagoa,2
+bayelsa_yenagoa_attissa_iii,Attissa III,bayelsa_yenagoa,3
+bayelsa_yenagoa_epie_i,Epie I,bayelsa_yenagoa,4
+bayelsa_yenagoa_epie_ii,Epie II,bayelsa_yenagoa,5
+bayelsa_yenagoa_epie_iii,Epie III,bayelsa_yenagoa,6
+bayelsa_yenagoa_gbaran_i,Gbaran I,bayelsa_yenagoa,7
+bayelsa_yenagoa_gbaran_ii,Gbaran II,bayelsa_yenagoa,8
+bayelsa_yenagoa_gbaran_iii,Gbaran III,bayelsa_yenagoa,9
+bayelsa_yenagoa_ekpetiama_i,Ekpetiama I,bayelsa_yenagoa,10
+bayelsa_yenagoa_ekpetiama_ii,Ekpetiama II,bayelsa_yenagoa,11
+bayelsa_yenagoa_biseni_i,Biseni I,bayelsa_yenagoa,12
+bayelsa_yenagoa_biseni_ii,Biseni II,bayelsa_yenagoa,13
+bayelsa_yenagoa_okordia,Okordia,bayelsa_yenagoa,14
+bayelsa_yenagoa_zarama,Zarama,bayelsa_yenagoa,15
+,,,
+cross_river_abi_adadama,Adadama,cross_river_abi,1
+cross_river_abi_afafanyu_igonigoni,Afafanyu/Igonigoni,cross_river_abi,2
+cross_river_abi_ebom,Ebom,cross_river_abi,3
+cross_river_abi_ediba,Ediba,cross_river_abi,4
+cross_river_abi_ekureku_i,Ekureku I,cross_river_abi,5
+cross_river_abi_ekureku_ii,Ekureku II,cross_river_abi,6
+cross_river_abi_imabana_i,Imabana I,cross_river_abi,7
+cross_river_abi_imabana_ii,Imabana II,cross_river_abi,8
+cross_river_abi_itigidi,Itigidi,cross_river_abi,9
+cross_river_abi_usumu_tong,Usumu/Tong,cross_river_abi,10
+,,,
+cross_river_akamkpa_akamkpa_urban,Akamkpa Urban,cross_river_akamkpa,1
+cross_river_akamkpa_awi,Awi,cross_river_akamkpa,2
+cross_river_akamkpa_eku,Eku,cross_river_akamkpa,3
+cross_river_akamkpa_iko,Iko,cross_river_akamkpa,4
+cross_river_akamkpa_ikpai,Ikpai,cross_river_akamkpa,5
+cross_river_akamkpa_mbarakom,Mbarakom,cross_river_akamkpa,6
+cross_river_akamkpa_oban,Oban,cross_river_akamkpa,7
+cross_river_akamkpa_ojuk_north,Ojuk North,cross_river_akamkpa,8
+cross_river_akamkpa_ojuk_south,Ojuk South,cross_river_akamkpa,9
+cross_river_akamkpa_uyanga,Uyanga,cross_river_akamkpa,10
+,,,
+cross_river_akpabuyo_atimbo_east,Atimbo East,cross_river_akpabuyo,1
+cross_river_akpabuyo_atimbo_west,Atimbo West,cross_river_akpabuyo,2
+cross_river_akpabuyo_eneyo,Eneyo,cross_river_akpabuyo,3
+cross_river_akpabuyo_idundu_anyanganse,Idundu Anyanganse,cross_river_akpabuyo,4
+cross_river_akpabuyo_ikang_central,Ikang Central,cross_river_akpabuyo,5
+cross_river_akpabuyo_ikang_north,Ikang North,cross_river_akpabuyo,6
+cross_river_akpabuyo_ikang_south,Ikang South,cross_river_akpabuyo,7
+cross_river_akpabuyo_ikot_edem_odo,Ikot Edem Odo,cross_river_akpabuyo,8
+cross_river_akpabuyo_ikot_eyo,Ikot Eyo,cross_river_akpabuyo,9
+cross_river_akpabuyo_ikot_nakanda,Ikot Nakanda,cross_river_akpabuyo,10
+,,,
+cross_river_bakassi_abana,Abana,cross_river_bakassi,1
+cross_river_bakassi_akpankanya,Akpankanya,cross_river_bakassi,2
+cross_river_bakassi_akwa,Akwa,cross_river_bakassi,3
+cross_river_bakassi_ambai_ekpa,Ambai Ekpa,cross_river_bakassi,4
+cross_river_bakassi_amoto,Amoto,cross_river_bakassi,5
+cross_river_bakassi_archibong,Archibong,cross_river_bakassi,6
+cross_river_bakassi_atai_ema,Atai Ema,cross_river_bakassi,7
+cross_river_bakassi_efut_inwang,Efut Inwang,cross_river_bakassi,8
+cross_river_bakassi_ekpot_abia,Ekpot Abia,cross_river_bakassi,9
+cross_river_bakassi_odiong,Odiong,cross_river_bakassi,10
+,,,
+cross_river_bekwarra_abuochiche,Abuochiche,cross_river_bekwarra,1
+cross_river_bekwarra_afrike_ochagbe,Afrike Ochagbe,cross_river_bekwarra,2
+cross_river_bekwarra_afrike_okpeche,Afrike Okpeche,cross_river_bekwarra,3
+cross_river_bekwarra_beten,Beten,cross_river_bekwarra,4
+cross_river_bekwarra_gakem,Gakem,cross_river_bekwarra,5
+cross_river_bekwarra_ibiaragim,Ibiaragim,cross_river_bekwarra,6
+cross_river_bekwarra_nyanya,Nyanya,cross_river_bekwarra,7
+cross_river_bekwarra_otukpuru,Otukpuru,cross_river_bekwarra,8
+cross_river_bekwarra_ugboro,Ugboro,cross_river_bekwarra,9
+cross_river_bekwarra_ukpah,Ukpah,cross_river_bekwarra,10
+cross_river_bekwarra_ukpah_ii,Ukpah II,cross_river_bekwarra,11
+,,,
+cross_river_biase_abayong,Abayong,cross_river_biase,1
+cross_river_biase_adim,Adim,cross_river_biase,2
+cross_river_biase_agwagune_okurike,Agwagune Okurike,cross_river_biase,3
+cross_river_biase_akoet_abini,Akoet/Abini,cross_river_biase,4
+cross_river_biase_buakpan,Buakpan,cross_river_biase,5
+cross_river_biase_ehom,Ehom,cross_river_biase,6
+cross_river_biase_erei_north,Erei North,cross_river_biase,7
+cross_river_biase_erei_south,Erei South,cross_river_biase,8
+cross_river_biase_ikun_etono,Ikun/Etono,cross_river_biase,9
+cross_river_biase_umon_north,Umon North,cross_river_biase,10
+cross_river_biase_umon_south,Umon South,cross_river_biase,11
+,,,
+cross_river_boki_alankwu,Alankwu,cross_river_boki,1
+cross_river_boki_boje,Boje,cross_river_boki,2
+cross_river_boki_buantse,Buantse,cross_river_boki,3
+cross_river_boki_buanchor,Buanchor,cross_river_boki,4
+cross_river_boki_bumaji,Bumaji,cross_river_boki,5
+cross_river_boki_bumaya,Bumaya,cross_river_boki,6
+cross_river_boki_bushere,Bushere,cross_river_boki,7
+cross_river_boki_kakwagom,Kakwagom,cross_river_boki,8
+cross_river_boki_kgbe,Kgbe,cross_river_boki,9
+cross_river_boki_okundi,Okundi,cross_river_boki,10
+cross_river_boki_oshie,Oshie,cross_river_boki,11
+,,,
+cross_river_calabar_municipality_ward_1,Ward 1,cross_river_calabar_municipality,1
+cross_river_calabar_municipality_ward_2,Ward 2,cross_river_calabar_municipality,2
+cross_river_calabar_municipality_ward_3,Ward 3,cross_river_calabar_municipality,3
+cross_river_calabar_municipality_ward_4,Ward 4,cross_river_calabar_municipality,4
+cross_river_calabar_municipality_ward_5,Ward 5,cross_river_calabar_municipality,5
+cross_river_calabar_municipality_ward_6,Ward 6,cross_river_calabar_municipality,6
+cross_river_calabar_municipality_ward_7,Ward 7,cross_river_calabar_municipality,7
+cross_river_calabar_municipality_ward_8,Ward 8,cross_river_calabar_municipality,8
+cross_river_calabar_municipality_ward_9,Ward 9,cross_river_calabar_municipality,9
+cross_river_calabar_municipality_ward_10,Ward 10,cross_river_calabar_municipality,10
+,,,
+cross_river_calabar_south_ward_1,Ward 1,cross_river_calabar_south,1
+cross_river_calabar_south_ward_2,Ward 2,cross_river_calabar_south,2
+cross_river_calabar_south_ward_3,Ward 3,cross_river_calabar_south,3
+cross_river_calabar_south_ward_4,Ward 4,cross_river_calabar_south,4
+cross_river_calabar_south_ward_5,Ward 5,cross_river_calabar_south,5
+cross_river_calabar_south_ward_6,Ward 6,cross_river_calabar_south,6
+cross_river_calabar_south_ward_7,Ward 7,cross_river_calabar_south,7
+cross_river_calabar_south_ward_8,Ward 8,cross_river_calabar_south,8
+cross_river_calabar_south_ward_9,Ward 9,cross_river_calabar_south,9
+cross_river_calabar_south_ward_10,Ward 10,cross_river_calabar_south,10
+cross_river_calabar_south_ward_11,Ward 11,cross_river_calabar_south,11
+cross_river_calabar_south_ward_12,Ward 12,cross_river_calabar_south,12
+,,,
+cross_river_etung_abanjum,Abanjum,cross_river_etung,1
+cross_river_etung_abia,Abia,cross_river_etung,2
+cross_river_etung_agbokim,Agbokim,cross_river_etung,3
+cross_river_etung_ajassor,Ajassor,cross_river_etung,4
+cross_river_etung_bendeghe_afrike,Bendeghe Afrike,cross_river_etung,5
+cross_river_etung_bendeghe_eka,Bendeghe Eka,cross_river_etung,6
+cross_river_etung_bendeghe_etung,Bendeghe Etung,cross_river_etung,7
+cross_river_etung_etomi,Etomi,cross_river_etung,8
+cross_river_etung_mkpani,Mkpani,cross_river_etung,9
+cross_river_etung_njagachang,Njagachang,cross_river_etung,10
+,,,
+cross_river_ikom_akom,Akparabong,cross_river_ikom,1
+cross_river_ikom_akparabong,Akparabong,cross_river_ikom,2
+cross_river_ikom_akpabuyo,Akpabuyo,cross_river_ikom,3
+cross_river_ikom_ikom_urban_i,Ikom Urban I,cross_river_ikom,4
+cross_river_ikom_ikom_urban_ii,Ikom Urban II,cross_river_ikom,5
+cross_river_ikom_mkpani,Mkpani,cross_river_ikom,6
+cross_river_ikom_ndem,Ndem,cross_river_ikom,7
+cross_river_ikom_ndem_north,Ndem North,cross_river_ikom,8
+cross_river_ikom_ndem_south,Ndem South,cross_river_ikom,9
+cross_river_ikom_ofutop,Ofutop,cross_river_ikom,10
+cross_river_ikom_okuni,Okuni,cross_river_ikom,11
+,,,
+cross_river_obanliku_bishiri_north,Bishiri North,cross_river_obanliku,1
+cross_river_obanliku_bishiri_south,Bishiri South,cross_river_obanliku,2
+cross_river_obanliku_basang,Basang,cross_river_obanliku,3
+cross_river_obanliku_becheve,Becheve,cross_river_obanliku,4
+cross_river_obanliku_bendi_i,Bendi I,cross_river_obanliku,5
+cross_river_obanliku_bendi_ii,Bendi II,cross_river_obanliku,6
+cross_river_obanliku_bisu,Bisu,cross_river_obanliku,7
+cross_river_obanliku_busi,Busi,cross_river_obanliku,8
+cross_river_obanliku_utugwang_central,Utugwang Central,cross_river_obanliku,9
+cross_river_obanliku_utugwang_north,Utugwang North,cross_river_obanliku,10
+cross_river_obanliku_utugwang_south,Utugwang South,cross_river_obanliku,11
+,,,
+cross_river_obubra_abanwan,Abanwan,cross_river_obubra,1
+cross_river_obubra_ofumbongha_i,Ofumbongha I,cross_river_obubra,2
+cross_river_obubra_ofumbongha_ii,Ofumbongha II,cross_river_obubra,3
+cross_river_obubra_ogurude,Ogurude,cross_river_obubra,4
+cross_river_obubra_okum,Okum,cross_river_obubra,5
+cross_river_obubra_onyadama,Onyadama,cross_river_obubra,6
+cross_river_obubra_osopong_i,Osopong I,cross_river_obubra,7
+cross_river_obubra_osopong_ii,Osopong II,cross_river_obubra,8
+cross_river_obubra_ovokwa,Ovokwa,cross_river_obubra,9
+cross_river_obubra_ovumte,Ovumte,cross_river_obubra,10
+cross_river_obubra_ugwuegu,Ugwuegu,cross_river_obubra,11
+,,,
+cross_river_obudu_angai,Angai,cross_river_obudu,1
+cross_river_obudu_begiaka,Begiaka,cross_river_obudu,2
+cross_river_obudu_bendi,Bendi,cross_river_obudu,3
+cross_river_obudu_ipong,Ipong,cross_river_obudu,4
+cross_river_obudu_kakum,Kakum,cross_river_obudu,5
+cross_river_obudu_ketem,Ketem,cross_river_obudu,6
+cross_river_obudu_obudu_central,Obudu Central,cross_river_obudu,7
+cross_river_obudu_obudu_urban_i,Obudu Urban I,cross_river_obudu,8
+cross_river_obudu_obudu_urban_ii,Obudu Urban II,cross_river_obudu,9
+cross_river_obudu_utugwang,Utugwang,cross_river_obudu,10
+,,,
+cross_river_odukpani_adiabo,Adiabo,cross_river_odukpani,1
+cross_river_odukpani_akpabuyo,Akpabuyo,cross_river_odukpani,2
+cross_river_odukpani_ekori,Ekori,cross_river_odukpani,3
+cross_river_odukpani_ekpri_ikang,Ekpri Ikang,cross_river_odukpani,4
+cross_river_odukpani_ekori_anong,Ekori Anong,cross_river_odukpani,5
+cross_river_odukpani_ikpanya,Ikpanya,cross_river_odukpani,6
+cross_river_odukpani_ikpanya_south,Ikpanya South,cross_river_odukpani,7
+cross_river_odukpani_ikot_ekpo,Ikot Ekpo,cross_river_odukpani,8
+cross_river_odukpani_odu kpani_central,Odukpani Central,cross_river_odukpani,9
+cross_river_odukpani_odukpani_south,Odukpani South,cross_river_odukpani,10
+,,,
+cross_river_ogoja_ekajuk,Ekajuk,cross_river_ogoja,1
+cross_river_ogoja_emangabe,Emangabe,cross_river_ogoja,2
+cross_river_ogoja_ishibori,Ishibori,cross_river_ogoja,3
+cross_river_ogoja_mbube_east,Mbube East,cross_river_ogoja,4
+cross_river_ogoja_mbube_west,Mbube West,cross_river_ogoja,5
+cross_river_ogoja_ndok,Ndok,cross_river_ogoja,6
+cross_river_ogoja_nkum_iborra,Nkum Iborra,cross_river_ogoja,7
+cross_river_ogoja_nkum_iborra_ii,Nkum Iborra II,cross_river_ogoja,8
+cross_river_ogoja_ogoja_urban_i,Ogoja Urban I,cross_river_ogoja,9
+cross_river_ogoja_ogoja_urban_ii,Ogoja Urban II,cross_river_ogoja,10
+,,,
+cross_river_yakurr_assiga,Assiga,cross_river_yakurr,1
+cross_river_yakurr_ekori,Ekori,cross_river_yakurr,2
+cross_river_yakurr_ijiman,Ijiman,cross_river_yakurr,3
+cross_river_yakurr_mkpani,Mkpani,cross_river_yakurr,4
+cross_river_yakurr_nko,Nko,cross_river_yakurr,5
+cross_river_yakurr_ugep_i,Ugep I,cross_river_yakurr,6
+cross_river_yakurr_ugep_ii,Ugep II,cross_river_yakurr,7
+cross_river_yakurr_ugep_iii,Ugep III,cross_river_yakurr,8
+cross_river_yakurr_ugep_iv,Ugep IV,cross_river_yakurr,9
+cross_river_yakurr_ugep_v,Ugep V,cross_river_yakurr,10
+cross_river_yakurr_ugep_vi,Ugep VI,cross_river_yakurr,11
+,,,
+cross_river_yala_abuochiche,Abuochiche,cross_river_yala,1
+cross_river_yala_alifokpa,Alifokpa,cross_river_yala,2
+cross_river_yala_igede,Igede,cross_river_yala,3
+cross_river_yala_ijegu,Ijegu,cross_river_yala,4
+cross_river_yala_okpoma,Okpoma,cross_river_yala,5
+cross_river_yala_oloko,Oloko,cross_river_yala,6
+cross_river_yala_ogoja_road,Ogoja Road,cross_river_yala,7
+cross_river_yala_wanihem,Wanihem,cross_river_yala,8
+cross_river_yala_wanikade,Wanikade,cross_river_yala,9
+cross_river_yala_waniokpom,Waniokpom,cross_river_yala,10
+cross_river_yala_yache,Yache,cross_river_yala,11
+,,,
+rivers_abua_odual_abua_i,Abua I,rivers_abua_odual,1
+rivers_abua_odual_abua_ii,Abua II,rivers_abua_odual,2
+rivers_abua_odual_abua_iii,Abua III,rivers_abua_odual,3
+rivers_abua_odual_abua_iv,Abua IV,rivers_abua_odual,4
+rivers_abua_odual_emughan_i,Emughan I,rivers_abua_odual,5
+rivers_abua_odual_emughan_ii,Emughan II,rivers_abua_odual,6
+rivers_abua_odual_otapha,Otapha,rivers_abua_odual,7
+rivers_abua_odual_okpede,Okpede,rivers_abua_odual,8
+rivers_abua_odual_agada,Agada,rivers_abua_odual,9
+rivers_abua_odual_emelego,Emelego,rivers_abua_odual,10
+rivers_abua_odual_emago,Emago,rivers_abua_odual,11
+rivers_abua_odual_akni,Akni,rivers_abua_odual,12
+rivers_abua_odual_anyu,Anyu,rivers_abua_odual,13
+,,,
+rivers_ahoada_east_ahoada_i,Ahoada I,rivers_ahoada_east,1
+rivers_ahoada_east_ahoada_ii,Ahoada II,rivers_ahoada_east,2
+rivers_ahoada_east_ahoada_iii,Ahoada III,rivers_ahoada_east,3
+rivers_ahoada_east_ahoada_iv,Ahoada IV,rivers_ahoada_east,4
+rivers_ahoada_east_uppata_i,Uppata I,rivers_ahoada_east,5
+rivers_ahoada_east_uppata_ii,Uppata II,rivers_ahoada_east,6
+rivers_ahoada_east_uppata_iii,Uppata III,rivers_ahoada_east,7
+rivers_ahoada_east_uppata_iv,Uppata IV,rivers_ahoada_east,8
+rivers_ahoada_east_uppata_v,Uppata V,rivers_ahoada_east,9
+rivers_ahoada_east_uppata_vi,Uppata VI,rivers_ahoada_east,10
+rivers_ahoada_east_akoh_i,Akoh I,rivers_ahoada_east,11
+rivers_ahoada_east_akoh_ii,Akoh II,rivers_ahoada_east,12
+rivers_ahoada_east_akoh_iii,Akoh III,rivers_ahoada_east,13
+,,,
+rivers_ahoada_west_ediro_i,Ediro I,rivers_ahoada_west,1
+rivers_ahoada_west_ediro_ii,Ediro II,rivers_ahoada_west,2
+rivers_ahoada_west_joinkrama,Joinkrama,rivers_ahoada_west,3
+rivers_ahoada_west_okarki,Okarki,rivers_ahoada_west,4
+rivers_ahoada_west_igbuduya_i,Igbuduya I,rivers_ahoada_west,5
+rivers_ahoada_west_igbuduya_ii,Igbuduya II,rivers_ahoada_west,6
+rivers_ahoada_west_igbuduya_iii,Igbuduya III,rivers_ahoada_west,7
+rivers_ahoada_west_igbuduya_iv,Igbuduya IV,rivers_ahoada_west,8
+rivers_ahoada_west_ubie_i,Ubie I,rivers_ahoada_west,9
+rivers_ahoada_west_ubie_ii,Ubie II,rivers_ahoada_west,10
+rivers_ahoada_west_ubie_iii,Ubie III,rivers_ahoada_west,11
+rivers_ahoada_west_ubie_iv,Ubie IV,rivers_ahoada_west,12
+,,,
+rivers_akuku_toru_manuel_i,Manuel I,rivers_akuku_toru,1
+rivers_akuku_toru_manuel_ii,Manuel II,rivers_akuku_toru,2
+rivers_akuku_toru_manuel_iii,Manuel III,rivers_akuku_toru,3
+rivers_akuku_toru_briggs_i,Briggs I,rivers_akuku_toru,4
+rivers_akuku_toru_briggs_ii,Briggs II,rivers_akuku_toru,5
+rivers_akuku_toru_briggs_iii,Briggs III,rivers_akuku_toru,6
+rivers_akuku_toru_georgewill_i,Georgewill I,rivers_akuku_toru,7
+rivers_akuku_toru_georgewill_ii,Georgewill II,rivers_akuku_toru,8
+rivers_akuku_toru_georgewill_iii,Georgewill III,rivers_akuku_toru,9
+rivers_akuku_toru_jack_i,Jack I,rivers_akuku_toru,10
+rivers_akuku_toru_jack_ii,Jack II,rivers_akuku_toru,11
+rivers_akuku_toru_jack_iii,Jack III,rivers_akuku_toru,12
+rivers_akuku_toru_alise_group,Alise Group,rivers_akuku_toru,13
+rivers_akuku_toru_obonoma,Obonoma,rivers_akuku_toru,14
+rivers_akuku_toru_kula_i,Kula I,rivers_akuku_toru,15
+rivers_akuku_toru_kula_ii,Kula II,rivers_akuku_toru,16
+rivers_akuku_toru_north_south_group,North/South Group,rivers_akuku_toru,17
+,,,
+rivers_andoni_ngo_town,Ngo Town,rivers_andoni,1
+rivers_andoni_unyen_gala,Unyen Gala,rivers_andoni,2
+rivers_andoni_agwut_obolo,Agwut Obolo,rivers_andoni,3
+rivers_andoni_ekede,Ekede,rivers_andoni,4
+rivers_andoni_ikuru_town,Ikuru Town,rivers_andoni,5
+rivers_andoni_unyeada_i,Unyeada I,rivers_andoni,6
+rivers_andoni_unyeada_ii,Unyeada II,rivers_andoni,7
+rivers_andoni_samanga,Samanga,rivers_andoni,8
+rivers_andoni_asarama,Asarama,rivers_andoni,9
+rivers_andoni_ataba_i,Ataba I,rivers_andoni,10
+rivers_andoni_ataba_ii,Ataba II,rivers_andoni,11
+,,,
+rivers_asari_toru_buguma_south,Buguma South,rivers_asari_toru,1
+rivers_asari_toru_buguma_south_east,Buguma South East,rivers_asari_toru,2
+rivers_asari_toru_buguma_east_i,Buguma East I,rivers_asari_toru,3
+rivers_asari_toru_buguma_east_ii,Buguma East II,rivers_asari_toru,4
+rivers_asari_toru_buguma_north,Buguma North,rivers_asari_toru,5
+rivers_asari_toru_buguma_west,Buguma West,rivers_asari_toru,6
+rivers_asari_toru_buguma_north_west_i,Buguma North West I,rivers_asari_toru,7
+rivers_asari_toru_buguma_north_west_ii,Buguma North West II,rivers_asari_toru,8
+rivers_asari_toru_buguma_east_west,Buguma East West,rivers_asari_toru,9
+rivers_asari_toru_isia_group_i,Isia Group I,rivers_asari_toru,10
+rivers_asari_toru_isia_group_ii,Isia Group II,rivers_asari_toru,11
+rivers_asari_toru_west_central,West Central,rivers_asari_toru,12
+rivers_asari_toru_buguma_central,Buguma Central,rivers_asari_toru,13
+,,,
+rivers_bonny_oro_igwe,Ward I Oro Igwe,rivers_bonny,1
+rivers_bonny_court_ada,Ward II Court Ada,rivers_bonny,2
+rivers_bonny_orosiriri,Ward III Orosiriri,rivers_bonny,3
+rivers_bonny_ward_iv,Ward IV,rivers_bonny,4
+rivers_bonny_ward_v,Ward V,rivers_bonny,5
+rivers_bonny_ward_vi,Ward VI,rivers_bonny,6
+rivers_bonny_ward_vii,Ward VII,rivers_bonny,7
+rivers_bonny_ward_viii,Ward VIII,rivers_bonny,8
+rivers_bonny_ward_ix,Ward IX,rivers_bonny,9
+rivers_bonny_ward_x,Ward X,rivers_bonny,10
+rivers_bonny_ward_xi,Ward XI,rivers_bonny,11
+rivers_bonny_ward_xii,Ward XII,rivers_bonny,12
+,,,
+rivers_degema_bakana_i,Bakana I,rivers_degema,1
+rivers_degema_bakana_ii,Bakana II,rivers_degema,2
+rivers_degema_bakana_iii,Bakana III,rivers_degema,3
+rivers_degema_bakana_iv,Bakana IV,rivers_degema,4
+rivers_degema_bakana_v,Bakana V,rivers_degema,5
+rivers_degema_bakana_vi,Bakana VI,rivers_degema,6
+rivers_degema_tombia_i,Tombia I,rivers_degema,7
+rivers_degema_tombia_ii,Tombia II,rivers_degema,8
+rivers_degema_tombia_iii,Tombia III,rivers_degema,9
+rivers_degema_tombia_iv,Tombia IV,rivers_degema,10
+rivers_degema_degema_i,Degema I,rivers_degema,11
+rivers_degema_degema_ii,Degema II,rivers_degema,12
+rivers_degema_degema_iii,Degema III,rivers_degema,13
+rivers_degema_obuama,Obuama,rivers_degema,14
+rivers_degema_bukuma,Bukuma,rivers_degema,15
+rivers_degema_bille,Bille,rivers_degema,16
+rivers_degema_ke_old,Ke/Old,rivers_degema,17
+,,,
+rivers_eleme_alesa,Alesa,rivers_eleme,1
+rivers_eleme_alode,Alode,rivers_eleme,2
+rivers_eleme_ogale,Ogale,rivers_eleme,3
+rivers_eleme_ebubu,Ebubu,rivers_eleme,4
+rivers_eleme_ekporo,Ekporo,rivers_eleme,5
+rivers_eleme_eteo,Eteo,rivers_eleme,6
+rivers_eleme_onne,Onne,rivers_eleme,7
+rivers_eleme_agbonchia,Agbonchia,rivers_eleme,8
+rivers_eleme_akpajo,Akpajo,rivers_eleme,9
+rivers_eleme_aleto,Aleto,rivers_eleme,10
+,,,
+rivers_emohua_ogbakiri_i,Ogbakiri I,rivers_emohua,1
+rivers_emohua_ogbakiri_ii,Ogbakiri II,rivers_emohua,2
+rivers_emohua_emohua_i,Emohua I,rivers_emohua,3
+rivers_emohua_emohua_ii,Emohua II,rivers_emohua,4
+rivers_emohua_obelle,Obelle,rivers_emohua,5
+rivers_emohua_ibba,Ibba,rivers_emohua,6
+rivers_emohua_rundele,Rundele,rivers_emohua,7
+rivers_emohua_rumuekpe,Rumuekpe,rivers_emohua,8
+rivers_emohua_elele_alimini,Elele Alimini,rivers_emohua,9
+rivers_emohua_omudioga,Omudioga,rivers_emohua,10
+rivers_emohua_ugbede,Ugbede,rivers_emohua,11
+rivers_emohua_ubimini,Ubimini,rivers_emohua,12
+rivers_emohua_odegu_i,Odegu I,rivers_emohua,13
+rivers_emohua_odegu_ii,Odegu II,rivers_emohua,14
+,,,
+rivers_etche_afara,Afara,rivers_etche,1
+rivers_etche_egbu,Egbu,rivers_etche,2
+rivers_etche_igbo_i,Igbo I,rivers_etche,3
+rivers_etche_igbo_ii,Igbo II,rivers_etche,4
+rivers_etche_igbo_iii,Igbo III,rivers_etche,5
+rivers_etche_egwi_opiro,Egwi/Opiro,rivers_etche,6
+rivers_etche_nihi,Nihi,rivers_etche,7
+rivers_etche_odufor,Odufor,rivers_etche,8
+rivers_etche_obibi_uratta,Obibi/Uratta,rivers_etche,9
+rivers_etche_obite,Obite,rivers_etche,10
+rivers_etche_okehi,Okehi,rivers_etche,11
+rivers_etche_ozuzu,Ozuzu,rivers_etche,12
+rivers_etche_ulakwo,Ulakwo,rivers_etche,13
+rivers_etche_igbodo,Igbodo,rivers_etche,14
+rivers_etche_akwa,Akwa,rivers_etche,15
+rivers_etche_akpoku,Akpoku,rivers_etche,16
+rivers_etche_ndashi,Ndashi,rivers_etche,17
+rivers_etche_mba,Mba,rivers_etche,18
+rivers_etche_owu,Owu,rivers_etche,19
+,,,
+rivers_gokana_bodo_i,Bodo I,rivers_gokana,1
+rivers_gokana_bodo_ii,Bodo II,rivers_gokana,2
+rivers_gokana_bodo_iii,Bodo III,rivers_gokana,3
+rivers_gokana_b_dere,B Dere,rivers_gokana,4
+rivers_gokana_k_dere_i,K Dere I,rivers_gokana,5
+rivers_gokana_k_dere_ii,K Dere II,rivers_gokana,6
+rivers_gokana_bomu_i,Bomu I,rivers_gokana,7
+rivers_gokana_bomu_ii,Bomu II,rivers_gokana,8
+rivers_gokana_kpor_lewe,Kpor/Lewe,rivers_gokana,9
+rivers_gokana_mogho,Mogho,rivers_gokana,10
+rivers_gokana_nweol,Nweol,rivers_gokana,11
+rivers_gokana_biara_i,Biara I,rivers_gokana,12
+rivers_gokana_derken_deeyor_nweribiara,Derken Deeyor Nweribiara,rivers_gokana,13
+rivers_gokana_yageh_i,Yageh I,rivers_gokana,14
+rivers_gokana_yageh_ii,Yageh II,rivers_gokana,15
+rivers_gokana_bera,Bera,rivers_gokana,16
+rivers_gokana_biara_ii,Biara II,rivers_gokana,17
+,,,
+rivers_ikwerre_isiokpo_i,Isiokpo I,rivers_ikwerre,1
+rivers_ikwerre_isiokpo_ii,Isiokpo II,rivers_ikwerre,2
+rivers_ikwerre_elele_i,Elele I,rivers_ikwerre,3
+rivers_ikwerre_elele_ii,Elele II,rivers_ikwerre,4
+rivers_ikwerre_omerelu,Omerelu,rivers_ikwerre,5
+rivers_ikwerre_apani,Apani,rivers_ikwerre,6
+rivers_ikwerre_umuanwa,Umuanwa,rivers_ikwerre,7
+rivers_ikwerre_obima,Obima,rivers_ikwerre,8
+rivers_ikwerre_omagwa,Omagwa,rivers_ikwerre,9
+rivers_ikwerre_omademe,Omademe,rivers_ikwerre,10
+rivers_ikwerre_ozuaha,Ozuaha,rivers_ikwerre,11
+rivers_ikwerre_igwuruta,Igwuruta,rivers_ikwerre,12
+rivers_ikwerre_aluu,Aluu,rivers_ikwerre,13
+,,,
+rivers_khana_bori,Bori,rivers_khana,1
+rivers_khana_zaakpori,Zaakpori,rivers_khana,2
+rivers_khana_llueku_nyokuru,Llueku/Nyokuru,rivers_khana,3
+rivers_khana_sogho,Sogho,rivers_khana,4
+rivers_khana_okwali,Okwali,rivers_khana,5
+rivers_khana_kaani,Kaani,rivers_khana,6
+rivers_khana_bargha,Bargha,rivers_khana,7
+rivers_khana_taabaa,Taabaa,rivers_khana,8
+rivers_khana_beeri,Beeri,rivers_khana,9
+rivers_khana_bane,Bane,rivers_khana,10
+rivers_khana_kono,Kono,rivers_khana,11
+rivers_khana_wiiy aa,Wiiy aa,rivers_khana,12
+rivers_khana_boue,Boue,rivers_khana,13
+rivers_khana_uegwere,Uegwere,rivers_khana,14
+rivers_khana_gwara,Gwara,rivers_khana,15
+rivers_khana_opuoko_kalaoko,Opuoko/Kalaoko,rivers_khana,16
+rivers_khana_sii_betem,Sii/Betem,rivers_khana,17
+rivers_khana_baen_kpean,Baen/Kpean,rivers_khana,18
+rivers_khana_korre,Korre,rivers_khana,19
+,,,
+rivers_obio_akpor_oro_igwe,Oro Igwe,rivers_obio_akpor,1
+rivers_obio_akpor_rumuodara,Rumuodara,rivers_obio_akpor,2
+rivers_obio_akpor_rumuokwu_2b,Rumuokwu 2B,rivers_obio_akpor,3
+rivers_obio_akpor_rumuokwu_3a,Rumuokwu 3A,rivers_obio_akpor,4
+rivers_obio_akpor_elelenwo_3b,Elelenwo 3B,rivers_obio_akpor,5
+rivers_obio_akpor_worji,Worji,rivers_obio_akpor,6
+rivers_obio_akpor_rumuokoro,Rumuokoro,rivers_obio_akpor,7
+rivers_obio_akpor_rumuomasi,Rumuomasi,rivers_obio_akpor,8
+rivers_obio_akpor_rumueme_7a,Rumueme 7A,rivers_obio_akpor,9
+rivers_obio_akpor_rumueme_7b,Rumueme 7B,rivers_obio_akpor,10
+rivers_obio_akpor_rumueme_7c,Rumueme 7C,rivers_obio_akpor,11
+rivers_obio_akpor_rumuigbo_8a,Rumuigbo 8A,rivers_obio_akpor,12
+rivers_obio_akpor_rumukwuta_8b,Rumukwuta 8B,rivers_obio_akpor,13
+rivers_obio_akpor_rukpokwu,Rukpokwu,rivers_obio_akpor,14
+rivers_obio_akpor_choba,Choba,rivers_obio_akpor,15
+rivers_obio_akpor_ozuoba,Ozuoba,rivers_obio_akpor,16
+rivers_obio_akpor_rumuolemi,Rumuolemi,rivers_obio_akpor,17
+,,,
+rivers_ogba_egbema_ndoni_omoku_town_i,Omoku Town I,rivers_ogba_egbema_ndoni,1
+rivers_ogba_egbema_ndoni_omoku_town_ii,Omoku Town II,rivers_ogba_egbema_ndoni,2
+rivers_ogba_egbema_ndoni_omoku_town_iii,Omoku Town III,rivers_ogba_egbema_ndoni,3
+rivers_ogba_egbema_ndoni_omoku_town_iv,Omoku Town IV,rivers_ogba_egbema_ndoni,4
+rivers_ogba_egbema_ndoni_obrikom,Obrikom,rivers_ogba_egbema_ndoni,5
+rivers_ogba_egbema_ndoni_osomini,Osomini,rivers_ogba_egbema_ndoni,6
+rivers_ogba_egbema_ndoni_igburu,Igburu,rivers_ogba_egbema_ndoni,7
+rivers_ogba_egbema_ndoni_egi_i,Egi I,rivers_ogba_egbema_ndoni,8
+rivers_ogba_egbema_ndoni_egi_ii,Egi II,rivers_ogba_egbema_ndoni,9
+rivers_ogba_egbema_ndoni_egi_iii,Egi III,rivers_ogba_egbema_ndoni,10
+rivers_ogba_egbema_ndoni_egbema_i,Egbema I,rivers_ogba_egbema_ndoni,11
+rivers_ogba_egbema_ndoni_egbema_ii,Egbema II,rivers_ogba_egbema_ndoni,12
+rivers_ogba_egbema_ndoni_ndoni_i,Ndoni I,rivers_ogba_egbema_ndoni,13
+rivers_ogba_egbema_ndoni_ndoni_ii,Ndoni II,rivers_ogba_egbema_ndoni,14
+rivers_ogba_egbema_ndoni_ndoni_iii,Ndoni III,rivers_ogba_egbema_ndoni,15
+rivers_ogba_egbema_ndoni_egi_iv,Egi IV,rivers_ogba_egbema_ndoni,16
+rivers_ogba_egbema_ndoni_omoku_town_v,Omoku Town V,rivers_ogba_egbema_ndoni,17
+,,,
+rivers_ogu_bolo_ogu_i,Ogu I,rivers_ogu_bolo,1
+rivers_ogu_bolo_ogu_ii,Ogu II,rivers_ogu_bolo,2
+rivers_ogu_bolo_ogu_iii,Ogu III,rivers_ogu_bolo,3
+rivers_ogu_bolo_ogu_iv,Ogu IV,rivers_ogu_bolo,4
+rivers_ogu_bolo_ogu_v,Ogu V,rivers_ogu_bolo,5
+rivers_ogu_bolo_ogu_vi,Ogu VI,rivers_ogu_bolo,6
+rivers_ogu_bolo_bolo_i,Bolo I,rivers_ogu_bolo,7
+rivers_ogu_bolo_bolo_ii,Bolo II,rivers_ogu_bolo,8
+rivers_ogu_bolo_bolo_iii,Bolo III,rivers_ogu_bolo,9
+rivers_ogu_bolo_bolo_iv,Bolo IV,rivers_ogu_bolo,10
+rivers_ogu_bolo_wakama,Wakama,rivers_ogu_bolo,11
+rivers_ogu_bolo_ele,Ele,rivers_ogu_bolo,12
+,,,
+rivers_okrika_okrika_i,Okrika I,rivers_okrika,1
+rivers_okrika_okrika_ii,Okrika II,rivers_okrika,2
+rivers_okrika_okrika_iii,Okrika III,rivers_okrika,3
+rivers_okrika_okrika_iv,Okrika IV,rivers_okrika,4
+rivers_okrika_okrika_v,Okrika V,rivers_okrika,5
+rivers_okrika_okrika_vi,Okrika VI,rivers_okrika,6
+rivers_okrika_okrika_vii,Okrika VII,rivers_okrika,7
+rivers_okrika_ogan,Ogan,rivers_okrika,8
+rivers_okrika_kalio,Kalio,rivers_okrika,9
+rivers_okrika_ogoloma_i,Ogoloma I,rivers_okrika,10
+rivers_okrika_ogoloma_ii,Ogoloma II,rivers_okrika,11
+rivers_okrika_ogoloma_iii,Ogoloma III,rivers_okrika,12
+,,,
+rivers_omuma_eberi_dikromuuo,Eberi Dikromuuo,rivers_omuma,1
+rivers_omuma_ariraniiri,Ariraniiri,rivers_omuma,2
+rivers_omuma_obiohia_community,Obiohia Community,rivers_omuma,3
+rivers_omuma_ohimogo_community,Ohimogo Community,rivers_omuma,4
+rivers_omuma_oyoro,Oyoro,rivers_omuma,5
+rivers_omuma_ofeh,Ofeh,rivers_omuma,6
+rivers_omuma_omuogba_i,Omuogba I,rivers_omuma,7
+rivers_omuma_omuogba_ii,Omuogba II,rivers_omuma,8
+rivers_omuma_obibi_uratta,Obibi/Uratta,rivers_omuma,9
+rivers_omuma_omiajoke_community,Omiajoke Community,rivers_omuma,10
+,,,
+rivers_opobo_nkoro_kalaibiama_i,Kalaibiama I,rivers_opobo_nkoro,1
+rivers_opobo_nkoro_kalaibiama_ii,Kalaibiama II,rivers_opobo_nkoro,2
+rivers_opobo_nkoro_diepiri,Diepiri,rivers_opobo_nkoro,3
+rivers_opobo_nkoro_ukonu,Ukonu,rivers_opobo_nkoro,4
+rivers_opobo_nkoro_dapaye_ama_kiri_i,Dapaye Ama Kiri I,rivers_opobo_nkoro,5
+rivers_opobo_nkoro_dapaye_ama_kiri_ii,Dapaye Ama Kiri II,rivers_opobo_nkoro,6
+rivers_opobo_nkoro_jaja,Jaja,rivers_opobo_nkoro,7
+rivers_opobo_nkoro_queen_town,Queen Town,rivers_opobo_nkoro,8
+rivers_opobo_nkoro_nkoro_i,Nkoro I,rivers_opobo_nkoro,9
+rivers_opobo_nkoro_nkoro_ii,Nkoro II,rivers_opobo_nkoro,10
+rivers_opobo_nkoro_nkoro_iii,Nkoro III,rivers_opobo_nkoro,11
+rivers_opobo_nkoro_opobo_town,Opobo Town,rivers_opobo_nkoro,12
+,,,
+rivers_oyigbo_okoloma,Okoloma,rivers_oyigbo,1
+rivers_oyigbo_obeakpu,Obeakpu,rivers_oyigbo,2
+rivers_oyigbo_egburu,Egburu,rivers_oyigbo,3
+rivers_oyigbo_umuagbai,Umuagbai,rivers_oyigbo,4
+rivers_oyigbo_ozuagu,Ozuagu,rivers_oyigbo,5
+rivers_oyigbo_obete,Obete,rivers_oyigbo,6
+rivers_oyigbo_oyigbo_i,Oyigbo I,rivers_oyigbo,7
+rivers_oyigbo_oyigbo_ii,Oyigbo II,rivers_oyigbo,8
+rivers_oyigbo_komkom,Komkom,rivers_oyigbo,9
+rivers_oyigbo_asa,Asa,rivers_oyigbo,10
+,,,
+rivers_port_harcourt_oromineke_ezimgbu,Oromineke/Ezimgbu,rivers_port_harcourt,1
+rivers_port_harcourt_orogbum,Orogbum,rivers_port_harcourt,2
+rivers_port_harcourt_oroabali,Oroabali,rivers_port_harcourt,3
+rivers_port_harcourt_ogbunabali,Ogbunabali,rivers_port_harcourt,4
+rivers_port_harcourt_port_harcourt_township_i,Port Harcourt Township I,rivers_port_harcourt,5
+rivers_port_harcourt_port_harcourt_township_ii,Port Harcourt Township II,rivers_port_harcourt,6
+rivers_port_harcourt_port_harcourt_township_iii,Port Harcourt Township III,rivers_port_harcourt,7
+rivers_port_harcourt_port_harcourt_township_iv,Port Harcourt Township IV,rivers_port_harcourt,8
+rivers_port_harcourt_port_harcourt_township_v,Port Harcourt Township V,rivers_port_harcourt,9
+rivers_port_harcourt_port_harcourt_township_vi,Port Harcourt Township VI,rivers_port_harcourt,10
+rivers_port_harcourt_port_harcourt_township_vii,Port Harcourt Township VII,rivers_port_harcourt,11
+rivers_port_harcourt_ochiri_rumukalagbor,Ochiri/Rumukalagbor,rivers_port_harcourt,12
+rivers_port_harcourt_oroworukwo,Oroworukwo,rivers_port_harcourt,13
+rivers_port_harcourt_nkpolu,Nkpolu,rivers_port_harcourt,14
+rivers_port_harcourt_rumuwoji_one,Rumuwoji One,rivers_port_harcourt,15
+rivers_port_harcourt_rumuwoji_two,Rumuwoji Two,rivers_port_harcourt,16
+rivers_port_harcourt_rumuwoji_three,Rumuwoji Three,rivers_port_harcourt,17
+rivers_port_harcourt_mgbundukwu_one,Mgbundukwu One,rivers_port_harcourt,18
+rivers_port_harcourt_mgbundukwu_two,Mgbundukwu Two,rivers_port_harcourt,19
+rivers_port_harcourt_rumuobiekwe,Rumuobiekwe,rivers_port_harcourt,20
+,,,
+rivers_tai_ward_i,Ward I,rivers_tai,1
+rivers_tai_ward_ii,Ward II,rivers_tai,2
+rivers_tai_ward_iii,Ward III,rivers_tai,3
+rivers_tai_ward_iv,Ward IV,rivers_tai,4
+rivers_tai_ward_v,Ward V,rivers_tai,5
+rivers_tai_ward_vi,Ward VI,rivers_tai,6
+rivers_tai_ward_vii,Ward VII,rivers_tai,7
+rivers_tai_ward_viii,Ward VIII,rivers_tai,8
+rivers_tai_ward_ix,Ward IX,rivers_tai,9
+rivers_tai_ward_x,Ward X,rivers_tai,10
+,,,
+kogi_adavi_okunchi_ozuri_onieka,Okunchi/Ozuri/Onieka,kogi_adavi,1
+kogi_adavi_ogaminana,Ogamina,kogi_adavi,2
+kogi_adavi_iruvucheba,Iruvucheba,kogi_adavi,3
+kogi_adavi_idanuhli,Idanuhli,kogi_adavi,4
+kogi_adavi_adavieba,Adavieba,kogi_adavi,5
+kogi_adavi_kukoro_i,Kukoro I,kogi_adavi,6
+kogi_adavi_kukoro_ii,Kukoro II,kogi_adavi,7
+kogi_adavi_inoziomi,Inoziomi,kogi_adavi,8
+kogi_adavi_ikaraworo,Ikaraworo,kogi_adavi,9
+kogi_adavi_nagazi_fc,Nagazi F/C,kogi_adavi,10
+kogi_adavi_ege_iruvochinomi,Ege/Iruvochinomi,kogi_adavi,11
+,,,
+kogi_ajaokuta_ebiya_north,Ebiya North,kogi_ajaokuta,1
+kogi_ajaokuta_ebiya_south,Ebiya South,kogi_ajaokuta,2
+kogi_ajaokuta_abodu_patesi,Abodu Patesi,kogi_ajaokuta,3
+kogi_ajaokuta_ichuwa_upaja,Ichuwa Upaja,kogi_ajaokuta,4
+kogi_ajaokuta_badoko,Badoko,kogi_ajaokuta,5
+kogi_ajaokuta_ogigiri,Ogigiri,kogi_ajaokuta,6
+kogi_ajaokuta_achagana,Achagana,kogi_ajaokuta,7
+kogi_ajaokuta_odonu,Odonu,kogi_ajaokuta,8
+kogi_ajaokuta_omgbo,Omgbo,kogi_ajaokuta,9
+kogi_ajaokuta_upake,Upake,kogi_ajaokuta,10
+kogi_ajaokuta_old_ajaokuta,Old Ajaokuta,kogi_ajaokuta,11
+kogi_ajaokuta_geregu,Geregu,kogi_ajaokuta,12
+kogi_ajaokuta_adogo,Adogo,kogi_ajaokuta,13
+kogi_ajaokuta_adogu,Adogu,kogi_ajaokuta,14
+,,,
+kogi_ankpa_ankpa_township,Ankpa Township,kogi_ankpa,1
+kogi_ankpa_ankpa_suburb_i,Ankpa Suburb I,kogi_ankpa,2
+kogi_ankpa_ankpa_suburb_ii,Ankpa Suburb II,kogi_ankpa,3
+kogi_ankpa_ankpa_i,Ankpa I,kogi_ankpa,4
+kogi_ankpa_ankpa_ii,Ankpa II,kogi_ankpa,5
+kogi_ankpa_enjema_i,Enjema I,kogi_ankpa,6
+kogi_ankpa_enjema_ii,Enjema II,kogi_ankpa,7
+kogi_ankpa_enjema_iii,Enjema III,kogi_ankpa,8
+kogi_ankpa_enjema_iv,Enjema IV,kogi_ankpa,9
+kogi_ankpa_ojoku_i,Ojoku I,kogi_ankpa,10
+kogi_ankpa_ojoku_ii,Ojoku II,kogi_ankpa,11
+kogi_ankpa_ojoku_iii,Ojoku III,kogi_ankpa,12
+kogi_ankpa_ojoku_iv,Ojoku IV,kogi_ankpa,13
+,,,
+kogi_bassa_akuba_i,Akuba I,kogi_bassa,1
+kogi_bassa_akuba_ii,Akuba II,kogi_bassa,2
+kogi_bassa_ayede_akakana,Ayede/Akakana,kogi_bassa,3
+kogi_bassa_ozongulo_kpanche,Ozongulo Kpanche,kogi_bassa,4
+kogi_bassa_ikende,Ikende,kogi_bassa,5
+kogi_bassa_gboloko,Gboloko,kogi_bassa,6
+kogi_bassa_kpata,Kpata,kogi_bassa,7
+kogi_bassa_eforo,Eforo,kogi_bassa,8
+kogi_bassa_muzum,Muzum,kogi_bassa,9
+kogi_bassa_ozume,Ozume,kogi_bassa,10
+,,,
+kogi_dekina_dekina,Dekina,kogi_dekina,1
+kogi_dekina_iyale,Iyale,kogi_dekina,2
+kogi_dekina_emewe,Emewe,kogi_dekina,3
+kogi_dekina_odo_i,Odo I,kogi_dekina,4
+kogi_dekina_odo_ii,Odu II,kogi_dekina,5
+kogi_dekina_abocho,Abocho,kogi_dekina,6
+kogi_dekina_ogbabede,Ogbabede,kogi_dekina,7
+kogi_dekina_egume,Egume,kogi_dekina,8
+kogi_dekina_ojikpadala,Ojikpadala,kogi_dekina,9
+kogi_dekina_anyigba,Anyigba,kogi_dekina,10
+kogi_dekina_okura,Okura,kogi_dekina,11
+kogi_dekina_oganenigu,Oganenigu,kogi_dekina,12
+,,,
+kogi_ibaji_odeke,Odeke,kogi_ibaji,1
+kogi_ibaji_ujeh,Ujeh,kogi_ibaji,2
+kogi_ibaji_iyano,Iyano,kogi_ibaji,3
+kogi_ibaji_ankpanyo,Ankpanyo,kogi_ibaji,4
+kogi_ibaji_unale,Unale,kogi_ibaji,5
+kogi_ibaji_ojila,Ojila,kogi_ibaji,6
+kogi_ibaji_ejule,Ejule,kogi_ibaji,7
+kogi_ibaji_ayah,Ayah,kogi_ibaji,8
+kogi_ibaji_analo,Analo,kogi_ibaji,9
+kogi_ibaji_onyedega,Onyedega,kogi_ibaji,10
+,,,
+kogi_idah_igaloogba,Igaloogba,kogi_idah,1
+kogi_idah_owoliapa,OwolIapa,kogi_idah,2
+kogi_idah_irecheba,Irecheba,kogi_idah,3
+kogi_idah_ogegele,Ogegele,kogi_idah,4
+kogi_idah_ukwaja,Ukwaja,kogi_idah,5
+kogi_idah_ede,Ede,kogi_idah,6
+kogi_idah_sabongari,Sabongari,kogi_idah,7
+kogi_idah_ega,Ega,kogi_idah,8
+kogi_idah_ugwoda,Ugwoda,kogi_idah,9
+kogi_idah_ichala,Ichala,kogi_idah,10
+,,,
+kogi_igalamela_odolu_aurugo,Aurugo,kogi_igalamela_odolu,1
+kogi_igalamela_odolu_ekwuloko,Ekwuloko,kogi_igalamela_odolu,2
+kogi_igalamela_odolu_odolu,Odolu,kogi_igalamela_odolu,3
+kogi_igalamela_odolu_oji_aji,Oji Aji,kogi_igalamela_odolu,4
+kogi_igalamela_odolu_akpanya,Akpanya,kogi_igalamela_odolu,5
+kogi_igalamela_odolu_ubele,Ubele,kogi_igalamela_odolu,6
+kogi_igalamela_odolu_ajaka_i,Ajaka I,kogi_igalamela_odolu,7
+kogi_igalamela_odolu_ajaka_ii,Ajaka II,kogi_igalamela_odolu,8
+kogi_igalamela_odolu_oforachi_i,Oforachi I,kogi_igalamela_odolu,9
+kogi_igalamela_odolu_oforachi_ii,Oforachi II,kogi_igalamela_odolu,10
+,,,
+kogi_ijumu_aiyegunle,Aiyegunle,kogi_ijumu,1
+kogi_ijumu_aiye_coro_i,Aiye Coro I,kogi_ijumu,2
+kogi_ijumu_aiye_coro_ii,Aiye Coro II,kogi_ijumu,3
+kogi_ijumu_iyah_aweh,Iyah/Aweh,kogi_ijumu,4
+kogi_ijumu_okoro_odokoro,Okoro/Odokoro,kogi_ijumu,5
+kogi_ijumu_ayere,Ayere,kogi_ijumu,6
+kogi_ijumu_ileteju,Ileteju,kogi_ijumu,7
+kogi_ijumu_okoro,Okoro,kogi_ijumu,8
+kogi_ijumu_ogahle,Ogahle,kogi_ijumu,9
+kogi_ijumu_egbeda_egah,Egbede Egah,kogi_ijumu,10
+kogi_ijumu_iyara,Iyara,kogi_ijumu,11
+kogi_ijumu_ipe_ikogi,Ipe Ikogi,kogi_ijumu,12
+kogi_ijumu_iyamoye,Iyamoye,kogi_ijumu,13
+kogi_ijumu_ekinrin_adde,Ekinrin-Adde,kogi_ijumu,14
+kogi_ijumu_igbolauere_ilaare,Igbolauere Ilaare,kogi_ijumu,15
+,,,
+kogi_kabba_bunu_asuta,Asuta,kogi_kabba_bunu,1
+kogi_kabba_bunu_odo_akete,Odo Akete,kogi_kabba_bunu,2
+kogi_kabba_bunu_okekoko,Okekoko,kogi_kabba_bunu,3
+kogi_kabba_bunu_odolu,Odolu,kogi_kabba_bunu,4
+kogi_kabba_bunu_aiyewa,Aiyewa,kogi_kabba_bunu,5
+kogi_kabba_bunu_aiyejeju,Aiyejeju,kogi_kabba_bunu,6
+kogi_kabba_bunu_out,Out,kogi_kabba_bunu,7
+kogi_kabba_bunu_egbeda,Egbeda,kogi_kabba_bunu,8
+kogi_kabba_bunu_okedayo,Okedayo,kogi_kabba_bunu,9
+kogi_kabba_bunu_akutupa_kiri,Akutupa-Kiri,kogi_kabba_bunu,10
+kogi_kabba_bunu_aiyetoro_kiri,Aiyetoro-Kiri,kogi_kabba_bunu,11
+kogi_kabba_bunu_iluke,Iluke,kogi_kabba_bunu,12
+kogi_kabba_bunu_olle_oke_ofin,Olle Oke-Ofin,kogi_kabba_bunu,13
+kogi_kabba_bunu_odo_ade,Odo Ade,kogi_kabba_bunu,14
+kogi_kabba_bunu_okebukun,Okebukun,kogi_kabba_bunu,15
+,,,
+kogi_kogi_koton_karfe_ukwo_kotonkarfe,Ukwo Kotonkarfe,kogi_kogi_koton_karfe,1
+kogi_kogi_koton_karfe_odaki_kotonkarfe,Odaki Kotonkarfe,kogi_kogi_koton_karfe,2
+kogi_kogi_koton_karfe_kogi_south_east,Kogi South-East,kogi_kogi_koton_karfe,3
+kogi_kogi_koton_karfe_girinya,Girinya,kogi_kogi_koton_karfe,4
+kogi_kogi_koton_karfe_irenodu,Irenodu,kogi_kogi_koton_karfe,5
+kogi_kogi_koton_karfe_akpasu,Akpasu,kogi_kogi_koton_karfe,6
+kogi_kogi_koton_karfe_tawari,Tawari,kogi_kogi_koton_karfe,7
+kogi_kogi_koton_karfe_gegu_beki_north,Gegu Beki North,kogi_kogi_koton_karfe,8
+kogi_kogi_koton_karfe_gegu_beki_south,Gegu Beki South,kogi_kogi_koton_karfe,9
+kogi_kogi_koton_karfe_chikara_north,Chikara North,kogi_kogi_koton_karfe,10
+kogi_kogi_koton_karfe_chikara_south,Chikara South,kogi_kogi_koton_karfe,11
+,,,
+kogi_lokoja_lokoja_a,Lokoja A,kogi_lokoja,1
+kogi_lokoja_lokoja_b,Lokoja B,kogi_lokoja,2
+kogi_lokoja_lokoja_c,Lokoja C,kogi_lokoja,3
+kogi_lokoja_lokoja_d,Lokoja D,kogi_lokoja,4
+kogi_lokoja_lokoja_e,Lokoja E,kogi_lokoja,5
+kogi_lokoja_kupa_north,Kupa North,kogi_lokoja,6
+kogi_lokoja_kupa_south,Kupa South,kogi_lokoja,7
+kogi_lokoja_oworo,Oworo,kogi_lokoja,8
+kogi_lokoja_kakanda,Kakanda,kogi_lokoja,9
+kogi_lokoja_eggan,Eggan,kogi_lokoja,10
+kogi_lokoja_kotonkarfe,Kotonkarfe,kogi_lokoja,11
+,,,
+kogi_mopa_moro_odale_i,Odale I,kogi_mopa_moro,1
+kogi_mopa_moro_odale_ii,Odale II,kogi_mopa_moro,2
+kogi_mopa_moro_ileteju_i,Ileteju I,kogi_mopa_moro,3
+kogi_mopa_moro_ileteju_ii,Ileteju II,kogi_mopa_moro,4
+kogi_mopa_moro_oleag_lai,Oleag Lai,kogi_mopa_moro,5
+kogi_mopa_moro_orokere,Orokere,kogi_mopa_moro,6
+kogi_mopa_moro_takete_ide,Takete Ide,kogi_mopa_moro,7
+kogi_mopa_moro_aiye_dayo,Aiye Dayo,kogi_mopa_moro,8
+kogi_mopa_moro_agbajogun,Agbajogun,kogi_mopa_moro,9
+kogi_mopa_moro_aiyede_okagi,Aiyede Okagi,kogi_mopa_moro,10
+,,,
+kogi_ofu_igo,Igo,kogi_ofu,1
+kogi_ofu_alloma,Alloma,kogi_ofu,2
+kogi_ofu_ejule_alla,Ejule/Alla,kogi_ofu,3
+kogi_ofu_itobe_okokenyi,Itobe/Okokenyi,kogi_ofu,4
+kogi_ofu_uuwoland_i,Uuwoland I,kogi_ofu,5
+kogi_ofu_uuwoland_ii,Uuwoland II,kogi_ofu,6
+kogi_ofu_aloji,Aloji,kogi_ofu,7
+kogi_ofu_ofoke,Ofoke,kogi_ofu,8
+kogi_ofu_ochadamu,Ochadamu,kogi_ofu,9
+kogi_ofu_ogbonicha,Ogbonicha,kogi_ofu,10
+kogi_ofu_iboko_efakwu,Iboko Efakwu,kogi_ofu,11
+,,,
+kogi_ogori_magongo_eni,Eni,kogi_ogori_magongo,1
+kogi_ogori_magongo_oshobane,Oshobane,kogi_ogori_magongo,2
+kogi_ogori_magongo_okibo,Okibo,kogi_ogori_magongo,3
+kogi_ogori_magongo_okesi,Okesi,kogi_ogori_magongo,4
+kogi_ogori_magongo_ileteju,Ileteju,kogi_ogori_magongo,5
+kogi_ogori_magongo_aiyeromi,Aiyeromi,kogi_ogori_magongo,6
+kogi_ogori_magongo_ugugu,Ugugu,kogi_ogori_magongo,7
+kogi_ogori_magongo_obinoyin,Obinoyin,kogi_ogori_magongo,8
+kogi_ogori_magongo_obatgbem,Obatgbem,kogi_ogori_magongo,9
+kogi_ogori_magongo_otuwu_opowuroye,Otuwu Opowuroye,kogi_ogori_magongo,10
+,,,
+kogi_okehi_obeiba_i,Obeiba I,kogi_okehi,1
+kogi_okehi_obeiba_ii,Obeiba II,kogi_okehi,2
+kogi_okehi_ikuehi,Ikuehi,kogi_okehi,3
+kogi_okehi_ohueta,Ohueta,kogi_okehi,4
+kogi_okehi_oboroke_eba,Oboroke Eba,kogi_okehi,5
+kogi_okehi_oboroke_uvete,Oboroke Uvete,kogi_okehi,6
+kogi_okehi_eika_ohizenyi,Eika Ohizenyi,kogi_okehi,7
+kogi_okehi_okaito_usungwe,Okaito Usungwe,kogi_okehi,8
+kogi_okehi_oboro_omavi,Oboro Omavi,kogi_okehi,9
+kogi_okehi_obangede,Obangede,kogi_okehi,10
+kogi_okehi_ogbiroke,Ogbiroke,kogi_okehi,11
+,,,
+kogi_okene_bariki,Bariki,kogi_okene,1
+kogi_okene_lafia_obessa,Lafia Obessa,kogi_okene,2
+kogi_okene_onyukoko,Onyukoko,kogi_okene,3
+kogi_okene_idoji,Idoji,kogi_okene,4
+kogi_okene_orietesu,Oriet esu,kogi_okene,5
+kogi_okene_otutu,Otutu,kogi_okene,6
+kogi_okene_okene_eba,Okene Eba,kogi_okene,7
+kogi_okene_obehira,Obehira,kogi_okene,8
+kogi_okene_obehira_eba,Obehira Eba,kogi_okene,9
+kogi_okene_abugu,Abugu,kogi_okene,10
+kogi_okene_upogoro_odenku,Upogoro Odenku,kogi_okene,11
+,,,
+kogi_olamaboro_imane_i,Imane I,kogi_olamaboro,1
+kogi_olamaboro_imane_ii,Imane II,kogi_olamaboro,2
+kogi_olamaboro_ogugu_i,Ogugu I,kogi_olamaboro,3
+kogi_olamaboro_ogugu_ii,Ogugu II,kogi_olamaboro,4
+kogi_olamaboro_ogugu_iii,Ogugu III,kogi_olamaboro,5
+kogi_olamaboro_olamaboro_i,Olamaboro I,kogi_olamaboro,6
+kogi_olamaboro_olamaboro_ii,Olamaboro II,kogi_olamaboro,7
+kogi_olamaboro_olamaboro_iii,Olamaboro III,kogi_olamaboro,8
+kogi_olamaboro_olamaboro_iv,Olamaboro IV,kogi_olamaboro,9
+kogi_olamaboro_olamaboro_v,Olamaboro V,kogi_olamaboro,10
+,,,
+kogi_omala_abejukolo_i,Abejukolo I,kogi_omala,1
+kogi_omala_abejukolo_ii,Abejukolo II,kogi_omala,2
+kogi_omala_apada_ofejiji,Apada/Ofejiji,kogi_omala,3
+kogi_omala_bagana,Bagana,kogi_omala,4
+kogi_omala_okpotala,Okpotala,kogi_omala,5
+kogi_omala_akpacha,Akpacha,kogi_omala,6
+kogi_omala_bagaji,Bagaji,kogi_omala,7
+kogi_omala_icheke,Icheke,kogi_omala,8
+kogi_omala_ogodu,Ogodu,kogi_omala,9
+kogi_omala_oji_aji,Oji Aji,kogi_omala,10
+kogi_omala_olla,Olla,kogi_omala,11
+,,,
+kogi_yagba_east_ife_olukotun_i,Ife Olukotun I,kogi_yagba_east,1
+kogi_yagba_east_ife_olukotun_ii,Ife Olukotun II,kogi_yagba_east,2
+kogi_yagba_east_pony an,Ponyan,kogi_yagba_east,3
+kogi_yagba_east_alu_gbagun,Alu/Gbagun,kogi_yagba_east,4
+kogi_yagba_east_ejuku,Ejuku,kogi_yagba_east,5
+kogi_yagba_east_jege_okeagiogbom,Jege Okeagiogbom,kogi_yagba_east,6
+kogi_yagba_east_makutu_i,Makutu I,kogi_yagba_east,7
+kogi_yagba_east_makutu_ii,Makutu II,kogi_yagba_east,8
+kogi_yagba_east_itedo,Itedo,kogi_yagba_east,9
+kogi_yagba_east_alafin_idofin,Alafin/Idofin,kogi_yagba_east,10
+kogi_yagba_east_ejiba,Ejiba,kogi_yagba_east,11
+,,,
+kogi_yagba_west_adoeri_okoto,Adoeri Okoto,kogi_yagba_west,1
+kogi_yagba_west_adoeri_okere,Adoeri/Okere,kogi_yagba_west,2
+kogi_yagba_west_isanlu_essa,Isanlu Essa,kogi_yagba_west,3
+kogi_yagba_west_iyamerin,Iyamerin,kogi_yagba_west,4
+kogi_yagba_west_odo_aralomi,Odo Aralomi,kogi_yagba_west,5
+kogi_yagba_west_ogbe,Ogbe,kogi_yagba_west,6
+kogi_yagba_west_oke_egbe_i,Oke Egbe I,kogi_yagba_west,7
+kogi_yagba_west_oke_egbe_ii,Oke Egbe II,kogi_yagba_west,8
+kogi_yagba_west_oke_egbe_iii,Oke Egbe III,kogi_yagba_west,9
+kogi_yagba_west_oke_egbe_iv,Oke Egbe IV,kogi_yagba_west,10
+kogi_yagba_west_odo_egbe_i,Odo Egbe I,kogi_yagba_west,11
+kogi_yagba_west_odo_egbe_ii,Odo Egbe II,kogi_yagba_west,12
+kogi_yagba_west_odo_egbe_iii,Odo Egbe III,kogi_yagba_west,13

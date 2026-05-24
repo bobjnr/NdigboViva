@@ -32,6 +32,12 @@ function findMatchingKey<T>(map: Record<string, T> | undefined, key: string): st
   )
 }
 
+export function getLookupOptions(map: Record<string, string[]> | undefined, key: string | null | undefined): string[] {
+  if (!map || !key) return []
+  const matchedKey = findMatchingKey(map, key)
+  return matchedKey ? map[matchedKey] ?? [] : []
+}
+
 export function getWardOptions(state: string | null | undefined, lga: string | null | undefined): string[] {
   if (!lga) return []
 

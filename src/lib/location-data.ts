@@ -1,5 +1,4 @@
 import genealogyHierarchy from './genealogy-hierarchy.json';
-import townsByLga from './towns-by-lga.json';
 import worldLocations from './world-locations.json';
 import dropdownData from './dropdown-data.json';
 import csvDropdownData from './csv-dropdown-data.json';
@@ -106,14 +105,9 @@ export const nigerianStates: LocationData[] = mergeStateLocations(
   fallbackData.stateLgas
 );
 
-// Towns by LGA.
-// Order of precedence:
-// 1. Fallback nationwide current-location data
-// 2. Legacy towns-by-lga map
-// 3. Curated towns.csv-derived map
+// Towns by LGA for Nigeria current-location dropdowns.
+// This must come only from the curated "town current location" folder export.
 export const townsData: { [lga: string]: string[] } = {
-  ...(fallbackData.townsByLga ?? {}),
-  ...(townsByLga as { [lga: string]: string[] }),
   ...((csvDropdownData as { townsByLgaName: { [lga: string]: string[] } }).townsByLgaName ?? {}),
 };
 

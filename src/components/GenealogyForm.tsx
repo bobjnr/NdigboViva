@@ -15,7 +15,7 @@ import {
   type LocationData,
   type GenealogyFormData
 } from '@/lib/location-data'
-import { getWardOptions } from '@/lib/nigeria-dropdown-utils'
+import { getLookupOptions, getWardOptions } from '@/lib/nigeria-dropdown-utils'
 import { genealogyDB, type GenealogyFormSubmission } from '@/lib/genealogy-database'
 import diasporaOriginData from '@/lib/diaspora-origin-data.json'
 import {
@@ -112,6 +112,10 @@ function mergeUniqueOptions(...lists: Array<string[] | undefined>): string[] {
   }
 
   return merged.sort((a, b) => a.localeCompare(b))
+}
+
+function shouldUseCuratedCurrentTownsOnly(state: string | null | undefined): boolean {
+  return normalizeOntologyLabel(state) === 'anambra'
 }
 
 const CSV_ORIGIN_STATES = ((originDropdownData as any).originStates ?? []) as OriginStateOption[]
@@ -590,8 +594,11 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
       const staticWards = getWardOptions(formData.currentState, formData.currentLGA)
       const ontologyTowns = currentLgaId ? (ontologyTownsCurrent.data?.map((e) => e.displayName || e.name) ?? []) : []
       const ontologyWards = currentLgaId ? (ontologyWardsCurrent.data?.map((e) => e.displayName || e.name) ?? []) : []
+      const currentTownOptions = shouldUseCuratedCurrentTownsOnly(formData.currentState)
+        ? mergeOptionLists(staticTowns)
+        : mergeOptionLists(staticTowns, ontologyTowns)
 
-      setAvailableTowns(mergeOptionLists(staticTowns, ontologyTowns))
+      setAvailableTowns(currentTownOptions)
       setAvailableWards(mergeOptionLists(staticWards, ontologyWards))
       setFormData(prev => ({ ...prev, currentTown: '', currentVillage: '', currentPoliticalWard: '' }))
     } else {
@@ -686,10 +693,8 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   useEffect(() => {
     if (formData.originLGA) {
       const staticTowns =
-        (((originDropdownData as any).townsByLgaName?.[formData.originLGA] as string[]) ?? []).length > 0
-          ? ((originDropdownData as any).townsByLgaName?.[formData.originLGA] as string[]) ?? []
-          : getMappedOptions(townsData, formData.originLGA)
-      const staticWards = getWardOptions(formData.originState, formData.originLGA)
+        ((originDropdownData as any).townsByLgaName?.[formData.originLGA] as string[]) ?? []
+      const staticWards = getLookupOptions((originDropdownData as any).originWardsByLgaName, formData.originLGA)
 
       setOriginTowns(mergeOptionLists(staticTowns))
       setOriginWards(mergeOptionLists(staticWards))
