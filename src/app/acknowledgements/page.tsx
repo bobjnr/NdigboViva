@@ -96,7 +96,6 @@ export default async function AcknowledgementsPage() {
           <VideoList episodes={videoEpisodes} />
         </div>
       </section>
-      {/* End */}
     </div>
   )
 }

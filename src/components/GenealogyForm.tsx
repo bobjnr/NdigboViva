@@ -227,9 +227,6 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   const ontologyTownLevel3Origin = useOntologyChildren(originTownLevel2Id, 'TOWN_LEVEL_3')
   const originTownLevel3Entity = findOntologyEntityByLabel(ontologyTownLevel3Origin.data, formData.originTownLevel3)
   const originTownLevel3Id = originTownLevel3Entity?.id ?? null
-  const ontologyTownLevel4Origin = useOntologyChildren(originTownLevel3Id, 'TOWN_LEVEL_4')
-  const originTownLevel4Entity = findOntologyEntityByLabel(ontologyTownLevel4Origin.data, formData.originTownLevel4)
-  const originTownLevel4Id = originTownLevel4Entity?.id ?? null
   const ontologyClansOrigin = useOntologyChildren(originTownId, 'CLAN')
   const originClanEntity = findOntologyEntityByLabel(ontologyClansOrigin.data, formData.originClan)
   const originClanId = originClanEntity?.id ?? null
@@ -263,25 +260,20 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   const [availableObis, setAvailableObis] = useState<string[]>([])
   const [availableClans, setAvailableClans] = useState<string[]>([])
   const [availableKindreds, setAvailableKindreds] = useState<string[]>([])
-  const [availableUmunnas, setAvailableUmunnas] = useState<string[]>([])
-  const [availableMaritalExtendedFamilies, setAvailableMaritalExtendedFamilies] = useState<string[]>([])
 
   // CSV-driven deep hierarchy state
   const [availableLevel1s, setAvailableLevel1s] = useState<string[]>([])
   const [availableLevel2s, setAvailableLevel2s] = useState<string[]>([])
   const [availableLevel3s, setAvailableLevel3s] = useState<string[]>([])
-  const [availableLevel4s, setAvailableLevel4s] = useState<string[]>([])
   const [availableHamlets, setAvailableHamlets] = useState<string[]>([])
 
   // Manual entry flags
   const [isManualQuarter, setIsManualQuarter] = useState(false)
   const [isManualObi, setIsManualObi] = useState(false)
-  const [isManualClan, setIsManualClan] = useState(false)
-  const [isManualVillage, setIsManualVillage] = useState(false)
-  const [isManualHamlet, setIsManualHamlet] = useState(false)
-  const [isManualKindred, setIsManualKindred] = useState(false)
-  const [isManualUmunna, setIsManualUmunna] = useState(false)
-  const [isManualMaritalExtendedFamily, setIsManualMaritalExtendedFamily] = useState(false)
+  const [, setIsManualClan] = useState(false)
+  const [, setIsManualVillage] = useState(false)
+  const [, setIsManualHamlet] = useState(false)
+  const [, setIsManualKindred] = useState(false)
 
   const [originLGAs, setOriginLGAs] = useState<string[]>([])
   const [originTowns, setOriginTowns] = useState<string[]>([])
@@ -314,6 +306,12 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
     verification: false,
     diaspora: false,
   })
+
+  const villageHasSelectableHamlets = availableHamlets.length > 0
+  const clanOptions = mergeUniqueOptions(availableClans, formData.originClan ? [formData.originClan] : [])
+  const villageOptions = mergeUniqueOptions(originVillages, formData.originVillage ? [formData.originVillage] : [])
+  const hamletOptions = mergeUniqueOptions(availableHamlets, formData.originHamlet ? [formData.originHamlet] : [])
+  const kindredOptions = mergeUniqueOptions(availableKindreds, formData.kindred ? [formData.kindred] : [])
 
 
   // State for new custom life event input
@@ -713,13 +711,11 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
       setAvailableClans([])
       setOriginVillages([])
       setAvailableKindreds([])
-      setAvailableUmunnas([])
       setIsManualQuarter(true)
       setIsManualObi(true)
       setIsManualClan(true)
       setIsManualVillage(true)
       setIsManualKindred(true)
-      setIsManualUmunna(true)
       return
     }
 
@@ -729,8 +725,6 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
     if (town) {
       const clansSet = new Set<string>()
       const villagesSet = new Set<string>()
-      const kindredsSet = new Set<string>()
-      const umunnasSet = new Set<string>()
 
       Object.values(town.quarters || {}).forEach(q => {
         Object.values(q.obis || {}).forEach(o => {
@@ -741,13 +735,6 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
             Object.entries(clanObj.villages || {}).forEach(([villageName, villageObj]) => {
               villagesSet.add(villageName)
               if (formData.originVillage && formData.originVillage !== villageName) return
-
-              Object.entries(villageObj.kindreds || {}).forEach(([kindredName, umunnaList]) => {
-                kindredsSet.add(kindredName)
-                if (formData.kindred && formData.kindred !== kindredName) return
-
-                umunnaList.forEach(u => umunnasSet.add(u))
-              })
             })
           })
         })
@@ -755,37 +742,27 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
 
       const cArr = Array.from(clansSet)
       const vArr = Array.from(villagesSet)
-      const kArr = Array.from(kindredsSet)
-      const uArr = Array.from(umunnasSet)
 
       setAvailableClans(cArr)
       setOriginVillages(vArr)
-      setAvailableKindreds(kArr)
-      setAvailableUmunnas(uArr)
 
       setIsManualClan(cArr.length === 0)
       setIsManualVillage(vArr.length === 0)
-      setIsManualKindred(kArr.length === 0)
-      setIsManualUmunna(uArr.length === 0)
     } else {
-      // Fallback for towns not mapped in genealogy-hierarchy.json
-      setAvailableClans([])
-      setIsManualClan(true)
-      setAvailableKindreds([])
-      setIsManualKindred(true)
-      setAvailableUmunnas([])
-      setIsManualUmunna(true)
+      // For towns not present in the legacy hierarchy JSON, keep CSV/ontology-backed
+      // clan/village/hamlet/kindred data intact instead of wiping those option lists.
+      setAvailableQuarters([])
+      setAvailableObis([])
+      setIsManualQuarter(true)
+      setIsManualObi(true)
 
       const flatVillages = villagesData[formData.originTown]
       if (flatVillages && flatVillages.length > 0) {
         setOriginVillages(flatVillages)
         setIsManualVillage(false)
-      } else {
-        setOriginVillages([])
-        setIsManualVillage(true)
       }
     }
-  }, [formData.originTown, formData.originClan, formData.originVillage, formData.kindred])
+  }, [formData.originTown, formData.originClan, formData.originVillage])
 
   // ── CSV-driven cascades ──────────────────────────────────────────────────
 
@@ -811,7 +788,6 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
     if (!formData.originTownLevel1) {
       setAvailableLevel2s([])
       setAvailableLevel3s([])
-      setAvailableLevel4s([])
       return
     }
     const originCsv = originDropdownData as any
@@ -834,7 +810,6 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   useEffect(() => {
     if (!formData.originTownLevel2) {
       setAvailableLevel3s([])
-      setAvailableLevel4s([])
       return
     }
     const csv = csvDropdownData as any
@@ -848,18 +823,6 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
       originTownLevel4: '',
     }))
   }, [formData.originTownLevel2, ontologyTownLevel3Origin.data])
-
-  useEffect(() => {
-    if (!formData.originTownLevel3) {
-      setAvailableLevel4s([])
-      return
-    }
-    const csv = csvDropdownData as any
-    const csvLevel4s = getHierarchyOptions(csv.level4sByLevel3Name, formData.originTownLevel3)
-    const ontologyLevel4s = ontologyTownLevel4Origin.data?.map(getOntologyEntityLabel) ?? []
-    const level4s = mergeUniqueOptions(csvLevel4s, ontologyLevel4s)
-    setAvailableLevel4s(level4s)
-  }, [formData.originTownLevel3, ontologyTownLevel4Origin.data])
 
   // TownAdminLevel2 → Clans (CSV-driven, overrides genealogy-hierarchy)
   useEffect(() => {
@@ -883,44 +846,60 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   useEffect(() => {
     if (!formData.originClan) { return }
     const csv = csvDropdownData as any
-    const villages = (csv.villagesByClanName?.[formData.originClan] as string[]) ?? []
+    const villages = getHierarchyOptions(csv.villagesByClanName, formData.originClan)
     if (villages.length > 0) {
       setOriginVillages(villages)
       setIsManualVillage(false)
     }
   }, [formData.originClan])
 
-  // Village → Hamlets (CSV-driven)
+  // Village → Hamlets
+  // Prefer ontology-backed hamlets for the selected village, then fall back to static CSV.
   useEffect(() => {
-    if (!formData.originVillage) { setAvailableHamlets([]); return }
+    if (!formData.originVillage) {
+      setAvailableHamlets([])
+      setIsManualHamlet(false)
+      return
+    }
+
+    const ontologyHamlets = getUniqueOptions(ontologyHamletsOrigin.data?.map(getOntologyEntityLabel))
+    if (ontologyHamlets.length > 0) {
+      setAvailableHamlets(ontologyHamlets)
+      setIsManualHamlet(false)
+      return
+    }
+
     const csv = csvDropdownData as any
-    const hamlets = (csv.hamletsByVillageName?.[formData.originVillage] as string[]) ?? []
-    setAvailableHamlets(hamlets)
-    setIsManualHamlet(hamlets.length === 0)
-    setFormData(prev => ({ ...prev, originHamlet: '' }))
-  }, [formData.originVillage])
+    const hamlets = getHierarchyOptions(csv.hamletsByVillageName, formData.originVillage)
+    if (hamlets.length > 0) {
+      setAvailableHamlets(hamlets)
+      setIsManualHamlet(false)
+      return
+    }
+
+    if (!ontologyHamletsOrigin.loading) {
+      setAvailableHamlets([])
+      setIsManualHamlet(true)
+    }
+  }, [formData.originVillage, ontologyHamletsOrigin.data, ontologyHamletsOrigin.loading])
 
   // Hamlet → Kindreds (CSV-driven, overrides genealogy-hierarchy)
   useEffect(() => {
-    if (!formData.originHamlet) return
+    if (!formData.originHamlet) {
+      setAvailableKindreds([])
+      setIsManualKindred(false)
+      return
+    }
     const csv = csvDropdownData as any
-    const kindreds = (csv.kindredsByHamletName?.[formData.originHamlet] as string[]) ?? []
+    const kindreds = getHierarchyOptions(csv.kindredsByHamletName, formData.originHamlet)
     if (kindreds.length > 0) {
       setAvailableKindreds(kindreds)
       setIsManualKindred(false)
+      return
     }
-  }, [formData.originHamlet])
 
-  // Kindred → Umunnas (CSV-driven, overrides genealogy-hierarchy)
-  useEffect(() => {
-    if (!formData.kindred) return
-    const csv = csvDropdownData as any
-    const umunnas = (csv.umunnasByKindredName?.[formData.kindred] as string[]) ?? []
-    if (umunnas.length > 0) {
-      setAvailableUmunnas(umunnas)
-      setIsManualUmunna(false)
-    }
-  }, [formData.kindred])
+    setAvailableKindreds([])
+  }, [formData.originHamlet])
 
   // Ontology-driven deep origin cascade overrides legacy JSON/CSV sources when present.
   useEffect(() => {
@@ -940,44 +919,30 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
   }, [ontologyVillagesOrigin.data])
 
   useEffect(() => {
-    const ontologyHamlets = getUniqueOptions(ontologyHamletsOrigin.data?.map(getOntologyEntityLabel))
-    if (ontologyHamlets.length > 0) {
-      setAvailableHamlets(ontologyHamlets)
-      setIsManualHamlet(false)
-    }
-  }, [ontologyHamletsOrigin.data])
+    const villageHasHamlets =
+      getUniqueOptions(ontologyHamletsOrigin.data?.map(getOntologyEntityLabel)).length > 0 ||
+      availableHamlets.length > 0
 
-  useEffect(() => {
     const ontologyKindreds = getUniqueOptions(
-      (formData.originHamlet ? ontologyKindredsOrigin.data : ontologyVillageKindredsOrigin.data).map(getOntologyEntityLabel)
+      (
+        formData.originHamlet
+          ? ontologyKindredsOrigin.data
+          : villageHasHamlets
+            ? []
+            : ontologyVillageKindredsOrigin.data
+      ).map(getOntologyEntityLabel)
     )
     if (ontologyKindreds.length > 0) {
       setAvailableKindreds(ontologyKindreds)
       setIsManualKindred(false)
+      return
     }
-  }, [formData.originHamlet, ontologyKindredsOrigin.data, ontologyVillageKindredsOrigin.data])
 
-  useEffect(() => {
-    const ontologyExtendedFamilies = getUniqueOptions(
-      ontologyExtendedFamiliesOrigin.data?.map(getOntologyEntityLabel)
-    )
-    if (ontologyExtendedFamilies.length > 0) {
-      setAvailableUmunnas(ontologyExtendedFamilies)
-      setIsManualUmunna(false)
+    if (!formData.originHamlet) {
+      setAvailableKindreds([])
+      setIsManualKindred(false)
     }
-  }, [ontologyExtendedFamiliesOrigin.data])
-
-  useEffect(() => {
-    const ontologyNuclearFamilies = getUniqueOptions(
-      ontologyNuclearFamiliesOrigin.data?.map(getOntologyEntityLabel)
-    )
-    if (ontologyNuclearFamilies.length > 0) {
-      setAvailableMaritalExtendedFamilies(ontologyNuclearFamilies)
-      setIsManualMaritalExtendedFamily(false)
-    } else {
-      setAvailableMaritalExtendedFamilies([])
-    }
-  }, [ontologyNuclearFamiliesOrigin.data])
+  }, [formData.originHamlet, ontologyKindredsOrigin.data, ontologyVillageKindredsOrigin.data, ontologyHamletsOrigin.data, availableHamlets])
 
   useEffect(() => {
     setFormData((prev) => ({
@@ -1016,6 +981,8 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
       originUmunna: '',
       familyName: '',
     }))
+    setAvailableKindreds([])
+    setIsManualKindred(false)
   }, [formData.originVillage])
 
   useEffect(() => {
@@ -1171,7 +1138,6 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
         originTownLevel1Id: originTownLevel1Id || undefined,
         originTownLevel2Id: originTownLevel2Id || undefined,
         originTownLevel3Id: originTownLevel3Id || undefined,
-        originTownLevel4Id: originTownLevel4Id || undefined,
         originWardId: originWardEntity?.id,
         originClanId: originClanId || undefined,
         originVillageId: originVillageId || undefined,
@@ -2132,75 +2098,40 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
                 )}
               </div>
 
-              <div>
-                <label className="block text-sm font-medium text-gray-700 mb-2">Town Level 4</label>
-                {availableLevel4s.length > 0 ? (
-                  <select
-                    value={formData.originTownLevel4 || ''}
-                    onChange={(e) => handleInputChange('originTownLevel4', e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                    disabled={!formData.originTownLevel3}
-                  >
-                    <option value="">Select Town Level 4</option>
-                    {availableLevel4s.map(level => <option key={level} value={level}>{level}</option>)}
-                  </select>
-                ) : (
-                  <input
-                    type="text"
-                    value={formData.originTownLevel4 || ''}
-                    onChange={(e) => handleInputChange('originTownLevel4', e.target.value)}
-                    placeholder="Enter Town Level 4"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold"
-                    disabled={!formData.originTownLevel3}
-                  />
-                )}
-              </div>
-
               {/* Clan */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Clan</label>
-                {availableClans.length > 0 && !isManualClan ? (
-                  <select
-                    value={formData.originClan || ''}
-                    onChange={(e) => e.target.value === 'OTHER' ? setIsManualClan(true) : handleInputChange('originClan', e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                  >
-                    <option value="">Select Clan</option>
-                    {availableClans.map(c => <option key={c} value={c}>{c}</option>)}
-                  </select>
-                ) : (
-                  <input
-                    type="text"
-                    value={formData.originClan || ''}
-                    onChange={(e) => handleInputChange('originClan', e.target.value)}
-                    placeholder="Enter Clan"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                  />
-                )}
+                <select
+                  value={formData.originClan || ''}
+                  onChange={(e) => handleInputChange('originClan', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  disabled={!formData.originTown || clanOptions.length === 0}
+                >
+                  <option value="">
+                    {!formData.originTown
+                      ? 'Select Town first'
+                      : 'Select Clan'}
+                  </option>
+                  {clanOptions.map(c => <option key={c} value={c}>{c}</option>)}
+                </select>
               </div>
 
               {/* Village */}
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Village (Ogbe)</label>
-                {originVillages.length > 0 && !isManualVillage ? (
-                  <select
-                    value={formData.originVillage}
-                    onChange={(e) => e.target.value === 'OTHER' ? setIsManualVillage(true) : handleInputChange('originVillage', e.target.value)}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                  >
-                    <option value="">{formData.originClan ? 'Select Village' : 'Select Clan first'}</option>
-                    {originVillages.map(v => <option key={v} value={v}>{v}</option>)}
-                    <option value="OTHER">Other (Manual)</option>
-                  </select>
-                ) : (
-                  <input
-                    type="text"
-                    value={formData.originVillage}
-                    onChange={(e) => handleInputChange('originVillage', e.target.value)}
-                    placeholder={formData.originClan ? 'Enter Village' : 'Select or enter clan first'}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg"
-                  />
-                )}
+                <select
+                  value={formData.originVillage}
+                  onChange={(e) => handleInputChange('originVillage', e.target.value)}
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg"
+                  disabled={!formData.originClan || villageOptions.length === 0}
+                >
+                  <option value="">
+                    {!formData.originClan
+                      ? 'Select Clan first'
+                      : 'Select Village'}
+                  </option>
+                  {villageOptions.map(v => <option key={v} value={v}>{v}</option>)}
+                </select>
               </div>
             </div>
           </div>
@@ -2485,38 +2416,23 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
           <label className="block text-sm font-medium text-gray-700 mb-2">
             Hamlet (Ama)
           </label>
-          {availableHamlets.length > 0 && !isManualHamlet ? (
-            <div className="space-y-2">
-              <select
-                value={formData.originHamlet || ''}
-                onChange={(e) => {
-                  if (e.target.value === 'OTHER') {
-                    setIsManualHamlet(true)
-                    handleInputChange('originHamlet', '')
-                  } else {
-                    handleInputChange('originHamlet', e.target.value)
-                  }
-                }}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-              >
-                <option value="">Enter Hamlet</option>
-                {[...new Set(availableHamlets)].map(h => (
-                  <option key={h} value={h}>{h}</option>
-                ))}
-                <option value="OTHER">Other (Enter Manually)</option>
-              </select>
-            </div>
-          ) : (
-            <div className="space-y-2">
-              <input
-                type="text"
-                value={formData.originHamlet || ''}
-                onChange={(e) => handleInputChange('originHamlet', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-                placeholder={formData.originVillage ? 'Enter Hamlet' : 'Enter Village First'}
-              />
-            </div>
-          )}
+          <div className="space-y-2">
+            <select
+              value={formData.originHamlet || ''}
+              onChange={(e) => handleInputChange('originHamlet', e.target.value)}
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
+              disabled={!formData.originVillage || hamletOptions.length === 0}
+            >
+              <option value="">
+                {!formData.originVillage
+                  ? 'Select Village first'
+                  : 'Select Hamlet'}
+              </option>
+              {hamletOptions.map(h => (
+                <option key={h} value={h}>{h}</option>
+              ))}
+            </select>
+          </div>
         </div>
 
         {/* 2. Kindred */}
@@ -2524,42 +2440,29 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
           <label className="block text-sm font-medium text-gray-700 mb-2">
             Kindred (Umunna) *
           </label>
-          {availableKindreds.length > 0 && !isManualKindred ? (
-            <div className="space-y-2">
-              <select
-                value={formData.kindred}
-                onChange={(e) => {
-                  if (e.target.value === 'OTHER') {
-                    setIsManualKindred(true)
-                    handleKindredChange('')
-                  } else {
-                    handleKindredChange(e.target.value)
-                  }
-                }}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-              >
-                <option value="">Enter Kindred</option>
-                {[...new Set(availableKindreds)].map(k => (
-                  <option key={k} value={k}>{k}</option>
-                ))}
-                <option value="OTHER">Other (Enter Manually)</option>
-              </select>
-            </div>
-          ) : (
-            <div className="space-y-2">
-              <input
-                type="text"
-                value={formData.kindred || ''}
-                onChange={(e) => handleKindredChange(e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-                placeholder={
-                  formData.originHamlet || formData.originVillage
-                    ? 'Enter Kindred'
-                    : 'Enter Hamlet First'
-                }
-              />
-            </div>
-          )}
+          <div className="space-y-2">
+            <select
+              value={formData.kindred}
+              onChange={(e) => handleKindredChange(e.target.value)}
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
+              disabled={
+                kindredOptions.length === 0 ||
+                !formData.originVillage ||
+                (villageHasSelectableHamlets && !formData.originHamlet)
+              }
+            >
+              <option value="">
+                {!formData.originVillage
+                  ? 'Select Village first'
+                  : villageHasSelectableHamlets && !formData.originHamlet
+                    ? 'Select Hamlet first'
+                    : 'Select Kindred'}
+              </option>
+              {kindredOptions.map(k => (
+                <option key={k} value={k}>{k}</option>
+              ))}
+            </select>
+          </div>
         </div>
 
         {/* 3. Natal Extended Family */}
@@ -2567,38 +2470,15 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
           <label className="block text-sm font-medium text-gray-700 mb-2">
             Natal Extended Family (Surname)
           </label>
-          {availableUmunnas.length > 0 && !isManualUmunna ? (
-            <div className="space-y-2">
-              <select
-                value={formData.umunna}
-                onChange={(e) => {
-                  if (e.target.value === 'OTHER') {
-                    setIsManualUmunna(true)
-                    handleInputChange('umunna', '')
-                  } else {
-                    handleInputChange('umunna', e.target.value)
-                  }
-                }}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-              >
-                <option value="">Enter Natal Extended Family</option>
-                {[...new Set(availableUmunnas)].map(u => (
-                  <option key={u} value={u}>{u}</option>
-                ))}
-                <option value="OTHER">Other (Enter Manually)</option>
-              </select>
-            </div>
-          ) : (
-            <div className="space-y-2">
-              <input
-                type="text"
-                value={formData.umunna || ''}
-                onChange={(e) => handleInputChange('umunna', e.target.value)}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-                placeholder={formData.kindred ? 'Enter Natal Extended Family' : 'Enter Kindred First'}
-              />
-            </div>
-          )}
+          <div className="space-y-2">
+            <input
+              type="text"
+              value={formData.umunna || ''}
+              onChange={(e) => handleInputChange('umunna', e.target.value)}
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
+              placeholder={formData.kindred ? 'Enter Natal Extended Family' : 'Enter Kindred First'}
+            />
+          </div>
         </div>
 
         {/* 4. Marital Extended Family */}
@@ -2609,37 +2489,14 @@ export default function GenealogyForm({ onSubmit }: GenealogyFormProps) {
           <p className="block text-sm font-medium text-gray-700 mb-2">
             Marital Extended Family (Surname) *
           </p>
-          {availableMaritalExtendedFamilies.length > 0 && !isManualMaritalExtendedFamily ? (
-            <div className="space-y-2">
-              <select
-                value={formData.familyName}
-                onChange={(e) => {
-                  if (e.target.value === 'OTHER') {
-                    setIsManualMaritalExtendedFamily(true)
-                    handleInputChange('familyName', '')
-                  } else {
-                    handleInputChange('familyName', e.target.value)
-                  }
-                }}
-                className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-              >
-                <option value="">Enter Marital Extended Family</option>
-                {[...new Set(availableMaritalExtendedFamilies)].map((family) => (
-                  <option key={family} value={family}>{family}</option>
-                ))}
-                <option value="OTHER">Other (Enter Manually)</option>
-              </select>
-            </div>
-          ) : (
-            <input
-              type="text"
-              value={formData.familyName}
-              onChange={(e) => handleInputChange('familyName', e.target.value)}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
-              placeholder={formData.umunna ? 'Enter Marital Extended Family' : 'Enter Natal Extended Family First'}
-              required
-            />
-          )}
+          <input
+            type="text"
+            value={formData.familyName}
+            onChange={(e) => handleInputChange('familyName', e.target.value)}
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-brand-gold focus:border-brand-gold"
+            placeholder={formData.umunna ? 'Enter Marital Extended Family' : 'Enter Natal Extended Family First'}
+            required
+          />
         </div>
 
         {/* 5. Personal Name */}
